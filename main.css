@@ -24,22 +24,22 @@ body q{
 	font-style: italic;
 }
 
-nav ul{
+.site-nav{
 	background-color: PaleVioletRed;
 	font-size: 24px;
   	list-style: none;
   	padding : 0;
   	width : 200px;
 }
-nav ul li {
+.site-nav .site-nav-elm {
 	border-bottom: 2px solid MediumVioletRed;
 	padding : 5px;
 }
-nav ul li a{
+.site-nav .site-nav-elm a{
 	color : white;
 	text-decoration: none;
 }
-nav ul li a:hover{
+.site-nav .site-nav-elm a:hover{
 	text-decoration: underline;
 }
 
