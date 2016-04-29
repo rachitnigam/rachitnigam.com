@@ -1,0 +1,20 @@
+h1 {
+  color: green; 
+}
+
+figure {
+	width : 800px;
+	border : 3px solid black;
+	padding : 3px ;
+}
+figure img {
+	width : 100%;
+	height: 100%;
+}
+
+body {
+	font-family: Verdana;
+}
+body q{
+	font-style: italic;
+}
