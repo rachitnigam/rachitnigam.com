@@ -7,12 +7,12 @@ body h2 {
 	font-style: underline;
 }
 
-figure {
+.profile {
 	width : 800px;
 	border : 3px solid black;
 	padding : 3px ;
 }
-figure img {
+.profile .profile-pic {
 	width : 100%;
 	height: 100%;
 }
@@ -42,4 +42,22 @@ body q{
 .site-nav .site-nav-elm a:hover{
 	text-decoration: underline;
 }
+
+.title a{
+	font-size:1.6em;
+	line-height:1em;
+	text-decoration: none;
+}
+
+.emerald, .emerald a, .emerald a:visited{color:#27ae60}
+.emerald a:hover, .amethyst a:hover .emerald{color:#2ecc71}
+.amethyst, .amethyst a, .amethyst a:visited{color:#8e44ad}
+.amethyst a:hover{color:#9b59b6}
+
+
+.navy-blue, .navy-blue a, .navy-blue a:visited{color:#000080;} 
+.blood-red, .blood-red a, .blood-red a:visited{color:#af111c;} 
+
+
+
 
