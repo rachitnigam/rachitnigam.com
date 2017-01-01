@@ -1,1 +1,16 @@
 *.swp
+GPATH
+GRTAGS
+GTAGS
+.DS_Store
+_cache
+
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+*.elc
+auto-save-list
+tramp
+.\#*
+
+.stack-work
