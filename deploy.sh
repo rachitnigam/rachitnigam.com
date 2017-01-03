@@ -36,7 +36,20 @@ rsync -a --filter='P _site/'      \
       --delete-excluded        \
       _site/ .
 
-# Commit
+# Push the changes to the remote server
+rsync -a --filter='P _site/'      \
+      --filter='P _cache/'     \
+      --filter='P .git/'       \
+      --filter='P .gitignore'  \
+      --filter='P .stack-work' \
+      --delete-excluded        \
+      _site/ website:~/public_html/
+
+if [[ "$?" -ne 0 ]]; then
+    echo "Failed to update the remote website server!"
+fi
+
+# Commit changes to master
 git add -A
 git commit -m "Publish."
 
