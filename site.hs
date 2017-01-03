@@ -22,11 +22,4 @@ main = hakyll $ do
             >>= loadAndApplyTemplate "templates/default.html" defaultContext
             >>= relativizeUrls
 
-    -- match "index.html" $ do
-    --     route idRoute
-    --     compile $ getResourceBody
-    --             >>= applyAsTemplate defaultContext
-    --             >>= loadAndApplyTemplate "templates/default.html" defaultContext
-    --             >>= relativizeUrls
-
     match "templates/*" $ compile templateBodyCompiler
