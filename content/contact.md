@@ -1,6 +1,9 @@
 ---
 title: Contact
+author: Rachit Nigam
 ---
 
-I live in a small hut in the mountains of Kumano Kodō on Kii Hantō and would not
-like to be contacted.
+Rachit can be reached at his [email](mailto:rnigam@umass.edu). He can also be
+reached through his [linkedin](https://linkedin.com/rachit-nigam) profile. Some
+of his software projects can also be found on his
+[github](https://github.com/rachitnigam) profile.

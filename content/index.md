@@ -1,17 +1,12 @@
 ---
-title: Home
+title: About
 author: Rachit Nigam
 ---
 
-Dapibus ultrices in iaculis nunc sed augue lacus, viverra vitae congue eu,
-consequat ac felis donec et. Nibh praesent tristique magna sit amet purus
-gravida quis blandit turpis cursus in!
-
-Dapibus ultrices in iaculis nunc sed augue lacus, viverra vitae congue eu,
-consequat ac felis donec et. Nibh praesent tristique magna sit amet purus
-gravida quis blandit turpis cursus in!
-
-Dapibus ultrices in iaculis nunc sed augue lacus, viverra vitae congue eu,
-Dapibus ultrices in iaculis nunc sed augue lacus, viverra vitae congue eu,
-consequat ac felis donec et. Nibh praesent tristique magna sit amet purus
-gravida quis blandit turpis cursus in!
+Rachit Nigam is current pursuing bachelor's of science in Computer Science and
+Mathematics at University of Massachusetts Amherst. He is currently working on
+developing tools for real world languages at the
+[PLAMSA](https://plasma.cs.umass.edu) group with
+[Dr. Arjun Guha](https://people.cs.umass.edu/arjun) as his advisor. His
+[research](./research.html) interests focus on building tools that benefit
+real world programming languages.
