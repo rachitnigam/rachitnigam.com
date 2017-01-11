@@ -3,7 +3,7 @@ title: Contact
 author: Rachit Nigam
 ---
 
-Rachit can be reached at his [email](mailto:rnigam@umass.edu). He can also be
-reached through his [linkedin](https://linkedin.com/rachit-nigam) profile. Some
-of his software projects can also be found on his
-[github](https://github.com/rachitnigam) profile.
+I can be reached at my email address, [rnigam@umass.edu](mailto:rnigam@umass.edu).
+I can also be found on [linkedin](https://linkedin.com/rachit-nigam).
+Most of my projects, research or otherwise can be found on
+[github](https://github.com/rachitnigam).
