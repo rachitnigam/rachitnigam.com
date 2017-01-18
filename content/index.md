@@ -3,7 +3,7 @@ title: About
 author: Rachit Nigam
 ---
 
-Hi, I'm Rachit Nigam. I am currently pursuing a bachelor's in computer science and Mathematics
+Hi, I'm Rachit Nigam. I am currently pursuing my bachelor's in Computer Science and Mathematics
 at [University of Massachusetts Amherst](https://umass.edu) and am slated to graduate
 in May 2019.
 
