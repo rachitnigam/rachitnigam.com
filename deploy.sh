@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/zsh
 # Command to deploy hakyll website
 
 # Temporarily store uncommited changes
@@ -9,11 +9,16 @@ git checkout hakyll
 
 # If purify-css is installed as an exec, purify bootstrap.min.css
 if hash purifycss; then
-    echo "purify-css was found! purifying bootstrap.min.css"
+    echo -n "purify-css was found! Running ..."
     purifycss css/bootstrap.min.css templates/* --info --min --out \
               css/bootp.css
-    rm css/bootstrap.min.css
-    mv css/bootp.css css/bootstrap.min.css
+    if [ $? -eq 0 ]; then
+      echo "succeeded!"
+      rm css/bootstrap.min.css
+      mv css/bootp.css css/bootstrap.min.css
+    else
+      echo "failed!"
+    fi
 fi
 
 # Build new files
@@ -45,7 +50,7 @@ rsync -a --filter='P _site/'      \
       --delete-excluded        \
       _site/ website:~/public_html/
 
-if [[ "$?" -ne 0 ]]; then
+if [ "$?" -ne 0 ]; then
     echo "Failed to update the remote website server!"
 fi
 
