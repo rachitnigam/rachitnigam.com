@@ -3,32 +3,41 @@ title: Research
 author: Rachit Nigam
 ---
 
-My research is focused on building tools that enhance the programming experience
-while also providing strong mathematical guarantees. Some of the tools I have worked
-on are:
+My research is focused on understanding semantics and building programming
+abstractions. Some of the projects I've worked on are:
+
+----------
+
+### [Stopify](https://github.com/plasma-umass/stopify)
+Stopify is a JavaScript to JavaScript compiler that brings debugging facilities
+to browser based programming environments. It composes with various
+X-to-JavaScript compilers (such as
+[BuckleScript](http://bucklescript.github.io/bucklescript/) for
+[OCaml](https://ocaml.org)) to make the JavaScript output code pausable and
+steppable at the source language level. For more details, read
+[this](https://baxtersa.github.io/2017/06/10/stopify.html) blog post by my
+co-author [Sam Baxter](https://baxtersa.github.io/about/)
 
 ----------
 
 ### [Fission](https://github.com/plasma-umass/fission)
-Fission is a dynamic tier splitting tool for web applications. It allows the
-programmer to write a single program that has both server and client side code
-and splits them appropriately at run time. The tool provides a mathematical
-guarantee that the private data (on the server) is never revealed to the client
-using [faceted evaluation](https://users.soe.ucsc.edu/~cormac/papers/popl12b.pdf).
+Fission is a dynamic tier splitting tool for web applications. It takes a
+single program with both client and server side code and executes them in the
+correct context at runtime. Fission tracks implicit data flow in the program
+using [faceted
+evaluation](https://users.soe.ucsc.edu/~cormac/papers/popl12b.pdf) and
+guarantees that private data never leaks to the client.
+
+[ [SNAPL Paper](http://drops.dagstuhl.de/opus/volltexte/2017/7124/pdf/LIPIcs-SNAPL-2017-5.pdf) ]
 
 ----------
 
 ### [Pup](https://github.com/plasma-umass/pup)
-Pup is a synthesis tool that generates edits to [Puppet](https://puppet.com/) programs using
-constraints created by user interaction in a shell. The edits produced are guaranteed
-to be correct and maintain the structure of the original program.
-
-----------
-
-### [Rehearsal](https://github.com/plasma-umass/Rehearsal)
-Rehearsal is a tool that can prove important properties such as determinancy and idempotence
-for puppet manifests. The proof is sound which means that for all given input and output
-file systems, the difference is approximately the same.
-[ [Original PLDI paper](https://people.cs.umass.edu/~arjun/papers/2016-rehearsal.html) ]
+Pup is a live update synthesis tool that generates edits for
+[Puppet](https://puppet.com/) programs using constraints created by user
+interaction in a shell. The edits produced are guaranteed to be correct and
+maintain the structure of the original program. For more details, read
+[this](https://aaronweiss.us/posts/2017-06-05-bridging-the-system-configuration-gap.html)
+blog post by [Aaron Weiss](https://aaronweiss.us/).
 
 ----------
