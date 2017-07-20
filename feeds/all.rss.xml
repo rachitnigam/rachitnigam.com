@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?> 
+<rss version="2.0">
+ <channel>
+  <title>Strongly Untyped: Strongly Untyped</title>
+  <description>Strongly Untyped: Strongly Untyped</description>
+  <link>http://people.cs.umass.edu/rnigam/blog.html</link>
+  <lastBuildDate>Wed, 19 Jul 2017 22:17:52 UT</lastBuildDate>
+  <pubDate>Wed, 19 Jul 2017 22:17:52 UT</pubDate>
+  <ttl>1800</ttl>
+  <item>
+   <title>Hello World</title>
+   <link>http://people.cs.umass.edu/rnigam/2017/07/hello-world.html?utm_source=all&amp;utm_medium=RSS</link>
+   <guid isPermaLink="false">urn:http-people-cs-umass-edu-rnigam:-2017-07-hello-world-html</guid>
+   <pubDate>Wed, 19 Jul 2017 22:17:52 UT</pubDate>
+   <author>Rachit Nigam</author>
+   <description>
+&lt;p&gt;&lt;em&gt;Replace this with your post text. Add one or more comma-separated Tags above. The special tag &lt;code&gt;DRAFT&lt;/code&gt; will prevent the post from being published.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;This is a post about life.&lt;/p&gt;
+
+&lt;p&gt;What is life?&lt;/p&gt;&lt;a href="http://people.cs.umass.edu/rnigam/2017/07/hello-world.html?utm_source=all&amp;amp;utm_medium=RSS"&gt;&lt;em&gt;More&amp;hellip;&lt;/em&gt;&lt;/a&gt;</description></item>
+  <item>
+   <title>A 2012 blog post</title>
+   <link>http://people.cs.umass.edu/rnigam/2012/01/a-2012-blog-post.html?utm_source=all&amp;utm_medium=RSS</link>
+   <guid isPermaLink="false">urn:http-people-cs-umass-edu-rnigam:-2012-01-a-2012-blog-post-html</guid>
+   <pubDate>Sun, 01 Jan 2012 05:00:00 UT</pubDate>
+   <author>Rachit Nigam</author>
+   <description>
+&lt;p&gt;Here is an example blog post.&lt;/p&gt;
+
+&lt;p&gt;Everything after this paragraph &amp;ldquo;after the break&amp;rdquo;. On index pages and Atom feeds, it will become &amp;ldquo;Continue reading&amp;hellip;&amp;rdquo;, if you configure them to include only the summary &amp;ldquo;blurb&amp;rdquo; before the break.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;some code&lt;/code&gt;&lt;/pre&gt;&lt;a href="http://people.cs.umass.edu/rnigam/2012/01/a-2012-blog-post.html?utm_source=all&amp;amp;utm_medium=RSS"&gt;&lt;em&gt;More&amp;hellip;&lt;/em&gt;&lt;/a&gt;</description></item></channel></rss>

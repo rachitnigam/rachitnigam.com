@@ -1,8 +1,3 @@
----
-title: Research
-author: Rachit Nigam
----
-
 My research is focused on understanding semantics and building programming
 abstractions. Some of the projects I've worked on are:
 

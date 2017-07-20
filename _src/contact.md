@@ -1,8 +1,3 @@
----
-title: Contact
-author: Rachit Nigam
----
-
 I can be reached at my email address, [rnigam@umass.edu](mailto:rnigam@umass.edu).
 I can also be found on [linkedin](https://linkedin.com/rachit-nigam).
 Most of my projects, research or otherwise can be found on
