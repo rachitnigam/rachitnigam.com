@@ -9,7 +9,7 @@ am slated to graduate in May 2018.
 
 My research focus lies in understanding semantics and building programming
 abstractions. In pursuit of this goal, I work on everything from [compilers for
-JavaScript](https://github.com/plasma-umass/stopify) to Bisimulation proofs.
+JavaScript](https://github.com/plasma-umass/stopify) to bisimulation proofs.
 More details about research projects can be found [here](./research.html)
 
 I am spending this summer at [Brown University](https://brown.edu) working with
