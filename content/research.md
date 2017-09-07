@@ -8,7 +8,7 @@ abstractions. Some of the projects I've worked on are:
 
 ----------
 
-### [Stopify](https://github.com/plasma-umass/stopify)
+### Stopify
 Stopify is a JavaScript to JavaScript compiler that brings debugging facilities
 to browser based programming environments. It composes with various
 X-to-JavaScript compilers (such as
@@ -20,7 +20,7 @@ co-author [Sam Baxter](https://baxtersa.github.io/about/)
 
 ----------
 
-### [Fission](https://github.com/plasma-umass/fission)
+### Fission
 Fission is a dynamic tier splitting tool for web applications. It takes a
 single program with both client and server side code and executes them in the
 correct context at runtime. Fission tracks implicit data flow in the program
@@ -32,8 +32,8 @@ guarantees that private data never leaks to the client.
 
 ----------
 
-### [Pup](https://github.com/plasma-umass/pup)
-Pup is a live update synthesis tool that generates edits for
+### Tortoise
+Tortoise (formely Pup) is a live update synthesis tool that generates edits for
 [Puppet](https://puppet.com/) programs using constraints created by user
 interaction in a shell. The edits produced are guaranteed to be correct and
 maintain the structure of the original program. For more details, read
