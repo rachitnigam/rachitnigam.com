@@ -32,7 +32,7 @@ guarantees that private data never leaks to the client.
 
 ----------
 
-### Tortoise
+### [Tortoise](https://github.com/plasma-umass/Tortoise)
 Tortoise (formely Pup) is a live update synthesis tool that generates edits for
 [Puppet](https://puppet.com/) programs using constraints created by user
 interaction in a shell. The edits produced are guaranteed to be correct and
