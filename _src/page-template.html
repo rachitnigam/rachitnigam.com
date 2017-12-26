@@ -5,9 +5,10 @@
 
   @(define nav-template
     '(("/index.html" . "Home")
-      ("/blog.html" . "Blog")
+      ;; ("/blog.html" . "Blog")
       ("/research.html" . "Research")
-      ("/contact.html" . "Contact")))
+      ("/contact.html" . "Contact")
+      ("/resources/resume.pdf" . "Resume")))
 
   @(define (build-navbar)
     (for/list ([title-pair nav-template])
