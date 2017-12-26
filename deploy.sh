@@ -19,27 +19,16 @@ if hash purifycss; then
     fi
 fi
 
-# Reset to head in case purifycss ran
-git reset --hard
-
 # Push the changes to the remote server
 rsync -a --filter='P .git/'       \
       --filter='P .gitignore'  \
       --delete-excluded        \
-      _site/ website:~/public_html/
+      ./ website:~/public_html/
 
 if [ "$?" -ne 0 ]; then
     echo "Failed to update the remote website server!"
 fi
 
-# Commit changes to master
-git add -A
-git commit -m "Publish."
-
-# Push
-git push origin master:master
-
 # Restoration
 git checkout frog
-git branch -D master
 git stash pop
