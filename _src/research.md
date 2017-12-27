@@ -9,9 +9,10 @@ to browser based programming environments. It composes with various
 X-to-JavaScript compilers (such as
 [BuckleScript](http://bucklescript.github.io/bucklescript/) for
 [OCaml](https://ocaml.org)) to make the JavaScript output code pausable and
-steppable at the source language level. For more details, read
-[this](https://baxtersa.github.io/2017/06/10/stopify.html) blog post by my
-co-author [Sam Baxter](https://baxtersa.github.io/about/)
+steppable at the source language level.
+<!--For more details, read-->
+<!--[this](https://baxtersa.github.io/2017/06/10/stopify.html) blog post by my-->
+<!--co-author [Sam Baxter](https://baxtersa.github.io/about/)-->
 [_[Online Demo](https://stopify.org)_]
 
 ----------
