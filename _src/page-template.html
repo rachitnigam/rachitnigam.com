@@ -4,15 +4,14 @@
   @(local-require scribble/html)
 
   @(define nav-template
-    '(("/index.html" . "Home")
-      ;; ("/blog.html" . "Blog")
-      ("/research.html" . "Research")
-      ("/contact.html" . "Contact")
-      ("/resources/resume.pdf" . "Resume")))
+    '(("./index.html" . "Home")
+      ("./research.html" . "Research")
+      ("./contact.html" . "Contact")
+      ("./resources/resume.pdf" . "Resume")))
 
   @(define (build-navbar)
     (for/list ([title-pair nav-template])
-      (if (string=? (car title-pair) @uri-path)
+      (if (string=? (car title-pair) (string-append "." @uri-path))
         @a[href: (car title-pair) class: "current-link"]{@cdr[title-pair]}
         @a[href: (car title-pair)]{@cdr[title-pair]})))
 
@@ -21,9 +20,9 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Rachit Nigam</title>
-    <link rel="shortcut icon" href="/img/lambda.png">
-    <link rel="stylesheet" href="/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="/css/default.css" />
+    <link rel="shortcut icon" href="./img/lambda.png">
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/default.css" />
 
     <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
   </head>
@@ -33,7 +32,7 @@
       <div class="row">
         <h1 class="col-md-8 heading text-center
           col-md-offset-2">
-          <a href="/" id="simple-link">Rachit Nigam</a>
+          <a href="./index.html" id="simple-link">Rachit Nigam</a>
         </h1>
       </div>
 
