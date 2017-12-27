@@ -13,7 +13,7 @@ steppable at the source language level.
 <!--For more details, read-->
 <!--[this](https://baxtersa.github.io/2017/06/10/stopify.html) blog post by my-->
 <!--co-author [Sam Baxter](https://baxtersa.github.io/about/)-->
-[_[Online Demo](https://stopify.org)_]
+[_[Online Demo](http://stopify.org)_]
 
 ----------
 
