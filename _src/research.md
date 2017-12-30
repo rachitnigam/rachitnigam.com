@@ -17,7 +17,7 @@ steppable at the source language level.
 
 ----------
 
-### [Fission](https://github.com/plasma-umass/fission)
+### Fission
 Fission is a dynamic tier splitting tool for web applications. It takes a
 single program with both client and server side code and executes them in the
 correct context at runtime. Fission tracks implicit data flow in the program
@@ -28,9 +28,8 @@ guarantees that private data never leaks to the client.
 [ [SNAPL Paper](http://drops.dagstuhl.de/opus/volltexte/2017/7124/pdf/LIPIcs-SNAPL-2017-5.pdf) ]
 
 ----------
-
-### [Pup](https://github.com/plasma-umass/pup)
-Pup is a live update synthesis tool that generates edits for
+### [Tortoise](https://github.com/plasma-umass/Tortoise)
+Tortoise is a live update synthesis tool that generates edits for
 [Puppet](https://puppet.com/) programs using constraints created by user
 interaction in a shell. The edits produced are guaranteed to be correct and
 maintain the structure of the original program. For more details, read
