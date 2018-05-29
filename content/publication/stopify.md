@@ -44,7 +44,7 @@ projects = []
 tags = []
 
 # Links (optional).
-url_custom = [ {name = "Website", url = "https://stopify.org"} ]
+url_custom = [ {name = "Website", url = "http://stopify.org"} ]
 url_preprint = "https://arxiv.org/abs/1802.02974"
 url_code = "https://github.com/plasma-umass/stopify"
 
