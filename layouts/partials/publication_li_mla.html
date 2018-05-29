@@ -1,0 +1,20 @@
+<div class="pub-list-item" style="margin-bottom: 1rem" itemscope itemtype="http://schema.org/CreativeWork">
+  <i class="fa fa-file-text-o pub-icon" aria-hidden="true"></i>
+  {{ if .Params.subtitle }}
+  <a href="{{ .Permalink }}" itemprop="name">{{ .Title  }}: {{ .Params.subtitle }}</a>.
+  {{ else }}
+  <a href="{{ .Permalink }}" itemprop="name">{{ .Title  }}</a>.
+  {{ end }}
+  <span itemprop="author">
+    {{ with .Params.authors }}
+      {{- delimit . ", " | markdownify -}}
+    {{- end -}}
+  </span>.
+  {{ if .Params.publication_short }}
+    {{- .Params.publication_short | markdownify -}},
+  {{ else if .Params.publication }}
+    {{- .Params.publication | markdownify -}},
+  {{ end }}
+  {{- .Date.Format "2006" -}}.
+  <p>{{ partial "publication_links" (dict "content" . "is_list" 1) }}</p>
+</div>

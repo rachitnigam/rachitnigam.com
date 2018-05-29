@@ -1,63 +1,37 @@
 #!/bin/zsh
-# Command to deploy hakyll website
 
-# Temporarily store uncommited changes
-git stash
+set -e
 
-# Verify correct branch
-git checkout frog
+current_branch=$(git branch | sed -n -e 's/^\* \(.*\)/\1/p')
+deploy_branch="hugo"
+website="website:~/public_html/"
+
+if [[ "$current_branch" != "$deploy_branch" ]]; then
+  echo "Error: Must deploy from branch $deploy_branch."
+  exit 1
+fi
 
 # If purify-css is installed as an exec, purify bootstrap.min.css
 if hash purifycss; then
-    echo -n "purify-css was found! Running ..."
-    purifycss css/bootstrap.min.css ./*.html --info --min --out \
-              css/bootp.css
+    CSS_FILE="./public/style.css"
+    TEMP_FILE="./public/temp.css"
+
+    echo -n "purifycss was found! Running ..."
+    find -name "*html" -type f public/ | \
+      xargs purifycss "$CSS_FILE" ./*.html --info --min --out "$TEMP_FILE"
+
     if [ $? -eq 0 ]; then
       echo "succeeded!"
-      rm css/bootstrap.min.css
-      mv css/bootp.css css/bootstrap.min.css
+      rm "$CSS_FILE"
+      mv "$TEMP_FILE" "$CSS_FILE"
     else
       echo "failed!"
     fi
 fi
 
-# Reset to head in case purifycss ran
-git reset --hard
-
-# Get previous files
-git fetch --all
-git checkout -b master --track origin/master
-
-# Overwrite existing files with new files
-rsync -a --filter='P _site/'      \
-      --filter='P _cache/'     \
-      --filter='P .git/'       \
-      --filter='P .gitignore'  \
-      --filter='P .stack-work' \
-      --delete-excluded        \
-      _site/ .
-
 # Push the changes to the remote server
-rsync -a --filter='P _site/'      \
-      --filter='P _cache/'     \
-      --filter='P .git/'       \
-      --filter='P .gitignore'  \
-      --filter='P .stack-work' \
-      --delete-excluded        \
-      _site/ website:~/public_html/
+rsync -a --delete-excluded public/ "$website"
 
 if [ "$?" -ne 0 ]; then
     echo "Failed to update the remote website server!"
 fi
-
-# Commit changes to master
-git add -A
-git commit -m "Publish."
-
-# Push
-git push origin master:master
-
-# Restoration
-git checkout frog
-git branch -D master
-git stash pop
