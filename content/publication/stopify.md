@@ -27,7 +27,7 @@ abstract = "Scores of compilers produce JavaScript, enabling programmers to use 
 abstract_short = "Bringing debugging abstractions to web using first-class continuations in JavaScript."
 
 # Featured image thumbnail (optional)
-image_preview = "stopify-logo.png"
+image_preview = "stopify-logo-transparent.png"
 
 # Is this a selected publication? (true/false)
 selected = true
