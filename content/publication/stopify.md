@@ -8,14 +8,6 @@ draft = false
 authors = ["Sam Baxter", "Rachit Nigam", "Joe Gibbs Politz", "Shriram Krishnamurthi", "Arjun Guha"]
 
 # Publication type.
-# Legend:
-# 0 = Uncategorized
-# 1 = Conference paper
-# 2 = Journal article
-# 3 = Manuscript
-# 4 = Report
-# 5 = Book
-# 6 = Book section
 publication_types = ["1"]
 
 # Publication name and optional abbreviated version.
@@ -45,7 +37,7 @@ tags = []
 
 # Links (optional).
 url_custom = [ {name = "Website", url = "http://stopify.org"} ]
-url_preprint = "https://arxiv.org/abs/1802.02974"
+url_pdf = "/files/pubs/stopify-pldi18.pdf"
 url_code = "https://github.com/plasma-umass/stopify"
 
 # Does this page contain LaTeX math? (true/false)
