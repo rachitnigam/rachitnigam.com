@@ -11,6 +11,8 @@ if [[ "$current_branch" != "$deploy_branch" ]]; then
   exit 1
 fi
 
+rm -rf public/
+
 hugo
 
 
