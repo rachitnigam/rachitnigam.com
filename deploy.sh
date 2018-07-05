@@ -4,7 +4,7 @@ set -e
 
 current_branch=$(git branch | sed -n -e 's/^\* \(.*\)/\1/p')
 deploy_branch="hugo"
-website="website:~/public_html/"
+website=""
 
 if [[ "$current_branch" != "$deploy_branch" ]]; then
   echo "Error: Must deploy from branch $deploy_branch."
@@ -34,9 +34,13 @@ if hash purifycss; then
     fi
 fi
 
-# Push the changes to the remote server
-rsync -a --delete-excluded public/ "$website"
+if [[ "$website" != "" ]]; then
+  # Push the changes to the remote server
+  rsync -a --delete-excluded public/ "$website"
 
-if [ "$?" -ne 0 ]; then
-    echo "Failed to update the remote website server!"
+  if [ "$?" -ne 0 ]; then
+      echo "Failed to update the remote website server!"
+  fi
+else
+  echo "No website configured."
 fi
