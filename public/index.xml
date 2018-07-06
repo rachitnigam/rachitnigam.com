@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Rachit Nigam on Rachit Nigam</title>
+    <link>/</link>
+    <description>Recent content in Rachit Nigam on Rachit Nigam</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; Rachit Nigam 2018</copyright>
+    <lastBuildDate>Wed, 20 Apr 2016 00:00:00 -0700</lastBuildDate>
+    <atom:link href="/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Putting in All the Stops</title>
+      <link>/publication/stopify/</link>
+      <pubDate>Mon, 28 May 2018 15:39:56 -0700</pubDate>
+      
+      <guid>/publication/stopify/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Fission: Secure Dynamic Code-Splitting for JavaScript</title>
+      <link>/publication/fission/</link>
+      <pubDate>Sun, 28 May 2017 17:19:29 -0700</pubDate>
+      
+      <guid>/publication/fission/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
