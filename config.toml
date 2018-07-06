@@ -25,7 +25,7 @@ paginate = 10
 disqusShortname = ""
 
 # Enable analytics by entering your Google Analytics tracking ID
-googleAnalytics = ""
+googleAnalytics = "UA-121929060-1"
 
 # Default language to use (if you setup multilingual support)
 defaultContentLanguage = "en"
@@ -101,23 +101,11 @@ enableGitInfo = false
   map = 0
   map_api_key = ""
 
-  # Date and time format (refer to Go's date format: http://fuckinggodateformat.com )
-  #   Examples: "Mon, Jan 2, 2006" or "2006-01-02"
   date_format = "Jan 2, 2006"
-  #   Examples: "3:04 pm" or "15:04"
   time_format = "3:04 PM"
-
-  # Show estimated reading time for posts?
   reading_time = true
-
-  # Display comment count? Requires commenting to be enabled.
   comment_count = false
-
-  # Display next/previous section pager?
   section_pager = false
-
-  # Enable global LaTeX math rendering?
-  #   If false, you can enable it locally on a per page basis.
   math = false
 
   # Highlight.js options
@@ -164,13 +152,6 @@ enableGitInfo = false
   custom_css = []
   custom_js  = []
 
-  # Publication types.
-  #   Used to categorize publications.
-  #   The index of the publication type in the list is used as its unique numerical identifier.
-  #   The numeric ID is used in a publication's frontmatter to categorize it.
-  #   The language can be edited below.
-  #   For multilingual sites, `publication_types` can be copied to each language section at the end of this file and
-  #   translated.
   publication_types = [
     'Uncategorized',  # 0
     'Conference paper',  # 1
@@ -181,9 +162,7 @@ enableGitInfo = false
     'Book section'  # 6
   ]
 
-  # Configuration of talk pages.
   [params.talks]
-    # Show talk time?
     time = true
 
   # Configuration of publication pages.
