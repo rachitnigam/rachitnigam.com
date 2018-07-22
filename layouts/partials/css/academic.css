@@ -460,7 +460,8 @@ a[data-fancybox] img {
 }
 
 #profile .portrait {
-  background-image: url('../img/portrait.jpg');
+  /*TODO(rachitnigam): Fix this if/when a portrait is added. */
+  /*background-image: url('../img/portrait.jpg');*/
   width: 200px;
   height: 200px;
   margin: 0 auto;
@@ -734,6 +735,11 @@ article .article-metadata {
   margin-right: auto;
 }
 
+.author-mla a {
+  text-decoration: underline;
+  color: #5e5e5e;
+}
+
 .pub .pub-authors {
   font-style: italic;
   line-height: 30px; /* Match share bar line height. */
@@ -752,6 +758,14 @@ article .article-metadata {
   font-style: normal;
   font-size: 1rem;
   color: #3170A5;
+}
+
+.pub-list-item .pub-authors a {
+  line-height: normal;
+  font-style: normal;
+  font-size: 1rem;
+  color: #3170A5;
+  text-decoration: underline;
 }
 
 .pub-list-item .pub-publication {

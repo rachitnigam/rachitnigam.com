@@ -28,23 +28,21 @@
 
   <div class="pub-abstract" itemprop="text">
     {{ if .Params.abstract_short }}
-    {{ .Params.abstract_short | markdownify }}
+      {{ .Params.abstract_short | markdownify }}
     {{ else }}
-    {{ .Params.abstract | markdownify}}
+      {{ .Params.abstract | markdownify}}
     {{ end }}
   </div>
 
   <div class="pub-authors" itemprop="author">
-    {{ with .Params.authors }}
-    {{ delimit . ", " | markdownify }}
-    {{ end }}
+    {{ partial "authors" . }}
   </div>
 
   <div class="pub-publication">
     {{ if .Params.publication_short }}
-    {{ .Params.publication_short | markdownify }},
+      {{ .Params.publication_short | markdownify }},
     {{ else if .Params.publication }}
-    {{ .Params.publication | markdownify }},
+      {{ .Params.publication | markdownify }},
     {{ end }}
     {{ .Date.Format "2006" }}
   </div>

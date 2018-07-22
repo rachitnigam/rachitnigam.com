@@ -12,10 +12,8 @@
     <h2 style="margin-bottom: 0.5rem;margin-top: 0.25rem;">{{ .Params.subtitle }}</h2>
     {{ end }}
 
-    <span class="pub-authors" itemprop="author">
-      {{ with .Params.authors }}
-      {{ delimit . ", " | markdownify }}
-      {{ end }}
+    <span class="pub-authors author-mla" itemprop="author">
+    {{ partial "authors" . }}
     </span>
 
     <span class="pull-right">

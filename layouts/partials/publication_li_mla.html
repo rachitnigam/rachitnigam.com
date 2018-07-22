@@ -5,10 +5,8 @@
   {{ else }}
   <a href="{{ .Permalink }}" itemprop="name">{{ .Title  }}</a>.
   {{ end }}
-  <span itemprop="author">
-    {{ with .Params.authors }}
-      {{- delimit . ", " | markdownify -}}
-    {{- end -}}
+  <span itemprop="author" class="author-mla">
+    {{ partial "authors" . }}
   </span>.
   {{ if .Params.publication_short }}
     {{- .Params.publication_short | markdownify -}},
