@@ -36,20 +36,16 @@ hugo
 
 # If purify-css is installed as an exec, purify bootstrap.min.css
 if hash purifycss; then
-    CSS_FILE="./public/styles.css"
-    TEMP_FILE="./public/temp.css"
-
     echo -n "purifycss was found! Running ..."
-    find public/ -name "*html" -type f | \
-      xargs purifycss "$CSS_FILE" --info --min --out "$TEMP_FILE"
 
-    if [ $? -eq 0 ]; then
-      echo "succeeded!"
-      rm "$CSS_FILE"
-      mv "$TEMP_FILE" "$CSS_FILE"
-    else
-      echo "failed!"
-    fi
+    CSS_FILE="./public/styles.css"
+    find public/ -name "*html" -type f | \
+      xargs purifycss "$CSS_FILE" --info --min --out "$CSS_FILE"
+
+    BOOTSTRAP_CSS="./public/css/bootstrap.min.css"
+    find public/ -name "*html" -type f | \
+      xargs purifycss "$BOOTSTRAP_CSS" --info --min --out "$BOOTSTRAP_CSS"
+
   else
     echo "purifycss was not found!"
 fi
