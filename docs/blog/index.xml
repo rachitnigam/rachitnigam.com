@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blogs on Rachit Nigam</title>
+    <link>/blog/</link>
+    <description>Recent content in Blogs on Rachit Nigam</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; Rachit Nigam 2018</copyright>
+    
+	<atom:link href="/blog/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title></title>
+      <link>/blog/stopify-history/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/stopify-history/</guid>
+      <description>[[Stopify intro]]
+Stopify began began when Arjun asked me the question &amp;ldquo;What would it take to build a stop button for browser based IDEs?&amp;rdquo; (paraphrased) towards the 2016. The general idea behind building this was to implement [first class continuations] for JavaScript that would allow us to control JavaScript pages running on web pages. We started by looking into a [2005 paper by Pettyjohn et al.] on implementing continuations on target machines that have no provisions for accessing the run-time stack.</description>
+    </item>
+    
+  </channel>
+</rss>

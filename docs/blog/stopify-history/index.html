@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="theme" content="hugo-academic">
+  <meta name="generator" content="Hugo 0.44" />
+  <meta name="author" content="Rachit Nigam">
+
+  
+  
+  
+  
+    
+      
+    
+  
+  <meta name="description" content="[[Stopify intro]]
+Stopify began began when Arjun asked me the question &ldquo;What would it take to build a stop button for browser based IDEs?&rdquo; (paraphrased) towards the 2016. The general idea behind building this was to implement [first class continuations] for JavaScript that would allow us to control JavaScript pages running on web pages. We started by looking into a [2005 paper by Pettyjohn et al.] on implementing continuations on target machines that have no provisions for accessing the run-time stack.">
+
+  
+  <link rel="alternate" hreflang="en-us" href="../../blog/stopify-history/">
+
+  
+
+
+  
+
+  
+  
+  <meta name="theme-color" content="#EF525B">
+  
+  
+  
+  
+    
+  
+  
+    
+    
+      
+        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+      
+    
+  
+  <link rel="stylesheet" href="../../css/bootstrap.min.css">
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" integrity="sha256-ygkqlh3CYSUri3LhQxzdcm0n1EQvH2Y+U5S2idbLtxs=" crossorigin="anonymous">
+  
+  
+  
+  
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Montserrat:400,700%7cRoboto:400,400italic,700%7cRoboto&#43;Mono">
+  
+  <link rel="stylesheet" href="../../styles.css">
+  
+
+  
+  
+  
+
+  
+  <link rel="alternate" href="../../index.xml" type="application/rss+xml" title="Rachit Nigam">
+  <link rel="feed" href="../../index.xml" type="application/rss+xml" title="Rachit Nigam">
+  
+
+  <link rel="manifest" href="../../site.webmanifest">
+  <link rel="icon" type="image/png" href="../../img/dusk-asterisk.png">
+  
+
+  <link rel="canonical" href="https://rachitnigam.com">
+
+  <meta property="twitter:card" content="summary_large_image">
+  
+  <meta property="twitter:site" content="@notypes">
+  <meta property="twitter:creator" content="@notypes">
+  
+  <meta property="og:site_name" content="Rachit Nigam">
+  <meta property="og:url" content="/blog/stopify-history/">
+  <meta property="og:title" content=" | Rachit Nigam">
+  <meta property="og:description" content="[[Stopify intro]]
+Stopify began began when Arjun asked me the question &ldquo;What would it take to build a stop button for browser based IDEs?&rdquo; (paraphrased) towards the 2016. The general idea behind building this was to implement [first class continuations] for JavaScript that would allow us to control JavaScript pages running on web pages. We started by looking into a [2005 paper by Pettyjohn et al.] on implementing continuations on target machines that have no provisions for accessing the run-time stack.">
+  <meta property="og:locale" content="en-us">
+  
+  
+  
+  
+
+  
+
+  
+
+  <title> | Rachit Nigam</title>
+
+</head>
+<body id="top" data-spy="scroll" data-target="#toc" data-offset="71" >
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navbar-main">
+  <div class="container">
+
+    
+    <div class="navbar-header">
+      
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+              data-target=".navbar-collapse" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      
+      <a class="navbar-brand" href="../../">Rachit Nigam</a>
+    </div>
+
+    
+    <div class="collapse navbar-collapse">
+
+      
+      
+      <ul class="nav navbar-nav navbar-right">
+        
+
+        
+        
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a href="../../#about">
+            
+            <span>Home</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+        
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a href="../../#publications_selected">
+            
+            <span>Publications</span>
+            
+          </a>
+        </li>
+
+        
+        
+      
+
+      
+      </ul>
+
+    </div>
+  </div>
+</nav>
+
+
+<article class="article" itemscope itemtype="http://schema.org/Article">
+
+  
+
+
+  <div class="article-container">
+    <h1 itemprop="name"></h1>
+
+    
+
+<div class="article-metadata">
+
+  
+
+  <span class="article-date">
+    
+    <meta content="" itemprop="datePublished">
+    <time datetime="" itemprop="dateModified">
+      Jan 1, 0001
+    </time>
+  </span>
+  <span itemscope itemprop="author publisher" itemtype="http://schema.org/Person">
+    <meta itemprop="name" content="Rachit Nigam">
+  </span>
+
+  
+  <span class="middot-divider"></span>
+  <span class="article-reading-time">
+    4 min read
+  </span>
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+
+</div>
+
+
+    <div class="article-style" itemprop="articleBody">
+      <p>[[Stopify intro]]</p>
+
+<p>Stopify began began when Arjun asked me the question &ldquo;What would it take to
+build a stop button for browser based IDEs?&rdquo; (paraphrased) towards the 2016.
+The general idea behind building this was to implement [first class
+continuations] for JavaScript that would allow us to control JavaScript pages
+running on web pages. We started by looking into a [2005 paper by Pettyjohn et
+al.] on implementing continuations on target machines that have no provisions
+for accessing the run-time stack. Arjun also suggested that I look into [Babel]
+which would allow us to build a compiler for JavaScript without implementing
+too much boilerplate. I volunteered to present the paper at a programming
+languages seminar that was going on during the semester. My presentation was
+messy and terrible which indicated that I hadn&rsquo;t fully grasped the core idea
+in the paper yet. The semester ended and I went on a winter break.</p>
+
+<p>I spent some time trying to understand the paper during the break and while I
+hadn&rsquo;t fully grasped it yet, I had some of what I could work on. Arjun noticed
+this and suggested I read the [ANF paper] and implement ANF for JavaScript.  I
+spent a week reading the paper and figuring out Babel&rsquo;s API. Once I found the
+correct API, it was remarkably easy to implement it. Arjun and I spent some
+time coming up with a design for the compiler. While we didn&rsquo;t have a perfect
+idea of what the main pass of the compiler would look like, we decided that we
+wanted a few initial passes to canonicalize JavaScript constructs, such as
+turning different looping constructs into <code>while</code> loops. Around the same time,
+Arjun brought in Sam Baxter to work on the project. Sam and I quickly divided
+the work between us and knocked out the first few passes. Around the same time,
+we decided to implement a compiler to transform JavaScript programs into
+continuation passing style, which is a well known way of implementing
+continuations.  While we knew that CPS would perform poorly due the way it
+distorts control flow and the number of function closures it allocates, we
+considered it important to put in a good faith effort to produce a well known
+transform before we tried anything else. Sam started working on the CPS
+implementation.</p>
+
+<p>Around same time, I started to look for other, simpler ways of implementing
+continuations in JavaScript. The <code>yield</code> operator in JavaScript caught my eye
+as it allowed functions to locally pause execution of other &ldquo;generator
+functions&rdquo; that used <code>yield</code>. I dicussed this with Arjun in our weekly meeting
+and after the discussion, he told me that Python also has a similar operator,
+but Joe Politz&rsquo;s paper on [Python semantics] showed that generator supporter
+for Python was buggy since one generator could not call another generator
+from within it. I started digging into the JavaScript&rsquo;s implementation and
+found the <code>yield*</code> keyword which allowed generators to call other generators.
+Since one generator could pause the execution of another, I had exactly what
+I needed! I went out and implemented a [100 line pass] that transformed all
+functions into generators and all call sites into <code>yield*</code> expressions. This
+allowed me to build the first version of Stopify that could pause simple         &lt;&ndash;  This needs rewording &ndash;&gt;
+JavaScript programs.</p>
+
+<p>Meanwhile, Sam continued to work on the CPS implementation. Implementing CPS
+for a complex language like JavaScript was a monumental task and we ran into
+several complexities. Furthermore, traditional implementations of CPS are
+usually written as recursive functions over the AST of a program; however,
+Babel provides a [visitor-based] API to tranform JavaScript ASTs. This added to
+the complexity of the implementation, however, Sam kept pushing on. During the
+same time, Arjun was attending the SNAPL conference to present our work on
+[Fission]. Shriram, Arjun&rsquo;s PhD advisor was also attending the conference and
+Arjun wanted to showcase a very initial version of Stopify to him. Since the
+CPS implementation was still in the works, I quickly hacked up a demo for
+Stopify using the generator based implementation. By that time, I had pausing
+working with ocaml programs compiled to JavaScript.</p>
+
+<p>Once Arjun came back, we talked about the progress of the project and decided
+to present the in-progress at [NEPLS].</p>
+
+    </div>
+
+    
+
+
+    
+    
+
+    
+
+    
+
+
+  </div>
+</article>
+
+<footer class="site-footer">
+  <div class="container">
+    <p class="powered-by">
+
+      &copy; Rachit Nigam 2018 &middot; 
+
+      Powered by the
+      <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for
+      <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>.
+
+      <span class="pull-right" aria-hidden="true">
+        <a href="#" id="back_to_top">
+          <span class="button_icon">
+            <i class="fa fa-chevron-up fa-2x"></i>
+          </span>
+        </a>
+      </span>
+
+    </p>
+  </div>
+</footer>
+
+
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close btn-large" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Cite</h4>
+      </div>
+      <div>
+        <pre><code class="modal-body tex"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-primary btn-outline js-copy-cite" href="#" target="_blank">
+          <i class="fa fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-primary btn-outline js-download-cite" href="#" target="_blank">
+          <i class="fa fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+    
+    
+
+    
+
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" integrity="sha512-3P8rXCuGJdNZOnUx/03c1jOTnMn3rP63nBip5gOP2qmUh5YAdVAvFZ1E+QLZZbC1rtMrQb+mah3AfYW11RUrWA==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha512-iztkobsvnjKfAtTNdHkGVjAYTrrtlC7mGp/54c40wowO7LhURYl3gVzzcEqGl/qKXQltJ2HwMrdLcNUdo+N/RQ==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js" integrity="sha256-X5PoE3KU5l+JcX+w09p/wHl9AzK333C4hJ2I9S5mD4M=" crossorigin="anonymous"></script>
+    
+    
+    <script src="../../js/hugo-academic.js"></script>
+    
+
+    
+    
+      
+      
+      <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js" integrity="sha256-/BfiIkHlHoVihZdc6TFuj7MmJ0TWcWsMXkeDFwhi0zw=" crossorigin="anonymous"></script>
+      
+
+      
+
+      
+
+      <script>hljs.initHighlightingOnLoad();</script>
+    
+
+    
+    
+
+  </body>
+</html>
+
