@@ -6,8 +6,6 @@ draft = false
 
 authors = ["Sam Baxter", "Rachit Nigam", "Joe Gibbs Politz", "Shriram Krishnamurthi", "Arjun Guha"]
 
-publication_types = ["1"]
-
 publication = "In *Proceedings of the 39th ACM SIGPLAN Conference on Programming Language Design and Implementation (PLDI '18)*"
 publication_short = "In *PLDI*"
 
@@ -15,6 +13,7 @@ abstract = "Scores of compilers produce JavaScript, enabling programmers to use 
 abstract_short = "Bringing debugging abstractions to web using first-class continuations in JavaScript."
 
 image_preview = "stopify-logo-transparent.png"
+image_alt = "stopify logo"
 selected = true
 projects = []
 tags = []

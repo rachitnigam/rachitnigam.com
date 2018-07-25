@@ -106,7 +106,7 @@
   <link rel="icon" type="image/png" href="{{ "/img/dusk-asterisk.png" | relURL }}">
   <!--link rel="apple-touch-icon" type="image/png" href="{{ "/img/icon-192.png" | relURL }}"-->
 
-  <link rel="canonical" href="{{ .Permalink }}">
+  <link rel="canonical" href="{{ .Site.Params.canonical_url }}">
 
   <meta property="twitter:card" content="summary_large_image">
   {{ range where $.Site.Params.social ".icon" "twitter" }}

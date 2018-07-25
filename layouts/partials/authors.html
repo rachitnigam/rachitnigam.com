@@ -1,4 +1,4 @@
-{{ .Scratch.Set "Rachit Nigam" "/" }}
+{{ .Scratch.Set "Rachit Nigam" "./" }}
 {{ .Scratch.Set "Arjun Guha" "http://people.cs.umass.edu/arjun" }}
 {{ .Scratch.Set "Sam Baxter" "https://baxtersa.github.io/about/" }}
 {{ .Scratch.Set "Shriram Krishnamurthi" "http://cs.brown.edu/~sk/" }}
@@ -11,7 +11,9 @@
   {{ $authorLen := len $.Params.authors }}
   {{ range $k, $v := $.Params.authors }}
     {{- if $.Scratch.Get . -}}
-      <a href="{{ $.Scratch.Get . }}">{{- $v | markdownify -}}</a>
+      <a href="{{ $.Scratch.Get . }}" target="_blank" rel="noopener">
+        {{- $v | markdownify -}}
+      </a>
     {{- else -}}
       {{- $v | markdownify -}}
     {{- end -}}

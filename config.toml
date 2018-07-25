@@ -25,7 +25,7 @@ paginate = 10
 disqusShortname = ""
 
 # Enable analytics by entering your Google Analytics tracking ID
-googleAnalytics = "UA-121929060-1"
+googleAnalytics = ""
 
 # Default language to use (if you setup multilingual support)
 defaultContentLanguage = "en"
@@ -45,6 +45,7 @@ enableGitInfo = false
   hrefTargetBlank = true  # `true` opens external links in a new tab.
   fractions = true  # `false` disables smart fractions (e.g. 5/12 formatted as a fraction).
   smartypants = true  # `false` disables all smart punctuation substitutions (e.g. smart quotes, dashes, fractions).
+  noreferrerLinks = true
 
 [params]
   # Color theme.
@@ -58,6 +59,7 @@ enableGitInfo = false
   # Your details.
   name = "Rachit Nigam"
   role = "PhD Student"
+  canonical_url = "https://rachitnigam.com"
 
   # Organizations/Affiliations.
   #   Separate multiple entries with a comma, using the form: `[ {name="Org1", url=""}, {name="Org2", url=""} ]`.
@@ -151,16 +153,6 @@ enableGitInfo = false
   #   (relative to /static/css and /static/js respectively)
   custom_css = []
   custom_js  = []
-
-  publication_types = [
-    'Uncategorized',  # 0
-    'Conference paper',  # 1
-    'Journal article',  # 2
-    'Manuscript',  # 3
-    'Report',  # 4
-    'Book',  # 5
-    'Book section'  # 6
-  ]
 
   [params.talks]
     time = true

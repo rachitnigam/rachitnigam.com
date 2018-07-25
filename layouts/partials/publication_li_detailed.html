@@ -5,14 +5,21 @@
   {{ else if .Params.header.image }}
     {{ .Scratch.Set "image" .Params.header.image }}
   {{ end }}
+
+  {{ if .Params.image_alt }}
+    {{ .Scratch.Set "imageAlt" .Params.image_alt }}
+  {{ else }}
+    {{ .Scratch.Set "imageAlt" "default image alt" }}
+  {{ end }}
+
   {{ if .Scratch.Get "image" }}
   <div>
     <a href="{{ .Permalink }}">
       {{ $img_src := urls.Parse (.Scratch.Get "image") }}
       {{ if $img_src.Scheme }}
-        <img src="{{ .Scratch.Get "image" }}" class="article-banner" itemprop="image">
+        <img src="{{ .Scratch.Get "image" }}" class="article-banner" itemprop="image" alt="{{ .Scratch.Get "imageAlt" }}">
       {{ else }}
-        <img src="{{ "/img/" | relURL }}{{ .Scratch.Get "image" }}" class="article-banner" itemprop="image">
+        <img src="{{ "/img/" | relURL }}{{ .Scratch.Get "image" }}" class="article-banner" itemprop="image" alt="{{ .Scratch.Get "imageAlt" }}">
       {{ end }}
     </a>
   </div>
