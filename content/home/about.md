@@ -25,4 +25,4 @@ weight = 5
 
 # Biography
 
-Rachit Nigam is a PhD student studying computer science at Cornell University. His research interests include programming languages and systems design. He previously worked in the PLASMA research group at the University of Massachusetts Amherst with [Prof. Arjun Guha](http://people.cs.umass.edu/rnigam).
+Rachit Nigam is a PhD student studying computer science at Cornell University. His research interests include programming languages and systems design. He previously worked in the PLASMA research group at the University of Massachusetts Amherst with [Prof. Arjun Guha](http://people.cs.umass.edu/arjun).
