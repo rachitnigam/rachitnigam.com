@@ -25,13 +25,16 @@
   </div>
   {{ end }}
 
-  <h3 class="article-title" itemprop="name" style="margin-bottom: 0.25rem;">
-    <a href="{{ .Permalink }}" itemprop="url">{{ .Title }}</a>
-  </h3>
+  <a href="{{ .Permalink }}" class="article-title" itemprop="url">
+    <h3 itemprop="name" style="margin-bottom: 0.25rem;">
+      {{ .Title }}
+    </h3>
 
-  {{ if .Params.subtitle }}
-  <h4 style="margin-top: 0rem;"> {{ .Params.subtitle }} </h4>
-  {{ end }}
+    {{ if .Params.subtitle }}
+    <h4 style="margin-top: 0rem;"> {{ .Params.subtitle }} </h4>
+    {{ end }}
+  </a>
+
 
   <div class="pub-abstract" itemprop="text">
     {{ if .Params.abstract_short }}
@@ -46,12 +49,8 @@
   </div>
 
   <div class="pub-publication">
-    {{ if .Params.publication_short }}
-      {{ .Params.publication_short | markdownify }},
-    {{ else if .Params.publication }}
-      {{ .Params.publication | markdownify }},
-    {{ end }}
-    {{ .Date.Format "2006" }}
+    {{ .Params.publication | markdownify }}
+    ({{- .Date.Format "2006" -}})
   </div>
 
   <div class="pub-links">
