@@ -125,7 +125,11 @@
   {{ partial "cookie_consent" . }}
   {{ partial "head_custom" . }}
 
-  <title>{{ if not .IsHome }}{{ .Title }} | {{ end }}{{ .Site.Title }}</title>
+  {{ if not .IsHome }}
+  <title> {{ .Title }} | {{ .Site.Title }} </title>
+  {{ else }}
+  <title> {{ .Site.Title }} | {{ .Site.Params.role }} </title>
+  {{ end }}
 
 </head>
 <body id="top" data-spy="scroll" data-target="{{ if or .IsHome .Params.widgets }}#navbar-main{{ else }}#toc{{ end }}" data-offset="71" {{ if not ($scr.Get "light") }}class="dark"{{ end }}>
