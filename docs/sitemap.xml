@@ -5,6 +5,24 @@
     
     <url>
     
+      <loc>/blog/pl-research/</loc>
+      <lastmod>2018-09-22T21:52:05-04:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>/blog/stopify-history/</loc>
+      <lastmod>2018-09-22T21:52:05-04:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
       <loc>/publication/stopify/</loc>
       <lastmod>2018-06-28T15:39:56-07:00</lastmod>
     </url>
@@ -32,15 +50,8 @@
     
     <url>
     
-      <loc>/blog/stopify-history/</loc>
-    </url>
-    
-  
-    
-    
-    <url>
-    
       <loc>/blog/</loc>
+      <lastmod>2018-09-22T21:52:05-04:00</lastmod>
       <priority>0</priority>
     </url>
     
