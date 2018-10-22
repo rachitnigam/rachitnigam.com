@@ -16,6 +16,9 @@ caption = ""
 
 +++
 
+*Instead of being a judgement of what PL research should be, this short post is
+simply a reflection of my research interests and what role PL plays into it.*
+
 During a recent PLDG talk, the speaker said, "I think that, as a community, PL
 people have a moral responsibility to step in and say, No, you're having fun
 wrong!" While I have no qualms about the comment itself (researchers should be
@@ -29,11 +32,11 @@ technique and build cool and interesting language abstractions with the promise
 of building better and improved tools for the domain.
 
 While I strongly endorse PL techniques and research being applied in new
-domains, this story demonstrates a fundamental issue for me: PL research is
+domains, this story demonstrates a fundamental issue for me: Application of PL techniques is
 done retrospectively. PL researchers are not there when a domain is shaping up
 and people trying to build tools and programming languages for that domain.
-Only once people have made build these tools, which in turn have cemented
-themselves into domain do PL researchers come into the scene and apply their
+Only once people have made build these tools, which in turn cement
+themselves into domain, do PL researchers come into the scene and apply their
 cool techniques.
 
 So here is my solution: We should stop being PL researchers. Or put in a more

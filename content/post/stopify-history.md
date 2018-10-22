@@ -1,5 +1,20 @@
-[[Stopify intro]]
++++
+title = "A Brief History of Stopify"
+date = 2018-09-22T21:52:05-04:00
+draft = true
 
+# Tags and categories
+# For example, use `tags = []` for no tags, or the form `tags = ["A Tag", "Another Tag"]` for one or more tags.
+tags = ["history of research", "research"]
+categories = []
+
+# Featured image
+# Place your image in the `static/img/` folder and reference its filename below, e.g. `image = "example.jpg"`.
+[header]
+image = ""
+caption = ""
+
++++
 Stopify began began when Arjun asked me the question "What would it take to
 build a stop button for browser based IDEs?" (paraphrased) towards the 2016.
 The general idea behind building this was to implement [first class
