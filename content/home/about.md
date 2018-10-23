@@ -11,11 +11,11 @@ weight = 5
 [interests]
   interests = [
     "Programming Languages",
+    "Hardware Programming",
     "Systems",
   ]
 
 # List your qualifications (such as academic degrees).
-
 [[education.courses]]
   course = "BSc in Computer Science"
   institution = "University of Massachusetts Amherst"
