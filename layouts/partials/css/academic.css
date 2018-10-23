@@ -116,6 +116,10 @@ a:hover.article-title * {
   transition: color 0.2s ease;
 }
 
+.article-body {
+  font-size: 0.85rem;
+}
+
 a:hover,
 a:focus {
   color: {{ .Get "primary" }};
