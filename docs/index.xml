@@ -7,8 +7,122 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; Rachit Nigam 2018</copyright>
-    <lastBuildDate>Wed, 20 Apr 2016 00:00:00 -0400</lastBuildDate>
+    <lastBuildDate>Wed, 20 Apr 2016 00:00:00 +0530</lastBuildDate>
     <atom:link href="/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>PhD @ Cornell: The Free Agent system</title>
+      <link>/post/free-agent-cornell/</link>
+      <pubDate>Sat, 15 Dec 2018 08:27:21 +0530</pubDate>
+      
+      <guid>/post/free-agent-cornell/</guid>
+      <description>
+
+&lt;p&gt;Deciding which graduate school you&amp;rsquo;re going to spend the next &lt;em&gt;n&lt;/em&gt; years of your
+life is possibly one of the hardest decision of your life. One of the things
+that made is particularly hard for me was deciding between Cornell and my other
+top choice was Cornell&amp;rsquo;s &amp;ldquo;Free agent system&amp;rdquo;. Here is a short post about what
+the system is and why it worked for me.&lt;/p&gt;
+
+&lt;h4 id=&#34;how-do-grad-schools-work&#34;&gt;How do grad schools work?&lt;/h4&gt;
+
+&lt;p&gt;For most schools in the US, when you apply to a PhD program, you are usually
+picked out by one (or more) professors who think you&amp;rsquo;d be a good. After
+visiting the school, one the student usually decides which professor they want
+to start working with. When the student starts at the school, they are funded
+by the professor and they start doing great things together. However, some
+schools don&amp;rsquo;t follow this system.&lt;/p&gt;
+
+&lt;h4 id=&#34;cornell-s-free-agent-system&#34;&gt;Cornell&amp;rsquo;s Free Agent System&lt;/h4&gt;
+
+&lt;p&gt;At Cornell, and a few other schools, the admission process looks a bit
+different.  When a PhD student is admitted to Cornell, they are told that they
+are &lt;em&gt;admitted to the department&lt;/em&gt;, which is supposed to highlight Cornell&amp;rsquo;s
+committment towards the student freedom. Concretely, this means that Cornell guarantees
+funding for the student without tying them to an advisor &lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34;&gt;1&lt;/a&gt;&lt;/sup&gt; for the first few
+years. This is supposed to allow the students to explore and talk to potential
+advisors without being worried about funding. This is the Free Agent system at
+Cornell. Students are free agents till they decide who they want to work with.&lt;/p&gt;
+
+&lt;h4 id=&#34;the-problem&#34;&gt;The Problem&lt;/h4&gt;
+
+&lt;p&gt;Cornell&amp;rsquo;s free agent system was devised when the department was young and the
+incoming PhD students tended to have comparatively less reserch experience.
+The free agent system allowed students to explore different areas without
+being pressured to work on topics they might not like. However, in the recent
+years, the makeup of people applying to PhD programs has drastically changed &amp;mdash;
+students tend to come in with a lot more research experience and are usually
+pretty sure about the area they want to work in.&lt;/p&gt;
+
+&lt;p&gt;Furthermore, the CS department is also structured in a way that assumes
+students are free agents their first year. This means that they are expected to
+&lt;del&gt;take a lot of classes and&lt;/del&gt; &lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34;&gt;2&lt;/a&gt;&lt;/sup&gt; be teaching assistants (TAs) in their first
+two semesters.&lt;/p&gt;
+
+&lt;h4 id=&#34;my-experience&#34;&gt;My Experience&lt;/h4&gt;
+
+&lt;p&gt;The free agent system was the biggest reason that caused me to delay my
+decision.  For some background, I had started doing programming languages (PL)
+research in the first semester of my undergraduate degree and was quite certain
+about what kind of stuff I wanted to work on. Furthermore, I knew that Cornell
+was the best fit for my interest in doing PL work at the intersection of other
+fields.&lt;/p&gt;
+
+&lt;p&gt;Unfortunately, I was also afraid of not being able to find an advisor and
+wanted to choose a school where I knew I had an advisor. After about 6 hours
+of post visit day talks with professors and students in the PL group, I decided
+to go to Cornell. Even after my acceptance, I wasn&amp;rsquo;t sure if I&amp;rsquo;d be able to
+find an advisor.&lt;/p&gt;
+
+&lt;p&gt;When I started in Fall, I emailed several professors in the PL group and setup
+meetings. This is where I found the true strength of the free agent system.
+Since professors expect students to go talk to a lot of people, they expect and
+often encourage students to do rotations with people they might want to work
+with. It also makes it easy to reach out to professors and learn about their
+work. I cannot understate how important it is to me to learn about and have
+conversations about different research. One of my goals going into a PhD is
+to have a broad sense of the different kinds of problems in different domains
+and having access to professors in different areas makes it very easy to do so.&lt;/p&gt;
+
+&lt;p&gt;I was also able to start working with my awesome advisor &lt;a href=&#34;https://www.cs.cornell.edu/~asampson/&#34; rel=&#34;noreferrer&#34; target=&#34;_blank&#34;&gt;Adrian
+Sampson&lt;/a&gt; and we quickly found a project
+I&amp;rsquo;m passionate about.&lt;/p&gt;
+
+&lt;h4 id=&#34;caveat-emptor&#34;&gt;Caveat Emptor&lt;/h4&gt;
+
+&lt;p&gt;While the free agent system worked for me, it wasn&amp;rsquo;t the biggest factor in my
+decision.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;At the end of the day, having research that excites you and people &lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:3&#34;&gt;&lt;a href=&#34;#fn:3&#34;&gt;3&lt;/a&gt;&lt;/sup&gt; who are
+as excited as you are is the single most important thing when you&amp;rsquo;re deciding
+schools.&lt;/li&gt;
+&lt;li&gt;The first year TA problem is non-trivial and causes some amount of stress for
+new grad students. However, the department is aware of the issues and is
+trying to move away from this system.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Finally, here is a more &lt;a href=&#34;http://jxyzabc.blogspot.com/2009/02/some-notes-on-picking-grad.html&#34; rel=&#34;noreferrer&#34; target=&#34;_blank&#34;&gt;detailed
+post&lt;/a&gt; from
+&lt;a href=&#34;http://jeanyang.com/&#34; rel=&#34;noreferrer&#34; target=&#34;_blank&#34;&gt;Jean Yang&lt;/a&gt; on what considerations matter when deciding
+on schools. Good luck!&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Have comments? &lt;a href=&#34;mailto:rachit.nigam12@gmail.com&#34; rel=&#34;noreferrer&#34; target=&#34;_blank&#34;&gt;Email me&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
+&lt;div class=&#34;footnotes&#34;&gt;
+
+&lt;hr /&gt;
+
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34;&gt;Being tied to an advisor is not always a bad thing. In fact, most people decide on an &lt;em&gt;advisor&lt;/em&gt; and not a &lt;em&gt;school&lt;/em&gt;.
+ &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:1&#34;&gt;&lt;sup&gt;↩&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li id=&#34;fn:2&#34;&gt;The CS department recently overhauled the course requirement to drastically reduce the number of classes and restrictions on which classes to take.
+ &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:2&#34;&gt;&lt;sup&gt;↩&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li id=&#34;fn:3&#34;&gt;Importantly, This includes other grad students. Remember, you&amp;rsquo;re going to be spending a lot more time with other grad students than you will with faculty.
+ &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:3&#34;&gt;&lt;sup&gt;↩&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+</description>
+    </item>
     
     <item>
       <title>Putting in All the Stops</title>
