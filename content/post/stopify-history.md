@@ -1,6 +1,7 @@
 +++
 title = "A Brief History of Stopify"
-date = 2018-09-22T21:52:05-04:00
+summary = "Author blatanly lies about the length of the article and writes some JavaScript."
+date = 2018-08-22T21:52:05-04:00
 draft = true
 
 # Tags and categories

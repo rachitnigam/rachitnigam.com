@@ -1,5 +1,6 @@
 +++
-title = "Don't be PL researchers"
+title = "Don't be Programming Languages researchers"
+summary = "A pointless diatribe about PL research"
 date = 2018-09-22T21:52:05-04:00
 draft = true
 

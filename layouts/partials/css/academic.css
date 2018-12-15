@@ -37,6 +37,7 @@ body {
   font-size: 1rem;
   line-height: inherit;
   color: inherit;
+  text-rendering: optimizeLegibility;
   background-color: {{ .Get "background" }};
   margin-top: 71px; /* Offset body content by navbar height. */
   padding-top: 0;
@@ -63,8 +64,15 @@ body {
 
 /* Body text */
 p {
+  text-align: justify;
   margin-top: 0;
   margin-bottom: 1rem;
+}
+
+p {
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
 }
 
 /* Lists */
@@ -197,8 +205,8 @@ hr {
 blockquote {
   padding: .5rem 1rem;
   margin: .8rem 0;
-  color: #7a7a7a;
-  border-left: .25rem solid #e5e5e5;
+  font-style: italic;
+  border-left: .25rem solid #616daf;
 }
 blockquote p:last-child {
   margin-bottom: 0;
@@ -438,8 +446,7 @@ small,
 }
 
 #profile .portrait {
-  /*TODO(rachitnigam): Fix this if/when a portrait is added. */
-  /*background-image: url('../img/portrait.jpg');*/
+  background-image: url('../img/portrait.jpg');
   width: 200px;
   height: 200px;
   margin: 0 auto;
