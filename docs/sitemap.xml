@@ -5,6 +5,15 @@
     
     <url>
     
+      <loc>/post/learn-to-fail/</loc>
+      <lastmod>2018-12-19T07:20:00+05:30</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
       <loc>/post/free-agent-cornell/</loc>
       <lastmod>2018-12-15T08:27:21+05:30</lastmod>
     </url>
@@ -70,6 +79,16 @@
     <url>
     
       <loc>/tags/</loc>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>/tags/research/</loc>
+      <lastmod>2018-12-19T07:20:00+05:30</lastmod>
       <priority>0</priority>
     </url>
     

@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on Rachit Nigam</title>
-    <link>/post/</link>
-    <description>Recent content in Posts on Rachit Nigam</description>
+    <title>research on Rachit Nigam</title>
+    <link>/tags/research/</link>
+    <description>Recent content in research on Rachit Nigam</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; Rachit Nigam 2018</copyright>
-    <lastBuildDate>Sun, 01 Jan 2017 00:00:00 +0530</lastBuildDate>
+    <lastBuildDate>Wed, 19 Dec 2018 07:20:00 +0530</lastBuildDate>
     
-	<atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/research/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -19,16 +19,6 @@
       
       <guid>/post/learn-to-fail/</guid>
       <description>The way I often describe research to my non-research friends is by an uncessarily violent metaphor. I find research to be like head bashing a wall over and over till you find a way to break it and then repeating it ad nauseam. Sometimes you&amp;rsquo;ll know where the cracks in the wall are, and sometime you&amp;rsquo;ll know what angle you need to hit the wall with your head, but fundamentally, you&amp;rsquo;re hitting your head into a wall.</description>
-    </item>
-    
-    <item>
-      <title>PhD @ Cornell: The Free Agent system</title>
-      <link>/post/free-agent-cornell/</link>
-      <pubDate>Sat, 15 Dec 2018 08:27:21 +0530</pubDate>
-      
-      <guid>/post/free-agent-cornell/</guid>
-      <description>Deciding which graduate school you&amp;rsquo;re going to spend the next n years of your life is possibly one of the hardest decision of your life. One of the things that made is particularly hard for me was deciding between Cornell and my other top choice was Cornell&amp;rsquo;s &amp;ldquo;Free agent system&amp;rdquo;. Here is a short post about what the system is and why it worked for me.
-How do grad schools work?</description>
     </item>
     
   </channel>
