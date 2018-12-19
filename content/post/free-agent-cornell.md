@@ -107,7 +107,7 @@ post](http://jxyzabc.blogspot.com/2009/02/some-notes-on-picking-grad.html) from
 [Jean Yang](http://jeanyang.com/) on what considerations matter when deciding
 on schools. Good luck!
 
-_Have comments? [Email me](mailto:rachit.nigam12@gmail.com)._
+_Have comments? [Email me](mailto:rachit.nigam12@gmail.com) or [tweet](https://twitter.com/notypes) at me._
 
 
 [^1]: Being tied to an advisor is not always a bad thing. In fact, most people decide on an _advisor_ and not a _school_.
