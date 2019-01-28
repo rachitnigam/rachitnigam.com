@@ -37,13 +37,14 @@ some schools don't follow this system.
 #### Cornell's Free Agent System
 
 At Cornell, and a few other schools, the admission process looks a bit
-different.  When a PhD student is admitted to Cornell, they are
-are _admitted to the department_, which highlights Cornell's
-commitment towards the student's academic freedom. Concretely, this means that Cornell guarantees
-funding, usually through teaching assistantship, for the student without tying them to an advisor [^1].
-. This is supposed to allow the students to explore and talk to potential
-advisors without being worried about funding. This is the Free Agent system at
-Cornell. Students are free agents till they decide who they want to work with
+different.  When a PhD student is admitted to Cornell, they are are _admitted
+to the department_, which highlights Cornell's commitment towards the student's
+academic freedom. Concretely, this means that Cornell guarantees funding,
+usually through teaching assistantship, for the student without tying them to
+an advisor [^1].  This is supposed to allow the students to explore and talk to
+potential advisors without being worried about funding. This is the Free Agent
+system at Cornell. Students are free agents till they decide who they want to
+work with.
 
 #### The Problem
 
