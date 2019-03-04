@@ -20,11 +20,11 @@ preview = true
 +++
 
 Collaborations in systems research is how I've built some of the best tools
-in my research. A larger teams means an expanded and being able to pursue more
+in my research. A larger teams means an expanded vision and being able to pursue more
 ambitious ideas but it also incurs an overhead -- team management. Effectively
-managing a team and keeping all team members up to date can be stressful and
+managing a team and keeping all team members up to date can be stressful and a
 daunting task. I think one way to approaching management tasks is by asking
-a few questions:
+a few concrete questions:
 
 - How often should we be meeting? What are the preparing expectations for a meeting?
 - How are we managing our code base? What are the expectations about code knowledge?
@@ -32,8 +32,8 @@ a few questions:
 - What's the primary channel of communication?
 - How should we resolve conflicts?
 
-The answers to these questions should evolve with a project. For example, A
-project in its prototyping stage might have no restricted on how or where the
+The answers to these questions should evolve with a project. For example, a
+project in its prototyping stage might have no restrictions on how or where the
 code is kept but a more mature project associated with other projects or
 deployments requires careful releases.
 
@@ -41,8 +41,7 @@ The following sections answer these questions from my experience with teams.
 The answers apply for a reasonably mature project with most core infrastructure
 decisions already made (which language to use, which toolchains, etc.)
 
-Since I'm not the most experienced developer in the world, I would appreciate
-any suggestions (find my contact information at the end of the post).
+> Since I'm not the most experienced developer in the world, I would appreciate any suggestions (find my contact information at the end of the post).
 
 ### Primary Communication
 
@@ -57,23 +56,23 @@ Chat apps, on the other hand, make it really quick and easy to communicate with
 the team but are usually bad at maintaining separate threads of conversations
 cleanly.
 
-The choice of the primary communication is often already constraint by group
+The choice of the primary communication is often already constrained by group
 preferences so this is usually a straightforward decision.
 
 As a side note, team members should try to have long conversations in person.
 Text based mediums make it really hard to accurately convey emotions and it
-is easy to misread a small comment as being aggressive (I've certainly been
+is easy to misread an offhand comment as being aggressive (I've certainly been
 guilty of this!)
 
 ### Meetings
 
-Meetings act as a syncing point for the entire team and such require some amount
+Meetings act as a synchronization point for the entire team and require some amount
 of preparation. I suggest having at least two team meetings every week, one
 with your advisor (main meeting) and one without them (student meeting).
 
 #### Main meeting
 
-For the main meeting, every student should be prepared for the following:
+For the main meeting, every student should be prepared with the following:
 
 - A short weekly update.
 - Technical challenges faced during the assigned task.
@@ -100,15 +99,15 @@ about small issues that team members are facing in completing their tasks.
 ### Codebases
 
 If you're working on an applied systems project chances are you are building
-an artifact. Regardless of how many people are writing code, it is useful to
+a software artifact. Regardless of how many people are writing code, it is useful to
 check in the code into [source
 control](https://en.wikipedia.org/wiki/Version_control). This makes the code
 publicly viewable and commentable by the team members.
 
 > The high-level principle behind these guidelines is to minimize the number of locations where critical information such as feature discussions are kept.
 
-Since I primarily use git and Github, the following guidelines assume your
-project is Github based. When working on a artifact, I have the following
+Since I primarily use [git](https://git-scm.com/) and [Github](https://github.com/rachitnigam), the following guidelines assume your
+project is Github-based. When working on a artifact, I have the following
 expectations with team members:
 
 - The project leaders (graduate students or senior undergrads) should have a
@@ -131,7 +130,7 @@ a tracking list. Other people I have worked with also use [Trello](https://trell
 
 > The todo list should make it easy to create tasks and have discussions around them and also allow team members to see who is working on what.
 
-During the mature development phase of the project, I ask the team to use
+During the development phase of the project, I ask the team to use
 issues liberally. The term ''global tracker'' refers to the high level view of
 all todo items. On Github, this is simply the issues page.
 
@@ -141,7 +140,7 @@ Largely, I divide issues into three categories:
   together but might pollute the global tracker. Use these for reading lists,
   benchmark status, and low priority tasks. [Example](https://github.com/cucapra/seashell/issues?utf8=%E2%9C%93&q=is%3Aissue+label%3ATracker+).
 - **Proposal**. Proposal are the heart of the global tracker. Use proposals to
-  discuss system features and implementation sketches.
+  discuss system features, implementation sketches, or big bugs.
 - **Miscellaneous**: These include questions or small bugs. These should be
   high frequency, i.e. created liberally, and answered quickly.
 
@@ -152,7 +151,7 @@ often be stressful, especially since students tend to be ambitious and prone
 to overworking. Since this process so highly dependent on the team members
 and project leads, my guideline can only be personalized for me.
 
-If a team member feels under too much pressure to do something or dislike
+If a team member feels under too much pressure to do something or dislikes
 someone's personal behavior, they can either directly contact the person or
 ask one of the team leads to mediate. While daunting, it is much better in the
 long run to have frank discussions about team expectations and stresses instead
