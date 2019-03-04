@@ -19,4 +19,4 @@ preview = true
 
 +++
 
-_Have comments? [Email me](mailto:rachit.nigam12@gmail.com) or [tweet](https://twitter.com/notypes) at me._
+_Have comments? [Email](mailto:rachit.nigam12@gmail.com) or [tweet](https://twitter.com/notypes) at me._
