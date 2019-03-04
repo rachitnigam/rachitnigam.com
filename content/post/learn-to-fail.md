@@ -127,7 +127,7 @@ The way I recently summarized these ideas to a friend was that research sometime
 requires a religious amount of faith and hard work before you can actually
 see any progress.
 
-_Have comments? [Email me](mailto:rachit.nigam12@gmail.com) or [tweet](https://twitter.com/notypes) at me._
+_Have comments? [Email](mailto:rachit.nigam12@gmail.com) or [tweet](https://twitter.com/notypes) at me._
 
 [^1]: Yes, I am a walking PL cliché.
 

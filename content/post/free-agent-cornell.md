@@ -25,7 +25,7 @@ that made is particularly hard for me was deciding between Cornell and my other
 top choices was Cornell's "Free agent system". Here is a short post about what
 the system is and why it worked for me.
 
-#### How do grad schools work?
+#### Graduate School Admissions
 
 For most schools in the US, when you apply to a PhD program, you are usually
 picked out by one or more professors who think you'd be a good fit. After
@@ -107,7 +107,7 @@ post](http://jxyzabc.blogspot.com/2009/02/some-notes-on-picking-grad.html) from
 [Jean Yang](http://jeanyang.com/) on what considerations matter when deciding
 on schools. Good luck!
 
-_Have comments? [Email me](mailto:rachit.nigam12@gmail.com) or [tweet](https://twitter.com/notypes) at me._
+_Have comments? [Email](mailto:rachit.nigam12@gmail.com) or [tweet](https://twitter.com/notypes) at me._
 
 
 [^1]: Being tied to an advisor is not always a bad thing. In fact, most people decide on an _advisor_ and not a _school_.
