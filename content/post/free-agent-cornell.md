@@ -1,6 +1,6 @@
 +++
 title = "PhD @ Cornell: The Free Agent system"
-summary = "PhD student tries to justify his life choices, fails."
+summary = "PhD student tries to justify his life choices."
 date = 2018-12-15T08:27:21+05:30
 draft = false
 
