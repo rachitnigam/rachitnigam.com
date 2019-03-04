@@ -27,6 +27,7 @@ the system is and why it worked for me.
 
 #### Graduate School Admissions
 
+<<<<<<< Updated upstream
 For most schools in the US, when you apply to a PhD program, students are usually
 picked out by one or more professors who think you'd be a good fit. After
 visiting the school, the student decides which professor they want to work with
@@ -45,16 +46,44 @@ an advisor [^1].  This is supposed to allow the students to explore and talk to
 potential advisors without being worried about funding. This is the Free Agent
 system at Cornell. Students are free agents till they decide who they want to
 work with.
+=======
+For most schools in the US, being accepted to the school means that there are
+some professors that found you to be a good fit for their research. After
+visiting the school, and based on other personal factors, the student
+decides to work with one of the professors. When the student starts at the
+school, a professor funds the student and they start doing great things
+together. However, some schools don't follow this system.
+
+#### Cornell's Free Agent System
+
+At Cornell, and a few other schools, the admission process is different. When a
+PhD student is admitted to Cornell, they are told that they are _admitted to
+the department_, which highlights Cornell's committment towards
+the student freedom. This also means that Cornell guarantees funding for
+the student without tying it to an advisor [^1]. This
+is supposed to allow the students to explore and talk to potential advisors
+without being worried about funding. This is the Free Agent system at Cornell.
+Students are free agents till they decide who they want to work with.
+>>>>>>> Stashed changes
 
 #### The Problem
 
 Cornell's free agent system was devised when the department was young and the
+<<<<<<< Updated upstream
 incoming PhD students tended to have comparatively less research experience.
 The free agent system allowed students to explore different areas without
 being pressured into working on topics they might disliked. However, in the recent
 years, the makeup of people applying to PhD programs has drastically changed ---
 students tend to come in with a lot more research experience and are usually
 quite certain about the area they want to work in.
+=======
+incoming PhD students tended to have comparatively less reserch experience.
+The system allowed students to explore different areas without being pressured
+to decide on a thesis topic too early. However, in the recent years, the makeup
+of people applying to PhD programs has drastically changed --- students tend to
+come in with a lot more research experience and tend to be confident about the
+research area they want to work in.
+>>>>>>> Stashed changes
 
 Furthermore, the CS department is also structured in a way that assumes
 students are free agents their first year. This means that they are expected to
@@ -66,7 +95,11 @@ two semesters.
 
 The free agent system caused me a lot of angst during the decision process. For
 some background, I had started doing programming languages (PL) research in the
+<<<<<<< Updated upstream
 first semester of my undergraduate degree and was certain about my future research
+=======
+first semester of my undergraduate degree and was certain my future research
+>>>>>>> Stashed changes
 direction. Furthermore, I knew that Cornell was the best fit for my interest in
 doing PL work at the intersection of other fields.
 
@@ -78,6 +111,7 @@ I'd be able to find an advisor.
 When I started in Fall, I emailed professors in the PL group to set up
 meetings. This is where I found the true strength of the free agent system.
 Since professors expect students to go talk to a lot of people, they expect and
+<<<<<<< Updated upstream
 often encourage students to do research rotations with professors they are
 interested in working with.
 
@@ -87,6 +121,14 @@ conversations about research in different domains. One of my goals going into a
 PhD is to have a broad sense of the different kinds of problems in different
 domains and having access to professors in different areas makes it easy to do
 so.
+=======
+often encourage students to do rotations with people they might want to work
+with. It also makes it easy to reach out to professors and learn about their
+work. I cannot understate how important it is to me to learn about and have
+conversations about different research. One of my goals going into a PhD is
+to have a broad sense of the different kinds of problems in different domains
+and having access to professors in different areas makes it easy to do so.
+>>>>>>> Stashed changes
 
 I was also able to start working with my awesome advisor [Adrian
 Sampson](https://www.cs.cornell.edu/~asampson/) and we quickly found a project
@@ -94,6 +136,7 @@ I'm passionate about.
 
 #### Caveat Emptor
 
+<<<<<<< Updated upstream
 While the free agent system caused me some anguish in the decision process, it
 was not the primary reason I decided join Cornell.
 
@@ -102,6 +145,14 @@ was not the primary reason I decided join Cornell.
 - The first year TAing requirement causes some amount of stress for
   new students. However, the department is aware of the issues and is
   trying to move away from this system.
+=======
+While the free agent system worked for me, it wasn't the biggest factor in my
+decision. Having research that excited me and people [^2] who I thought I would
+like working with were the biggest motivators for me.
+
+Being a TA in the first year is stressful since incoming students are trying to
+get used to graduate life and trying to find a research advisor.
+>>>>>>> Stashed changes
 
 Finally, here is a more [detailed
 post](http://jxyzabc.blogspot.com/2009/02/some-notes-on-picking-grad.html) from
@@ -109,8 +160,13 @@ post](http://jxyzabc.blogspot.com/2009/02/some-notes-on-picking-grad.html) from
 on schools. Good luck!
 
 _Have comments? [Email](mailto:rachit.nigam12@gmail.com) or [tweet](https://twitter.com/notypes) at me._
+<<<<<<< Updated upstream
 
 
+=======
+
+
+>>>>>>> Stashed changes
 [^2]: The CS department recently overhauled the course requirement to reduce the number of classes and restrictions on which classes to take.
 
 [^3]: Importantly, This includes other grad students. Remember, you're going to be spending a lot more time with other grad students than you will with faculty.
