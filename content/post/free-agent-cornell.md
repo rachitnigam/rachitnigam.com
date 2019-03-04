@@ -20,14 +20,14 @@ preview = true
 +++
 
 Deciding which graduate school you're going to spend the next _n_ years of your
-life is going to be one of the hardest decision of your life. One of the things
-that made is particularly hard for me was deciding between Cornell and my other
-top choices was Cornell's "Free agent system". Here is a short post about what
+life is one of the hardest decision of your life. One of the things
+that made is hard for me was deciding between Cornell and my other
+top choice was Cornell's "Free agent system". Here is a short post about what
 the system is and why it worked for me.
 
 #### Graduate School Admissions
 
-For most schools in the US, when you apply to a PhD program, you are usually
+For most schools in the US, when you apply to a PhD program, students are usually
 picked out by one or more professors who think you'd be a good fit. After
 visiting the school, the student decides which professor they want to work with
 and commit to the school. When the student starts at the school, they are
@@ -58,34 +58,35 @@ quite certain about the area they want to work in.
 
 Furthermore, the CS department is also structured in a way that assumes
 students are free agents their first year. This means that they are expected to
-~~take a lot of classes and~~ [^2] be teaching assistants (TAs) in their first
+~~take a lot of classes and~~ [^1] be teaching assistants (TAs) in their first
 two semesters.
 
 
 #### My Experience
 
-The free agent system was the biggest reason that caused me to delay my
-decision.  For some background, I started doing programming languages (PL)
-research in the first semester of my undergraduate degree and was certain about
-the kind of research I wanted to pursue in grad school. Furthermore, I knew
-that Cornell was the best fit for my interest in doing PL work at the
-intersection of other fields.
+The free agent system caused me a lot of angst during the decision process. For
+some background, I had started doing programming languages (PL) research in the
+first semester of my undergraduate degree and was certain about my future research
+direction. Furthermore, I knew that Cornell was the best fit for my interest in
+doing PL work at the intersection of other fields.
 
-Unfortunately, I was also afraid of not being able to find an advisor and
-wanted to choose a school where I knew I had an advisor. After about 6 hours of
-post visit-day talks with professors and students in the PL group, I decided to
-go to Cornell. Even after my acceptance, I wasn't sure if I'd be able to find
-an advisor.
+Unfortunately, I was also afraid of not being able to find an advisor. After
+about 6 hours of post visit day talks with professors and students in the PL
+group, I decided to go to Cornell. Even after my acceptance, I wasn't sure if
+I'd be able to find an advisor.
 
-When I started in Fall, I emailed several professors in the PL group and setup
+When I started in Fall, I emailed professors in the PL group to set up
 meetings. This is where I found the true strength of the free agent system.
 Since professors expect students to go talk to a lot of people, they expect and
-often encourage students to do research rotations with professors they are interested in working with.
-It also makes it easy to reach out to professors and learn about their
-work. I cannot understate how important it is to me to learn about and have
-conversations about research in different domains. One of my goals going into a PhD is
-to have a broad sense of the different kinds of problems in different domains
-and having access to professors in different areas makes it very easy to do so.
+often encourage students to do research rotations with professors they are
+interested in working with.
+
+It also makes it easy to reach out to professors and learn about their work. I
+cannot emphasize how important it is to me to learn about and have
+conversations about research in different domains. One of my goals going into a
+PhD is to have a broad sense of the different kinds of problems in different
+domains and having access to professors in different areas makes it easy to do
+so.
 
 I was also able to start working with my awesome advisor [Adrian
 Sampson](https://www.cs.cornell.edu/~asampson/) and we quickly found a project
@@ -96,10 +97,10 @@ I'm passionate about.
 While the free agent system caused me some anguish in the decision process, it
 was not the primary reason I decided join Cornell.
 
-- Research that excited me, and people [^3] who are just as excited about it as
-  me were my primary motivators.
-- The first year TA problem is non-trivial and causes some amount of stress for
-  new grad students. However, the department is aware of the issues and is
+- My primary motivators were research that excited me, and people [^3] who are
+  just as excited about it as me.
+- The first year TAing requirement causes some amount of stress for
+  new students. However, the department is aware of the issues and is
   trying to move away from this system.
 
 Finally, here is a more [detailed
@@ -110,8 +111,6 @@ on schools. Good luck!
 _Have comments? [Email](mailto:rachit.nigam12@gmail.com) or [tweet](https://twitter.com/notypes) at me._
 
 
-[^1]: Being tied to an advisor is not always a bad thing. In fact, most people decide on an _advisor_ and not a _school_.
-
-[^2]: The CS department recently overhauled the course requirement to drastically reduce the number of classes and restrictions on which classes to take.
+[^2]: The CS department recently overhauled the course requirement to reduce the number of classes and restrictions on which classes to take.
 
 [^3]: Importantly, This includes other grad students. Remember, you're going to be spending a lot more time with other grad students than you will with faculty.

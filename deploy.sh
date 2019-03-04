@@ -11,22 +11,25 @@ if [[ "$current_branch" != "$deploy_branch" ]]; then
   exit 1
 fi
 
-# Start hugo server to checklinks.
-if hash linkchecker; then
-  echo "linkchecker found, checking links."
+echo "Saving unsaved changes..."
+git stash
 
-  # If a hugo server is already running, don't run another one.
-  if [ "$(pgrep hugo)" -eq "" ]; then
-    hugo server &
-    SERVER_PID="$!"
-    linkchecker http://localhost:1313 --check-extern
-    kill "${SERVER_PID}"
-  else
-    linkchecker http://localhost:1313 --check-extern
-  fi
-else
-  echo "linkchecker not found, skipping link checks"
-fi
+# Start hugo server to checklinks.
+#if hash linkchecker; then
+  #echo "linkchecker found, checking links."
+
+  ## If a hugo server is already running, don't run another one.
+  #if [ "$(pgrep hugo)" -eq "" ]; then
+    #hugo server &
+    #SERVER_PID="$!"
+    #linkchecker http://localhost:1313 --check-extern
+    #kill "${SERVER_PID}"
+  #else
+    #linkchecker http://localhost:1313 --check-extern
+  #fi
+#else
+  #echo "linkchecker not found, skipping link checks"
+#fi
 
 # Remove existing public folder.
 rm -rf public/
@@ -67,3 +70,6 @@ else
 fi
 
 echo "Commit the docs/ folder to deploy to github pages."
+
+echo "Restoring unsaved changes"
+git stash pop
