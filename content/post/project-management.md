@@ -1,11 +1,11 @@
 +++
-title = "Project Management for PhDs"
+title = "Project Management for PhD Students"
 summary = "PhD student considers pivoting to mangerial positions."
 date = 2019-03-03T22:10:39-05:00
 draft = false
 
 authors = []
-tags = []
+tags = ["research", "management"]
 
 # Featured image
 # Place your image in the `static/img/` folder and reference its filename below, e.g. `image = "example.jpg"`.
@@ -26,10 +26,10 @@ managing a team and keeping all team members up to date can be stressful and a
 daunting task. I think one way to approaching management tasks is by asking
 a few concrete questions:
 
+- What's the primary channel of communication?
 - How often should we be meeting? What are the preparing expectations for a meeting?
 - How are we managing our code base? What are the expectations about code knowledge?
 - How are we managing our TODO items?
-- What's the primary channel of communication?
 - How should we resolve conflicts?
 
 The answers to these questions should evolve with a project. For example, a
@@ -164,5 +164,7 @@ I like having a much more lightweight team management style. A lot of research
 is about exploring new ideas and pursuing crazy ideas. Regardless of which
 guidelines you choose to follow, they should not take away the joy of programming
 or research!
+
+Discussion on [HackerNews](https://news.ycombinator.com/item?id=19321034).
 
 _Have comments? [Email](mailto:rachit.nigam12@gmail.com) or [tweet](https://twitter.com/notypes) at me._
