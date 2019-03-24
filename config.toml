@@ -208,6 +208,11 @@ enableGitInfo = false
     icon_pack = "fa"
     link = "//github.com/rachitnigam"
 
+  [[params.social]]
+    icon = "google-scholar"
+    icon_pack = "ai"
+    link = "//scholar.google.com/citations?user=RNL2GjEAAAAJ"
+
 
 # Navigation Links
 #   To link a homepage widget, specify the URL as a hash `#` followed by the filename of the
