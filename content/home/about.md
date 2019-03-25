@@ -16,7 +16,7 @@ weight = 5
 
 # List your qualifications (such as academic degrees).
 [[education.courses]]
-  course = "PhD in Computer"
+  course = "PhD in Computer Science"
   institution = "Cornell University"
   year = "2018 - Present"
 
