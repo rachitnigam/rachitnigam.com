@@ -83,5 +83,4 @@ _Have comments? [Email](mailto:rachit.nigam12@gmail.com) or [tweet](https://twit
 
 [^1]: This is the answer I gave to [Emery Berger](https://emeryberger.com/) when he asked me the same question.
 
-[^2]: Reading the "Acknowledgements" sections in PhD dissertations is a preferred
-pass time of mine.
+[^2]: Reading the "Acknowledgements" sections in PhD dissertations is a preferred pass time of mine.
