@@ -74,7 +74,7 @@ school; it was the fact that I didn't want to flip the coin again.
 
 Finally, I will end with this quote from my undergraduate advisor's [dissertation](https://repository.library.brown.edu/studio/item/bdr:297608/) [^2]:
 
-> During a particularly trying time, Joe observedthat “Some decisions in life are so important, like picking a career or a spouse, but you can’t iterateuntil you make the right decision, so you just have to do it,” and thus inspired me to press on.
+> During a particularly trying time, Joe observed that “Some decisions in life are so important, like picking a career or a spouse, but you can’t iterate until you make the right decision, so you just have to do it,” and thus inspired me to press on.
 
 Graduate school decisions might seem hard and the processes seem random. Perhaps,
 a [leap of faith](https://en.wikipedia.org/wiki/Leap_of_faith#Kierkegaard,_Goethe,_Marx,_and_Tolstoy) is the only right choice we can make.
