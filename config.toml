@@ -237,6 +237,11 @@ enableGitInfo = false
   url = "#posts"
   weight = 3
 
+[[menu.main]]
+  name = "CV"
+  url = "/resume.pdf"
+  weight = 4
+
 #[[menu.main]]
   #name = "Projects"
   #url = "#projects"
