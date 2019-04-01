@@ -7,23 +7,18 @@ date = 2016-04-20T00:00:00
 # Order that this section will appear in.
 weight = 5
 
-# List your academic interests.
-[interests]
-  interests = [
-    "Programming Languages",
-    "Hardware Programming"
-  ]
+# Recent News
+[[news]]
+  date = "March 2019"
+  content = "I volunteered for the PLDI 2019 [Artifact Evaluation Committee](https://pldi19.sigplan.org/committee/pldi-2019-pldi-research-artifacts-artifact-evaluation-committee)."
 
-# List your qualifications (such as academic degrees).
-[[education.courses]]
-  course = "PhD in Computer Science"
-  institution = "Cornell University"
-  year = "2018 - Present"
+[[news]]
+  date = "Nov 2018"
+  content = "I am a student volunteer at [OOPSLA 2018](https://conf.researchr.org/track/splash-2018/splash-2018-OOPSLA)."
 
-[[education.courses]]
-  course = "BSc in Computer Science"
-  institution = "University of Massachusetts Amherst"
-  year = "2015 - 2018"
+[[news]]
+  date = "May 2018"
+  content = "[Stopify](https://www.stopify.org/) will appear at [PLDI 2018](https://conf.researchr.org/home/pldi-2018)."
 
 +++
 
