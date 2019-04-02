@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>grad school on Rachit Nigam</title>
-    <link>/tags/grad-school/</link>
-    <description>Recent content in grad school on Rachit Nigam</description>
+    <title>rambling on Rachit Nigam</title>
+    <link>/tags/rambling/</link>
+    <description>Recent content in rambling on Rachit Nigam</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; Rachit Nigam 2018</copyright>
     <lastBuildDate>Sun, 31 Mar 2019 23:53:29 -0400</lastBuildDate>
     
-	<atom:link href="/tags/grad-school/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/rambling/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -22,13 +22,13 @@
     </item>
     
     <item>
-      <title>PhD @ Cornell: The Free Agent system</title>
-      <link>/post/free-agent-cornell/</link>
-      <pubDate>Sat, 15 Dec 2018 08:27:21 +0530</pubDate>
+      <title>Don&#39;t be Programming Languages researchers</title>
+      <link>/post/pl-research/</link>
+      <pubDate>Sat, 22 Sep 2018 21:52:05 -0400</pubDate>
       
-      <guid>/post/free-agent-cornell/</guid>
-      <description>Deciding which graduate school you&amp;rsquo;re going to spend the next n years of your life is one of the hardest decision of your life. One of the things that made is hard for me was deciding between Cornell and my other top choice was Cornell&amp;rsquo;s &amp;ldquo;Free agent system&amp;rdquo;. Here is a short post about what the system is and why it worked for me.
-Graduate School Admissions For most schools in the US, when you apply to a PhD program, students are usually picked out by one or more professors who think you&amp;rsquo;d be a good fit.</description>
+      <guid>/post/pl-research/</guid>
+      <description>Instead of being a judgement of what PL research should be, this short post is simply a reflection of my research interests and what role PL plays into it.
+During a recent PLDG talk, the speaker said, &amp;ldquo;I think that, as a community, PL people have a moral responsibility to step in and say, No, you&amp;rsquo;re having fun wrong!&amp;rdquo; While I have no qualms about the comment itself (researchers should be able to not take themselves seriously sometimes), it led me to think about the way PL research is applied in new domains.</description>
     </item>
     
   </channel>

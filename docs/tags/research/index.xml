@@ -30,5 +30,15 @@
       <description>I often describe the basic philosphy of research using a metaphor. I find research to be like head bashing a wall over and over till you find a way to break it and then repeating it ad nauseam. Sometimes you&amp;rsquo;ll know where the cracks in the wall are, and sometime you&amp;rsquo;ll know what angle you need to hit the wall with your head, but fundamentally, you&amp;rsquo;re hitting your head into a wall.</description>
     </item>
     
+    <item>
+      <title>Don&#39;t be Programming Languages researchers</title>
+      <link>/post/pl-research/</link>
+      <pubDate>Sat, 22 Sep 2018 21:52:05 -0400</pubDate>
+      
+      <guid>/post/pl-research/</guid>
+      <description>Instead of being a judgement of what PL research should be, this short post is simply a reflection of my research interests and what role PL plays into it.
+During a recent PLDG talk, the speaker said, &amp;ldquo;I think that, as a community, PL people have a moral responsibility to step in and say, No, you&amp;rsquo;re having fun wrong!&amp;rdquo; While I have no qualms about the comment itself (researchers should be able to not take themselves seriously sometimes), it led me to think about the way PL research is applied in new domains.</description>
+    </item>
+    
   </channel>
 </rss>
