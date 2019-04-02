@@ -5,7 +5,7 @@ date = 2018-12-15T08:27:21+05:30
 draft = false
 
 authors = []
-tags = []
+tags = ["grad school"]
 
 # Featured image
 # Place your image in the `static/img/` folder and reference its filename below, e.g. `image = "example.jpg"`.

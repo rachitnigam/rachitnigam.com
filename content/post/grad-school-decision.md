@@ -5,7 +5,7 @@ date = 2019-03-31T23:53:29-04:00
 draft = false
 
 authors = []
-tags = ["grad school"]
+tags = ["grad school", "rambling"]
 
 [header]
 image = ""

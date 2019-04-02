@@ -2,11 +2,11 @@
 title = "Don't be Programming Languages researchers"
 summary = "A pointless diatribe about PL research"
 date = 2018-09-22T21:52:05-04:00
-draft = true
+draft = false
 
 # Tags and categories
 # For example, use `tags = []` for no tags, or the form `tags = ["A Tag", "Another Tag"]` for one or more tags.
-tags = ["opinion", "research"]
+tags = ["rambling", "research"]
 categories = []
 
 # Featured image
