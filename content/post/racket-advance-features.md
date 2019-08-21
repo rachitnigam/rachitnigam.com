@@ -1,6 +1,6 @@
 +++
 title = "Advanced Racket features explained quickly"
-summary = "PL researcher peddles esoteric programming language"
+summary = "PL researcher peddles esoteric programming language."
 date = 2019-07-24T22:22:16-07:00
 draft = true
 
@@ -19,9 +19,15 @@ preview = true
 
 +++
 
-Racket is a wonderful and interesting programming language that's well worth understanding. Since Racket has a lot of interesting language concepts, I'm writing some of the ones I commonly encounter. This post assumes that you have some you are somewhat comfortable with reading s-expression syntax and a vague understanding of what the #lang racket at the top of the file means.
+Racket is a descendant of the LISP family of programming languages characterized by it's strong focus on abstractions and metaprogramming capabilities. Most blog posts on Racket tend to focus on Racket's metaprogramming capabilities but Racket also has a lot of interesting abstractions outside the macro system that make it easier to program in.
 
-This is by no means a complete introduction to Racket. The goal of the post is to introduce some interesting concepts in Racket and link to external resources for a more in depth reading.
+This post assumes that you are comfortable reading LISP's s-expression syntax
+and have some understanding of the basic constructs in the language. I
+recommend reading this [quick introduction to
+Racket](https://docs.racket-lang.org/quick/) if you want to get a sense of the
+language features.
+
+This is by no means a complete introduction to Racket. The goal of the post is to introduce these abstractions in Racket and link to external resources for a more in-depth reading.
 
 ### Macros
 
@@ -56,7 +62,7 @@ There is a lot more that Racket's macro system does. It is worth reading the mac
 
 ### Contracts
 
-Being a dynamically typed programming language, type errors in Racket (such as adding a string to a number) error at runtime. In other languages, such errors tend to be inscrutable (JavaScript's famous "undefined is not a function" comes to mind).
+Being a dynamically typed programming language, type errors in Racket (such as adding a string to a number) error at runtime. In other dynamically typed languages, such errors tend to be inscrutable (JavaScript's famous "undefined is not a function" comes to mind).
 
 To counter these issues, Racket defines two ideas: contracts and blame. A contract is a promise that a Racket unit (functions, values etc) makes to the surrounding code about some interface. Blame is Racket's mechanism of pointing at a code region that the runtime thinks broke it's own interface.
 
@@ -155,7 +161,10 @@ Here is a spec for the example: Write a program that starts 10 threads each of w
 
 ### Where to go next?
 
-Racket has a rich set of programming language features to play around with and an enthusiastic community focused on building interesting tools. Some of my personal favorites resources/libraries/languages in Racket are:'
+Racket has a rich set of programming language features to play around with and an enthusiastic community focused on building interesting tools. Some of my personal favorites resources/libraries/languages in Racket are:
 
+1. Rosette: A programming language embedded in Racket for building program synthesis and verification tools.
+
+2.
 
 _Have comments? [Email](mailto:rachit.nigam12@gmail.com) or [tweet](https://twitter.com/notypes) at me._
