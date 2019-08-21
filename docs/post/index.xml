@@ -13,21 +13,12 @@
     
     
     <item>
-      <title>How I flipped a coin to decide on my grad school</title>
-      <link>/post/grad-school-decision/</link>
-      <pubDate>Sun, 31 Mar 2019 23:53:29 -0400</pubDate>
-      
-      <guid>/post/grad-school-decision/</guid>
-      <description>So you decided to do a PhD, applied to a few schools, and visited schools you got accepted to now. Now comes the hard part of the process: deciding which school you&amp;rsquo;re going to spend the next 5+ years at. While I cannot provide a checklist or a simple answer, I can talk about my experience when deciding on which school I should go to and a few questions that I answered while making that decision.</description>
-    </item>
-    
-    <item>
       <title>Project Management for PhD Students</title>
       <link>/post/project-management/</link>
       <pubDate>Sun, 03 Mar 2019 22:10:39 -0500</pubDate>
       
       <guid>/post/project-management/</guid>
-      <description>Collaborations in systems research is how I&amp;rsquo;ve built some of the best tools in my research. A larger teams means an expanded vision and being able to pursue more ambitious ideas but it also incurs an overhead &amp;ndash; team management. Effectively managing a team and keeping all team members up to date can be stressful and a daunting task. I think one way to approaching management tasks is by asking a few concrete questions:</description>
+      <description>PhD student considers pivoting to mangerial positions.</description>
     </item>
     
     <item>
@@ -36,7 +27,7 @@
       <pubDate>Wed, 19 Dec 2018 07:20:00 +0530</pubDate>
       
       <guid>/post/learn-to-fail/</guid>
-      <description>I often describe the basic philosphy of research using a metaphor. I find research to be like head bashing a wall over and over till you find a way to break it and then repeating it ad nauseam. Sometimes you&amp;rsquo;ll know where the cracks in the wall are, and sometime you&amp;rsquo;ll know what angle you need to hit the wall with your head, but fundamentally, you&amp;rsquo;re hitting your head into a wall.</description>
+      <description>Naive PhD student explains how to succeed at research.</description>
     </item>
     
     <item>
@@ -45,8 +36,7 @@
       <pubDate>Sat, 15 Dec 2018 08:27:21 +0530</pubDate>
       
       <guid>/post/free-agent-cornell/</guid>
-      <description>Deciding which graduate school you&amp;rsquo;re going to spend the next n years of your life is one of the hardest decision of your life. One of the things that made is hard for me was deciding between Cornell and my other top choice was Cornell&amp;rsquo;s &amp;ldquo;Free agent system&amp;rdquo;. Here is a short post about what the system is and why it worked for me.
-Graduate School Admissions For most schools in the US, when you apply to a PhD program, students are usually picked out by one or more professors who think you&amp;rsquo;d be a good fit.</description>
+      <description>PhD student tries to justify his life choices.</description>
     </item>
     
     <item>
@@ -55,8 +45,7 @@ Graduate School Admissions For most schools in the US, when you apply to a PhD p
       <pubDate>Sat, 22 Sep 2018 21:52:05 -0400</pubDate>
       
       <guid>/post/pl-research/</guid>
-      <description>Instead of being a judgement of what PL research should be, this short post is simply a reflection of my research interests and what role PL plays into it.
-During a recent PLDG talk, the speaker said, &amp;ldquo;I think that, as a community, PL people have a moral responsibility to step in and say, No, you&amp;rsquo;re having fun wrong!&amp;rdquo; While I have no qualms about the comment itself (researchers should be able to not take themselves seriously sometimes), it led me to think about the way PL research is applied in new domains.</description>
+      <description>A pointless diatribe about PL research</description>
     </item>
     
   </channel>

@@ -7,18 +7,10 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; Rachit Nigam 2018</copyright>
+    <lastBuildDate>Sun, 03 Mar 2019 22:10:39 -0500</lastBuildDate>
     
 	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>grad school</title>
-      <link>/tags/grad-school/</link>
-      <pubDate>Sun, 31 Mar 2019 23:53:29 -0400</pubDate>
-      
-      <guid>/tags/grad-school/</guid>
-      <description></description>
-    </item>
     
     <item>
       <title>management</title>
@@ -30,20 +22,29 @@
     </item>
     
     <item>
-      <title>rambling</title>
-      <link>/tags/rambling/</link>
-      <pubDate>Sun, 31 Mar 2019 23:53:29 -0400</pubDate>
-      
-      <guid>/tags/rambling/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>research</title>
       <link>/tags/research/</link>
       <pubDate>Sun, 03 Mar 2019 22:10:39 -0500</pubDate>
       
       <guid>/tags/research/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>grad school</title>
+      <link>/tags/grad-school/</link>
+      <pubDate>Sat, 15 Dec 2018 08:27:21 +0530</pubDate>
+      
+      <guid>/tags/grad-school/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>rambling</title>
+      <link>/tags/rambling/</link>
+      <pubDate>Sat, 22 Sep 2018 21:52:05 -0400</pubDate>
+      
+      <guid>/tags/rambling/</guid>
       <description></description>
     </item>
     

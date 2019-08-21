@@ -7,19 +7,10 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; Rachit Nigam 2018</copyright>
-    <lastBuildDate>Sun, 31 Mar 2019 23:53:29 -0400</lastBuildDate>
+    <lastBuildDate>Sat, 22 Sep 2018 21:52:05 -0400</lastBuildDate>
     
 	<atom:link href="/tags/rambling/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>How I flipped a coin to decide on my grad school</title>
-      <link>/post/grad-school-decision/</link>
-      <pubDate>Sun, 31 Mar 2019 23:53:29 -0400</pubDate>
-      
-      <guid>/post/grad-school-decision/</guid>
-      <description>So you decided to do a PhD, applied to a few schools, and visited schools you got accepted to now. Now comes the hard part of the process: deciding which school you&amp;rsquo;re going to spend the next 5+ years at. While I cannot provide a checklist or a simple answer, I can talk about my experience when deciding on which school I should go to and a few questions that I answered while making that decision.</description>
-    </item>
     
     <item>
       <title>Don&#39;t be Programming Languages researchers</title>
@@ -27,8 +18,7 @@
       <pubDate>Sat, 22 Sep 2018 21:52:05 -0400</pubDate>
       
       <guid>/post/pl-research/</guid>
-      <description>Instead of being a judgement of what PL research should be, this short post is simply a reflection of my research interests and what role PL plays into it.
-During a recent PLDG talk, the speaker said, &amp;ldquo;I think that, as a community, PL people have a moral responsibility to step in and say, No, you&amp;rsquo;re having fun wrong!&amp;rdquo; While I have no qualms about the comment itself (researchers should be able to not take themselves seriously sometimes), it led me to think about the way PL research is applied in new domains.</description>
+      <description>A pointless diatribe about PL research</description>
     </item>
     
   </channel>
