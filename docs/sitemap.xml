@@ -4,6 +4,15 @@
     
     <url>
     
+      <loc>/tags/management/</loc>
+      <lastmod>2019-03-03T22:10:39-05:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
       <loc>/post/project-management/</loc>
       <lastmod>2019-03-03T22:10:39-05:00</lastmod>
     </url>
@@ -15,27 +24,6 @@
     
       <loc>/</loc>
       <lastmod>2019-03-03T22:10:39-05:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    
-    <url>
-    
-      <loc>/tags/</loc>
-      <lastmod>2019-03-03T22:10:39-05:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    
-    <url>
-    
-      <loc>/tags/management/</loc>
-      <lastmod>2019-03-03T22:10:39-05:00</lastmod>
-      <priority>0</priority>
     </url>
     
   
@@ -45,7 +33,15 @@
     
       <loc>/tags/research/</loc>
       <lastmod>2019-03-03T22:10:39-05:00</lastmod>
-      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>/tags/</loc>
+      <lastmod>2019-03-03T22:10:39-05:00</lastmod>
     </url>
     
   
@@ -62,7 +58,7 @@
     
     <url>
     
-      <loc>/post/free-agent-cornell/</loc>
+      <loc>/tags/grad-school/</loc>
       <lastmod>2018-12-15T08:27:21+05:30</lastmod>
     </url>
     
@@ -71,9 +67,8 @@
     
     <url>
     
-      <loc>/tags/grad-school/</loc>
+      <loc>/post/free-agent-cornell/</loc>
       <lastmod>2018-12-15T08:27:21+05:30</lastmod>
-      <priority>0</priority>
     </url>
     
   
@@ -92,7 +87,6 @@
     
       <loc>/tags/rambling/</loc>
       <lastmod>2018-09-22T21:52:05-04:00</lastmod>
-      <priority>0</priority>
     </url>
     
   
@@ -137,7 +131,6 @@
     <url>
     
       <loc>/categories/</loc>
-      <priority>0</priority>
     </url>
     
   
