@@ -6,8 +6,17 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; Rachit Nigam 2018</copyright>
-    <lastBuildDate>Sun, 03 Mar 2019 22:10:39 -0500</lastBuildDate>
+    <lastBuildDate>Tue, 03 Sep 2019 16:44:36 -0400</lastBuildDate>
     <atom:link href="/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Predictable Accelerator Design</title>
+      <link>/publication/dahlia/</link>
+      <pubDate>Tue, 03 Sep 2019 16:44:36 -0400</pubDate>
+      
+      <guid>/publication/dahlia/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Project Management for PhD Students</title>
