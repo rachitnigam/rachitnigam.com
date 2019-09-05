@@ -10,7 +10,7 @@ weight = 5
 # Recent News
 [[news]]
   date = "Sep 2019"
-  content = "I gave an invited talk on Dahlia to the Princeton Architecture and Programming languages groups."
+  content = "I gave an invited talk on Dahlia at Princeton."
 [[news]]
   date = "May 2019"
   content = "I was an research intern at [Facebook Reality Labs](https://www.facebook.com/careers/areas-of-work/facebookrealitylabs/?teams[0]=Facebook%20Reality%20Labs<Paste>)."

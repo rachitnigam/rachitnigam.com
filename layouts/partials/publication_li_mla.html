@@ -4,8 +4,7 @@
   <i class="fa fa-file-text-o pub-icon" aria-hidden="true"></i>
   <a href="{{ .Permalink }}" itemprop="name">
     {{ .Title  }}
-    {{- if .Params.subtitle -}}
-      : {{ .Params.subtitle }}
+    {{- if .Params.subtitle -}} &nbsp{{ .Params.subtitle }}
     {{- end -}}
   </a>
 
