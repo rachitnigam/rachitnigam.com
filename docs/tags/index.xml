@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Rachit Nigam</title>
@@ -7,26 +7,16 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; Rachit Nigam 2018</copyright>
-    <lastBuildDate>Sun, 08 Sep 2019 01:02:42 -0400</lastBuildDate>
     
 	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>personal</title>
-      <link>/tags/personal/</link>
-      <pubDate>Sun, 08 Sep 2019 01:02:42 -0400</pubDate>
+      <title>grad school</title>
+      <link>/tags/grad-school/</link>
+      <pubDate>Sat, 15 Dec 2018 08:27:21 +0530</pubDate>
       
-      <guid>/tags/personal/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>rambling</title>
-      <link>/tags/rambling/</link>
-      <pubDate>Sun, 08 Sep 2019 01:02:42 -0400</pubDate>
-      
-      <guid>/tags/rambling/</guid>
+      <guid>/tags/grad-school/</guid>
       <description></description>
     </item>
     
@@ -40,20 +30,20 @@
     </item>
     
     <item>
+      <title>rambling</title>
+      <link>/tags/rambling/</link>
+      <pubDate>Sat, 22 Sep 2018 21:52:05 -0400</pubDate>
+      
+      <guid>/tags/rambling/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>research</title>
       <link>/tags/research/</link>
       <pubDate>Sun, 03 Mar 2019 22:10:39 -0500</pubDate>
       
       <guid>/tags/research/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>grad school</title>
-      <link>/tags/grad-school/</link>
-      <pubDate>Sat, 15 Dec 2018 08:27:21 +0530</pubDate>
-      
-      <guid>/tags/grad-school/</guid>
       <description></description>
     </item>
     

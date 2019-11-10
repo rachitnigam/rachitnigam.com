@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Rachit Nigam on Rachit Nigam</title>
@@ -6,24 +7,502 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; Rachit Nigam 2018</copyright>
-    <lastBuildDate>Sun, 08 Sep 2019 01:02:42 -0400</lastBuildDate>
+    <lastBuildDate>Wed, 20 Apr 2016 00:00:00 -0400</lastBuildDate>
     <atom:link href="/" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>Blog Posts</title>
-      <link>/post/</link>
-      <pubDate>Sun, 01 Jan 2017 00:00:00 -0500</pubDate>
+      <title>Predictable Accelerator Design</title>
+      <link>/publication/dahlia/</link>
+      <pubDate>Tue, 03 Sep 2019 16:44:36 -0400</pubDate>
       
-      <guid>/post/</guid>
+      <guid>/publication/dahlia/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Publications</title>
-      <link>/publication/</link>
-      <pubDate>Sun, 01 Jan 2017 00:00:00 -0500</pubDate>
+      <title>Project Management for PhD Students</title>
+      <link>/post/project-management/</link>
+      <pubDate>Sun, 03 Mar 2019 22:10:39 -0500</pubDate>
       
-      <guid>/publication/</guid>
+      <guid>/post/project-management/</guid>
+      <description>
+
+&lt;p&gt;Collaborations in systems research is how I&amp;rsquo;ve built some of the best tools
+in my research. A larger teams means an expanded vision and being able to pursue more
+ambitious ideas but it also incurs an overhead &amp;ndash; team management. Effectively
+managing a team and keeping all team members up to date can be stressful and a
+daunting task. I think one way to approaching management tasks is by asking
+a few concrete questions:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;What&amp;rsquo;s the primary channel of communication?&lt;/li&gt;
+&lt;li&gt;How often should we be meeting? What are the preparing expectations for a meeting?&lt;/li&gt;
+&lt;li&gt;How are we managing our code base? What are the expectations about code knowledge?&lt;/li&gt;
+&lt;li&gt;How are we managing our TODO items?&lt;/li&gt;
+&lt;li&gt;How should we resolve conflicts?&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The answers to these questions should evolve with a project. For example, a
+project in its prototyping stage might have no restrictions on how or where the
+code is kept but a more mature project associated with other projects or
+deployments requires careful releases.&lt;/p&gt;
+
+&lt;p&gt;The following sections answer these questions from my experience with teams.
+The answers apply for a reasonably mature project with most core infrastructure
+decisions already made (which language to use, which toolchains, etc.)&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Since I&amp;rsquo;m not the most experienced developer in the world, I would appreciate any suggestions (find my contact information at the end of the post).&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&#34;primary-communication&#34;&gt;Primary Communication&lt;/h3&gt;
+
+&lt;p&gt;This is an easy one. Teams can either use email threads or one of the dozens
+of chat applications to have conversations about the project.&lt;/p&gt;
+
+&lt;p&gt;The benefit of using a emails is that the team can keep track of individual
+threads of conversations easily. However, with multiple projects, this might
+get unwieldy.&lt;/p&gt;
+
+&lt;p&gt;Chat apps, on the other hand, make it really quick and easy to communicate with
+the team but are usually bad at maintaining separate threads of conversations
+cleanly.&lt;/p&gt;
+
+&lt;p&gt;The choice of the primary communication is often already constrained by group
+preferences so this is usually a straightforward decision.&lt;/p&gt;
+
+&lt;p&gt;As a side note, team members should try to have long conversations in person.
+Text based mediums make it really hard to accurately convey emotions and it
+is easy to misread an offhand comment as being aggressive (I&amp;rsquo;ve certainly been
+guilty of this!)&lt;/p&gt;
+
+&lt;h3 id=&#34;meetings&#34;&gt;Meetings&lt;/h3&gt;
+
+&lt;p&gt;Meetings act as a synchronization point for the entire team and require some amount
+of preparation. I suggest having at least two team meetings every week, one
+with your advisor (main meeting) and one without them (student meeting).&lt;/p&gt;
+
+&lt;h4 id=&#34;main-meeting&#34;&gt;Main meeting&lt;/h4&gt;
+
+&lt;p&gt;For the main meeting, every student should be prepared with the following:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;A short weekly update.&lt;/li&gt;
+&lt;li&gt;Technical challenges faced during the assigned task.&lt;/li&gt;
+&lt;li&gt;Questions or gotchas found during the assigned the task.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;At the end of the main meeting, each student should leave with:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;At least one assigned task for the week. This can be a paper to read and explain, feature to implement, or a theorem to prove.&lt;/li&gt;
+&lt;li&gt;A good sense of where to look for answers to their questions.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;A lot of students (myself included) struggle with prioritizing tasks. Students
+involved in research have tons of unstructured time which is not utilized
+effectively without a good plan. Assigned tasks help me focus on a task that
+I need to get done every week.&lt;/p&gt;
+
+&lt;p&gt;Concretely, I try every week to either complete the tasks assigned to me or
+have technical questions that are blocking me ready for the meeting.&lt;/p&gt;
+
+&lt;h4 id=&#34;student-meeting&#34;&gt;Student meeting&lt;/h4&gt;
+
+&lt;p&gt;The student meetings are more informal and are meant for in depth discussions
+about small issues that team members are facing in completing their tasks.&lt;/p&gt;
+
+&lt;h3 id=&#34;codebases&#34;&gt;Codebases&lt;/h3&gt;
+
+&lt;p&gt;If you&amp;rsquo;re working on an applied systems project chances are you are building
+a software artifact. Regardless of how many people are writing code, it is useful to
+check in the code into &lt;a href=&#34;https://en.wikipedia.org/wiki/Version_control&#34; rel=&#34;noreferrer&#34; target=&#34;_blank&#34;&gt;source
+control&lt;/a&gt;. This makes the code
+publicly viewable and commentable by the team members.&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;The high-level principle behind these guidelines is to minimize the number of locations where critical information such as feature discussions are kept.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Since I primarily use &lt;a href=&#34;https://git-scm.com/&#34; rel=&#34;noreferrer&#34; target=&#34;_blank&#34;&gt;git&lt;/a&gt; and &lt;a href=&#34;https://github.com/rachitnigam&#34; rel=&#34;noreferrer&#34; target=&#34;_blank&#34;&gt;Github&lt;/a&gt;, the following guidelines assume your
+project is Github-based. When working on a artifact, I have the following
+expectations with team members:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;The project leaders (graduate students or senior undergrads) should have a
+good sense of what is going on with every aspect of the codebase. This means
+having a high-level understanding of all pull requests and issue discussions.&lt;/li&gt;
+&lt;li&gt;Use &lt;a href=&#34;https://help.github.com/en/articles/about-pull-requests&#34; rel=&#34;noreferrer&#34; target=&#34;_blank&#34;&gt;pull requests&lt;/a&gt;
+and &lt;a href=&#34;https://help.github.com/en/articles/about-branches&#34; rel=&#34;noreferrer&#34; target=&#34;_blank&#34;&gt;branches&lt;/a&gt;. Working
+on big features on a separate branch allows other people to work in parallel
+while leaving the code in a buildable state. Pull requests are a great way
+to get the team&amp;rsquo;s attention on a big change and center discussions around it.&lt;/li&gt;
+&lt;li&gt;Keep the git history clean by using &lt;code&gt;git pull -r&lt;/code&gt; and
+&lt;a href=&#34;https://help.github.com/en/articles/about-git-rebase&#34; rel=&#34;noreferrer&#34; target=&#34;_blank&#34;&gt;rebasing&lt;/a&gt; instead of
+merging.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;todo-list&#34;&gt;TODO List&lt;/h3&gt;
+
+&lt;p&gt;Since most of my projects revolve around a software artifact, most of which
+are on &lt;a href=&#34;https://github.com/rachitnigam&#34; rel=&#34;noreferrer&#34; target=&#34;_blank&#34;&gt;Github&lt;/a&gt;, I use Github issues as
+a tracking list. Other people I have worked with also use &lt;a href=&#34;https://trello.com/&#34; rel=&#34;noreferrer&#34; target=&#34;_blank&#34;&gt;Trello&lt;/a&gt; or one of the dozens of TODO apps.&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;The todo list should make it easy to create tasks and have discussions around them and also allow team members to see who is working on what.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;During the development phase of the project, I ask the team to use
+issues liberally. The term &amp;ldquo;global tracker&amp;rdquo; refers to the high level view of
+all todo items. On Github, this is simply the issues page.&lt;/p&gt;
+
+&lt;p&gt;Largely, I divide issues into three categories:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Trackers&lt;/strong&gt;. Trackers are a collection of smaller issues that logically belong
+together but might pollute the global tracker. Use these for reading lists,
+benchmark status, and low priority tasks. &lt;a href=&#34;https://github.com/cucapra/seashell/issues?utf8=%E2%9C%93&amp;amp;q=is%3Aissue+label%3ATracker+&#34; rel=&#34;noreferrer&#34; target=&#34;_blank&#34;&gt;Example&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Proposal&lt;/strong&gt;. Proposal are the heart of the global tracker. Use proposals to
+discuss system features, implementation sketches, or big bugs.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Miscellaneous&lt;/strong&gt;: These include questions or small bugs. These should be
+high frequency, i.e. created liberally, and answered quickly.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;conflict-resolution&#34;&gt;Conflict resolution&lt;/h3&gt;
+
+&lt;p&gt;This is an often overlooked dimension of team dynamics. Research projects can
+often be stressful, especially since students tend to be ambitious and prone
+to overworking. Since this process so highly dependent on the team members
+and project leads, my guideline can only be personalized for me.&lt;/p&gt;
+
+&lt;p&gt;If a team member feels under too much pressure to do something or dislikes
+someone&amp;rsquo;s personal behavior, they can either directly contact the person or
+ask one of the team leads to mediate. While daunting, it is much better in the
+long run to have frank discussions about team expectations and stresses instead
+of letting things get worse.&lt;/p&gt;
+
+&lt;h3 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h3&gt;
+
+&lt;p&gt;While there are several industrial strength methodologies for team managements,
+I like having a much more lightweight team management style. A lot of research
+is about exploring new ideas and pursuing crazy ideas. Regardless of which
+guidelines you choose to follow, they should not take away the joy of programming
+or research!&lt;/p&gt;
+
+&lt;p&gt;Discussion on &lt;a href=&#34;https://news.ycombinator.com/item?id=19321034&#34; rel=&#34;noreferrer&#34; target=&#34;_blank&#34;&gt;HackerNews&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Have comments? &lt;a href=&#34;mailto:rachit.nigam12@gmail.com&#34; rel=&#34;noreferrer&#34; target=&#34;_blank&#34;&gt;Email&lt;/a&gt; or &lt;a href=&#34;https://twitter.com/notypes&#34; rel=&#34;noreferrer&#34; target=&#34;_blank&#34;&gt;tweet&lt;/a&gt; at me.&lt;/em&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Learning to Fail</title>
+      <link>/post/learn-to-fail/</link>
+      <pubDate>Wed, 19 Dec 2018 07:20:00 +0530</pubDate>
+      
+      <guid>/post/learn-to-fail/</guid>
+      <description>
+
+&lt;p&gt;I often describe the basic philosphy of research using a metaphor.  I find
+research to be like head bashing a wall over and over till you find a way to
+break it and then repeating it ad nauseam.  Sometimes you&amp;rsquo;ll know where the
+cracks in the wall are, and sometime you&amp;rsquo;ll know what angle you need to hit the
+wall with your head, but fundamentally, you&amp;rsquo;re hitting your head into a wall.&lt;/p&gt;
+
+&lt;p&gt;This might not be a precise description of how research works for everyone, but
+my views are shaped by my experience at research and other researchers who
+surround me. The single most important take away I&amp;rsquo;ve learned from these is
+to expect failure and to work hard regardless. These two things are not always
+easy to do.&lt;/p&gt;
+
+&lt;p&gt;To illustrate my viewpoint, and to demonstrate how I became such a tortured
+soul, here&amp;rsquo;s a run down of my experience as an undergraduate researcher:&lt;/p&gt;
+
+&lt;h4 id=&#34;spring-2016&#34;&gt;Spring 2016&lt;/h4&gt;
+
+&lt;p&gt;I reached out a my undergraduate advisor in my first semester after being
+fascinated with scheme &lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;. After some back and forth, I quickly started
+a project. The project was to build a formal semantics for bash scripts. The
+bash specification is large and complicated with a lot of subtle interactions.
+The particular phase we were interested in formalizing were the bash shell
+&lt;a href=&#34;https://www.gnu.org/software/bash/manual/html_node/Shell-Expansions.html&#34; rel=&#34;noreferrer&#34; target=&#34;_blank&#34;&gt;expansions&lt;/a&gt;. We tried to build a Hoare logic style semantics for the expansion, because
+we wanted to ultimately verify properties of these shell scripts. Unfortunately,
+I showed that such a semantics becomes super complicated and we abandoned the
+project &lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;. A few weeks into research and I had already failed a project.&lt;/p&gt;
+
+&lt;h4 id=&#34;summer-2016&#34;&gt;Summer 2016&lt;/h4&gt;
+
+&lt;p&gt;I came back for the summer and started working on a new, and slightly related
+project. The idea was to extend previous work on &lt;a href=&#34;https://people.cs.umass.edu/~arjun/papers/2016-rehearsal.html&#34; rel=&#34;noreferrer&#34; target=&#34;_blank&#34;&gt;verifying Puppet
+manifests&lt;/a&gt; to
+capture the semantics of snippets of shell programs people write into their
+Puppet manifests. The previous work had modeled Puppet programs using a
+small core calculus based on a Kleene Algebra with Tests (&lt;a href=&#34;https://www.cs.cornell.edu/~kozen/Papers/kat.pdf&#34; rel=&#34;noreferrer&#34; target=&#34;_blank&#34;&gt;KAT&lt;/a&gt;) and we wanted to create an active learning
+mechanism to learn the underlying automaton by running the shell script in
+a docker container.&lt;/p&gt;
+
+&lt;p&gt;Unfortunately, I didn&amp;rsquo;t have a lot of background in either automata theory or
+the low level details of system call tracing (which was the core mechanism to
+figure out what system calls were being used). I spent half of the summer
+jumping back and forth between learning about automata theory and systems and
+implementing papers without much to show for it. While I didn&amp;rsquo;t know this
+at the time, this project also fizzled out around this time.&lt;/p&gt;
+
+&lt;p&gt;The reason the project fizzled out was because I joined another students
+project that had to do with automatically synthesizing updates for Puppet
+manifests by capturing system calls &lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:3&#34;&gt;&lt;a href=&#34;#fn:3&#34;&gt;3&lt;/a&gt;&lt;/sup&gt;. I worked on this project for the rest
+of the summer.&lt;/p&gt;
+
+&lt;h4 id=&#34;fall-2016&#34;&gt;Fall 2016&lt;/h4&gt;
+
+&lt;p&gt;As the summer ended, my advisor proposed joining Fission, another project that
+I had been interested in from the start of my summer. This project aimed to
+build a single-tiered, secure programming model for writing web applications.
+People on the project had built a frontend that could take JavaScript code and
+compile it into something that could enforces security conditions.
+Around the same time, the Puppet synthesis project slowed down because the
+first author was applying to graduate schools and I was focusing more on
+Fission.  Eventually, I stopped working on this project entirely and even
+though it was eventually published.&lt;/p&gt;
+
+&lt;p&gt;To cap off the depressing string of half completed projects, it was around this
+time I actually had minor clinical depression and my productivity collapsed. After
+attending &lt;a href=&#34;https://conf.researchr.org/home/icfp-2016&#34; rel=&#34;noreferrer&#34; target=&#34;_blank&#34;&gt;ICFP &amp;lsquo;16&lt;/a&gt; I decided to
+start therapy to &amp;ldquo;fix&amp;rdquo; my clinical depression &lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:4&#34;&gt;&lt;a href=&#34;#fn:4&#34;&gt;4&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
+
+&lt;p&gt;Meanwhile, we also published a &lt;a href=&#34;http://drops.dagstuhl.de/opus/volltexte/2017/7124/pdf/LIPIcs-SNAPL-2017-5.pdf&#34; rel=&#34;noreferrer&#34; target=&#34;_blank&#34;&gt;workshop
+paper&lt;/a&gt;
+on Fission. Unfortunately, after several rewrites of the compiler, people
+leaving the project, and fundamental performance issues, it was becoming
+painfully clear that Fission would not pan out.&lt;/p&gt;
+
+&lt;p&gt;If you&amp;rsquo;re not keeping track, it&amp;rsquo;s &lt;sup&gt;3&lt;/sup&gt;&amp;frasl;&lt;sub&gt;3&lt;/sub&gt; for failed projects.&lt;/p&gt;
+
+&lt;h4 id=&#34;spring-2017&#34;&gt;Spring 2017&lt;/h4&gt;
+
+&lt;p&gt;While making slow progress on Fission, my advisor asked a new question, &amp;ldquo;What
+would it take to build a client-side IDE?&amp;ldquo;. In order to build this IDE, we
+started investigating different compiler frameworks for JavaScript. We built
+multiple passes to simplify JavaScript constructs and around the same time, another
+graduate student joined the project. This spring was perhaps the most productive
+semester of my undergraduate research career. I had gained enough technical
+and programming chops to push on the project without hands-on support. By the
+end of this semester, we had managed to build an IDE and give a talk about it.&lt;/p&gt;
+
+&lt;h4 id=&#34;afterward&#34;&gt;Afterward&lt;/h4&gt;
+
+&lt;p&gt;I kept pushing on this project with the grad student and published a paper
+in &lt;a href=&#34;https://conf.researchr.org/home/pldi-2018&#34; rel=&#34;noreferrer&#34; target=&#34;_blank&#34;&gt;PLDI &amp;lsquo;18&lt;/a&gt;. I also applied to
+graduate schools and decided to start my PhD at Cornell.&lt;/p&gt;
+
+&lt;p&gt;In hindsight, there are several important things I came to appreciate about
+my undergraduate research:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;While I failed for more than a year, I learned &lt;em&gt;a lot&lt;/em&gt;. The finite model
+theory I learned in my first summer is seeing use in my current research. The
+amount of implementation work I did made me good at rapid prototyping and
+debugging.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;The infectious optimism of my advisor kept me going through all the failures.
+In hindsight, perhaps the most important piece of advice he gave me was,
+&amp;ldquo;You&amp;rsquo;ll figure it out!&amp;rdquo;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Another thing I learned from my advisor was that sticking to a research agenda,
+even when things look absymal, is the way to make progress.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Finally, I learned that researchers are completely unproductive when they&amp;rsquo;re sad.
+Concretely, this means that I shy away from projects where I&amp;rsquo;m the only student.
+Surrounding myself with people I like to work with and can bounce ideas with
+is how I make progress.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The way I summarized these ideas to a friend was that research sometimes
+requires a religious amount of faith and hard work before you can see any progress.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Have comments? &lt;a href=&#34;mailto:rachit.nigam12@gmail.com&#34; rel=&#34;noreferrer&#34; target=&#34;_blank&#34;&gt;Email&lt;/a&gt; or &lt;a href=&#34;https://twitter.com/notypes&#34; rel=&#34;noreferrer&#34; target=&#34;_blank&#34;&gt;tweet&lt;/a&gt; at me.&lt;/em&gt;&lt;/p&gt;
+&lt;div class=&#34;footnotes&#34;&gt;
+
+&lt;hr /&gt;
+
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34;&gt;Yes, I am a walking PL cliché.
+ &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:1&#34;&gt;&lt;sup&gt;↩&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li id=&#34;fn:2&#34;&gt;Michael Greenberg, one of our collaborators continued working on this and has come up with some &lt;a href=&#34;http://www.cs.pomona.edu/~michael/papers/px2018.pdf&#34; rel=&#34;noreferrer&#34; target=&#34;_blank&#34;&gt;nice results&lt;/a&gt;.
+ &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:2&#34;&gt;&lt;sup&gt;↩&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li id=&#34;fn:3&#34;&gt;This eventually became a &lt;a href=&#34;https://aaronweiss.us/pubs/ase17.pdf&#34; rel=&#34;noreferrer&#34; target=&#34;_blank&#34;&gt;paper&lt;/a&gt;.
+ &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:3&#34;&gt;&lt;sup&gt;↩&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li id=&#34;fn:4&#34;&gt;Researchers are people who sometimes work extraordinarily hard at the expense of their own health. It is important to realize that your work is significantly less important that your health.
+ &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:4&#34;&gt;&lt;sup&gt;↩&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>PhD @ Cornell: The Free Agent system</title>
+      <link>/post/free-agent-cornell/</link>
+      <pubDate>Sat, 15 Dec 2018 08:27:21 +0530</pubDate>
+      
+      <guid>/post/free-agent-cornell/</guid>
+      <description>
+
+&lt;p&gt;Deciding which graduate school you&amp;rsquo;re going to spend the next &lt;em&gt;n&lt;/em&gt; years of your
+life is one of the hardest decision of your life. One of the things
+that made is hard for me was deciding between Cornell and my other
+top choice was Cornell&amp;rsquo;s &amp;ldquo;Free agent system&amp;rdquo;. Here is a short post about what
+the system is and why it worked for me.&lt;/p&gt;
+
+&lt;h4 id=&#34;graduate-school-admissions&#34;&gt;Graduate School Admissions&lt;/h4&gt;
+
+&lt;p&gt;For most schools in the US, when you apply to a PhD program, students are usually
+picked out by one or more professors who think you&amp;rsquo;d be a good fit. After
+visiting the school, the student decides which professor they want to work with
+and commit to the school. When the student starts at the school, they are
+funded by the professor and they start doing great things together. However,
+some schools don&amp;rsquo;t follow this system.&lt;/p&gt;
+
+&lt;h4 id=&#34;cornell-s-free-agent-system&#34;&gt;Cornell&amp;rsquo;s Free Agent System&lt;/h4&gt;
+
+&lt;p&gt;At Cornell, and a few other schools, the admission process looks a bit
+different.  When a PhD student is admitted to Cornell, they are are &lt;em&gt;admitted
+to the department&lt;/em&gt;, which highlights Cornell&amp;rsquo;s commitment towards the student&amp;rsquo;s
+academic freedom. Concretely, this means that Cornell guarantees funding,
+usually through teaching assistantship, for the student without tying them to
+an advisor [^1].  This is supposed to allow the students to explore and talk to
+potential advisors without being worried about funding. This is the Free Agent
+system at Cornell. Students are free agents till they decide who they want to
+work with.&lt;/p&gt;
+
+&lt;h4 id=&#34;the-problem&#34;&gt;The Problem&lt;/h4&gt;
+
+&lt;p&gt;Cornell&amp;rsquo;s free agent system was devised when the department was young and the
+incoming PhD students tended to have comparatively less research experience.
+The free agent system allowed students to explore different areas without
+being pressured into working on topics they might disliked. However, in the recent
+years, the makeup of people applying to PhD programs has drastically changed &amp;mdash;
+students tend to come in with a lot more research experience and are usually
+quite certain about the area they want to work in.&lt;/p&gt;
+
+&lt;p&gt;Furthermore, the CS department is also structured in a way that assumes
+students are free agents their first year. This means that they are expected to
+&lt;del&gt;take a lot of classes and&lt;/del&gt; [^1] be teaching assistants (TAs) in their first
+two semesters.&lt;/p&gt;
+
+&lt;h4 id=&#34;my-experience&#34;&gt;My Experience&lt;/h4&gt;
+
+&lt;p&gt;The free agent system caused me a lot of angst during the decision process. For
+some background, I had started doing programming languages (PL) research in the
+first semester of my undergraduate degree and was certain about my future research
+direction. Furthermore, I knew that Cornell was the best fit for my interest in
+doing PL work at the intersection of other fields.&lt;/p&gt;
+
+&lt;p&gt;Unfortunately, I was also afraid of not being able to find an advisor. After
+about 6 hours of post visit day talks with professors and students in the PL
+group, I decided to go to Cornell. Even after my acceptance, I wasn&amp;rsquo;t sure if
+I&amp;rsquo;d be able to find an advisor.&lt;/p&gt;
+
+&lt;p&gt;When I started in Fall, I emailed professors in the PL group to set up
+meetings. This is where I found the true strength of the free agent system.
+Since professors expect students to go talk to a lot of people, they expect and
+often encourage students to do research rotations with professors they are
+interested in working with.&lt;/p&gt;
+
+&lt;p&gt;It also makes it easy to reach out to professors and learn about their work. I
+cannot emphasize how important it is to me to learn about and have
+conversations about research in different domains. One of my goals going into a
+PhD is to have a broad sense of the different kinds of problems in different
+domains and having access to professors in different areas makes it easy to do
+so.&lt;/p&gt;
+
+&lt;p&gt;I was also able to start working with my awesome advisor &lt;a href=&#34;https://www.cs.cornell.edu/~asampson/&#34; rel=&#34;noreferrer&#34; target=&#34;_blank&#34;&gt;Adrian
+Sampson&lt;/a&gt; and we quickly found a project
+I&amp;rsquo;m passionate about.&lt;/p&gt;
+
+&lt;h4 id=&#34;caveat-emptor&#34;&gt;Caveat Emptor&lt;/h4&gt;
+
+&lt;p&gt;While the free agent system caused me some anguish in the decision process, it
+was not the primary reason I decided join Cornell.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;My primary motivators were research that excited me, and people &lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:3&#34;&gt;&lt;a href=&#34;#fn:3&#34;&gt;1&lt;/a&gt;&lt;/sup&gt; who are
+just as excited about it as me.&lt;/li&gt;
+&lt;li&gt;The first year TAing requirement causes some amount of stress for
+new students. However, the department is aware of the issues and is
+trying to move away from this system.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Finally, here is a more &lt;a href=&#34;http://jxyzabc.blogspot.com/2009/02/some-notes-on-picking-grad.html&#34; rel=&#34;noreferrer&#34; target=&#34;_blank&#34;&gt;detailed
+post&lt;/a&gt; from
+&lt;a href=&#34;http://jeanyang.com/&#34; rel=&#34;noreferrer&#34; target=&#34;_blank&#34;&gt;Jean Yang&lt;/a&gt; on what considerations matter when deciding
+on schools. Good luck!&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Have comments? &lt;a href=&#34;mailto:rachit.nigam12@gmail.com&#34; rel=&#34;noreferrer&#34; target=&#34;_blank&#34;&gt;Email&lt;/a&gt; or &lt;a href=&#34;https://twitter.com/notypes&#34; rel=&#34;noreferrer&#34; target=&#34;_blank&#34;&gt;tweet&lt;/a&gt; at me.&lt;/em&gt;&lt;/p&gt;
+&lt;div class=&#34;footnotes&#34;&gt;
+
+&lt;hr /&gt;
+
+&lt;ol&gt;
+&lt;li id=&#34;fn:3&#34;&gt;Importantly, This includes other grad students. Remember, you&amp;rsquo;re going to be spending a lot more time with other grad students than you will with faculty.
+ &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:3&#34;&gt;&lt;sup&gt;↩&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Don&#39;t be Programming Languages researchers</title>
+      <link>/post/pl-research/</link>
+      <pubDate>Sat, 22 Sep 2018 21:52:05 -0400</pubDate>
+      
+      <guid>/post/pl-research/</guid>
+      <description>&lt;p&gt;&lt;em&gt;Instead of being a judgement of what PL research should be, this short post is
+simply a reflection of my research interests and what role PL plays into it.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;During a recent PLDG talk, the speaker said, &amp;ldquo;I think that, as a community, PL
+people have a moral responsibility to step in and say, No, you&amp;rsquo;re having fun
+wrong!&amp;rdquo; While I have no qualms about the comment itself (researchers should be
+able to not take themselves seriously sometimes), it led me to think about the
+way PL research is applied in new domains. The speaker usually starts with an
+overview of the domain and talks about the current state of the art of
+programming languages and tools in it. They then go on to point out that most
+tools and languages fail to make use of some amazing and well known PL
+technique. Then they describe their work which applies the aforementioned PL
+technique and build cool and interesting language abstractions with the promise
+of building better and improved tools for the domain.&lt;/p&gt;
+
+&lt;p&gt;While I strongly endorse PL techniques and research being applied in new
+domains, this story demonstrates a fundamental issue for me: Application of PL techniques is
+done retrospectively. PL researchers are not there when a domain is shaping up
+and people trying to build tools and programming languages for that domain.
+Only once people have made build these tools, which in turn cement
+themselves into domain, do PL researchers come into the scene and apply their
+cool techniques.&lt;/p&gt;
+
+&lt;p&gt;So here is my solution: We should stop being PL researchers. Or put in a more
+nuanced manner, PL researchers should take it upon themselves to specialize
+heavily into new domains and apply PL techniques in those domains. Programming
+languages are the most fundamental way of communicating intent to computers. As
+PL researchers, we should be helping people from other domains to do this
+exactly.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Putting in All the Stops</title>
+      <link>/publication/stopify/</link>
+      <pubDate>Thu, 28 Jun 2018 15:39:56 -0700</pubDate>
+      
+      <guid>/publication/stopify/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Fission: Secure Dynamic Code-Splitting for JavaScript</title>
+      <link>/publication/fission/</link>
+      <pubDate>Sun, 28 May 2017 17:19:29 -0700</pubDate>
+      
+      <guid>/publication/fission/</guid>
       <description></description>
     </item>
     

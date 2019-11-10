@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>research on Rachit Nigam</title>
@@ -18,7 +18,7 @@
       <pubDate>Sun, 03 Mar 2019 22:10:39 -0500</pubDate>
       
       <guid>/post/project-management/</guid>
-      <description>PhD student considers pivoting to mangerial positions.</description>
+      <description>Collaborations in systems research is how I&amp;rsquo;ve built some of the best tools in my research. A larger teams means an expanded vision and being able to pursue more ambitious ideas but it also incurs an overhead &amp;ndash; team management. Effectively managing a team and keeping all team members up to date can be stressful and a daunting task. I think one way to approaching management tasks is by asking a few concrete questions:</description>
     </item>
     
     <item>
@@ -27,7 +27,7 @@
       <pubDate>Wed, 19 Dec 2018 07:20:00 +0530</pubDate>
       
       <guid>/post/learn-to-fail/</guid>
-      <description>Naive PhD student explains how to succeed at research.</description>
+      <description>I often describe the basic philosphy of research using a metaphor. I find research to be like head bashing a wall over and over till you find a way to break it and then repeating it ad nauseam. Sometimes you&amp;rsquo;ll know where the cracks in the wall are, and sometime you&amp;rsquo;ll know what angle you need to hit the wall with your head, but fundamentally, you&amp;rsquo;re hitting your head into a wall.</description>
     </item>
     
     <item>
@@ -36,7 +36,8 @@
       <pubDate>Sat, 22 Sep 2018 21:52:05 -0400</pubDate>
       
       <guid>/post/pl-research/</guid>
-      <description>A pointless diatribe about PL research</description>
+      <description>Instead of being a judgement of what PL research should be, this short post is simply a reflection of my research interests and what role PL plays into it.
+During a recent PLDG talk, the speaker said, &amp;ldquo;I think that, as a community, PL people have a moral responsibility to step in and say, No, you&amp;rsquo;re having fun wrong!&amp;rdquo; While I have no qualms about the comment itself (researchers should be able to not take themselves seriously sometimes), it led me to think about the way PL research is applied in new domains.</description>
     </item>
     
   </channel>
