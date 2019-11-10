@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>rambling on Rachit Nigam</title>
-    <link>/tags/rambling/</link>
-    <description>Recent content in rambling on Rachit Nigam</description>
+    <title>personal on Rachit Nigam</title>
+    <link>/tags/personal/</link>
+    <description>Recent content in personal on Rachit Nigam</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; Rachit Nigam 2018</copyright>
     <lastBuildDate>Sun, 08 Sep 2019 01:02:42 -0400</lastBuildDate>
     
-	<atom:link href="/tags/rambling/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/personal/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -19,15 +19,6 @@
       
       <guid>/post/not-like-you/</guid>
       <description>A privileged student complains about immigration.</description>
-    </item>
-    
-    <item>
-      <title>Don&#39;t be Programming Languages researchers</title>
-      <link>/post/pl-research/</link>
-      <pubDate>Sat, 22 Sep 2018 21:52:05 -0400</pubDate>
-      
-      <guid>/post/pl-research/</guid>
-      <description>A pointless diatribe about PL research</description>
     </item>
     
   </channel>
