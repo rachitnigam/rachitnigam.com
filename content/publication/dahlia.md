@@ -6,7 +6,17 @@ date = 2019-09-03T16:44:36-04:00
 draft = false
 
 # Authors. Comma separated list, e.g. `["Bob Smith", "David Jones"]`.
-authors = ["Rachit Nigam", "Sachille Atapattu", "Ted Bauer", "Adrian Sampson", "Zhiru Zhang"]
+authors = [
+  "Rachit Nigam",
+  "Sachille Atapattu",
+  "Samuel Thomas",
+  "Zhijing Li",
+  "Ted Bauer",
+  "Yuwei Yi",
+  "Apurva Koti",
+  "Adrian Sampson",
+  "Zhiru Zhang"
+]
 
 # Publication name and optional abbreviated version.
 publication = "*Under Submission*"
