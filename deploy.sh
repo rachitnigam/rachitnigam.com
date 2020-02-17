@@ -1,6 +1,6 @@
-#!/bin/zsh
+#!/bin/bash
 
-set -e
+set -euf -o pipefail
 
 current_branch=$(git branch | sed -n -e 's/^\* \(.*\)/\1/p')
 deploy_branch="master"
@@ -38,7 +38,8 @@ rm -rf public/
 hugo
 
 # If purify-css is installed as an exec, purify bootstrap.min.css
-if hash purifycss; then
+which purifycss > /dev/null
+if [ $? -eq 0 ]; then
     echo -n "purifycss was found! Running ..."
 
     CSS_FILE="./public/styles.css"
