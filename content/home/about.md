@@ -9,18 +9,21 @@ weight = 5
 
 # Recent News
 [[news]]
+  date = "March 2020"
+  content = "Member of the PLDI 2020 [Artifact Evaluation Committee](https://pldi20.sigplan.org/track/pldi-2020-PLDI-Research-Artifacts)."
+[[news]]
   date = "Sep 2019"
-  content = "I gave an invited talk on Dahlia at Princeton."
+  content = "Gave an invited talk on Dahlia at Princeton."
 [[news]]
   date = "May 2019"
-  content = "I was an research intern at [Facebook Reality Labs](https://www.facebook.com/careers/areas-of-work/facebookrealitylabs/?teams[0]=Facebook%20Reality%20Labs<Paste>)."
+  content = "Research intern at [Facebook Reality Labs](https://www.facebook.com/careers/areas-of-work/facebookrealitylabs/?teams[0]=Facebook%20Reality%20Labs)."
 [[news]]
   date = "March 2019"
-  content = "I volunteered for the PLDI 2019 [Artifact Evaluation Committee](https://pldi19.sigplan.org/committee/pldi-2019-pldi-research-artifacts-artifact-evaluation-committee)."
+  content = "Member of the PLDI 2019 [Artifact Evaluation Committee](https://pldi19.sigplan.org/committee/pldi-2019-pldi-research-artifacts-artifact-evaluation-committee)."
 
 [[news]]
   date = "Nov 2018"
-  content = "I was a student volunteer at [OOPSLA 2018](https://conf.researchr.org/track/splash-2018/splash-2018-OOPSLA)."
+  content = "Student volunteer at [OOPSLA 2018](https://conf.researchr.org/track/splash-2018/splash-2018-OOPSLA)."
 
 [[news]]
   date = "May 2018"
