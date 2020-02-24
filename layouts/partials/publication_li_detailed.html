@@ -3,45 +3,47 @@
   {{ if .Params.image_preview }}
     {{ .Scratch.Set "image" .Params.image_preview }}
   {{ else if .Params.header.image }}
-    {{ .Scratch.Set "image" .Params.header.image }}
+    {{ errorf "Missing image_preview for %s." .Title }}
   {{ end }}
 
   {{ if .Params.image_alt }}
     {{ .Scratch.Set "imageAlt" .Params.image_alt }}
   {{ else }}
-    {{ .Scratch.Set "imageAlt" "default image alt" }}
+    {{ errorf "Missing image_alt for %s." .Title }}
   {{ end }}
 
-  {{ if .Scratch.Get "image" }}
-  <div>
-    <a href="{{ .Permalink }}">
-      {{ $img_src := urls.Parse (.Scratch.Get "image") }}
-      {{ if $img_src.Scheme }}
-        <img src="{{ .Scratch.Get "image" }}" class="article-banner" itemprop="image" alt="{{ .Scratch.Get "imageAlt" }}">
-      {{ else }}
-        <img src="{{ "/img/" | relURL }}{{ .Scratch.Get "image" }}" class="article-banner" itemprop="image" alt="{{ .Scratch.Get "imageAlt" }}">
-      {{ end }}
-    </a>
-  </div>
-  {{ end }}
+  <!-- Row containing the image the title -->
+  <div class="row" style="margin-bottom: 10px;">
 
-  <a href="{{ .Permalink }}" class="article-title" itemprop="url">
-    <h3 itemprop="name" style="margin-bottom: 0.25rem;">
-      {{ .Title }}
-    </h3>
+    <div class="col-xs-3" style="padding-right: 0px; display: inline-block; vertical-align: middle; float: none;">
+        <a href="{{ .Permalink }}">
+          {{ $img_src := urls.Parse (.Scratch.Get "image") }}
+          {{ if $img_src.Scheme }}
+            <img src="{{ .Scratch.Get "image" }}" class="article-banner" itemprop="image" alt="{{ .Scratch.Get "imageAlt" }}">
+          {{ else }}
+            <img src="{{ "/img/" | relURL }}{{ .Scratch.Get "image" }}" class="article-banner" itemprop="image" alt="{{ .Scratch.Get "imageAlt" }}">
+          {{ end }}
+        </a>
+    </div>
 
-    {{ if .Params.subtitle }}
-    <h4 style="margin-top: 0rem;"> {{ .Params.subtitle }} </h4>
-    {{ end }}
-  </a>
+    <div class="col-xs-8" style="display: inline-block; vertical-align: middle; float: none;">
+      <a href="{{ .Permalink }}" class="article-title" itemprop="url">
+        <h4 itemprop="name">
+        {{ .Title }}
 
-
-  <div class="pub-abstract" itemprop="text">
-    {{ if .Params.abstract_short }}
-      {{ .Params.abstract_short | markdownify }}
-    {{ else }}
-      {{ .Params.abstract | markdownify}}
-    {{ end }}
+        {{ if .Params.subtitle }}
+         {{ .Params.subtitle }}
+        {{ end }}
+        </h4>
+      </a>
+      <p class="pub-abstract" itemprop="text" style="line-height: 1.2rem;">
+        {{ if .Params.abstract_short }}
+          {{ .Params.abstract_short | markdownify }}
+        {{ else }}
+          {{ .Params.abstract | markdownify}}
+        {{ end }}
+      </p>
+    </div>
   </div>
 
   <div class="pub-authors" itemprop="author">
@@ -49,7 +51,7 @@
   </div>
 
   <div class="pub-publication">
-    {{ .Params.publication | markdownify }}
+    {{ .Params.publication_short | markdownify }}
     ({{- .Date.Format "2006" -}})
   </div>
 

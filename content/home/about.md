@@ -9,7 +9,10 @@ weight = 5
 
 # Recent News
 [[news]]
-  date = "March 2020"
+  date = "Feb 2020"
+  content = "[Dahlia](https://capra.cs.cornell.edu/dahlia) was conditionally accepted to [PLDI 2020](https://conf.researchr.org/home/pldi-2020)!"
+[[news]]
+  date = "Feb 2020"
   content = "Member of the PLDI 2020 [Artifact Evaluation Committee](https://pldi20.sigplan.org/track/pldi-2020-PLDI-Research-Artifacts)."
 [[news]]
   date = "Sep 2019"
@@ -27,7 +30,7 @@ weight = 5
 
 [[news]]
   date = "May 2018"
-  content = "[Stopify](https://www.stopify.org/) appeared at [PLDI 2018](https://conf.researchr.org/home/pldi-2018)."
+  content = "[Stopify](https://www.stopify.org/) was conditionally accepted to [PLDI 2018](https://conf.researchr.org/home/pldi-2018)!"
 
 +++
 
@@ -40,4 +43,4 @@ Rachit Nigam is a PhD student studying computer science at Cornell University. H
 [plasma]: https://plasma-umass.org/
 [arjun]: http://people.cs.umass.edu/arjun
 [pl-cornell]: http://pl.cs.cornell.edu
-[dahlia]: http://capra.cs.cornell.edu/fuse
+[dahlia]: http://capra.cs.cornell.edu/dahlia
