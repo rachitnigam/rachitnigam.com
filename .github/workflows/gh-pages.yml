@@ -19,7 +19,9 @@ jobs:
           hugo-version: '0.49.2'
 
       - name: Build
-        run: hugo
+        run: |
+          hugo
+          cp CNAME public/
 
       - name: Purifycss
         run: |
