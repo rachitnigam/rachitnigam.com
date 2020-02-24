@@ -18,6 +18,10 @@ jobs:
         with:
           hugo-version: '0.49.2'
 
+      - name: Setup purifycss
+        run: |
+          npm install -g purifycss
+
       - name: Build
         run: hugo
 
