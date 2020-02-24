@@ -18,12 +18,22 @@ jobs:
         with:
           hugo-version: '0.49.2'
 
-      - name: Setup purifycss
-        run: |
-          npm install -g purifycss
-
       - name: Build
         run: hugo
+
+      - name: Purifycss
+        run: |
+          sudo npm install -g purifycss
+
+          CSS_FILE="./public/styles.css"
+          BOOTSTRAP_CSS="./public/css/bootstrap.min.css"
+
+          find public/ -name "*html" -type f | \
+            xargs purifycss "$CSS_FILE" --info --min --out "$CSS_FILE"
+
+          find public/ -name "*html" -type f | \
+            xargs purifycss "$BOOTSTRAP_CSS" --info --min --out "$BOOTSTRAP_CSS"
+
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
