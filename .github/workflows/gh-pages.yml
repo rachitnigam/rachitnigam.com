@@ -23,7 +23,7 @@ jobs:
 
       - name: Purifycss
         run: |
-          sudo npm install -g purifycss
+          sudo npm install -g purify-css
 
           CSS_FILE="./public/styles.css"
           BOOTSTRAP_CSS="./public/css/bootstrap.min.css"
