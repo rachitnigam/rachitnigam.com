@@ -7,31 +7,6 @@ date = 2016-04-20T00:00:00
 # Order that this section will appear in.
 weight = 5
 
-# Recent News
-[[news]]
-  date = "Feb 2020"
-  content = "[Dahlia](https://capra.cs.cornell.edu/dahlia) was conditionally accepted to [PLDI 2020](https://conf.researchr.org/home/pldi-2020)!"
-[[news]]
-  date = "Feb 2020"
-  content = "Member of the PLDI 2020 [Artifact Evaluation Committee](https://pldi20.sigplan.org/track/pldi-2020-PLDI-Research-Artifacts)."
-[[news]]
-  date = "Sep 2019"
-  content = "Gave an invited talk on Dahlia at Princeton."
-[[news]]
-  date = "May 2019"
-  content = "Research intern at [Facebook Reality Labs](https://www.facebook.com/careers/areas-of-work/facebookrealitylabs/?teams[0]=Facebook%20Reality%20Labs)."
-[[news]]
-  date = "March 2019"
-  content = "Member of the PLDI 2019 [Artifact Evaluation Committee](https://pldi19.sigplan.org/committee/pldi-2019-pldi-research-artifacts-artifact-evaluation-committee)."
-
-[[news]]
-  date = "Nov 2018"
-  content = "Student volunteer at [OOPSLA 2018](https://conf.researchr.org/track/splash-2018/splash-2018-OOPSLA)."
-
-[[news]]
-  date = "May 2018"
-  content = "[Stopify](https://www.stopify.org/) was conditionally accepted to [PLDI 2018](https://conf.researchr.org/home/pldi-2018)!"
-
 +++
 
 # Biography

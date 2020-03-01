@@ -46,14 +46,19 @@
 
     {{ $page.Content }}
 
-    {{ with $page.Params }}
     <h3>News</h3>
-    <ul class="ul-interests">
-      {{ range .news }}
-      <li><i>{{ .date | markdownify }}</i> - {{ .content | markdownify }}</li>
-      {{ end }}
-    </ul>
+    <ul class='ut-interests'>
+    {{ range (where $.Site.RegularPages "Type" "news") | first 4 }}
+      {{ partial "news_li" . }}
     {{ end }}
+    </ul>
+
+    <p class='view-all'>
+    <a href="{{ ($.Site.GetPage "section" "news").Permalink }}">
+    More news
+    <i class="fa fa-angle-double-right"></i>
+    </a>
+    </p>
 
   </div>
 </div>
