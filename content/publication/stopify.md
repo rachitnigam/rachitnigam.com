@@ -1,5 +1,5 @@
 +++
-title = "Putting in All the Stops"
+title = "Putting in All the Stops:"
 subtitle = "Execution Control for JavaScript"
 date = 2018-06-28T15:39:56-07:00
 draft = false

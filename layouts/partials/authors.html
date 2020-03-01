@@ -1,4 +1,3 @@
-{{ .Scratch.Set "Rachit Nigam" "./" }}
 {{ .Scratch.Set "Samuel Thomas" "https://sgtpeacock.com/" }}
 {{ .Scratch.Set "Zhijing Li" "https://tissue3.github.io/" }}
 {{ .Scratch.Set "Ted Bauer" "https://tedbauer.github.io/" }}
@@ -14,7 +13,9 @@
 {{ if $.Params.authors }}
   {{ $authorLen := len $.Params.authors }}
   {{ range $k, $v := $.Params.authors }}
-    {{- if $.Scratch.Get . -}}
+    {{ if eq . "Rachit Nigam"}}
+      <b>Rachit Nigam</b>
+    {{- else if $.Scratch.Get . -}}
       <a href="{{ $.Scratch.Get . }}" target="_blank" rel="noopener">
         {{- $v | markdownify -}}
       </a>
