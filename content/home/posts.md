@@ -17,6 +17,6 @@ weight = 40
 tags_exclude = ["rambling"]
 
 # Number of posts to list.
-count = 5
+count = 3
 +++
 
