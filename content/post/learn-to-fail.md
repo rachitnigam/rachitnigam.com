@@ -5,7 +5,7 @@ date = 2018-12-19T07:20:00+05:30
 draft = false
 
 authors = []
-tags = ["research"]
+tags = ["research", "personal"]
 
 +++
 
