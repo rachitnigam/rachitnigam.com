@@ -51,25 +51,24 @@ advisor. I setup meetings with the PL faculty and Cornell and decided to
 do a rotation with [Adrian Sampson][adrian] during the fall and switch to
 working with [Nate Foster][nate].
 
-Adrian pitched me three projects: A new project on using program synthesis
+Adrian pitched me three projects: Use program synthesis
 to automatically partition programs for reconfigurable architectures,
-an existing project on a type system for a high level programming language
-for FPGA, and another existing project on a type system for graphics
+build a type system for a high-level programming language
+for FPGAs, and a type system for graphics
 and shader programming languages.
 
 I decided to work on the type system for FPGA programming (called Dahlia). I
 was unsure that I would be a good fit for this project because I had no
 background in computer architecture research. I hoped that my programming
-languages experience would compliment the architecture experience of the other
-graduate student on the project and that I could continue helping with a
-prototype compiler that an undergrad had built for Seashell.
+languages experience would be useful for the project and that I could learn
+enough about architecture to contribute to the project.
 
-I started reading about FPGA programs, implementing various features for the
-compilers, and writing down proofs for various type system properties.
+I started reading about FPGAs, implementing various features for the Dahlia
+compiler, and writing down proofs for various type system properties.
 I also got involved with the programming languages group and gave my
 [first PLDG talk](https://www.cs.cornell.edu/courses/cs7190/2018fa/).
 
-We designed several language features for Seashell. A particularly thorny
+We designed several language features for Dahlia. A particularly thorny
 design issue was supporting complex iteration patterns while providing
 type safety. We came up with [memory
 views](https://capra.cs.cornell.edu/seashell/docs/view.html) to solve this.
@@ -92,7 +91,7 @@ read classic PL papers.
 
 #### Spring 2019
 
-I came back to Cornell and started implementing memory views in Seashell.
+I came back to Cornell and started implementing memory views in Dahlia.
 I kept feeling that the OCaml codebase was slowing me down so I [rewrote
 Dahlia](https://github.com/cucapra/dahlia/pull/46) in Scala and implemented
 memory views. The implementation demonstrated that views were inelegant
@@ -110,13 +109,14 @@ We had some idea that it made hardware designs "more predictable" because
 each language construct had a direct hardware mapping. However, we didn't
 know how to demonstrate this "predictability". I was wary of qualitative
 arguments. I spent the semester writing code and text. We started porting
-an FPGA programming benchmark suite to Seashell.
+an FPGA programming benchmark suite to Dahlia to see how it faired with larger
+examples.
 
 In the background, I decided to do a summer internship that year and started
 interviewed with MSR and Facebook Reality Labs (FRL). MSR rejected me and I
 eventually accepted an offer from the silicon research team at FRL. I
-also attended ASPLOS 2019 with Adrian and others and realized that made a lot
-of new architecture friends. Architects also seem to be livelier than PL
+also attended ASPLOS 2019 with Adrian and made a lot
+of new architecture friends. Architects seemed to be livelier than PL
 people because they're living on the
 [EDGE](https://en.wikipedia.org/wiki/Explicit_data_graph_execution).
 
@@ -124,7 +124,7 @@ people because they're living on the
 
 I spent my summer in Redmond at FRL using program synthesis to solve hardware
 problems. Working on program synthesis is a roller coaster: the
-solver gives you solutions and you're happy and at some point it stops scaling
+solver gives you solutions and you're happy. At some point it stops scaling
 and you don't know what to do anymore and everything is sad.
 
 I also wrote a few short sections for the Dahlia paper hoping to hit the
@@ -132,7 +132,7 @@ ASPLOS 2020 deadline.
 
 #### Fall 2019
 
-My team at FRL liked my project sufficiently to ask me to continue working
+My team at FRL sufficiently liked my project to ask me to continue working
 on an offshoot. I realized that if I worked on a program synthesis project
 alone, I would be sad all the time. I asked [Alexa VanHattum][alexa] if
 she wanted to collaborate on it with me and she said yes.
@@ -146,8 +146,8 @@ expect the paper to get in because of a weak evaluation.
 A central problem with the evaluation was that it simply reimplemented C++
 benchmarks in Dahlia which resulted in the same area and latency numbers
 as the baselines. The evaluation didn't say anything interesting about how
-Dahlia enabled "predictable hardware design" (which was the title of
-our paper). I was starting to feel angsty about the project and felt like there
+Dahlia enabled "predictable hardware design"---which was the title of
+our paper. I was starting to feel angsty about the project and felt like there
 was no way evaluate it.
 
 I was burned out from the paper writing so I asked my friend [Sam
@@ -172,23 +172,24 @@ The plan was as follows:
    area for latency and are therefore "predictable".
 4. Profit.
 
-The challenging part of this plan was getting all the data. A back of the
-envelop calculation showed that we'd need a few months of compute time to
+The challenging part of this plan was getting all the data. A back-of-the-envelop
+calculation showed that we'd need a few months of compute time to
 get all the data. I had, unfortunately, reached a point where I needed to
 build a distributed experimentation framework.
 
 I got to work building the framework on top of an existing in-house benchmarking
-server. It took me three weeks to relentless python hacking to get multiple
+server. It took me three weeks of relentless python hacking to get multiple
 AWS machines to run FPGA designs. Once we had that, pretty graphs started
-rolling out. I started confirming various claims about Dahlia quantitatively
-using small experiments. Around this time, Dahlia was rejected from ASPLOS.
+rolling out and I started confirming various claims about Dahlia quantitatively.
+Around this time, Dahlia was rejected from ASPLOS.
 
-While this was expected, I was still sad for a few days. We decided to target
-PLDI which was in less than a month. With three weeks to go, I ran the capstone
+While this was expected, I was still sad for a few days. We decided to resubmit
+to PLDI. With three weeks to go, I ran the capstone
 experiment: enumerate 32,000 points and run them on the 80 workers. I
 calculated that it would take 5 days to finish the jobs. I ran into numerous
 issues like `ls` being too slow, job uploads taking three days, and monitoring
-scripts DDoS-ing the servers. I babysat the servers for 5 days and got the
+scripts DDoS-ing the servers. I babysat the servers, painfully restarting
+dead workers and failed jobs, and eventually got the
 results. The graphs looked pretty and validated Dahlia's claims. I was very
 tired but happy.
 
@@ -214,7 +215,7 @@ high-performance kernels for DSPs.
 
 I went back home to India to recuperate from the broken arm. I proposed
 submitting a Qualcomm fellowship proposal for our DSP project. We quickly
-hacked up a demo project (called Diospyros) and submitted the proposal.
+hacked up a demo project (called [Diospyros][dios]) and submitted the proposal.
 
 #### Spring 2020
 
@@ -226,13 +227,13 @@ The semester rolled on and we were accepted for stage 2 of the Qualcomm
 proposal. We continued hacking on project and wrote an even stronger stage 2
 proposal with real graphs. Emboldened but the success, we also decided to write
 a work-in-progress paper for LCTES 2020. In parallel, I joined another project
-to build an intermediate language (called FuTIL) for compiling high-level
+to build an intermediate language (called [FuTIL][]) for compiling high-level
 languages to hardware circuits. I convinced my collaborators for that project
 to submit an LCTES paper as well. We wrote two very good papers and submitted
 them.
 
-In the meantime PLDI reviews came back. I had been cautiously optimistic but
-the reviews for the rebuttal said it all: two strong accepts and two weak
+In the meantime PLDI reviews came back and they were incredibly positive:
+two strong accepts and two weak
 accepts. Adrian said it was almost certainly enough to get into PLDI. We
 wrote up a rebuttal and submitted it. Two weeks later, Dahlia was accepted
 to PLDI 2020. Another week after the acceptance I submitted an artifact to
@@ -243,8 +244,8 @@ I was generally happier about things, especially since I had published my first
 grad school paper. However, at the start of March, everything turned upside
 down. Due to the COVID-19 crisis, Cornell shut down its campus and PLDI
 transformed into a virtual conference. I felt sad that I wouldn't be able
-to give a talk on Dahlia in paper (enough to write a [blog
-post](/post/virtual-cs-conferences/) about it).
+to give a talk on Dahlia in paper. Sad enough to write a [blog
+post](/post/virtual-cs-conferences/) about it.
 
 A few weeks into working from home and adjusting to our new reality, we heard
 back from LCTES. The paper on Diospyros is accepted while the one on FuTIL is
