@@ -48,7 +48,7 @@
 
     <h3>News</h3>
     <ul class='ut-interests'>
-    {{ range (where $.Site.RegularPages "Type" "news") | first 4 }}
+    {{ range (where $.Site.RegularPages "Type" "news") | first $.Site.Params.news_items }}
       {{ partial "news_li" . }}
     {{ end }}
     </ul>

@@ -4,14 +4,9 @@
 # The URL of your website.
 # End your URL with a `/` trailing slash, e.g. `https://example.com/`.
 baseurl = ""
-
 relativeurls = true
 
-# Title of your site
 title = "Rachit Nigam"
-
-# Your copyright notice - appears in site footer.
-# To display a copyright symbol, type `&copy;`.
 copyright = "&copy; Rachit Nigam 2018"
 
 theme = "academic"
@@ -55,6 +50,8 @@ enableGitInfo = false
   # Color theme.
   #   Choose from `default`, `ocean`, `forest`, `coffee`, `dark`, or `1950s`.
   color_theme = "1950s"
+
+  news_items = 5
 
   # Font style.
   #   Choose from `default`, `classic`, or `playfair`.
