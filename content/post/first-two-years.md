@@ -22,29 +22,29 @@ preview = true
 With the end of the Spring 2020 semester a month away, I have spent almost
 two academic years at Cornell. A quick rundown of everything that happened:
 
-#### Failures
+### Failures
 
-- Short paper on [FuTIL][] rejected from LCTES 2020.
-- Rejected from Facebook fellowship in 2020.
-- [Dahlia][] rejected from ASPLOS 2020 with two weak rejects.
-- Rejected from Microsoft research internship for summer 2019.
-- Rejected from Qualcomm fellowship application in 2019.
-- Rejected from the Facebook fellowship in 2019.
-- Rejected from the Symmantec fellowship.
+- Short paper on [FuTIL][] rejected from LCTES ’20.
+- Rejected from Facebook fellowship ’20.
+- [Dahlia][] rejected from ASPLOS ’20 with two weak rejects.
+- Rejected from Microsoft research internship for summer ’19.
+- Rejected from Qualcomm fellowship application ’19.
+- Rejected from the Facebook fellowship ’19.
+- Rejected from the Symmantec fellowship ’19.
 
-#### Successes
+### Successes
 
-- Short paper on [Diospyros][dios] accepted to LCTES 2020.
-- Selected as a finalist for the Qualcomm fellowship in 2020.
-- [Dahlia][] accepted to PLDI 2020 with two strong accepts and two weak accepts.
-- Accepted research internship at [Facebook Reality Labs](frl) for summer 2019.
-- Gave an invited talk to the Princeton Architecture and PL groups on Dahlia.
+- Short paper on [Diospyros][dios] accepted to LCTES ’20.
+- Selected as a finalist for the Qualcomm fellowship in ’20.
+- [Dahlia][] accepted to PLDI ’20.
+- Accepted research internship at [Facebook Reality Labs](frl) for summer ’19.
+- Gave an invited talk to the Princeton Architecture and PL groups.
 - Created and ran the [Great works in PL](great-pl) seminar.
-- Ran the programming languages retreat in Fall 2019.
+- Ran the programming languages retreat in Fall ’19.
 
 -----
 
-#### Fall 2018
+### Fall 2018
 
 I started at Cornell and was terrified that I would not be able to find an
 advisor. I setup meetings with the PL faculty and Cornell and decided to
@@ -66,7 +66,7 @@ enough about architecture to contribute to the project.
 I started reading about FPGAs, implementing various features for the Dahlia
 compiler, and writing down proofs for various type system properties.
 I also got involved with the programming languages group and gave my
-[first PLDG talk](https://www.cs.cornell.edu/courses/cs7190/2018fa/).
+[first pldg talk](https://www.cs.cornell.edu/courses/cs7190/2018fa/).
 
 We designed several language features for Dahlia. A particularly thorny
 design issue was supporting complex iteration patterns while providing
@@ -82,14 +82,14 @@ was more important than being accepted. I agreed.
 During the semester I also realized that I was enjoying working on
 Dahlia and asked Adrian to formally be my advisor. He agreed.
 
-#### Winter 2018
+### Winter 2018
 
 I went back to India for the winter break where I read a bunch of papers
 and reviewed applications for PhD applicants. I convinced [Nate][] to
 help me organize the [Great works in PL][great-pl] seminar as an excuse to
 read classic PL papers.
 
-#### Spring 2019
+### Spring 2019
 
 I came back to Cornell and started implementing memory views in Dahlia.
 I kept feeling that the OCaml codebase was slowing me down so I [rewrote
@@ -120,7 +120,7 @@ of new architecture friends. Architects seemed to be livelier than PL
 people because they're living on the
 [EDGE](https://en.wikipedia.org/wiki/Explicit_data_graph_execution).
 
-#### Summer 2019
+### Summer 2019
 
 I spent my summer in Redmond at FRL using program synthesis to solve hardware
 problems. Working on program synthesis is a roller coaster: the
@@ -130,7 +130,7 @@ and you don't know what to do anymore and everything is sad.
 I also wrote a few short sections for the Dahlia paper hoping to hit the
 ASPLOS 2020 deadline.
 
-#### Fall 2019
+### Fall 2019
 
 My team at FRL sufficiently liked my project to ask me to continue working
 on an offshoot. I realized that if I worked on a program synthesis project
@@ -211,13 +211,13 @@ The semester rolled on and I started brainstorming ideas with Alexa and FRL
 on a new project. We decided to use program synthesis to generate
 high-performance kernels for DSPs.
 
-#### Winter 2019
+### Winter 2019
 
 I went back home to India to recuperate from the broken arm. I proposed
 submitting a Qualcomm fellowship proposal for our DSP project. We quickly
 hacked up a demo project (called [Diospyros][dios]) and submitted the proposal.
 
-#### Spring 2020
+### Spring 2020
 
 I came back to Cornell in the spring. Doctor told me that while my broken wrist
 bone had healed, a cartilage tear in my wrist might never properly heal. I
@@ -252,7 +252,7 @@ back from LCTES. The paper on Diospyros is accepted while the one on FuTIL is
 rejected. We also hear back from Qualcomm saying that we made it to the final
 stage.
 
-#### Epilogue
+### Epilogue
 
 My first two years in grad school were a lot of expected and unexpected things.
 The ups and downs of research were expected. The ups and downs of life were

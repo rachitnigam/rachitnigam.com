@@ -7,7 +7,7 @@ baseurl = ""
 relativeurls = true
 
 title = "Rachit Nigam"
-copyright = "&copy; Rachit Nigam 2018"
+copyright = "&copy;&nbsp;Rachit Nigam 2018"
 
 theme = "academic"
 enableEmoji = true

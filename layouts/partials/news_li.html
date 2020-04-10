@@ -1,4 +1,4 @@
 <li>
-  <i>{{ .Date.Format "Jan '06" }}</i> -
+  <i>{{ .Date.Format "Jan ’06" }}</i> -
   {{ replaceRE "<p>|</p>" "" .Content | safeHTML }}
 </li>

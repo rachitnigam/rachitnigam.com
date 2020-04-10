@@ -8,6 +8,9 @@
  *  Core
  **************************************************/
 
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans&display=swap');
+
 *,
 *::after,
 *::before {
@@ -21,7 +24,7 @@
 }
 
 html {
-  font-family: '{{ .Get "body_font" }}', sans-serif;
+  font-family: 'IBM Plex Sans', sans-serif;
   font-size: {{ .Get "font_size_small" }}px;
   color: rgba(0,0,0,0.8);
   line-height: 1.65;
@@ -35,13 +38,14 @@ html {
 body {
   font-family: inherit;
   font-size: 1rem;
-  line-height: inherit;
+  line-height: 1.4;
   color: inherit;
   text-rendering: optimizeLegibility;
   background-color: {{ .Get "background" }};
   margin-top: 71px; /* Offset body content by navbar height. */
   padding-top: 0;
   counter-reset: captions;
+  letter-spacing: 0.03em;
 }
 @media screen and (max-width: 1200px) { /* Match max-width of .nav-bar query. */
   body {
@@ -83,7 +87,7 @@ ul, ol, dl {
 
 /* Navigation bar text */
 .navbar-default {
-  font-family: '{{ .Get "nav_font" }}', sans-serif;
+  font-family: 'IBM Plex Sans', sans-serif;
   font-weight: 400;
   line-height: 1.25;
   text-rendering: optimizeLegibility;
@@ -91,7 +95,7 @@ ul, ol, dl {
 
 /* Headings */
 h1, h2, h3, h4, h5, h6 {
-  font-family: '{{ .Get "heading_font" }}', sans-serif;
+  font-family: 'IBM Plex Sans', sans-serif;
   font-weight: 400;
   margin-bottom: .5rem;
   line-height: 1.25;
@@ -117,20 +121,24 @@ h4, h5, h6 {
   font-size: 1rem;
 }
 
-a,
-a:hover.article-title * {
-  color: {{ .Get "primary" }};
+a, a:hover {
+  color: black;
   text-decoration: none;
-  transition: color 0.2s ease;
+  border-bottom: #bbb 0.08em dotted;
+}
+
+a:hover {
+    background: #fbf3f3;
+    transition-property: background;
+    transition-duration: 0.2s;
+}
+
+.navbar-header a, .nav-item a {
+  border-bottom: none;
 }
 
 .article-body {
   font-size: 0.85rem;
-}
-
-a:hover,
-a:focus {
-  color: {{ .Get "primary" }};
 }
 
 img,
@@ -157,7 +165,7 @@ figcaption {
   line-height: 1.25;
   font-size: 1rem;
   margin-bottom: 1.65rem;
-  font-family: '{{ .Get "heading_font" }}', sans-serif;
+  font-family: 'IBM Plex Sans', sans-serif;
 }
 
 figcaption.numbered:before {
@@ -196,9 +204,12 @@ pre code {
 }
 
 hr {
+  width: 10rem;
   border: 0;
   height: 1px;
   background: #aaa;
+  text-align: left;
+  margin-left: 0;
 }
 
 /* Quotes */
@@ -478,6 +489,10 @@ small,
   margin-top: 20px;
 }
 
+.network-icon a {
+  border-bottom: none;
+}
+
 #profile .network-icon li {
   margin-right: 25px;
 }
@@ -660,6 +675,10 @@ article .article-metadata {
   content: '\00B7';
 }
 
+.article-style a, .view-all a {
+  font-variant: small-caps;
+}
+
 .article-style img,
 .article-style video {
   margin-left: auto;
@@ -720,13 +739,23 @@ article .article-metadata {
   margin-right: auto;
 }
 
-.author-mla a {
-  text-decoration: underline;
-  color: #5e5e5e;
+.author-mla, .author-mla a {
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.pub-conf {
+  margin-top: 0.3rem;
+  color: #B31B1B;
+}
+
+.pub-title {
+  font-size: 1.25rem;
 }
 
 .pub .pub-authors {
-  font-style: italic;
+  /*font-style: italic;*/
   line-height: 30px; /* Match share bar line height. */
 }
 
@@ -734,27 +763,29 @@ article .article-metadata {
   font-weight: bold;
 }
 
+.pub-list-item  {
+  margin: 1em;
+  border-left: 3px solid black; padding-left: 1em;
+}
+
 .pub-list-item .pub-abstract {
   font-size: 1rem;
 }
 
 .pub-list-item .pub-authors {
-  line-height: normal;
-  font-style: normal;
+  color: #555;
   font-size: 1rem;
-  color: #3170A5;
 }
 
 .pub-list-item .pub-authors a {
+  color: #000;
   line-height: normal;
-  font-style: normal;
   font-size: 1rem;
-  color: #3170A5;
-  text-decoration: underline;
+  font-weight: 500;
 }
 
 .pub-list-item .pub-publication {
-  color: #090;
+  margin-top: 0.5rem;
   font-size: 1rem;
 }
 

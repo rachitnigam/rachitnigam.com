@@ -28,7 +28,7 @@ research is like and helped me redefine what "success" should mean.
 
 Here is a quick summary of my research experience as an undergrad:
 
-#### Spring 2016
+### Spring 2016
 
 I reached out a my undergraduate advisor in my first semester after being
 fascinated with Scheme[^1]. After some back and forth, I quickly started
@@ -40,7 +40,7 @@ we wanted to ultimately verify properties of these shell scripts. Unfortunately,
 I showed that such a semantics becomes super complicated and we abandoned the
 project[^2]. A few weeks into research and I had already failed a project.
 
-#### Summer 2016
+### Summer 2016
 
 I came back for the summer and started working on a new, and slightly related
 project. The idea was to extend previous work on [verifying Puppet
@@ -63,7 +63,7 @@ project where we were trying to automatically synthesize updates for Puppet
 manifests by capturing system calls. I worked on this project for the rest
 of the summer.
 
-#### Fall 2016
+### Fall 2016
 
 As the summer ended, my advisor proposed joining Fission, another project that
 I had been interested in from the start of my summer. This project aimed to
@@ -88,7 +88,7 @@ painfully clear that Fission would not pan out.
 
 If you're keeping track, it's 3/3 for failed projects.
 
-#### Spring 2017
+### Spring 2017
 
 While making slow progress on Fission, my advisor asked a new question, "What
 would it take to build a client-side IDE?". In order to build this IDE, we
@@ -100,7 +100,7 @@ and programming chops to push on the project without hands-on support. By the
 end of this semester, we had managed to build an IDE and give a talk about it
 at [NEPLS '17](https://nepls.org/Events/31/).
 
-#### Summer 2017
+### Summer 2017
 
 My advisor was going to be away for most the summer and he recommended that
 I do an "academic internship". I emailed a professor at Brown University who
@@ -120,7 +120,7 @@ I spent about two weeks trying to understand it, and frustrated at my lack of
 progress, also wrote a [Vim plugin](https://github.com/rachitnigam/pyret-lang.vim) for Pyret. Once I understood the code base, it took me two days to
 implement the first part of the integration.
 
-#### Fall 2017
+### Fall 2017
 
 Summer came to an end and my most stressful semester in undergraduate began.
 I was graduating in three years so I was taking 6 classes, applying
@@ -130,7 +130,7 @@ polished paper to PLDI 2018 (which was later [accepted](/publication/stopify)).
 I was accepted to 8 graduate schools and a software engineering internship
 at Google. I eventually decided to start my PhD at Cornell.
 
-#### Afterward
+### Epilogue
 
 Having spent a few years at Cornell, I have come to appreciate a lot of things
 about my undergraduate experience:

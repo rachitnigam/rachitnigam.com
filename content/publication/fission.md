@@ -5,8 +5,8 @@ draft = false
 
 authors = ["Arjun Guha", "Jean-Baptiste Jeannin", "Rachit Nigam", "Rian Shambaugh", "Jane Tangen"]
 
-publication = "*Summit on Advances in Programming Languages (SNAPL '17)*"
-publication_short = "*SNAPL*"
+publication = "Summit on Advances in Programming Languages"
+publication_short = "SNAPL"
 
 abstract = "Traditional web programming involves the creation of two distinct programs: a client-side front-end, a server-side back-end, and a lot of communications boilerplate. An alternative approach is to use a *tierless* programming model, where a single program describes the behavior of both the client and the server, and the runtime system takes care of communication. Unfortunately, this usually entails adopting a new language and thus abandoning well-worn libraries and web programming tools.<br/> &nbsp; &nbsp; In this paper, we present our ongoing work on Fission, a platform that uses dynamic tier-splitting and dynamic information flow control to transparently run a single JavaScript program across the client and server. Although static tier-splitting has been studied before, our focus on dynamic approaches presents several new challenges and opportunities. For example, Fission supports characteristic JavaScript features such as eval and sophisticated JavaScript libraries like React. Therefore, programmers can reason about the integrity and confidentiality of information while continuing to use common libraries and programming patterns. Moreover, by unifying the client and server into a single program, Fission allows language-based tools, like type systems and IDEs, to manipulate complete web applications. To illustrate, we use TypeScript to ensure that client-server communication does not go wrong."
 abstract_short = "Secure tierless programming for JavaScript."

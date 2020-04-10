@@ -13,14 +13,16 @@
 {{ if $.Params.authors }}
   {{ $authorLen := len $.Params.authors }}
   {{ range $k, $v := $.Params.authors }}
+    {{/* Add non-breaking space in author names */}}
+    {{ $nbauth := delimit (split $v " ") "&nbsp;" }}
     {{ if eq . "Rachit Nigam"}}
-      <b>Rachit Nigam</b>
+      <b style="color: black">Rachit&nbsp;Nigam</b>
     {{- else if $.Scratch.Get . -}}
       <a href="{{ $.Scratch.Get . }}" target="_blank" rel="noopener">
-        {{- $v | markdownify -}}
+        {{- $nbauth | markdownify -}}
       </a>
     {{- else -}}
-      {{- $v | markdownify -}}
+      {{- $nbauth | markdownify -}}
     {{- end -}}
     {{- if lt $k (sub $authorLen 1) -}}, {{ end }}
   {{ end }}

@@ -30,7 +30,6 @@
       <a href="{{ .Permalink }}" class="article-title" itemprop="url">
         <h4 itemprop="name">
         {{ .Title }}
-
         {{ if .Params.subtitle }}
          {{ .Params.subtitle }}
         {{ end }}
@@ -48,11 +47,10 @@
 
   <div class="pub-authors" itemprop="author">
     {{ partial "authors" . }}
-  </div>
-
-  <div class="pub-publication">
-    {{ .Params.publication_short | markdownify }}
-    ({{- .Date.Format "2006" -}})
+    &bull;
+    <span class="pub-conf">
+    {{ .Params.publication_short | markdownify }}&nbsp;({{- .Date.Format "2006" -}})
+    </span>
   </div>
 
   <div class="pub-links">
