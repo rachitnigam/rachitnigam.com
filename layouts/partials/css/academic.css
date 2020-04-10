@@ -45,7 +45,7 @@ body {
   margin-top: 71px; /* Offset body content by navbar height. */
   padding-top: 0;
   counter-reset: captions;
-  letter-spacing: 0.03em;
+  letter-spacing: 0.04em;
 }
 @media screen and (max-width: 1200px) { /* Match max-width of .nav-bar query. */
   body {

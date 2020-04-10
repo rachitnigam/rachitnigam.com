@@ -35,12 +35,12 @@ two academic years at Cornell. A quick rundown of everything that happened:
 ### Successes
 
 - Short paper on [Diospyros][dios] accepted to LCTES ’20.
-- Selected as a finalist for the Qualcomm fellowship in ’20.
+- Selected as a finalist for the Qualcomm fellowship ’20.
 - [Dahlia][] accepted to PLDI ’20.
-- Accepted research internship at [Facebook Reality Labs](frl) for summer ’19.
+- Research internship at [Facebook Reality Labs](frl) for summer ’19.
 - Gave an invited talk to the Princeton Architecture and PL groups.
-- Created and ran the [Great works in PL](great-pl) seminar.
-- Ran the programming languages retreat in Fall ’19.
+- Organized the [Great works in PL](great-pl) seminar.
+- Organized the programming languages retreat in Fall ’19.
 
 -----
 
