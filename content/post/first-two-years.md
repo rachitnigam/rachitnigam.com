@@ -30,7 +30,7 @@ two academic years at Cornell. A quick rundown of everything that happened:
 - Rejected from Microsoft research internship for summer 2019.
 - Rejected from Qualcomm fellowship application in 2019.
 - Rejected from the Facebook fellowship in 2019.
-- Rejected from the Symmantec fellowship.
+- Rejected from the Symantec fellowship.
 
 #### Successes
 
@@ -47,7 +47,7 @@ two academic years at Cornell. A quick rundown of everything that happened:
 #### Fall 2018
 
 I started at Cornell and was terrified that I would not be able to find an
-advisor. I setup meetings with the PL faculty and Cornell and decided to
+advisor. I set up meetings with the PL faculty and Cornell and decided to
 do a rotation with [Adrian Sampson][adrian] during the fall and switch to
 working with [Nate Foster][nate].
 
@@ -168,17 +168,17 @@ The plan was as follows:
 
 1. Take a hardware design and enumerate all the design points.
 2. Run all the points and extract statistics (area and latency).
-3. Show that the subset of design points Dahlia accepts smoothly trade-off
+3. Show that the subset of design points Dahlia accepts smoothly trade off
    area for latency and are therefore "predictable".
 4. Profit.
 
-The challenging part of this plan was getting all the data. A back-of-the-envelop
+The challenging part of this plan was getting all the data. A back-of-the-envelope
 calculation showed that we'd need a few months of compute time to
 get all the data. I had, unfortunately, reached a point where I needed to
 build a distributed experimentation framework.
 
 I got to work building the framework on top of an existing in-house benchmarking
-server. It took me three weeks of relentless python hacking to get multiple
+server. It took me three weeks of relentless Python hacking to get multiple
 AWS machines to run FPGA designs. Once we had that, pretty graphs started
 rolling out and I started confirming various claims about Dahlia quantitatively.
 Around this time, Dahlia was rejected from ASPLOS.
@@ -224,8 +224,8 @@ bone had healed, a cartilage tear in my wrist might never properly heal. I
 wondered if a paper submission was worth a lifelong injury (it wasn't).
 
 The semester rolled on and we were accepted for stage 2 of the Qualcomm
-proposal. We continued hacking on project and wrote an even stronger stage 2
-proposal with real graphs. Emboldened but the success, we also decided to write
+proposal. We continued hacking on the project and wrote an even stronger stage 2
+proposal with real graphs. Emboldened by the success, we also decided to write
 a work-in-progress paper for LCTES 2020. In parallel, I joined another project
 to build an intermediate language (called [FuTIL][]) for compiling high-level
 languages to hardware circuits. I convinced my collaborators for that project
@@ -258,7 +258,7 @@ My first two years in grad school were a lot of expected and unexpected things.
 The ups and downs of research were expected. The ups and downs of life were
 not (injuries and global pandemics). This post leaves out a lot of my personal
 accomplishments: I made a lot of friends, I took up biking and baking, I got
-healthier etc. Submitting my first paper was a big accomplishment for me but
+healthier, etc. Submitting my first paper was a big accomplishment for me but
 I don't I like the way I got to it. I sacrificed my personal health (due to
 my own work ethic) and injured myself. Going forward, I want to set better
 boundaries and think harder about the trade-offs between my life and my
