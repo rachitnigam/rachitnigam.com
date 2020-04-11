@@ -82,7 +82,7 @@ was more important than being accepted. I agreed.
 During the semester I also realized that I was enjoying working on
 Dahlia and asked Adrian to formally be my advisor. He agreed.
 
-### Winter 2018
+### Winter ’18
 
 I went back to India for the winter break where I read a bunch of papers
 and reviewed applications for PhD applicants. I convinced [Nate][] to
