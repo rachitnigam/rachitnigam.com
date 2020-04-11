@@ -45,9 +45,9 @@ projects = []
 tags = []
 
 # Links (optional).
-url_custom = [ {name = "Website", url = "https://capra.cs.cornell.edu/dahlia"} ]
-url_pdf = ""
-url_preprint = "/files/pubs/dahlia.pdf"
+url_custom = [ {name = "Demo", url = "https://capra.cs.cornell.edu/dahlia"} ]
+url_pdf = "/files/pubs/dahlia.pdf"
+url_preprint = ""
 url_code = "https://github.com/cucapra/dahlia"
 url_dataset = ""
 url_project = ""

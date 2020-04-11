@@ -18,7 +18,7 @@
         {{ $.Scratch.SetInMap "years" $year $year }}
       {{ end }}
 
-      <ul class='ul-interests'>
+      <ul class='news-items'>
       {{ range .Data.Pages }}
         {{ partial "news_li" . }}
       {{ end }}

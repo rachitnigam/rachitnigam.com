@@ -18,7 +18,7 @@ selected = true
 projects = []
 tags = []
 
-url_custom = [ {name = "Website", url = "http://stopify.org"} ]
+url_custom = [ {name = "Demo", url = "http://stopify.org"} ]
 url_pdf = "/files/pubs/stopify-pldi18.pdf"
 url_code = "https://github.com/plasma-umass/stopify"
 url_video = "https://www.youtube.com/watch?v=M8PEWKQh2k4&feature=youtu.be"

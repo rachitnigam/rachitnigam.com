@@ -19,7 +19,7 @@ preview = true
 
 +++
 
-With the end of the Spring 2020 semester a month away, I have spent almost
+With the end of the Spring ’20 semester a month away, I have spent almost
 two academic years at Cornell. A quick rundown of everything that happened:
 
 ### Failures
@@ -44,7 +44,7 @@ two academic years at Cornell. A quick rundown of everything that happened:
 
 -----
 
-### Fall 2018
+### Fall ’18
 
 I started at Cornell and was terrified that I would not be able to find an
 advisor. I set up meetings with the PL faculty and Cornell and decided to
@@ -74,7 +74,7 @@ type safety. We came up with [memory
 views](https://capra.cs.cornell.edu/seashell/docs/view.html) to solve this.
 The design of views felt inelegant.
 
-I volunteered at OOPSLA 2019 in Boston where I met a lot of new and old
+I volunteered at OOPSLA ’19 in Boston where I met a lot of new and old
 friends. I applied to industrial fellowships and was rejected from them.
 Adrian said that they prefer to accept more senior students and that applying
 was more important than being accepted. I agreed.
@@ -89,7 +89,7 @@ and reviewed applications for PhD applicants. I convinced [Nate][] to
 help me organize the [Great works in PL][great-pl] seminar as an excuse to
 read classic PL papers.
 
-### Spring 2019
+### Spring ’19
 
 I came back to Cornell and started implementing memory views in Dahlia.
 I kept feeling that the OCaml codebase was slowing me down so I [rewrote
@@ -115,12 +115,12 @@ examples.
 In the background, I decided to do a summer internship that year and started
 interviewed with MSR and Facebook Reality Labs (FRL). MSR rejected me and I
 eventually accepted an offer from the silicon research team at FRL. I
-also attended ASPLOS 2019 with Adrian and made a lot
+also attended ASPLOS ’19 with Adrian and made a lot
 of new architecture friends. Architects seemed to be livelier than PL
 people because they're living on the
 [EDGE](https://en.wikipedia.org/wiki/Explicit_data_graph_execution).
 
-### Summer 2019
+### Summer ’19
 
 I spent my summer in Redmond at FRL using program synthesis to solve hardware
 problems. Working on program synthesis is a roller coaster: the
@@ -128,16 +128,16 @@ solver gives you solutions and you're happy. At some point it stops scaling
 and you don't know what to do anymore and everything is sad.
 
 I also wrote a few short sections for the Dahlia paper hoping to hit the
-ASPLOS 2020 deadline.
+ASPLOS ’20 deadline.
 
-### Fall 2019
+### Fall ’19
 
 My team at FRL sufficiently liked my project to ask me to continue working
 on an offshoot. I realized that if I worked on a program synthesis project
 alone, I would be sad all the time. I asked [Alexa VanHattum][alexa] if
 she wanted to collaborate on it with me and she said yes.
 
-I flew back to Ithaca a week before the ASPLOS 2020 deadline fully expecting
+I flew back to Ithaca a week before the ASPLOS ’20 deadline fully expecting
 to miss the deadline since we didn't have a lot of content in the paper.
 Adrian said we should hit the deadline so I switched gears into paper
 writing mode. We wrote a paper in a week and submitted it to ASPLOS. I didn't
@@ -204,20 +204,20 @@ I woke up the next day and went into the lab after getting a proper arm cast.
 I could no longer type on a keyboard so I started handwriting the edits to
 the paper which my co-authors then put into the paper. At 1am on November 23,
 we [submitted](https://twitter.com/notypes/status/1198111419704717312) the
-Dahlia paper to PLDI 2020. I was unsure if the paper would get in but I was
+Dahlia paper to PLDI ’20. I was unsure if the paper would get in but I was
 proud of the work we had done.
 
 The semester rolled on and I started brainstorming ideas with Alexa and FRL
 on a new project. We decided to use program synthesis to generate
 high-performance kernels for DSPs.
 
-### Winter 2019
+### Winter ’19
 
 I went back home to India to recuperate from the broken arm. I proposed
 submitting a Qualcomm fellowship proposal for our DSP project. We quickly
 hacked up a demo project (called [Diospyros][dios]) and submitted the proposal.
 
-### Spring 2020
+### Spring ’20
 
 I came back to Cornell in the spring. Doctor told me that while my broken wrist
 bone had healed, a cartilage tear in my wrist might never properly heal. I
@@ -226,7 +226,7 @@ wondered if a paper submission was worth a lifelong injury (it wasn't).
 The semester rolled on and we were accepted for stage 2 of the Qualcomm
 proposal. We continued hacking on the project and wrote an even stronger stage 2
 proposal with real graphs. Emboldened by the success, we also decided to write
-a work-in-progress paper for LCTES 2020. In parallel, I joined another project
+a work-in-progress paper for LCTES ’20. In parallel, I joined another project
 to build an intermediate language (called [FuTIL][]) for compiling high-level
 languages to hardware circuits. I convinced my collaborators for that project
 to submit an LCTES paper as well. We wrote two very good papers and submitted
@@ -236,7 +236,7 @@ In the meantime PLDI reviews came back and they were incredibly positive:
 two strong accepts and two weak
 accepts. Adrian said it was almost certainly enough to get into PLDI. We
 wrote up a rebuttal and submitted it. Two weeks later, Dahlia was accepted
-to PLDI 2020. Another week after the acceptance I submitted an artifact to
+to PLDI ’20. Another week after the acceptance I submitted an artifact to
 the PLDI artifact evaluation committee. I also volunteered for the committee
 and reviewed some cool artifacts in the following weeks.
 
