@@ -31,40 +31,11 @@
   {{ if ne ($scr.Get "primary") "#fff" }}
   <meta name="theme-color" content="{{ $scr.Get "primary" }}">
   {{ end }}
-  {{/* Default to enabling highlighting, but allow the user to override it in .Params or .Site.Params.
-       Use $scr to store "highlight_enabled", so that we can read it again in footer.html. */}}
-  {{ $scr.Set "highlight_enabled" true }}
-  {{ if isset .Params "highlight" }}
-    {{ $scr.Set "highlight_enabled" .Params.highlight }}
-  {{ else if isset .Site.Params "highlight" }}
-    {{ $scr.Set "highlight_enabled" .Site.Params.highlight }}
-  {{ end }}
-  {{ if $scr.Get "highlight_enabled" }}
-    {{ $v := $sri.js.highlight.version }}
-    {{ with .Site.Params.highlight_style }}
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/{{ $v }}/styles/{{ . }}.min.css">
-    {{ else }}
-      {{ if eq ($scr.Get "light") true }}
-        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/{{ $v }}/styles/github.min.css">
-      {{ else }}
-        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/{{ $v }}/styles/dracula.min.css">
-      {{ end }}
-    {{ end }}
-  {{ end }}
+
   <link rel="stylesheet" href="{{ "/css/bootstrap.min.css" | relURL }}">
-  {{ if not .Site.Params.disable_sri }}
   {{ printf "<link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/%s/css/font-awesome.min.css\" integrity=\"%s\" crossorigin=\"anonymous\">" $sri.css.fontAwesome.version $sri.css.fontAwesome.sri | safeHTML }}
   {{ printf "<link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/academicons/%s/css/academicons.min.css\" integrity=\"%s\" crossorigin=\"anonymous\">" $sri.css.academicons.version $sri.css.academicons.sri | safeHTML }}
-  {{ if or (eq .Site.Params.map 2) (eq .Site.Params.map 3) }}
-  {{ printf "<link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/leaflet/%s/leaflet.css\" integrity=\"%s\" crossorigin=\"anonymous\">" $sri.css.leaflet.version $sri.css.leaflet.sri | safeHTML }}
-  {{ end }}
-  {{ else }}
-  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/{{- $sri.css.fontAwesome.version -}}/css/font-awesome.min.css">
-  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/academicons/{{- $sri.css.academicons.version -}}/css/academicons.min.css">
-  {{ if or (eq .Site.Params.map 2) (eq .Site.Params.map 3) }}
-  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/leaflet/{{- $sri.css.leaflet.version -}}/leaflet.css">
-  {{ end }}
-  {{ end }}
+
   {{/* We cannot use SRI with Google Fonts because the CSS is dynamically generated according to the user agent */}}
   {{ with ($scr.Get "google_fonts") }}
   <link rel="stylesheet" href="{{ printf "//fonts.googleapis.com/css?family=%s" . }}">
@@ -72,26 +43,6 @@
   <link rel="stylesheet" href="{{ "styles.css" | relLangURL }}">
   {{ range .Site.Params.custom_css }}
   <link rel="stylesheet" href="{{ "/css/" | relURL }}{{ . }}">
-  {{ end }}
-
-  {{ if not .Site.IsServer }}
-  {{ if .Site.GoogleAnalytics }}
-    <script>
-      window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-      ga('create', '{{ .Site.GoogleAnalytics }}', 'auto');
-      {{ if .Site.Params.privacy_pack }}ga('set', 'anonymizeIp', true);{{ end }}
-      ga('require', 'eventTracker');
-      ga('require', 'outboundLinkTracker');
-      ga('require', 'urlChangeTracker');
-      ga('send', 'pageview');
-    </script>
-    <script async src="//www.google-analytics.com/analytics.js"></script>
-    {{ if not .Site.Params.disable_sri }}
-    {{ printf "<script async src=\"https://cdnjs.cloudflare.com/ajax/libs/autotrack/%s/autotrack.js\" integrity=\"%s\" crossorigin=\"anonymous\"></script>" $sri.js.autotrack.version $sri.js.autotrack.sri | safeHTML }}
-    {{ else }}
-    <script async src="//cdnjs.cloudflare.com/ajax/libs/autotrack/{{- $sri.js.autotrack.version -}}/autotrack.js"></script>
-    {{ end }}
-  {{ end }}
   {{ end }}
 
   {{ if or .Site.RSSLink .RSSLink }}
