@@ -120,13 +120,13 @@ h4, h5, h6 {
   font-size: 1rem;
 }
 
-a, a:hover {
+a, a:hover, a:focus {
   color: rgb(0, 0, 0, 0.8);
   text-decoration: none;
   border-bottom: #bbb 0.08em dotted;
 }
 
-a:hover {
+a:hover, a:focus {
     background: #fbf3f3;
     transition-property: background;
     transition-duration: 0.2s;
@@ -208,7 +208,7 @@ blockquote {
   padding: .5rem 1rem;
   margin: .8rem 0;
   font-style: italic;
-  border-left: .25rem solid #616daf;
+  border-left: .25rem solid #ccc;
 }
 blockquote p:last-child {
   margin-bottom: 0;
