@@ -2,7 +2,7 @@
 title = "Predictable Accelerator Design"
 summary = "PhD student laments that computers are not fast enough."
 date = 2020-04-16T11:59:11-04:00
-draft = true
+draft = false
 
 authors = []
 tags = []
