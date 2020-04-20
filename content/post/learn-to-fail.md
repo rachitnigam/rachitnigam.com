@@ -44,7 +44,7 @@ project[^2]. A few weeks into research and I had already failed a project.
 
 I came back for the summer and started working on a new, and slightly related
 project. The idea was to extend previous work on [verifying Puppet
-manifests](https://people.cs.umass.edu/~arjun/papers/2016-rehearsal.html) to
+manifests][rehearsal] to
 capture the semantics of snippets of shell programs people write into their
 Puppet manifests. The previous work had modeled Puppet programs using a
 small core calculus based on a Kleene Algebra with Tests ([KAT](https://www.cs.cornell.edu/~kozen/Papers/kat.pdf)) and we wanted to create an active learning
@@ -163,5 +163,7 @@ _Have comments? [Email](mailto:rachit.nigam12@gmail.com) or [tweet](https://twit
 [^3]: This eventually became a [paper](https://aaronweiss.us/pubs/ase17.pdf).
 
 [^4]: Researchers are people who sometimes work extraordinarily hard at the expense of their own health. It is important to realize that your work is significantly less important that your health.
+
+[rehearsal]: https://dl.acm.org/doi/10.1145/2908080.2908083
 
 [expansions]: https://www.gnu.org/software/bash/manual/html_node/Shell-Expansions.html
