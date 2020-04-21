@@ -8,8 +8,8 @@
  *  Core
  **************************************************/
 
-@import url('https://fonts.googleapis.com/css?family=Fira+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Serif&display=swap');
 
 *,
 *::after,
@@ -162,8 +162,7 @@ figcaption {
   display: block;
   margin-top: 0.75em;
   line-height: 1.25;
-  font-size: 1rem;
-  margin-bottom: 1.65rem;
+  font-size: 0.8rem;
   font-family: 'IBM Plex Sans', sans-serif;
 }
 
@@ -683,8 +682,8 @@ article .article-metadata {
 .article-style video {
   margin-left: auto;
   margin-right: auto;
-  margin-top: 60px;
-  margin-bottom: 60px;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
   padding: 0;
 }
 
@@ -695,13 +694,14 @@ article .article-metadata {
 }
 
 .article-style figure {
-  margin-top: 60px;
-  margin-bottom: 60px;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
 }
 
 .article-style figure img {
   margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: 1rem;
+  width: 50%;
 }
 
 .article-widget {
@@ -1271,6 +1271,10 @@ nav#navbar-main li {
 }
 
 @media screen and (max-width: 768px) {
+  .article-style figure img {
+    width: 90%;
+  }
+
   .navbar {
     min-height: 50px !important;
   }
