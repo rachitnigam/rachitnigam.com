@@ -146,7 +146,12 @@ a *control path*, which describes the computation performed by components every
 cycle.
 
 In bridging the humongous semantics gap between hardware sequential C++ program
-and concurrent hardware design, HLS brings in its own set of problems.
+and concurrent hardware design, HLS brings in its own set of problems. I'll
+cover these problems in a future blog post.
+
+If you're curious about this area, jump onto these cool blog posts:
+
+- [FPGAs Have the Wrong Abstraction][fpga-wrong] by Adrian Sampson.
 
 [^2]: I apologize to my architect friends. Running designs on an FPGA in reality can be an incredible challenge. FPGAs have different kinds of memory and performance characteristics. Most hardware design codebases are carefully engineered to separate FPGA-specific design decisions from the core design.
 
@@ -168,5 +173,6 @@ and concurrent hardware design, HLS brings in its own set of problems.
 [chisel]: https://www.chisel-lang.org/
 [hls-dsp]: https://ieeexplore.ieee.org/document/1466178
 [hls-ml]: https://dl.acm.org/doi/10.1145/3020078.3021741
+[fpga-wrong]: https://www.cs.cornell.edu/~asampson/blog/fpgaabstraction.html
 
 _Have comments? [Email](mailto:rachit.nigam12@gmail.com) or [tweet](https://twitter.com/notypes) at me._
