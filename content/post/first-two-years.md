@@ -1,5 +1,5 @@
 +++
-title = "The first two years of my PhD"
+title = "The First Two Years of My PhD"
 summary = "PhD student revels in nostalgia."
 date = 2020-04-08T00:40:17-04:00
 draft = false

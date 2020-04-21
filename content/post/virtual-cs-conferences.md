@@ -1,5 +1,5 @@
 +++
-title = "The cost of virtualizing CS conferences"
+title = "The Cost of Virtualizing CS Conferences"
 summary = "PhD student complaints about not being able to meet his friends during a global pandemic."
 date = 2020-03-18T23:15:05-04:00
 draft = false
