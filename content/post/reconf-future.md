@@ -5,7 +5,7 @@ date = 2020-04-16T11:59:11-04:00
 draft = false
 
 authors = []
-tags = []
+tags = ["high-level synthesis"]
 
 # Featured image
 # Place your image in the `static/img/` folder and reference its filename below, e.g. `image = "example.jpg"`.
