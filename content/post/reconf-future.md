@@ -23,7 +23,7 @@ Moore's law is in its death throes. With Global Foundries [announcing][gf-7nm]
 that they are no longer pursuing 7nm production nodes, fabrication companies
 focusing on [incremental improvements][intel-roadmap] instead of doubling
 computing power, and the end of the arguably more
-important [Denard's scaling][dscaling] the death of computer architectures
+important [Dennard scaling][dscaling] the death of computer architectures
 as we know them is coming close.
 
 While not obvious in text, I say "death of computer architectures" in the
@@ -53,8 +53,8 @@ executing an instruction.
 </img>
 <figcaption>
 Fig 1.
-<a href="https://eecs.oregonstate.edu/research/vlsi/teaching/ECE471_WIN15/mark_horowitz_ISSCC_2014.pdf">Energy breakdown</a>
-of executing an add instruction on 45nm technology.
+Energy breakdown of executing an add instruction from
+"[Computing's Energy Problem](https://ieeexplore.ieee.org/document/6757323)" [Horowitz, 2014].
 </figcaption>
 </figure>
 </center>
@@ -75,15 +75,15 @@ the reconfigurability of meshes in [massive many-cores][celerity] to bit-level
 reconfigurable architectures. In this post, we'll be focusing on Field
 Programmable Gate Arrays (FPGAs) as a reconfigurable accelerator.
 
-### FPGAs as computational accelerators
+### FPGAs as Computational Accelerators
 
 FPGAs were initially developed as high-performance simulators for circuit
 designs. As we started building more complicated hardware designs,
-contemporary processors could no longer simulate. This in turn
+contemporary processors could no longer simulate them. This in turn
 made it hard to test and verify designs---imagine trying to simulate an i3
 processor on a Pentium 4. FPGAs were designed as simulation accelerators. They
 provide *bit-level* reconfigurability which allows them to simulate wires and
-gates in a hardware design.
+gates in a hardware design. **TODO**: These design decisions also made FPGAs as a viable
 
 FPGAs happily chugged along in this niche role for a long time till some really
 smart engineers at Microsoft demonstrated that FPGAs could be used as
@@ -92,7 +92,7 @@ its successor [BrainWave][], showed that not only can FPGAs significantly
 improve the performance of modern large-scale applications, they provide enough
 flexibility to be used in multiple domains.
 
-### FPGA programming 101
+### FPGA Programming 101
 
 Owing to its root as a hardware simulator, FPGA programming toolchains repurpose
 existing hardware design languages (HDLs). As a simulator for circuits, this is

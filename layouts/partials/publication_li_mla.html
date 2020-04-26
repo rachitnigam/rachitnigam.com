@@ -8,15 +8,14 @@
   </a>
   </div>
 
-  <div class="pub-conf">
-  {{ .Params.publication | markdownify }}
-  ({{ .Params.publication_short | markdownify }}&nbsp;{{ .Date.Format "’06" }})
-  </div>
-
   <div itemprop="author" class="author-mla">
   {{ partial "authors" . }}
   </div>
 
+  <div class="pub-conf">
+  {{ .Params.publication | markdownify }}
+  ({{ .Params.publication_short | markdownify }}&nbsp;{{ .Date.Format "’06" }})
+  </div>
 
   <div class="pub-links">
     {{ partial "publication_links" (dict "content" . "is_list" 1) }}

@@ -1,22 +1,26 @@
 +++
-title = "{{ replace .TranslationBaseName "-" " " | title }}"
+title = "A Synthesis-Aided Compiler for DSP Architectures "
 # Add a subtitle here
-# subtitle = ""
-date = {{ .Date }}
+subtitle = "(WiP paper)"
+date = 2020-04-25T22:13:28-04:00
 draft = false
 
 # Authors. Comma separated list, e.g. `["Bob Smith", "David Jones"]`.
-authors = [""]
-
-# Specify any equal authors
-# equal_authors = [true, true]
+authors = [
+  "Alexa VanHattum",
+  "Rachit Nigam",
+  "Vincent Lee",
+  "James Bornholt",
+  "Adrian Sampson",
+]
+equal_authors = [true, true]
 
 # Publication name and optional abbreviated version.
-publication = ""
-publication_short = ""
+publication = "International Conference on Languages, Compilers, and Tools for Embedded Systems"
+publication_short = "LCTES"
 
 # Abstract and optional shortened version.
-abstract = ""
+abstract = "Digital signal processors (DSPs) offer cutting-edge energy efficiency for embedded multimedia computations, but writing high-performance DSP code requires expert tuning. Programmers need to work at a low level of abstraction, manually tailoring vendor-specific instructions to enable vector and VLIW parallelism. Diospyros is a synthesizing compiler that searches for optimal data layouts to enable efficient vectorized code on DSPs. Preliminary results show that for small fixed-size matrix multiply and 2D convolution, Diospyros achieves a 6.4-7.6x speedup compared to vendor-provided optimized kernels, and a 6.5-31.3x speedup over loop-based kernels optimized with the vendor's included compiler."
 abstract_short = ""
 
 # Featured image thumbnail (optional)
@@ -38,15 +42,7 @@ projects = []
 tags = []
 
 # Links (optional).
-url_pdf = ""
-url_preprint = ""
-url_code = ""
-url_dataset = ""
-url_project = ""
-url_slides = ""
-url_video = ""
-url_poster = ""
-url_source = ""
+url_pdf = "/files/pubs/dios-wip.pdf"
 
 # Custom links (optional).
 #   Uncomment line below to enable. For multiple links, use the form `[{...}, {...}, {...}]`.

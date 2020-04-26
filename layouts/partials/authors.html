@@ -1,3 +1,6 @@
+{{ .Scratch.Set "Vincent Lee" "https://www.linkedin.com/in/vincent-lee-15685425" }}
+{{ .Scratch.Set "Alexa VanHattum" "https://www.cs.cornell.edu/~avh/" }}
+{{ .Scratch.Set "James Bornholt" "https://www.cs.utexas.edu/~bornholt/" }}
 {{ .Scratch.Set "Samuel Thomas" "https://sgtpeacock.com/" }}
 {{ .Scratch.Set "Zhijing Li" "https://tissue3.github.io/" }}
 {{ .Scratch.Set "Ted Bauer" "https://tedbauer.github.io/" }}
@@ -15,7 +18,7 @@
   {{ range $k, $v := $.Params.authors }}
     {{/* Add non-breaking space in author names */}}
     {{ $nbauth := delimit (split $v " ") "&nbsp;" }}
-    {{ if eq . "Rachit Nigam"}}
+    {{- if eq . "Rachit Nigam" -}}
       <b style="color: black">Rachit&nbsp;Nigam</b>
     {{- else if $.Scratch.Get . -}}
       <a href="{{ $.Scratch.Get . }}" target="_blank" rel="noopener">
@@ -24,6 +27,16 @@
     {{- else -}}
       {{- $nbauth | markdownify -}}
     {{- end -}}
+    {{- if $.Params.equal_authors -}}
+    {{- if index $.Params.equal_authors $k -}}
+    <sup>&diams;</sup>
+    {{- end -}}
+    {{- end -}}
     {{- if lt $k (sub $authorLen 1) -}}, {{ end }}
   {{ end }}
+{{ end }}
+{{ if $.Params.equal_authors }}
+<div style="font-size:0.75rem; margin-top: 0.3rem; margin-bottom: 0.5rem; color:rgb(0,0,0,0.6)">
+(<sup>&diams;</sup> Equal contributors)
+</div>
 {{ end }}
