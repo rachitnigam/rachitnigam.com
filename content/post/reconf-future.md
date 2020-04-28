@@ -19,29 +19,31 @@ preview = false
 
 +++
 
+> **A TLDR on why you should care.** FPGAs, a form of reconfigurable
+> architectures, already power a large number of datacenter applications. With
+> FPGA acceleration becoming mainstream, it is the perfect opportunity to think
+> about programming models for designing next-generation high-performance
+> hardware.
+
 Moore's law is in its death throes. With Global Foundries [announcing][gf-7nm]
 that they are no longer pursuing 7nm production nodes, fabrication companies
-focusing on [incremental improvements][intel-roadmap] instead of doubling
-computing power, and the end of the arguably more
-important [Dennard scaling][dscaling] the death of computer architectures
-as we know them is coming close.
-
-While not obvious in text, I say "death of computer architectures" in the
-most optimistic way possible. With process scaling coming to an end, it will
-be difficult to find raw silicon speedups and require us to come up with
-interesting architectures to tackle the future of computing. Reconfigurable
-architectures are one of the hottest research topics and perhaps hold the
-key to domain-specific hardware acceleration.
+focusing on [incremental improvements][intel-roadmap], and the end of the
+arguably more important [Dennard scaling][dscaling], we're entering a new
+era where general purpose architectures are no longer the solution.
+Reconfigurable architectures are one of the hottest research topics and perhaps
+hold the key to application-specific hardware acceleration. However, without
+a sane programming model, reconfigurable architectures might not achieve the
+success they deserve.
 
 ### Reconfigurable Architectures
 
-Since the dawn of computer architecture, we've been trying to build processors
+Since the dawn of computer architecture, we've focused on building processors
 that are good at executing *every* conceivable program. The advances in
 pipelined designs, speculative and out-of-order execution all try to
 dynamically discover regularity and parallelism in arbitrary programs and
 execute them as fast as possible. The performance benefits of these technologies
-are inarguable. However, all good things come at a price. In their single
-minded zealotry to improve single threaded performance, processors introduce
+are inarguable. However, all good things come at a price. In their
+single-minded zealotry to improve single threaded performance, processors introduce
 an incredible amount of *control overhead*. Figure 1 shows the energy
 breakdown of executing an add instruction. The control dominates the cost of
 executing an instruction.
@@ -60,7 +62,7 @@ Energy breakdown of executing an add instruction from
 </center>
 
 So while modern processors
-can execute programs quickly, they leave a lot of room for improvement
+can execute arbitrary programs quickly, they leave a lot of room for improvement
 with an individual program.
 Instead of paying for the cost of the general control structures in every program,
 what if your processor could pay for the exactly the amount of control required
@@ -78,33 +80,53 @@ Programmable Gate Arrays (FPGAs) as a reconfigurable accelerator.
 ### FPGAs as Computational Accelerators
 
 FPGAs were initially developed as high-performance simulators for circuit
-designs. As we started building more complicated hardware designs,
-contemporary processors could no longer simulate them. This in turn
-made it hard to test and verify designs---imagine trying to simulate an i3
+designs. Testing a hardware design requires simulating its behavior over
+thousands of clock cycles. With larger and more complex, the computational
+power required to simulate and track the state of a design becomes increasingly
+hard. Unfortunately, simulating a hardware design on a traditional processor
+does not scale---imagine trying to simulate an i3
 processor on a Pentium 4. FPGAs were designed as simulation accelerators. They
 provide *bit-level* reconfigurability which allows them to simulate wires and
-gates in a hardware design. **TODO**: These design decisions also made FPGAs as a viable
+gates in a hardware design.
 
-FPGAs happily chugged along in this niche role for a long time till some really
-smart engineers at Microsoft demonstrated that FPGAs could be used as
-computational accelerators through the [Catapult][] project. Catapult, and
-its successor [BrainWave][], showed that not only can FPGAs significantly
-improve the performance of modern large-scale applications, they provide enough
-flexibility to be used in multiple domains.
+The bit-level reconfigurability also made FPGAs
+viable as a cheaper, low-volume alternate to application specific integrated
+circuits (ASICs). Instead of taping-out custom chips, FPGAs could be used to
+prototype and integrate such accelerators without paying for a full
+silicon tape-out. In domains like
+signal processing or networking, where real-time deadlines really matter and
+CPUs struggle to meet high-throughput requirements, FPGAs were successfully
+used as computational accelerators. The common thread in all of these use cases
+is that we really want to design custom circuits but don't want to pay the
+costs of producing a whole new chip.
+
+FPGAs happily chugged along in these niche roles for a long time without taking
+off in a big way. Researchers knew that FPGAs could play a big role as flexible
+accelerators but didn't have a "killer app". Between 2010-2016, an exceptional
+team of computer architects demonstrated
+that FPGAs could be used as
+computational accelerators *inside datacenters* through the [Catapult][]
+project. Catapult, and its successor [BrainWave][], showed that not only can
+FPGAs significantly improve the performance of modern large-scale applications,
+they provide enough flexibility to be used in multiple domains, accelerating
+everything from Bing search, Azure cloud network, and most recently, ML models.
+
+Other cloud services like AWS have jumped on this trend and now offer [F1
+instances][f1] which provide access to high-end FPGA units through AWS's
+pay-what-you-use model.
 
 ### FPGA Programming 101
 
 Owing to its root as a hardware simulator, FPGA programming toolchains repurpose
-existing hardware design languages (HDLs). As a simulator for circuits, this is
+existing hardware design languages (HDLs). As a circuit simulator, this is
 a really good idea. You can simply take your preexisting hardware design and
-run it on an FPGA[^2].
+run it on an FPGA.[^2]
 
-Unfortunately, when trying to run high-level application code, like a matrix
-multiply or a convolution kernel, the level of abstraction provided by HDLs
-is far too low-level.
+Unfortunately, when trying to run high-level application code
+the level of abstraction afforded by HDLs is far too low-level.
 Imagine
-trying to write a convolution by specifying every wire connection
-into every adder. Proponents
+trying to write a convolution kernel by specifying every wire connection
+into every adder and the computation that occurs at every clock cycle. Proponents
 of HDLs will point out that we can eek out every bit of performance from a
 low-level hardware design. However, this also means that design iteration times
 are much worse. It can take many weeks of engineering effort to implement
@@ -119,11 +141,9 @@ modularity and parameterization mechanisms using Scala's type system.
 However, HDLs still *fundamentally* operate at the gate-and-wire
 level of abstraction. Chisel designs, after being typechecked by the Scala
 compiler, are expanded into a structural specification of the hardware design.
-The level of reasoning is still at the structural level or *how* to compute
-a values instead of a computational one, or *what* values to compute.
 
 A more radical technique to lift the level of abstraction would be to specify
-*how* the computation occurs and use a compiler to generate the hardware to
+*how* the computation occurs and use a compiler to generate the hardware for
 that specification. The architecture community has been exploring the idea
 of transforming behavioral (or functional) descriptions of computation
 into hardware designs. This is commonly referred to High-Level Synthesis (HLS)
@@ -138,20 +158,36 @@ from [digital signal processing][hls-dsp] to [machine learning
 accelerators][hls-ml] has been implemented in HLS.
 
 The semantic gap between a functional description and timed hardware structures
-is quite large. A hardware design is called *timed* because it describes the
-behavior individual circuits at the granularity of clock cycles. An HLS
+is quite large. Hardware designs are *timed* because they explicitly describe
+the
+behavior of individual circuits at the granularity of clock cycles. An HLS
 compiler needs to transform the functional description into a *data path*,
-which describes the hardware structures that can perform computations, and
+which describes the hardware structures that perform computations, and
 a *control path*, which describes the computation performed by components every
 cycle.
 
-In bridging the humongous semantics gap between hardware sequential C++ program
-and concurrent hardware design, HLS brings in its own set of problems. I'll
-cover these problems in a future blog post.
+The promise of transforming *any* C++ program into hardware is absurd at its
+face. C++ programs dynamically allocate memory, use complicated control
+structures, and are notoriously hard to analyze. Compare this to physical
+hardware where memory sizes and control structures need to statically generated
+at compile time.
 
-If you're curious about this area, jump onto these cool blog posts:
+I'll leave the specifics of where HLS fails for a future blog post. If you're
+curious, dive into [our paper][dahlia-paper] on [Dahlia][] which identifies
+some of these problems and shows how little bit of programming languages magic
+can help.
+
+If you're curious about this area, jump onto these cool blog posts and papers:
 
 - [FPGAs Have the Wrong Abstraction][fpga-wrong] by Adrian Sampson.
+- [High-Level Synthesis for FPGAs: From Prototyping to Development](https://ieeexplore.ieee.org/document/5737854?tp=&arnumber=5737854).
+- [A Cloud-Scale Acceleration Architecture](https://www.microsoft.com/en-us/research/wp-content/uploads/2016/10/Cloud-Scale-Acceleration-Architecture.pdf).
+
+(If you've written a blog post on HLS-related stuff, email it to me so I can
+add it here!)
+
+*Thanks for [Adrian Sampson](http://adriansampson.net) and [Alexa VanHattum](https://www.cs.cornell.edu/~avh/) for providing feedback on early
+drafts of this blog post*.
 
 [^2]: I apologize to my architect friends. Running designs on an FPGA in reality can be an incredible challenge. FPGAs have different kinds of memory and performance characteristics. Most hardware design codebases are carefully engineered to separate FPGA-specific design decisions from the core design.
 
@@ -159,7 +195,7 @@ If you're curious about this area, jump onto these cool blog posts:
 
 [^4]: The choice of C or C++ as a "high-level language" might seem odd but to architects, who operate at the level clock cycles and hardware structures, C++ is a huge jump in abstraction.
 
-
+[f1]: https://aws.amazon.com/education/F1-instances-for-educators/
 [gf-7nm]: https://www.anandtech.com/show/13277/globalfoundries-stops-all-7nm-development
 [dscaling]: https://en.wikipedia.org/wiki/Dennard_scaling
 [intel-roadmap]: https://www.anandtech.com/show/15217/intels-manufacturing-roadmap-from-2019-to-2029
@@ -174,5 +210,7 @@ If you're curious about this area, jump onto these cool blog posts:
 [hls-dsp]: https://ieeexplore.ieee.org/document/1466178
 [hls-ml]: https://dl.acm.org/doi/10.1145/3020078.3021741
 [fpga-wrong]: https://www.cs.cornell.edu/~asampson/blog/fpgaabstraction.html
+[dahlia-paper]: /files/pubs/dahlia.pdf
+[dahlia]: https://capra.cs.cornell.edu/dahlia
 
 _Have comments? [Email](mailto:rachit.nigam12@gmail.com) or [tweet](https://twitter.com/notypes) at me._
