@@ -19,6 +19,8 @@ preview = true
 
 +++
 
+**THIS IS A DRAFT POST. DO NOT DISTRIBUTE.**
+
 > This is quick overview of my research on [Dahlia](/publication/dahlia), a
 > new programming language that leverages sub-structural types to make hardware
 > design predictable.
@@ -235,11 +237,13 @@ For us, predictability can be summarized as "If I spend more area, I get better
 performance."
 
 
-[^1]: The presented results use real data from synthesizing and running FPGA designs using [Vivado HLS 2018][vhls-2018] on [AWS F1][] instances. Check out [our paper][dahlia-paper] for full details.
+[^1]: The presented results use real data from synthesizing and running FPGA designs using [Vivado HLS][vhls] on [AWS F1][] instances. Check out [our paper][dahlia-paper] for full details.
 
 [^2]: Real FPGA memories are slightly more complicated because they have several *memory ports*. Each memory port allows one read/write every clock cycle.
 
 [sdc-scheduling]: https://dl.acm.org/doi/10.1145/1146909.1147025
 [dahlia-paper]: /files/pubs/dahlia.pdf
+[vhls]: https://www.xilinx.com/products/design-tools/vivado/integration/esl-design.html
+[aws f1]: https://aws.amazon.com/ec2/instance-types/f1/
 
 _Have comments? [Email](mailto:rachit.nigam12@gmail.com) or [tweet](https://twitter.com/notypes) at me._
