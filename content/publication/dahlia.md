@@ -36,11 +36,14 @@ projects = []
 tags = []
 
 # Links (optional).
-url_custom = [ {name = "Demo", url = "https://capra.cs.cornell.edu/dahlia"} ]
+url_custom = [
+  { name = "Demo", url = "https://capra.cs.cornell.edu/dahlia" },
+  { name = "Talk (short)", url = "https://youtu.be/xw9cRTIpkPc" },
+  { name = "Talk (long)", url = "https://www.youtube.com/watch?v=hp_RwcnrFJg" }
+]
 url_pdf = "/files/pubs/dahlia.pdf"
 url_code = "https://github.com/cucapra/dahlia"
 url_slides = "/files/slides/dahlia.pdf"
-url_video = ""
 
 # Does this page contain LaTeX math? (true/false)
 math = false
