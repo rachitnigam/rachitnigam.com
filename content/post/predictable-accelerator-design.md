@@ -2,16 +2,11 @@
 title = "FPGA programming for the rest of us"
 summary = "PhD student plugs shamelessly"
 date = 2020-04-21T11:33:43-04:00
-draft = false
+draft = true
 
 authors = []
 tags = ["high-level synthesis"]
 
-# Featured image
-# Place your image in the `static/img/` folder and reference its filename below, e.g. `image = "example.jpg"`.
-# Use `caption` to display an image caption.
-#   Markdown linking is allowed, e.g. `caption = "[Image credit](http://example.org)"`.
-# Set `preview` to `false` to disable the thumbnail in listings.
 [header]
 image = ""
 caption = ""
@@ -25,9 +20,42 @@ preview = true
 > new programming language that leverages sub-structural types to make hardware
 > design predictable.
 
+Ever wondered why more people don't build their own computer chips?
+Maybe the answers are obvious---chips must cost millions of dollars to produce,
+painfully hard to design one in the first place, and even after that, there is
+no guarantee that you'd beat Intel's optimized chips. Right?
+
+
+
+FPGAs, or field programmable gate arrays, are a kind of fancy computer
+architecture that can be reconfigured to behave like another circuit.
+
 This blog post assumes some familiarity with reconfigurable architectures and
 High-Level Synthesis. If you want a quick overview on those, check out my
 blog post on [compiling for the reconfigurable future](/post/reconf-future).
+
+Every programmer has opinions on the fundamental primitives of computation:
+stateful memories, first-class functions, objects. Unfortunately, all of these
+models are incorrect. The fundamental primitive of computation is electricity.
+
+The flow of electricity through transistors forms the foundation of modern
+computing. If you want to perform a computation in *the most performant way
+possible*, you need to build a custom circuit for it. There are just two
+problems: building circuits in painfully tedious and fabricating them
+is even more costly. Field programmable gate arrays (FPGAs) are a kind of
+fancy circuit that can be reconfigured to mimic the behavior of another circuit.
+FPGAs are cheaper than fabricating your own chip and are available on
+cloud providers like AWS. That means that the second problem---that circuits
+are too costly to design---is basically solved. So what's stopping everyone
+who cares about performance from using FPGAs?
+
+### Build a circuit
+
+The fundamental answer is that programming FPGAs is quite hard. In fact, its
+exactly as hard as building your chip because FPGAs repurposed the programming
+model for circuit design and use them
+
+
 
 High-Level Synthesis (HLS) is the idea of transforming functional descriptions
 of programs into performant and efficient hardware designs. The productivity
