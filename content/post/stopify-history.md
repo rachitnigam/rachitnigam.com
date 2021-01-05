@@ -1,12 +1,12 @@
 +++
 title = "A Brief History of Stopify"
-summary = "Author blatanly lies about the length of the article and writes some JavaScript."
+summary = "Undergrad writes some JavaScript and lies about the article length."
 date = 2018-08-22T21:52:05-04:00
 draft = true
 
 # Tags and categories
 # For example, use `tags = []` for no tags, or the form `tags = ["A Tag", "Another Tag"]` for one or more tags.
-tags = ["history of research", "research"]
+tags = ["research"]
 categories = []
 
 # Featured image
@@ -74,7 +74,7 @@ same time, Arjun was attending the SNAPL conference to present our work on
 Arjun wanted to showcase a very initial version of Stopify to him. Since the
 CPS implementation was still in the works, I quickly hacked up a demo for
 Stopify using the generator based implementation. By that time, I had pausing
-working with ocaml programs compiled to JavaScript.
+working with OCaml programs compiled to JavaScript.
 
 Once Arjun came back, we talked about the progress of the project and decided
 to present the in-progress at [NEPLS].
