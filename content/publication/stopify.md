@@ -14,7 +14,7 @@ abstract_short = "Bringing debugging abstractions to the web using first-class c
 
 image_preview = "stopify-logo-transparent.png"
 image_alt = "stopify logo"
-selected = true
+selected = false
 projects = []
 tags = []
 

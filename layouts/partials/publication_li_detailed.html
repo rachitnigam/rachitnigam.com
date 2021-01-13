@@ -2,19 +2,16 @@
 
   {{ if .Params.image_preview }}
     {{ .Scratch.Set "image" .Params.image_preview }}
-  {{ else if .Params.header.image }}
-    {{ errorf "Missing image_preview for %s." .Title }}
   {{ end }}
 
   {{ if .Params.image_alt }}
     {{ .Scratch.Set "imageAlt" .Params.image_alt }}
-  {{ else }}
-    {{ errorf "Missing image_alt for %s." .Title }}
   {{ end }}
 
   <!-- Row containing the image the title -->
   <div class="row" style="margin-bottom: 10px;">
 
+    {{ if .Scratch.Get "image" }}
     <div class="col-xs-3" style="padding-right: 0px; display: inline-block; vertical-align: middle; float: none;">
         <a href="{{ .Permalink }}">
           {{ $img_src := urls.Parse (.Scratch.Get "image") }}
@@ -25,8 +22,12 @@
           {{ end }}
         </a>
     </div>
+    {{ end }}
 
-    <div class="col-xs-8" style="display: inline-block; vertical-align: middle; float: none;">
+    <div
+      class = {{ if .Scratch.Get "image" }} "col-xs-8"  {{ else }} "col-xs-12" {{ end }}
+      style="display: inline-block; vertical-align: middle; float: none;"
+    >
       <a href="{{ .Permalink }}" class="article-title" itemprop="url">
         <h4 itemprop="name">
         {{ .Title }}
@@ -35,19 +36,12 @@
         {{ end }}
         </h4>
       </a>
-      <p class="pub-abstract" itemprop="text" style="line-height: 1.2rem;">
-        {{ if .Params.abstract_short }}
-          {{ .Params.abstract_short | markdownify }}
-        {{ else }}
-          {{ .Params.abstract | markdownify}}
-        {{ end }}
-      </p>
     </div>
   </div>
 
   <div class="pub-authors" itemprop="author">
     {{ partial "authors" . }}
-    &bull;
+
     <span class="pub-conf">
     {{ .Params.publication_short | markdownify }}&nbsp;({{- .Date.Format "2006" -}})
     </span>
