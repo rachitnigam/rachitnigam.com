@@ -1,16 +1,11 @@
 +++
 title = "FPGA programming for the rest of us"
-summary = "PhD student plugs shamelessly"
 date = 2020-04-21T11:33:43-04:00
 draft = true
 
-authors = []
+[extra]
+summary = "PhD student plugs shamelessly"
 tags = ["high-level synthesis"]
-
-[header]
-image = ""
-caption = ""
-preview = true
 
 +++
 

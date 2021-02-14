@@ -1,140 +1,40 @@
-# Configuration of Academic
-# Documentation: https://sourcethemes.com/academic/
+# The URL the site will be built for
+base_url = "https://rachitnigam.com"
 
-# The URL of your website.
-# End your URL with a `/` trailing slash, e.g. `https://example.com/`.
-baseurl = ""
-relativeurls = true
+# Whether to automatically compile all Sass files in the sass directory
+compile_sass = false
 
-title = "Rachit Nigam"
-copyright = "&copy;&nbsp;Rachit Nigam 2018"
+# Whether to build a search index to be used later on by a JavaScript library
+build_search_index = false
 
-theme = "academic"
-enableEmoji = true
-footnotereturnlinkcontents = "<sup>↩</sup>"
-ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
-preserveTaxonomyNames = true
-paginate = 10
+[markdown]
+# Whether to do syntax highlighting
+# Theme can be customised by setting the `highlight_theme` variable to a theme supported by Zola
+highlight_code = true
 
-# Setting for code blocks
-pygmentsCodeFences=true
-pygmentsUseClasses=true
+[link_checker]
+skip_prefixes = [
+  "https://twitter.com/",
+]
 
-# Default language to use (if you setup multilingual support)
-defaultContentLanguage = "en"
-defaultContentLanguageInSubdir = false
+[extra]
+news_items = 5
 
-# Get last modified date for content from Git?
-enableGitInfo = false
-
-[outputs]
-  home = [ "HTML", "CSS", "RSS" ]
-  section = [ "HTML", "RSS" ]
-
-# Configure BlackFriday Markdown rendering.
-#   See: https://gohugo.io/readfiles/bfconfig/
-[blackfriday]
-  hrefTargetBlank = true  # `true` opens external links in a new tab.
-  fractions = true
-  smartypants = true  # `mart punctuation substitutions.
-  noreferrerLinks = true
-
-[params]
-  color_theme = "1950s"
-  news_items = 5
-  font = "default"
-
-  # Your details.
-  role = "PhD Student"
-  canonical_url = "https://rachitnigam.com"
-  organizations = [
-    { name = "Cornell University", url = "https://cornell.edu" }
-  ]
-  avatar = "headshot.jpg"
-  email = "rachit.nigam12@gmail.com"
-
-  # Diplay a logo in navigation bar rather than title (optional). To enable,
-  # place an image in `static/img/` and reference its filename below. To
-  # disable, set the value to "".
-  logo = ""
-
-  date_format = "Jan 2, 2006"
-  time_format = "3:04 PM"
-  reading_time = true
-  section_pager = false
-  math = false
-
-  sharing = false
-  privacy_pack = false
-  custom_css = ["syntax.css"]
-  custom_js  = []
-
-  [params.talks]
-    time = true
-
-  # Configuration of publication pages.
-  [params.publications]
-    date_format = "January, 2006"
-  [params.projects]
-    # List publications and talks related to the project?
-    list_children = true
-
-    # Publication list format.
-    #   0 = Simple
-    #   1 = Detailed
-    #   2 = APA
-    #   3 = MLA
-    publication_format = 3
-
-  [[params.social]]
-    icon = "envelope"
-    icon_pack = "fa"
-    link = "mailto:rachit.nigam12@gmail.com"
-
-  [[params.social]]
-    icon = "twitter"
-    icon_pack = "fa"
-    link = "//twitter.com/notypes"
-
-  [[params.social]]
-    icon = "github"
-    icon_pack = "fa"
-    link = "//github.com/rachitnigam"
-
-  [[params.social]]
-    icon = "google-scholar"
-    icon_pack = "ai"
-    link = "//scholar.google.com/citations?user=RNL2GjEAAAAJ"
-
-
-# Navigation Links
-#   To link a homepage widget, specify the URL as a hash `#` followed by the filename of the
-#     desired widget in your `content/home/` folder.
-#   The weight parameter defines the order that the links will appear in.
-[params.menus]
-  # Align the main menu to the right of the page? (true/false)
-  align_right = true
-
-[[menu.main]]
-  name = "Home"
-  url = "#about"
-  weight = 1
-
-[[menu.main]]
-  name = "Publications"
-  url = "#publications_selected"
-  weight = 2
-
-[[menu.main]]
-  name = "Posts"
-  url = "#posts"
-  weight = 3
-
-[[menu.main]]
-  name = "CV"
-  url = "/resume.pdf"
-  weight = 4
-
-# Configure the English version of the website.
-[Languages.en]
-  languageCode = "en-us"
+# Links to author webpages
+author = [
+  { name = "Vincent Lee", link = "https://www.linkedin.com/in/vincent-lee-15685425" },
+  { name = "Alexa VanHattum", link = "https://www.cs.cornell.edu/~avh/" },
+  { name = "James Bornholt", link = "https://www.cs.utexas.edu/~bornholt/" },
+  { name = "Samuel Thomas", link = "https://sgtpeacock.com/" },
+  { name = "Zhijing Li", link = "https://tissue3.github.io/" },
+  { name = "Ted Bauer", link = "https://tedbauer.github.io/" },
+  { name = "Adrian Sampson", link = "http://adriansampson.net" },
+  { name = "Zhiru Zhang", link = "http://www.csl.cornell.edu/~zhiruz/" },
+  { name = "Arjun Guha", link = "http://people.cs.umass.edu/arjun" },
+  { name = "Sam Baxter", link = "https://baxtersa.github.io/about/" },
+  { name = "Shriram Krishnamurthi", link = "http://cs.brown.edu/~sk/" },
+  { name = "Joe Gibbs Politz", link = "https://jpolitz.github.io/" },
+  { name = "Jean-Baptiste Jeannin", link = "https://jeannin.github.io/" },
+  { name = "Yuwei Ye", link = "https://www.viviyye.com/" },
+  { name = "Sachille Atapattu", link = "https://www.csl.cornell.edu/~sachille/"}
+]

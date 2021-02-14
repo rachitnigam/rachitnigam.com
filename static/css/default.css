@@ -1,0 +1,468 @@
+/* Contact & Bio */
+/** Contact */
+#contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.portrait {
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+  border-radius: 50%;
+  background-size: cover;
+}
+
+/*** Portrait Title */
+.portrait-title {
+  margin: 1em auto;
+  text-align: center;
+}
+
+.portrait-title h3 {
+  margin: 0;
+}
+
+/*** Contact Links */
+.big-icon {
+  font-size: 2rem;
+}
+
+#contact a {
+  border: none;
+}
+
+.contact-links {
+  display: flex;
+  justify-content: space-between;
+  width: 200px;
+}
+
+.contact-link-item {
+  flex: auto;
+}
+
+/** Post RSS */
+.with-feed {
+  display: flex;
+  justify-content: space-between;
+}
+
+/********** Content *********/
+section {
+  margin-top: 3em;
+}
+
+a {
+  color: rgb(0, 0, 0, 0.8);
+  text-decoration: none;
+  border-bottom: #bbb 0.1em dotted;
+}
+
+a:hover, a:focus {
+    background: #fbf3f3;
+    transition-property: background;
+    transition-duration: 0.2s;
+}
+
+/** Remove link styling */
+a.unstyled-link  {
+  border: none;
+}
+a.unstyled-link:hover, a.unstyled-link:focus {
+  background: none;
+}
+
+/********** Layout **********/
+body {
+  margin: auto;
+  width: 80%;
+  max-width: 600px;
+}
+
+header {
+  display: flex;
+  flex-flow: row wrap;
+  border-bottom: 1px solid #ddd;
+  margin-top: 20px;
+  justify-content: center;
+}
+
+.name {
+  white-space: nowrap;
+}
+
+header h1 {
+  margin-top: 0;
+}
+
+header a {
+  color: #333333;
+}
+
+nav {
+  flex: 0 0;
+  height: 45px;
+  white-space: nowrap;
+  display: flex;
+  align-content: end;
+  align-items: end;
+  justify-content: space-between;
+}
+
+a.nav-item {
+  font-variant: small-caps;
+  flex: 1;
+  display: block;
+  margin:  17px 0 0 0;
+  padding: 0;
+  text-transform: uppercase;
+  font-weight: 500;
+  text-align: center;
+  border: none;
+  border-bottom: 2px solid #fff;
+  margin-right: 1em;
+  margin-left: 1em;
+}
+a.nav-item:last-child {
+  margin-right: 0;
+}
+a.nav-item:first-child {
+  margin-left: 2em;
+}
+
+a.nav-item:hover, a.nav-item:focus {
+  transition-property: border-bottom;
+  border-bottom: 2px solid #000;
+  transition-duration: 0.2s;
+  background: none;
+}
+
+nav a.active {
+  color: #A6A6AF;
+}
+
+.container {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+footer {
+  border-top: 1px solid #ddd;
+  padding-top: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-weight: 300;
+  font-size: 80%;
+  text-align: center;
+}
+
+/********** Basic styling **********/
+
+html, button, input, select, textarea {
+  font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+body {
+  font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 1.6;
+  color: #333333;
+  text-rendering: optimizeLegibility;
+  hyphens: auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 1em;
+  margin-bottom: 0.1em;
+  font-weight: 300;
+}
+
+h1 { font-size: 36px; line-height: 1.25; letter-spacing: -1px; }
+h2 { font-size: 24px; line-height: 1.35; }
+h3 { font-size: 20px; line-height: 1.5; }
+h4 { font-size: 15px; line-height: 1.6;  letter-spacing: 0px; }
+h5 { font-size: 15px; line-height: 1.6;  letter-spacing: 0px; }
+
+h4, h5 {
+  font-weight: bold;
+  display: inline;
+  float: left;
+  margin-right: .5em;
+  padding: 0;
+  margin-bottom: 0;
+}
+
+h5 {
+  font-style: italic;
+  font-weight: normal;
+}
+
+h4:after, h5:after  {
+  content: ".";
+}
+
+h4 + p, h5 + p  {
+
+}
+
+hr {
+ width:10rem;
+ border:0;
+ height:1px;
+ background:#aaa;
+ text-align:left;
+ margin-left:0
+}
+
+p {
+  margin: 15px 0px 15px 0px;
+  max-width: 600px;
+  text-align: justify;
+}
+
+ul { list-style: circle inside; }
+ol { list-style: decimal inside; }
+ol, ul {
+  padding-left: 0;
+  margin-top: 0; }
+ol ol, ol ul, ul ul, ul ol {
+    padding-left: 1em; }
+li { margin-bottom: 0; }
+
+code {
+  font-size: 90%;
+  white-space: nowrap;
+  background: rgba(247, 245, 238, 0.7);
+  border-radius: 5px;
+  max-width: 600px;}
+
+pre > code {
+  display: block;
+  white-space: pre; }
+
+th,
+td {
+  padding: 12px 15px;
+  text-align: left;
+  border-top: 1px solid #E1E1E1;
+  border-bottom: 1px solid #E1E1E1; }
+th:first-child,
+td:first-child {
+  padding-left: 0; }
+th:last-child,
+td:last-child {
+  padding-right: 0; }
+
+figcaption {
+  margin-top: 15px;
+  font-size: 80%;
+}
+
+dt {
+  margin-top: 15px;
+}
+
+/** Publication styling */
+.publication {
+  margin-bottom: 0.8em;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.publication-venue {
+  font-weight: 300;
+  vertical-align: top;
+  flex: 1 100%;
+}
+
+.publication-details {
+  vertical-align: top;
+  flex: 1 100%;
+  margin-left: 1em;
+  flex: 1 1;
+}
+
+.publication-title {
+  font-size: 1.1em;
+  line-height: 1.25;
+  hyphens: none;
+  /*margin-bottom: 8px;*/
+  /*font-weight: 500;*/
+}
+
+.publication-authors, .publication-authors a {
+  font-size: 0.92em;
+  color: #555;
+}
+.publication-highlight {
+  color: black;
+}
+
+.publication-link {
+  margin-right: 0.5em;
+}
+
+.publication-link > a {
+  font-size: 0.92em;
+}
+
+/** Post Styling */
+
+.post-tease {
+  color: #999;
+  font-size: 0.9em;
+}
+
+.post img {
+  height: 10em;
+}
+
+.post h3, .post h2 {
+  padding-top: 15px;
+  margin-top: 30px;
+  max-width: 600px;
+}
+
+.post-header .date {
+  margin-top: -0.3em;
+}
+.post-header {
+  margin-bottom: 2em;
+}
+
+/*** Footnotes */
+.footnote-definition > p {
+  display: inline;
+}
+
+.footnote-definition {
+  margin-bottom: 1em;
+}
+
+/********** Additional styling **********/
+
+article.post {
+  width: 100%;
+}
+
+div.footnotes {
+  max-width: 600px;
+  border-top: 1px dashed #AAAAAA;
+  margin-top: 40px;
+  font-size: 80%;
+}
+
+figure.highlight,
+figure.highlight *
+{ border: none; }
+
+figure.highlight { padding: 0; margin: 0; }
+figure.highlight pre { padding: 0; margin: 0; }
+
+.center {
+  text-align: center;
+}
+
+ul.bibliography {
+  list-style-type: none;
+  list-style-position: inside;
+  text-indent: -17px;
+  padding-left: 17px;
+  padding-right: 0;
+  margin-right: 0;
+}
+
+ul.bibliography li {
+  margin-bottom: 15px;
+  margin-right: 0;
+  padding-right: 0;
+}
+
+ul.bibliography li.highlight {
+  background-color: #DDDD;
+}
+
+ul.contents {
+  max-width: 600px;
+  padding-left: 1em;
+  list-style: square inside;
+}
+
+table.plain th,
+table.plain td {
+  border: none;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+.plainlist {
+  list-style: none;
+}
+
+.date {
+  font-weight: 300;
+  text-align: left;
+}
+
+.excerpt {
+  margin: 0 0 0 0px;
+  font-style: italic;
+}
+
+.blurb {
+  margin-bottom: 0.8em;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.blurb > .date {
+  vertical-align: top;
+  flex: 1 100%;
+}
+
+.blurb > .description {
+  vertical-align: top;
+  margin-left: 1em;
+  flex: 1 1;
+}
+
+.blurb > .description > .title {
+    vertical-align: top;
+}
+
+.blurb p {
+  display: inline;
+}
+
+@media screen and (min-width: 585px) {
+  .name {
+    flex: 1 0;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .blurb > .date {
+    text-align: right;
+    flex: 0 0 65px;
+  }
+
+  .blurb { margin-bottom: 4px; }
+
+  .publication-venue {
+    margin-left: 1em;
+    text-align: right;
+    flex: 0 0 90px;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  body {
+    margin: auto auto auto 200px;
+  }
+}

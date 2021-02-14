@@ -1,21 +1,11 @@
 +++
 title = "PhD@Cornell: The Free Agent system"
-summary = "PhD student tries to justify his life choices."
 date = 2018-12-15T08:27:21+05:30
 draft = false
 
-authors = []
+[extra]
 tags = ["grad school"]
-
-# Featured image
-# Place your image in the `static/img/` folder and reference its filename below, e.g. `image = "example.jpg"`.
-# Use `caption` to display an image caption.
-#   Markdown linking is allowed, e.g. `caption = "[Image credit](http://example.org)"`.
-# Set `preview` to `false` to disable the thumbnail in listings.
-[header]
-image = ""
-caption = ""
-preview = true
+summary = "PhD student tries to justify his life choices."
 
 +++
 

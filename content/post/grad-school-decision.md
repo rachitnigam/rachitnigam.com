@@ -1,16 +1,11 @@
 +++
 title = "How I flipped a coin to decide on my grad school"
-summary = "Paralyzed by choice, undergrad student flips a coin for major life decision"
 date = 2019-03-31T23:53:29-04:00
 draft = true
 
-authors = []
+[extra]
+summary = "Paralyzed by choice, undergrad student flips a coin for major life decision"
 tags = ["grad school", "rambling"]
-
-[header]
-image = ""
-caption = ""
-preview = false
 
 +++
 

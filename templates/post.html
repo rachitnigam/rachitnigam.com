@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% import "macros.html" as m %}
+
+{% block content %}
+<h1 class="title">
+  {{ section.title }}
+</h1>
+<section>
+<ul>
+  {% for page in section.pages %}
+  {{ m::generate_post(post=page) }}
+  {% endfor %}
+</ul>
+</section>
+{% endblock content %}

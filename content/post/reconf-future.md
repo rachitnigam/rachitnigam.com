@@ -1,21 +1,10 @@
 +++
 title = "Compiling for the Reconfigurable Future"
-summary = "PhD student laments that computers are not fast enough."
 date = 2020-04-16T11:59:11-04:00
 draft = false
 
-authors = []
-tags = ["high-level synthesis"]
-
-# Featured image
-# Place your image in the `static/img/` folder and reference its filename below, e.g. `image = "example.jpg"`.
-# Use `caption` to display an image caption.
-#   Markdown linking is allowed, e.g. `caption = "[Image credit](http://example.org)"`.
-# Set `preview` to `false` to disable the thumbnail in listings.
-[header]
-image = ""
-caption = ""
-preview = false
+[extra]
+summary = "PhD student laments that computers are not fast enough."
 
 +++
 
@@ -35,7 +24,7 @@ hold the key to application-specific hardware acceleration. However, without
 a sane programming model, reconfigurable architectures might not achieve the
 success they deserve.
 
-### Reconfigurable Architectures
+## Reconfigurable Architectures
 
 Since the dawn of computer architecture, we've focused on building processors
 that are good at executing *every* conceivable program. The advances in
@@ -56,7 +45,9 @@ executing an instruction.
 <figcaption>
 Fig 1.
 Energy breakdown of executing an add instruction from
-"[Computing's Energy Problem](https://ieeexplore.ieee.org/document/6757323)" [Horowitz, 2014].
+<a href="https://ieeexplore.ieee.org/document/6757323">
+Computing's Energy Problem [Horowitz, 2014]
+</a>.
 </figcaption>
 </figure>
 </center>
@@ -77,7 +68,7 @@ the reconfigurability of meshes in [massive many-cores][celerity] to bit-level
 reconfigurable architectures. In this post, we'll be focusing on Field
 Programmable Gate Arrays (FPGAs) as a reconfigurable accelerator.
 
-### FPGAs as Computational Accelerators
+## FPGAs as Computational Accelerators
 
 FPGAs were initially developed as high-performance simulators for circuit
 designs. Testing a hardware design requires simulating its behavior over
@@ -115,7 +106,7 @@ Other cloud services like AWS have jumped on this trend and now offer [F1
 instances][f1] which provide access to high-end FPGA units through AWS's
 pay-what-you-use model.
 
-### FPGA Programming 101
+## FPGA Programming 101
 
 Owing to its root as a hardware simulator, FPGA programming toolchains repurpose
 existing hardware design languages (HDLs). As a circuit simulator, this is
@@ -149,7 +140,7 @@ of transforming behavioral (or functional) descriptions of computation
 into hardware designs. This is commonly referred to High-Level Synthesis (HLS)
 in the community.
 
-### High-Level Synthesis
+## High-Level Synthesis
 
 High-Level Synthesis[^3] is the idea of compiling a computational description
 in a high-level programming language[^4], like C or C++, into an HDL like
@@ -189,6 +180,10 @@ add it here!)
 *Thanks for [Adrian Sampson](http://adriansampson.net) and [Alexa VanHattum](https://www.cs.cornell.edu/~avh/) for providing feedback on early
 drafts of this blog post*.
 
+_Have comments? [Email](mailto:rachit.nigam12@gmail.com) or [tweet](https://twitter.com/notypes) at me._
+
+----
+
 [^2]: I apologize to my architect friends. Running designs on an FPGA in reality can be an incredible challenge. FPGAs have different kinds of memory and performance characteristics. Most hardware design codebases are carefully engineered to separate FPGA-specific design decisions from the core design.
 
 [^3]: Architects adopted the "Synthesis" terminology from hardware design workflows. A hardware design is *synthesized* into silicon. Since we're now generating designs from a high-level language, we'll call it "High-level Synthesis". From a compiler/programming languages viewpoint, this is just a compiler.
@@ -213,4 +208,3 @@ drafts of this blog post*.
 [dahlia-paper]: /files/pubs/dahlia.pdf
 [dahlia]: https://capra.cs.cornell.edu/dahlia
 
-_Have comments? [Email](mailto:rachit.nigam12@gmail.com) or [tweet](https://twitter.com/notypes) at me._

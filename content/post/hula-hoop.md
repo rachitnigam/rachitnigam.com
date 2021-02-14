@@ -1,21 +1,11 @@
 +++
 title = "HULA: Load Balancing for Programmable Data Planes"
-summary = "PL student implements something useful, surprising everyone involved."
 date = 2018-12-14T14:19:37+05:30
 draft = true
 
-authors = []
+[extra]
+summary = "PL student implements something useful, surprising everyone involved."
 tags = []
-
-# Featured image
-# Place your image in the `static/img/` folder and reference its filename below, e.g. `image = "example.jpg"`.
-# Use `caption` to display an image caption.
-#   Markdown linking is allowed, e.g. `caption = "[Image credit](http://example.org)"`.
-# Set `preview` to `false` to disable the thumbnail in listings.
-[header]
-image = ""
-caption = ""
-preview = true
 
 +++
 

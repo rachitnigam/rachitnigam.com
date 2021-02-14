@@ -1,10 +1,11 @@
 +++
 title = "Learning to Fail"
-summary = "Naive PhD student explains how to succeed at research."
 date = 2018-12-19T07:20:00+05:30
 draft = false
 
+[extra]
 authors = []
+summary = "Naive PhD student explains how to succeed at research."
 tags = ["research", "personal"]
 
 +++
@@ -158,7 +159,7 @@ _Have comments? [Email](mailto:rachit.nigam12@gmail.com) or [tweet](https://twit
 
 [^1]: Yes, I am a walking PL cliché.
 
-[^2]: Michael Greenberg, one of our collaborators, continued working on this and has come up with some [nice results](http://www.cs.pomona.edu/~michael/papers/px2018.pdf).
+[^2]: Michael Greenberg, one of our collaborators, continued working on this and has come up with some [nice results](http://shell.cs.pomona.edu/).
 
 [^3]: This eventually became a [paper](https://aaronweiss.us/pubs/ase17.pdf).
 

@@ -4,16 +4,8 @@ summary = "Undergrad writes some JavaScript and lies about the article length."
 date = 2018-08-22T21:52:05-04:00
 draft = true
 
-# Tags and categories
-# For example, use `tags = []` for no tags, or the form `tags = ["A Tag", "Another Tag"]` for one or more tags.
+[extra]
 tags = ["research"]
-categories = []
-
-# Featured image
-# Place your image in the `static/img/` folder and reference its filename below, e.g. `image = "example.jpg"`.
-[header]
-image = ""
-caption = ""
 
 +++
 Stopify began began when Arjun asked me the question "What would it take to

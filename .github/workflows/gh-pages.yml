@@ -13,29 +13,10 @@ jobs:
         with:
           submodules: true
 
-      - name: Setup Hugo
-        uses: peaceiris/actions-hugo@v2
-        with:
-          hugo-version: '0.49.2'
-
-      - name: Build
+      - name: Install and Run Zola
         run: |
-          hugo
-          cp CNAME public/
-
-      - name: Purifycss
-        run: |
-          sudo npm install -g purify-css
-
-          CSS_FILE="./public/styles.css"
-          BOOTSTRAP_CSS="./public/css/bootstrap.min.css"
-
-          find public/ -name "*html" -type f | \
-            xargs purifycss "$CSS_FILE" --info --min --out "$CSS_FILE"
-
-          find public/ -name "*html" -type f | \
-            xargs purifycss "$BOOTSTRAP_CSS" --info --min --out "$BOOTSTRAP_CSS"
-
+          sudo snap install --edge zola
+          zola --root web/ build
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
