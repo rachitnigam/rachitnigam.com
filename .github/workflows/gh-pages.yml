@@ -16,7 +16,7 @@ jobs:
       - name: Install and Run Zola
         run: |
           sudo snap install --edge zola
-          zola --root web/ build
+          zola build
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
