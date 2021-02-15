@@ -15,7 +15,7 @@ that made is hard for me was deciding between Cornell and my other
 top choice was Cornell's "Free agent system". Here is a short post about what
 the system is and why it worked for me.
 
-#### Graduate School Admissions
+### Graduate School Admissions
 
 For most schools in the US, when you apply to a PhD program, students are usually
 picked out by one or more professors who think you'd be a good fit. After
@@ -24,7 +24,7 @@ and commit to the school. When the student starts at the school, they are
 funded by the professor and they start doing great things together. However,
 some schools don't follow this system.
 
-#### Cornell's Free Agent System
+### Cornell's Free Agent System
 
 At Cornell, and a few other schools, the admission process looks a bit
 different.  When a PhD student is admitted to Cornell, they are are _admitted
@@ -36,7 +36,7 @@ potential advisors without being worried about funding. This is the Free Agent
 system at Cornell. Students are free agents till they decide who they want to
 work with.
 
-#### The Problem
+### The Problem
 
 Cornell's free agent system was devised when the department was young and the
 incoming PhD students tended to have comparatively less research experience.
@@ -52,7 +52,7 @@ students are free agents their first year. This means that they are expected to
 two semesters.
 
 
-#### My Experience
+### My Experience
 
 The free agent system caused me a lot of angst during the decision process. For
 some background, I had started doing programming languages (PL) research in the
@@ -82,7 +82,7 @@ I was also able to start working with my awesome advisor [Adrian
 Sampson](https://www.cs.cornell.edu/~asampson/) and we quickly found a project
 I'm passionate about.
 
-#### Caveat Emptor
+### Caveat Emptor
 
 While the free agent system caused me some anguish in the decision process, it
 was not the primary reason I decided join Cornell.
