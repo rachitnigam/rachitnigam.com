@@ -33,7 +33,7 @@ decisions already made (which language to use, which toolchains, etc.)
 
 > Since I'm not the most experienced developer in the world, I would appreciate any suggestions (find my contact information at the end of the post).
 
-### Primary Communication
+## Primary Communication
 
 This is an easy one. Teams can either use email threads or one of the dozens
 of chat applications to have conversations about the project.
@@ -54,13 +54,13 @@ Text based mediums make it really hard to accurately convey emotions and it
 is easy to misread an offhand comment as being aggressive (I've certainly been
 guilty of this!)
 
-### Meetings
+## Meetings
 
 Meetings act as a synchronization point for the entire team and require some amount
 of preparation. I suggest having at least two team meetings every week, one
 with your advisor (main meeting) and one without them (student meeting).
 
-#### Main meeting
+### Main meeting
 
 For the main meeting, every student should be prepared with the following:
 
@@ -81,12 +81,12 @@ I need to get done every week.
 Concretely, I try every week to either complete the tasks assigned to me or
 have technical questions that are blocking me ready for the meeting.
 
-#### Student meeting
+### Student meeting
 
 The student meetings are more informal and are meant for in depth discussions
 about small issues that team members are facing in completing their tasks.
 
-### Codebases
+## Codebases
 
 If you're working on an applied systems project chances are you are building
 a software artifact. Regardless of how many people are writing code, it is useful to
@@ -112,7 +112,7 @@ expectations with team members:
   [rebasing](https://help.github.com/en/articles/about-git-rebase) instead of
   merging.
 
-### TODO List
+## TODO List
 
 Since most of my projects revolve around a software artifact, most of which
 are on [Github](https://github.com/rachitnigam), I use Github issues as
@@ -134,7 +134,7 @@ Largely, I divide issues into three categories:
 - **Miscellaneous**: These include questions or small bugs. These should be
   high frequency, i.e. created liberally, and answered quickly.
 
-### Conflict resolution
+## Conflict resolution
 
 This is an often overlooked dimension of team dynamics. Research projects can
 often be stressful, especially since students tend to be ambitious and prone
@@ -147,7 +147,7 @@ ask one of the team leads to mediate. While daunting, it is much better in the
 long run to have frank discussions about team expectations and stresses instead
 of letting things get worse.
 
-### Conclusion
+## Conclusion
 
 While there are several industrial strength methodologies for team managements,
 I like having a much more lightweight team management style. A lot of research

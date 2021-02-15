@@ -226,14 +226,12 @@ p {
   text-align: justify;
 }
 
-ul { list-style: circle inside; }
-ol { list-style: decimal inside; }
+ul { list-style: circle; }
+ol { list-style: decimal; }
 ol, ul {
-  padding-left: 0;
-  margin-top: 0; }
-ol ol, ol ul, ul ul, ul ol {
-    padding-left: 1em; }
-li { margin-bottom: 0; }
+  margin-top: 0;
+}
+/*li { margin-bottom: 0; }*/
 
 code {
   font-size: 90%;
@@ -323,7 +321,7 @@ dt {
   height: 10em;
 }
 
-.post h3, .post h2 {
+.post h2 {
   padding-top: 15px;
   margin-top: 30px;
   max-width: 600px;

@@ -187,7 +187,7 @@ During the last week while writing and finishing up the final experiments, I
 started staying late in the office. Three days before the deadline (Nov 19),
 I finished all the experiments and got cookies at midnight to celebrate this.
 After the cookies, I decided to bike back to home. I
-started biking down 2am. At 2.05am, I fell from my bike during a sharp turn
+started biking down at 2am. At 2.05am, I fell from my bike during a sharp turn
 and broke my left wrist. My roommate took me the ER where I got a splint. I was heartbroken.
 
 I woke up the next day and went into the lab after getting a proper arm cast.
@@ -211,7 +211,7 @@ hacked up a demo project (called [Diospyros][dios]) and submitted the proposal.
 
 I came back to Cornell in the spring. Doctor told me that while my broken wrist
 bone had healed, a cartilage tear in my wrist might never properly heal. I
-wondered if a paper submission was worth a lifelong injury (it wasn't).
+wondered if a paper submission was worth a lifelong injury.
 
 The semester rolled on and we were accepted for stage 2 of the Qualcomm
 proposal. We continued hacking on the project and wrote an even stronger stage 2
