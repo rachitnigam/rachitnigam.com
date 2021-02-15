@@ -130,7 +130,7 @@ a.nav-item:last-child {
   margin-right: 0;
 }
 a.nav-item:first-child {
-  margin-left: 2em;
+  margin-left: 0;
 }
 
 a.nav-item:hover, a.nav-item:focus {
@@ -441,6 +441,9 @@ table.plain td {
 @media screen and (min-width: 585px) {
   .name {
     flex: 1 0;
+  }
+  a.nav-item:first-child {
+    margin-left: 2em;
   }
 }
 
