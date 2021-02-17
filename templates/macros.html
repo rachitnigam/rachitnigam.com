@@ -51,7 +51,13 @@
 <div class="blurb">
   <div class="date">{{ post.date | date(format="%b ’%y") }}</div>
   <div class="description">
-    <a href="{{ post.permalink | safe }}">{{ post.title | safe }}</a><br/>
+    {% if post.extra.external %}
+    <a href="{{ post.extra.external | safe }}">
+    {% else %}
+    <a href="{{ post.permalink | safe }}">
+    {% endif %}
+    {{ post.title | safe }}
+    </a><br/>
    <div class="post-tease">
     {{ post.extra.summary }}
    </div>
