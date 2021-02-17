@@ -236,16 +236,18 @@ ol, ul {
 }
 /*li { margin-bottom: 0; }*/
 
-code {
+pre {
   font-size: 90%;
-  white-space: nowrap;
-  background: rgba(247, 245, 238, 0.7);
+  /*white-space: nowrap;*/
   border-radius: 5px;
-  max-width: 600px;}
+  max-width: 600px;
+  padding-left: 1em;
+}
 
-pre > code {
-  display: block;
-  white-space: pre; }
+pre {
+  background-color: #fffff8;
+  border-left: 2px solid #aaa;
+}
 
 th,
 td {
