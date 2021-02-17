@@ -175,6 +175,8 @@ body {
   color: #333333;
   text-rendering: optimizeLegibility;
   hyphens: auto;
+  counter-reset: sidenote-counter;
+
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -290,8 +292,6 @@ dt {
   font-size: 1.1em;
   line-height: 1.25;
   hyphens: none;
-  /*margin-bottom: 8px;*/
-  /*font-weight: 500;*/
 }
 
 .publication-authors, .publication-authors a {
@@ -319,6 +319,7 @@ dt {
 
 .post img {
   height: 10em;
+  max-width: 90%;
 }
 
 .post h2 {
@@ -334,6 +335,89 @@ dt {
   margin-bottom: 2em;
 }
 
+/*** Sidenotes */
+.sidenote::before {
+    content: counter(sidenote-counter) " ";
+    font-size: 75%;
+    top: -0.5rem;
+}
+.sidenote, .marginnote {
+    float: right;
+    clear: right;
+    margin-right: -60%;
+    width: 300px;
+    margin-top: 0.3rem;
+    margin-bottom: 0;
+    font-size: 0.9rem;
+    line-height: 1.3;
+    vertical-align: baseline;
+    position: relative;
+}
+
+.sidenote-number {
+    counter-increment: sidenote-counter;
+}
+.sidenote-number::after {
+    content: counter(sidenote-counter);
+    display: inline-block;
+    font-size: 75%;
+    /* Remove space before and after footnote in markdown */
+    margin-left: -0.3em;
+    top: -0.5rem;
+    left: 0.1rem;
+}
+.sidenote-number::after, .sidenote::before {
+    position: relative;
+    vertical-align: baseline;
+}
+
+label.sidenote-number {
+    display: inline;
+}
+
+input.margin-toggle {
+    display: none;
+}
+
+label.margin-toggle:not(.sidenote-number) {
+  display: inline;
+}
+
+
+@media (max-width: 1130px) {
+    label.margin-toggle:not(.sidenote-number) {
+        display: inline;
+    }
+
+    .sidenote,
+    .marginnote {
+        display: none;
+    }
+
+    .margin-toggle:checked + .sidenote,
+    .margin-toggle:checked + .marginnote {
+        display: block;
+        float: left;
+        left: 1rem;
+        clear: both;
+        width: 95%;
+        margin: 1rem 2.5%;
+        vertical-align: baseline;
+        position: relative;
+    }
+
+    label {
+        cursor: pointer;
+    }
+}
+
+label.sidenote-number {
+    display: inline;
+}
+label.margin-toggle:not(.sidenote-number) {
+    display: none;
+}
+
 /*** Footnotes */
 .footnote-definition > p {
   display: inline;
@@ -345,10 +429,6 @@ dt {
 
 /********** Additional styling **********/
 
-article.post {
-  width: 100%;
-}
-
 div.footnotes {
   max-width: 600px;
   border-top: 1px dashed #AAAAAA;
@@ -356,61 +436,13 @@ div.footnotes {
   font-size: 80%;
 }
 
-figure.highlight,
-figure.highlight *
-{ border: none; }
-
-figure.highlight { padding: 0; margin: 0; }
-figure.highlight pre { padding: 0; margin: 0; }
-
 .center {
   text-align: center;
-}
-
-ul.bibliography {
-  list-style-type: none;
-  list-style-position: inside;
-  text-indent: -17px;
-  padding-left: 17px;
-  padding-right: 0;
-  margin-right: 0;
-}
-
-ul.bibliography li {
-  margin-bottom: 15px;
-  margin-right: 0;
-  padding-right: 0;
-}
-
-ul.bibliography li.highlight {
-  background-color: #DDDD;
-}
-
-ul.contents {
-  max-width: 600px;
-  padding-left: 1em;
-  list-style: square inside;
-}
-
-table.plain th,
-table.plain td {
-  border: none;
-  padding-top: 0px;
-  padding-bottom: 0px;
-}
-
-.plainlist {
-  list-style: none;
 }
 
 .date {
   font-weight: 300;
   text-align: left;
-}
-
-.excerpt {
-  margin: 0 0 0 0px;
-  font-style: italic;
 }
 
 .blurb {
