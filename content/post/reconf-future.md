@@ -111,7 +111,9 @@ pay-what-you-use model.
 Owing to its root as a hardware simulator, FPGA programming toolchains repurpose
 existing hardware design languages (HDLs). As a circuit simulator, this is
 a really good idea. You can simply take your preexisting hardware design and
-run it on an FPGA.[^2]
+run it on an FPGA.{% footnote() %}
+I apologize to my architect friends. Running designs on an FPGA in reality can be an incredible challenge. FPGAs have different kinds of memory and performance characteristics. Most hardware design codebases are carefully engineered to separate FPGA-specific design decisions from the core design.
+{% end %}
 
 Unfortunately, when trying to run high-level application code
 the level of abstraction afforded by HDLs is far too low-level.
@@ -142,8 +144,15 @@ in the community.
 
 ## High-Level Synthesis
 
-High-Level Synthesis[^3] is the idea of compiling a computational description
-in a high-level programming language[^4], like C or C++, into an HDL like
+High-Level Synthesis {% footnote() %}
+"Synthesis" is borrowed from hardware design workflows---circuits are synthesized into silicon. This is just a compiler.
+{% end %}
+is the idea of compiling a computational description
+in a high-level programming language, {% footnote() %}
+Architects operate at the level of gates, wires, and clocks. C++ is a huge
+jump in abstractions.
+{% end %}
+like C or C++, into an HDL like
 Verilog. HLS has been quite successful in a multitude of domains---everything
 from [digital signal processing][hls-dsp] to [machine learning
 accelerators][hls-ml] has been implemented in HLS.
@@ -181,14 +190,6 @@ add it here!)
 drafts of this blog post*.
 
 _Have comments? [Email](mailto:rachit.nigam12@gmail.com) or [tweet](https://twitter.com/notypes) at me._
-
-----
-
-[^2]: I apologize to my architect friends. Running designs on an FPGA in reality can be an incredible challenge. FPGAs have different kinds of memory and performance characteristics. Most hardware design codebases are carefully engineered to separate FPGA-specific design decisions from the core design.
-
-[^3]: Architects adopted the "Synthesis" terminology from hardware design workflows. A hardware design is *synthesized* into silicon. Since we're now generating designs from a high-level language, we'll call it "High-level Synthesis". From a compiler/programming languages viewpoint, this is just a compiler.
-
-[^4]: The choice of C or C++ as a "high-level language" might seem odd but to architects, who operate at the level clock cycles and hardware structures, C++ is a huge jump in abstraction.
 
 [f1]: https://aws.amazon.com/education/F1-instances-for-educators/
 [gf-7nm]: https://www.anandtech.com/show/13277/globalfoundries-stops-all-7nm-development

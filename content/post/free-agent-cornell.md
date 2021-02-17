@@ -1,5 +1,5 @@
 +++
-title = "PhD@Cornell: The Free Agent system"
+title = "PhD@Cornell: The Free Agent System"
 date = 2018-12-15T08:27:21+05:30
 draft = false
 
@@ -31,7 +31,7 @@ different.  When a PhD student is admitted to Cornell, they are are _admitted
 to the department_, which highlights Cornell's commitment towards the student's
 academic freedom. Concretely, this means that Cornell guarantees funding,
 usually through teaching assistantship, for the student without tying them to
-an advisor [^1].  This is supposed to allow the students to explore and talk to
+an advisor.  This is supposed to allow the students to explore and talk to
 potential advisors without being worried about funding. This is the Free Agent
 system at Cornell. Students are free agents till they decide who they want to
 work with.
@@ -48,8 +48,11 @@ quite certain about the area they want to work in.
 
 Furthermore, the CS department is also structured in a way that assumes
 students are free agents their first year. This means that they are expected to
-~~take a lot of classes and~~ [^1] be teaching assistants (TAs) in their first
-two semesters.
+~~take a lot of classes and~~ be teaching assistants (TAs) in their first
+two semesters.{% footnote() %}
+The CS department recently overhauled the course requirement to reduce the
+number of classes and restrictions on which classes to take.
+{% end %}
 
 
 ### My Experience
@@ -87,8 +90,12 @@ I'm passionate about.
 While the free agent system caused me some anguish in the decision process, it
 was not the primary reason I decided join Cornell.
 
-- My primary motivators were research that excited me, and people [^3] who are
-  just as excited about it as me.
+- My primary motivators were research that excited me, and people who are
+  just as excited about it as me.{% footnote() %}
+  Importantly, this includes other grad students.
+  Remember, you're going to be spending a lot more time with other grad
+  students than you will with faculty.
+  {% end %}
 - The first year TAing requirement causes some amount of stress for
   new students. However, the department is aware of the issues and is
   trying to move away from this system.
@@ -101,6 +108,4 @@ on schools. Good luck!
 _Have comments? [Email](mailto:rachit.nigam12@gmail.com) or [tweet](https://twitter.com/notypes) at me._
 
 
-[^2]: The CS department recently overhauled the course requirement to reduce the number of classes and restrictions on which classes to take.
 
-[^3]: Importantly, This includes other grad students. Remember, you're going to be spending a lot more time with other grad students than you will with faculty.

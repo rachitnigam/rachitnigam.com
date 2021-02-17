@@ -32,14 +32,21 @@ Here is a quick summary of my research experience as an undergrad:
 ### Spring 2016
 
 I reached out a my undergraduate advisor in my first semester after being
-fascinated with Scheme[^1]. After some back and forth, I quickly started
+fascinated with Scheme.{% footnote() %}
+Yes, I am a walking PL cliché.
+{% end %}
+After some back and forth, I quickly started
 a project. The project was to build a formal semantics for bash scripts. The
 bash specification is large and complicated with a lot of subtle interactions.
 The particular phase we were interested in formalizing were the bash shell
 [expansions][]. We tried to build a Hoare logic style semantics for the expansion, because
 we wanted to ultimately verify properties of these shell scripts. Unfortunately,
 I showed that such a semantics becomes super complicated and we abandoned the
-project[^2]. A few weeks into research and I had already failed a project.
+project.{% footnote() %}
+Michael Greenberg, one of our collaborators, continued working on this and has
+come up with some [nice results](http://shell.cs.pomona.edu/).
+{% end %}
+A few weeks into research and I had already failed a project.
 
 ### Summer 2016
 
@@ -73,13 +80,19 @@ People on the project had built a frontend that could take JavaScript code and
 compile it into something that could enforces security conditions.
 Around the same time, the Puppet synthesis project slowed down because the
 first author was applying to graduate schools and I was focusing more on
-Fission. Eventually, I stopped working on Puppet synthesis entirely and even
-though it was eventually published[^3].
+Fission. Eventually, I stopped working on Puppet synthesis entirely.{% footnote() %}
+This eventually became a [paper](https://aaronweiss.us/pubs/ase17.pdf).
+{% end %}
 
 To cap off the depressing string of half completed projects, it was around this
 time I actually had minor clinical depression and my productivity collapsed. After
 attending [ICFP '16](https://conf.researchr.org/home/icfp-2016) I decided to
-start therapy to "fix" my clinical depression[^4].
+start therapy to "fix" my clinical depression.{% footnote() %}
+Researchers are people who sometimes work extraordinarily hard at the expense
+of their own health.
+It is important to realize that your work is significantly
+less important that your health.
+{% end %}
 
 Meanwhile, we also published a [workshop
 paper](http://drops.dagstuhl.de/opus/volltexte/2017/7124/pdf/LIPIcs-SNAPL-2017-5.pdf)
@@ -157,13 +170,7 @@ before you can see any progress.
 
 _Have comments? [Email](mailto:rachit.nigam12@gmail.com) or [tweet](https://twitter.com/notypes) at me._
 
-[^1]: Yes, I am a walking PL cliché.
-
-[^2]: Michael Greenberg, one of our collaborators, continued working on this and has come up with some [nice results](http://shell.cs.pomona.edu/).
-
-[^3]: This eventually became a [paper](https://aaronweiss.us/pubs/ase17.pdf).
-
-[^4]: Researchers are people who sometimes work extraordinarily hard at the expense of their own health. It is important to realize that your work is significantly less important that your health.
+Researchers are people who sometimes work extraordinarily hard at the expense of their own health. It is important to realize that your work is significantly less important that your health.
 
 [rehearsal]: https://dl.acm.org/doi/10.1145/2908080.2908083
 
