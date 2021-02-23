@@ -16,6 +16,7 @@ authors = [
 publication_short = "ASPLOS"
 publication = "Conference on Architectural Support for Programming Languages and Operating Systems"
 
+pdf = "https://www.cs.cornell.edu/~avh/diospyros-asplos-2021-preprint.pdf"
 urls = [
   {name = "Code", url="https://github.com/cucapra/diospyros"}
 ]
