@@ -110,6 +110,7 @@ support.
 So, the valuable takeaway from this is that research projects that seek to
 support instead of compete might win out in the long-term.
 
+_Have comments? [Email](mailto:rachit.nigam12@gmail.com) or [tweet](https://twitter.com/notypes) at me._
 
 [cyc]: https://www.gwern.net/Complement
 [rose-proj]: http://emina.github.io/rosette/apps.html
