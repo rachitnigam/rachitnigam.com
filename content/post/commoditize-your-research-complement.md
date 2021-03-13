@@ -1,5 +1,5 @@
 +++
-title = "Commoditize the Complement of your Research"
+title = "Commoditize the Complement of Your Research"
 date = 2021-03-13
 draft = false
 
