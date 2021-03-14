@@ -103,7 +103,7 @@ However, building upon Rosette makes the paper that much more compelling.
 
 Rosette was not the first tool to address the needs of a particular research
 community.
-[LLVM][], [Valgrind][], [KLEE][], etc. all found research areas where people
+[LLVM][], [Valgrind][], [KLEE][], [the Click modular router][click-router], [GEM5][] etc. all found research areas where people
 were desperate to build tools but had no good infrastructure.
 All of them capitalized on this need by building robust tools and providing
 support.
@@ -122,3 +122,5 @@ _Have comments? [Email](mailto:rachit.nigam12@gmail.com) or [tweet](https://twit
 [synth]: https://blog.sigplan.org/2019/07/31/program-synthesis-in-2019/
 [z3]: https://github.com/Z3Prover/z3
 [rosette]: http://emina.github.io/rosette/
+[gem5]: https://www.gem5.org/
+[click-router]: https://pdos.csail.mit.edu/papers/click:tocs00/paper.pdf
