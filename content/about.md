@@ -2,7 +2,10 @@
 template = "index.html"
 +++
 
-Rachit Nigam is a PhD student studying computer science at Cornell University. He is a part of the [PL@Cornell][pl-cornell] and [CAPRA][capra] research groups and is advised by [Adrian Sampson][adrian]. He leads the [Dahlia][dahlia] project and is interested tools and languages for hardware design. He previously worked in the [PLASMA][plasma] research group at the University of Massachusetts Amherst with [Arjun Guha][arjun].
+Rachit Nigam is a PhD student studying computer science at Cornell University.
+He is a part of the [CAPRA][] and [PL@Cornell][pl-cornell] research groups and is advised by [Adrian Sampson][adrian].
+His research ([Dahlia][], [Calyx][]) is focused on building high-level programming models for designing hardware accelerators.
+He previously worked in the [PLASMA][plasma] research group at the University of Massachusetts Amherst with [Arjun Guha][arjun].
 
 [capra]: https://capra.cs.cornell.edu/
 [adrian]: https://www.cs.cornell.edu/~asampson/
@@ -10,3 +13,4 @@ Rachit Nigam is a PhD student studying computer science at Cornell University. H
 [arjun]: http://people.cs.umass.edu/arjun
 [pl-cornell]: http://pl.cs.cornell.edu
 [dahlia]: http://capra.cs.cornell.edu/dahlia
+[calyx]: http://capra.cs.cornell.edu/calyx
