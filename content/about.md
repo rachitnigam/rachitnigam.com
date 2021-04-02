@@ -2,7 +2,11 @@
 template = "index.html"
 +++
 
-Rachit Nigam is a PhD student studying computer science at Cornell University.
+Rachit{% footnote() %}
+*Pronunciation*: Ruh-chit. First syllable pronounced the same as the "ru" in
+russian. Most 'a's at the start of Indian names are actually 'u's.
+{% end %}
+Nigam is a PhD student studying computer science at Cornell University.
 He is a part of the [CAPRA][] and [PL@Cornell][pl-cornell] research groups and is advised by [Adrian Sampson][adrian].
 His research ([Dahlia][], [Calyx][]) is focused on building high-level programming models for designing hardware accelerators.
 He previously worked in the [PLASMA][plasma] research group at the University of Massachusetts Amherst with [Arjun Guha][arjun].
