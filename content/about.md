@@ -3,8 +3,7 @@ template = "index.html"
 +++
 
 Rachit{% footnote() %}
-*Pronunciation*: Ruh-chit. First syllable pronounced the same as the "ru" in
-russian. Most 'a's at the start of Indian names are actually 'u's.
+*Pronunciation*: Ruh-chit. Rhymes with "crutch-it". 'a's at the start of many Indian names are actually 'u's.
 {% end %}
 Nigam is a PhD student studying computer science at Cornell University.
 He is a part of the [CAPRA][] and [PL@Cornell][pl-cornell] research groups and is advised by [Adrian Sampson][adrian].
