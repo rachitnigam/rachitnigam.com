@@ -16,6 +16,6 @@ pdf = "/files/pubs/stopify-pldi18.pdf"
 urls = [
  {name = "Demo", url = "http://stopify.org"},
  {name = "Code", url = "https://github.com/plasma-umass/stopify"},
- {name = "Video", url = "https://www.youtube.com/watch?v=M8PEWKQh2k4&feature=youtu.be"}
+ {name = "Talk", url = "https://www.youtube.com/watch?v=M8PEWKQh2k4&feature=youtu.be"}
 ]
 +++

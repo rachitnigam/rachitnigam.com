@@ -25,8 +25,8 @@ image_alt = "Dahlia Logo"
 pdf = "/files/pubs/dahlia.pdf"
 urls = [
   { name = "Demo", url = "https://capra.cs.cornell.edu/dahlia" },
-  { name = "Talk (short)", url = "https://youtu.be/xw9cRTIpkPc" },
-  { name = "Talk (long)", url = "https://www.youtube.com/watch?v=hp_RwcnrFJg" },
+  { name = "Short Talk", url = "https://youtu.be/xw9cRTIpkPc" },
+  { name = "Full Talk", url = "https://www.youtube.com/watch?v=hp_RwcnrFJg" },
   { name = "Slides", url = "/files/slides/dahlia.pdf"},
   { name = "Code", url = "https://github.com/cucapra/dahlia" }
 ]

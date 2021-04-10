@@ -19,6 +19,9 @@ publication = "International Conference on Languages, Compilers, and Tools for E
 publication_short = "LCTES"
 
 pdf = "/files/pubs/dios-wip.pdf"
-urls = []
+urls = [
+ {name = "Talk", url = "https://www.youtube.com/watch?v=fDnsmRY7LOc"}
+]
+
 
 +++
