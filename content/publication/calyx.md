@@ -23,7 +23,7 @@ pdf = "/files/pubs/calyx.pdf"
 urls = [
   { name = "Demo", url = "https://capra.cs.cornell.edu/calyx" },
   { name = "Code", url = "https://github.com/cucapra/calyx" },
-  { name = "Slides", url = "/files/slides/calyx.pdf" }
+  { name = "Slides", url = "/files/slides/calyx.pdf" },
   { name = "Short Talk", url = "https://youtu.be/MElzn-KV5zw" }
 ]
 +++
