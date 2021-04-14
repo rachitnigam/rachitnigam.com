@@ -74,7 +74,8 @@
     {% endfor %}
     </div>
     <div class="publication-links">
-    {% for link in pub.extra.urls %}
+    {% set sorted_links = pub.extra.urls | sort(attribute="name") %}
+    {% for link in sorted_links %}
       <span class="publication-link">
       <a class="unstyled-link" href="{{ link.url }}">
       【{{ link.name }}】
