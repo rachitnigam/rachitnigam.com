@@ -37,5 +37,6 @@ author = [
   { name = "Joe Gibbs Politz", link = "https://jpolitz.github.io/" },
   { name = "Jean-Baptiste Jeannin", link = "https://jeannin.github.io/" },
   { name = "Yuwei Ye", link = "https://www.viviyye.com/" },
-  { name = "Sachille Atapattu", link = "https://www.csl.cornell.edu/~sachille/"}
+  { name = "Sachille Atapattu", link = "https://www.csl.cornell.edu/~sachille/"},
+  { name = "Jane Tangen", link = "https://people.cs.umass.edu/~jktangen/" }
 ]
