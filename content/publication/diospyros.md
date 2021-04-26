@@ -18,7 +18,7 @@ publication = "Conference on Architectural Support for Programming Languages and
 
 pdf = "https://www.cs.cornell.edu/~avh/diospyros-asplos-2021-preprint.pdf"
 urls = [
-  {name = "Code", url="https://github.com/cucapra/diospyros"}
+  {name = "Code", url="https://github.com/cucapra/diospyros"},
   { name = "Short Talk", url = "https://www.youtube.com/watch?v=pGHjvPLrmRc" },
   { name = "Full Talk", url = "https://www.youtube.com/watch?v=RvMI4prTqHY" }
 ]
