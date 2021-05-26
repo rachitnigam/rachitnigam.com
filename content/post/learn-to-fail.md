@@ -99,7 +99,6 @@ paper](http://drops.dagstuhl.de/opus/volltexte/2017/7124/pdf/LIPIcs-SNAPL-2017-5
 on Fission. Unfortunately, after several rewrites of the compiler, people
 leaving the project, and fundamental performance issues, it was becoming
 painfully clear that Fission would not pan out.
-
 If you're keeping track, it's 3/3 for failed projects.
 
 ### Spring 2017
@@ -169,8 +168,6 @@ about what research was: it requires a religious amount of faith and hard work
 before you can see any progress.
 
 _Have comments? [Email](mailto:rachit.nigam12@gmail.com) or [tweet](https://twitter.com/notypes) at me._
-
-Researchers are people who sometimes work extraordinarily hard at the expense of their own health. It is important to realize that your work is significantly less important that your health.
 
 [rehearsal]: https://dl.acm.org/doi/10.1145/2908080.2908083
 
