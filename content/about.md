@@ -13,7 +13,7 @@ He previously worked in the [PLASMA][plasma] research group at the University of
 [capra]: https://capra.cs.cornell.edu/
 [adrian]: https://www.cs.cornell.edu/~asampson/
 [plasma]: https://plasma-umass.org/
-[arjun]: http://people.cs.umass.edu/arjun
+[arjun]: https://ccs.neu.edu/~arjunguha/main/home/
 [pl-cornell]: http://pl.cs.cornell.edu
 [dahlia]: http://capra.cs.cornell.edu/dahlia
 [calyx]: http://capra.cs.cornell.edu/calyx
