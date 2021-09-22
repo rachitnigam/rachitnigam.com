@@ -23,6 +23,8 @@ news_items = 5
 
 # Links to author webpages
 author = [
+  { name = "Griffin Berlstein", link = "https://griffinberlste.in/" },
+  { name = "Chris Gyurgyik", link = "https://cgyurgyik.github.io/" },
   { name = "Vincent Lee", link = "https://www.linkedin.com/in/vincent-lee-15685425" },
   { name = "Alexa VanHattum", link = "https://www.cs.cornell.edu/~avh/" },
   { name = "James Bornholt", link = "https://www.cs.utexas.edu/~bornholt/" },
