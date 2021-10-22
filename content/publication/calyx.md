@@ -21,7 +21,8 @@ publication_short = "ASPLOS"
 
 pdf = "/files/pubs/calyx.pdf"
 urls = [
-  { name = "Demo", url = "https://capra.cs.cornell.edu/calyx" },
+  { name = "Website", url = "https://calyxir.org" },
+  { name = "Demo", url = "https://play.calyxir.org" },
   { name = "Code", url = "https://github.com/cucapra/calyx" },
   { name = "Slides", url = "/files/slides/calyx.pdf" },
   { name = "Short Talk", url = "https://youtu.be/MElzn-KV5zw" }
