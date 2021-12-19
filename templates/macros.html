@@ -18,35 +18,6 @@
 
 {% endmacro contact %}
 
-{# Styling for authors in publication list #}
-{% macro author(name) %}
-
-{%- if name == "Rachit Nigam" -%}
-  <span class="publication-highlight">{{ name }}</span>
-{%- else -%}
-
-  {% set_global link = "" %}
-  {% for author in config.extra.author %}
-  {% if author.name == name %}
-    {% set_global link = author.link %}
-  {% endif %}
-  {% endfor %}
-
-  <span class="publication-author">
-  {%- if link != "" -%}
-  <!-- Link in author website if present -->
-  <a href="{{ link }}">
-  {%- endif -%}
-  {{ name }}
-  {%- if link != "" -%}
-  </a>
-  {%- endif -%}
-  </span>
-
-{%- endif -%}
-
-{% endmacro author %}
-
 
 {# Styling for Posts #}
 {% macro generate_post(post) %}
@@ -77,3 +48,70 @@
  </div>
 </div>
 {% endmacro post %}
+
+{# Styling for authors in publication list #}
+{% macro author(name) %}
+
+{%- if name == "Rachit Nigam" -%}
+  <span class="publication-highlight">{{ name }}</span>
+{%- else -%}
+
+  {% set_global link = "" %}
+  {% for author in config.extra.author %}
+  {% if author.name == name %}
+    {% set_global link = author.link %}
+  {% endif %}
+  {% endfor %}
+
+  <span class="publication-author">
+  {%- if link != "" -%}
+  <!-- Link in author website if present -->
+  <a href="{{ link }}">
+  {%- endif -%}
+  {{ name }}
+  {%- if link != "" -%}
+  </a>
+  {%- endif -%}
+  </span>
+
+{%- endif -%}
+
+{% endmacro author %}
+
+
+{# Styling for a publication item #}
+{% macro publication(pub) %}
+<div class="publication">
+  <div class="publication-venue">
+    {{- pub.extra.publication_short -}}
+    &nbsp;
+    {{ pub.date | date(format="’%y") }}
+  </div>
+  <div class="publication-details">
+    <div class="publication-title">
+    {% if pub.extra.pdf %}
+    <a href={{ pub.extra.pdf }}>
+    {% endif %}
+    {{ pub.title | safe }}
+    {% if pub.extra.pdf %}
+    </a>
+    {% endif %}
+    </div>
+    <div>
+    {% for name in pub.extra.authors %}
+    {{ m::author(name=name) }}{% if not loop.last %}, {% endif %}
+    {% endfor %}
+    </div>
+    <div class="publication-links">
+    {% set sorted_links = pub.extra.urls | sort(attribute="name") %}
+    {% for link in sorted_links %}
+      <span class="publication-link">
+      <a class="unstyled-link" href="{{ link.url }}">
+      【&#8239;{{ link.name }}&#8239;】
+      </a>
+      </span>
+    {% endfor %}
+    </div>
+  </div>
+</div>
+{% endmacro publication %}

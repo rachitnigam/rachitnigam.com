@@ -30,4 +30,5 @@ urls = [
   { name = "Slides", url = "/files/slides/dahlia.pdf"},
   { name = "Code", url = "https://github.com/cucapra/dahlia" }
 ]
+type="conf"
 +++

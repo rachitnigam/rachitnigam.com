@@ -27,4 +27,5 @@ urls = [
   { name = "Slides", url = "/files/slides/calyx.pdf" },
   { name = "Short Talk", url = "https://youtu.be/MElzn-KV5zw" }
 ]
+type="conf"
 +++

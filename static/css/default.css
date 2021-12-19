@@ -180,40 +180,28 @@ body {
 
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2 {
   margin-top: 1em;
   margin-bottom: 0.1em;
+}
+
+h3 {
+  margin-top: 0.5em;
+}
+
+h1, h2, h3 {
   font-weight: 300;
   hyphens: none;
+}
+
+/* Subsubheadings are a crutch. Don't use them. */
+h4, h5, h6 {
+  color: red;
 }
 
 h1 { font-size: 36px; line-height: 1.25; letter-spacing: -1px; }
 h2 { font-size: 24px; line-height: 1.35; }
 h3 { font-size: 20px; line-height: 1.5; }
-h4 { font-size: 15px; line-height: 1.6;  letter-spacing: 0px; }
-h5 { font-size: 15px; line-height: 1.6;  letter-spacing: 0px; }
-
-h4, h5 {
-  font-weight: bold;
-  display: inline;
-  float: left;
-  margin-right: .5em;
-  padding: 0;
-  margin-bottom: 0;
-}
-
-h5 {
-  font-style: italic;
-  font-weight: normal;
-}
-
-h4:after, h5:after  {
-  content: ".";
-}
-
-h4 + p, h5 + p  {
-
-}
 
 hr {
  width:10rem;

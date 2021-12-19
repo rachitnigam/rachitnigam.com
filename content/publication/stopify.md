@@ -18,4 +18,5 @@ urls = [
  {name = "Code", url = "https://github.com/plasma-umass/stopify"},
  {name = "Talk", url = "https://www.youtube.com/watch?v=M8PEWKQh2k4&feature=youtu.be"}
 ]
+type="conf"
 +++

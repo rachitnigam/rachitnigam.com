@@ -11,5 +11,5 @@ publication_short = "SNAPL"
 
 pdf =  "http://drops.dagstuhl.de/opus/volltexte/2017/7124/pdf/LIPIcs-SNAPL-2017-5.pdf"
 urls = [ ]
-
+type="workshop"
 +++

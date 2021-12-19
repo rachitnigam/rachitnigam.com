@@ -51,40 +51,17 @@
 {{ m::anchor_heading(content="Publications") }}
 {% set news = get_section(path="publication/_index.md") %}
 {% set items = config.extra.news_items %}
-{% for pub in news.pages | sort(attribute="date") | reverse %}
-<div class="publication">
-  <div class="publication-venue">
-    {{- pub.extra.publication_short -}}
-    &nbsp;
-    {{ pub.date | date(format="’%y") }}
-  </div>
-  <div class="publication-details">
-    <div class="publication-title">
-    {% if pub.extra.pdf %}
-    <a href={{ pub.extra.pdf }}>
-    {% endif %}
-    {{ pub.title | safe }}
-    {% if pub.extra.pdf %}
-    </a>
-    {% endif %}
-    </div>
-    <div>
-    {% for name in pub.extra.authors %}
-    {{ m::author(name=name) }}{% if not loop.last %}, {% endif %}
-    {% endfor %}
-    </div>
-    <div class="publication-links">
-    {% set sorted_links = pub.extra.urls | sort(attribute="name") %}
-    {% for link in sorted_links %}
-      <span class="publication-link">
-      <a class="unstyled-link" href="{{ link.url }}">
-      【&#8239;{{ link.name }}&#8239;】
-      </a>
-      </span>
-    {% endfor %}
-    </div>
-  </div>
-</div>
+
+<!-- Conference Publications -->
+{{ m::anchor_heading(content="Conferences",size="3") }}
+{% for pub in news.pages | filter(attribute="extra.type", value="conf") | sort(attribute="date") | reverse %}
+{{ m::publication(pub=pub) }}
+{% endfor %}
+
+<!-- Workshop Publications -->
+{{ m::anchor_heading(content="Workshops",size="3") }}
+{% for pub in news.pages | filter(attribute="extra.type", value="workshop") | sort(attribute="date") | reverse %}
+{{ m::publication(pub=pub) }}
 {% endfor %}
 </section>
 

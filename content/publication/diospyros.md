@@ -22,4 +22,5 @@ urls = [
   { name = "Short Talk", url = "https://www.youtube.com/watch?v=pGHjvPLrmRc" },
   { name = "Full Talk", url = "https://www.youtube.com/watch?v=RvMI4prTqHY" }
 ]
+type="conf"
 +++

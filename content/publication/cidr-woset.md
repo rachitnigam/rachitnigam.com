@@ -19,4 +19,5 @@ publication_short = "WOSET"
 
 pdf = "/files/pubs/calyx-woset.pdf"
 urls = [ ]
+type="workshop"
 +++
