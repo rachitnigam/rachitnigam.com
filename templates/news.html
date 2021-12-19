@@ -2,8 +2,8 @@
 {% import "macros.html" as m %}
 
 {% block content %}
-<h2>News</h2>
 <section>
+<h2>News</h2>
 {% set news = get_section(path="news/_index.md") %}
 {% set items = config.extra.news_items %}
 {% for post in news.pages | sort(attribute="date") | reverse %}

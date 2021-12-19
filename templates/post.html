@@ -2,10 +2,10 @@
 {% import "macros.html" as m %}
 
 {% block content %}
-<h1 class="title">
-  {{ section.title }}
-</h1>
 <section>
+<h2>
+  {{ section.title }}
+</h2>
 <ul>
   {% for page in section.pages %}
   {{ m::generate_post(post=page) }}
