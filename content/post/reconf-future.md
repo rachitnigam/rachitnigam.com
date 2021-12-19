@@ -8,7 +8,7 @@ summary = "PhD student laments that computers are not fast enough."
 
 +++
 
-> **A TLDR on why you should care.** FPGAs, a form of reconfigurable
+> FPGAs, a form of reconfigurable
 > architectures, already power a large number of datacenter applications. With
 > FPGA acceleration becoming mainstream, it is the perfect opportunity to think
 > about programming models for designing next-generation high-performance
@@ -144,15 +144,13 @@ in the community.
 
 ## High-Level Synthesis
 
-High-Level Synthesis {% footnote() %}
+High-Level Synthesis{% footnote() %}
 "Synthesis" is borrowed from hardware design workflows---circuits are synthesized into silicon. This is just a compiler.
-{% end %}
-is the idea of compiling a computational description
+{% end %} is the idea of compiling a computational description
 in a high-level programming language, {% footnote() %}
 Architects operate at the level of gates, wires, and clocks. C++ is a huge
 jump in abstractions.
-{% end %}
-like C or C++, into an HDL like
+{% end %} like C or C++, into an HDL like
 Verilog. HLS has been quite successful in a multitude of domains---everything
 from [digital signal processing][hls-dsp] to [machine learning
 accelerators][hls-ml] has been implemented in HLS.
