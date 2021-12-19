@@ -9,7 +9,7 @@ summary = "PhD Student espouses economic theories he does not understand."
 
 "Commoditize your complement" is an idea about how companies can build profitable
 markets without complete vertical integration or monopolization.{% footnote() %}
-I highly recommend "[Laws of Tech: Commoditize Your Complement][cyc]" for a more
+I highly recommend "[Laws of Tech: Commoditize Your Complement](https://www.gwern.net/Complement)" for a more
 in-depth look into this idea.
 {% end %}
 Very briefly, the idea is this: every product has a *substitute* and a *complement*.
@@ -36,7 +36,7 @@ Solver-aided tools are a "hot topic" in programming languages research.
 The high-level idea is encoding the semantics of a program into boolean (or richer
 logics) and using SMT solvers like [Z3][] to either verify programs or
 automatically synthesize them from specifications.{% footnote() %}
-James Bornholt's [introduction to program synthesis][synth] provides a good overview of
+James Bornholt's [introduction to program synthesis](https://blog.sigplan.org/2019/07/31/program-synthesis-in-2019/) provides a good overview of
 the area.
 {% end %}
 
@@ -55,7 +55,7 @@ interpreter for your language and *automatically* turn it into a solver-aided
 tool.{% footnote() %}
 This simple idea is, of course, built upon deep insights about how solvers
 and symbolic execution work.
-I recommend reading the [Rosette paper][rose-paper] for those
+I recommend reading the [Rosette paper](https://homes.cs.washington.edu/~emina/doc/rosette.pldi14.pdf) for those
 interested.
 {% end %}
 The original [Rosette paper][rose-paper] was a novel and interesting contribution,
@@ -112,14 +112,12 @@ support instead of compete might win out in the long-term.
 
 _Have comments? [Email](mailto:rachit.nigam12@gmail.com) or [tweet](https://twitter.com/notypes) at me._
 
-[cyc]: https://www.gwern.net/Complement
 [rose-proj]: http://emina.github.io/rosette/apps.html
 [rose-paper]: https://homes.cs.washington.edu/~emina/doc/rosette.pldi14.pdf
 [sympro]: https://unsat.cs.washington.edu/projects/sympro/
 [llvm]:https://unsat.cs.washington.edu/projects/sympro/
 [Valgrind]: https://valgrind.org/
 [klee]: https://klee.github.io/
-[synth]: https://blog.sigplan.org/2019/07/31/program-synthesis-in-2019/
 [z3]: https://github.com/Z3Prover/z3
 [rosette]: http://emina.github.io/rosette/
 [gem5]: https://www.gem5.org/

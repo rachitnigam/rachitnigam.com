@@ -170,5 +170,4 @@ before you can see any progress.
 _Have comments? [Email](mailto:rachit.nigam12@gmail.com) or [tweet](https://twitter.com/notypes) at me._
 
 [rehearsal]: https://dl.acm.org/doi/10.1145/2908080.2908083
-
 [expansions]: https://www.gnu.org/software/bash/manual/html_node/Shell-Expansions.html

@@ -7,5 +7,5 @@
        id="sn-{{ nth }}"
        class="margin-toggle"/>
 <span class="sidenote">
-{{ body }}
+{{ body | markdown(inline=true) | safe }}
 </span>
