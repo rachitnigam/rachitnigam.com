@@ -15,5 +15,5 @@ He previously worked in the [PLASMA][plasma] research group at the University of
 [plasma]: https://plasma-umass.org/
 [arjun]: https://ccs.neu.edu/~arjunguha/main/home/
 [pl-cornell]: http://pl.cs.cornell.edu
-[dahlia]: http://capra.cs.cornell.edu/dahlia
-[calyx]: http://calyxir.org
+[dahlia]: https://capra.cs.cornell.edu/dahlia
+[calyx]: https://calyxir.org
