@@ -4,7 +4,7 @@ date = 2021-03-13
 draft = false
 
 [extra]
-summary = "PhD Student espouses economic theories he does not understand."
+summary = "PhD student espouses economic theories he does not understand."
 +++
 
 "Commoditize your complement" is an idea about how companies can build profitable
