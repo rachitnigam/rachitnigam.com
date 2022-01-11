@@ -42,17 +42,16 @@ how you simplified your AST?
 So you rolled out your own AST library, so that you may compile, nay, *transpile* your
 code and expose your assumptions in your data structures.{% footnote() %}
 Certain, of course, that because you're *transpiling* JavaScript to JavaScript, it is going to
-way easier than that real compilers do.
+way easier than what real compilers do.
 {% end %} What glorious engineering, you say to yourself.
 
 In the last leg of your journey to avoid building a compiler, your manager tells you
-that your code should run on older machines, which only support version 0.8 of your
-beautiful *transpiled* language.
-But what of your amazing and clever hacks that used type-level encodings to make your
-simple language feature work?
+that your code should run on older machines, which only support version 0.8.
+Version 0.8, of course, does not support the brilliant type-level encodings your
+transpiler generates to implement your feature.
 Not my problem, your manager says.
-So at last, you write some code that simplifies your *transpiled* code further,
-so it may only use features in version 0.8.
+So you write some code that simplifies your *transpiled* code further, making
+it use only features present in version 0.8.
 Done at last, you say to yourself, without having to build a compiler.
 
 A parser, an intermediate representation, transformation passes, and a code generator.
