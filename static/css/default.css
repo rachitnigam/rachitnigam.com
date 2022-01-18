@@ -81,6 +81,7 @@ body {
   margin: auto;
   width: 80%;
   max-width: 600px;
+  background-color: #fffff8;
 }
 
 header {
@@ -350,7 +351,7 @@ dt {
 .sidenote-number::after {
     content: counter(sidenote-counter);
     display: inline-block;
-    font-size: 75%;
+    font-size: 80%;
     /* Remove space before and after footnote in markdown */
     margin-left: -0.5em;
     top: -0.5rem;
