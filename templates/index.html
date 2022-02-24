@@ -59,7 +59,7 @@
 {% endfor %}
 
 <!-- Workshop Publications -->
-{{ m::anchor_heading(content="Workshops",size="3") }}
+{{ m::anchor_heading(content="Workshop & Short Papers",size="3") }}
 {% for pub in news.pages | filter(attribute="extra.type", value="workshop") | sort(attribute="date") | reverse %}
 {{ m::publication(pub=pub) }}
 {% endfor %}

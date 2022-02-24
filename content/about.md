@@ -2,13 +2,15 @@
 template = "index.html"
 +++
 
-Rachit{% footnote() %}
+Rachit Nigam{% footnote() %}
 *Pronunciation*: Ruh-CHITH NI-gum. First name rhymes with "crutch-it".
 {% end %}
-Nigam is a PhD candidate studying computer science at Cornell University.
+is a PhD candidate studying computer science at Cornell University.
 He is a part of the [CAPRA][] and [PL@Cornell][pl-cornell] research groups and is advised by [Adrian Sampson][adrian].
 His research ([Dahlia][], [Calyx][]) is focused on building high-level programming models for designing hardware accelerators.
 He previously worked in the [PLASMA][plasma] research group at the University of Massachusetts Amherst with [Arjun Guha][arjun].
+
+Rachit started [PLTea](https://pltea.github.io/) during PLDI '20 in hopes of keeping social interactions alive during virtual conferences. PLTea has since been organized several times ([ICFP '21][plt-icfp21], [SPLASH '21][plt-oopsla21], [PLDI '21][plt-pldi21]) and has inspired spin-offs in other communities ([ArchChat][]).
 
 [capra]: https://capra.cs.cornell.edu/
 [adrian]: https://www.cs.cornell.edu/~asampson/
@@ -17,3 +19,7 @@ He previously worked in the [PLASMA][plasma] research group at the University of
 [pl-cornell]: http://pl.cs.cornell.edu
 [dahlia]: https://capra.cs.cornell.edu/dahlia
 [calyx]: https://calyxir.org
+[plt-icfp21]: https://icfp21.sigplan.org/committee/icfp-2021-pltea-pltea-organization
+[plt-oopsla21]: https://2021.splashcon.org/track/splash-2021-pltea
+[plt-pldi21]: https://pldi21.sigplan.org/track/pldi-2021-community
+[archchat]: https://www.sigarch.org/introducing-the-archchat-social-hour-connecting-computer-architects-everywhere/
