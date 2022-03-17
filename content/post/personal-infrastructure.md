@@ -75,7 +75,7 @@ presentations, and manage tasks.
 
 **Slides.** Most of my presentations are written in Apple Keynote.
 People I know are divided on the use of animations in slides but I'm staunchly
-in support–it gives your slides that much more polish and forces your to
+in support–it gives your slides that much more polish and forces you to
 memorize the transitions resulting in an overall better talk.
 I have yet to see a good talk made in [LaTeX beamer][beamer]; my unscientific
 belief is that beamer encourages adding too much math on your slides which is
@@ -191,5 +191,5 @@ _Have comments? [Email](mailto:rachit.nigam12@gmail.com) or [tweet](https://twit
 [rg]: https://github.com/BurntSushi/ripgrep
 [fd]: https://github.com/sharkdp/fd
 [vim]: https://www.vim.org/
-[dotfiles]: github.com/rachitnigam/dotfiles
+[dotfiles]: https://github.com/rachitnigam/dotfiles
 [`fish`]: https://fishshell.com/
