@@ -1,5 +1,5 @@
 +++
-title = "PhD@Cornell: The Free Agent System"
+title = "PhD at Cornell: The Free Agent System"
 date = 2018-12-15T08:27:21+05:30
 draft = false
 
@@ -8,6 +8,10 @@ tags = ["grad school"]
 summary = "PhD student tries to justify his life choices."
 
 +++
+
+> **Update, 2022**: *After being at Cornell for couple more years, I've developed a more nuanced opinion of the "free agent system" at Cornell CIS.
+> I do not believe that this system scales well as the department has grown.
+> If you are an incoming student to Cornell CIS, I encourage you to set up rotation commitments with professors before you accept the offer.*
 
 Deciding which graduate school you're going to spend the next _n_ years of your
 life is one of the hardest decision of your life. One of the things
