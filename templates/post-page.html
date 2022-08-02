@@ -5,6 +5,9 @@
 <h1 class="title">
   {{ page.title }}
 </h1>
+<div class="date">
+{{ page.extra.summary }}
+</div>
 <p class="date">{{ page.date | date(format="%B %d, %Y") }}</p>
 </div>
 
