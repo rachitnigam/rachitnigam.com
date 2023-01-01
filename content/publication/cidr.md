@@ -18,7 +18,7 @@ authors = [
 publication = "Conference on Architectural Support for Programming Languages and Operating Systems"
 publication_short = "ASPLOS"
 
-pdf = ""
+pdf = "https://griffinberlste.in/pdf/cidr.pdf"
 urls = [ ]
 type="conf"
 +++
