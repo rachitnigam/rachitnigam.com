@@ -4,87 +4,87 @@
 {% block content %}
 <!-- Contact -->
 <div id="contact">
-<div class="portrait" style="background-image: url('/img/headshot.jpg');">
-</div>
+  <div class="portrait" style="background-image: url('/img/headshot.jpg');">
+  </div>
 
-<div class="portrait-title">
-<h3>PhD Candidate</h3>
+  <div class="portrait-title">
+    <h3>PhD Candidate</h3>
 
-<h3>
-<a href="https://cornell.edu" target="_blank" itemprop="url" rel="noopener">
-<span itemprop="name">Cornell University</span>
-</a>
-</h3>
-</div>
+    <h3>
+      <a href="https://cornell.edu" target="_blank" itemprop="url" rel="noopener">
+        <span itemprop="name">Cornell University</span>
+      </a>
+    </h3>
+  </div>
 
-<div class="contact-links">
-  {{ m::contact(link="mailto:rachit.nigam12@gmail.com", classes="fa fa-envelope") }}
-  {{ m::contact(link="//twitter.com/notypes", classes="fab fa-twitter") }}
-  {{ m::contact(link="//github.com/rachitnigam", classes="fab fa-github") }}
-  {{ m::contact(link="//scholar.google.com/citations?user=RNL2GjEAAAAJ", classes="ai ai-google-scholar") }}
-</div>
+  <div class="contact-links">
+    {{ m::contact(link="mailto:rachit.nigam12@gmail.com", classes="fa fa-envelope") }}
+    {{ m::contact(link="//twitter.com/notypes", classes="fab fa-twitter") }}
+    {{ m::contact(link="//github.com/rachitnigam", classes="fab fa-github") }}
+    {{ m::contact(link="//scholar.google.com/citations?user=RNL2GjEAAAAJ", classes="ai ai-google-scholar") }}
+  </div>
 </div>
 
 <!-- Bio -->
 <section>
-<div class="bio">
-{% set page = get_page(path="about.md") %}
-{{ page.content | safe }}
-</div>
+  <div class="bio">
+    {% set page = get_page(path="about.md") %}
+    {{ page.content | safe }}
+  </div>
 
-<!-- News -->
-{% set news = get_section(path="news/_index.md") %}
-{% set items = config.extra.news_items %}
-{% for post in news.pages | sort(attribute="date") | reverse | slice(end=items) %}
-{{ m::generate_news(post=post) }}
-{% endfor %}
-<div class="more">
-<a href="/news">
-  All News
-  <i class="fa fa-angle-double-right"></i>
-</a>
-</div>
+  <!-- News -->
+  {% set news = get_section(path="news/_index.md") %}
+  {% set items = config.extra.news_items %}
+  {% for post in news.pages | sort(attribute="date") | reverse | slice(end=items) %}
+  {{ m::generate_news(post=post) }}
+  {% endfor %}
+  <div class="more">
+    <a href="/news">
+      All News
+      <i class="fa fa-angle-double-right"></i>
+    </a>
+  </div>
 </section>
 
 <!-- Publications -->
 <section>
-{{ m::anchor_heading(content="Publications") }}
-{% set news = get_section(path="publication/_index.md") %}
-{% set items = config.extra.news_items %}
+  {{ m::anchor_heading(content="Publications") }}
+  {% set news = get_section(path="publication/_index.md") %}
+  {% set items = config.extra.news_items %}
 
-<!-- Conference Publications -->
-{{ m::anchor_heading(content="Conferences",size="3") }}
-{% for pub in news.pages | filter(attribute="extra.type", value="conf") | sort(attribute="date") | reverse %}
-{{ m::publication(pub=pub) }}
-{% endfor %}
+  <!-- Conference Publications -->
+  {{ m::anchor_heading(content="Conferences",size="3") }}
+  {% for pub in news.pages | filter(attribute="extra.type", value="conf") | sort(attribute="date") | reverse %}
+  {{ m::publication(pub=pub) }}
+  {% endfor %}
 
-<!-- Workshop Publications -->
-{{ m::anchor_heading(content="Workshop & Short Papers",size="3") }}
-{% for pub in news.pages | filter(attribute="extra.type", value="workshop") | sort(attribute="date") | reverse %}
-{{ m::publication(pub=pub) }}
-{% endfor %}
+  <!-- Workshop Publications -->
+  {{ m::anchor_heading(content="Workshop & Short Papers",size="3") }}
+  {% for pub in news.pages | filter(attribute="extra.type", value="workshop") | sort(attribute="date") | reverse %}
+  {{ m::publication(pub=pub) }}
+  {% endfor %}
 </section>
 
 <!-- Blog Posts -->
 <section>
-<h2 id="posts">Posts
-<sup>
-<a class="unstyled-link" href="{{ get_url(path="post/atom.xml") }}">
-  <i class="fas fa-rss"></i>
-</a>
-</sup>
-</h2>
-{% set news = get_section(path="post/_index.md") %}
-{% set items = config.extra.news_items %}
-{% for post in news.pages | sort(attribute="date") | reverse | slice(end=items) %}
-{{ m::generate_post(post=post) }}
-{% endfor %}
-<div class="more">
-<a href="/post">
-  All Posts
-  <i class="fa fa-angle-double-right"></i>
-</a>
-</div>
+  <h2 id="posts">Posts
+    <sup>
+      <a class="unstyled-link" href="{{ get_url(path=" post/atom.xml") }}">
+        <i class="fas fa-rss"></i>
+      </a>
+    </sup>
+  </h2>
+  {% set news = get_section(path="post/_index.md") %}
+  {% set items = config.extra.news_items %}
+  {% for post in news.pages | sort(attribute="date") | reverse | slice(end=items) %}
+  {{ m::generate_post(post=post) }}
+  {% endfor %}
+  <div class="more">
+    <a href="/post">
+      All Posts
+      <i class="fa fa-angle-double-right"></i>
+    </a>
+  </div>
 </section>
 
 {% endblock content %}

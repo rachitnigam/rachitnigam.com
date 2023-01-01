@@ -23,6 +23,7 @@ news_items = 5
 
 # Links to author webpages
 author = [
+  { name = "Pedro Henrique Azevedo de Amorim", link = "https://www.cs.cornell.edu/~pamorim/" },
   { name = "Griffin Berlstein", link = "https://griffinberlste.in/" },
   { name = "Chris Gyurgyik", link = "https://cgyurgyik.github.io/" },
   { name = "Vincent Lee", link = "https://www.linkedin.com/in/vincent-lee-15685425" },
