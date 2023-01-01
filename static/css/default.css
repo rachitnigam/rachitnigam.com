@@ -62,17 +62,20 @@ a {
   border-bottom: #bbb 0.1em dotted;
 }
 
-a:hover, a:focus {
-    background: #fbf3f3;
-    transition-property: background;
-    transition-duration: 0.2s;
+a:hover,
+a:focus {
+  background: #fbf3f3;
+  transition-property: background;
+  transition-duration: 0.2s;
 }
 
 /** Remove link styling */
-a.unstyled-link  {
+a.unstyled-link {
   border: none;
 }
-a.unstyled-link:hover, a.unstyled-link:focus {
+
+a.unstyled-link:hover,
+a.unstyled-link:focus {
   background: none;
 }
 
@@ -118,7 +121,7 @@ a.nav-item {
   font-variant: small-caps;
   flex: 1;
   display: block;
-  margin:  17px 0 0 0;
+  margin: 17px 0 0 0;
   padding: 0;
   text-transform: uppercase;
   font-weight: 500;
@@ -128,14 +131,17 @@ a.nav-item {
   margin-right: 1em;
   margin-left: 1em;
 }
+
 a.nav-item:last-child {
   margin-right: 0;
 }
+
 a.nav-item:first-child {
   margin-left: 0;
 }
 
-a.nav-item:hover, a.nav-item:focus {
+a.nav-item:hover,
+a.nav-item:focus {
   transition-property: border-bottom;
   border-bottom: 2px solid #000;
   transition-duration: 0.2s;
@@ -163,7 +169,11 @@ footer {
 
 /********** Basic styling **********/
 
-html, button, input, select, textarea {
+html,
+button,
+input,
+select,
+textarea {
   font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 15px;
   font-weight: 400;
@@ -181,7 +191,8 @@ body {
 
 }
 
-h1, h2 {
+h1,
+h2 {
   margin-top: 1em;
   margin-bottom: 0.1em;
 }
@@ -190,27 +201,43 @@ h3 {
   margin-top: 0.5em;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   font-weight: 300;
   hyphens: none;
 }
 
 /* Subsubheadings are a crutch. Don't use them. */
-h4, h5, h6 {
+h4,
+h5,
+h6 {
   color: red;
 }
 
-h1 { font-size: 36px; line-height: 1.25; letter-spacing: -1px; }
-h2 { font-size: 24px; line-height: 1.35; }
-h3 { font-size: 20px; line-height: 1.5; }
+h1 {
+  font-size: 36px;
+  line-height: 1.25;
+  letter-spacing: -1px;
+}
+
+h2 {
+  font-size: 24px;
+  line-height: 1.35;
+}
+
+h3 {
+  font-size: 20px;
+  line-height: 1.5;
+}
 
 hr {
- width:10rem;
- border:0;
- height:1px;
- background:#aaa;
- text-align:left;
- margin-left:0
+  width: 10rem;
+  border: 0;
+  height: 1px;
+  background: #aaa;
+  text-align: left;
+  margin-left: 0
 }
 
 p {
@@ -219,11 +246,19 @@ p {
   text-align: left;
 }
 
-ul { list-style: circle; }
-ol { list-style: decimal; }
-ol, ul {
+ul {
+  list-style: circle;
+}
+
+ol {
+  list-style: decimal;
+}
+
+ol,
+ul {
   margin-top: 0;
 }
+
 /*li { margin-bottom: 0; }*/
 
 pre {
@@ -244,13 +279,18 @@ td {
   padding: 12px 15px;
   text-align: left;
   border-top: 1px solid #E1E1E1;
-  border-bottom: 1px solid #E1E1E1; }
+  border-bottom: 1px solid #E1E1E1;
+}
+
 th:first-child,
 td:first-child {
-  padding-left: 0; }
+  padding-left: 0;
+}
+
 th:last-child,
 td:last-child {
-  padding-right: 0; }
+  padding-right: 0;
+}
 
 figcaption {
   margin-top: 15px;
@@ -274,6 +314,10 @@ dt {
   flex: 1 100%;
 }
 
+.publication-venue i {
+  font-weight: 400;
+}
+
 .publication-details {
   vertical-align: top;
   flex: 1 100%;
@@ -292,11 +336,12 @@ dt {
   font-size: 0.92em;
   color: #111;
 }
+
 .publication-highlight {
   color: black;
 }
 
-.publication-link > a {
+.publication-link>a {
   font-size: 0.92em;
   margin-left: -0.6em;
   margin-right: 0.2em;
@@ -310,7 +355,7 @@ dt {
 }
 
 .post img {
-    max-width: 90%;
+  max-width: 90%;
 }
 
 .post h2 {
@@ -322,52 +367,58 @@ dt {
 .post-header .date {
   margin-top: -0.3em;
 }
+
 .post-header {
   margin-bottom: 2em;
 }
 
 /*** Sidenotes */
 .sidenote::before {
-    content: counter(sidenote-counter) " ";
-    font-size: 75%;
-    top: -0.5rem;
+  content: counter(sidenote-counter) " ";
+  font-size: 75%;
+  top: -0.5rem;
 }
-.sidenote, .marginnote {
-    float: right;
-    clear: right;
-    margin-right: -60%;
-    width: 300px;
-    margin-top: 0.3rem;
-    margin-bottom: 0;
-    font-size: 0.9rem;
-    line-height: 1.3;
-    vertical-align: baseline;
-    position: relative;
+
+.sidenote,
+.marginnote {
+  float: right;
+  clear: right;
+  margin-right: -60%;
+  width: 300px;
+  margin-top: 0.3rem;
+  margin-bottom: 0;
+  font-size: 0.9rem;
+  line-height: 1.3;
+  vertical-align: baseline;
+  position: relative;
 }
 
 .sidenote-number {
-    counter-increment: sidenote-counter;
+  counter-increment: sidenote-counter;
 }
+
 .sidenote-number::after {
-    content: counter(sidenote-counter);
-    display: inline-block;
-    font-size: 80%;
-    /* Remove space before and after footnote in markdown */
-    margin-left: -0.5em;
-    top: -0.5rem;
-    left: 0.1rem;
+  content: counter(sidenote-counter);
+  display: inline-block;
+  font-size: 80%;
+  /* Remove space before and after footnote in markdown */
+  margin-left: -0.5em;
+  top: -0.5rem;
+  left: 0.1rem;
 }
-.sidenote-number::after, .sidenote::before {
-    position: relative;
-    vertical-align: baseline;
+
+.sidenote-number::after,
+.sidenote::before {
+  position: relative;
+  vertical-align: baseline;
 }
 
 label.sidenote-number {
-    display: inline;
+  display: inline;
 }
 
 input.margin-toggle {
-    display: none;
+  display: none;
 }
 
 label.margin-toggle:not(.sidenote-number) {
@@ -376,41 +427,42 @@ label.margin-toggle:not(.sidenote-number) {
 
 
 @media (max-width: 1130px) {
-    label.margin-toggle:not(.sidenote-number) {
-        display: inline;
-    }
+  label.margin-toggle:not(.sidenote-number) {
+    display: inline;
+  }
 
-    .sidenote,
-    .marginnote {
-        display: none;
-    }
+  .sidenote,
+  .marginnote {
+    display: none;
+  }
 
-    .margin-toggle:checked + .sidenote,
-    .margin-toggle:checked + .marginnote {
-        display: block;
-        float: left;
-        left: 1rem;
-        clear: both;
-        width: 95%;
-        margin: 1rem 2.5%;
-        vertical-align: baseline;
-        position: relative;
-    }
+  .margin-toggle:checked+.sidenote,
+  .margin-toggle:checked+.marginnote {
+    display: block;
+    float: left;
+    left: 1rem;
+    clear: both;
+    width: 95%;
+    margin: 1rem 2.5%;
+    vertical-align: baseline;
+    position: relative;
+  }
 
-    label {
-        cursor: pointer;
-    }
+  label {
+    cursor: pointer;
+  }
 }
 
 label.sidenote-number {
-    display: inline;
+  display: inline;
 }
+
 label.margin-toggle:not(.sidenote-number) {
-    display: none;
+  display: none;
 }
 
 /*** Footnotes */
-.footnote-definition > p {
+.footnote-definition>p {
   display: inline;
 }
 
@@ -442,19 +494,19 @@ div.footnotes {
   flex-flow: row wrap;
 }
 
-.blurb > .date {
+.blurb>.date {
   vertical-align: top;
   flex: 1 100%;
 }
 
-.blurb > .description {
+.blurb>.description {
   vertical-align: top;
   margin-left: 1em;
   flex: 1 1;
 }
 
-.blurb > .description > .title {
-    vertical-align: top;
+.blurb>.description>.title {
+  vertical-align: top;
 }
 
 .blurb p {
@@ -465,18 +517,21 @@ div.footnotes {
   .name {
     flex: 1 0;
   }
+
   a.nav-item:first-child {
     margin-left: 2em;
   }
 }
 
 @media screen and (min-width: 800px) {
-  .blurb > .date {
+  .blurb>.date {
     text-align: right;
     flex: 0 0 65px;
   }
 
-  .blurb { margin-bottom: 4px; }
+  .blurb {
+    margin-bottom: 4px;
+  }
 
   .publication-venue {
     margin-left: 1em;
