@@ -13,9 +13,8 @@ authors = [
   "Adrian Sampson",
 ]
 
-# Publication name and optional abbreviated version.
-# publication = "Draft"
-# publication_short = "Draft"
+publication = "Programming Languages Design and Implementation"
+publication_short = "PLDI"
 
 pdf = "/files/pubs/filament.pdf"
 urls = [
