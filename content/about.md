@@ -6,7 +6,7 @@ Rachit Nigam{% footnote() %}
 *Pronunciation*: Ruh-CHITH NI-gum. First name rhymes with "crutch-it".
 {% end %}
 is a visiting researcher in the [PLSE][plse] group at University of Washington
-and a PhD candidate studying computer science at Cornell University.
+and a PhD candidate studying computer science at Cornell University. His research is supported through the [Jane Street Fellowship][js-fellow].
 
 He is a part of the [CAPRA][] and [PL@Cornell][pl-cornell] research groups and is advised by [Adrian Sampson][adrian].
 His research ([Dahlia][], [Calyx][]) is focused on building high-level programming models for designing hardware accelerators.
@@ -27,3 +27,4 @@ Rachit started [PLTea](https://pltea.github.io/) during PLDI '20 in hopes of ke
 [archchat]: https://www.sigarch.org/introducing-the-archchat-social-hour-connecting-computer-architects-everywhere/
 [plt-pldi22]: https://pldi22.sigplan.org/track/pldi-2022-pldi#program
 [plse]: https://uwplse.org/
+[js-fellow]: https://www.janestreet.com/join-jane-street/programs-and-events/grf-profiles/
