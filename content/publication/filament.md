@@ -18,7 +18,8 @@ publication_short = "PLDI"
 
 pdf = "/files/pubs/filament.pdf"
 urls = [
-  { name = "Code", url = "https://github.com/cucapra/filament" }
+  { name = "Code", url = "https://github.com/cucapra/filament" },
+  { name = "Website", url = "https://filament.rachitnigam.com" }
 ]
 type="conf"
 +++

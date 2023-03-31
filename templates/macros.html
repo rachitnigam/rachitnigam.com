@@ -102,6 +102,13 @@
       {{ m::author(name=name) }}{% if not loop.last %}, {% endif %}
       {% endfor %}
     </div>
+    {% if pub.extra.award %}
+    <!-- Award -->
+    <div>
+      <i class="fa fa-trophy"></i>
+      <b>{{ pub.extra.award }}</b>
+    </div>
+    {% endif %}
     <div class="publication-links">
       {% set sorted_links = pub.extra.urls | sort(attribute="name") %}
       {% for link in sorted_links %}

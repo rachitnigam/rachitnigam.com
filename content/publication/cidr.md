@@ -18,7 +18,10 @@ authors = [
 publication = "Conference on Architectural Support for Programming Languages and Operating Systems"
 publication_short = "ASPLOS"
 
+award = "Distinguished Artifact Award"
 pdf = "https://griffinberlste.in/pdf/cidr.pdf"
-urls = [ ]
+urls = [
+  { name = "Website", url = "https://docs.calyxir.org/interpreter.html" }
+]
 type="conf"
 +++
