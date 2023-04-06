@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="author" content="Rachit Nigam">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rachit Nigam | PhD Candidate, Cornell University</title>
+
+  <link rel="icon" href="/flower.svg" type="image/svg+xml">
+
+  <link rel="stylesheet" href=https://rachitnigam.com/css/normalize.css>
+  <link rel="stylesheet" href=https://rachitnigam.com/css/default.css>
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.1/css/academicons.min.css" integrity="sha512-b1ASx0WHgVFL5ZQhTgiPWX+68KjS38Jk87jg7pe+qC7q9YkEtFq0z7xCglv7qGIs/68d3mAp+StfC8WKC5SSAg==" crossorigin="anonymous"/>
+
+  
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="https://rachitnigam.com/post/atom.xml">
+  
+
+</head>
+
+<body>
+  <header>
+    <h1 class="name"><a class="unstyled-link" href="/">Rachit Nigam</a></h1>
+    <nav>
+      <a class="unstyled-link nav-item" href="/#publications">Publications</a>
+      <a class="unstyled-link nav-item" href="/#posts">Posts</a>
+      <a class="unstyled-link nav-item" href="/files/resume.pdf">CV</a>
+    </nav>
+  </header>
+  <section class="section">
+    <div class="container">
+      
+<div class="post-header">
+<h1 class="title">
+  Personal Infrastructure for PhD Students
+</h1>
+<div class="date">
+PhD candidate provides ways to procrastinate
+</div>
+<p class="date">January 09, 2022</p>
+</div>
+
+<div class="post">
+<p>Personal infrastructure loosely refers to all the tools and systems I have to
+interact on a regular basis to do my job as a PhD researcher.
+As a systems researcher, this includes obvious stuff like command-line tools
+and programming workflow as well as as the set of tools to build websites,
+write papers, manage TODO lists, and <a rel="noopener nofollow noreferrer" target="_blank" href="https://www.youtube.com/watch?v=MElzn-KV5zw">record videos</a>.</p>
+<ul>
+<li><a href="https://rachitnigam.com/post/personal-infrastructure/#websites">Websites</a></li>
+<li><a href="https://rachitnigam.com/post/personal-infrastructure/#software">Software</a></li>
+<li><a href="https://rachitnigam.com/post/personal-infrastructure/#technical-writing">Technical Writing</a></li>
+<li><a href="https://rachitnigam.com/post/personal-infrastructure/#programming-workflow">Programming Workflow</a></li>
+</ul>
+<h2 id="websites">Websites</h2>
+<p>Let’s get this one out of the way–as a PhD student, <em>you need to have a personal website</em>.
+It doesn’t need to dazzle, it doesn’t need to use bleeding-edge web frameworks
+and CSS animations but it needs to exist and it needs to be easy to find.</p>
+<p>My website is built using <a rel="noopener nofollow noreferrer" target="_blank" href="https://www.getzola.org/">zola</a>, a static website generator written in Rust.
+Almost all of the styling is written in plain CSS with rules to make the website responsive.<span style="white-space:nowrap">
+<label for="sn-1"
+       class="margin-toggle sidenote-number">
+</label>
+</span>
+<input type="checkbox"
+       id="sn-1"
+       class="margin-toggle"/>
+<span class="sidenote">
+Please, for the love of god, make your website readable on a phone.
+</span>
+</p>
+<p><strong>Tools.</strong> Using a static website generator, which takes all of your content written in a language of your
+choice and makes it web ready is going to be your best bet to have a maintainable infrastructure.
+<a rel="noopener nofollow noreferrer" target="_blank" href="https://jekyllrb.com/">Jekyll</a> is wildly popular but provides way more features that I’ve ever needed.
+Previous versions of this website used:</p>
+<ul>
+<li><a rel="noopener nofollow noreferrer" target="_blank" href="https://jaspervdj.be/hakyll/">Hakyll</a>: Too slow and Haskell package management was a travesty.</li>
+<li><a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/greghendershott/frog">Frog</a>: Racket is amazingly expressive, but slow.</li>
+<li><a rel="noopener nofollow noreferrer" target="_blank" href="https://gohugo.io/">Hugo</a>: Blazing fast but updates broke old code.</li>
+</ul>
+<p>I’ve settled on <a rel="noopener nofollow noreferrer" target="_blank" href="https://www.getzola.org/">zola</a> because it’s fast and provides just enough features to maintain my website.</p>
+<p><strong>Styling and responsiveness.</strong> The style of your website is up to you. Many websites use
+templates such <a rel="noopener nofollow noreferrer" target="_blank" href="https://academic-demo.netlify.app/">academic</a> which are pretty good, but again, may provide far too many distracting
+features.
+If you’re hand rolling your own CSS, I recommend using CSS <a rel="noopener nofollow noreferrer" target="_blank" href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/">Flex</a> and <a rel="noopener nofollow noreferrer" target="_blank" href="https://css-tricks.com/snippets/css/complete-guide-grid/">Grid</a> to make your
+content responsive. They provide responsive layout features that <a rel="noopener nofollow noreferrer" target="_blank" href="https://getbootstrap.com/">Bootstrap</a> provides without
+all the cruft.</p>
+<p><strong>Domain, deployment, and discoverability.</strong> I highly recommend buying your own personalized domain name–domains
+provided by institutions are temporary often annoyingly hard to remember. For example, my Cornell web address
+is <code>https://cs.cornell.edu/~rnigam</code> which requires you to remember what weird internal ID Cornell gave me.
+The second, potentially bigger reason is website <em>deployment</em>.
+My current setup uses <a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/features/actions">Github Actions</a> to automatically update my website
+when I push changes to my <a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/rachitnigam/rachitnigam.com">website
+repository</a>.
+Doing this with the Cornell web hosting platform requires maintaining my own
+infrastructure of deployment hooks, servers, and scripts which is yet another
+thing to debug.
+Finally, discoverability makes it easier to find your website when someone looks up
+your name on Google.
+Doing this as an academic is pretty easy–make sure a bunch of <code>.edu</code> websites point
+to your website.<span style="white-space:nowrap">
+<label for="sn-2"
+       class="margin-toggle sidenote-number">
+</label>
+</span>
+<input type="checkbox"
+       id="sn-2"
+       class="margin-toggle"/>
+<span class="sidenote">
+Unless you have the same name as someone famous in which case, tough luck.
+Or take it as a challenge to be more famous than they are.
+</span>
+ This includes your advisor’s website, department website, research group website, etc.</p>
+<p>All of this advice generally applies to <a rel="noopener nofollow noreferrer" target="_blank" href="https://calyxir.org">project websites</a>
+as well, which again, I highly recommend to make your research more visible
+and approachable.</p>
+<h2 id="software">Software</h2>
+<p>I use a fairly minimal set of software tools to do my day-to-day work, make
+presentations, and manage tasks.</p>
+<p><strong>Slides.</strong> Most of my presentations are written in Apple Keynote.
+People I know are divided on the use of animations in slides but I’m staunchly
+in support–it gives your slides that much more polish and forces you to
+memorize the transitions resulting in an overall better talk.
+I have yet to see a good talk made in <a rel="noopener nofollow noreferrer" target="_blank" href="https://www.overleaf.com/learn/latex/Beamer">LaTeX beamer</a>; my unscientific
+belief is that beamer encourages adding too much math on your slides which is
+often the wrong thing to do for talks where the goal is to give an intuition
+behind your work.<span style="white-space:nowrap">
+<label for="sn-3"
+       class="margin-toggle sidenote-number">
+</label>
+</span>
+<input type="checkbox"
+       id="sn-3"
+       class="margin-toggle"/>
+<span class="sidenote">
+For teaching, however, I’ve found beamer to be a pretty good tool.
+</span>
+</p>
+<p><strong>Recording.</strong> I’ve had to record talks for virtual conferences in the past and
+have used <a rel="noopener nofollow noreferrer" target="_blank" href="http://www.telestream.net/screenflow/overview.htm">Screenflow</a> for this. It works for what I do and I haven’t needed
+anything more. There might be better alternatives out there.</p>
+<p><strong>Task Management.</strong> Before and during my PhD, I’ve used a string of task management
+systems, from <a rel="noopener nofollow noreferrer" target="_blank" href="https://todoist.com/">Todoist</a>, <a rel="noopener nofollow noreferrer" target="_blank" href="https://en.wikipedia.org/wiki/Wunderlist">Wunderlist</a>, and even <a rel="noopener nofollow noreferrer" target="_blank" href="https://docs.github.com/en/issues/trying-out-the-new-projects-experience/about-projects">Github projects</a>. I’ve settled
+on <a rel="noopener nofollow noreferrer" target="_blank" href="https://www.omnigroup.com/omnifocus/">Omnifocus</a> for the last two years and am quite happy with it.
+It uses the <a rel="noopener nofollow noreferrer" target="_blank" href="https://gettingthingsdone.com/">Getting Things Done</a> school of task managements where you recording <em>everything</em>
+you need to do, file it under the right projects, and complete it when needed.
+Omnifocus’s most powerful feature for me has been the <em>defer</em> action which
+hides unactionable tasks from my list and makes them visible on the right
+day–providing an almost inhuman ability to recall commitments and tasks.</p>
+<h2 id="technical-writing">Technical Writing</h2>
+<p>Technical writing is the bread and butter of researchers–I’m always writing
+documents, either to discuss ideas with my team or to polish them up for a
+paper.
+I make copious use of <a rel="noopener nofollow noreferrer" target="_blank" href="https://notability.com/">Notability</a> to jot down notes on my iPad and
+<a rel="noopener nofollow noreferrer" target="_blank" href="https://www.markdownguide.org/">Markdown</a> to write down ideas about systems I’m building.</p>
+<p>Papers need to be far more polished and therefore I’ve only ever used <a rel="noopener nofollow noreferrer" target="_blank" href="https://www.latex-project.org/">LaTeX</a>
+to write them.
+When starting a new paper, I copy over the bibliography file from the most
+recent paper and a <code>pervasives.sty</code> file that contains all the accumulated
+LaTeX hacks I’ve ever had to do.
+I tend to write everything in one giant file which makes it easier to track
+down a phrase in the paper and start editing it.<span style="white-space:nowrap">
+<label for="sn-4"
+       class="margin-toggle sidenote-number">
+</label>
+</span>
+<input type="checkbox"
+       id="sn-4"
+       class="margin-toggle"/>
+<span class="sidenote">
+Many people prefer separating out each section into a new file which might suit
+your team’s contribution style better.
+</span>
+</p>
+<p><strong>Graphs and figures.</strong> Papers often need to contain visual elements like
+system diagrams and measurement graphs. I use <a rel="noopener nofollow noreferrer" target="_blank" href="https://www.omnigroup.com/omnigraffle">OmniGraffle</a> to make diagrams
+and use python scripts that use <a rel="noopener nofollow noreferrer" target="_blank" href="https://seaborn.pydata.org/">seaborn</a> or <a rel="noopener nofollow noreferrer" target="_blank" href="https://vega.github.io/vega-lite/">Vega</a> to generate graphs.</p>
+<h2 id="programming-workflow">Programming Workflow</h2>
+<p>Onto the good stuff and things most likely to cause a flamewar. My configuration
+for various tools is <a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/rachitnigam/dotfiles">publicly available</a>.</p>
+<p><strong>Editor.</strong> I use <a rel="noopener nofollow noreferrer" target="_blank" href="https://neovim.io/">neovim</a> which is a modern rewrite of the <a rel="noopener nofollow noreferrer" target="_blank" href="https://www.vim.org/">vim</a> editor.
+If you’re interested in emacs, I’ve heard good things about <a rel="noopener nofollow noreferrer" target="_blank" href="https://www.spacemacs.org/">spacemacs</a>.
+If you like the 21st century, you may use <a rel="noopener nofollow noreferrer" target="_blank" href="https://code.visualstudio.com/">VS Code</a> instead.</p>
+<p><strong>Shell.</strong> <code>zsh</code> has been my favored shell for a long time. It provides a bunch
+of quality of life improvements over <code>bash</code> owing to its powerful plugin system.
+<a rel="noopener nofollow noreferrer" target="_blank" href="https://ohmyz.sh/">Oh my Zsh</a> is a popular addon for <code>zsh</code> and adds a bunch of nice features
+to it but can often be slow and bloated. <a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/zsh-users/antigen"><code>antigen</code></a> is a plugin manager for <code>zsh</code>
+that mostly circumvents these problems by only installing what you need and
+aggressively caching slow things.
+In a past life, I used the <a rel="noopener nofollow noreferrer" target="_blank" href="https://fishshell.com/"><code>fish</code></a> shell but got frustrated with the POSIX
+compatibility problems which would break a lot of build scripts.</p>
+<p><strong>Tmux.</strong> <a rel="noopener nofollow noreferrer" target="_blank" href="https://en.wikipedia.org/wiki/Tmux">Tmux</a> is a powerful terminal multiplexer that allows you manage
+multiple shell sessions side-by-side.
+When programming, I usually split my terminal into three sections: one for the
+editor and two for interactive commands.
+My tmux configuration changes the default keybindings to be easier to remember
+as well as some visual elements to track the current window, name of session,
+time, and date.</p>
+<p><strong>Miscellaneous.</strong></p>
+<ul>
+<li><a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/junegunn/fzf">fzf</a> is a generic fuzzy-finding tool that supercharges your search history command among other things.</li>
+<li><a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/clibs/entr">entr</a> watches for file changes and executes a command.</li>
+<li><a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/wting/autojump">autojump</a> is database-backed <code>cd</code> alternative.</li>
+<li><a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/BurntSushi/ripgrep">rg</a> is a modern <code>grep</code> alternative which much, much faster.</li>
+<li><a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/sharkdp/fd">fd</a> is a <code>find</code> alternative with saner defaults.</li>
+</ul>
+<p><em>Have comments? <a href="mailto:rachit.nigam12@gmail.com">Email</a> or <a rel="noopener nofollow noreferrer" target="_blank" href="https://twitter.com/notypes">tweet</a> at me.</em></p>
+
+</div>
+
+
+    </div>
+  </section>
+
+<footer>
+  &copy;&nbsp;2021 Rachit Nigam &middot; Built using <a href="https://www.getzola.org/">Zola</a>
+</footer>
+</body>
+
+</html>

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="author" content="Rachit Nigam">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rachit Nigam | PhD Candidate, Cornell University</title>
+
+  <link rel="icon" href="/flower.svg" type="image/svg+xml">
+
+  <link rel="stylesheet" href=https://rachitnigam.com/css/normalize.css>
+  <link rel="stylesheet" href=https://rachitnigam.com/css/default.css>
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.1/css/academicons.min.css" integrity="sha512-b1ASx0WHgVFL5ZQhTgiPWX+68KjS38Jk87jg7pe+qC7q9YkEtFq0z7xCglv7qGIs/68d3mAp+StfC8WKC5SSAg==" crossorigin="anonymous"/>
+
+  
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="https://rachitnigam.com/post/atom.xml">
+  
+
+</head>
+
+<body>
+  <header>
+    <h1 class="name"><a class="unstyled-link" href="/">Rachit Nigam</a></h1>
+    <nav>
+      <a class="unstyled-link nav-item" href="/#publications">Publications</a>
+      <a class="unstyled-link nav-item" href="/#posts">Posts</a>
+      <a class="unstyled-link nav-item" href="/files/resume.pdf">CV</a>
+    </nav>
+  </header>
+  <section class="section">
+    <div class="container">
+      
+<div class="post-header">
+<h1 class="title">
+  Commoditize the Complement of Your Research
+</h1>
+<div class="date">
+PhD student espouses economic theories he does not understand.
+</div>
+<p class="date">March 13, 2021</p>
+</div>
+
+<div class="post">
+<p>“Commoditize your complement” is an idea about how companies can build profitable
+markets without complete vertical integration or monopolization.<span style="white-space:nowrap">
+<label for="sn-1"
+       class="margin-toggle sidenote-number">
+</label>
+</span>
+<input type="checkbox"
+       id="sn-1"
+       class="margin-toggle"/>
+<span class="sidenote">
+I highly recommend “<a rel="noopener nofollow noreferrer" target="_blank" href="https://www.gwern.net/Complement">Laws of Tech: Commoditize Your Complement</a>” for a more
+in-depth look into this idea.
+</span>
+<p>Very briefly, the idea is this: every product has a <em>substitute</em> and a <em>complement</em>.
+A substitute is a product that provides the same functionality and therefore
+competes with your product.
+For example, Zoom is a substitute for Skype.
+A complement is product that people buy along with your product.
+For example, operating systems complement personal computers.
+So, what can researchers learn from creating markets?</p></p>
+<h2 id="the-complement-of-your-research">The Complement of Your Research</h2>
+<p>Some of my favorite research projects have an interesting characteristic:
+instead of competing with people in a hot research area, these projects build
+the infrastructure that everyone needs to use.
+Over time, such projects win out in terms of research impact and ability to
+do novel research because <em>everyone</em> who does research in that area ends up
+using these tools.</p>
+<p>Let me use a particular research tool as an example.
+<a rel="noopener nofollow noreferrer" target="_blank" href="http://emina.github.io/rosette/">Rosette</a> is an embedded language in Racket that allows researchers to quickly
+develop <em>solver-aided tools</em>.
+Solver-aided tools are a “hot topic” in programming languages research.
+The high-level idea is encoding the semantics of a program into boolean (or richer
+logics) and using SMT solvers like <a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/Z3Prover/z3">Z3</a> to either verify programs or
+automatically synthesize them from specifications.<span style="white-space:nowrap">
+<label for="sn-2"
+       class="margin-toggle sidenote-number">
+</label>
+</span>
+<input type="checkbox"
+       id="sn-2"
+       class="margin-toggle"/>
+<span class="sidenote">
+James Bornholt’s <a rel="noopener nofollow noreferrer" target="_blank" href="https://blog.sigplan.org/2019/07/31/program-synthesis-in-2019/">introduction to program synthesis</a> provides a good overview of
+the area.
+</span>
+</p>
+<p>Roughly speaking, anyone who attempts to build a solver-aided tool has to do
+three things: encode the semantics of programs as SMT, repeatedly query
+the SMT solver, and transform the output of the SMT solver back to the input
+language.
+Before languages like Rosette, researchers would spend a lot of time building
+compilers to painstakingly transform programs to SMT, debugging problems with
+the encodings, and transforming the output from the SMT solver.
+<em>Every researcher</em> who wants to build a solver-aided tool would redo this work
+or build upon someone else’s unmaintained research code.</p>
+<p>The idea with Rosette is simple—build a framework where you can write an
+interpreter for your language and <em>automatically</em> turn it into a solver-aided
+tool.<span style="white-space:nowrap">
+<label for="sn-3"
+       class="margin-toggle sidenote-number">
+</label>
+</span>
+<input type="checkbox"
+       id="sn-3"
+       class="margin-toggle"/>
+<span class="sidenote">
+This simple idea is, of course, built upon deep insights about how solvers
+and symbolic execution work.
+I recommend reading the <a rel="noopener nofollow noreferrer" target="_blank" href="https://homes.cs.washington.edu/~emina/doc/rosette.pldi14.pdf">Rosette paper</a> for those
+interested.
+</span>
+<p>The original <a rel="noopener nofollow noreferrer" target="_blank" href="https://homes.cs.washington.edu/~emina/doc/rosette.pldi14.pdf">Rosette paper</a> was a novel and interesting contribution,
+therefore justifying its publication.
+However, the real research impact of Rosette has been from its continued use
+long after the paper was published.</p></p>
+<p>As of writing this blog post, the Rosette <a rel="noopener nofollow noreferrer" target="_blank" href="http://emina.github.io/rosette/apps.html">project page</a> outlines
+19 research projects that use it in some capacity.
+An important reason for this is because the Rosette authors continued to
+maintain Rosette, provide support, and build upon the original work.
+However, these things only help if there a demand for a tool like Rosette—if
+people didn’t care about building solver-aided tools, Rosette would not be as
+successful.</p>
+<p>Rosette is a successful example of the “commoditize your complement”
+principle—instead of competing with people working in a “hot area”, build
+infrastructure that boosts the productivity of the people in that area.
+This way, your work becomes foundational and people can more productively focus
+on advancing the state-of-the-art using it.</p>
+<h2 id="building-on-success">Building on Success</h2>
+<p>A long-term benefit of building tools that complement a research area is that
+your tools and systems become legitimate grounds for follow-up research.
+Generally speaking, it is hard to motivate a research project where you solve a
+problem for your made-up system.
+However, if even dozens of other groups use your system, you can both
+reasonably claim that the follow-up work is important <em>and</em> other people’s work
+to evaluate your follow-up work.</p>
+<p><a rel="noopener nofollow noreferrer" target="_blank" href="https://unsat.cs.washington.edu/projects/sympro/">SymPro</a>, a tool built upon Rosette, is an example of this.
+SymPro is a symbolic profiler for Rosette.
+Put simply, it profiles programs written in Rosette and finds code that causes
+the SMT encoding of a program to blow up.
+SymPro was able to use the existing Rosette ecosystem to develop a robust tool
+and evaluate it on code written by users of Rosette.
+This is both a value-add for users of Rosette and a compelling case to justify
+the research paper.<span style="white-space:nowrap">
+<label for="sn-4"
+       class="margin-toggle sidenote-number">
+</label>
+</span>
+<input type="checkbox"
+       id="sn-4"
+       class="margin-toggle"/>
+<span class="sidenote">
+The research contributions of the paper are not tied to Rosette.
+However, building upon Rosette makes the paper that much more compelling.
+</span>
+</p>
+<h2 id="finding-a-complement">Finding a Complement</h2>
+<p>Rosette was not the first tool to address the needs of a particular research
+community.
+<a rel="noopener nofollow noreferrer" target="_blank" href="https://unsat.cs.washington.edu/projects/sympro/">LLVM</a>, <a rel="noopener nofollow noreferrer" target="_blank" href="https://valgrind.org/">Valgrind</a>, <a rel="noopener nofollow noreferrer" target="_blank" href="https://klee.github.io/">KLEE</a>, <a rel="noopener nofollow noreferrer" target="_blank" href="https://pdos.csail.mit.edu/papers/click:tocs00/paper.pdf">the Click modular router</a>, <a rel="noopener nofollow noreferrer" target="_blank" href="https://www.gem5.org/">GEM5</a> etc. all found research areas where people
+were desperate to build tools but had no good infrastructure.
+All of them capitalized on this need by building robust tools and providing
+support.
+So, the valuable takeaway from this is that research projects that seek to
+support instead of compete might win out in the long-term.</p>
+<p><em>Have comments? <a href="mailto:rachit.nigam12@gmail.com">Email</a> or <a rel="noopener nofollow noreferrer" target="_blank" href="https://twitter.com/notypes">tweet</a> at me.</em></p>
+
+</div>
+
+
+    </div>
+  </section>
+
+<footer>
+  &copy;&nbsp;2021 Rachit Nigam &middot; Built using <a href="https://www.getzola.org/">Zola</a>
+</footer>
+</body>
+
+</html>

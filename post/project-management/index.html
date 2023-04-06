@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="author" content="Rachit Nigam">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rachit Nigam | PhD Candidate, Cornell University</title>
+
+  <link rel="icon" href="/flower.svg" type="image/svg+xml">
+
+  <link rel="stylesheet" href=https://rachitnigam.com/css/normalize.css>
+  <link rel="stylesheet" href=https://rachitnigam.com/css/default.css>
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.1/css/academicons.min.css" integrity="sha512-b1ASx0WHgVFL5ZQhTgiPWX+68KjS38Jk87jg7pe+qC7q9YkEtFq0z7xCglv7qGIs/68d3mAp+StfC8WKC5SSAg==" crossorigin="anonymous"/>
+
+  
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="https://rachitnigam.com/post/atom.xml">
+  
+
+</head>
+
+<body>
+  <header>
+    <h1 class="name"><a class="unstyled-link" href="/">Rachit Nigam</a></h1>
+    <nav>
+      <a class="unstyled-link nav-item" href="/#publications">Publications</a>
+      <a class="unstyled-link nav-item" href="/#posts">Posts</a>
+      <a class="unstyled-link nav-item" href="/files/resume.pdf">CV</a>
+    </nav>
+  </header>
+  <section class="section">
+    <div class="container">
+      
+<div class="post-header">
+<h1 class="title">
+  Project Management for PhD Students
+</h1>
+<div class="date">
+PhD student considers pivoting to mangerial positions.
+</div>
+<p class="date">March 03, 2019</p>
+</div>
+
+<div class="post">
+<p>Collaborations in systems research is how I’ve built some of the best tools
+in my research. A larger teams means an expanded vision and being able to pursue more
+ambitious ideas but it also incurs an overhead – team management. Effectively
+managing a team and keeping all team members up to date can be stressful and a
+daunting task. I think one way to approaching management tasks is by asking
+a few concrete questions:</p>
+<ul>
+<li>What’s the primary channel of communication?</li>
+<li>How often should we be meeting? What are the preparing expectations for a meeting?</li>
+<li>How are we managing our code base? What are the expectations about code knowledge?</li>
+<li>How are we managing our TODO items?</li>
+<li>How should we resolve conflicts?</li>
+</ul>
+<p>The answers to these questions should evolve with a project. For example, a
+project in its prototyping stage might have no restrictions on how or where the
+code is kept but a more mature project associated with other projects or
+deployments requires careful releases.</p>
+<p>The following sections answer these questions from my experience with teams.
+The answers apply for a reasonably mature project with most core infrastructure
+decisions already made (which language to use, which toolchains, etc.)</p>
+<blockquote>
+<p>Since I’m not the most experienced developer in the world, I would appreciate any suggestions (find my contact information at the end of the post).</p>
+</blockquote>
+<h2 id="primary-communication">Primary Communication</h2>
+<p>This is an easy one. Teams can either use email threads or one of the dozens
+of chat applications to have conversations about the project.</p>
+<p>The benefit of using a emails is that the team can keep track of individual
+threads of conversations easily. However, with multiple projects, this might
+get unwieldy.</p>
+<p>Chat apps, on the other hand, make it really quick and easy to communicate with
+the team but are usually bad at maintaining separate threads of conversations
+cleanly.</p>
+<p>The choice of the primary communication is often already constrained by group
+preferences so this is usually a straightforward decision.</p>
+<p>As a side note, team members should try to have long conversations in person.
+Text based mediums make it really hard to accurately convey emotions and it
+is easy to misread an offhand comment as being aggressive (I’ve certainly been
+guilty of this!)</p>
+<h2 id="meetings">Meetings</h2>
+<p>Meetings act as a synchronization point for the entire team and require some amount
+of preparation. I suggest having at least two team meetings every week, one
+with your advisor (main meeting) and one without them (student meeting).</p>
+<h3 id="main-meeting">Main meeting</h3>
+<p>For the main meeting, every student should be prepared with the following:</p>
+<ul>
+<li>A short weekly update.</li>
+<li>Technical challenges faced during the assigned task.</li>
+<li>Questions or gotchas found during the assigned the task.</li>
+</ul>
+<p>At the end of the main meeting, each student should leave with:</p>
+<ul>
+<li>At least one assigned task for the week. This can be a paper to read and explain, feature to implement, or a theorem to prove.</li>
+<li>A good sense of where to look for answers to their questions.</li>
+</ul>
+<p>A lot of students (myself included) struggle with prioritizing tasks. Students
+involved in research have tons of unstructured time which is not utilized
+effectively without a good plan. Assigned tasks help me focus on a task that
+I need to get done every week.</p>
+<p>Concretely, I try every week to either complete the tasks assigned to me or
+have technical questions that are blocking me ready for the meeting.</p>
+<h3 id="student-meeting">Student meeting</h3>
+<p>The student meetings are more informal and are meant for in depth discussions
+about small issues that team members are facing in completing their tasks.</p>
+<h2 id="codebases">Codebases</h2>
+<p>If you’re working on an applied systems project chances are you are building
+a software artifact. Regardless of how many people are writing code, it is useful to
+check in the code into <a rel="noopener nofollow noreferrer" target="_blank" href="https://en.wikipedia.org/wiki/Version_control">source
+control</a>. This makes the code
+publicly viewable and commentable by the team members.</p>
+<blockquote>
+<p>The high-level principle behind these guidelines is to minimize the number of locations where critical information such as feature discussions are kept.</p>
+</blockquote>
+<p>Since I primarily use <a rel="noopener nofollow noreferrer" target="_blank" href="https://git-scm.com/">git</a> and <a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/rachitnigam">Github</a>, the following guidelines assume your
+project is Github-based. When working on a artifact, I have the following
+expectations with team members:</p>
+<ul>
+<li>The project leaders (graduate students or senior undergrads) should have a
+good sense of what is going on with every aspect of the codebase. This means
+having a high-level understanding of all pull requests and issue discussions.</li>
+<li>Use <a rel="noopener nofollow noreferrer" target="_blank" href="https://help.github.com/en/articles/about-pull-requests">pull requests</a>
+and <a rel="noopener nofollow noreferrer" target="_blank" href="https://help.github.com/en/articles/about-branches">branches</a>. Working
+on big features on a separate branch allows other people to work in parallel
+while leaving the code in a buildable state. Pull requests are a great way
+to get the team’s attention on a big change and center discussions around it.</li>
+<li>Keep the git history clean by using <code>git pull -r</code> and
+<a rel="noopener nofollow noreferrer" target="_blank" href="https://help.github.com/en/articles/about-git-rebase">rebasing</a> instead of
+merging.</li>
+</ul>
+<h2 id="todo-list">TODO List</h2>
+<p>Since most of my projects revolve around a software artifact, most of which
+are on <a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/rachitnigam">Github</a>, I use Github issues as
+a tracking list. Other people I have worked with also use <a rel="noopener nofollow noreferrer" target="_blank" href="https://trello.com/">Trello</a> or one of the dozens of TODO apps.</p>
+<blockquote>
+<p>The todo list should make it easy to create tasks and have discussions around them and also allow team members to see who is working on what.</p>
+</blockquote>
+<p>During the development phase of the project, I ask the team to use
+issues liberally. The term ’‘global tracker’’ refers to the high level view of
+all todo items. On Github, this is simply the issues page.</p>
+<p>Largely, I divide issues into three categories:</p>
+<ul>
+<li><strong>Trackers</strong>. Trackers are a collection of smaller issues that logically belong
+together but might pollute the global tracker. Use these for reading lists,
+benchmark status, and low priority tasks. <a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/cucapra/seashell/issues?utf8=%E2%9C%93&amp;q=is%3Aissue+label%3ATracker+">Example</a>.</li>
+<li><strong>Proposal</strong>. Proposal are the heart of the global tracker. Use proposals to
+discuss system features, implementation sketches, or big bugs.</li>
+<li><strong>Miscellaneous</strong>: These include questions or small bugs. These should be
+high frequency, i.e. created liberally, and answered quickly.</li>
+</ul>
+<h2 id="conflict-resolution">Conflict resolution</h2>
+<p>This is an often overlooked dimension of team dynamics. Research projects can
+often be stressful, especially since students tend to be ambitious and prone
+to overworking. Since this process so highly dependent on the team members
+and project leads, my guideline can only be personalized for me.</p>
+<p>If a team member feels under too much pressure to do something or dislikes
+someone’s personal behavior, they can either directly contact the person or
+ask one of the team leads to mediate. While daunting, it is much better in the
+long run to have frank discussions about team expectations and stresses instead
+of letting things get worse.</p>
+<h2 id="conclusion">Conclusion</h2>
+<p>While there are several industrial strength methodologies for team managements,
+I like having a much more lightweight team management style. A lot of research
+is about exploring new ideas and pursuing crazy ideas. Regardless of which
+guidelines you choose to follow, they should not take away the joy of programming
+or research!</p>
+<p>Discussion on <a rel="noopener nofollow noreferrer" target="_blank" href="https://news.ycombinator.com/item?id=19321034">HackerNews</a>.</p>
+<p><em>Have comments? <a href="mailto:rachit.nigam12@gmail.com">Email</a> or <a rel="noopener nofollow noreferrer" target="_blank" href="https://twitter.com/notypes">tweet</a> at me.</em></p>
+
+</div>
+
+
+    </div>
+  </section>
+
+<footer>
+  &copy;&nbsp;2021 Rachit Nigam &middot; Built using <a href="https://www.getzola.org/">Zola</a>
+</footer>
+</body>
+
+</html>

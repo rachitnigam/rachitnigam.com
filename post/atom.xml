@@ -1,0 +1,1601 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+    <title> - All Posts</title>
+    <link href="https://rachitnigam.com/post/atom.xml" rel="self" type="application/atom+xml"/>
+    <link href="https://rachitnigam.com/post/"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2022-09-19T00:00:00+00:00</updated>
+    <id>https://rachitnigam.com/post/atom.xml</id>
+    <entry xml:lang="en">
+        <title>Why Study Programming Languages</title>
+        <published>2022-09-19T00:00:00+00:00</published>
+        <updated>2022-09-19T00:00:00+00:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="https://rachitnigam.com/post/why-study-programming-languages/" type="text/html"/>
+        <id>https://rachitnigam.com/post/why-study-programming-languages/</id>
+        
+        <content type="html">&lt;p&gt;This class is about the study of programming languages. Before we start, I want to perform two activities with folks here. First, I want us to answer two dumb questions:&lt;&#x2F;p&gt;
+&lt;ol&gt;
+&lt;li&gt;Why do we design new programming languages?&lt;&#x2F;li&gt;
+&lt;li&gt;What is a programming language?&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;p&gt;While (2) seems to be the more fundamental question, we need to answer (1) to have any hope of even thinking about (2).&lt;&#x2F;p&gt;
+&lt;p&gt;So first, why do we design programming languages? Every program that can be written, can be written in C or assembly or Java or any of the dozens of languages we already have. So why do we design new languages?&lt;&#x2F;p&gt;
+&lt;p&gt;Common answers to this question will include words like abstraction, performance, convenience, usability etc. The problem with these answers is that apart from the measurable, they are all subjective, aesthetic choices. Convenience is a function of knowledge, familiarity, and community. Usability is similarly ill-defined and hard to measure. And of course, none of these metrics really predict which languages are widely used or popular.&lt;&#x2F;p&gt;
+&lt;p&gt;Consider the thought of inventing a whole new natural language just to express a new concept clearly. Explaining the rules of grammar and construction would certainly be simpler than any natural language provides. And yet, we’d have the small, troubling problem that this knowledge would be almost entirely useless; we need to learn a commonly known natural language to communicate with people. And yet, this is something that we can often find ourselves doing with programming languages with the hope that the &lt;em&gt;concepts&lt;&#x2F;em&gt; learned in one language can be transferred into another; a world where being a polyglot is expected, not unusual.&lt;&#x2F;p&gt;
+&lt;p&gt;Perhaps this points to a striking similarity between programming languages. As they evolve, they take features from each other and converge into one language singular. They’re only differences being the syntax used to represent them.&lt;&#x2F;p&gt;
+&lt;p&gt;But of course, &lt;em&gt;knowledge&lt;&#x2F;em&gt; of a language is different from mastery. An expert C programmer’s bit twiddling is akin of magic while a Haskell programmers tower of abstractions will make mere mortals cower away in fear.&lt;&#x2F;p&gt;
+&lt;p&gt;Here’s a hypothesis, the truth of which is unknown to me: we create programming languages to experience new ideas; ideas that would have remained inaccessible had we stayed with the old languages. Languages not just a form of expression but also a form of exploration. I do not create languages with the hope of expressing everything that was, but to express that which isn’t yet. It is the rare joy of a language designer to see their languages being used and abused to do something inconceivable to them.
+I would point to dozens of historical examples of this, from ALGOL, to APL, every time a language has enabled expression and forward exploration, it has changed the course of computing.&lt;&#x2F;p&gt;
+&lt;p&gt;Now that we have some bearing of why we create programming languages, we can try answering what exactly is a programming language.&lt;&#x2F;p&gt;
+&lt;p&gt;Is a language just syntax? Surely not, since symbols don’t have any meaning to them. Perhaps it is the meaning of programs in the language, its &lt;em&gt;semantics&lt;&#x2F;em&gt; that defines a language. But its meaning in terms of what? The results of programs? The internal states of this execution algorithm? Perhaps a purely mathematical description, detached from anything resembling a computer?&lt;&#x2F;p&gt;
+&lt;p&gt;Something resembling semantics of languages does seem to be a part of what defines a language but it is definitely not the full story. Ask a Python programmer why they like it and they’ll point to the amazing library ecosystem; ask a web developer why they like JavaScript, and they’ll wax poetic about Web 2.0; to a Haskell proponent, it’s type system, to a LISP programmer, macros, to a Go programmer, its concurrency model and so on. All of these characteristics define languages and yet have very little to do with semantics. So semantics alone do not define languages.&lt;&#x2F;p&gt;
+&lt;p&gt;Perhaps a tentative definition is that a programming language is defined by its syntax, semantics, and ecosystem. The former two are easy to study formally; we can teach you the mathematical tools needed to understand them. But for the latter, we must turn back to our first question: why do we design new languages. It is true that both Python and Go have ample libraries and a concurrency model. However, the &lt;em&gt;exploratory power&lt;&#x2F;em&gt; of Python is enabled by the sheer quantity and quality of those libraries while Go’s power comes from its concurrency model.&lt;&#x2F;p&gt;
+&lt;p&gt;Therefore, I give my last definition of what a programming language is: syntax, semantics, and ecosystem in support of exploration; which parts of semantics and ecosystems to care about defined by what tools of exploration they provide. The study of programming languages encompasses all of these: syntax, semantics, type systems, runtime systems, garbage collectors, debuggers, IDEs, syntax highlighting, error messages, compilers, and design. Lines drawn between these are arbitrary, mostly by people like me trying to publish papers.&lt;&#x2F;p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;I encourage everyone to create the most absurd, implausible, and impractical languages. Chasing the measurable is often useful, expressing the expressible is insightful, but never forget the true goal of language design: to explore and create what isn’t.&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Lies Academics Believe</title>
+        <published>2022-08-02T00:00:00+00:00</published>
+        <updated>2022-08-02T00:00:00+00:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="https://rachitnigam.com/post/lies/" type="text/html"/>
+        <id>https://rachitnigam.com/post/lies/</id>
+        
+        <content type="html">&lt;ul&gt;
+&lt;li&gt;I cannot be happy outside academia&lt;&#x2F;li&gt;
+&lt;li&gt;If it is novel, it is useful&lt;&#x2F;li&gt;
+&lt;li&gt;If it is useful, it is publishable&lt;&#x2F;li&gt;
+&lt;li&gt;Engineering does not matter&lt;&#x2F;li&gt;
+&lt;li&gt;Presentations do not matter&lt;&#x2F;li&gt;
+&lt;li&gt;Writing does not matter&lt;&#x2F;li&gt;
+&lt;li&gt;I will build and they will come&lt;&#x2F;li&gt;
+&lt;li&gt;Pedantry and insight are the same thing&lt;&#x2F;li&gt;
+&lt;li&gt;Critiquing and creating are the same skills&lt;&#x2F;li&gt;
+&lt;li&gt;This class will help my research&lt;&#x2F;li&gt;
+&lt;li&gt;This class won’t help my research&lt;&#x2F;li&gt;
+&lt;li&gt;Research area X is useless&lt;&#x2F;li&gt;
+&lt;li&gt;Research area Y is the ultimate truth&lt;&#x2F;li&gt;
+&lt;li&gt;Idea matters more than the execution&lt;&#x2F;li&gt;
+&lt;li&gt;Execution matters more than the idea&lt;&#x2F;li&gt;
+&lt;li&gt;Citation count indicates how smart someone is&lt;&#x2F;li&gt;
+&lt;li&gt;Industry does not do anything novel&lt;&#x2F;li&gt;
+&lt;li&gt;Industry does the hard 20% needed to make something real&lt;&#x2F;li&gt;
+&lt;li&gt;Everything was invented in the 80s&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;&lt;em&gt;Addressed to my future self&lt;&#x2F;em&gt;&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Dear Sir, You Have Built a Compiler</title>
+        <published>2022-01-11T00:00:00+00:00</published>
+        <updated>2022-01-11T00:00:00+00:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="https://rachitnigam.com/post/you-have-built-a-compiler/" type="text/html"/>
+        <id>https://rachitnigam.com/post/you-have-built-a-compiler/</id>
+        
+        <content type="html">&lt;p&gt;&lt;em&gt;Dear Sir,&lt;&#x2F;em&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;I am afraid to inform you that you have built a compiler.
+I know you wanted a “simple prototype” that would just add that
+one feature to your programming model.
+You said that “SSA is an overkill” and “it’s just way too much infrastructure
+to maintain for a simple task” and yet, six months later, you have pile of
+string mangling scripts that do not work—breaking every time a user input
+slightly deviates from things you’ve seen before.&lt;&#x2F;p&gt;
+&lt;p&gt;Surely, switching to the unstable abstract syntax tree (AST) library provided by the compiler will be the
+end of your woes; at least that way, someone else maintains a real parser and provides
+at least a semblance of sane input for you to transform.
+But wait, the AST is massive. “Do I really have to handle all 500 different AST nodes?” you ask yourself?
+Surely not.
+Your users aren’t crazy; they don’t use all the weird features of this language.
+So you march on, and handle the 50 AST nodes that matter, certain, that this
+will be the last of what you need to do to maintain this pile of hacks.&lt;&#x2F;p&gt;
+&lt;p&gt;Ah, but wait! Inevitably, someone wanted to nest a for loop inside a switch
+statement, a struct definition within that loop, and a conditional in
+expression position.
+Tired, you patch in support for each feature, distracting from the crucial
+features you should be working on and shipping.
+One of your brilliant team member suggests a pre-processing stage: de-nest all definitions,
+hoist all expressions, flatten out all control, and that way, you only have to handle
+50 AST nodes because you will &lt;em&gt;know&lt;&#x2F;em&gt;, yes &lt;em&gt;know&lt;&#x2F;em&gt;, that the program cannot have any other
+shape.&lt;&#x2F;p&gt;
+&lt;p&gt;Except once that engineer leave, who will &lt;em&gt;know&lt;&#x2F;em&gt; what assumptions you encoded?
+Those littered asserts? The inscrutable “unreachable code” errors? Who will &lt;em&gt;know&lt;&#x2F;em&gt;,
+how you simplified your AST?
+So you rolled out your own AST library, so that you may compile, nay, &lt;em&gt;transpile&lt;&#x2F;em&gt; your
+code and expose your assumptions in your data structures.&lt;span style=&quot;white-space:nowrap&quot;&gt;
+&lt;label for=&quot;sn-1&quot;
+       class=&quot;margin-toggle sidenote-number&quot;&gt;
+&lt;&#x2F;label&gt;
+&lt;&#x2F;span&gt;
+&lt;input type=&quot;checkbox&quot;
+       id=&quot;sn-1&quot;
+       class=&quot;margin-toggle&quot;&#x2F;&gt;
+&lt;span class=&quot;sidenote&quot;&gt;
+Certain, of course, that because you’re &lt;em&gt;transpiling&lt;&#x2F;em&gt; JavaScript to JavaScript, it is going to
+way easier than what real compilers do.
+&lt;&#x2F;span&gt;
+ What glorious engineering, you say to yourself.&lt;&#x2F;p&gt;
+&lt;p&gt;In the last leg of your journey to avoid building a compiler, your manager tells you
+that your code should run on older machines, which only support version 0.8.
+Version 0.8, of course, does not support the brilliant type-level encodings your
+transpiler generates to implement your feature.
+Not my problem, your manager says.
+So you write some code that simplifies your &lt;em&gt;transpiled&lt;&#x2F;em&gt; code further, making
+it use only features present in version 0.8.
+Done at last, you say to yourself, without having to build a compiler.&lt;&#x2F;p&gt;
+&lt;p&gt;A parser, an intermediate representation, transformation passes, and a code generator.
+Dear Sir, you have built a compiler.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;em&gt;Addressed to,&lt;&#x2F;em&gt;&lt;br&#x2F;&gt;
+&lt;em&gt;Those who did not want to build a compiler&lt;&#x2F;em&gt;&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Personal Infrastructure for PhD Students</title>
+        <published>2022-01-09T00:00:00+00:00</published>
+        <updated>2022-01-09T00:00:00+00:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="https://rachitnigam.com/post/personal-infrastructure/" type="text/html"/>
+        <id>https://rachitnigam.com/post/personal-infrastructure/</id>
+        
+        <content type="html">&lt;p&gt;Personal infrastructure loosely refers to all the tools and systems I have to
+interact on a regular basis to do my job as a PhD researcher.
+As a systems researcher, this includes obvious stuff like command-line tools
+and programming workflow as well as as the set of tools to build websites,
+write papers, manage TODO lists, and &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=MElzn-KV5zw&quot;&gt;record videos&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;rachitnigam.com&#x2F;post&#x2F;personal-infrastructure&#x2F;#websites&quot;&gt;Websites&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;rachitnigam.com&#x2F;post&#x2F;personal-infrastructure&#x2F;#software&quot;&gt;Software&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;rachitnigam.com&#x2F;post&#x2F;personal-infrastructure&#x2F;#technical-writing&quot;&gt;Technical Writing&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;rachitnigam.com&#x2F;post&#x2F;personal-infrastructure&#x2F;#programming-workflow&quot;&gt;Programming Workflow&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;websites&quot;&gt;Websites&lt;&#x2F;h2&gt;
+&lt;p&gt;Let’s get this one out of the way–as a PhD student, &lt;em&gt;you need to have a personal website&lt;&#x2F;em&gt;.
+It doesn’t need to dazzle, it doesn’t need to use bleeding-edge web frameworks
+and CSS animations but it needs to exist and it needs to be easy to find.&lt;&#x2F;p&gt;
+&lt;p&gt;My website is built using &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.getzola.org&#x2F;&quot;&gt;zola&lt;&#x2F;a&gt;, a static website generator written in Rust.
+Almost all of the styling is written in plain CSS with rules to make the website responsive.&lt;span style=&quot;white-space:nowrap&quot;&gt;
+&lt;label for=&quot;sn-1&quot;
+       class=&quot;margin-toggle sidenote-number&quot;&gt;
+&lt;&#x2F;label&gt;
+&lt;&#x2F;span&gt;
+&lt;input type=&quot;checkbox&quot;
+       id=&quot;sn-1&quot;
+       class=&quot;margin-toggle&quot;&#x2F;&gt;
+&lt;span class=&quot;sidenote&quot;&gt;
+Please, for the love of god, make your website readable on a phone.
+&lt;&#x2F;span&gt;
+&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;strong&gt;Tools.&lt;&#x2F;strong&gt; Using a static website generator, which takes all of your content written in a language of your
+choice and makes it web ready is going to be your best bet to have a maintainable infrastructure.
+&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;jekyllrb.com&#x2F;&quot;&gt;Jekyll&lt;&#x2F;a&gt; is wildly popular but provides way more features that I’ve ever needed.
+Previous versions of this website used:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;jaspervdj.be&#x2F;hakyll&#x2F;&quot;&gt;Hakyll&lt;&#x2F;a&gt;: Too slow and Haskell package management was a travesty.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;greghendershott&#x2F;frog&quot;&gt;Frog&lt;&#x2F;a&gt;: Racket is amazingly expressive, but slow.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;gohugo.io&#x2F;&quot;&gt;Hugo&lt;&#x2F;a&gt;: Blazing fast but updates broke old code.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;I’ve settled on &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.getzola.org&#x2F;&quot;&gt;zola&lt;&#x2F;a&gt; because it’s fast and provides just enough features to maintain my website.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;strong&gt;Styling and responsiveness.&lt;&#x2F;strong&gt; The style of your website is up to you. Many websites use
+templates such &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;academic-demo.netlify.app&#x2F;&quot;&gt;academic&lt;&#x2F;a&gt; which are pretty good, but again, may provide far too many distracting
+features.
+If you’re hand rolling your own CSS, I recommend using CSS &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;css-tricks.com&#x2F;snippets&#x2F;css&#x2F;a-guide-to-flexbox&#x2F;&quot;&gt;Flex&lt;&#x2F;a&gt; and &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;css-tricks.com&#x2F;snippets&#x2F;css&#x2F;complete-guide-grid&#x2F;&quot;&gt;Grid&lt;&#x2F;a&gt; to make your
+content responsive. They provide responsive layout features that &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;getbootstrap.com&#x2F;&quot;&gt;Bootstrap&lt;&#x2F;a&gt; provides without
+all the cruft.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;strong&gt;Domain, deployment, and discoverability.&lt;&#x2F;strong&gt; I highly recommend buying your own personalized domain name–domains
+provided by institutions are temporary often annoyingly hard to remember. For example, my Cornell web address
+is &lt;code&gt;https:&#x2F;&#x2F;cs.cornell.edu&#x2F;~rnigam&lt;&#x2F;code&gt; which requires you to remember what weird internal ID Cornell gave me.
+The second, potentially bigger reason is website &lt;em&gt;deployment&lt;&#x2F;em&gt;.
+My current setup uses &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;features&#x2F;actions&quot;&gt;Github Actions&lt;&#x2F;a&gt; to automatically update my website
+when I push changes to my &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;rachitnigam&#x2F;rachitnigam.com&quot;&gt;website
+repository&lt;&#x2F;a&gt;.
+Doing this with the Cornell web hosting platform requires maintaining my own
+infrastructure of deployment hooks, servers, and scripts which is yet another
+thing to debug.
+Finally, discoverability makes it easier to find your website when someone looks up
+your name on Google.
+Doing this as an academic is pretty easy–make sure a bunch of &lt;code&gt;.edu&lt;&#x2F;code&gt; websites point
+to your website.&lt;span style=&quot;white-space:nowrap&quot;&gt;
+&lt;label for=&quot;sn-2&quot;
+       class=&quot;margin-toggle sidenote-number&quot;&gt;
+&lt;&#x2F;label&gt;
+&lt;&#x2F;span&gt;
+&lt;input type=&quot;checkbox&quot;
+       id=&quot;sn-2&quot;
+       class=&quot;margin-toggle&quot;&#x2F;&gt;
+&lt;span class=&quot;sidenote&quot;&gt;
+Unless you have the same name as someone famous in which case, tough luck.
+Or take it as a challenge to be more famous than they are.
+&lt;&#x2F;span&gt;
+ This includes your advisor’s website, department website, research group website, etc.&lt;&#x2F;p&gt;
+&lt;p&gt;All of this advice generally applies to &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;calyxir.org&quot;&gt;project websites&lt;&#x2F;a&gt;
+as well, which again, I highly recommend to make your research more visible
+and approachable.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;software&quot;&gt;Software&lt;&#x2F;h2&gt;
+&lt;p&gt;I use a fairly minimal set of software tools to do my day-to-day work, make
+presentations, and manage tasks.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;strong&gt;Slides.&lt;&#x2F;strong&gt; Most of my presentations are written in Apple Keynote.
+People I know are divided on the use of animations in slides but I’m staunchly
+in support–it gives your slides that much more polish and forces you to
+memorize the transitions resulting in an overall better talk.
+I have yet to see a good talk made in &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.overleaf.com&#x2F;learn&#x2F;latex&#x2F;Beamer&quot;&gt;LaTeX beamer&lt;&#x2F;a&gt;; my unscientific
+belief is that beamer encourages adding too much math on your slides which is
+often the wrong thing to do for talks where the goal is to give an intuition
+behind your work.&lt;span style=&quot;white-space:nowrap&quot;&gt;
+&lt;label for=&quot;sn-3&quot;
+       class=&quot;margin-toggle sidenote-number&quot;&gt;
+&lt;&#x2F;label&gt;
+&lt;&#x2F;span&gt;
+&lt;input type=&quot;checkbox&quot;
+       id=&quot;sn-3&quot;
+       class=&quot;margin-toggle&quot;&#x2F;&gt;
+&lt;span class=&quot;sidenote&quot;&gt;
+For teaching, however, I’ve found beamer to be a pretty good tool.
+&lt;&#x2F;span&gt;
+&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;strong&gt;Recording.&lt;&#x2F;strong&gt; I’ve had to record talks for virtual conferences in the past and
+have used &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;http:&#x2F;&#x2F;www.telestream.net&#x2F;screenflow&#x2F;overview.htm&quot;&gt;Screenflow&lt;&#x2F;a&gt; for this. It works for what I do and I haven’t needed
+anything more. There might be better alternatives out there.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;strong&gt;Task Management.&lt;&#x2F;strong&gt; Before and during my PhD, I’ve used a string of task management
+systems, from &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;todoist.com&#x2F;&quot;&gt;Todoist&lt;&#x2F;a&gt;, &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;Wunderlist&quot;&gt;Wunderlist&lt;&#x2F;a&gt;, and even &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;docs.github.com&#x2F;en&#x2F;issues&#x2F;trying-out-the-new-projects-experience&#x2F;about-projects&quot;&gt;Github projects&lt;&#x2F;a&gt;. I’ve settled
+on &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.omnigroup.com&#x2F;omnifocus&#x2F;&quot;&gt;Omnifocus&lt;&#x2F;a&gt; for the last two years and am quite happy with it.
+It uses the &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;gettingthingsdone.com&#x2F;&quot;&gt;Getting Things Done&lt;&#x2F;a&gt; school of task managements where you recording &lt;em&gt;everything&lt;&#x2F;em&gt;
+you need to do, file it under the right projects, and complete it when needed.
+Omnifocus’s most powerful feature for me has been the &lt;em&gt;defer&lt;&#x2F;em&gt; action which
+hides unactionable tasks from my list and makes them visible on the right
+day–providing an almost inhuman ability to recall commitments and tasks.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;technical-writing&quot;&gt;Technical Writing&lt;&#x2F;h2&gt;
+&lt;p&gt;Technical writing is the bread and butter of researchers–I’m always writing
+documents, either to discuss ideas with my team or to polish them up for a
+paper.
+I make copious use of &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;notability.com&#x2F;&quot;&gt;Notability&lt;&#x2F;a&gt; to jot down notes on my iPad and
+&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.markdownguide.org&#x2F;&quot;&gt;Markdown&lt;&#x2F;a&gt; to write down ideas about systems I’m building.&lt;&#x2F;p&gt;
+&lt;p&gt;Papers need to be far more polished and therefore I’ve only ever used &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.latex-project.org&#x2F;&quot;&gt;LaTeX&lt;&#x2F;a&gt;
+to write them.
+When starting a new paper, I copy over the bibliography file from the most
+recent paper and a &lt;code&gt;pervasives.sty&lt;&#x2F;code&gt; file that contains all the accumulated
+LaTeX hacks I’ve ever had to do.
+I tend to write everything in one giant file which makes it easier to track
+down a phrase in the paper and start editing it.&lt;span style=&quot;white-space:nowrap&quot;&gt;
+&lt;label for=&quot;sn-4&quot;
+       class=&quot;margin-toggle sidenote-number&quot;&gt;
+&lt;&#x2F;label&gt;
+&lt;&#x2F;span&gt;
+&lt;input type=&quot;checkbox&quot;
+       id=&quot;sn-4&quot;
+       class=&quot;margin-toggle&quot;&#x2F;&gt;
+&lt;span class=&quot;sidenote&quot;&gt;
+Many people prefer separating out each section into a new file which might suit
+your team’s contribution style better.
+&lt;&#x2F;span&gt;
+&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;strong&gt;Graphs and figures.&lt;&#x2F;strong&gt; Papers often need to contain visual elements like
+system diagrams and measurement graphs. I use &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.omnigroup.com&#x2F;omnigraffle&quot;&gt;OmniGraffle&lt;&#x2F;a&gt; to make diagrams
+and use python scripts that use &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;seaborn.pydata.org&#x2F;&quot;&gt;seaborn&lt;&#x2F;a&gt; or &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;vega.github.io&#x2F;vega-lite&#x2F;&quot;&gt;Vega&lt;&#x2F;a&gt; to generate graphs.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;programming-workflow&quot;&gt;Programming Workflow&lt;&#x2F;h2&gt;
+&lt;p&gt;Onto the good stuff and things most likely to cause a flamewar. My configuration
+for various tools is &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;rachitnigam&#x2F;dotfiles&quot;&gt;publicly available&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;strong&gt;Editor.&lt;&#x2F;strong&gt; I use &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;neovim.io&#x2F;&quot;&gt;neovim&lt;&#x2F;a&gt; which is a modern rewrite of the &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.vim.org&#x2F;&quot;&gt;vim&lt;&#x2F;a&gt; editor.
+If you’re interested in emacs, I’ve heard good things about &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.spacemacs.org&#x2F;&quot;&gt;spacemacs&lt;&#x2F;a&gt;.
+If you like the 21st century, you may use &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;code.visualstudio.com&#x2F;&quot;&gt;VS Code&lt;&#x2F;a&gt; instead.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;strong&gt;Shell.&lt;&#x2F;strong&gt; &lt;code&gt;zsh&lt;&#x2F;code&gt; has been my favored shell for a long time. It provides a bunch
+of quality of life improvements over &lt;code&gt;bash&lt;&#x2F;code&gt; owing to its powerful plugin system.
+&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;ohmyz.sh&#x2F;&quot;&gt;Oh my Zsh&lt;&#x2F;a&gt; is a popular addon for &lt;code&gt;zsh&lt;&#x2F;code&gt; and adds a bunch of nice features
+to it but can often be slow and bloated. &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;zsh-users&#x2F;antigen&quot;&gt;&lt;code&gt;antigen&lt;&#x2F;code&gt;&lt;&#x2F;a&gt; is a plugin manager for &lt;code&gt;zsh&lt;&#x2F;code&gt;
+that mostly circumvents these problems by only installing what you need and
+aggressively caching slow things.
+In a past life, I used the &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;fishshell.com&#x2F;&quot;&gt;&lt;code&gt;fish&lt;&#x2F;code&gt;&lt;&#x2F;a&gt; shell but got frustrated with the POSIX
+compatibility problems which would break a lot of build scripts.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;strong&gt;Tmux.&lt;&#x2F;strong&gt; &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;Tmux&quot;&gt;Tmux&lt;&#x2F;a&gt; is a powerful terminal multiplexer that allows you manage
+multiple shell sessions side-by-side.
+When programming, I usually split my terminal into three sections: one for the
+editor and two for interactive commands.
+My tmux configuration changes the default keybindings to be easier to remember
+as well as some visual elements to track the current window, name of session,
+time, and date.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;strong&gt;Miscellaneous.&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;junegunn&#x2F;fzf&quot;&gt;fzf&lt;&#x2F;a&gt; is a generic fuzzy-finding tool that supercharges your search history command among other things.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;clibs&#x2F;entr&quot;&gt;entr&lt;&#x2F;a&gt; watches for file changes and executes a command.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;wting&#x2F;autojump&quot;&gt;autojump&lt;&#x2F;a&gt; is database-backed &lt;code&gt;cd&lt;&#x2F;code&gt; alternative.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;BurntSushi&#x2F;ripgrep&quot;&gt;rg&lt;&#x2F;a&gt; is a modern &lt;code&gt;grep&lt;&#x2F;code&gt; alternative which much, much faster.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;sharkdp&#x2F;fd&quot;&gt;fd&lt;&#x2F;a&gt; is a &lt;code&gt;find&lt;&#x2F;code&gt; alternative with saner defaults.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;&lt;em&gt;Have comments? &lt;a href=&quot;mailto:rachit.nigam12@gmail.com&quot;&gt;Email&lt;&#x2F;a&gt; or &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;twitter.com&#x2F;notypes&quot;&gt;tweet&lt;&#x2F;a&gt; at me.&lt;&#x2F;em&gt;&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Commoditize the Complement of Your Research</title>
+        <published>2021-03-13T00:00:00+00:00</published>
+        <updated>2021-03-13T00:00:00+00:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="https://rachitnigam.com/post/commoditize-your-research-complement/" type="text/html"/>
+        <id>https://rachitnigam.com/post/commoditize-your-research-complement/</id>
+        
+        <content type="html">&lt;p&gt;“Commoditize your complement” is an idea about how companies can build profitable
+markets without complete vertical integration or monopolization.&lt;span style=&quot;white-space:nowrap&quot;&gt;
+&lt;label for=&quot;sn-1&quot;
+       class=&quot;margin-toggle sidenote-number&quot;&gt;
+&lt;&#x2F;label&gt;
+&lt;&#x2F;span&gt;
+&lt;input type=&quot;checkbox&quot;
+       id=&quot;sn-1&quot;
+       class=&quot;margin-toggle&quot;&#x2F;&gt;
+&lt;span class=&quot;sidenote&quot;&gt;
+I highly recommend “&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.gwern.net&#x2F;Complement&quot;&gt;Laws of Tech: Commoditize Your Complement&lt;&#x2F;a&gt;” for a more
+in-depth look into this idea.
+&lt;&#x2F;span&gt;
+
+Very briefly, the idea is this: every product has a &lt;em&gt;substitute&lt;&#x2F;em&gt; and a &lt;em&gt;complement&lt;&#x2F;em&gt;.
+A substitute is a product that provides the same functionality and therefore
+competes with your product.
+For example, Zoom is a substitute for Skype.
+A complement is product that people buy along with your product.
+For example, operating systems complement personal computers.
+So, what can researchers learn from creating markets?&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;the-complement-of-your-research&quot;&gt;The Complement of Your Research&lt;&#x2F;h2&gt;
+&lt;p&gt;Some of my favorite research projects have an interesting characteristic:
+instead of competing with people in a hot research area, these projects build
+the infrastructure that everyone needs to use.
+Over time, such projects win out in terms of research impact and ability to
+do novel research because &lt;em&gt;everyone&lt;&#x2F;em&gt; who does research in that area ends up
+using these tools.&lt;&#x2F;p&gt;
+&lt;p&gt;Let me use a particular research tool as an example.
+&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;http:&#x2F;&#x2F;emina.github.io&#x2F;rosette&#x2F;&quot;&gt;Rosette&lt;&#x2F;a&gt; is an embedded language in Racket that allows researchers to quickly
+develop &lt;em&gt;solver-aided tools&lt;&#x2F;em&gt;.
+Solver-aided tools are a “hot topic” in programming languages research.
+The high-level idea is encoding the semantics of a program into boolean (or richer
+logics) and using SMT solvers like &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;Z3Prover&#x2F;z3&quot;&gt;Z3&lt;&#x2F;a&gt; to either verify programs or
+automatically synthesize them from specifications.&lt;span style=&quot;white-space:nowrap&quot;&gt;
+&lt;label for=&quot;sn-2&quot;
+       class=&quot;margin-toggle sidenote-number&quot;&gt;
+&lt;&#x2F;label&gt;
+&lt;&#x2F;span&gt;
+&lt;input type=&quot;checkbox&quot;
+       id=&quot;sn-2&quot;
+       class=&quot;margin-toggle&quot;&#x2F;&gt;
+&lt;span class=&quot;sidenote&quot;&gt;
+James Bornholt’s &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;blog.sigplan.org&#x2F;2019&#x2F;07&#x2F;31&#x2F;program-synthesis-in-2019&#x2F;&quot;&gt;introduction to program synthesis&lt;&#x2F;a&gt; provides a good overview of
+the area.
+&lt;&#x2F;span&gt;
+&lt;&#x2F;p&gt;
+&lt;p&gt;Roughly speaking, anyone who attempts to build a solver-aided tool has to do
+three things: encode the semantics of programs as SMT, repeatedly query
+the SMT solver, and transform the output of the SMT solver back to the input
+language.
+Before languages like Rosette, researchers would spend a lot of time building
+compilers to painstakingly transform programs to SMT, debugging problems with
+the encodings, and transforming the output from the SMT solver.
+&lt;em&gt;Every researcher&lt;&#x2F;em&gt; who wants to build a solver-aided tool would redo this work
+or build upon someone else’s unmaintained research code.&lt;&#x2F;p&gt;
+&lt;p&gt;The idea with Rosette is simple—build a framework where you can write an
+interpreter for your language and &lt;em&gt;automatically&lt;&#x2F;em&gt; turn it into a solver-aided
+tool.&lt;span style=&quot;white-space:nowrap&quot;&gt;
+&lt;label for=&quot;sn-3&quot;
+       class=&quot;margin-toggle sidenote-number&quot;&gt;
+&lt;&#x2F;label&gt;
+&lt;&#x2F;span&gt;
+&lt;input type=&quot;checkbox&quot;
+       id=&quot;sn-3&quot;
+       class=&quot;margin-toggle&quot;&#x2F;&gt;
+&lt;span class=&quot;sidenote&quot;&gt;
+This simple idea is, of course, built upon deep insights about how solvers
+and symbolic execution work.
+I recommend reading the &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;homes.cs.washington.edu&#x2F;~emina&#x2F;doc&#x2F;rosette.pldi14.pdf&quot;&gt;Rosette paper&lt;&#x2F;a&gt; for those
+interested.
+&lt;&#x2F;span&gt;
+
+The original &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;homes.cs.washington.edu&#x2F;~emina&#x2F;doc&#x2F;rosette.pldi14.pdf&quot;&gt;Rosette paper&lt;&#x2F;a&gt; was a novel and interesting contribution,
+therefore justifying its publication.
+However, the real research impact of Rosette has been from its continued use
+long after the paper was published.&lt;&#x2F;p&gt;
+&lt;p&gt;As of writing this blog post, the Rosette &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;http:&#x2F;&#x2F;emina.github.io&#x2F;rosette&#x2F;apps.html&quot;&gt;project page&lt;&#x2F;a&gt; outlines
+19 research projects that use it in some capacity.
+An important reason for this is because the Rosette authors continued to
+maintain Rosette, provide support, and build upon the original work.
+However, these things only help if there a demand for a tool like Rosette—if
+people didn’t care about building solver-aided tools, Rosette would not be as
+successful.&lt;&#x2F;p&gt;
+&lt;p&gt;Rosette is a successful example of the “commoditize your complement”
+principle—instead of competing with people working in a “hot area”, build
+infrastructure that boosts the productivity of the people in that area.
+This way, your work becomes foundational and people can more productively focus
+on advancing the state-of-the-art using it.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;building-on-success&quot;&gt;Building on Success&lt;&#x2F;h2&gt;
+&lt;p&gt;A long-term benefit of building tools that complement a research area is that
+your tools and systems become legitimate grounds for follow-up research.
+Generally speaking, it is hard to motivate a research project where you solve a
+problem for your made-up system.
+However, if even dozens of other groups use your system, you can both
+reasonably claim that the follow-up work is important &lt;em&gt;and&lt;&#x2F;em&gt; other people’s work
+to evaluate your follow-up work.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;unsat.cs.washington.edu&#x2F;projects&#x2F;sympro&#x2F;&quot;&gt;SymPro&lt;&#x2F;a&gt;, a tool built upon Rosette, is an example of this.
+SymPro is a symbolic profiler for Rosette.
+Put simply, it profiles programs written in Rosette and finds code that causes
+the SMT encoding of a program to blow up.
+SymPro was able to use the existing Rosette ecosystem to develop a robust tool
+and evaluate it on code written by users of Rosette.
+This is both a value-add for users of Rosette and a compelling case to justify
+the research paper.&lt;span style=&quot;white-space:nowrap&quot;&gt;
+&lt;label for=&quot;sn-4&quot;
+       class=&quot;margin-toggle sidenote-number&quot;&gt;
+&lt;&#x2F;label&gt;
+&lt;&#x2F;span&gt;
+&lt;input type=&quot;checkbox&quot;
+       id=&quot;sn-4&quot;
+       class=&quot;margin-toggle&quot;&#x2F;&gt;
+&lt;span class=&quot;sidenote&quot;&gt;
+The research contributions of the paper are not tied to Rosette.
+However, building upon Rosette makes the paper that much more compelling.
+&lt;&#x2F;span&gt;
+&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;finding-a-complement&quot;&gt;Finding a Complement&lt;&#x2F;h2&gt;
+&lt;p&gt;Rosette was not the first tool to address the needs of a particular research
+community.
+&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;unsat.cs.washington.edu&#x2F;projects&#x2F;sympro&#x2F;&quot;&gt;LLVM&lt;&#x2F;a&gt;, &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;valgrind.org&#x2F;&quot;&gt;Valgrind&lt;&#x2F;a&gt;, &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;klee.github.io&#x2F;&quot;&gt;KLEE&lt;&#x2F;a&gt;, &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;pdos.csail.mit.edu&#x2F;papers&#x2F;click:tocs00&#x2F;paper.pdf&quot;&gt;the Click modular router&lt;&#x2F;a&gt;, &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.gem5.org&#x2F;&quot;&gt;GEM5&lt;&#x2F;a&gt; etc. all found research areas where people
+were desperate to build tools but had no good infrastructure.
+All of them capitalized on this need by building robust tools and providing
+support.
+So, the valuable takeaway from this is that research projects that seek to
+support instead of compete might win out in the long-term.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;em&gt;Have comments? &lt;a href=&quot;mailto:rachit.nigam12@gmail.com&quot;&gt;Email&lt;&#x2F;a&gt; or &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;twitter.com&#x2F;notypes&quot;&gt;tweet&lt;&#x2F;a&gt; at me.&lt;&#x2F;em&gt;&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Languages, Tools, and Techniques for Accelerator Design</title>
+        <published>2021-02-17T00:00:00+00:00</published>
+        <updated>2021-02-17T00:00:00+00:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="https://rachitnigam.com/post/latte-post/" type="text/html"/>
+        <id>https://rachitnigam.com/post/latte-post/</id>
+        
+        <content type="html">&lt;blockquote&gt;
+&lt;p&gt;If you’re excited by the ideas in this post, please consider registering for
+and submitting to &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;capra.cs.cornell.edu&#x2F;latte21&quot;&gt;LATTE&lt;&#x2F;a&gt;: the first workshop on languages, tools, and
+techniques for accelerator design co-located with ASPLOS.&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;p&gt;FPGA-based accelerators have opened up a new frontier for accelerator design; instead of spending months building and fabricating silicon chips, programmers can buy a cloud instance to run custom hardware accelerators within hours. With the remarkable new hardware, there is a need for remarkable new software—existing tools and languages used to describe circuits provide assembly-like abstractions and cannot enable the kind of rapid iteration we’ve become used to in the software ecosystem. Innovation in languages, tools, and techniques for accelerator design is key in making accelerator design productive, accessible, and useful.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;the-perks-and-perils-of-custom-hardware&quot;&gt;The Perks and Perils of Custom Hardware&lt;&#x2F;h2&gt;
+&lt;p&gt;In contrast to conventional processors, hardware accelerators ruthlessly trade off the generality of input programs for simpler and faster hardware. For example, Google’s tensor processing units (TPUs) use systolic arrays which exploit the data-reuse patterns in linear algebra kernels by connecting processing units in an array-like configuration. While a TPU is not a general purpose processor, it can dramatically speed up linear algebra workloads while being power efficient. With the imminent death of Moore’s law, computational improvements will be driven by such hardware accelerators.&lt;&#x2F;p&gt;
+&lt;p&gt;While silicon-based accelerators provide the most performant implementation of an accelerator, designing them is a challenging and time-consuming task. Architects spend months outlining a high-level architecture, implementing it using low-level hardware description languages (HDLs), and fabricating it. Finally, the process of integrating these accelerators is tedious—each accelerator must be directly connected to a physical machine and programmed using low-level memory-mapped interfaces.&lt;&#x2F;p&gt;
+&lt;p&gt;Field programmable gate arrays (FPGAs) are key to a more radical approach to accelerator design—where programmers can rapidly reprogram and iterate on designs within hours instead of months. FPGAs represent a programmability-efficiency trade-off between ultra-specialized silicon accelerators and traditional processors. They can be programmed to simulate a particular hardware design and do so more efficiently than processors. On the other hand, while less efficient than silicon accelerators, FPGAs can be reprogrammed in a few seconds, cutting out the tedious fabrication process. This trade-off can be well worth it: FPGAs can provide an order of magnitude speedup and can accelerate diverse workloads.&lt;&#x2F;p&gt;
+&lt;p&gt;The limiting factor in the design and proliferation of FPGA-based accelerators is languages and tooling. Hardware description languages (HDLs), which operate at the abstraction of gates, wires, and clock cycles, are the dominant way of designing hardware. While useful for building high-end processors, these abstractions are inappropriate for designing accelerators. For example, a simple matrix-multiply accelerator can require hundreds of lines of carefully crafted HDL code to coordinate data and control flow. Accelerator designers are stuck specifying low-level circuitry instead of rapidly iterating on high-level architectures.&lt;&#x2F;p&gt;
+&lt;p&gt;New, higher-level programming models are the key to the ubiquitous use of FPGA-based accelerators. Beyond ridding developers from low-level abstractions, such programming models also enable novel solutions to classic problems such hardware verification and automatic optimization.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;high-level-programming-models&quot;&gt;High-Level Programming Models&lt;&#x2F;h2&gt;
+&lt;p&gt;The obvious benefit of higher-level programming models is the ability to specify hardware without dwelling on low-level details. For example, using high-level synthesis (HLS) compilers, programmers can compile C++ programs into hardware designs. The aforementioned matrix multiplier can be implemented in a few lines of code:&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;C&quot; class=&quot;language-C &quot;&gt;&lt;code class=&quot;language-C&quot; data-lang=&quot;C&quot;&gt;for (int i = 0; i &amp;lt; N; i++)
+  for (int j = 0; i &amp;lt; N; i++)
+    for (int k = 0; i &amp;lt; N; i++)
+      #pragma HLS UNROLL factor=5
+      C[i][j] = A[i][k] * B[k][j];
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;The challenge in such programming models, however, is exploiting the available hardware parallelism. For example, To express DOALL parallelism programmers can use the &lt;code&gt;UNROLL&lt;&#x2F;code&gt; pragma to duplicate the loop body and perform five computations at the same time.&lt;&#x2F;p&gt;
+&lt;p&gt;However, loop unrolling demonstrates the key difference between a C++ program meant to run on processors and ones used to generate hardware. Processors take advantage of unrolled loops through their superscalar design and complex memory hierarchies that can service multiple requests every cycle. In contrast, unrolling a loop in an accelerator design instantiates five &lt;em&gt;physical&lt;&#x2F;em&gt; multipliers in the final design which are connected to primitive memories that can only serve a single read or write request every cycle. This means that without careful manual organization of memories, the additional multipliers would stall most cycles waiting on read and write requests.&lt;&#x2F;p&gt;
+&lt;p&gt;The challenge here is the need to connect the high-level abstractions to the fundamentally &lt;em&gt;physical&lt;&#x2F;em&gt; nature of hardware designs. This balance is precarious: expose too much information and we’re back to the abstraction level of hardware description languages; too little, and the programming model will unpredictably generate poor hardware designs without providing programmers any useful feedback.&lt;&#x2F;p&gt;
+&lt;p&gt;Recent work in this area demonstrates how programming languages techniques can help overcome these problems. For example, &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;capra.cs.cornell.edu&#x2F;dahlia&quot;&gt;Dahlia&lt;&#x2F;a&gt; (my work) uses a substructural type system to enforce memory constraints in HLS programs while &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;aetherling.org&#x2F;&quot;&gt;Aetherling&lt;&#x2F;a&gt; is a domain-specific language that automatically generates high-performance streaming accelerators.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;automatically-optimizing-accelerators&quot;&gt;Automatically Optimizing Accelerators&lt;&#x2F;h2&gt;
+&lt;p&gt;The vast majority of optimization, analysis, and verification of hardware accelerators occurs at the level of hardware description languages (HDLs). High-level programming models, in addition to improving programmer productivity, can enable novel and scalable solutions to these problems.&lt;&#x2F;p&gt;
+&lt;p&gt;A key property of HDLs is that, by default, everything executes in parallel. In order to encode control flow, programs must implement their own state machines that activate the right set of actions to execute every cycle. Pseudocode for this pattern demonstrates how gnarly it can get:&lt;&#x2F;p&gt;
+&lt;pre&gt;&lt;code&gt;x = (state == 0) ? 1
+  : (state == 1) ? x + 1
+  : 0;
+
+state = (state == 0) ? 1
+      : (state == 1 &amp;amp;&amp;amp; x &amp;lt; 10) ? 0
+      : (state == 1 &amp;amp;&amp;amp; !(x &amp;lt; 10)) ? 2;
+
+y = (state == 2) ? 1 : 0;
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;The input program, which uses control flow constructs, demonstrates the actual intent:&lt;&#x2F;p&gt;
+&lt;pre&gt;&lt;code&gt;x = 1;
+while (x &amp;lt; 10) {
+  x = x + 1;
+}
+y = 1;
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Not only is the latter program easier to write down, but it also reveals useful facts about the program. For example, the variable &lt;code&gt;x&lt;&#x2F;code&gt; is never used after the loop i.e., it is no longer &lt;em&gt;live&lt;&#x2F;em&gt;. Optimizing compilers, both for software and hardware, can use this fact to reuse the registers that store &lt;code&gt;x&lt;&#x2F;code&gt;. However, yet again, software optimizations don’t precisely capture the nature of hardware designs. In a software program, sharing registers is almost always a good idea, limited only by the compiler’s knowledge of aliasing. On the other hand, sharing registers in accelerators requires instantiating &lt;em&gt;multiplexers&lt;&#x2F;em&gt; which control the input and output signals from the register. The choice of trading off registers for multiplexers is target-dependent: registers are cheap on FPGAs but costly on silicon-based accelerators while multiplexers are the opposite. Attempting to port software optimizations without knowledge of hardware is futile.&lt;&#x2F;p&gt;
+&lt;p&gt;Language-based abstractions can capture such trade-offs.
+For example, &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;cucapra&#x2F;calyx&quot;&gt;Calyx&lt;&#x2F;a&gt; (my work), proposes a new intermediate language for building
+accelerator generating compilers.
+Calyx uses a split representation of programs: a hardware-like language
+captures structural facts while a software-like language is used to precisely
+express the control flow.
+Using both structural and control flow information, Calyx can build a set of
+generic optimizations and analyses that benefit all compilers aiming to
+generate hardware.
+On the other hand, &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;dl.acm.org&#x2F;doi&#x2F;10.1145&#x2F;3352460.3358292&quot;&gt;μIR&lt;&#x2F;a&gt; uses a task-parallel representation to optimize
+accelerator designs while &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;dl.acm.org&#x2F;doi&#x2F;abs&#x2F;10.1145&#x2F;1027084.1027087&quot;&gt;SPARK&lt;&#x2F;a&gt; automates speculative and parallelization
+optimizations.&lt;&#x2F;p&gt;
+&lt;p&gt;Language-based abstractions similarly have the potential to enable scalable verification of accelerators. Instead of coping with the always-parallel semantics of HDLs, verification techniques can utilize higher-level control flow information to perform modular verification.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;state-of-the-art&quot;&gt;State of the Art&lt;&#x2F;h2&gt;
+&lt;p&gt;A language-oriented view of classic problems in hardware design has resulted
+in a slew of novel solutions:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Verification&lt;&#x2F;strong&gt;: Formally verified hardware design ([Kami][]) aims to eliminate
+the slow and tedious process of hardware verification.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;Virtualization&lt;&#x2F;strong&gt;: Language-based virtualization of FPGA designs
+(&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;dl.acm.org&#x2F;doi&#x2F;10.1145&#x2F;3297858.3304010&quot;&gt;Cascade&lt;&#x2F;a&gt;) has been shown to be a promising avenue for fast
+state-snapshotting and transparent relocation.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;Programming Models&lt;&#x2F;strong&gt;: New programming models for designing
+systolic arrays (&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.csl.cornell.edu&#x2F;~zhiruz&#x2F;pdfs&#x2F;susy-iccad2020.pdf&quot;&gt;SuSy&lt;&#x2F;a&gt;) and streaming accelerators (&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;aetherling.org&#x2F;&quot;&gt;Aetherling&lt;&#x2F;a&gt;)
+demonstrate the potential of a domain-specific approach to hardware design.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;Type Systems&lt;&#x2F;strong&gt;: Type systems that capture hardware constraints in a
+high-level programming model (&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;capra.cs.cornell.edu&#x2F;dahlia&quot;&gt;Dahlia&lt;&#x2F;a&gt;) can simplify manual optimization
+ensure that well-typed programs go fast.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;languages-tools-and-techniques-for-accelerator-design&quot;&gt;Languages, Tools, and Techniques for Accelerator Design&lt;&#x2F;h2&gt;
+&lt;p&gt;Recent work on language-oriented accelerator design is distributed across three research communities: (1) The electronic design automation (EDA) community, focused on HLS and tools for silicon-based architectures, (2) the compilers community, building infrastructure and optimizations for emerging architectures, and (3) the PL community, exploring new languages for designing and verifying hardware designs. There is a growing consensus that work on FPGA-based accelerators needs to be interdisciplinary—building a robust programming language requires precise semantics, construction of performant compilers, and characterization of the underlying architectures like FPGAs.&lt;&#x2F;p&gt;
+&lt;p&gt;In order to bring together people who are excited by the idea of a language-focused future for hardware design, we’re organizing the &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;capra.cs.cornell.edu&#x2F;latte21&quot;&gt;first workshop on Languages, Tools, and Techniques for Accelerator Design (LATTE)&lt;&#x2F;a&gt; which will be co-located with ASPLOS 2021. If you’re interested, consider submitting a 2-page position paper and&#x2F;or come by!&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;em&gt;Have comments? &lt;a href=&quot;mailto:rachit.nigam12@gmail.com&quot;&gt;Email&lt;&#x2F;a&gt; or &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;twitter.com&#x2F;notypes&quot;&gt;tweet&lt;&#x2F;a&gt; at me.&lt;&#x2F;em&gt;&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Compiling for the Reconfigurable Future</title>
+        <published>2020-04-16T11:59:11-04:00</published>
+        <updated>2020-04-16T11:59:11-04:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="https://rachitnigam.com/post/reconf-future/" type="text/html"/>
+        <id>https://rachitnigam.com/post/reconf-future/</id>
+        
+        <content type="html">&lt;blockquote&gt;
+&lt;p&gt;FPGAs, a form of reconfigurable
+architectures, already power a large number of datacenter applications. With
+FPGA acceleration becoming mainstream, it is the perfect opportunity to think
+about programming models for designing next-generation high-performance
+hardware.&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;p&gt;Moore’s law is in its death throes. With Global Foundries &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.anandtech.com&#x2F;show&#x2F;13277&#x2F;globalfoundries-stops-all-7nm-development&quot;&gt;announcing&lt;&#x2F;a&gt;
+that they are no longer pursuing 7nm production nodes, fabrication companies
+focusing on &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.anandtech.com&#x2F;show&#x2F;15217&#x2F;intels-manufacturing-roadmap-from-2019-to-2029&quot;&gt;incremental improvements&lt;&#x2F;a&gt;, and the end of the
+arguably more important &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;Dennard_scaling&quot;&gt;Dennard scaling&lt;&#x2F;a&gt;, we’re entering a new
+era where general purpose architectures are no longer the solution.
+Reconfigurable architectures are one of the hottest research topics and perhaps
+hold the key to application-specific hardware acceleration. However, without
+a sane programming model, reconfigurable architectures might not achieve the
+success they deserve.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;reconfigurable-architectures&quot;&gt;Reconfigurable Architectures&lt;&#x2F;h2&gt;
+&lt;p&gt;Since the dawn of computer architecture, we’ve focused on building processors
+that are good at executing &lt;em&gt;every&lt;&#x2F;em&gt; conceivable program. The advances in
+pipelined designs, speculative and out-of-order execution all try to
+dynamically discover regularity and parallelism in arbitrary programs and
+execute them as fast as possible. The performance benefits of these technologies
+are inarguable. However, all good things come at a price. In their
+single-minded zealotry to improve single threaded performance, processors introduce
+an incredible amount of &lt;em&gt;control overhead&lt;&#x2F;em&gt;. Figure 1 shows the energy
+breakdown of executing an add instruction. The control dominates the cost of
+executing an instruction.&lt;&#x2F;p&gt;
+&lt;center&gt;
+&lt;figure&gt;
+&lt;img src=&quot;&#x2F;img&#x2F;energy-breakdown.png&quot;
+     alt=&quot;Energy breakdown of executing an add instruction on 45nm technology.&quot;&gt;
+&lt;&#x2F;img&gt;
+&lt;figcaption&gt;
+Fig 1.
+Energy breakdown of executing an add instruction from
+&lt;a href=&quot;https:&#x2F;&#x2F;ieeexplore.ieee.org&#x2F;document&#x2F;6757323&quot;&gt;
+Computing&#x27;s Energy Problem [Horowitz, 2014]
+&lt;&#x2F;a&gt;.
+&lt;&#x2F;figcaption&gt;
+&lt;&#x2F;figure&gt;
+&lt;&#x2F;center&gt;
+&lt;p&gt;So while modern processors
+can execute arbitrary programs quickly, they leave a lot of room for improvement
+with an individual program.
+Instead of paying for the cost of the general control structures in every program,
+what if your processor could pay for the exactly the amount of control required
+to execute the current program.
+What if you
+could &lt;em&gt;reconfigure&lt;&#x2F;em&gt; your architecture
+based on the currently executing program?
+Reconfigurable architectures refers to the general class of architectures
+that allow some degree of application-specific reconfigurability. The term
+“reconfigurable architectures” is incredibly broad and spans everything from
+the reconfigurability of meshes in &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;http:&#x2F;&#x2F;opencelerity.org&#x2F;&quot;&gt;massive many-cores&lt;&#x2F;a&gt; to bit-level
+reconfigurable architectures. In this post, we’ll be focusing on Field
+Programmable Gate Arrays (FPGAs) as a reconfigurable accelerator.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;fpgas-as-computational-accelerators&quot;&gt;FPGAs as Computational Accelerators&lt;&#x2F;h2&gt;
+&lt;p&gt;FPGAs were initially developed as high-performance simulators for circuit
+designs. Testing a hardware design requires simulating its behavior over
+thousands of clock cycles. With larger and more complex, the computational
+power required to simulate and track the state of a design becomes increasingly
+hard. Unfortunately, simulating a hardware design on a traditional processor
+does not scale—imagine trying to simulate an i3
+processor on a Pentium 4. FPGAs were designed as simulation accelerators. They
+provide &lt;em&gt;bit-level&lt;&#x2F;em&gt; reconfigurability which allows them to simulate wires and
+gates in a hardware design.&lt;&#x2F;p&gt;
+&lt;p&gt;The bit-level reconfigurability also made FPGAs
+viable as a cheaper, low-volume alternate to application specific integrated
+circuits (ASICs). Instead of taping-out custom chips, FPGAs could be used to
+prototype and integrate such accelerators without paying for a full
+silicon tape-out. In domains like
+signal processing or networking, where real-time deadlines really matter and
+CPUs struggle to meet high-throughput requirements, FPGAs were successfully
+used as computational accelerators. The common thread in all of these use cases
+is that we really want to design custom circuits but don’t want to pay the
+costs of producing a whole new chip.&lt;&#x2F;p&gt;
+&lt;p&gt;FPGAs happily chugged along in these niche roles for a long time without taking
+off in a big way. Researchers knew that FPGAs could play a big role as flexible
+accelerators but didn’t have a “killer app”. Between 2010-2016, an exceptional
+team of computer architects demonstrated
+that FPGAs could be used as
+computational accelerators &lt;em&gt;inside datacenters&lt;&#x2F;em&gt; through the &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.microsoft.com&#x2F;en-us&#x2F;research&#x2F;project&#x2F;project-catapult&#x2F;&quot;&gt;Catapult&lt;&#x2F;a&gt;
+project. Catapult, and its successor &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.microsoft.com&#x2F;en-us&#x2F;research&#x2F;project&#x2F;project-brainwave&#x2F;&quot;&gt;BrainWave&lt;&#x2F;a&gt;, showed that not only can
+FPGAs significantly improve the performance of modern large-scale applications,
+they provide enough flexibility to be used in multiple domains, accelerating
+everything from Bing search, Azure cloud network, and most recently, ML models.&lt;&#x2F;p&gt;
+&lt;p&gt;Other cloud services like AWS have jumped on this trend and now offer &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;aws.amazon.com&#x2F;education&#x2F;F1-instances-for-educators&#x2F;&quot;&gt;F1
+instances&lt;&#x2F;a&gt; which provide access to high-end FPGA units through AWS’s
+pay-what-you-use model.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;fpga-programming-101&quot;&gt;FPGA Programming 101&lt;&#x2F;h2&gt;
+&lt;p&gt;Owing to its root as a hardware simulator, FPGA programming toolchains repurpose
+existing hardware design languages (HDLs). As a circuit simulator, this is
+a really good idea. You can simply take your preexisting hardware design and
+run it on an FPGA.&lt;span style=&quot;white-space:nowrap&quot;&gt;
+&lt;label for=&quot;sn-1&quot;
+       class=&quot;margin-toggle sidenote-number&quot;&gt;
+&lt;&#x2F;label&gt;
+&lt;&#x2F;span&gt;
+&lt;input type=&quot;checkbox&quot;
+       id=&quot;sn-1&quot;
+       class=&quot;margin-toggle&quot;&#x2F;&gt;
+&lt;span class=&quot;sidenote&quot;&gt;
+I apologize to my architect friends. Running designs on an FPGA in reality can be an incredible challenge. FPGAs have different kinds of memory and performance characteristics. Most hardware design codebases are carefully engineered to separate FPGA-specific design decisions from the core design.
+&lt;&#x2F;span&gt;
+&lt;&#x2F;p&gt;
+&lt;p&gt;Unfortunately, when trying to run high-level application code
+the level of abstraction afforded by HDLs is far too low-level.
+Imagine
+trying to write a convolution kernel by specifying every wire connection
+into every adder and the computation that occurs at every clock cycle. Proponents
+of HDLs will point out that we can eek out every bit of performance from a
+low-level hardware design. However, this also means that design iteration times
+are much worse. It can take many weeks of engineering effort to implement
+and optimize a design.&lt;&#x2F;p&gt;
+&lt;p&gt;I am by no means the first person to point this productivity-performance
+trade-off. Practitioners and researchers have created a multitude of
+HDLs to improve the level of abstraction: &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;bluespec.com&#x2F;&quot;&gt;BlueSpec&lt;&#x2F;a&gt;, &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;SystemVerilog&quot;&gt;SystemVerilog&lt;&#x2F;a&gt;, &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;cornell-brg&#x2F;pymtl3&quot;&gt;PyMTL&lt;&#x2F;a&gt;,
+&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.chisel-lang.org&#x2F;&quot;&gt;Chisel&lt;&#x2F;a&gt;, etc. all aim to use host languages to improve the level of abstraction
+in some manner. For example, Chisel is embedded in Scala and provides
+modularity and parameterization mechanisms using Scala’s type system.
+However, HDLs still &lt;em&gt;fundamentally&lt;&#x2F;em&gt; operate at the gate-and-wire
+level of abstraction. Chisel designs, after being typechecked by the Scala
+compiler, are expanded into a structural specification of the hardware design.&lt;&#x2F;p&gt;
+&lt;p&gt;A more radical technique to lift the level of abstraction would be to specify
+&lt;em&gt;how&lt;&#x2F;em&gt; the computation occurs and use a compiler to generate the hardware for
+that specification. The architecture community has been exploring the idea
+of transforming behavioral (or functional) descriptions of computation
+into hardware designs. This is commonly referred to High-Level Synthesis (HLS)
+in the community.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;high-level-synthesis&quot;&gt;High-Level Synthesis&lt;&#x2F;h2&gt;
+&lt;p&gt;High-Level Synthesis&lt;span style=&quot;white-space:nowrap&quot;&gt;
+&lt;label for=&quot;sn-2&quot;
+       class=&quot;margin-toggle sidenote-number&quot;&gt;
+&lt;&#x2F;label&gt;
+&lt;&#x2F;span&gt;
+&lt;input type=&quot;checkbox&quot;
+       id=&quot;sn-2&quot;
+       class=&quot;margin-toggle&quot;&#x2F;&gt;
+&lt;span class=&quot;sidenote&quot;&gt;
+“Synthesis” is borrowed from hardware design workflows—circuits are synthesized into silicon. This is just a compiler.
+&lt;&#x2F;span&gt;
+ is the idea of compiling a computational description
+in a high-level programming language, &lt;span style=&quot;white-space:nowrap&quot;&gt;
+&lt;label for=&quot;sn-3&quot;
+       class=&quot;margin-toggle sidenote-number&quot;&gt;
+&lt;&#x2F;label&gt;
+&lt;&#x2F;span&gt;
+&lt;input type=&quot;checkbox&quot;
+       id=&quot;sn-3&quot;
+       class=&quot;margin-toggle&quot;&#x2F;&gt;
+&lt;span class=&quot;sidenote&quot;&gt;
+Architects operate at the level of gates, wires, and clocks. C++ is a huge
+jump in abstractions.
+&lt;&#x2F;span&gt;
+ like C or C++, into an HDL like
+Verilog. HLS has been quite successful in a multitude of domains—everything
+from &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;ieeexplore.ieee.org&#x2F;document&#x2F;1466178&quot;&gt;digital signal processing&lt;&#x2F;a&gt; to &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;dl.acm.org&#x2F;doi&#x2F;10.1145&#x2F;3020078.3021741&quot;&gt;machine learning
+accelerators&lt;&#x2F;a&gt; has been implemented in HLS.&lt;&#x2F;p&gt;
+&lt;p&gt;The semantic gap between a functional description and timed hardware structures
+is quite large. Hardware designs are &lt;em&gt;timed&lt;&#x2F;em&gt; because they explicitly describe
+the
+behavior of individual circuits at the granularity of clock cycles. An HLS
+compiler needs to transform the functional description into a &lt;em&gt;data path&lt;&#x2F;em&gt;,
+which describes the hardware structures that perform computations, and
+a &lt;em&gt;control path&lt;&#x2F;em&gt;, which describes the computation performed by components every
+cycle.&lt;&#x2F;p&gt;
+&lt;p&gt;The promise of transforming &lt;em&gt;any&lt;&#x2F;em&gt; C++ program into hardware is absurd at its
+face. C++ programs dynamically allocate memory, use complicated control
+structures, and are notoriously hard to analyze. Compare this to physical
+hardware where memory sizes and control structures need to statically generated
+at compile time.&lt;&#x2F;p&gt;
+&lt;p&gt;I’ll leave the specifics of where HLS fails for a future blog post. If you’re
+curious, dive into &lt;a href=&quot;&#x2F;files&#x2F;pubs&#x2F;dahlia.pdf&quot;&gt;our paper&lt;&#x2F;a&gt; on &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;capra.cs.cornell.edu&#x2F;dahlia&quot;&gt;Dahlia&lt;&#x2F;a&gt; which identifies
+some of these problems and shows how little bit of programming languages magic
+can help.&lt;&#x2F;p&gt;
+&lt;p&gt;If you’re curious about this area, jump onto these cool blog posts and papers:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.cs.cornell.edu&#x2F;~asampson&#x2F;blog&#x2F;fpgaabstraction.html&quot;&gt;FPGAs Have the Wrong Abstraction&lt;&#x2F;a&gt; by Adrian Sampson.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;ieeexplore.ieee.org&#x2F;document&#x2F;5737854?tp=&amp;amp;arnumber=5737854&quot;&gt;High-Level Synthesis for FPGAs: From Prototyping to Development&lt;&#x2F;a&gt;.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.microsoft.com&#x2F;en-us&#x2F;research&#x2F;wp-content&#x2F;uploads&#x2F;2016&#x2F;10&#x2F;Cloud-Scale-Acceleration-Architecture.pdf&quot;&gt;A Cloud-Scale Acceleration Architecture&lt;&#x2F;a&gt;.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;(If you’ve written a blog post on HLS-related stuff, email it to me so I can
+add it here!)&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;em&gt;Thanks for &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;http:&#x2F;&#x2F;adriansampson.net&quot;&gt;Adrian Sampson&lt;&#x2F;a&gt; and &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.cs.cornell.edu&#x2F;~avh&#x2F;&quot;&gt;Alexa VanHattum&lt;&#x2F;a&gt; for providing feedback on early
+drafts of this blog post&lt;&#x2F;em&gt;.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;em&gt;Have comments? &lt;a href=&quot;mailto:rachit.nigam12@gmail.com&quot;&gt;Email&lt;&#x2F;a&gt; or &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;twitter.com&#x2F;notypes&quot;&gt;tweet&lt;&#x2F;a&gt; at me.&lt;&#x2F;em&gt;&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>The First Two Years of My PhD</title>
+        <published>2020-04-08T00:40:17-04:00</published>
+        <updated>2020-04-08T00:40:17-04:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="https://rachitnigam.com/post/first-two-years/" type="text/html"/>
+        <id>https://rachitnigam.com/post/first-two-years/</id>
+        
+        <content type="html">&lt;p&gt;With the end of the Spring ’20 semester a month away, I have spent almost
+two academic years at Cornell. A quick rundown of everything that happened:&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;failures&quot;&gt;Failures&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Short paper on &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;cucapra&#x2F;futil&quot;&gt;FuTIL&lt;&#x2F;a&gt; rejected from LCTES ’20.&lt;&#x2F;li&gt;
+&lt;li&gt;Rejected from Facebook fellowship ’20.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;&#x2F;publication&#x2F;dahlia&quot;&gt;Dahlia&lt;&#x2F;a&gt; rejected from ASPLOS ’20 with two weak rejects.&lt;&#x2F;li&gt;
+&lt;li&gt;Rejected from Microsoft research internship for summer ’19.&lt;&#x2F;li&gt;
+&lt;li&gt;Rejected from Qualcomm fellowship application ’19.&lt;&#x2F;li&gt;
+&lt;li&gt;Rejected from the Facebook fellowship ’19.&lt;&#x2F;li&gt;
+&lt;li&gt;Rejected from the Symantec fellowship ’19.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3 id=&quot;successes&quot;&gt;Successes&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Short paper on &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;cucapra&#x2F;diospyros&quot;&gt;Diospyros&lt;&#x2F;a&gt; accepted to LCTES ’20.&lt;&#x2F;li&gt;
+&lt;li&gt;Selected as a finalist for the Qualcomm fellowship ’20.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;&#x2F;publication&#x2F;dahlia&quot;&gt;Dahlia&lt;&#x2F;a&gt; accepted to PLDI ’20.&lt;&#x2F;li&gt;
+&lt;li&gt;Research internship at &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;research.fb.com&#x2F;category&#x2F;augmented-reality-virtual-reality&#x2F;&quot;&gt;Facebook Reality Labs&lt;&#x2F;a&gt; for summer ’19.&lt;&#x2F;li&gt;
+&lt;li&gt;Gave an invited talk to the Princeton Architecture and PL groups.&lt;&#x2F;li&gt;
+&lt;li&gt;Organized the &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.cs.cornell.edu&#x2F;courses&#x2F;cs7194&#x2F;2019sp&#x2F;&quot;&gt;Great works in PL&lt;&#x2F;a&gt; seminar.&lt;&#x2F;li&gt;
+&lt;li&gt;Organized the programming languages retreat in Fall ’19.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;hr &#x2F;&gt;
+&lt;h3 id=&quot;fall-18&quot;&gt;Fall ’18&lt;&#x2F;h3&gt;
+&lt;p&gt;I started at Cornell and was terrified that I would not be able to find an
+advisor. I set up meetings with the PL faculty and Cornell and decided to
+do a rotation with &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;http:&#x2F;&#x2F;adriansampson.net&quot;&gt;Adrian Sampson&lt;&#x2F;a&gt; during the fall and switch to
+working with &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.cs.cornell.edu&#x2F;~jnfoster&#x2F;&quot;&gt;Nate Foster&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+&lt;p&gt;Adrian pitched me three projects: Use program synthesis
+to automatically partition programs for reconfigurable architectures,
+build a type system for a high-level programming language
+for FPGAs, and a type system for graphics
+and shader programming languages.&lt;&#x2F;p&gt;
+&lt;p&gt;I decided to work on the type system for FPGA programming (called Dahlia). I
+was unsure that I would be a good fit for this project because I had no
+background in computer architecture research. I hoped that my programming
+languages experience would be useful for the project and that I could learn
+enough about architecture to contribute to the project.&lt;&#x2F;p&gt;
+&lt;p&gt;I started reading about FPGAs, implementing various features for the Dahlia
+compiler, and writing down proofs for various type system properties.
+I also got involved with the programming languages group and gave my
+&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.cs.cornell.edu&#x2F;courses&#x2F;cs7190&#x2F;2018fa&#x2F;&quot;&gt;first pldg talk&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+&lt;p&gt;We designed several language features for Dahlia. A particularly thorny
+design issue was supporting complex iteration patterns while providing
+type safety. We came up with &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;capra.cs.cornell.edu&#x2F;seashell&#x2F;docs&#x2F;view.html&quot;&gt;memory
+views&lt;&#x2F;a&gt; to solve this.
+The design of views felt inelegant.&lt;&#x2F;p&gt;
+&lt;p&gt;I volunteered at OOPSLA ’19 in Boston where I met a lot of new and old
+friends. I applied to industrial fellowships and was rejected from them.
+Adrian said that they prefer to accept more senior students and that applying
+was more important than being accepted. I agreed.&lt;&#x2F;p&gt;
+&lt;p&gt;During the semester I also realized that I was enjoying working on
+Dahlia and asked Adrian to formally be my advisor. He agreed.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;winter-18&quot;&gt;Winter ’18&lt;&#x2F;h3&gt;
+&lt;p&gt;I went back to India for the winter break where I read a bunch of papers
+and reviewed applications for PhD applicants. I convinced &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.cs.cornell.edu&#x2F;~jnfoster&#x2F;&quot;&gt;Nate&lt;&#x2F;a&gt; to
+help me organize the &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.cs.cornell.edu&#x2F;courses&#x2F;cs7194&#x2F;2019sp&#x2F;&quot;&gt;Great works in PL&lt;&#x2F;a&gt; seminar as an excuse to
+read classic PL papers.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;spring-19&quot;&gt;Spring ’19&lt;&#x2F;h3&gt;
+&lt;p&gt;I came back to Cornell and started implementing memory views in Dahlia.
+I kept feeling that the OCaml codebase was slowing me down so I &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;cucapra&#x2F;dahlia&#x2F;pull&#x2F;46&quot;&gt;rewrote
+Dahlia&lt;&#x2F;a&gt; in Scala and implemented
+memory views. The implementation demonstrated that views were inelegant
+so we came up with a new implementation of memory views.&lt;&#x2F;p&gt;
+&lt;p&gt;Implementing views turned out to be a lot more challenging than I originally
+expected and it took me four tries to get it right. Before the final attempt,
+we realized there was a fundamental problem with checking views that we didn’t
+know how to solve. I was feeling particularly down that day. During my
+walk back home, I discovered an elegant solution for compositionally reasoning
+about views.&lt;&#x2F;p&gt;
+&lt;p&gt;The biggest challenge with Dahlia was finding the right pitch for it.
+We had some idea that it made hardware designs “more predictable” because
+each language construct had a direct hardware mapping. However, we didn’t
+know how to demonstrate this “predictability”. I was wary of qualitative
+arguments. I spent the semester writing code and text. We started porting
+an FPGA programming benchmark suite to Dahlia to see how it faired with larger
+examples.&lt;&#x2F;p&gt;
+&lt;p&gt;In the background, I decided to do a summer internship that year and started
+interviewed with MSR and Facebook Reality Labs (FRL). MSR rejected me and I
+eventually accepted an offer from the silicon research team at FRL. I
+also attended ASPLOS ’19 with Adrian and made a lot
+of new architecture friends. Architects seemed to be livelier than PL
+people because they’re living on the
+&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;Explicit_data_graph_execution&quot;&gt;EDGE&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;summer-19&quot;&gt;Summer ’19&lt;&#x2F;h3&gt;
+&lt;p&gt;I spent my summer in Redmond at FRL using program synthesis to solve hardware
+problems. Working on program synthesis is a roller coaster: the
+solver gives you solutions and you’re happy. At some point it stops scaling
+and you don’t know what to do anymore and everything is sad.&lt;&#x2F;p&gt;
+&lt;p&gt;I also wrote a few short sections for the Dahlia paper hoping to hit the
+ASPLOS ’20 deadline.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;fall-19&quot;&gt;Fall ’19&lt;&#x2F;h3&gt;
+&lt;p&gt;My team at FRL sufficiently liked my project to ask me to continue working
+on an offshoot. I realized that if I worked on a program synthesis project
+alone, I would be sad all the time. I asked &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.cs.cornell.edu&#x2F;~avh&#x2F;&quot;&gt;Alexa VanHattum&lt;&#x2F;a&gt; if
+she wanted to collaborate on it with me and she said yes.&lt;&#x2F;p&gt;
+&lt;p&gt;I flew back to Ithaca a week before the ASPLOS ’20 deadline fully expecting
+to miss the deadline since we didn’t have a lot of content in the paper.
+Adrian said we should hit the deadline so I switched gears into paper
+writing mode. We wrote a paper in a week and submitted it to ASPLOS. I didn’t
+expect the paper to get in because of a weak evaluation.&lt;&#x2F;p&gt;
+&lt;p&gt;A central problem with the evaluation was that it simply reimplemented C++
+benchmarks in Dahlia which resulted in the same area and latency numbers
+as the baselines. The evaluation didn’t say anything interesting about how
+Dahlia enabled “predictable hardware design”—which was the title of
+our paper. I was starting to feel angsty about the project and felt like there
+was no way evaluate it.&lt;&#x2F;p&gt;
+&lt;p&gt;I was burned out from the paper writing so I asked my friend &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;samginzburg.com&#x2F;&quot;&gt;Sam
+Ginzburg&lt;&#x2F;a&gt; to host me at Princeton for a week. He recommended that I
+give a talk to the architecture group which was a great idea but destroyed
+my plans of not working during the Princeton visit. I visited Princeton, gave
+a talk, and met a lot of cool people. Sam was working on a measurement project
+and had a lot of pretty graphs. I decided that the only way to calm my angst
+with Dahlia was to perform measurements and quantify predictability. I did
+not yet know how.&lt;&#x2F;p&gt;
+&lt;p&gt;I continued spending my time implementing the compiler and getting the
+benchmarks running. During an auspicious trip to the Applications Driving
+Architecture (ADA) symposium, I came up with a plan to show that Dahlia enabled
+predictable design.&lt;&#x2F;p&gt;
+&lt;p&gt;The plan was as follows:&lt;&#x2F;p&gt;
+&lt;ol&gt;
+&lt;li&gt;Take a hardware design and enumerate all the design points.&lt;&#x2F;li&gt;
+&lt;li&gt;Run all the points and extract statistics (area and latency).&lt;&#x2F;li&gt;
+&lt;li&gt;Show that the subset of design points Dahlia accepts smoothly trade off
+area for latency and are therefore “predictable”.&lt;&#x2F;li&gt;
+&lt;li&gt;Profit.&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;p&gt;The challenging part of this plan was getting all the data. A back-of-the-envelope
+calculation showed that we’d need a few months of compute time to
+get all the data. I had, unfortunately, reached a point where I needed to
+build a distributed experimentation framework.&lt;&#x2F;p&gt;
+&lt;p&gt;I got to work building the framework on top of an existing in-house benchmarking
+server. It took me three weeks of relentless Python hacking to get multiple
+AWS machines to run FPGA designs. Once we had that, pretty graphs started
+rolling out and I started confirming various claims about Dahlia quantitatively.
+Around this time, Dahlia was rejected from ASPLOS.&lt;&#x2F;p&gt;
+&lt;p&gt;While this was expected, I was still sad for a few days. We decided to resubmit
+to PLDI. With three weeks to go, I ran the capstone
+experiment: enumerate 32,000 points and run them on the 80 workers. I
+calculated that it would take 5 days to finish the jobs. I ran into numerous
+issues like &lt;code&gt;ls&lt;&#x2F;code&gt; being too slow, job uploads taking three days, and monitoring
+scripts DDoS-ing the servers. I babysat the servers, painfully restarting
+dead workers and failed jobs, and eventually got the
+results. The graphs looked pretty and validated Dahlia’s claims. I was very
+tired but happy.&lt;&#x2F;p&gt;
+&lt;p&gt;During the last week while writing and finishing up the final experiments, I
+started staying late in the office. Three days before the deadline (Nov 19),
+I finished all the experiments and got cookies at midnight to celebrate this.
+After the cookies, I decided to bike back to home. I
+started biking down at 2am. At 2.05am, I fell from my bike during a sharp turn
+and broke my left wrist. My roommate took me the ER where I got a splint. I was heartbroken.&lt;&#x2F;p&gt;
+&lt;p&gt;I woke up the next day and went into the lab after getting a proper arm cast.
+I could no longer type on a keyboard so I started handwriting the edits to
+the paper which my co-authors then put into the paper. At 1am on November 23,
+we &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;twitter.com&#x2F;notypes&#x2F;status&#x2F;1198111419704717312&quot;&gt;submitted&lt;&#x2F;a&gt; the
+Dahlia paper to PLDI ’20. I was unsure if the paper would get in but I was
+proud of the work we had done.&lt;&#x2F;p&gt;
+&lt;p&gt;The semester rolled on and I started brainstorming ideas with Alexa and FRL
+on a new project. We decided to use program synthesis to generate
+high-performance kernels for DSPs.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;winter-19&quot;&gt;Winter ’19&lt;&#x2F;h3&gt;
+&lt;p&gt;I went back home to India to recuperate from the broken arm. I proposed
+submitting a Qualcomm fellowship proposal for our DSP project. We quickly
+hacked up a demo project (called &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;cucapra&#x2F;diospyros&quot;&gt;Diospyros&lt;&#x2F;a&gt;) and submitted the proposal.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;spring-20&quot;&gt;Spring ’20&lt;&#x2F;h3&gt;
+&lt;p&gt;I came back to Cornell in the spring. Doctor told me that while my broken wrist
+bone had healed, a cartilage tear in my wrist might never properly heal. I
+wondered if a paper submission was worth a lifelong injury.&lt;&#x2F;p&gt;
+&lt;p&gt;The semester rolled on and we were accepted for stage 2 of the Qualcomm
+proposal. We continued hacking on the project and wrote an even stronger stage 2
+proposal with real graphs. Emboldened by the success, we also decided to write
+a work-in-progress paper for LCTES ’20. In parallel, I joined another project
+to build an intermediate language (called &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;cucapra&#x2F;futil&quot;&gt;FuTIL&lt;&#x2F;a&gt;) for compiling high-level
+languages to hardware circuits. I convinced my collaborators for that project
+to submit an LCTES paper as well. We wrote two very good papers and submitted
+them.&lt;&#x2F;p&gt;
+&lt;p&gt;In the meantime PLDI reviews came back and they were incredibly positive:
+two strong accepts and two weak
+accepts. Adrian said it was almost certainly enough to get into PLDI. We
+wrote up a rebuttal and submitted it. Two weeks later, Dahlia was accepted
+to PLDI ’20. Another week after the acceptance I submitted an artifact to
+the PLDI artifact evaluation committee. I also volunteered for the committee
+and reviewed some cool artifacts in the following weeks.&lt;&#x2F;p&gt;
+&lt;p&gt;I was generally happier about things, especially since I had published my first
+grad school paper. However, at the start of March, everything turned upside
+down. Due to the COVID-19 crisis, Cornell shut down its campus and PLDI
+transformed into a virtual conference. I felt sad that I wouldn’t be able
+to give a talk on Dahlia in paper. Sad enough to write a &lt;a href=&quot;&#x2F;post&#x2F;virtual-cs-conferences&#x2F;&quot;&gt;blog
+post&lt;&#x2F;a&gt; about it.&lt;&#x2F;p&gt;
+&lt;p&gt;A few weeks into working from home and adjusting to our new reality, we heard
+back from LCTES. The paper on Diospyros is accepted while the one on FuTIL is
+rejected. We also hear back from Qualcomm saying that we made it to the final
+stage.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;epilogue&quot;&gt;Epilogue&lt;&#x2F;h3&gt;
+&lt;p&gt;My first two years in grad school were a lot of expected and unexpected things.
+The ups and downs of research were expected. The ups and downs of life were
+not (injuries and global pandemics). This post leaves out a lot of my personal
+accomplishments: I made a lot of friends, I took up biking and baking, I got
+healthier, etc. Submitting my first paper was a big accomplishment for me but
+I don’t I like the way I got to it. I sacrificed my personal health (due to
+my own work ethic) and injured myself. Going forward, I want to set better
+boundaries and think harder about the trade-offs between my life and my
+research. I am grateful to the many people who made my first two years at
+Cornell bearable.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;em&gt;Have comments? &lt;a href=&quot;mailto:rachit.nigam12@gmail.com&quot;&gt;Email&lt;&#x2F;a&gt; or &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;twitter.com&#x2F;notypes&quot;&gt;tweet&lt;&#x2F;a&gt; at me.&lt;&#x2F;em&gt;&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>The Cost of Virtualizing CS Conferences</title>
+        <published>2020-03-18T23:15:05-04:00</published>
+        <updated>2020-03-18T23:15:05-04:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="https://rachitnigam.com/post/virtual-cs-conferences/" type="text/html"/>
+        <id>https://rachitnigam.com/post/virtual-cs-conferences/</id>
+        
+        <content type="html">&lt;p&gt;Conferences in computer science are an odd occurrence. Unlike most other
+research fields which primarily focus on publishing in journals, conferences
+ended up being the primary publication and presentation venue in CS. They also
+became the place where researchers network with each other,
+learn about ongoing research, and drink beer with their grad school buddies.&lt;&#x2F;p&gt;
+&lt;p&gt;Because of this, conference presentations and networking play an incredibly
+important part of a junior researcher’s career. Conferences allow us to show
+our research to our community and have other people learn about us. In my field
+of research, programming languages and systems, it takes anywhere between one
+year to multiple years to complete a project. Add to that yearly deadlines and
+specialized venues which results in a junior PhD student having anywhere from
+two to four presentations before they go on the job market. Our recognition in
+our community from our presentations and our papers is what gets us invitation
+for interviews and job offers.&lt;&#x2F;p&gt;
+&lt;p&gt;Unfortunately, with the outbreak of &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;Coronavirus_disease_2019&quot;&gt;COVID-19&lt;&#x2F;a&gt;, our world has been turned
+upside down. Beyond the incredible amounts of fear, uncertainty, and human
+suffering it has caused, it has also destroyed one of the core mechanisms of
+conducting science—meeting people. Multiple major academic conferences
+(&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;asplos-conference.org&#x2F;&quot;&gt;ASPLOS&lt;&#x2F;a&gt;, &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;iclr.cc&#x2F;Conferences&#x2F;2020&#x2F;virtual&quot;&gt;ICLR&lt;&#x2F;a&gt;, &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;twitter.com&#x2F;PLDI&#x2F;status&#x2F;1240401711124090883&quot;&gt;PLDI&lt;&#x2F;a&gt;) have been canceled. Junior researchers, who had
+decided to go on job markets, find internships, or visit another institutions
+have had to cancel all of their plans. The impact of these things is
+unquantifiable—how does one measure the effect of a missed serendipitous
+research collaboration, or that one person on a hiring committee hearing about
+your work?&lt;&#x2F;p&gt;
+&lt;p&gt;However, I am not here to complain about missed conferences. Canceling
+conferences in the midst of a global pandemic is &lt;em&gt;the right thing&lt;&#x2F;em&gt; to do.
+I instead want to figure out how we as a community can recreate the
+opportunities that conferences create for us every year. I am not an expert in
+this so I will need help. I have attempted to summarize the crucial
+opportunities conferences give us, what the challenges of running a virtual
+conferences are, and what options we have given that physical meetings are out
+of the question for a while.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;goals-of-a-conference&quot;&gt;Goals of a conference&lt;&#x2F;h3&gt;
+&lt;p&gt;From my (second-year PhD student in a relatively small community) perspective,
+conferences traditionally satisfy the following goals:&lt;&#x2F;p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Dissemination of research&lt;&#x2F;strong&gt;: The primary goal of any conference is to allow
+researchers to present their work to their peers and discuss it.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;Welcoming new researchers&lt;&#x2F;strong&gt;: The bloodline of our communities are new
+researchers. From undergrads who are attending conferences for the first
+time to PhD student presenting their research.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;The “Hallway” track&lt;&#x2F;strong&gt;: Well understood to be the actual primary goal of
+any conference, the hallway track is the colloquial name for researchers
+hanging out with each other and discussing research and whatever else that
+comes to their mind. It allows us to build long term connections within our
+community.&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;h3 id=&quot;options-for-virtual-conferences&quot;&gt;Options for Virtual conferences&lt;&#x2F;h3&gt;
+&lt;p&gt;Given that most health organizations have recommended that non-essential
+travel be suspended, our only choice is to have virtual conferences in some
+format. Virtual formats present several challenges:&lt;&#x2F;p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Multiple time-zones&lt;&#x2F;strong&gt;: Since researchers are not directly traveling to
+one physical location for the conference, it’s safe to assume they will
+distributed across the world in different time-zones.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;Lack of commitment&lt;&#x2F;strong&gt;: As a friend of mine put it, it’s hard to set aside
+the time to interact with presenters (who are possibly remote) when there
+are other commitments like teaching a class or having research meetings.
+Physical conferences act as a forcing function to set this time aside.&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;p&gt;Both of these problems are challenging to solve. Following are some proposals
+I’ve seen discussed&#x2F;implemented at currently canceled conferences.&lt;&#x2F;p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Recorded presentations&lt;&#x2F;strong&gt;: The bare minimum any conference can do to
+satisfy the first goal is to have authors record research talks and upload
+them to YouTube. This will allow researchers to reach out to the people who
+are most interested in their work and already know about it, but not a wider
+audience that a physical conference gives access to. It might also be
+possible to welcome new researchers through videos but they’d likely feel
+impersonal.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Chatrooms for discussing papers&lt;&#x2F;strong&gt;: In addition to uploading all the talks
+to YouTube, &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;asplos-conference.org&#x2F;&quot;&gt;ASPLOS 20&lt;&#x2F;a&gt; created a Slack channel to discuss
+each paper and co-located workshops. This improves the possibility of direct
+interactions by making community members available in the same place.
+Unfortunately, there really is no way of creating the hallway track in such
+a setup. As a junior student, it might be hard or impossible to get
+introductions to&#x2F;talk to other researchers when they are not present in
+person. Furthermore, because of the asynchronous nature of chatrooms, it
+might be hard to have detailed conversations with people in different
+timezones.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Livestreaming the conference&lt;&#x2F;strong&gt;: Livestreaming the conference in real time
+brings the experience as close to a conference session as possible. People
+are required to commit time beforehand and ask questions to right after
+a talk. Setting this up is non-trivial owing to time zone issues. Again,
+while this provides the opportunity for more direct conversations, there
+doesn’t seem to be a good way to recreate a hallway track.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Postpone the conference&#x2F;Merge it with another&lt;&#x2F;strong&gt;: The nuclear option of
+pushing back the conference and waiting out the pandemic. By definition,
+this will recreate the experience of a conference. However, this would be
+incredibly hard to do since conferences are carefully planned to not overlap
+with other conferences in relevant areas. A different approach might to be
+have a bigger conference the next year and have papers from both &lt;em&gt;this year&lt;&#x2F;em&gt;
+and &lt;em&gt;next year&lt;&#x2F;em&gt; be presented there. Again, I imagine this would be a
+nightmare to organize. It also fundamentally cannot recreate opportunities
+for researchers who go on the job market this year.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;p&gt;None of the solutions here are perfect and I wouldn’t know which one to choose.
+Each of these require hard trade-offs that we, as a community, have to make.
+The lack of conferences and the opportunities they create is not measurable
+which makes it easier to ignore their impact. I really hope that we can
+come up with a solution that is cognizant of this and takes into consideration
+the people most impacted by this.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;strong&gt;A personal note&lt;&#x2F;strong&gt;: I had &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;capra.cs.cornell.edu&#x2F;dahlia&quot;&gt;a paper&lt;&#x2F;a&gt; accepted at PLDI 20. This
+is my first first-author paper and I have been incredibly excited to present
+this work for a really long time. I always imagined my first presentation
+to an exciting and terrifying rite of passage that I would celebrate with
+my friends, colleagues, and advisors. I feel a deep sense of loss, almost
+as if all the hard work was “zeroed out” because I can’t present it anymore.
+I assume other people in my situation feel similarly. I don’t know if senior
+researchers put this much value in conference presentations (since they’ve
+already given so many) but it seems important to acknowledge this feeling that
+junior researchers have when we come up with solutions for virtual conferences.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;em&gt;Have comments? &lt;a href=&quot;mailto:rachit.nigam12@gmail.com&quot;&gt;Email&lt;&#x2F;a&gt; or &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;twitter.com&#x2F;notypes&quot;&gt;tweet&lt;&#x2F;a&gt; at me.&lt;&#x2F;em&gt;&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Project Management for PhD Students</title>
+        <published>2019-03-03T22:10:39-05:00</published>
+        <updated>2019-03-03T22:10:39-05:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="https://rachitnigam.com/post/project-management/" type="text/html"/>
+        <id>https://rachitnigam.com/post/project-management/</id>
+        
+        <content type="html">&lt;p&gt;Collaborations in systems research is how I’ve built some of the best tools
+in my research. A larger teams means an expanded vision and being able to pursue more
+ambitious ideas but it also incurs an overhead – team management. Effectively
+managing a team and keeping all team members up to date can be stressful and a
+daunting task. I think one way to approaching management tasks is by asking
+a few concrete questions:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;What’s the primary channel of communication?&lt;&#x2F;li&gt;
+&lt;li&gt;How often should we be meeting? What are the preparing expectations for a meeting?&lt;&#x2F;li&gt;
+&lt;li&gt;How are we managing our code base? What are the expectations about code knowledge?&lt;&#x2F;li&gt;
+&lt;li&gt;How are we managing our TODO items?&lt;&#x2F;li&gt;
+&lt;li&gt;How should we resolve conflicts?&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;The answers to these questions should evolve with a project. For example, a
+project in its prototyping stage might have no restrictions on how or where the
+code is kept but a more mature project associated with other projects or
+deployments requires careful releases.&lt;&#x2F;p&gt;
+&lt;p&gt;The following sections answer these questions from my experience with teams.
+The answers apply for a reasonably mature project with most core infrastructure
+decisions already made (which language to use, which toolchains, etc.)&lt;&#x2F;p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Since I’m not the most experienced developer in the world, I would appreciate any suggestions (find my contact information at the end of the post).&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;h2 id=&quot;primary-communication&quot;&gt;Primary Communication&lt;&#x2F;h2&gt;
+&lt;p&gt;This is an easy one. Teams can either use email threads or one of the dozens
+of chat applications to have conversations about the project.&lt;&#x2F;p&gt;
+&lt;p&gt;The benefit of using a emails is that the team can keep track of individual
+threads of conversations easily. However, with multiple projects, this might
+get unwieldy.&lt;&#x2F;p&gt;
+&lt;p&gt;Chat apps, on the other hand, make it really quick and easy to communicate with
+the team but are usually bad at maintaining separate threads of conversations
+cleanly.&lt;&#x2F;p&gt;
+&lt;p&gt;The choice of the primary communication is often already constrained by group
+preferences so this is usually a straightforward decision.&lt;&#x2F;p&gt;
+&lt;p&gt;As a side note, team members should try to have long conversations in person.
+Text based mediums make it really hard to accurately convey emotions and it
+is easy to misread an offhand comment as being aggressive (I’ve certainly been
+guilty of this!)&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;meetings&quot;&gt;Meetings&lt;&#x2F;h2&gt;
+&lt;p&gt;Meetings act as a synchronization point for the entire team and require some amount
+of preparation. I suggest having at least two team meetings every week, one
+with your advisor (main meeting) and one without them (student meeting).&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;main-meeting&quot;&gt;Main meeting&lt;&#x2F;h3&gt;
+&lt;p&gt;For the main meeting, every student should be prepared with the following:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;A short weekly update.&lt;&#x2F;li&gt;
+&lt;li&gt;Technical challenges faced during the assigned task.&lt;&#x2F;li&gt;
+&lt;li&gt;Questions or gotchas found during the assigned the task.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;At the end of the main meeting, each student should leave with:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;At least one assigned task for the week. This can be a paper to read and explain, feature to implement, or a theorem to prove.&lt;&#x2F;li&gt;
+&lt;li&gt;A good sense of where to look for answers to their questions.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;A lot of students (myself included) struggle with prioritizing tasks. Students
+involved in research have tons of unstructured time which is not utilized
+effectively without a good plan. Assigned tasks help me focus on a task that
+I need to get done every week.&lt;&#x2F;p&gt;
+&lt;p&gt;Concretely, I try every week to either complete the tasks assigned to me or
+have technical questions that are blocking me ready for the meeting.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;student-meeting&quot;&gt;Student meeting&lt;&#x2F;h3&gt;
+&lt;p&gt;The student meetings are more informal and are meant for in depth discussions
+about small issues that team members are facing in completing their tasks.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;codebases&quot;&gt;Codebases&lt;&#x2F;h2&gt;
+&lt;p&gt;If you’re working on an applied systems project chances are you are building
+a software artifact. Regardless of how many people are writing code, it is useful to
+check in the code into &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;Version_control&quot;&gt;source
+control&lt;&#x2F;a&gt;. This makes the code
+publicly viewable and commentable by the team members.&lt;&#x2F;p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;The high-level principle behind these guidelines is to minimize the number of locations where critical information such as feature discussions are kept.&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;p&gt;Since I primarily use &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;git-scm.com&#x2F;&quot;&gt;git&lt;&#x2F;a&gt; and &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;rachitnigam&quot;&gt;Github&lt;&#x2F;a&gt;, the following guidelines assume your
+project is Github-based. When working on a artifact, I have the following
+expectations with team members:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;The project leaders (graduate students or senior undergrads) should have a
+good sense of what is going on with every aspect of the codebase. This means
+having a high-level understanding of all pull requests and issue discussions.&lt;&#x2F;li&gt;
+&lt;li&gt;Use &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;help.github.com&#x2F;en&#x2F;articles&#x2F;about-pull-requests&quot;&gt;pull requests&lt;&#x2F;a&gt;
+and &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;help.github.com&#x2F;en&#x2F;articles&#x2F;about-branches&quot;&gt;branches&lt;&#x2F;a&gt;. Working
+on big features on a separate branch allows other people to work in parallel
+while leaving the code in a buildable state. Pull requests are a great way
+to get the team’s attention on a big change and center discussions around it.&lt;&#x2F;li&gt;
+&lt;li&gt;Keep the git history clean by using &lt;code&gt;git pull -r&lt;&#x2F;code&gt; and
+&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;help.github.com&#x2F;en&#x2F;articles&#x2F;about-git-rebase&quot;&gt;rebasing&lt;&#x2F;a&gt; instead of
+merging.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;todo-list&quot;&gt;TODO List&lt;&#x2F;h2&gt;
+&lt;p&gt;Since most of my projects revolve around a software artifact, most of which
+are on &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;rachitnigam&quot;&gt;Github&lt;&#x2F;a&gt;, I use Github issues as
+a tracking list. Other people I have worked with also use &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;trello.com&#x2F;&quot;&gt;Trello&lt;&#x2F;a&gt; or one of the dozens of TODO apps.&lt;&#x2F;p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;The todo list should make it easy to create tasks and have discussions around them and also allow team members to see who is working on what.&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;p&gt;During the development phase of the project, I ask the team to use
+issues liberally. The term ’‘global tracker’’ refers to the high level view of
+all todo items. On Github, this is simply the issues page.&lt;&#x2F;p&gt;
+&lt;p&gt;Largely, I divide issues into three categories:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Trackers&lt;&#x2F;strong&gt;. Trackers are a collection of smaller issues that logically belong
+together but might pollute the global tracker. Use these for reading lists,
+benchmark status, and low priority tasks. &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;cucapra&#x2F;seashell&#x2F;issues?utf8=%E2%9C%93&amp;amp;q=is%3Aissue+label%3ATracker+&quot;&gt;Example&lt;&#x2F;a&gt;.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;Proposal&lt;&#x2F;strong&gt;. Proposal are the heart of the global tracker. Use proposals to
+discuss system features, implementation sketches, or big bugs.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;Miscellaneous&lt;&#x2F;strong&gt;: These include questions or small bugs. These should be
+high frequency, i.e. created liberally, and answered quickly.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;conflict-resolution&quot;&gt;Conflict resolution&lt;&#x2F;h2&gt;
+&lt;p&gt;This is an often overlooked dimension of team dynamics. Research projects can
+often be stressful, especially since students tend to be ambitious and prone
+to overworking. Since this process so highly dependent on the team members
+and project leads, my guideline can only be personalized for me.&lt;&#x2F;p&gt;
+&lt;p&gt;If a team member feels under too much pressure to do something or dislikes
+someone’s personal behavior, they can either directly contact the person or
+ask one of the team leads to mediate. While daunting, it is much better in the
+long run to have frank discussions about team expectations and stresses instead
+of letting things get worse.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;&#x2F;h2&gt;
+&lt;p&gt;While there are several industrial strength methodologies for team managements,
+I like having a much more lightweight team management style. A lot of research
+is about exploring new ideas and pursuing crazy ideas. Regardless of which
+guidelines you choose to follow, they should not take away the joy of programming
+or research!&lt;&#x2F;p&gt;
+&lt;p&gt;Discussion on &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=19321034&quot;&gt;HackerNews&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;em&gt;Have comments? &lt;a href=&quot;mailto:rachit.nigam12@gmail.com&quot;&gt;Email&lt;&#x2F;a&gt; or &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;twitter.com&#x2F;notypes&quot;&gt;tweet&lt;&#x2F;a&gt; at me.&lt;&#x2F;em&gt;&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Learning to Fail</title>
+        <published>2018-12-19T07:20:00+05:30</published>
+        <updated>2018-12-19T07:20:00+05:30</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="https://rachitnigam.com/post/learn-to-fail/" type="text/html"/>
+        <id>https://rachitnigam.com/post/learn-to-fail/</id>
+        
+        <content type="html">&lt;p&gt;I often describe the basic philosophy of research using a metaphor: bash your
+head in a wall over and over till you find a way to
+break it and then repeat it ad nauseam. Sometimes you’ll know where the
+cracks in the wall are, and sometime you’ll know what angle you need to hit the
+wall with your head, but fundamentally, you’re hitting your head into a wall.&lt;&#x2F;p&gt;
+&lt;p&gt;This is perhaps an unnecessarily graphic description of what research is
+like but the point I’m trying to get across is that &lt;em&gt;research is hard&lt;&#x2F;em&gt; and
+that &lt;em&gt;failure is the expected outcome&lt;&#x2F;em&gt;. The primary skill of researcher is
+not their ability to come up with good ideas or write code but to persevere
+in the face of continuous failure.&lt;&#x2F;p&gt;
+&lt;p&gt;My undergraduate research experience is the primary reason that I skill. I
+started research early but I failed. In fact, I failed almost every single
+project I worked on. But this failure also removed any illusions of what
+research is like and helped me redefine what “success” should mean.&lt;&#x2F;p&gt;
+&lt;p&gt;Here is a quick summary of my research experience as an undergrad:&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;spring-2016&quot;&gt;Spring 2016&lt;&#x2F;h3&gt;
+&lt;p&gt;I reached out a my undergraduate advisor in my first semester after being
+fascinated with Scheme.&lt;span style=&quot;white-space:nowrap&quot;&gt;
+&lt;label for=&quot;sn-1&quot;
+       class=&quot;margin-toggle sidenote-number&quot;&gt;
+&lt;&#x2F;label&gt;
+&lt;&#x2F;span&gt;
+&lt;input type=&quot;checkbox&quot;
+       id=&quot;sn-1&quot;
+       class=&quot;margin-toggle&quot;&#x2F;&gt;
+&lt;span class=&quot;sidenote&quot;&gt;
+Yes, I am a walking PL cliché.
+&lt;&#x2F;span&gt;
+
+After some back and forth, I quickly started
+a project. The project was to build a formal semantics for bash scripts. The
+bash specification is large and complicated with a lot of subtle interactions.
+The particular phase we were interested in formalizing were the bash shell
+&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.gnu.org&#x2F;software&#x2F;bash&#x2F;manual&#x2F;html_node&#x2F;Shell-Expansions.html&quot;&gt;expansions&lt;&#x2F;a&gt;. We tried to build a Hoare logic style semantics for the expansion, because
+we wanted to ultimately verify properties of these shell scripts. Unfortunately,
+I showed that such a semantics becomes super complicated and we abandoned the
+project.&lt;span style=&quot;white-space:nowrap&quot;&gt;
+&lt;label for=&quot;sn-2&quot;
+       class=&quot;margin-toggle sidenote-number&quot;&gt;
+&lt;&#x2F;label&gt;
+&lt;&#x2F;span&gt;
+&lt;input type=&quot;checkbox&quot;
+       id=&quot;sn-2&quot;
+       class=&quot;margin-toggle&quot;&#x2F;&gt;
+&lt;span class=&quot;sidenote&quot;&gt;
+Michael Greenberg, one of our collaborators, continued working on this and has
+come up with some &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;http:&#x2F;&#x2F;shell.cs.pomona.edu&#x2F;&quot;&gt;nice results&lt;&#x2F;a&gt;.
+&lt;&#x2F;span&gt;
+
+A few weeks into research and I had already failed a project.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;summer-2016&quot;&gt;Summer 2016&lt;&#x2F;h3&gt;
+&lt;p&gt;I came back for the summer and started working on a new, and slightly related
+project. The idea was to extend previous work on &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;dl.acm.org&#x2F;doi&#x2F;10.1145&#x2F;2908080.2908083&quot;&gt;verifying Puppet
+manifests&lt;&#x2F;a&gt; to
+capture the semantics of snippets of shell programs people write into their
+Puppet manifests. The previous work had modeled Puppet programs using a
+small core calculus based on a Kleene Algebra with Tests (&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.cs.cornell.edu&#x2F;~kozen&#x2F;Papers&#x2F;kat.pdf&quot;&gt;KAT&lt;&#x2F;a&gt;) and we wanted to create an active learning
+mechanism to learn the underlying automaton by running the shell script in
+a docker container.&lt;&#x2F;p&gt;
+&lt;p&gt;Unfortunately, I didn’t have a lot of background in either automata theory or
+the low level details of system call tracing (which was the core mechanism to
+figure out what system calls were being used). I spent half of the summer
+jumping back and forth between learning about automata theory and systems and
+implementing papers without much to show for it. While I didn’t know this
+at the time, this project also fizzled out around this time.&lt;&#x2F;p&gt;
+&lt;p&gt;The reason the project fizzled out was because I joined another student’s
+project where we were trying to automatically synthesize updates for Puppet
+manifests by capturing system calls. I worked on this project for the rest
+of the summer.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;fall-2016&quot;&gt;Fall 2016&lt;&#x2F;h3&gt;
+&lt;p&gt;As the summer ended, my advisor proposed joining Fission, another project that
+I had been interested in from the start of my summer. This project aimed to
+build a single-tiered, secure programming model for writing web applications.
+People on the project had built a frontend that could take JavaScript code and
+compile it into something that could enforces security conditions.
+Around the same time, the Puppet synthesis project slowed down because the
+first author was applying to graduate schools and I was focusing more on
+Fission. Eventually, I stopped working on Puppet synthesis entirely.&lt;span style=&quot;white-space:nowrap&quot;&gt;
+&lt;label for=&quot;sn-3&quot;
+       class=&quot;margin-toggle sidenote-number&quot;&gt;
+&lt;&#x2F;label&gt;
+&lt;&#x2F;span&gt;
+&lt;input type=&quot;checkbox&quot;
+       id=&quot;sn-3&quot;
+       class=&quot;margin-toggle&quot;&#x2F;&gt;
+&lt;span class=&quot;sidenote&quot;&gt;
+This eventually became a &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;aaronweiss.us&#x2F;pubs&#x2F;ase17.pdf&quot;&gt;paper&lt;&#x2F;a&gt;.
+&lt;&#x2F;span&gt;
+&lt;&#x2F;p&gt;
+&lt;p&gt;To cap off the depressing string of half completed projects, it was around this
+time I actually had minor clinical depression and my productivity collapsed. After
+attending &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;conf.researchr.org&#x2F;home&#x2F;icfp-2016&quot;&gt;ICFP ’16&lt;&#x2F;a&gt; I decided to
+start therapy to “fix” my clinical depression.&lt;span style=&quot;white-space:nowrap&quot;&gt;
+&lt;label for=&quot;sn-4&quot;
+       class=&quot;margin-toggle sidenote-number&quot;&gt;
+&lt;&#x2F;label&gt;
+&lt;&#x2F;span&gt;
+&lt;input type=&quot;checkbox&quot;
+       id=&quot;sn-4&quot;
+       class=&quot;margin-toggle&quot;&#x2F;&gt;
+&lt;span class=&quot;sidenote&quot;&gt;
+Researchers are people who sometimes work extraordinarily hard at the expense
+of their own health.
+It is important to realize that your work is significantly
+less important that your health.
+&lt;&#x2F;span&gt;
+&lt;&#x2F;p&gt;
+&lt;p&gt;Meanwhile, we also published a &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;http:&#x2F;&#x2F;drops.dagstuhl.de&#x2F;opus&#x2F;volltexte&#x2F;2017&#x2F;7124&#x2F;pdf&#x2F;LIPIcs-SNAPL-2017-5.pdf&quot;&gt;workshop
+paper&lt;&#x2F;a&gt;
+on Fission. Unfortunately, after several rewrites of the compiler, people
+leaving the project, and fundamental performance issues, it was becoming
+painfully clear that Fission would not pan out.
+If you’re keeping track, it’s 3&#x2F;3 for failed projects.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;spring-2017&quot;&gt;Spring 2017&lt;&#x2F;h3&gt;
+&lt;p&gt;While making slow progress on Fission, my advisor asked a new question, “What
+would it take to build a client-side IDE?”. In order to build this IDE, we
+started investigating different compiler frameworks for JavaScript. We built
+multiple passes to simplify JavaScript constructs and around the same time, another
+graduate student joined the project. This spring was perhaps the most productive
+semester of my undergraduate research career. I had gained enough technical
+and programming chops to push on the project without hands-on support. By the
+end of this semester, we had managed to build an IDE and give a talk about it
+at &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;nepls.org&#x2F;Events&#x2F;31&#x2F;&quot;&gt;NEPLS ’17&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;summer-2017&quot;&gt;Summer 2017&lt;&#x2F;h3&gt;
+&lt;p&gt;My advisor was going to be away for most the summer and he recommended that
+I do an “academic internship”. I emailed a professor at Brown University who
+took me in for the summer. After a meeting with him during spring break, I
+convinced him to let me continue working on my spring research by promising
+to integrate my work into the &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.pyret.org&#x2F;&quot;&gt;Pyret&lt;&#x2F;a&gt; programming
+language.&lt;&#x2F;p&gt;
+&lt;p&gt;I spend a summer trying to improve the performance of our implementation
+which didn’t work out. However, my collaborator back at UMass had figured
+out a solution so continued pushing on.&lt;&#x2F;p&gt;
+&lt;p&gt;Towards the end of the summer, I started looking into integrating our work with
+Pyret. The codebase of a production-ready compiler like Pyret that supports
+thousands of users every day was daunting and hard to understand by myself.
+I spent about two weeks trying to understand it, and frustrated at my lack of
+progress, also wrote a &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;rachitnigam&#x2F;pyret-lang.vim&quot;&gt;Vim plugin&lt;&#x2F;a&gt; for Pyret. Once I understood the code base, it took me two days to
+implement the first part of the integration.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;fall-2017&quot;&gt;Fall 2017&lt;&#x2F;h3&gt;
+&lt;p&gt;Summer came to an end and my most stressful semester in undergraduate began.
+I was graduating in three years so I was taking 6 classes, applying
+to 10 graduate schools, applying for summer internships, and writing a paper
+for our research. It was a lot of work but I did it all. We submitted a
+polished paper to PLDI 2018 (which was later &lt;a href=&quot;&#x2F;publication&#x2F;stopify&quot;&gt;accepted&lt;&#x2F;a&gt;).
+I was accepted to 8 graduate schools and a software engineering internship
+at Google. I eventually decided to start my PhD at Cornell.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;epilogue&quot;&gt;Epilogue&lt;&#x2F;h3&gt;
+&lt;p&gt;Having spent a few years at Cornell, I have come to appreciate a lot of things
+about my undergraduate experience:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;While I failed for more than a year, I learned &lt;em&gt;a lot&lt;&#x2F;em&gt;. The
+amount of implementation work I did made me good at rapid prototyping and
+I came with a breadth of knowledge in configuration and web languages,
+secure systems, and formal language theory.&lt;&#x2F;li&gt;
+&lt;li&gt;The infectious optimism of my advisor kept me going through all the failures.
+The most important piece of advice he gave me was: “You’ll figure it out!”&lt;&#x2F;li&gt;
+&lt;li&gt;I learned that I work best when I collaborate with people. It is easier
+to be excited about research when someone else is also excited about it
+with you.&lt;&#x2F;li&gt;
+&lt;li&gt;It is really hard to execute research ideas. A lot of people can come up
+with really good ideas but it takes a lot of work and dedication to
+push through a project. I’ve come to respect the latter way more than the
+former.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;I feel privileged in having a undergraduate research career where I was
+given the opportunity to fail. When I started my PhD, I had no illusions
+about what research was: it requires a religious amount of faith and hard work
+before you can see any progress.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;em&gt;Have comments? &lt;a href=&quot;mailto:rachit.nigam12@gmail.com&quot;&gt;Email&lt;&#x2F;a&gt; or &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;twitter.com&#x2F;notypes&quot;&gt;tweet&lt;&#x2F;a&gt; at me.&lt;&#x2F;em&gt;&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>PhD at Cornell: The Free Agent System</title>
+        <published>2018-12-15T08:27:21+05:30</published>
+        <updated>2018-12-15T08:27:21+05:30</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="https://rachitnigam.com/post/free-agent-cornell/" type="text/html"/>
+        <id>https://rachitnigam.com/post/free-agent-cornell/</id>
+        
+        <content type="html">&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Update, 2022&lt;&#x2F;strong&gt;: &lt;em&gt;After being at Cornell for couple more years, I’ve developed a more nuanced opinion of the “free agent system” at Cornell CIS.
+I do not believe that this system scales well as the department has grown.
+If you are an incoming student to Cornell CIS, I encourage you to set up rotation commitments with professors before you accept the offer.&lt;&#x2F;em&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;p&gt;Deciding which graduate school you’re going to spend the next &lt;em&gt;n&lt;&#x2F;em&gt; years of your
+life is one of the hardest decision of your life. One of the things
+that made is hard for me was deciding between Cornell and my other
+top choice was Cornell’s “Free agent system”. Here is a short post about what
+the system is and why it worked for me.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;graduate-school-admissions&quot;&gt;Graduate School Admissions&lt;&#x2F;h3&gt;
+&lt;p&gt;For most schools in the US, when you apply to a PhD program, students are usually
+picked out by one or more professors who think you’d be a good fit. After
+visiting the school, the student decides which professor they want to work with
+and commit to the school. When the student starts at the school, they are
+funded by the professor and they start doing great things together. However,
+some schools don’t follow this system.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;cornell-s-free-agent-system&quot;&gt;Cornell’s Free Agent System&lt;&#x2F;h3&gt;
+&lt;p&gt;At Cornell, and a few other schools, the admission process looks a bit
+different.  When a PhD student is admitted to Cornell, they are are &lt;em&gt;admitted
+to the department&lt;&#x2F;em&gt;, which highlights Cornell’s commitment towards the student’s
+academic freedom. Concretely, this means that Cornell guarantees funding,
+usually through teaching assistantship, for the student without tying them to
+an advisor.  This is supposed to allow the students to explore and talk to
+potential advisors without being worried about funding. This is the Free Agent
+system at Cornell. Students are free agents till they decide who they want to
+work with.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;the-problem&quot;&gt;The Problem&lt;&#x2F;h3&gt;
+&lt;p&gt;Cornell’s free agent system was devised when the department was young and the
+incoming PhD students tended to have comparatively less research experience.
+The free agent system allowed students to explore different areas without
+being pressured into working on topics they might disliked. However, in the recent
+years, the makeup of people applying to PhD programs has drastically changed —
+students tend to come in with a lot more research experience and are usually
+quite certain about the area they want to work in.&lt;&#x2F;p&gt;
+&lt;p&gt;Furthermore, the CS department is also structured in a way that assumes
+students are free agents their first year. This means that they are expected to
+&lt;del&gt;take a lot of classes and&lt;&#x2F;del&gt; be teaching assistants (TAs) in their first
+two semesters.&lt;span style=&quot;white-space:nowrap&quot;&gt;
+&lt;label for=&quot;sn-1&quot;
+       class=&quot;margin-toggle sidenote-number&quot;&gt;
+&lt;&#x2F;label&gt;
+&lt;&#x2F;span&gt;
+&lt;input type=&quot;checkbox&quot;
+       id=&quot;sn-1&quot;
+       class=&quot;margin-toggle&quot;&#x2F;&gt;
+&lt;span class=&quot;sidenote&quot;&gt;
+The CS department recently overhauled the course requirement to reduce the
+number of classes and restrictions on which classes to take.
+&lt;&#x2F;span&gt;
+&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;my-experience&quot;&gt;My Experience&lt;&#x2F;h3&gt;
+&lt;p&gt;The free agent system caused me a lot of angst during the decision process. For
+some background, I had started doing programming languages (PL) research in the
+first semester of my undergraduate degree and was certain about my future research
+direction. Furthermore, I knew that Cornell was the best fit for my interest in
+doing PL work at the intersection of other fields.&lt;&#x2F;p&gt;
+&lt;p&gt;Unfortunately, I was also afraid of not being able to find an advisor. After
+about 6 hours of post visit day talks with professors and students in the PL
+group, I decided to go to Cornell. Even after my acceptance, I wasn’t sure if
+I’d be able to find an advisor.&lt;&#x2F;p&gt;
+&lt;p&gt;When I started in Fall, I emailed professors in the PL group to set up
+meetings. This is where I found the true strength of the free agent system.
+Since professors expect students to go talk to a lot of people, they expect and
+often encourage students to do research rotations with professors they are
+interested in working with.&lt;&#x2F;p&gt;
+&lt;p&gt;It also makes it easy to reach out to professors and learn about their work. I
+cannot emphasize how important it is to me to learn about and have
+conversations about research in different domains. One of my goals going into a
+PhD is to have a broad sense of the different kinds of problems in different
+domains and having access to professors in different areas makes it easy to do
+so.&lt;&#x2F;p&gt;
+&lt;p&gt;I was also able to start working with my awesome advisor &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.cs.cornell.edu&#x2F;~asampson&#x2F;&quot;&gt;Adrian
+Sampson&lt;&#x2F;a&gt; and we quickly found a project
+I’m passionate about.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;caveat-emptor&quot;&gt;Caveat Emptor&lt;&#x2F;h3&gt;
+&lt;p&gt;While the free agent system caused me some anguish in the decision process, it
+was not the primary reason I decided join Cornell.&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;My primary motivators were research that excited me, and people who are
+just as excited about it as me.&lt;span style=&quot;white-space:nowrap&quot;&gt;
+&lt;label for=&quot;sn-2&quot;
+       class=&quot;margin-toggle sidenote-number&quot;&gt;
+&lt;&#x2F;label&gt;
+&lt;&#x2F;span&gt;
+&lt;input type=&quot;checkbox&quot;
+       id=&quot;sn-2&quot;
+       class=&quot;margin-toggle&quot;&#x2F;&gt;
+&lt;span class=&quot;sidenote&quot;&gt;
+Importantly, this includes other grad students.
+Remember, you’re going to be spending a lot more time with other grad
+students than you will with faculty.
+&lt;&#x2F;span&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;The first year TAing requirement causes some amount of stress for
+new students. However, the department is aware of the issues and is
+trying to move away from this system.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;Finally, here is a more &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;http:&#x2F;&#x2F;jxyzabc.blogspot.com&#x2F;2009&#x2F;02&#x2F;some-notes-on-picking-grad.html&quot;&gt;detailed
+post&lt;&#x2F;a&gt; from
+&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;http:&#x2F;&#x2F;jeanyang.com&#x2F;&quot;&gt;Jean Yang&lt;&#x2F;a&gt; on what considerations matter when deciding
+on schools. Good luck!&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;em&gt;Have comments? &lt;a href=&quot;mailto:rachit.nigam12@gmail.com&quot;&gt;Email&lt;&#x2F;a&gt; or &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;twitter.com&#x2F;notypes&quot;&gt;tweet&lt;&#x2F;a&gt; at me.&lt;&#x2F;em&gt;&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Don’t be Programming Languages Researchers</title>
+        <published>2018-09-22T00:00:00+00:00</published>
+        <updated>2018-09-22T00:00:00+00:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="https://rachitnigam.com/post/pl-research/" type="text/html"/>
+        <id>https://rachitnigam.com/post/pl-research/</id>
+        
+        <content type="html">&lt;blockquote&gt;
+&lt;p&gt;Instead of being a judgement of what PL research should be, this short post is
+simply a reflection of my research interests and what role PL plays into it.&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;p&gt;During a recent PLDG talk, the speaker said, “I think that, as a community, PL
+people have a moral responsibility to step in and say, ‘No, you’re having fun
+wrong!’.”
+I have no qualms about the comment itself—jokes can be a useful
+tool in presentations; however, it did led me to think about the
+way PL research is applied in new domains.&lt;&#x2F;p&gt;
+&lt;p&gt;In a classic programming languages presentation, the speaker starts with an
+overview of a domain, talks about the current state of the art of
+programming languages and tools in it, and then go on to point out that most
+tools and languages fail to make use of amazing and well-known PL
+techniques. Then they describe their work which applies the aforementioned PL
+technique and build cool and interesting language abstractions with the promise
+of building better and improved tools for the domain.&lt;span style=&quot;white-space:nowrap&quot;&gt;
+&lt;label for=&quot;sn-1&quot;
+       class=&quot;margin-toggle sidenote-number&quot;&gt;
+&lt;&#x2F;label&gt;
+&lt;&#x2F;span&gt;
+&lt;input type=&quot;checkbox&quot;
+       id=&quot;sn-1&quot;
+       class=&quot;margin-toggle&quot;&#x2F;&gt;
+&lt;span class=&quot;sidenote&quot;&gt;
+It is rarely the case that the tool or language proposed actually solves the
+problems in the motivation.
+&lt;em&gt;Yes, do tell me how your tiny language will stop Google from going down twice
+a year.&lt;&#x2F;em&gt;
+&lt;&#x2F;span&gt;
+&lt;&#x2F;p&gt;
+&lt;p&gt;While I strongly endorse PL techniques and research being applied in new
+domains, this story demonstrates a fundamental issue for me: Application of PL techniques is
+done retrospectively. PL researchers are not there when a domain is shaping up
+and people trying to build tools and programming languages for that domain.
+Only once people have made build these tools, which in turn cement
+themselves into domain, do PL researchers come into the scene and apply their
+cool techniques—at a point where practitioners are unlikely to adopt something
+new.&lt;&#x2F;p&gt;
+&lt;p&gt;So here is my solution: We should stop being PL researchers—we should take it
+upon themselves to learn about new domains and apply ourselves well before
+the standards are established.
+Programming
+languages are the fundamental way of communicating intent to computers. As
+PL researchers, we should be actively helping people from other domains, not
+waiting for them to realize the error of their ways and come to us.&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+</feed>

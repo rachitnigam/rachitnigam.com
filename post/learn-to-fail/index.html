@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="author" content="Rachit Nigam">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rachit Nigam | PhD Candidate, Cornell University</title>
+
+  <link rel="icon" href="/flower.svg" type="image/svg+xml">
+
+  <link rel="stylesheet" href=https://rachitnigam.com/css/normalize.css>
+  <link rel="stylesheet" href=https://rachitnigam.com/css/default.css>
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.1/css/academicons.min.css" integrity="sha512-b1ASx0WHgVFL5ZQhTgiPWX+68KjS38Jk87jg7pe+qC7q9YkEtFq0z7xCglv7qGIs/68d3mAp+StfC8WKC5SSAg==" crossorigin="anonymous"/>
+
+  
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="https://rachitnigam.com/post/atom.xml">
+  
+
+</head>
+
+<body>
+  <header>
+    <h1 class="name"><a class="unstyled-link" href="/">Rachit Nigam</a></h1>
+    <nav>
+      <a class="unstyled-link nav-item" href="/#publications">Publications</a>
+      <a class="unstyled-link nav-item" href="/#posts">Posts</a>
+      <a class="unstyled-link nav-item" href="/files/resume.pdf">CV</a>
+    </nav>
+  </header>
+  <section class="section">
+    <div class="container">
+      
+<div class="post-header">
+<h1 class="title">
+  Learning to Fail
+</h1>
+<div class="date">
+Naive PhD student explains how to succeed at research.
+</div>
+<p class="date">December 19, 2018</p>
+</div>
+
+<div class="post">
+<p>I often describe the basic philosophy of research using a metaphor: bash your
+head in a wall over and over till you find a way to
+break it and then repeat it ad nauseam. Sometimes you’ll know where the
+cracks in the wall are, and sometime you’ll know what angle you need to hit the
+wall with your head, but fundamentally, you’re hitting your head into a wall.</p>
+<p>This is perhaps an unnecessarily graphic description of what research is
+like but the point I’m trying to get across is that <em>research is hard</em> and
+that <em>failure is the expected outcome</em>. The primary skill of researcher is
+not their ability to come up with good ideas or write code but to persevere
+in the face of continuous failure.</p>
+<p>My undergraduate research experience is the primary reason that I skill. I
+started research early but I failed. In fact, I failed almost every single
+project I worked on. But this failure also removed any illusions of what
+research is like and helped me redefine what “success” should mean.</p>
+<p>Here is a quick summary of my research experience as an undergrad:</p>
+<h3 id="spring-2016">Spring 2016</h3>
+<p>I reached out a my undergraduate advisor in my first semester after being
+fascinated with Scheme.<span style="white-space:nowrap">
+<label for="sn-1"
+       class="margin-toggle sidenote-number">
+</label>
+</span>
+<input type="checkbox"
+       id="sn-1"
+       class="margin-toggle"/>
+<span class="sidenote">
+Yes, I am a walking PL cliché.
+</span>
+<p>After some back and forth, I quickly started
+a project. The project was to build a formal semantics for bash scripts. The
+bash specification is large and complicated with a lot of subtle interactions.
+The particular phase we were interested in formalizing were the bash shell
+<a rel="noopener nofollow noreferrer" target="_blank" href="https://www.gnu.org/software/bash/manual/html_node/Shell-Expansions.html">expansions</a>. We tried to build a Hoare logic style semantics for the expansion, because
+we wanted to ultimately verify properties of these shell scripts. Unfortunately,
+I showed that such a semantics becomes super complicated and we abandoned the
+project.<span style="white-space:nowrap">
+<label for="sn-2"
+       class="margin-toggle sidenote-number">
+</label>
+</span>
+<input type="checkbox"
+       id="sn-2"
+       class="margin-toggle"/>
+<span class="sidenote">
+Michael Greenberg, one of our collaborators, continued working on this and has
+come up with some <a rel="noopener nofollow noreferrer" target="_blank" href="http://shell.cs.pomona.edu/">nice results</a>.
+</span></p>
+<p>A few weeks into research and I had already failed a project.</p></p>
+<h3 id="summer-2016">Summer 2016</h3>
+<p>I came back for the summer and started working on a new, and slightly related
+project. The idea was to extend previous work on <a rel="noopener nofollow noreferrer" target="_blank" href="https://dl.acm.org/doi/10.1145/2908080.2908083">verifying Puppet
+manifests</a> to
+capture the semantics of snippets of shell programs people write into their
+Puppet manifests. The previous work had modeled Puppet programs using a
+small core calculus based on a Kleene Algebra with Tests (<a rel="noopener nofollow noreferrer" target="_blank" href="https://www.cs.cornell.edu/~kozen/Papers/kat.pdf">KAT</a>) and we wanted to create an active learning
+mechanism to learn the underlying automaton by running the shell script in
+a docker container.</p>
+<p>Unfortunately, I didn’t have a lot of background in either automata theory or
+the low level details of system call tracing (which was the core mechanism to
+figure out what system calls were being used). I spent half of the summer
+jumping back and forth between learning about automata theory and systems and
+implementing papers without much to show for it. While I didn’t know this
+at the time, this project also fizzled out around this time.</p>
+<p>The reason the project fizzled out was because I joined another student’s
+project where we were trying to automatically synthesize updates for Puppet
+manifests by capturing system calls. I worked on this project for the rest
+of the summer.</p>
+<h3 id="fall-2016">Fall 2016</h3>
+<p>As the summer ended, my advisor proposed joining Fission, another project that
+I had been interested in from the start of my summer. This project aimed to
+build a single-tiered, secure programming model for writing web applications.
+People on the project had built a frontend that could take JavaScript code and
+compile it into something that could enforces security conditions.
+Around the same time, the Puppet synthesis project slowed down because the
+first author was applying to graduate schools and I was focusing more on
+Fission. Eventually, I stopped working on Puppet synthesis entirely.<span style="white-space:nowrap">
+<label for="sn-3"
+       class="margin-toggle sidenote-number">
+</label>
+</span>
+<input type="checkbox"
+       id="sn-3"
+       class="margin-toggle"/>
+<span class="sidenote">
+This eventually became a <a rel="noopener nofollow noreferrer" target="_blank" href="https://aaronweiss.us/pubs/ase17.pdf">paper</a>.
+</span>
+</p>
+<p>To cap off the depressing string of half completed projects, it was around this
+time I actually had minor clinical depression and my productivity collapsed. After
+attending <a rel="noopener nofollow noreferrer" target="_blank" href="https://conf.researchr.org/home/icfp-2016">ICFP ’16</a> I decided to
+start therapy to “fix” my clinical depression.<span style="white-space:nowrap">
+<label for="sn-4"
+       class="margin-toggle sidenote-number">
+</label>
+</span>
+<input type="checkbox"
+       id="sn-4"
+       class="margin-toggle"/>
+<span class="sidenote">
+Researchers are people who sometimes work extraordinarily hard at the expense
+of their own health.
+It is important to realize that your work is significantly
+less important that your health.
+</span>
+</p>
+<p>Meanwhile, we also published a <a rel="noopener nofollow noreferrer" target="_blank" href="http://drops.dagstuhl.de/opus/volltexte/2017/7124/pdf/LIPIcs-SNAPL-2017-5.pdf">workshop
+paper</a>
+on Fission. Unfortunately, after several rewrites of the compiler, people
+leaving the project, and fundamental performance issues, it was becoming
+painfully clear that Fission would not pan out.
+If you’re keeping track, it’s 3/3 for failed projects.</p>
+<h3 id="spring-2017">Spring 2017</h3>
+<p>While making slow progress on Fission, my advisor asked a new question, “What
+would it take to build a client-side IDE?”. In order to build this IDE, we
+started investigating different compiler frameworks for JavaScript. We built
+multiple passes to simplify JavaScript constructs and around the same time, another
+graduate student joined the project. This spring was perhaps the most productive
+semester of my undergraduate research career. I had gained enough technical
+and programming chops to push on the project without hands-on support. By the
+end of this semester, we had managed to build an IDE and give a talk about it
+at <a rel="noopener nofollow noreferrer" target="_blank" href="https://nepls.org/Events/31/">NEPLS ’17</a>.</p>
+<h3 id="summer-2017">Summer 2017</h3>
+<p>My advisor was going to be away for most the summer and he recommended that
+I do an “academic internship”. I emailed a professor at Brown University who
+took me in for the summer. After a meeting with him during spring break, I
+convinced him to let me continue working on my spring research by promising
+to integrate my work into the <a rel="noopener nofollow noreferrer" target="_blank" href="https://www.pyret.org/">Pyret</a> programming
+language.</p>
+<p>I spend a summer trying to improve the performance of our implementation
+which didn’t work out. However, my collaborator back at UMass had figured
+out a solution so continued pushing on.</p>
+<p>Towards the end of the summer, I started looking into integrating our work with
+Pyret. The codebase of a production-ready compiler like Pyret that supports
+thousands of users every day was daunting and hard to understand by myself.
+I spent about two weeks trying to understand it, and frustrated at my lack of
+progress, also wrote a <a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/rachitnigam/pyret-lang.vim">Vim plugin</a> for Pyret. Once I understood the code base, it took me two days to
+implement the first part of the integration.</p>
+<h3 id="fall-2017">Fall 2017</h3>
+<p>Summer came to an end and my most stressful semester in undergraduate began.
+I was graduating in three years so I was taking 6 classes, applying
+to 10 graduate schools, applying for summer internships, and writing a paper
+for our research. It was a lot of work but I did it all. We submitted a
+polished paper to PLDI 2018 (which was later <a href="/publication/stopify">accepted</a>).
+I was accepted to 8 graduate schools and a software engineering internship
+at Google. I eventually decided to start my PhD at Cornell.</p>
+<h3 id="epilogue">Epilogue</h3>
+<p>Having spent a few years at Cornell, I have come to appreciate a lot of things
+about my undergraduate experience:</p>
+<ul>
+<li>While I failed for more than a year, I learned <em>a lot</em>. The
+amount of implementation work I did made me good at rapid prototyping and
+I came with a breadth of knowledge in configuration and web languages,
+secure systems, and formal language theory.</li>
+<li>The infectious optimism of my advisor kept me going through all the failures.
+The most important piece of advice he gave me was: “You’ll figure it out!”</li>
+<li>I learned that I work best when I collaborate with people. It is easier
+to be excited about research when someone else is also excited about it
+with you.</li>
+<li>It is really hard to execute research ideas. A lot of people can come up
+with really good ideas but it takes a lot of work and dedication to
+push through a project. I’ve come to respect the latter way more than the
+former.</li>
+</ul>
+<p>I feel privileged in having a undergraduate research career where I was
+given the opportunity to fail. When I started my PhD, I had no illusions
+about what research was: it requires a religious amount of faith and hard work
+before you can see any progress.</p>
+<p><em>Have comments? <a href="mailto:rachit.nigam12@gmail.com">Email</a> or <a rel="noopener nofollow noreferrer" target="_blank" href="https://twitter.com/notypes">tweet</a> at me.</em></p>
+
+</div>
+
+
+    </div>
+  </section>
+
+<footer>
+  &copy;&nbsp;2021 Rachit Nigam &middot; Built using <a href="https://www.getzola.org/">Zola</a>
+</footer>
+</body>
+
+</html>
