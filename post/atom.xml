@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
     <title> - All Posts</title>
-    <link href="https://rachitnigam.com/post/atom.xml" rel="self" type="application/atom+xml"/>
-    <link href="https://rachitnigam.com/post/"/>
+    <link href="https://rachit.pl/post/atom.xml" rel="self" type="application/atom+xml"/>
+    <link href="https://rachit.pl/post/"/>
     <generator uri="https://www.getzola.org/">Zola</generator>
     <updated>2022-09-19T00:00:00+00:00</updated>
-    <id>https://rachitnigam.com/post/atom.xml</id>
+    <id>https://rachit.pl/post/atom.xml</id>
     <entry xml:lang="en">
         <title>Why Study Programming Languages</title>
         <published>2022-09-19T00:00:00+00:00</published>
@@ -13,8 +13,8 @@
         <author>
           <name>Unknown</name>
         </author>
-        <link rel="alternate" href="https://rachitnigam.com/post/why-study-programming-languages/" type="text/html"/>
-        <id>https://rachitnigam.com/post/why-study-programming-languages/</id>
+        <link rel="alternate" href="https://rachit.pl/post/why-study-programming-languages/" type="text/html"/>
+        <id>https://rachit.pl/post/why-study-programming-languages/</id>
         
         <content type="html">&lt;p&gt;This class is about the study of programming languages. Before we start, I want to perform two activities with folks here. First, I want us to answer two dumb questions:&lt;&#x2F;p&gt;
 &lt;ol&gt;
@@ -47,8 +47,8 @@ I would point to dozens of historical examples of this, from ALGOL, to APL, ever
         <author>
           <name>Unknown</name>
         </author>
-        <link rel="alternate" href="https://rachitnigam.com/post/lies/" type="text/html"/>
-        <id>https://rachitnigam.com/post/lies/</id>
+        <link rel="alternate" href="https://rachit.pl/post/lies/" type="text/html"/>
+        <id>https://rachit.pl/post/lies/</id>
         
         <content type="html">&lt;ul&gt;
 &lt;li&gt;I cannot be happy outside academia&lt;&#x2F;li&gt;
@@ -82,8 +82,8 @@ I would point to dozens of historical examples of this, from ALGOL, to APL, ever
         <author>
           <name>Unknown</name>
         </author>
-        <link rel="alternate" href="https://rachitnigam.com/post/you-have-built-a-compiler/" type="text/html"/>
-        <id>https://rachitnigam.com/post/you-have-built-a-compiler/</id>
+        <link rel="alternate" href="https://rachit.pl/post/you-have-built-a-compiler/" type="text/html"/>
+        <id>https://rachit.pl/post/you-have-built-a-compiler/</id>
         
         <content type="html">&lt;p&gt;&lt;em&gt;Dear Sir,&lt;&#x2F;em&gt;&lt;&#x2F;p&gt;
 &lt;p&gt;I am afraid to inform you that you have built a compiler.
@@ -149,8 +149,8 @@ Dear Sir, you have built a compiler.&lt;&#x2F;p&gt;
         <author>
           <name>Unknown</name>
         </author>
-        <link rel="alternate" href="https://rachitnigam.com/post/personal-infrastructure/" type="text/html"/>
-        <id>https://rachitnigam.com/post/personal-infrastructure/</id>
+        <link rel="alternate" href="https://rachit.pl/post/personal-infrastructure/" type="text/html"/>
+        <id>https://rachit.pl/post/personal-infrastructure/</id>
         
         <content type="html">&lt;p&gt;Personal infrastructure loosely refers to all the tools and systems I have to
 interact on a regular basis to do my job as a PhD researcher.
@@ -158,10 +158,10 @@ As a systems researcher, this includes obvious stuff like command-line tools
 and programming workflow as well as as the set of tools to build websites,
 write papers, manage TODO lists, and &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=MElzn-KV5zw&quot;&gt;record videos&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;rachitnigam.com&#x2F;post&#x2F;personal-infrastructure&#x2F;#websites&quot;&gt;Websites&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
-&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;rachitnigam.com&#x2F;post&#x2F;personal-infrastructure&#x2F;#software&quot;&gt;Software&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
-&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;rachitnigam.com&#x2F;post&#x2F;personal-infrastructure&#x2F;#technical-writing&quot;&gt;Technical Writing&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
-&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;rachitnigam.com&#x2F;post&#x2F;personal-infrastructure&#x2F;#programming-workflow&quot;&gt;Programming Workflow&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;rachit.pl&#x2F;post&#x2F;personal-infrastructure&#x2F;#websites&quot;&gt;Websites&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;rachit.pl&#x2F;post&#x2F;personal-infrastructure&#x2F;#software&quot;&gt;Software&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;rachit.pl&#x2F;post&#x2F;personal-infrastructure&#x2F;#technical-writing&quot;&gt;Technical Writing&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;rachit.pl&#x2F;post&#x2F;personal-infrastructure&#x2F;#programming-workflow&quot;&gt;Programming Workflow&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 &lt;h2 id=&quot;websites&quot;&gt;Websites&lt;&#x2F;h2&gt;
 &lt;p&gt;Let’s get this one out of the way–as a PhD student, &lt;em&gt;you need to have a personal website&lt;&#x2F;em&gt;.
@@ -326,8 +326,8 @@ time, and date.&lt;&#x2F;p&gt;
         <author>
           <name>Unknown</name>
         </author>
-        <link rel="alternate" href="https://rachitnigam.com/post/commoditize-your-research-complement/" type="text/html"/>
-        <id>https://rachitnigam.com/post/commoditize-your-research-complement/</id>
+        <link rel="alternate" href="https://rachit.pl/post/commoditize-your-research-complement/" type="text/html"/>
+        <id>https://rachit.pl/post/commoditize-your-research-complement/</id>
         
         <content type="html">&lt;p&gt;“Commoditize your complement” is an idea about how companies can build profitable
 markets without complete vertical integration or monopolization.&lt;span style=&quot;white-space:nowrap&quot;&gt;
@@ -466,8 +466,8 @@ support instead of compete might win out in the long-term.&lt;&#x2F;p&gt;
         <author>
           <name>Unknown</name>
         </author>
-        <link rel="alternate" href="https://rachitnigam.com/post/latte-post/" type="text/html"/>
-        <id>https://rachitnigam.com/post/latte-post/</id>
+        <link rel="alternate" href="https://rachit.pl/post/latte-post/" type="text/html"/>
+        <id>https://rachit.pl/post/latte-post/</id>
         
         <content type="html">&lt;blockquote&gt;
 &lt;p&gt;If you’re excited by the ideas in this post, please consider registering for
@@ -557,8 +557,8 @@ ensure that well-typed programs go fast.&lt;&#x2F;li&gt;
         <author>
           <name>Unknown</name>
         </author>
-        <link rel="alternate" href="https://rachitnigam.com/post/reconf-future/" type="text/html"/>
-        <id>https://rachitnigam.com/post/reconf-future/</id>
+        <link rel="alternate" href="https://rachit.pl/post/reconf-future/" type="text/html"/>
+        <id>https://rachit.pl/post/reconf-future/</id>
         
         <content type="html">&lt;blockquote&gt;
 &lt;p&gt;FPGAs, a form of reconfigurable
@@ -756,8 +756,8 @@ drafts of this blog post&lt;&#x2F;em&gt;.&lt;&#x2F;p&gt;
         <author>
           <name>Unknown</name>
         </author>
-        <link rel="alternate" href="https://rachitnigam.com/post/first-two-years/" type="text/html"/>
-        <id>https://rachitnigam.com/post/first-two-years/</id>
+        <link rel="alternate" href="https://rachit.pl/post/first-two-years/" type="text/html"/>
+        <id>https://rachit.pl/post/first-two-years/</id>
         
         <content type="html">&lt;p&gt;With the end of the Spring ’20 semester a month away, I have spent almost
 two academic years at Cornell. A quick rundown of everything that happened:&lt;&#x2F;p&gt;
@@ -974,8 +974,8 @@ Cornell bearable.&lt;&#x2F;p&gt;
         <author>
           <name>Unknown</name>
         </author>
-        <link rel="alternate" href="https://rachitnigam.com/post/virtual-cs-conferences/" type="text/html"/>
-        <id>https://rachitnigam.com/post/virtual-cs-conferences/</id>
+        <link rel="alternate" href="https://rachit.pl/post/virtual-cs-conferences/" type="text/html"/>
+        <id>https://rachit.pl/post/virtual-cs-conferences/</id>
         
         <content type="html">&lt;p&gt;Conferences in computer science are an odd occurrence. Unlike most other
 research fields which primarily focus on publishing in journals, conferences
@@ -1108,8 +1108,8 @@ junior researchers have when we come up with solutions for virtual conferences.&
         <author>
           <name>Unknown</name>
         </author>
-        <link rel="alternate" href="https://rachitnigam.com/post/project-management/" type="text/html"/>
-        <id>https://rachitnigam.com/post/project-management/</id>
+        <link rel="alternate" href="https://rachit.pl/post/project-management/" type="text/html"/>
+        <id>https://rachit.pl/post/project-management/</id>
         
         <content type="html">&lt;p&gt;Collaborations in systems research is how I’ve built some of the best tools
 in my research. A larger teams means an expanded vision and being able to pursue more
@@ -1247,8 +1247,8 @@ or research!&lt;&#x2F;p&gt;
         <author>
           <name>Unknown</name>
         </author>
-        <link rel="alternate" href="https://rachitnigam.com/post/learn-to-fail/" type="text/html"/>
-        <id>https://rachitnigam.com/post/learn-to-fail/</id>
+        <link rel="alternate" href="https://rachit.pl/post/learn-to-fail/" type="text/html"/>
+        <id>https://rachit.pl/post/learn-to-fail/</id>
         
         <content type="html">&lt;p&gt;I often describe the basic philosophy of research using a metaphor: bash your
 head in a wall over and over till you find a way to
@@ -1430,8 +1430,8 @@ before you can see any progress.&lt;&#x2F;p&gt;
         <author>
           <name>Unknown</name>
         </author>
-        <link rel="alternate" href="https://rachitnigam.com/post/free-agent-cornell/" type="text/html"/>
-        <id>https://rachitnigam.com/post/free-agent-cornell/</id>
+        <link rel="alternate" href="https://rachit.pl/post/free-agent-cornell/" type="text/html"/>
+        <id>https://rachit.pl/post/free-agent-cornell/</id>
         
         <content type="html">&lt;blockquote&gt;
 &lt;p&gt;&lt;strong&gt;Update, 2022&lt;&#x2F;strong&gt;: &lt;em&gt;After being at Cornell for couple more years, I’ve developed a more nuanced opinion of the “free agent system” at Cornell CIS.
@@ -1546,8 +1546,8 @@ on schools. Good luck!&lt;&#x2F;p&gt;
         <author>
           <name>Unknown</name>
         </author>
-        <link rel="alternate" href="https://rachitnigam.com/post/pl-research/" type="text/html"/>
-        <id>https://rachitnigam.com/post/pl-research/</id>
+        <link rel="alternate" href="https://rachit.pl/post/pl-research/" type="text/html"/>
+        <id>https://rachit.pl/post/pl-research/</id>
         
         <content type="html">&lt;blockquote&gt;
 &lt;p&gt;Instead of being a judgement of what PL research should be, this short post is

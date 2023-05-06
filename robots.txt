@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 Allow: /
-Sitemap: https://rachitnigam.com/sitemap.xml
+Sitemap: https://rachit.pl/sitemap.xml
