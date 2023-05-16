@@ -18,8 +18,9 @@ publication_short = "PLDI"
 
 pdf = "/files/pubs/filament.pdf"
 urls = [
+  { name = "Website", url = "https://filamenthdl.com" },
   { name = "Code", url = "https://github.com/cucapra/filament" },
-  { name = "Website", url = "https://filamenthdl.com" }
+  { name = "Talk", url = "https://www.youtube.com/watch?v=sfNxTACbUTE" },
 ]
 type="conf"
 +++
