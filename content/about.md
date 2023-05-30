@@ -5,12 +5,11 @@ template = "index.html"
 Rachit Nigam{% footnote() %}
 *Pronunciation*: Ruh-CHITH NI-gum. First name rhymes with "crutch-it".
 {% end %}
-is a visiting researcher in the [PLSE][plse] group at University of Washington
-and a PhD candidate studying computer science at Cornell University. His research is supported through the [Jane Street Fellowship][js-fellow].
+is a visiting researcher at [MIT CSAIL][csail] working with [Jonathan Ragan-Kelley][jrk] and a PhD candidate at [Cornell University][cornell] working with [Adrian Sampson][adrian].
 
-He is a part of the [CAPRA][] and [PL@Cornell][pl-cornell] research groups and is advised by [Adrian Sampson][adrian].
-His research ([Dahlia][], [Calyx][]) is focused on building high-level programming models for designing hardware accelerators.
-He previously worked in the [PLASMA][plasma] research group at the University of Massachusetts Amherst with [Arjun Guha][arjun].
+
+His research ([Filament][], [Calyx][], [Dahlia][]) is focused on building high-level programming models for designing hardware accelerators and is supported through the [Jane Street Fellowship][js-fellow].
+He has previously been affiliated with the [UW PLSE lab][plse], [Brown's PLT group][brown-plt], and the [PLASMA research group][plasma] at the University of Massachusetts Amherst.
 
 Rachit started [PLTea](https://pltea.github.io/) during PLDI '20 in hopes of keeping social interactions alive during virtual conferences. PLTea has since been organized several times ([PLDI '22][plt-pldi22], [ICFP '21][plt-icfp21], [SPLASH '21][plt-oopsla21], [PLDI '21][plt-pldi21]) and has inspired spin-offs in other communities ([ArchChat][]).
 
@@ -28,3 +27,7 @@ Rachit started [PLTea](https://pltea.github.io/) during PLDI '20 in hopes of ke
 [plt-pldi22]: https://pldi22.sigplan.org/track/pldi-2022-pldi#program
 [plse]: https://uwplse.org/
 [js-fellow]: https://www.janestreet.com/join-jane-street/programs-and-events/grf-profiles/
+[csail]: https://www.csail.mit.edu/
+[jrk]: https://people.csail.mit.edu/jrk/
+[filament]: https://filamenthdl.com
+[brown-plt]: https://cs.brown.edu/research/plt/
