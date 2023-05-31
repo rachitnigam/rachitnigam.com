@@ -5,7 +5,7 @@ template = "index.html"
 Rachit Nigam{% footnote() %}
 *Pronunciation*: Ruh-CHITH NI-gum. First name rhymes with "crutch-it".
 {% end %}
-is a visiting researcher at [MIT CSAIL][csail] working with [Jonathan Ragan-Kelley][jrk] and a PhD candidate at [Cornell University][cornell] working with [Adrian Sampson][adrian].
+is a visiting researcher at [MIT CSAIL][csail] working with [Jonathan Ragan-Kelley][jrk] and a PhD candidate at [Cornell University][pl-cornell] working with [Adrian Sampson][adrian].
 
 
 His research ([Filament][], [Calyx][], [Dahlia][]) is focused on building high-level programming models for designing hardware accelerators and is supported through the [Jane Street Fellowship][js-fellow].
