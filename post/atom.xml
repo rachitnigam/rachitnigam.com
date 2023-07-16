@@ -4,8 +4,35 @@
     <link href="https://rachit.pl/post/atom.xml" rel="self" type="application/atom+xml"/>
     <link href="https://rachit.pl/post/"/>
     <generator uri="https://www.getzola.org/">Zola</generator>
-    <updated>2022-09-19T00:00:00+00:00</updated>
+    <updated>2023-07-15T00:00:00+00:00</updated>
     <id>https://rachit.pl/post/atom.xml</id>
+    <entry xml:lang="en">
+        <title>The Stateless Manager</title>
+        <published>2023-07-15T00:00:00+00:00</published>
+        <updated>2023-07-15T00:00:00+00:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="https://rachit.pl/post/stateless-advisor/" type="text/html"/>
+        <id>https://rachit.pl/post/stateless-advisor/</id>
+        
+        <content type="html">&lt;p&gt;I find myself repeating the following advice to my mentees: Assume your manager (advisor) remembers nothing about your previous meeting. Start from the top and build back the &lt;em&gt;context&lt;&#x2F;em&gt; of your discussion before you dive into technical details.&lt;&#x2F;p&gt;
+&lt;p&gt;I have dubbed this the “stateless manager model” after functional programming paradigms where the program uses no state and instead acts only upon the inputs provided to it.
+There’s a couple of reasons why this advice makes sense:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Your manager&#x2F;advisor probably has dozens of technical meetings in a week and a million other things they are working on. It is quite hard for them to remember all the details of your previous conversation.&lt;&#x2F;li&gt;
+&lt;li&gt;Even &lt;em&gt;if&lt;&#x2F;em&gt; they remembered what the details were, you could’ve come up with a new way to think about the problem and building context from the ground up will reveal those to your manager.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;The latter skill is quite important for junior developers and researchers.
+The ability to effectively and concisely articulate &lt;em&gt;what the problem is&lt;&#x2F;em&gt; is just as important, if not more important, than what the solution is.
+In fact, a great many researchers are famous not for their ability to come up with a solution but their ability to articulate problems.
+The Stateless Manager model is a particularly good way to practice this art.&lt;&#x2F;p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Disclaimer: This post is not a subtweet of my current or past advisors, all of whom are blessed far better memory than me. The point of the post is that &lt;em&gt;even if&lt;&#x2F;em&gt; your manager remembers each conversation exactly, this is &lt;em&gt;still&lt;&#x2F;em&gt; a good way to structure your approach to meetings.&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+</content>
+        
+    </entry>
     <entry xml:lang="en">
         <title>Why Study Programming Languages</title>
         <published>2022-09-19T00:00:00+00:00</published>
