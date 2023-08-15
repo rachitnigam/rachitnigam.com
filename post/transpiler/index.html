@@ -81,10 +81,20 @@ Maybe one strategy we can take is to build a some sort of tool that would simpli
 to work with.</p>
 <p>We’ll call it the <em>transpiler-not-frontend</em> to make sure people understand we’re not building a compiler here.</p>
 <h2 id="lie-2-transpilers-are-simple">Lie #2: Transpilers are Simple</h2>
-<p>BabelJS is arguably one of the first “transpilers” that was developed so that people could experiment with JavaScript’s (ECMAScript’s to the pedantic)
-new language features that did not yet have browser implementations.
+<p>BabelJS is arguably one of the first “transpilers” that was developed so that people could experiment with JavaScript’s<span style="white-space:nowrap">
+<label for="sn-1"
+       class="margin-toggle sidenote-number">
+</label>
+</span>
+<input type="checkbox"
+       id="sn-1"
+       class="margin-toggle"/>
+<span class="sidenote">
+ECMAScript’s if you’re pedantic like me.
+</span>
+<p>new language features that did not yet have browser implementations.
 For example, ES6 added support for generators (similar to those in Python) but a lot of browser frontends did not support them.
-Generators are pretty nice:</p>
+Generators are pretty nice:</p></p>
 <pre data-lang="js" style="background-color:#2b303b;color:#c0c5ce;" class="language-js "><code class="language-js" data-lang="js"><span style="color:#b48ead;">function *</span><span style="color:#8fa1b3;">range</span><span>(</span><span style="color:#bf616a;">max</span><span>) {
 </span><span>  </span><span style="color:#b48ead;">for </span><span>(</span><span style="color:#b48ead;">var </span><span style="color:#bf616a;">i </span><span>= </span><span style="color:#d08770;">0</span><span>; </span><span style="color:#bf616a;">i </span><span>&lt; </span><span style="color:#bf616a;">max</span><span>; </span><span style="color:#bf616a;">i </span><span>+= </span><span style="color:#d08770;">1</span><span>) {
 </span><span>    </span><span style="color:#b48ead;">yield </span><span style="color:#bf616a;">i</span><span>;

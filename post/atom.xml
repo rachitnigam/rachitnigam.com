@@ -82,7 +82,18 @@ Maybe one strategy we can take is to build a some sort of tool that would simpli
 to work with.&lt;&#x2F;p&gt;
 &lt;p&gt;We’ll call it the &lt;em&gt;transpiler-not-frontend&lt;&#x2F;em&gt; to make sure people understand we’re not building a compiler here.&lt;&#x2F;p&gt;
 &lt;h2 id=&quot;lie-2-transpilers-are-simple&quot;&gt;Lie #2: Transpilers are Simple&lt;&#x2F;h2&gt;
-&lt;p&gt;BabelJS is arguably one of the first “transpilers” that was developed so that people could experiment with JavaScript’s (ECMAScript’s to the pedantic)
+&lt;p&gt;BabelJS is arguably one of the first “transpilers” that was developed so that people could experiment with JavaScript’s&lt;span style=&quot;white-space:nowrap&quot;&gt;
+&lt;label for=&quot;sn-1&quot;
+       class=&quot;margin-toggle sidenote-number&quot;&gt;
+&lt;&#x2F;label&gt;
+&lt;&#x2F;span&gt;
+&lt;input type=&quot;checkbox&quot;
+       id=&quot;sn-1&quot;
+       class=&quot;margin-toggle&quot;&#x2F;&gt;
+&lt;span class=&quot;sidenote&quot;&gt;
+ECMAScript’s if you’re pedantic like me.
+&lt;&#x2F;span&gt;
+
 new language features that did not yet have browser implementations.
 For example, ES6 added support for generators (similar to those in Python) but a lot of browser frontends did not support them.
 Generators are pretty nice:&lt;&#x2F;p&gt;
