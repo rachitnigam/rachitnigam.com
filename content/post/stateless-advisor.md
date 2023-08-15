@@ -21,3 +21,5 @@ In fact, a great many researchers are famous not for their ability to come up wi
 The Stateless Manager model is a particularly good way to practice this art.
 
 > Disclaimer: This post is not a subtweet of my current or past advisors, all of whom are blessed far better memory than me. The point of the post is that *even if* your manager remembers each conversation exactly, this is *still* a good way to structure your approach to meetings.
+
+_Have comments? [Email](mailto:rachit.nigam12@gmail.com) or [tweet](https://twitter.com/notypes) at me._

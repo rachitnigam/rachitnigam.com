@@ -126,6 +126,8 @@ People seemed to scared of compilers and resort to claims like "I don't want som
 
 Programming languages are not just syntax, they have semantics too and pretending that you can get away with just manipulating the former is silly.
 
+_Have comments? [Email](mailto:rachit.nigam12@gmail.com) or [tweet](https://twitter.com/notypes) at me._
+
 
 [py-reduce]: https://github.com/python/cpython/blob/main/Lib/functools.py#L237
 [py-range]: https://github.com/python/cpython/blob/d66bc9e8a7a8d6774d912a4b9d151885c4d8de1d/Objects/rangeobject.c#L24
