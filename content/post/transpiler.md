@@ -58,7 +58,7 @@ We'll call it the *transpiler-not-frontend* to make sure people understand we're
 
 ## Lie #2: Transpilers are Simple
 
-BabelJS is arguably one of the first "transpilers" that was developed so that people could experiment with JavaScript's (ECMAScript's to the pedantic)
+BabelJS is arguably one of the first "transpilers" that was developed so that people could experiment with JavaScript's{% footnote() %} ECMAScript's if you're pedantic like me. {% end %}
 new language features that did not yet have browser implementations.
 For example, ES6 added support for generators (similar to those in Python) but a lot of browser frontends did not support them.
 Generators are pretty nice:
