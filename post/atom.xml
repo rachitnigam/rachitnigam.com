@@ -30,6 +30,7 @@ The Stateless Manager model is a particularly good way to practice this art.&lt;
 &lt;blockquote&gt;
 &lt;p&gt;Disclaimer: This post is not a subtweet of my current or past advisors, all of whom are blessed far better memory than me. The point of the post is that &lt;em&gt;even if&lt;&#x2F;em&gt; your manager remembers each conversation exactly, this is &lt;em&gt;still&lt;&#x2F;em&gt; a good way to structure your approach to meetings.&lt;&#x2F;p&gt;
 &lt;&#x2F;blockquote&gt;
+&lt;p&gt;&lt;em&gt;Have comments? &lt;a href=&quot;mailto:rachit.nigam12@gmail.com&quot;&gt;Email&lt;&#x2F;a&gt; or &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;twitter.com&#x2F;notypes&quot;&gt;tweet&lt;&#x2F;a&gt; at me.&lt;&#x2F;em&gt;&lt;&#x2F;p&gt;
 </content>
         
     </entry>
@@ -136,6 +137,7 @@ This is exactly what compiler frontends do as well: they transform a large surfa
 &lt;h2 id=&quot;lie-5-transpilers-are-not-compilers&quot;&gt;Lie #5: Transpilers are not Compilers&lt;&#x2F;h2&gt;
 &lt;p&gt;People seemed to scared of compilers and resort to claims like “I don’t want something as complex”, or “string interpolation is good enough”. This is silly. Anyone who has built one of these “transpilers” knows that inevitably, they get complex and poorly maintained precisely because of the delusion that they aren’t doing something complex.&lt;&#x2F;p&gt;
 &lt;p&gt;Programming languages are not just syntax, they have semantics too and pretending that you can get away with just manipulating the former is silly.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;em&gt;Have comments? &lt;a href=&quot;mailto:rachit.nigam12@gmail.com&quot;&gt;Email&lt;&#x2F;a&gt; or &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;twitter.com&#x2F;notypes&quot;&gt;tweet&lt;&#x2F;a&gt; at me.&lt;&#x2F;em&gt;&lt;&#x2F;p&gt;
 </content>
         
     </entry>
