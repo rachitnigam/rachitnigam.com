@@ -7,16 +7,17 @@ compile_sass = false
 # Whether to build a search index to be used later on by a JavaScript library
 build_search_index = false
 
+# Enable syntax highlighting
+
 [markdown]
 external_links_target_blank = true
 external_links_no_follow = true
 external_links_no_referrer = true
 smart_punctuation = true
+highlight_code = true
 
 [link_checker]
-skip_prefixes = [
-  "https://twitter.com/",
-]
+skip_prefixes = ["https://twitter.com/"]
 
 [extra]
 news_items = 5
@@ -40,6 +41,6 @@ author = [
   { name = "Joe Gibbs Politz", link = "https://jpolitz.github.io/" },
   { name = "Jean-Baptiste Jeannin", link = "https://jeannin.github.io/" },
   { name = "Yuwei Ye", link = "https://www.viviyye.com/" },
-  { name = "Sachille Atapattu", link = "https://www.csl.cornell.edu/~sachille/"},
-  { name = "Jane Tangen", link = "https://people.cs.umass.edu/~jktangen/" }
+  { name = "Sachille Atapattu", link = "https://www.csl.cornell.edu/~sachille/" },
+  { name = "Jane Tangen", link = "https://people.cs.umass.edu/~jktangen/" },
 ]
