@@ -57,12 +57,12 @@ techniques for accelerator design co-located with ASPLOS.</p>
 <p>New, higher-level programming models are the key to the ubiquitous use of FPGA-based accelerators. Beyond ridding developers from low-level abstractions, such programming models also enable novel solutions to classic problems such hardware verification and automatic optimization.</p>
 <h2 id="high-level-programming-models">High-Level Programming Models</h2>
 <p>The obvious benefit of higher-level programming models is the ability to specify hardware without dwelling on low-level details. For example, using high-level synthesis (HLS) compilers, programmers can compile C++ programs into hardware designs. The aforementioned matrix multiplier can be implemented in a few lines of code:</p>
-<pre data-lang="C" class="language-C "><code class="language-C" data-lang="C">for (int i = 0; i &lt; N; i++)
-  for (int j = 0; i &lt; N; i++)
-    for (int k = 0; i &lt; N; i++)
-      #pragma HLS UNROLL factor=5
-      C[i][j] = A[i][k] * B[k][j];
-</code></pre>
+<pre data-lang="C" style="background-color:#2b303b;color:#c0c5ce;" class="language-C "><code class="language-C" data-lang="C"><span style="color:#b48ead;">for </span><span>(</span><span style="color:#b48ead;">int</span><span> i = </span><span style="color:#d08770;">0</span><span>; i &lt; N; i++)
+</span><span>  </span><span style="color:#b48ead;">for </span><span>(</span><span style="color:#b48ead;">int</span><span> j = </span><span style="color:#d08770;">0</span><span>; i &lt; N; i++)
+</span><span>    </span><span style="color:#b48ead;">for </span><span>(</span><span style="color:#b48ead;">int</span><span> k = </span><span style="color:#d08770;">0</span><span>; i &lt; N; i++)
+</span><span>      </span><span style="color:#b48ead;">#pragma</span><span> HLS UNROLL factor=5
+</span><span>      C[i][j] = A[i][k] * B[k][j];
+</span></code></pre>
 <p>The challenge in such programming models, however, is exploiting the available hardware parallelism. For example, To express DOALL parallelism programmers can use the <code>UNROLL</code> pragma to duplicate the loop body and perform five computations at the same time.</p>
 <p>However, loop unrolling demonstrates the key difference between a C++ program meant to run on processors and ones used to generate hardware. Processors take advantage of unrolled loops through their superscalar design and complex memory hierarchies that can service multiple requests every cycle. In contrast, unrolling a loop in an accelerator design instantiates five <em>physical</em> multipliers in the final design which are connected to primitive memories that can only serve a single read or write request every cycle. This means that without careful manual organization of memories, the additional multipliers would stall most cycles waiting on read and write requests.</p>
 <p>The challenge here is the need to connect the high-level abstractions to the fundamentally <em>physical</em> nature of hardware designs. This balance is precarious: expose too much information and we’re back to the abstraction level of hardware description languages; too little, and the programming model will unpredictably generate poor hardware designs without providing programmers any useful feedback.</p>
@@ -70,21 +70,23 @@ techniques for accelerator design co-located with ASPLOS.</p>
 <h2 id="automatically-optimizing-accelerators">Automatically Optimizing Accelerators</h2>
 <p>The vast majority of optimization, analysis, and verification of hardware accelerators occurs at the level of hardware description languages (HDLs). High-level programming models, in addition to improving programmer productivity, can enable novel and scalable solutions to these problems.</p>
 <p>A key property of HDLs is that, by default, everything executes in parallel. In order to encode control flow, programs must implement their own state machines that activate the right set of actions to execute every cycle. Pseudocode for this pattern demonstrates how gnarly it can get:</p>
-<pre><code>x = (state == 0) ? 1
-  : (state == 1) ? x + 1
-  : 0;
-<p>state = (state == 0) ? 1
-: (state == 1 &amp;&amp; x &lt; 10) ? 0
-: (state == 1 &amp;&amp; !(x &lt; 10)) ? 2;</p>
-<p>y = (state == 2) ? 1 : 0;
-</code></pre></p>
+<pre style="background-color:#2b303b;color:#c0c5ce;"><code><span>x = (state == 0) ? 1
+</span><span>  : (state == 1) ? x + 1
+</span><span>  : 0;
+</span><span>
+</span><span>state = (state == 0) ? 1
+</span><span>      : (state == 1 &amp;&amp; x &lt; 10) ? 0
+</span><span>      : (state == 1 &amp;&amp; !(x &lt; 10)) ? 2;
+</span><span>
+</span><span>y = (state == 2) ? 1 : 0;
+</span></code></pre>
 <p>The input program, which uses control flow constructs, demonstrates the actual intent:</p>
-<pre><code>x = 1;
-while (x &lt; 10) {
-  x = x + 1;
-}
-y = 1;
-</code></pre>
+<pre style="background-color:#2b303b;color:#c0c5ce;"><code><span>x = 1;
+</span><span>while (x &lt; 10) {
+</span><span>  x = x + 1;
+</span><span>}
+</span><span>y = 1;
+</span></code></pre>
 <p>Not only is the latter program easier to write down, but it also reveals useful facts about the program. For example, the variable <code>x</code> is never used after the loop i.e., it is no longer <em>live</em>. Optimizing compilers, both for software and hardware, can use this fact to reuse the registers that store <code>x</code>. However, yet again, software optimizations don’t precisely capture the nature of hardware designs. In a software program, sharing registers is almost always a good idea, limited only by the compiler’s knowledge of aliasing. On the other hand, sharing registers in accelerators requires instantiating <em>multiplexers</em> which control the input and output signals from the register. The choice of trading off registers for multiplexers is target-dependent: registers are cheap on FPGAs but costly on silicon-based accelerators while multiplexers are the opposite. Attempting to port software optimizations without knowledge of hardware is futile.</p>
 <p>Language-based abstractions can capture such trade-offs.
 For example, <a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/cucapra/calyx">Calyx</a> (my work), proposes a new intermediate language for building

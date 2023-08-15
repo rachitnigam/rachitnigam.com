@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="author" content="Rachit Nigam">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rachit Nigam | PhD Candidate, Cornell University</title>
+
+  <link rel="icon" href="/flower.svg" type="image/svg+xml">
+
+  <link rel="stylesheet" href=https://rachit.pl/css/normalize.css>
+  <link rel="stylesheet" href=https://rachit.pl/css/default.css>
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.1/css/academicons.min.css" integrity="sha512-b1ASx0WHgVFL5ZQhTgiPWX+68KjS38Jk87jg7pe+qC7q9YkEtFq0z7xCglv7qGIs/68d3mAp+StfC8WKC5SSAg==" crossorigin="anonymous"/>
+
+  
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="https://rachit.pl/post/atom.xml">
+  
+
+</head>
+
+<body>
+  <header>
+    <h1 class="name"><a class="unstyled-link" href="/">Rachit Nigam</a></h1>
+    <nav>
+      <a class="unstyled-link nav-item" href="/#publications">Publications</a>
+      <a class="unstyled-link nav-item" href="/#posts">Posts</a>
+      <a class="unstyled-link nav-item" href="/files/resume.pdf">CV</a>
+    </nav>
+  </header>
+  <section class="section">
+    <div class="container">
+      
+<div class="post-header">
+<h1 class="title">
+  Transpiler, a meaningless word
+</h1>
+<div class="date">
+PhD Student fights the good fight
+</div>
+<p class="date">July 15, 2023</p>
+</div>
+
+<div class="post">
+<p>The word <em>transpiler</em> is often used by people when they want to say that built a tool that transforms programs between languages of
+<em>roughly the same level of abstraction</em>. This tool is different from a <em>compiler</em> which often has a complex frontend, an optimizing
+middle end, and code generators for various backends.</p>
+<h2 id="lie-1-transpilers-don-t-have-frontends">Lie #1: Transpilers Don’t have Frontends</h2>
+<p>Let’s look at a simple Python to C transpiler. It takes python code that looks like this:</p>
+<pre data-lang="py" style="background-color:#2b303b;color:#c0c5ce;" class="language-py "><code class="language-py" data-lang="py"><span style="color:#b48ead;">def </span><span style="color:#8fa1b3;">fact</span><span>(</span><span style="color:#bf616a;">n</span><span>):
+</span><span>    x = </span><span style="color:#d08770;">1
+</span><span>    </span><span style="color:#b48ead;">for </span><span>i </span><span style="color:#b48ead;">in </span><span style="color:#96b5b4;">range</span><span>(</span><span style="color:#d08770;">1</span><span>, n):
+</span><span>        x *= i
+</span><span style="color:#b48ead;">return </span><span>x
+</span></code></pre>
+<p>Into some C code like this:</p>
+<pre data-lang="C" style="background-color:#2b303b;color:#c0c5ce;" class="language-C "><code class="language-C" data-lang="C"><span style="color:#b48ead;">int </span><span style="color:#8fa1b3;">fact</span><span>(</span><span style="color:#b48ead;">int </span><span style="color:#bf616a;">n</span><span>) {
+</span><span>    </span><span style="color:#b48ead;">int</span><span> x = </span><span style="color:#d08770;">0</span><span>;
+</span><span>    </span><span style="color:#b48ead;">for </span><span>(</span><span style="color:#b48ead;">int</span><span> i = </span><span style="color:#d08770;">1</span><span>; i &lt; n; i++) {
+</span><span>        x *= i;
+</span><span>    }
+</span><span>    </span><span style="color:#b48ead;">return</span><span> x;
+</span><span>}
+</span></code></pre>
+<p>Wow, pretty simple! But of course, that piece of python is not very idiomatic. We can make it a bit more terse using list comprehensions:</p>
+<pre data-lang="py" style="background-color:#2b303b;color:#c0c5ce;" class="language-py "><code class="language-py" data-lang="py"><span style="color:#b48ead;">import </span><span>functools </span><span style="color:#b48ead;">as </span><span>ft
+</span><span style="color:#b48ead;">def </span><span style="color:#8fa1b3;">fact</span><span>(</span><span style="color:#bf616a;">n</span><span>):
+</span><span>    lst = </span><span style="color:#96b5b4;">range</span><span>(</span><span style="color:#d08770;">1</span><span>, n)
+</span><span>    </span><span style="color:#b48ead;">return </span><span>ft.</span><span style="color:#bf616a;">reduce</span><span>(</span><span style="color:#b48ead;">lambda </span><span style="color:#bf616a;">acc</span><span>, </span><span style="color:#bf616a;">x</span><span>: acc*x, )
+</span></code></pre>
+<p>Now our “transpiler” is in a little bit of trouble.
+The <a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/python/cpython/blob/main/Lib/functools.py#L237">implementation of <code>reduce</code></a> is in pure Python so maybe we can still transpile it but <a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/python/cpython/blob/d66bc9e8a7a8d6774d912a4b9d151885c4d8de1d/Objects/rangeobject.c#L24"><code>range</code> is implemented purely in C</a>.</p>
+<p>Looking into the implementation, what’s even clearer is that matching the <em>semantics of this program</em> is even harder:
+<code>range</code> is a Python generator which means that instead of actually computing the numbers from 1 to <code>n</code>, it only produces them when asked.
+This allows our method to save memory because we don’t actually have to allocate <code>n</code> words and can work using just the memory for the lazy
+implementation of the generator and the local variables.</p>
+<p>Another problem is that there are hundreds of built-in library functions that need to be compiled from Python from C.
+Even a moderately useful subset would be unwieldy to implement by hand in our simple “transpiler”.
+Maybe one strategy we can take is to build a some sort of tool that would simplify these hundreds of definitions into a more uniform representation
+to work with.</p>
+<p>We’ll call it the <em>transpiler-not-frontend</em> to make sure people understand we’re not building a compiler here.</p>
+<h2 id="lie-2-transpilers-are-simple">Lie #2: Transpilers are Simple</h2>
+<p>BabelJS is arguably one of the first “transpilers” that was developed so that people could experiment with JavaScript’s (ECMAScript’s to the pedantic)
+new language features that did not yet have browser implementations.
+For example, ES6 added support for generators (similar to those in Python) but a lot of browser frontends did not support them.
+Generators are pretty nice:</p>
+<pre data-lang="js" style="background-color:#2b303b;color:#c0c5ce;" class="language-js "><code class="language-js" data-lang="js"><span style="color:#b48ead;">function *</span><span style="color:#8fa1b3;">range</span><span>(</span><span style="color:#bf616a;">max</span><span>) {
+</span><span>  </span><span style="color:#b48ead;">for </span><span>(</span><span style="color:#b48ead;">var </span><span style="color:#bf616a;">i </span><span>= </span><span style="color:#d08770;">0</span><span>; </span><span style="color:#bf616a;">i </span><span>&lt; </span><span style="color:#bf616a;">max</span><span>; </span><span style="color:#bf616a;">i </span><span>+= </span><span style="color:#d08770;">1</span><span>) {
+</span><span>    </span><span style="color:#b48ead;">yield </span><span style="color:#bf616a;">i</span><span>;
+</span><span>  }
+</span><span>}
+</span><span style="color:#65737e;">// Force the evaluation of the generator
+</span><span style="color:#ebcb8b;">console</span><span>.</span><span style="color:#96b5b4;">log</span><span>([</span><span style="color:#d08770;">0</span><span>, ...</span><span style="color:#8fa1b3;">range</span><span>(</span><span style="color:#d08770;">10</span><span>)])
+</span></code></pre>
+<p>Facebook’s <a rel="noopener nofollow noreferrer" target="_blank" href="http://facebook.github.io/regenerator/">regenerator</a> is a BabelJS-based “transpiler” to transform generators into language constructs that already existed
+in JavaScript. Should be too hard, right?</p>
+<pre data-lang="js" style="background-color:#2b303b;color:#c0c5ce;" class="language-js "><code class="language-js" data-lang="js"><span style="color:#b48ead;">var </span><span style="color:#bf616a;">_marked </span><span>= </span><span style="color:#65737e;">/*#__PURE__*/</span><span style="color:#bf616a;">regeneratorRuntime</span><span>.</span><span style="color:#8fa1b3;">mark</span><span>(</span><span style="color:#bf616a;">range</span><span>);
+</span><span style="color:#b48ead;">function </span><span style="color:#8fa1b3;">range</span><span>(</span><span style="color:#bf616a;">max</span><span>) {
+</span><span>  </span><span style="color:#b48ead;">var </span><span style="color:#bf616a;">i</span><span>;
+</span><span>  </span><span style="color:#b48ead;">return </span><span style="color:#bf616a;">regeneratorRuntime</span><span>.</span><span style="color:#8fa1b3;">wrap</span><span>(</span><span style="color:#b48ead;">function </span><span style="color:#8fa1b3;">range$</span><span>(</span><span style="color:#bf616a;">_context</span><span>) {
+</span><span>    </span><span style="color:#b48ead;">while </span><span>(</span><span style="color:#d08770;">1</span><span>) {
+</span><span>      </span><span style="color:#b48ead;">switch </span><span>(</span><span style="color:#bf616a;">_context</span><span>.</span><span style="color:#bf616a;">prev </span><span>= </span><span style="color:#bf616a;">_context</span><span>.next) {
+</span><span>        </span><span style="color:#b48ead;">case </span><span style="color:#d08770;">0</span><span>:
+</span><span>          </span><span style="color:#bf616a;">i </span><span>= </span><span style="color:#d08770;">0</span><span>;
+</span><span>        </span><span style="color:#b48ead;">case </span><span style="color:#d08770;">1</span><span>:
+</span><span>          </span><span style="color:#b48ead;">if </span><span>(!(</span><span style="color:#bf616a;">i </span><span>&lt; </span><span style="color:#bf616a;">max</span><span>)) {
+</span><span>            </span><span style="color:#bf616a;">_context</span><span>.next = </span><span style="color:#d08770;">7</span><span>;
+</span><span>            </span><span style="color:#b48ead;">break</span><span>;
+</span><span>          }
+</span><span>          </span><span style="color:#bf616a;">_context</span><span>.next = </span><span style="color:#d08770;">4</span><span>;
+</span><span>          </span><span style="color:#b48ead;">return </span><span style="color:#bf616a;">i</span><span>;
+</span><span>        </span><span style="color:#b48ead;">case </span><span style="color:#d08770;">4</span><span>:
+</span><span>          </span><span style="color:#bf616a;">i </span><span>+= </span><span style="color:#d08770;">1</span><span>;
+</span><span>          </span><span style="color:#bf616a;">_context</span><span>.next = </span><span style="color:#d08770;">1</span><span>;
+</span><span>          </span><span style="color:#b48ead;">break</span><span>;
+</span><span>        </span><span style="color:#b48ead;">case </span><span style="color:#d08770;">7</span><span>:
+</span><span>        </span><span style="color:#b48ead;">case </span><span>&quot;</span><span style="color:#a3be8c;">end</span><span>&quot;:
+</span><span>          </span><span style="color:#b48ead;">return </span><span style="color:#bf616a;">_context</span><span>.</span><span style="color:#96b5b4;">stop</span><span>();
+</span><span>      }
+</span><span>    }
+</span><span>  }, </span><span style="color:#bf616a;">_marked</span><span>);
+</span><span>}
+</span><span style="color:#65737e;">// Force the evaluation of the generator
+</span><span style="color:#ebcb8b;">console</span><span>.</span><span style="color:#96b5b4;">log</span><span>([</span><span style="color:#d08770;">0</span><span>, ...</span><span style="color:#8fa1b3;">range</span><span>(</span><span style="color:#d08770;">10</span><span>)]);
+</span></code></pre>
+<p>Yeah, guess what, it is. Implementing generators is a <em>whole-program transformation</em>: they fundamentally rely on the ability of the program to save its internal stack and pause the execution of the program. In fact, making it fast requires enough tricks that <a href="/files/pubs/stopify-pldi18.pdf">we wrote a paper on it</a>.</p>
+<h2 id="lie-3-transpilers-target-the-same-level-of-abstraction">Lie #3: Transpilers Target the Same Level of Abstraction</h2>
+<p>This is pretty much the same as (2) for me. Yeah, the input and output languages have the syntax of JavaScript but the fact that compiler <em>one feature</em> requires a whole program transformation gives away the fact that these are not the same languages.
+If we’re to get beyond the vagaries of syntax and <em>actually</em> talk about what the expressive power of languages is, we need to <a rel="noopener nofollow noreferrer" target="_blank" href="https://www.youtube.com/watch?v=43XaZEn2aLc">talk about semantics</a>.</p>
+<h2 id="lie-4-transpilers-don-t-have-backends">Lie #4: Transpilers Don’t have Backends</h2>
+<p>BabelJS has a <a rel="noopener nofollow noreferrer" target="_blank" href="https://babeljs.io/docs/babel-preset-env">list of “presets”</a> which target different versions of JavaScript and depending on which ones you choose, your frontend code will be transformed into different mixes of features.
+People might argue that when Babel is compiling its operations, it can do it piecemeal: that is, the compilation of <em>nullish coaleascing operators</em> has nothing to how classes are compiled.
+This is exactly what compiler frontends do as well: they transform a large surface area of syntax into a smaller language and lot of operations are simple <em>syntactic sugar</em> which can be represented using other, more foundational primitives in the language.</p>
+<p>Compilers like <code>rustc</code> do exactly this: by the time you get to the mid-level language (MIR), features like <code>if</code>-<code>let</code> have been compiled into <code>match</code> statements. In fact, <code>clippy</code>, a style suggestion tool for Rust, <em>implements this as source-to-source transformation</em>: if you have <a rel="noopener nofollow noreferrer" target="_blank" href="https://rust-lang.github.io/rust-clippy/master/index.html#/single_match">simple <code>match</code> statements in your program</a> in your program, Clippy will suggest a rewrite to you.</p>
+<h2 id="lie-5-transpilers-are-not-compilers">Lie #5: Transpilers are not Compilers</h2>
+<p>People seemed to scared of compilers and resort to claims like “I don’t want something as complex”, or “string interpolation is good enough”. This is silly. Anyone who has built one of these “transpilers” knows that inevitably, they get complex and poorly maintained precisely because of the delusion that they aren’t doing something complex.</p>
+<p>Programming languages are not just syntax, they have semantics too and pretending that you can get away with just manipulating the former is silly.</p>
+
+</div>
+
+
+    </div>
+  </section>
+
+<footer>
+  &copy;&nbsp;2021 Rachit Nigam &middot; Built using <a href="https://www.getzola.org/">Zola</a>
+</footer>
+</body>
+
+</html>

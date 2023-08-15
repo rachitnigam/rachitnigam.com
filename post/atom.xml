@@ -34,6 +34,112 @@ The Stateless Manager model is a particularly good way to practice this art.&lt;
         
     </entry>
     <entry xml:lang="en">
+        <title>Transpiler, a meaningless word</title>
+        <published>2023-07-15T00:00:00+00:00</published>
+        <updated>2023-07-15T00:00:00+00:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="https://rachit.pl/post/transpiler/" type="text/html"/>
+        <id>https://rachit.pl/post/transpiler/</id>
+        
+        <content type="html">&lt;p&gt;The word &lt;em&gt;transpiler&lt;&#x2F;em&gt; is often used by people when they want to say that built a tool that transforms programs between languages of
+&lt;em&gt;roughly the same level of abstraction&lt;&#x2F;em&gt;. This tool is different from a &lt;em&gt;compiler&lt;&#x2F;em&gt; which often has a complex frontend, an optimizing
+middle end, and code generators for various backends.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;lie-1-transpilers-don-t-have-frontends&quot;&gt;Lie #1: Transpilers Don’t have Frontends&lt;&#x2F;h2&gt;
+&lt;p&gt;Let’s look at a simple Python to C transpiler. It takes python code that looks like this:&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;py&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-py &quot;&gt;&lt;code class=&quot;language-py&quot; data-lang=&quot;py&quot;&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;def &lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fa1b3;&quot;&gt;fact&lt;&#x2F;span&gt;&lt;span&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;n&lt;&#x2F;span&gt;&lt;span&gt;):
+&lt;&#x2F;span&gt;&lt;span&gt;    x = &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;1
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;for &lt;&#x2F;span&gt;&lt;span&gt;i &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;in &lt;&#x2F;span&gt;&lt;span style=&quot;color:#96b5b4;&quot;&gt;range&lt;&#x2F;span&gt;&lt;span&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;1&lt;&#x2F;span&gt;&lt;span&gt;, n):
+&lt;&#x2F;span&gt;&lt;span&gt;        x *= i
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;return &lt;&#x2F;span&gt;&lt;span&gt;x
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Into some C code like this:&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;C&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-C &quot;&gt;&lt;code class=&quot;language-C&quot; data-lang=&quot;C&quot;&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;int &lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fa1b3;&quot;&gt;fact&lt;&#x2F;span&gt;&lt;span&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;int &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;n&lt;&#x2F;span&gt;&lt;span&gt;) {
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;int&lt;&#x2F;span&gt;&lt;span&gt; x = &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;0&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;for &lt;&#x2F;span&gt;&lt;span&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;int&lt;&#x2F;span&gt;&lt;span&gt; i = &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;1&lt;&#x2F;span&gt;&lt;span&gt;; i &amp;lt; n; i++) {
+&lt;&#x2F;span&gt;&lt;span&gt;        x *= i;
+&lt;&#x2F;span&gt;&lt;span&gt;    }
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;return&lt;&#x2F;span&gt;&lt;span&gt; x;
+&lt;&#x2F;span&gt;&lt;span&gt;}
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Wow, pretty simple! But of course, that piece of python is not very idiomatic. We can make it a bit more terse using list comprehensions:&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;py&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-py &quot;&gt;&lt;code class=&quot;language-py&quot; data-lang=&quot;py&quot;&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;import &lt;&#x2F;span&gt;&lt;span&gt;functools &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;as &lt;&#x2F;span&gt;&lt;span&gt;ft
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;def &lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fa1b3;&quot;&gt;fact&lt;&#x2F;span&gt;&lt;span&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;n&lt;&#x2F;span&gt;&lt;span&gt;):
+&lt;&#x2F;span&gt;&lt;span&gt;    lst = &lt;&#x2F;span&gt;&lt;span style=&quot;color:#96b5b4;&quot;&gt;range&lt;&#x2F;span&gt;&lt;span&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;1&lt;&#x2F;span&gt;&lt;span&gt;, n)
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;return &lt;&#x2F;span&gt;&lt;span&gt;ft.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;reduce&lt;&#x2F;span&gt;&lt;span&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;lambda &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;acc&lt;&#x2F;span&gt;&lt;span&gt;, &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;x&lt;&#x2F;span&gt;&lt;span&gt;: acc*x, )
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Now our “transpiler” is in a little bit of trouble.
+The &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;python&#x2F;cpython&#x2F;blob&#x2F;main&#x2F;Lib&#x2F;functools.py#L237&quot;&gt;implementation of &lt;code&gt;reduce&lt;&#x2F;code&gt;&lt;&#x2F;a&gt; is in pure Python so maybe we can still transpile it but &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;python&#x2F;cpython&#x2F;blob&#x2F;d66bc9e8a7a8d6774d912a4b9d151885c4d8de1d&#x2F;Objects&#x2F;rangeobject.c#L24&quot;&gt;&lt;code&gt;range&lt;&#x2F;code&gt; is implemented purely in C&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+&lt;p&gt;Looking into the implementation, what’s even clearer is that matching the &lt;em&gt;semantics of this program&lt;&#x2F;em&gt; is even harder:
+&lt;code&gt;range&lt;&#x2F;code&gt; is a Python generator which means that instead of actually computing the numbers from 1 to &lt;code&gt;n&lt;&#x2F;code&gt;, it only produces them when asked.
+This allows our method to save memory because we don’t actually have to allocate &lt;code&gt;n&lt;&#x2F;code&gt; words and can work using just the memory for the lazy
+implementation of the generator and the local variables.&lt;&#x2F;p&gt;
+&lt;p&gt;Another problem is that there are hundreds of built-in library functions that need to be compiled from Python from C.
+Even a moderately useful subset would be unwieldy to implement by hand in our simple “transpiler”.
+Maybe one strategy we can take is to build a some sort of tool that would simplify these hundreds of definitions into a more uniform representation
+to work with.&lt;&#x2F;p&gt;
+&lt;p&gt;We’ll call it the &lt;em&gt;transpiler-not-frontend&lt;&#x2F;em&gt; to make sure people understand we’re not building a compiler here.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;lie-2-transpilers-are-simple&quot;&gt;Lie #2: Transpilers are Simple&lt;&#x2F;h2&gt;
+&lt;p&gt;BabelJS is arguably one of the first “transpilers” that was developed so that people could experiment with JavaScript’s (ECMAScript’s to the pedantic)
+new language features that did not yet have browser implementations.
+For example, ES6 added support for generators (similar to those in Python) but a lot of browser frontends did not support them.
+Generators are pretty nice:&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;js&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-js &quot;&gt;&lt;code class=&quot;language-js&quot; data-lang=&quot;js&quot;&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;function *&lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fa1b3;&quot;&gt;range&lt;&#x2F;span&gt;&lt;span&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;max&lt;&#x2F;span&gt;&lt;span&gt;) {
+&lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;for &lt;&#x2F;span&gt;&lt;span&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;var &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;i &lt;&#x2F;span&gt;&lt;span&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;0&lt;&#x2F;span&gt;&lt;span&gt;; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;i &lt;&#x2F;span&gt;&lt;span&gt;&amp;lt; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;max&lt;&#x2F;span&gt;&lt;span&gt;; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;i &lt;&#x2F;span&gt;&lt;span&gt;+= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;1&lt;&#x2F;span&gt;&lt;span&gt;) {
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;yield &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;i&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;span&gt;  }
+&lt;&#x2F;span&gt;&lt;span&gt;}
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#65737e;&quot;&gt;&#x2F;&#x2F; Force the evaluation of the generator
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#ebcb8b;&quot;&gt;console&lt;&#x2F;span&gt;&lt;span&gt;.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#96b5b4;&quot;&gt;log&lt;&#x2F;span&gt;&lt;span&gt;([&lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;0&lt;&#x2F;span&gt;&lt;span&gt;, ...&lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fa1b3;&quot;&gt;range&lt;&#x2F;span&gt;&lt;span&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;10&lt;&#x2F;span&gt;&lt;span&gt;)])
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Facebook’s &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;http:&#x2F;&#x2F;facebook.github.io&#x2F;regenerator&#x2F;&quot;&gt;regenerator&lt;&#x2F;a&gt; is a BabelJS-based “transpiler” to transform generators into language constructs that already existed
+in JavaScript. Should be too hard, right?&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;js&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-js &quot;&gt;&lt;code class=&quot;language-js&quot; data-lang=&quot;js&quot;&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;var &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;_marked &lt;&#x2F;span&gt;&lt;span&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#65737e;&quot;&gt;&#x2F;*#__PURE__*&#x2F;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;regeneratorRuntime&lt;&#x2F;span&gt;&lt;span&gt;.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fa1b3;&quot;&gt;mark&lt;&#x2F;span&gt;&lt;span&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;range&lt;&#x2F;span&gt;&lt;span&gt;);
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;function &lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fa1b3;&quot;&gt;range&lt;&#x2F;span&gt;&lt;span&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;max&lt;&#x2F;span&gt;&lt;span&gt;) {
+&lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;var &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;i&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;return &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;regeneratorRuntime&lt;&#x2F;span&gt;&lt;span&gt;.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fa1b3;&quot;&gt;wrap&lt;&#x2F;span&gt;&lt;span&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;function &lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fa1b3;&quot;&gt;range$&lt;&#x2F;span&gt;&lt;span&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;_context&lt;&#x2F;span&gt;&lt;span&gt;) {
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;while &lt;&#x2F;span&gt;&lt;span&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;1&lt;&#x2F;span&gt;&lt;span&gt;) {
+&lt;&#x2F;span&gt;&lt;span&gt;      &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;switch &lt;&#x2F;span&gt;&lt;span&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;_context&lt;&#x2F;span&gt;&lt;span&gt;.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;prev &lt;&#x2F;span&gt;&lt;span&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;_context&lt;&#x2F;span&gt;&lt;span&gt;.next) {
+&lt;&#x2F;span&gt;&lt;span&gt;        &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;case &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;0&lt;&#x2F;span&gt;&lt;span&gt;:
+&lt;&#x2F;span&gt;&lt;span&gt;          &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;i &lt;&#x2F;span&gt;&lt;span&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;0&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;span&gt;        &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;case &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;1&lt;&#x2F;span&gt;&lt;span&gt;:
+&lt;&#x2F;span&gt;&lt;span&gt;          &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;if &lt;&#x2F;span&gt;&lt;span&gt;(!(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;i &lt;&#x2F;span&gt;&lt;span&gt;&amp;lt; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;max&lt;&#x2F;span&gt;&lt;span&gt;)) {
+&lt;&#x2F;span&gt;&lt;span&gt;            &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;_context&lt;&#x2F;span&gt;&lt;span&gt;.next = &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;7&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;span&gt;            &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;break&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;span&gt;          }
+&lt;&#x2F;span&gt;&lt;span&gt;          &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;_context&lt;&#x2F;span&gt;&lt;span&gt;.next = &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;4&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;span&gt;          &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;return &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;i&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;span&gt;        &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;case &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;4&lt;&#x2F;span&gt;&lt;span&gt;:
+&lt;&#x2F;span&gt;&lt;span&gt;          &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;i &lt;&#x2F;span&gt;&lt;span&gt;+= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;1&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;span&gt;          &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;_context&lt;&#x2F;span&gt;&lt;span&gt;.next = &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;1&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;span&gt;          &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;break&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;span&gt;        &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;case &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;7&lt;&#x2F;span&gt;&lt;span&gt;:
+&lt;&#x2F;span&gt;&lt;span&gt;        &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;case &lt;&#x2F;span&gt;&lt;span&gt;&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;end&lt;&#x2F;span&gt;&lt;span&gt;&amp;quot;:
+&lt;&#x2F;span&gt;&lt;span&gt;          &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;return &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;_context&lt;&#x2F;span&gt;&lt;span&gt;.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#96b5b4;&quot;&gt;stop&lt;&#x2F;span&gt;&lt;span&gt;();
+&lt;&#x2F;span&gt;&lt;span&gt;      }
+&lt;&#x2F;span&gt;&lt;span&gt;    }
+&lt;&#x2F;span&gt;&lt;span&gt;  }, &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;_marked&lt;&#x2F;span&gt;&lt;span&gt;);
+&lt;&#x2F;span&gt;&lt;span&gt;}
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#65737e;&quot;&gt;&#x2F;&#x2F; Force the evaluation of the generator
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#ebcb8b;&quot;&gt;console&lt;&#x2F;span&gt;&lt;span&gt;.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#96b5b4;&quot;&gt;log&lt;&#x2F;span&gt;&lt;span&gt;([&lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;0&lt;&#x2F;span&gt;&lt;span&gt;, ...&lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fa1b3;&quot;&gt;range&lt;&#x2F;span&gt;&lt;span&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;10&lt;&#x2F;span&gt;&lt;span&gt;)]);
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Yeah, guess what, it is. Implementing generators is a &lt;em&gt;whole-program transformation&lt;&#x2F;em&gt;: they fundamentally rely on the ability of the program to save its internal stack and pause the execution of the program. In fact, making it fast requires enough tricks that &lt;a href=&quot;&#x2F;files&#x2F;pubs&#x2F;stopify-pldi18.pdf&quot;&gt;we wrote a paper on it&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;lie-3-transpilers-target-the-same-level-of-abstraction&quot;&gt;Lie #3: Transpilers Target the Same Level of Abstraction&lt;&#x2F;h2&gt;
+&lt;p&gt;This is pretty much the same as (2) for me. Yeah, the input and output languages have the syntax of JavaScript but the fact that compiler &lt;em&gt;one feature&lt;&#x2F;em&gt; requires a whole program transformation gives away the fact that these are not the same languages.
+If we’re to get beyond the vagaries of syntax and &lt;em&gt;actually&lt;&#x2F;em&gt; talk about what the expressive power of languages is, we need to &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=43XaZEn2aLc&quot;&gt;talk about semantics&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;lie-4-transpilers-don-t-have-backends&quot;&gt;Lie #4: Transpilers Don’t have Backends&lt;&#x2F;h2&gt;
+&lt;p&gt;BabelJS has a &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;babeljs.io&#x2F;docs&#x2F;babel-preset-env&quot;&gt;list of “presets”&lt;&#x2F;a&gt; which target different versions of JavaScript and depending on which ones you choose, your frontend code will be transformed into different mixes of features.
+People might argue that when Babel is compiling its operations, it can do it piecemeal: that is, the compilation of &lt;em&gt;nullish coaleascing operators&lt;&#x2F;em&gt; has nothing to how classes are compiled.
+This is exactly what compiler frontends do as well: they transform a large surface area of syntax into a smaller language and lot of operations are simple &lt;em&gt;syntactic sugar&lt;&#x2F;em&gt; which can be represented using other, more foundational primitives in the language.&lt;&#x2F;p&gt;
+&lt;p&gt;Compilers like &lt;code&gt;rustc&lt;&#x2F;code&gt; do exactly this: by the time you get to the mid-level language (MIR), features like &lt;code&gt;if&lt;&#x2F;code&gt;-&lt;code&gt;let&lt;&#x2F;code&gt; have been compiled into &lt;code&gt;match&lt;&#x2F;code&gt; statements. In fact, &lt;code&gt;clippy&lt;&#x2F;code&gt;, a style suggestion tool for Rust, &lt;em&gt;implements this as source-to-source transformation&lt;&#x2F;em&gt;: if you have &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;rust-lang.github.io&#x2F;rust-clippy&#x2F;master&#x2F;index.html#&#x2F;single_match&quot;&gt;simple &lt;code&gt;match&lt;&#x2F;code&gt; statements in your program&lt;&#x2F;a&gt; in your program, Clippy will suggest a rewrite to you.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;lie-5-transpilers-are-not-compilers&quot;&gt;Lie #5: Transpilers are not Compilers&lt;&#x2F;h2&gt;
+&lt;p&gt;People seemed to scared of compilers and resort to claims like “I don’t want something as complex”, or “string interpolation is good enough”. This is silly. Anyone who has built one of these “transpilers” knows that inevitably, they get complex and poorly maintained precisely because of the delusion that they aren’t doing something complex.&lt;&#x2F;p&gt;
+&lt;p&gt;Programming languages are not just syntax, they have semantics too and pretending that you can get away with just manipulating the former is silly.&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
         <title>Why Study Programming Languages</title>
         <published>2022-09-19T00:00:00+00:00</published>
         <updated>2022-09-19T00:00:00+00:00</updated>
@@ -510,12 +616,12 @@ techniques for accelerator design co-located with ASPLOS.&lt;&#x2F;p&gt;
 &lt;p&gt;New, higher-level programming models are the key to the ubiquitous use of FPGA-based accelerators. Beyond ridding developers from low-level abstractions, such programming models also enable novel solutions to classic problems such hardware verification and automatic optimization.&lt;&#x2F;p&gt;
 &lt;h2 id=&quot;high-level-programming-models&quot;&gt;High-Level Programming Models&lt;&#x2F;h2&gt;
 &lt;p&gt;The obvious benefit of higher-level programming models is the ability to specify hardware without dwelling on low-level details. For example, using high-level synthesis (HLS) compilers, programmers can compile C++ programs into hardware designs. The aforementioned matrix multiplier can be implemented in a few lines of code:&lt;&#x2F;p&gt;
-&lt;pre data-lang=&quot;C&quot; class=&quot;language-C &quot;&gt;&lt;code class=&quot;language-C&quot; data-lang=&quot;C&quot;&gt;for (int i = 0; i &amp;lt; N; i++)
-  for (int j = 0; i &amp;lt; N; i++)
-    for (int k = 0; i &amp;lt; N; i++)
-      #pragma HLS UNROLL factor=5
-      C[i][j] = A[i][k] * B[k][j];
-&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;pre data-lang=&quot;C&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-C &quot;&gt;&lt;code class=&quot;language-C&quot; data-lang=&quot;C&quot;&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;for &lt;&#x2F;span&gt;&lt;span&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;int&lt;&#x2F;span&gt;&lt;span&gt; i = &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;0&lt;&#x2F;span&gt;&lt;span&gt;; i &amp;lt; N; i++)
+&lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;for &lt;&#x2F;span&gt;&lt;span&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;int&lt;&#x2F;span&gt;&lt;span&gt; j = &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;0&lt;&#x2F;span&gt;&lt;span&gt;; i &amp;lt; N; i++)
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;for &lt;&#x2F;span&gt;&lt;span&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;int&lt;&#x2F;span&gt;&lt;span&gt; k = &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;0&lt;&#x2F;span&gt;&lt;span&gt;; i &amp;lt; N; i++)
+&lt;&#x2F;span&gt;&lt;span&gt;      &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;#pragma&lt;&#x2F;span&gt;&lt;span&gt; HLS UNROLL factor=5
+&lt;&#x2F;span&gt;&lt;span&gt;      C[i][j] = A[i][k] * B[k][j];
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
 &lt;p&gt;The challenge in such programming models, however, is exploiting the available hardware parallelism. For example, To express DOALL parallelism programmers can use the &lt;code&gt;UNROLL&lt;&#x2F;code&gt; pragma to duplicate the loop body and perform five computations at the same time.&lt;&#x2F;p&gt;
 &lt;p&gt;However, loop unrolling demonstrates the key difference between a C++ program meant to run on processors and ones used to generate hardware. Processors take advantage of unrolled loops through their superscalar design and complex memory hierarchies that can service multiple requests every cycle. In contrast, unrolling a loop in an accelerator design instantiates five &lt;em&gt;physical&lt;&#x2F;em&gt; multipliers in the final design which are connected to primitive memories that can only serve a single read or write request every cycle. This means that without careful manual organization of memories, the additional multipliers would stall most cycles waiting on read and write requests.&lt;&#x2F;p&gt;
 &lt;p&gt;The challenge here is the need to connect the high-level abstractions to the fundamentally &lt;em&gt;physical&lt;&#x2F;em&gt; nature of hardware designs. This balance is precarious: expose too much information and we’re back to the abstraction level of hardware description languages; too little, and the programming model will unpredictably generate poor hardware designs without providing programmers any useful feedback.&lt;&#x2F;p&gt;
@@ -523,23 +629,23 @@ techniques for accelerator design co-located with ASPLOS.&lt;&#x2F;p&gt;
 &lt;h2 id=&quot;automatically-optimizing-accelerators&quot;&gt;Automatically Optimizing Accelerators&lt;&#x2F;h2&gt;
 &lt;p&gt;The vast majority of optimization, analysis, and verification of hardware accelerators occurs at the level of hardware description languages (HDLs). High-level programming models, in addition to improving programmer productivity, can enable novel and scalable solutions to these problems.&lt;&#x2F;p&gt;
 &lt;p&gt;A key property of HDLs is that, by default, everything executes in parallel. In order to encode control flow, programs must implement their own state machines that activate the right set of actions to execute every cycle. Pseudocode for this pattern demonstrates how gnarly it can get:&lt;&#x2F;p&gt;
-&lt;pre&gt;&lt;code&gt;x = (state == 0) ? 1
-  : (state == 1) ? x + 1
-  : 0;
-
-state = (state == 0) ? 1
-      : (state == 1 &amp;amp;&amp;amp; x &amp;lt; 10) ? 0
-      : (state == 1 &amp;amp;&amp;amp; !(x &amp;lt; 10)) ? 2;
-
-y = (state == 2) ? 1 : 0;
-&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;pre style=&quot;background-color:#2b303b;color:#c0c5ce;&quot;&gt;&lt;code&gt;&lt;span&gt;x = (state == 0) ? 1
+&lt;&#x2F;span&gt;&lt;span&gt;  : (state == 1) ? x + 1
+&lt;&#x2F;span&gt;&lt;span&gt;  : 0;
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;state = (state == 0) ? 1
+&lt;&#x2F;span&gt;&lt;span&gt;      : (state == 1 &amp;amp;&amp;amp; x &amp;lt; 10) ? 0
+&lt;&#x2F;span&gt;&lt;span&gt;      : (state == 1 &amp;amp;&amp;amp; !(x &amp;lt; 10)) ? 2;
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;y = (state == 2) ? 1 : 0;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
 &lt;p&gt;The input program, which uses control flow constructs, demonstrates the actual intent:&lt;&#x2F;p&gt;
-&lt;pre&gt;&lt;code&gt;x = 1;
-while (x &amp;lt; 10) {
-  x = x + 1;
-}
-y = 1;
-&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;pre style=&quot;background-color:#2b303b;color:#c0c5ce;&quot;&gt;&lt;code&gt;&lt;span&gt;x = 1;
+&lt;&#x2F;span&gt;&lt;span&gt;while (x &amp;lt; 10) {
+&lt;&#x2F;span&gt;&lt;span&gt;  x = x + 1;
+&lt;&#x2F;span&gt;&lt;span&gt;}
+&lt;&#x2F;span&gt;&lt;span&gt;y = 1;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
 &lt;p&gt;Not only is the latter program easier to write down, but it also reveals useful facts about the program. For example, the variable &lt;code&gt;x&lt;&#x2F;code&gt; is never used after the loop i.e., it is no longer &lt;em&gt;live&lt;&#x2F;em&gt;. Optimizing compilers, both for software and hardware, can use this fact to reuse the registers that store &lt;code&gt;x&lt;&#x2F;code&gt;. However, yet again, software optimizations don’t precisely capture the nature of hardware designs. In a software program, sharing registers is almost always a good idea, limited only by the compiler’s knowledge of aliasing. On the other hand, sharing registers in accelerators requires instantiating &lt;em&gt;multiplexers&lt;&#x2F;em&gt; which control the input and output signals from the register. The choice of trading off registers for multiplexers is target-dependent: registers are cheap on FPGAs but costly on silicon-based accelerators while multiplexers are the opposite. Attempting to port software optimizations without knowledge of hardware is futile.&lt;&#x2F;p&gt;
 &lt;p&gt;Language-based abstractions can capture such trade-offs.
 For example, &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;cucapra&#x2F;calyx&quot;&gt;Calyx&lt;&#x2F;a&gt; (my work), proposes a new intermediate language for building
