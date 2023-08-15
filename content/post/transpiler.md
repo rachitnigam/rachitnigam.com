@@ -105,20 +105,20 @@ function range(max) {
 console.log([0, ...range(10)]);
 ```
 
-Yeah, guess what, it is. Implementing generators is a *whole-program transformation*: they fundamentally rely on the ability of the program to save its internal stack and pause the execution of the program. In fact, making it fast requires enough tricks that [we wrote a paper on it][stopify].
+Yeah, guess what, it is. Implementing generators is a *whole-program transformation*: they fundamentally rely on the ability of the program to save its internal stack and pause its execution. In fact, making it fast requires enough tricks that [we wrote a paper on it][stopify].
 
 ## Lie #3: Transpilers Target the Same Level of Abstraction
 
-This is pretty much the same as (2) for me. Yeah, the input and output languages have the syntax of JavaScript but the fact that compiler *one feature* requires a whole program transformation gives away the fact that these are not the same languages.
+This is pretty much the same as (2). Yeah, the input and output languages have the syntax of JavaScript but the fact that compiling *one feature* requires a whole program transformation gives away the fact that these are not *the same language*.
 If we're to get beyond the vagaries of syntax and *actually* talk about what the expressive power of languages is, we need to [talk about semantics][pwl-ep].
 
 ## Lie #4: Transpilers Don't have Backends
 
-BabelJS has a [list of "presets"][babel-presets] which target different versions of JavaScript and depending on which ones you choose, your frontend code will be transformed into different mixes of features.
-People might argue that when Babel is compiling its operations, it can do it piecemeal: that is, the compilation of *nullish coaleascing operators* has nothing to how classes are compiled.
-This is exactly what compiler frontends do as well: they transform a large surface area of syntax into a smaller language and lot of operations are simple *syntactic sugar* which can be represented using other, more foundational primitives in the language.
+BabelJS has a [list of "presets"][babel-presets] which target different versions of JavaScript.
+This is not very different from LLVM having multiple different backends.{% footnote() %} If you're going to argue that the backends all compile to the same language, see (3). {% end %} People might argue that when Babel is compiling its operations, it can do it piecemeal: that is, the compilation of [nullish coaleascing operators][js-nullish] has nothing to how classes are compiled.
 
-Compilers like `rustc` do exactly this: by the time you get to the mid-level language (MIR), features like `if`-`let` have been compiled into `match` statements. In fact, `clippy`, a style suggestion tool for Rust, *implements this as source-to-source transformation*: if you have [simple `match` statements in your program][single-match] in your program, Clippy will suggest a rewrite to you.
+This is exactly what compiler frontends do as well: they transform a large surface area of syntax into a smaller language and a lot of operations are simple *syntactic sugar* which can be represented using other, more foundational primitives in the language.
+For example, in the Rust compiler, the mid-level representation (MIR) does away with features like `if`-`let` by compiling them into `match` statements. In fact, `clippy`, a style suggestion tool for Rust, *implements this as source-to-source transformation*: if you have [simple `match` statements in your program][single-match] in your program, Clippy will suggest a rewrite to you.
 
 ## Lie #5: Transpilers are not Compilers
 
@@ -136,3 +136,4 @@ _Have comments? [Email](mailto:rachit.nigam12@gmail.com) or [tweet](https://twit
 [stopify]: /files/pubs/stopify-pldi18.pdf
 [pwl-ep]: https://www.youtube.com/watch?v=43XaZEn2aLc
 [single-match]: https://rust-lang.github.io/rust-clippy/master/index.html#/single_match
+[js-nullish]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Nullish_coalescing_assignment
