@@ -61,7 +61,7 @@ It is [not hard](https://github.com/topics/transpiler) to find examples of thing
 
 ## Lie #2: Transpilers are Simple
 
-BabelJS is arguably one of the first "transpilers" that was developed so that people could experiment with JavaScript's new language features that did not yet have browser implementations.{% footnote() %} Technically, ECMAScript features.{% end %}
+BabelJS is arguably one of the first "transpilers" that was developed so that people could experiment with JavaScript's new language features that did not yet have browser implementations.{% footnote() %} Technically, ECMAScript features. {% end %}
 For example, ES6 added support for generators (similar to those in Python) but a lot of browser frontends did not support them.
 Generators are pretty nice:
 ```js
@@ -128,7 +128,6 @@ People seemed to scared of compilers and resort to claims like "I don't want som
 
 Programming languages are not just syntax, they have semantics too and pretending that you can get away with just manipulating the former is silly.
 
-Edit: This post generated some discussion on [Lobsters][] but because I am not a member, I am going to rebut some claims right here.
 
 ## Lie #6: *Compilers* only Target Machine Code
 
@@ -136,6 +135,7 @@ This one is interesting because instead of defining the characteristics of a "tr
 Unfortunately, this one too is wrong. The term is widely used in many contexts where we are not generating assembly code and instead generating bytecode for some sort of virtual machine.
 For example, the JVM has an ahead-of-time compiler from Java source code to the JVM bytecode and another just-in-time compiler to native instructions. These kinds of multi-tier compilation schemes are extremely common in dynamic languages like JavaScript as well.
 
+*Edit (08/16/23): This post generated some discussion on [Lobsters][] but because I am not a member, so I've rebutted some claims right here.*
 
 _Have comments? [Email](mailto:rachit.nigam12@gmail.com) or [tweet](https://twitter.com/notypes) at me._
 
