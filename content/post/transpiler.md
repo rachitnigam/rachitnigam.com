@@ -26,7 +26,7 @@ return x
 Into some C code like this:
 ```C
 int fact(int n) {
-    int x = 0;
+    int x = 1;
     for (int i = 1; i < n; i++) {
         x *= i;
     }
