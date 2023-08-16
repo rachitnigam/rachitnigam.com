@@ -126,7 +126,7 @@ For example, in the Rust compiler, the mid-level representation (MIR) does away 
 
 Compilers already do things that "transpilers" are supposed to do. And they do it better because they are built on the foundation of language semantics instead of syntactic manipulation.
 
-## Lie #5: *Compilers* only Target Machine Code
+## Lie #5: Compilers only Target Machine Code
 
 This one is interesting because instead of defining the characteristics of a "transpiler", it focuses on *restricting* the definition of a compiler.
 Unfortunately, this one too is wrong. The term is widely used in many contexts where we are not generating assembly code and instead generating bytecode for some sort of virtual machine.
