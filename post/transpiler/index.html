@@ -39,13 +39,14 @@
 <div class="date">
 PhD Student fights the good fight
 </div>
-<p class="date">July 15, 2023</p>
+<p class="date">August 15, 2023</p>
 </div>
 
 <div class="post">
 <p>The word <em>transpiler</em> is often used by people when they want to say that built a tool that transforms programs between languages of
-<em>roughly the same level of abstraction</em>. This tool is different from a <em>compiler</em> which often has a complex frontend, an optimizing
-middle end, and code generators for various backends.</p>
+<em>roughly the same level of abstraction</em>.
+This tool is different from a <em>compiler</em> which often has a complex frontend, an optimizing middle end, and code generators for various backends.
+The arguments around this are mostly from vibes; let take a look at some of them.</p>
 <h2 id="lie-1-transpilers-don-t-have-frontends">Lie #1: Transpilers Don’t have Frontends</h2>
 <p>Let’s look at a simple Python to C transpiler. It takes python code that looks like this:</p>
 <pre data-lang="py" style="background-color:#2b303b;color:#c0c5ce;" class="language-py "><code class="language-py" data-lang="py"><span style="color:#b48ead;">def </span><span style="color:#8fa1b3;">fact</span><span>(</span><span style="color:#bf616a;">n</span><span>):
@@ -134,9 +135,9 @@ in JavaScript. Should be too hard, right?</p>
 </span><span style="color:#65737e;">// Force the evaluation of the generator
 </span><span style="color:#ebcb8b;">console</span><span>.</span><span style="color:#96b5b4;">log</span><span>([</span><span style="color:#d08770;">0</span><span>, ...</span><span style="color:#8fa1b3;">range</span><span>(</span><span style="color:#d08770;">10</span><span>)]);
 </span></code></pre>
-<p>Yeah, guess what, it is. Implementing generators is a <em>whole-program transformation</em>: they fundamentally rely on the ability of the program to save its internal stack and pause its execution. In fact, making it fast requires enough tricks that <a href="/files/pubs/stopify-pldi18.pdf">we wrote a paper on it</a>.</p>
+<p>Guess what, it is. Implementing generators is a <em>whole-program transformation</em>: they fundamentally rely on the ability of the program to save its internal stack and pause its execution. In fact, making it fast requires enough tricks that <a href="/files/pubs/stopify-pldi18.pdf">we wrote a paper on it</a>.</p>
 <h2 id="lie-3-transpilers-target-the-same-level-of-abstraction">Lie #3: Transpilers Target the Same Level of Abstraction</h2>
-<p>This is pretty much the same as (2). Yeah, the input and output languages have the syntax of JavaScript but the fact that compiling <em>one feature</em> requires a whole program transformation gives away the fact that these are not <em>the same language</em>.
+<p>This is pretty much the same as (2). The input and output languages have the syntax of JavaScript but the fact that compiling <em>one feature</em> requires a whole program transformation gives away the fact that these are not <em>the same language</em>.
 If we’re to get beyond the vagaries of syntax and <em>actually</em> talk about what the expressive power of languages is, we need to <a rel="noopener nofollow noreferrer" target="_blank" href="https://www.youtube.com/watch?v=43XaZEn2aLc">talk about semantics</a>.</p>
 <h2 id="lie-4-transpilers-don-t-have-backends">Lie #4: Transpilers Don’t have Backends</h2>
 <p>BabelJS has a <a rel="noopener nofollow noreferrer" target="_blank" href="https://babeljs.io/docs/babel-preset-env">list of “presets”</a> which target different versions of JavaScript.
@@ -157,6 +158,11 @@ For example, in the Rust compiler, the mid-level representation (MIR) does away 
 <h2 id="lie-5-transpilers-are-not-compilers">Lie #5: Transpilers are not Compilers</h2>
 <p>People seemed to scared of compilers and resort to claims like “I don’t want something as complex”, or “string interpolation is good enough”. This is silly. Anyone who has built one of these “transpilers” knows that inevitably, they get complex and poorly maintained precisely because of the delusion that they aren’t doing something complex.</p>
 <p>Programming languages are not just syntax, they have semantics too and pretending that you can get away with just manipulating the former is silly.</p>
+<p>Edit: This post generated some discussion on <a rel="noopener nofollow noreferrer" target="_blank" href="https://lobste.rs/s/id9jet/transpiler_meaningless_word">Lobsters</a> but because I am not a member, I am going to rebut some claims right here.</p>
+<h2 id="lie-6-compilers-only-target-machine-code">Lie #6: <em>Compilers</em> only Target Machine Code</h2>
+<p>This one is interesting because instead of defining the characteristics of a “transpiler”, it focuses on <em>restricting</em> the definition of a compiler.
+Unfortunately, this one too is wrong. The term is widely used in many contexts where we are not generating assembly code and instead generating bytecode for some sort of virtual machine.
+For example, the JVM has an ahead-of-time compiler from Java source code to the JVM bytecode and another just-in-time compiler to native instructions. These kinds of multi-tier compilation schemes are extremely common in dynamic languages like JavaScript as well.</p>
 <p><em>Have comments? <a href="mailto:rachit.nigam12@gmail.com">Email</a> or <a rel="noopener nofollow noreferrer" target="_blank" href="https://twitter.com/notypes">tweet</a> at me.</em></p>
 
 </div>

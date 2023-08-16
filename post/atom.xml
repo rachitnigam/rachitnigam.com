@@ -4,40 +4,12 @@
     <link href="https://rachit.pl/post/atom.xml" rel="self" type="application/atom+xml"/>
     <link href="https://rachit.pl/post/"/>
     <generator uri="https://www.getzola.org/">Zola</generator>
-    <updated>2023-07-15T00:00:00+00:00</updated>
+    <updated>2023-08-15T00:00:00+00:00</updated>
     <id>https://rachit.pl/post/atom.xml</id>
     <entry xml:lang="en">
-        <title>The Stateless Manager</title>
-        <published>2023-07-15T00:00:00+00:00</published>
-        <updated>2023-07-15T00:00:00+00:00</updated>
-        <author>
-          <name>Unknown</name>
-        </author>
-        <link rel="alternate" href="https://rachit.pl/post/stateless-advisor/" type="text/html"/>
-        <id>https://rachit.pl/post/stateless-advisor/</id>
-        
-        <content type="html">&lt;p&gt;I find myself repeating the following advice to my mentees: Assume your manager (advisor) remembers nothing about your previous meeting. Start from the top and build back the &lt;em&gt;context&lt;&#x2F;em&gt; of your discussion before you dive into technical details.&lt;&#x2F;p&gt;
-&lt;p&gt;I have dubbed this the “stateless manager model” after functional programming paradigms where the program uses no state and instead acts only upon the inputs provided to it.
-There’s a couple of reasons why this advice makes sense:&lt;&#x2F;p&gt;
-&lt;ul&gt;
-&lt;li&gt;Your manager&#x2F;advisor probably has dozens of technical meetings in a week and a million other things they are working on. It is quite hard for them to remember all the details of your previous conversation.&lt;&#x2F;li&gt;
-&lt;li&gt;Even &lt;em&gt;if&lt;&#x2F;em&gt; they remembered what the details were, you could’ve come up with a new way to think about the problem and building context from the ground up will reveal those to your manager.&lt;&#x2F;li&gt;
-&lt;&#x2F;ul&gt;
-&lt;p&gt;The latter skill is quite important for junior developers and researchers.
-The ability to effectively and concisely articulate &lt;em&gt;what the problem is&lt;&#x2F;em&gt; is just as important, if not more important, than what the solution is.
-In fact, a great many researchers are famous not for their ability to come up with a solution but their ability to articulate problems.
-The Stateless Manager model is a particularly good way to practice this art.&lt;&#x2F;p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Disclaimer: This post is not a subtweet of my current or past advisors, all of whom are blessed far better memory than me. The point of the post is that &lt;em&gt;even if&lt;&#x2F;em&gt; your manager remembers each conversation exactly, this is &lt;em&gt;still&lt;&#x2F;em&gt; a good way to structure your approach to meetings.&lt;&#x2F;p&gt;
-&lt;&#x2F;blockquote&gt;
-&lt;p&gt;&lt;em&gt;Have comments? &lt;a href=&quot;mailto:rachit.nigam12@gmail.com&quot;&gt;Email&lt;&#x2F;a&gt; or &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;twitter.com&#x2F;notypes&quot;&gt;tweet&lt;&#x2F;a&gt; at me.&lt;&#x2F;em&gt;&lt;&#x2F;p&gt;
-</content>
-        
-    </entry>
-    <entry xml:lang="en">
         <title>Transpiler, a meaningless word</title>
-        <published>2023-07-15T00:00:00+00:00</published>
-        <updated>2023-07-15T00:00:00+00:00</updated>
+        <published>2023-08-15T00:00:00+00:00</published>
+        <updated>2023-08-15T00:00:00+00:00</updated>
         <author>
           <name>Unknown</name>
         </author>
@@ -45,8 +17,9 @@ The Stateless Manager model is a particularly good way to practice this art.&lt;
         <id>https://rachit.pl/post/transpiler/</id>
         
         <content type="html">&lt;p&gt;The word &lt;em&gt;transpiler&lt;&#x2F;em&gt; is often used by people when they want to say that built a tool that transforms programs between languages of
-&lt;em&gt;roughly the same level of abstraction&lt;&#x2F;em&gt;. This tool is different from a &lt;em&gt;compiler&lt;&#x2F;em&gt; which often has a complex frontend, an optimizing
-middle end, and code generators for various backends.&lt;&#x2F;p&gt;
+&lt;em&gt;roughly the same level of abstraction&lt;&#x2F;em&gt;.
+This tool is different from a &lt;em&gt;compiler&lt;&#x2F;em&gt; which often has a complex frontend, an optimizing middle end, and code generators for various backends.
+The arguments around this are mostly from vibes; let take a look at some of them.&lt;&#x2F;p&gt;
 &lt;h2 id=&quot;lie-1-transpilers-don-t-have-frontends&quot;&gt;Lie #1: Transpilers Don’t have Frontends&lt;&#x2F;h2&gt;
 &lt;p&gt;Let’s look at a simple Python to C transpiler. It takes python code that looks like this:&lt;&#x2F;p&gt;
 &lt;pre data-lang=&quot;py&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-py &quot;&gt;&lt;code class=&quot;language-py&quot; data-lang=&quot;py&quot;&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;def &lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fa1b3;&quot;&gt;fact&lt;&#x2F;span&gt;&lt;span&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;n&lt;&#x2F;span&gt;&lt;span&gt;):
@@ -136,9 +109,9 @@ in JavaScript. Should be too hard, right?&lt;&#x2F;p&gt;
 &lt;&#x2F;span&gt;&lt;span style=&quot;color:#65737e;&quot;&gt;&#x2F;&#x2F; Force the evaluation of the generator
 &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ebcb8b;&quot;&gt;console&lt;&#x2F;span&gt;&lt;span&gt;.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#96b5b4;&quot;&gt;log&lt;&#x2F;span&gt;&lt;span&gt;([&lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;0&lt;&#x2F;span&gt;&lt;span&gt;, ...&lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fa1b3;&quot;&gt;range&lt;&#x2F;span&gt;&lt;span&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;10&lt;&#x2F;span&gt;&lt;span&gt;)]);
 &lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
-&lt;p&gt;Yeah, guess what, it is. Implementing generators is a &lt;em&gt;whole-program transformation&lt;&#x2F;em&gt;: they fundamentally rely on the ability of the program to save its internal stack and pause its execution. In fact, making it fast requires enough tricks that &lt;a href=&quot;&#x2F;files&#x2F;pubs&#x2F;stopify-pldi18.pdf&quot;&gt;we wrote a paper on it&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+&lt;p&gt;Guess what, it is. Implementing generators is a &lt;em&gt;whole-program transformation&lt;&#x2F;em&gt;: they fundamentally rely on the ability of the program to save its internal stack and pause its execution. In fact, making it fast requires enough tricks that &lt;a href=&quot;&#x2F;files&#x2F;pubs&#x2F;stopify-pldi18.pdf&quot;&gt;we wrote a paper on it&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
 &lt;h2 id=&quot;lie-3-transpilers-target-the-same-level-of-abstraction&quot;&gt;Lie #3: Transpilers Target the Same Level of Abstraction&lt;&#x2F;h2&gt;
-&lt;p&gt;This is pretty much the same as (2). Yeah, the input and output languages have the syntax of JavaScript but the fact that compiling &lt;em&gt;one feature&lt;&#x2F;em&gt; requires a whole program transformation gives away the fact that these are not &lt;em&gt;the same language&lt;&#x2F;em&gt;.
+&lt;p&gt;This is pretty much the same as (2). The input and output languages have the syntax of JavaScript but the fact that compiling &lt;em&gt;one feature&lt;&#x2F;em&gt; requires a whole program transformation gives away the fact that these are not &lt;em&gt;the same language&lt;&#x2F;em&gt;.
 If we’re to get beyond the vagaries of syntax and &lt;em&gt;actually&lt;&#x2F;em&gt; talk about what the expressive power of languages is, we need to &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=43XaZEn2aLc&quot;&gt;talk about semantics&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
 &lt;h2 id=&quot;lie-4-transpilers-don-t-have-backends&quot;&gt;Lie #4: Transpilers Don’t have Backends&lt;&#x2F;h2&gt;
 &lt;p&gt;BabelJS has a &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;babeljs.io&#x2F;docs&#x2F;babel-preset-env&quot;&gt;list of “presets”&lt;&#x2F;a&gt; which target different versions of JavaScript.
@@ -159,6 +132,39 @@ For example, in the Rust compiler, the mid-level representation (MIR) does away 
 &lt;h2 id=&quot;lie-5-transpilers-are-not-compilers&quot;&gt;Lie #5: Transpilers are not Compilers&lt;&#x2F;h2&gt;
 &lt;p&gt;People seemed to scared of compilers and resort to claims like “I don’t want something as complex”, or “string interpolation is good enough”. This is silly. Anyone who has built one of these “transpilers” knows that inevitably, they get complex and poorly maintained precisely because of the delusion that they aren’t doing something complex.&lt;&#x2F;p&gt;
 &lt;p&gt;Programming languages are not just syntax, they have semantics too and pretending that you can get away with just manipulating the former is silly.&lt;&#x2F;p&gt;
+&lt;p&gt;Edit: This post generated some discussion on &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;lobste.rs&#x2F;s&#x2F;id9jet&#x2F;transpiler_meaningless_word&quot;&gt;Lobsters&lt;&#x2F;a&gt; but because I am not a member, I am going to rebut some claims right here.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;lie-6-compilers-only-target-machine-code&quot;&gt;Lie #6: &lt;em&gt;Compilers&lt;&#x2F;em&gt; only Target Machine Code&lt;&#x2F;h2&gt;
+&lt;p&gt;This one is interesting because instead of defining the characteristics of a “transpiler”, it focuses on &lt;em&gt;restricting&lt;&#x2F;em&gt; the definition of a compiler.
+Unfortunately, this one too is wrong. The term is widely used in many contexts where we are not generating assembly code and instead generating bytecode for some sort of virtual machine.
+For example, the JVM has an ahead-of-time compiler from Java source code to the JVM bytecode and another just-in-time compiler to native instructions. These kinds of multi-tier compilation schemes are extremely common in dynamic languages like JavaScript as well.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;em&gt;Have comments? &lt;a href=&quot;mailto:rachit.nigam12@gmail.com&quot;&gt;Email&lt;&#x2F;a&gt; or &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;twitter.com&#x2F;notypes&quot;&gt;tweet&lt;&#x2F;a&gt; at me.&lt;&#x2F;em&gt;&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>The Stateless Manager</title>
+        <published>2023-07-15T00:00:00+00:00</published>
+        <updated>2023-07-15T00:00:00+00:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="https://rachit.pl/post/stateless-advisor/" type="text/html"/>
+        <id>https://rachit.pl/post/stateless-advisor/</id>
+        
+        <content type="html">&lt;p&gt;I find myself repeating the following advice to my mentees: Assume your manager (advisor) remembers nothing about your previous meeting. Start from the top and build back the &lt;em&gt;context&lt;&#x2F;em&gt; of your discussion before you dive into technical details.&lt;&#x2F;p&gt;
+&lt;p&gt;I have dubbed this the “stateless manager model” after functional programming paradigms where the program uses no state and instead acts only upon the inputs provided to it.
+There’s a couple of reasons why this advice makes sense:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Your manager&#x2F;advisor probably has dozens of technical meetings in a week and a million other things they are working on. It is quite hard for them to remember all the details of your previous conversation.&lt;&#x2F;li&gt;
+&lt;li&gt;Even &lt;em&gt;if&lt;&#x2F;em&gt; they remembered what the details were, you could’ve come up with a new way to think about the problem and building context from the ground up will reveal those to your manager.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;The latter skill is quite important for junior developers and researchers.
+The ability to effectively and concisely articulate &lt;em&gt;what the problem is&lt;&#x2F;em&gt; is just as important, if not more important, than what the solution is.
+In fact, a great many researchers are famous not for their ability to come up with a solution but their ability to articulate problems.
+The Stateless Manager model is a particularly good way to practice this art.&lt;&#x2F;p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Disclaimer: This post is not a subtweet of my current or past advisors, all of whom are blessed far better memory than me. The point of the post is that &lt;em&gt;even if&lt;&#x2F;em&gt; your manager remembers each conversation exactly, this is &lt;em&gt;still&lt;&#x2F;em&gt; a good way to structure your approach to meetings.&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
 &lt;p&gt;&lt;em&gt;Have comments? &lt;a href=&quot;mailto:rachit.nigam12@gmail.com&quot;&gt;Email&lt;&#x2F;a&gt; or &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;twitter.com&#x2F;notypes&quot;&gt;tweet&lt;&#x2F;a&gt; at me.&lt;&#x2F;em&gt;&lt;&#x2F;p&gt;
 </content>
         
