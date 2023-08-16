@@ -14,7 +14,7 @@ The arguments around this are mostly from vibes; let take a look at some of them
 
 ## Lie #1: Transpilers Don't have Frontends
 
-Let's look at a simple Python to C transpiler. It takes python code that looks like this:
+Let's look at a simple Python to C transpiler.{% footnote() %} Both [Nuitka](https://github.com/Nuitka/Nuitka) and [Mojo](https://docs.modular.com/mojo/) both actually target this exact problem but sanely call themselves compilers.{% end %} It takes python code that looks like this:
 ```py
 def fact(n):
     x = 1
@@ -55,12 +55,13 @@ Even a moderately useful subset would be unwieldy to implement by hand in our si
 Maybe one strategy we can take is to build a some sort of tool that would simplify these hundreds of definitions into a more uniform representation
 to work with.
 
-We'll call it the *transpiler-not-frontend* to make sure people understand we're not building a compiler here.
+We'll call it the *transpiler-not-frontend* to make sure people understand we're not building a compiler here.{% footnote() %}
+It is [not hard](https://github.com/topics/transpiler) to find examples of things mislabelled as transpilers. However, I won't name any specific projects because besides this is just a dumb diatribe about words, I actually think the projects themselves are cool.
+{% end %}
 
 ## Lie #2: Transpilers are Simple
 
-BabelJS is arguably one of the first "transpilers" that was developed so that people could experiment with JavaScript's{% footnote() %} ECMAScript's if you're pedantic like me. {% end %}
-new language features that did not yet have browser implementations.
+BabelJS is arguably one of the first "transpilers" that was developed so that people could experiment with JavaScript's new language features that did not yet have browser implementations.{% footnote() %} Technically, ECMAScript features.{% end %}
 For example, ES6 added support for generators (similar to those in Python) but a lot of browser frontends did not support them.
 Generators are pretty nice:
 ```js
@@ -148,3 +149,5 @@ _Have comments? [Email](mailto:rachit.nigam12@gmail.com) or [tweet](https://twit
 [single-match]: https://rust-lang.github.io/rust-clippy/master/index.html#/single_match
 [js-nullish]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Nullish_coalescing_assignment
 [lobsters]: https://lobste.rs/s/id9jet/transpiler_meaningless_word
+[Nuitka]: https://github.com/Nuitka/Nuitka
+[Mojo]: https://docs.modular.com/mojo/
