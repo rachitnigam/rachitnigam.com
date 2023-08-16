@@ -48,7 +48,18 @@ PhD Student fights the good fight
 This tool is different from a <em>compiler</em> which often has a complex frontend, an optimizing middle end, and code generators for various backends.
 The arguments around this are mostly from vibes; let take a look at some of them.</p>
 <h2 id="lie-1-transpilers-don-t-have-frontends">Lie #1: Transpilers Don’t have Frontends</h2>
-<p>Let’s look at a simple Python to C transpiler. It takes python code that looks like this:</p>
+<p>Let’s look at a simple Python to C transpiler.<span style="white-space:nowrap">
+<label for="sn-1"
+       class="margin-toggle sidenote-number">
+</label>
+</span>
+<input type="checkbox"
+       id="sn-1"
+       class="margin-toggle"/>
+<span class="sidenote">
+Both <a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/Nuitka/Nuitka">Nuitka</a> and <a rel="noopener nofollow noreferrer" target="_blank" href="https://docs.modular.com/mojo/">Mojo</a> both actually target this exact problem but sanely call themselves compilers.
+</span>
+ It takes python code that looks like this:</p>
 <pre data-lang="py" style="background-color:#2b303b;color:#c0c5ce;" class="language-py "><code class="language-py" data-lang="py"><span style="color:#b48ead;">def </span><span style="color:#8fa1b3;">fact</span><span>(</span><span style="color:#bf616a;">n</span><span>):
 </span><span>    x = </span><span style="color:#d08770;">1
 </span><span>    </span><span style="color:#b48ead;">for </span><span>i </span><span style="color:#b48ead;">in </span><span style="color:#96b5b4;">range</span><span>(</span><span style="color:#d08770;">1</span><span>, n):
@@ -80,21 +91,31 @@ implementation of the generator and the local variables.</p>
 Even a moderately useful subset would be unwieldy to implement by hand in our simple “transpiler”.
 Maybe one strategy we can take is to build a some sort of tool that would simplify these hundreds of definitions into a more uniform representation
 to work with.</p>
-<p>We’ll call it the <em>transpiler-not-frontend</em> to make sure people understand we’re not building a compiler here.</p>
-<h2 id="lie-2-transpilers-are-simple">Lie #2: Transpilers are Simple</h2>
-<p>BabelJS is arguably one of the first “transpilers” that was developed so that people could experiment with JavaScript’s<span style="white-space:nowrap">
-<label for="sn-1"
+<p>We’ll call it the <em>transpiler-not-frontend</em> to make sure people understand we’re not building a compiler here.<span style="white-space:nowrap">
+<label for="sn-2"
        class="margin-toggle sidenote-number">
 </label>
 </span>
 <input type="checkbox"
-       id="sn-1"
+       id="sn-2"
        class="margin-toggle"/>
 <span class="sidenote">
-ECMAScript’s if you’re pedantic like me.
+It is <a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/topics/transpiler">not hard</a> to find examples of things mislabelled as transpilers. However, I won’t name any specific projects because besides this is just a dumb diatribe about words, I actually think the projects themselves are cool.
 </span>
-<p>new language features that did not yet have browser implementations.
-For example, ES6 added support for generators (similar to those in Python) but a lot of browser frontends did not support them.
+</p>
+<h2 id="lie-2-transpilers-are-simple">Lie #2: Transpilers are Simple</h2>
+<p>BabelJS is arguably one of the first “transpilers” that was developed so that people could experiment with JavaScript’s new language features that did not yet have browser implementations.<span style="white-space:nowrap">
+<label for="sn-3"
+       class="margin-toggle sidenote-number">
+</label>
+</span>
+<input type="checkbox"
+       id="sn-3"
+       class="margin-toggle"/>
+<span class="sidenote">
+Technically, ECMAScript features.
+</span>
+<p>For example, ES6 added support for generators (similar to those in Python) but a lot of browser frontends did not support them.
 Generators are pretty nice:</p></p>
 <pre data-lang="js" style="background-color:#2b303b;color:#c0c5ce;" class="language-js "><code class="language-js" data-lang="js"><span style="color:#b48ead;">function *</span><span style="color:#8fa1b3;">range</span><span>(</span><span style="color:#bf616a;">max</span><span>) {
 </span><span>  </span><span style="color:#b48ead;">for </span><span>(</span><span style="color:#b48ead;">var </span><span style="color:#bf616a;">i </span><span>= </span><span style="color:#d08770;">0</span><span>; </span><span style="color:#bf616a;">i </span><span>&lt; </span><span style="color:#bf616a;">max</span><span>; </span><span style="color:#bf616a;">i </span><span>+= </span><span style="color:#d08770;">1</span><span>) {
@@ -142,12 +163,12 @@ If we’re to get beyond the vagaries of syntax and <em>actually</em> talk about
 <h2 id="lie-4-transpilers-don-t-have-backends">Lie #4: Transpilers Don’t have Backends</h2>
 <p>BabelJS has a <a rel="noopener nofollow noreferrer" target="_blank" href="https://babeljs.io/docs/babel-preset-env">list of “presets”</a> which target different versions of JavaScript.
 This is not very different from LLVM having multiple different backends.<span style="white-space:nowrap">
-<label for="sn-2"
+<label for="sn-4"
        class="margin-toggle sidenote-number">
 </label>
 </span>
 <input type="checkbox"
-       id="sn-2"
+       id="sn-4"
        class="margin-toggle"/>
 <span class="sidenote">
 If you’re going to argue that the backends all compile to the same language, see (3).

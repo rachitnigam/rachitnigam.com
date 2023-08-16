@@ -21,7 +21,18 @@
 This tool is different from a &lt;em&gt;compiler&lt;&#x2F;em&gt; which often has a complex frontend, an optimizing middle end, and code generators for various backends.
 The arguments around this are mostly from vibes; let take a look at some of them.&lt;&#x2F;p&gt;
 &lt;h2 id=&quot;lie-1-transpilers-don-t-have-frontends&quot;&gt;Lie #1: Transpilers Don’t have Frontends&lt;&#x2F;h2&gt;
-&lt;p&gt;Let’s look at a simple Python to C transpiler. It takes python code that looks like this:&lt;&#x2F;p&gt;
+&lt;p&gt;Let’s look at a simple Python to C transpiler.&lt;span style=&quot;white-space:nowrap&quot;&gt;
+&lt;label for=&quot;sn-1&quot;
+       class=&quot;margin-toggle sidenote-number&quot;&gt;
+&lt;&#x2F;label&gt;
+&lt;&#x2F;span&gt;
+&lt;input type=&quot;checkbox&quot;
+       id=&quot;sn-1&quot;
+       class=&quot;margin-toggle&quot;&#x2F;&gt;
+&lt;span class=&quot;sidenote&quot;&gt;
+Both &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;Nuitka&#x2F;Nuitka&quot;&gt;Nuitka&lt;&#x2F;a&gt; and &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;docs.modular.com&#x2F;mojo&#x2F;&quot;&gt;Mojo&lt;&#x2F;a&gt; both actually target this exact problem but sanely call themselves compilers.
+&lt;&#x2F;span&gt;
+ It takes python code that looks like this:&lt;&#x2F;p&gt;
 &lt;pre data-lang=&quot;py&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-py &quot;&gt;&lt;code class=&quot;language-py&quot; data-lang=&quot;py&quot;&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;def &lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fa1b3;&quot;&gt;fact&lt;&#x2F;span&gt;&lt;span&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;n&lt;&#x2F;span&gt;&lt;span&gt;):
 &lt;&#x2F;span&gt;&lt;span&gt;    x = &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;1
 &lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;for &lt;&#x2F;span&gt;&lt;span&gt;i &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;in &lt;&#x2F;span&gt;&lt;span style=&quot;color:#96b5b4;&quot;&gt;range&lt;&#x2F;span&gt;&lt;span&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;1&lt;&#x2F;span&gt;&lt;span&gt;, n):
@@ -53,21 +64,31 @@ implementation of the generator and the local variables.&lt;&#x2F;p&gt;
 Even a moderately useful subset would be unwieldy to implement by hand in our simple “transpiler”.
 Maybe one strategy we can take is to build a some sort of tool that would simplify these hundreds of definitions into a more uniform representation
 to work with.&lt;&#x2F;p&gt;
-&lt;p&gt;We’ll call it the &lt;em&gt;transpiler-not-frontend&lt;&#x2F;em&gt; to make sure people understand we’re not building a compiler here.&lt;&#x2F;p&gt;
-&lt;h2 id=&quot;lie-2-transpilers-are-simple&quot;&gt;Lie #2: Transpilers are Simple&lt;&#x2F;h2&gt;
-&lt;p&gt;BabelJS is arguably one of the first “transpilers” that was developed so that people could experiment with JavaScript’s&lt;span style=&quot;white-space:nowrap&quot;&gt;
-&lt;label for=&quot;sn-1&quot;
+&lt;p&gt;We’ll call it the &lt;em&gt;transpiler-not-frontend&lt;&#x2F;em&gt; to make sure people understand we’re not building a compiler here.&lt;span style=&quot;white-space:nowrap&quot;&gt;
+&lt;label for=&quot;sn-2&quot;
        class=&quot;margin-toggle sidenote-number&quot;&gt;
 &lt;&#x2F;label&gt;
 &lt;&#x2F;span&gt;
 &lt;input type=&quot;checkbox&quot;
-       id=&quot;sn-1&quot;
+       id=&quot;sn-2&quot;
        class=&quot;margin-toggle&quot;&#x2F;&gt;
 &lt;span class=&quot;sidenote&quot;&gt;
-ECMAScript’s if you’re pedantic like me.
+It is &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;topics&#x2F;transpiler&quot;&gt;not hard&lt;&#x2F;a&gt; to find examples of things mislabelled as transpilers. However, I won’t name any specific projects because besides this is just a dumb diatribe about words, I actually think the projects themselves are cool.
+&lt;&#x2F;span&gt;
+&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;lie-2-transpilers-are-simple&quot;&gt;Lie #2: Transpilers are Simple&lt;&#x2F;h2&gt;
+&lt;p&gt;BabelJS is arguably one of the first “transpilers” that was developed so that people could experiment with JavaScript’s new language features that did not yet have browser implementations.&lt;span style=&quot;white-space:nowrap&quot;&gt;
+&lt;label for=&quot;sn-3&quot;
+       class=&quot;margin-toggle sidenote-number&quot;&gt;
+&lt;&#x2F;label&gt;
+&lt;&#x2F;span&gt;
+&lt;input type=&quot;checkbox&quot;
+       id=&quot;sn-3&quot;
+       class=&quot;margin-toggle&quot;&#x2F;&gt;
+&lt;span class=&quot;sidenote&quot;&gt;
+Technically, ECMAScript features.
 &lt;&#x2F;span&gt;
 
-new language features that did not yet have browser implementations.
 For example, ES6 added support for generators (similar to those in Python) but a lot of browser frontends did not support them.
 Generators are pretty nice:&lt;&#x2F;p&gt;
 &lt;pre data-lang=&quot;js&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-js &quot;&gt;&lt;code class=&quot;language-js&quot; data-lang=&quot;js&quot;&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;function *&lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fa1b3;&quot;&gt;range&lt;&#x2F;span&gt;&lt;span&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;max&lt;&#x2F;span&gt;&lt;span&gt;) {
@@ -116,12 +137,12 @@ If we’re to get beyond the vagaries of syntax and &lt;em&gt;actually&lt;&#x2F;
 &lt;h2 id=&quot;lie-4-transpilers-don-t-have-backends&quot;&gt;Lie #4: Transpilers Don’t have Backends&lt;&#x2F;h2&gt;
 &lt;p&gt;BabelJS has a &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;babeljs.io&#x2F;docs&#x2F;babel-preset-env&quot;&gt;list of “presets”&lt;&#x2F;a&gt; which target different versions of JavaScript.
 This is not very different from LLVM having multiple different backends.&lt;span style=&quot;white-space:nowrap&quot;&gt;
-&lt;label for=&quot;sn-2&quot;
+&lt;label for=&quot;sn-4&quot;
        class=&quot;margin-toggle sidenote-number&quot;&gt;
 &lt;&#x2F;label&gt;
 &lt;&#x2F;span&gt;
 &lt;input type=&quot;checkbox&quot;
-       id=&quot;sn-2&quot;
+       id=&quot;sn-4&quot;
        class=&quot;margin-toggle&quot;&#x2F;&gt;
 &lt;span class=&quot;sidenote&quot;&gt;
 If you’re going to argue that the backends all compile to the same language, see (3).
