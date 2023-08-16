@@ -10,7 +10,7 @@ summary = "PhD Student fights the good fight"
 The word *transpiler* is often used by people when they want to say that built a tool that transforms programs between languages of
 *roughly the same level of abstraction*.
 This tool is different from a *compiler* which often has a complex frontend, an optimizing middle end, and code generators for various backends.
-The arguments around this are mostly from vibes; let take a look at some of them.
+The big problem around most of the arguments to distinguish between compilers and "transpilers" focus on language syntax. However, anyone who wants one of these tools to *actually work* has to content with the fact that different languages will have different *semantics* and translating between those is a complex task; a task that *compilers* already do.
 
 ## Lie #1: Transpilers Don't have Frontends
 
@@ -56,7 +56,7 @@ Maybe one strategy we can take is to build a some sort of tool that would simpli
 to work with.
 
 We'll call it the *transpiler-not-frontend* to make sure people understand we're not building a compiler here.{% footnote() %}
-It is [not hard](https://github.com/topics/transpiler) to find examples of things mislabelled as transpilers. However, I won't name any specific projects because besides this is just a dumb diatribe about words, I actually think the projects themselves are cool.
+It is [not hard](https://github.com/topics/transpiler) to find examples of things mislabelled as transpilers. However, I won't name any specific projects because this is just a dumb diatribe about words, I actually think the projects themselves are cool.
 {% end %}
 
 ## Lie #2: Transpilers are Simple
@@ -109,6 +109,8 @@ console.log([0, ...range(10)]);
 
 Guess what, it is. Implementing generators is a *whole-program transformation*: they fundamentally rely on the ability of the program to save its internal stack and pause its execution. In fact, making it fast requires enough tricks that [we wrote a paper on it][stopify].
 
+The point here is that people call arbitrarily complex tools "transpilers". Again, the problem is the misguided focus on language syntax and a lack of understanding of the semantic difference.
+
 ## Lie #3: Transpilers Target the Same Level of Abstraction
 
 This is pretty much the same as (2). The input and output languages have the syntax of JavaScript but the fact that compiling *one feature* requires a whole program transformation gives away the fact that these are not *the same language*.
@@ -122,18 +124,20 @@ This is not very different from LLVM having multiple different backends.{% footn
 This is exactly what compiler frontends do as well: they transform a large surface area of syntax into a smaller language and a lot of operations are simple *syntactic sugar* which can be represented using other, more foundational primitives in the language.
 For example, in the Rust compiler, the mid-level representation (MIR) does away with features like `if`-`let` by compiling them into `match` statements. In fact, `clippy`, a style suggestion tool for Rust, *implements this as source-to-source transformation*: if you have [simple `match` statements in your program][single-match] in your program, Clippy will suggest a rewrite to you.
 
-## Lie #5: Transpilers are not Compilers
+Compilers already do things that "transpilers" are supposed to do. And they do it better because they are built on the foundation of language semantics instead of syntactic manipulation.
 
-People seemed to scared of compilers and resort to claims like "I don't want something as complex", or "string interpolation is good enough". This is silly. Anyone who has built one of these "transpilers" knows that inevitably, they get complex and poorly maintained precisely because of the delusion that they aren't doing something complex.
-
-Programming languages are not just syntax, they have semantics too and pretending that you can get away with just manipulating the former is silly.
-
-
-## Lie #6: *Compilers* only Target Machine Code
+## Lie #5: *Compilers* only Target Machine Code
 
 This one is interesting because instead of defining the characteristics of a "transpiler", it focuses on *restricting* the definition of a compiler.
 Unfortunately, this one too is wrong. The term is widely used in many contexts where we are not generating assembly code and instead generating bytecode for some sort of virtual machine.
 For example, the JVM has an ahead-of-time compiler from Java source code to the JVM bytecode and another just-in-time compiler to native instructions. These kinds of multi-tier compilation schemes are extremely common in dynamic languages like JavaScript as well.
+
+
+## Lie #6: Transpilers are not Compilers
+
+People seemed to scared of compilers and resort to claims like "I don't want something as complex", or "string interpolation is good enough". This is silly. Anyone who has built one of these "transpilers" knows that inevitably, they get complex and poorly maintained precisely because of the delusion that they aren't doing something complex.
+
+Programming languages are not just syntax, they have semantics too and pretending that you can get away with just manipulating the former is silly.
 
 *Edit (08/16/23): This post generated some discussion on [Lobsters][] but because I am not a member, so I've rebutted some claims right here.*
 
