@@ -179,11 +179,11 @@ For example, in the Rust compiler, the mid-level representation (MIR) does away 
 <h2 id="lie-5-transpilers-are-not-compilers">Lie #5: Transpilers are not Compilers</h2>
 <p>People seemed to scared of compilers and resort to claims like “I don’t want something as complex”, or “string interpolation is good enough”. This is silly. Anyone who has built one of these “transpilers” knows that inevitably, they get complex and poorly maintained precisely because of the delusion that they aren’t doing something complex.</p>
 <p>Programming languages are not just syntax, they have semantics too and pretending that you can get away with just manipulating the former is silly.</p>
-<p>Edit: This post generated some discussion on <a rel="noopener nofollow noreferrer" target="_blank" href="https://lobste.rs/s/id9jet/transpiler_meaningless_word">Lobsters</a> but because I am not a member, I am going to rebut some claims right here.</p>
 <h2 id="lie-6-compilers-only-target-machine-code">Lie #6: <em>Compilers</em> only Target Machine Code</h2>
 <p>This one is interesting because instead of defining the characteristics of a “transpiler”, it focuses on <em>restricting</em> the definition of a compiler.
 Unfortunately, this one too is wrong. The term is widely used in many contexts where we are not generating assembly code and instead generating bytecode for some sort of virtual machine.
 For example, the JVM has an ahead-of-time compiler from Java source code to the JVM bytecode and another just-in-time compiler to native instructions. These kinds of multi-tier compilation schemes are extremely common in dynamic languages like JavaScript as well.</p>
+<p><em>Edit (08/16/23): This post generated some discussion on <a rel="noopener nofollow noreferrer" target="_blank" href="https://lobste.rs/s/id9jet/transpiler_meaningless_word">Lobsters</a> but because I am not a member, so I’ve rebutted some claims right here.</em></p>
 <p><em>Have comments? <a href="mailto:rachit.nigam12@gmail.com">Email</a> or <a rel="noopener nofollow noreferrer" target="_blank" href="https://twitter.com/notypes">tweet</a> at me.</em></p>
 
 </div>
