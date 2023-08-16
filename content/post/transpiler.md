@@ -1,6 +1,6 @@
 +++
 title = "Transpiler, a meaningless word"
-date = 2023-07-15
+date = 2023-08-15
 draft = false
 
 [extra]
@@ -8,8 +8,9 @@ summary = "PhD Student fights the good fight"
 +++
 
 The word *transpiler* is often used by people when they want to say that built a tool that transforms programs between languages of
-*roughly the same level of abstraction*. This tool is different from a *compiler* which often has a complex frontend, an optimizing
-middle end, and code generators for various backends.
+*roughly the same level of abstraction*.
+This tool is different from a *compiler* which often has a complex frontend, an optimizing middle end, and code generators for various backends.
+The arguments around this are mostly from vibes; let take a look at some of them.
 
 ## Lie #1: Transpilers Don't have Frontends
 
@@ -105,11 +106,11 @@ function range(max) {
 console.log([0, ...range(10)]);
 ```
 
-Yeah, guess what, it is. Implementing generators is a *whole-program transformation*: they fundamentally rely on the ability of the program to save its internal stack and pause its execution. In fact, making it fast requires enough tricks that [we wrote a paper on it][stopify].
+Guess what, it is. Implementing generators is a *whole-program transformation*: they fundamentally rely on the ability of the program to save its internal stack and pause its execution. In fact, making it fast requires enough tricks that [we wrote a paper on it][stopify].
 
 ## Lie #3: Transpilers Target the Same Level of Abstraction
 
-This is pretty much the same as (2). Yeah, the input and output languages have the syntax of JavaScript but the fact that compiling *one feature* requires a whole program transformation gives away the fact that these are not *the same language*.
+This is pretty much the same as (2). The input and output languages have the syntax of JavaScript but the fact that compiling *one feature* requires a whole program transformation gives away the fact that these are not *the same language*.
 If we're to get beyond the vagaries of syntax and *actually* talk about what the expressive power of languages is, we need to [talk about semantics][pwl-ep].
 
 ## Lie #4: Transpilers Don't have Backends
@@ -126,6 +127,15 @@ People seemed to scared of compilers and resort to claims like "I don't want som
 
 Programming languages are not just syntax, they have semantics too and pretending that you can get away with just manipulating the former is silly.
 
+Edit: This post generated some discussion on [Lobsters][] but because I am not a member, I am going to rebut some claims right here.
+
+## Lie #6: *Compilers* only Target Machine Code
+
+This one is interesting because instead of defining the characteristics of a "transpiler", it focuses on *restricting* the definition of a compiler.
+Unfortunately, this one too is wrong. The term is widely used in many contexts where we are not generating assembly code and instead generating bytecode for some sort of virtual machine.
+For example, the JVM has an ahead-of-time compiler from Java source code to the JVM bytecode and another just-in-time compiler to native instructions. These kinds of multi-tier compilation schemes are extremely common in dynamic languages like JavaScript as well.
+
+
 _Have comments? [Email](mailto:rachit.nigam12@gmail.com) or [tweet](https://twitter.com/notypes) at me._
 
 
@@ -137,3 +147,4 @@ _Have comments? [Email](mailto:rachit.nigam12@gmail.com) or [tweet](https://twit
 [pwl-ep]: https://www.youtube.com/watch?v=43XaZEn2aLc
 [single-match]: https://rust-lang.github.io/rust-clippy/master/index.html#/single_match
 [js-nullish]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Nullish_coalescing_assignment
+[lobsters]: https://lobste.rs/s/id9jet/transpiler_meaningless_word
