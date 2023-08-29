@@ -1,5 +1,5 @@
 +++
-title = "Scaling up Engineering Projects"
+title = "GitHub-centric Research Management"
 date = 2023-08-24
 draft = false
 
@@ -7,38 +7,34 @@ draft = false
 summary = "PhD student is an issue triager"
 +++
 
-One of the great boons of doing systems research today is that your work can become immediately visible and used "in the wild".
-However, with great power, comes the unbearable torrent of issues, feature requests, and "enhancements" that people would like to see before they
-start using your work.
-The whole process can be daunting and inundating: your simple research project can suddenly have hundreds of open issues with few of them being
-actionable and most of the institutional memory residing the brains of two people who are going to graduate soon.
+I am a [systems researcher][the-nightwatch] which means almost all of my research requires writing lots of a code.
+I also [believe in building in the open][emery-talk] and, being a person of hubris, like writing good code that other people can use.
+Finally, as an academic, I also like teaching people how to write good code and build cool tools that other people can use.
+Over the course of my PhD, my advisor and I have developed a set of guidelines that we often repeat to people working with us to help them write better code when building research projects.
+I also have [some experience][calyx-repo] scaling up research projects, and I follow the same guidelines when building the management structure for new projects.
 
-Unlike traditional projects, which have a lot more up front management and defined goals, research projects are tricky because *we don't always know what we want to build*.
-In fact, the whole point is to be able to experiment with things quickly without being bogged down with heavyweight processes more appropriate for large scale projects.
-I have [some experience][calyx-repo] scaling up research projects and some guidelines I follow when building up a management structure and culture around them.
-Most of these ideas were developed as a part of my work with the [CAPRA lab][capra].
+Our guidelines revolve around using the GitHub code management platform to mechanize, track, and remember research tasks.
+While I'm going to use GitHub-specific terms in this post, I expect alternatives like GitLab to also be perfectly capable of providing the same utility.
+Before reading this post, I recommend [getting familiar with git][git].
 
-There are a couple of tenants I follow:
-* **Stake-based leadership**. This is essentially "talk is cheap, show me the code" policy. Research projects, which are often run in academic settings, have a lot of turnover. People graduate, switch projects, funding dries up, etc. Instead of selecting leaders by fiat or seniority, leadership should be determined simply by the amount of code, and more generally, the amount of work you're putting into the project.
-* **Prioritize movement instead of motion**. It is very easy to create a complex RFC (request for comments) process, involve every person in every discussion, create release timelines, etc. In medium scale projects, this creates a lot of unnecessary motion without a whole lot of forward movement. Instead of these processes, everyone is empowered to write code and demonstrate their ideas in practice.
-* **You're not writing enough**. This one, in my opinion is key, and also what distinguishes junior and senior contributors. Junior contributors are often extremely good at writing code and delivering features but fail to communicate those ideas in writing. The power of writing is that your ideas can be understood *outside the code* which ends up enabling people to better understand the code. Senior contributors, in contrast, write a lot more and pay attention to how they frame ideas. This enables them to not just deliver features, but instead, deliver a vision for the future of the project.
-* **Build Institutional Memory**. **TODO**.
-
-Now that we have our tenants, here are some specific guidelines on how to implement them in a GitHub-based flow. All my research projects have been developed on GitHub which is why my guidance is specific to it, but the ideas will generalize to other platforms.
 
 ## GitHub Basics
 
 GitHub is a code management platform powered by [git][] that you to collaborate with people on code and manage its long-term health. Specifically:
-- *Issues* section tracks individual "tickets" that represent some work to be done with the code. This can be as simple as fixing a bug or as complicated as defining a whole class of features to be implemented. The title "issues" is a bit of a misnomer because of this reason. Think of this section as the core "planning section" for your projects. Any idea that requires more than 5 minutes of implementation work gets written up here.
-- *Pull Requests* This is the "implementation section". A pull request (confusingly named) is a bundle of code changes that someone wrote up and wants to have *merged* into the codebase. Often, but not always, a pull request will correspond to some issue created in the "issues" section.
-- *Continuous Integration/Deployment (CI/CD)* a key part of maintaining the health of the code and automating boring tasks, a good CI/CD system will give your contributors the confidence that their code is correct and automate away tasks like updating webpages and releasing new versions of your system.
+- *Issues*: Tracks individual "tickets" that track outstanding work items. This can be as simple as fixing a bug or as complicated feature rewrites (making the "issues" title a bit of a misnomer). This is the core "planning section" for your projects. Any idea that requires more than 5 minutes of implementation work gets written up here. Once an issue has been addressed, it can be "closed" which hides it from the section.
+- *Pull Requests (PRs)*: This is the "implementation section". A pull request ([confusingly named][pr-name]) is a bundle of code changes that someone wrote up and wants to have *merged* into the codebase. Often, but not always, a pull request will correspond to at least one issue created in the "issues" section.
+- *Continuous Integration/Deployment (CI/CD)*: Automation that runs tests for you (integration testing) or deploys code artifacts for you (deployment) on every code commit. A good CI/CD system will ensure that new code doesn't break existing features and automatically updates documentation.
+- *Linking*: A key feature of GitHub that we use is [linking issues and pull requests][gh-links]. This allows us to build a breadcrumb trails that contextualize decisions. A key part of our philosophy is creating links between relevant issues and PRs.
+
 
 ## Planning (Issues)
 
 The *Issues* section is where the bulk of planning and discussions about the code should happen.
-A common failure mode for teams is using their messaging app (Slack, Zulip) to get into at length discussions about the code.
-This is a bad idea because conversion in these are *ephemeral*, i.e., they get lost easily, and *hard to contextualize*, i.e., it is hard link together conversions about related tasks.
+The most common alternative to this is using messaging apps like Slack or Zulip which, I contend, is a bad idea.
+Messaging apps, by design, keep focus on one thread of conversation while code development requires many different, interconnected thread of conversations over long periods of time.
+Messaging apps don't really provide effective mechanisms for continuing several conversations over multiple months and linking between them.
 
+Instead, the "Issues" section provides a permanent space for discussions to live and allows us to link together relevant things.
 A good issue has the following two characteristics:
 
 **Reproducible**. The issue has enough information contained within it to allow someone who is *not the author of the issue* to work on it.
@@ -46,7 +42,7 @@ Even if you're the *only person* working on the codebase, this is good practice 
 Concretely, if there is a bug in the system, the issue should provide a *minimal reproducible example* (MRE) along, a command to run reproduce the problem, and the expected behavior.
 If the issue is a feature request, it should instead provide a sketch of the idea and outline the expected changes that need to be made to each component of the system.
 
-**Contextualized**. The issue should link to existing issues and pull requests that are related to it. This is a form of building institutional knowledge because it allows us to trace why certain decisions were made about the code and the features.
+**Contextualized**. The issue should link to existing issues and pull requests that are related to it. This builds institutional knowledge because it allows us to trace why certain decisions were made about the code and the features.
 A lot of projects get *reproducibility* right but fail on this front because new contributors might not know enough about which things are related.
 It is the job of senior contributors to aggressively track and link together things as the junior contributors develop the context of the codebase.
 
@@ -65,12 +61,20 @@ GitHub issues and pull requests can be tagged with "labels" to categorize them. 
 
 Labels allow us to slice and dice the set of issues we care about and review them from time to time. For example, after a major feature is implemented, we can look at all the blocked issues and see which ones were unblocked. Similarly, if we're putting more effort into a particular component, it could be useful to see which are the currently open issues.
 
+### Guidance
+
+There are two pieces of advice on issues:
+- *Feature proposal and discussions must be issues*: If any code-related discussion starts getting in the weeds on the messaging platform, move the discussion into an issue. This will avoid losing the thread of conversation and ensure other team members can chime in.
+- *Issue creation is cheap*: : when in doubt, create an issue. If it is easily answered, a senior contributor will do so and close it.
+
+Again, these guidelines don't scale to large projects, but we've found them to be useful in instilling a sense of ownership with new contributors and building institutional memory.
+
 ## Doing (Pull Requests)
 
 *Pull requests* is the section where all the code *must* travel through. This discipline is extremely powerful if practiced well: it allows people to review things and make sure changes don't break other people's code. Here are a couple of guidelines to enable this:
 1. Disable pushes to the `main` branch. This means that no one is allowed to directly push to the `main` branch.
 2. Require [certain tests][#testing] to pass before a pull request can be merged. (**TODO**: Forward ref.)
-3. Disable the ["Merge"][gh-merge] and ["Rebase"][gh-rebase] options for pull requests and only allow for "Squashes". Also, require a [linear history][git-linear]. Along with (2), this means that every commit to `main` is state where the tests pass.
+3. Disable the "Merge" and "Rebase" options for pull requests and [only allow for "Squashes"][gh-merge-methods]. Also, require a [linear history][git-linear]. Along with (2), this means that every commit to `main` is state where the tests pass.
 4. Build a culture of [code review][#reviewing].
 
 ### Testing
@@ -102,3 +106,15 @@ Automating deployment is an upfront cost, but it can have tremendous benefits. A
 Scaling up research projects requires balancing short-term goals like writing a paper or hacking together a feature for a deadline, and long term goals, like ensure code readability, reducing tech debt, etc.
 It is also challenging to deal with the turnover on projects.
 The above guidelines are designed to build enough *institutional memory* and *infrastructure* so that people can continue contributing and developing the system well beyond the "research prototype" phase.
+
+
+[pr-name]: https://stackoverflow.com/questions/21657430/why-is-a-git-pull-request-not-called-a-push-request
+[the-nightwatch]: https://www.usenix.org/system/files/1311_05-08_mickens.pdf
+[emery-talk]: https://www.youtube.com/watch?v=kwto0AQ_Un8
+[calyx-repo]: https://github.com/cucapra/calyx
+[gh-links]: https://docs.github.com/en/issues/tracking-your-work-with-issues/linking-a-pull-request-to-an-issue
+[git-linear]: https://www.bitsnbites.eu/a-tidy-linear-git-history/
+[gh-actions]: https://docs.github.com/en/actions
+[samps-snapshot]: https://www.cs.cornell.edu/~asampson/blog/turnt.html
+[git]: https://docs.github.com/en/get-started/using-git/about-git
+[gh-merge-methods]: https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/configuring-pull-request-merges/about-merge-methods-on-github
