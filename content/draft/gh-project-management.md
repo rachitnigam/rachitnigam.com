@@ -21,10 +21,10 @@ Before reading this post, I recommend [getting familiar with git][git].
 ## GitHub Basics
 
 GitHub is a code management platform powered by [git][] that you to collaborate with people on code and manage its long-term health. Specifically:
-- *Issues*: Tracks individual "tickets" that track outstanding work items. This can be as simple as fixing a bug or as complicated feature rewrites (making the "issues" title a bit of a misnomer). This is the core "planning section" for your projects. Any idea that requires more than 5 minutes of implementation work gets written up here. Once an issue has been addressed, it can be "closed" which hides it from the section.
-- *Pull Requests (PRs)*: This is the "implementation section". A pull request ([confusingly named][pr-name]) is a bundle of code changes that someone wrote up and wants to have *merged* into the codebase. Often, but not always, a pull request will correspond to at least one issue created in the "issues" section.
+- **Issues**: Tracks individual "tickets" that track outstanding work items. This can be as simple as fixing a bug or as complicated feature rewrites (making the "issues" title a bit of a misnomer). This is the core "planning section" for your projects. Any idea that requires more than 5 minutes of implementation work gets written up here. Once an issue has been addressed, it can be "closed" which hides it from the section.
+- **Pull Requests (PRs)**: This is the "implementation section". A pull request ([confusingly named][pr-name]) is a bundle of code changes that someone wrote up and wants to have *merged* into the codebase. Often, but not always, a pull request will correspond to at least one issue created in the "issues" section.
 - *Continuous Integration/Deployment (CI/CD)*: Automation that runs tests for you (integration testing) or deploys code artifacts for you (deployment) on every code commit. A good CI/CD system will ensure that new code doesn't break existing features and automatically updates documentation.
-- *Linking*: A key feature of GitHub that we use is [linking issues and pull requests][gh-links]. This allows us to build a breadcrumb trails that contextualize decisions. A key part of our philosophy is creating links between relevant issues and PRs.
+- **Linking**: A key feature of GitHub that we use is [linking issues and pull requests][gh-links]. This allows us to build a breadcrumb trails that contextualize decisions. A key part of our philosophy is creating links between relevant issues and PRs.
 
 
 ## Planning (Issues)
@@ -73,14 +73,13 @@ Again, these guidelines don't scale to large projects, but we've found them to b
 
 *Pull requests* is the section where all the code *must* travel through. This discipline is extremely powerful if practiced well: it allows people to review things and make sure changes don't break other people's code. Here are a couple of guidelines to enable this:
 1. Disable pushes to the `main` branch. This means that no one is allowed to directly push to the `main` branch.
-2. Require [certain tests][#testing] to pass before a pull request can be merged. (**TODO**: Forward ref.)
+2. Require certain tests to pass before a pull request can be merged.
 3. Disable the "Merge" and "Rebase" options for pull requests and [only allow for "Squashes"][gh-merge-methods]. Also, require a [linear history][git-linear]. Along with (2), this means that every commit to `main` is state where the tests pass.
-4. Build a culture of [code review][#reviewing].
+4. Build a culture of code review.
 
 ### Testing
 
-A good test suite is a mark of a real project.{% footnote() %} If you're a systems researcher and your projects don't have tests, I'm putting you in the category of "people who build toys". {% end %}
-There is lots of good advice on how to write test suites, especially if you [work on compilers][samps-snapshot].
+A good test suite is a mark of a real project.{% footnote() %} If you're a systems researcher and your projects don't have tests, I'm putting you in the category of "people who build toys". {% end %} There is lots of good advice on how to write test suites, especially if you [work on compilers][samps-snapshot].
 Once you have a test suite, make sure it is run on every commit.
 GitHub makes this particularly easy through [GitHub Actions][gh-actions]: you define a configuration to install all the tools needed to run your system, and define how to run commands.
 GitHub will use this configuration to run tests on every commit, including pull requests and allow you to ensure that bad code doesn't get committed.
