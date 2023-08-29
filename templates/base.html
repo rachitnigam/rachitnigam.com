@@ -5,7 +5,11 @@
   <meta charset="utf-8">
   <meta name="author" content="Rachit Nigam">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  {% if page.title %}
+  <title> {{ page.title }} |  Rachit Nigam </title>
+  {% else %}
   <title>Rachit Nigam | PhD Candidate, Cornell University</title>
+  {% endif %}
 
   <link rel="icon" href="/flower.svg" type="image/svg+xml">
 
