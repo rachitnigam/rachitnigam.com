@@ -56,10 +56,10 @@ Before reading this post, I recommend <a rel="noopener nofollow noreferrer" targ
 <h2 id="github-basics">GitHub Basics</h2>
 <p>GitHub is a code management platform powered by <a rel="noopener nofollow noreferrer" target="_blank" href="https://docs.github.com/en/get-started/using-git/about-git">git</a> that you to collaborate with people on code and manage its long-term health. Specifically:</p>
 <ul>
-<li><em>Issues</em>: Tracks individual “tickets” that track outstanding work items. This can be as simple as fixing a bug or as complicated feature rewrites (making the “issues” title a bit of a misnomer). This is the core “planning section” for your projects. Any idea that requires more than 5 minutes of implementation work gets written up here. Once an issue has been addressed, it can be “closed” which hides it from the section.</li>
-<li><em>Pull Requests (PRs)</em>: This is the “implementation section”. A pull request (<a rel="noopener nofollow noreferrer" target="_blank" href="https://stackoverflow.com/questions/21657430/why-is-a-git-pull-request-not-called-a-push-request">confusingly named</a>) is a bundle of code changes that someone wrote up and wants to have <em>merged</em> into the codebase. Often, but not always, a pull request will correspond to at least one issue created in the “issues” section.</li>
+<li><strong>Issues</strong>: Tracks individual “tickets” that track outstanding work items. This can be as simple as fixing a bug or as complicated feature rewrites (making the “issues” title a bit of a misnomer). This is the core “planning section” for your projects. Any idea that requires more than 5 minutes of implementation work gets written up here. Once an issue has been addressed, it can be “closed” which hides it from the section.</li>
+<li><strong>Pull Requests (PRs)</strong>: This is the “implementation section”. A pull request (<a rel="noopener nofollow noreferrer" target="_blank" href="https://stackoverflow.com/questions/21657430/why-is-a-git-pull-request-not-called-a-push-request">confusingly named</a>) is a bundle of code changes that someone wrote up and wants to have <em>merged</em> into the codebase. Often, but not always, a pull request will correspond to at least one issue created in the “issues” section.</li>
 <li><em>Continuous Integration/Deployment (CI/CD)</em>: Automation that runs tests for you (integration testing) or deploys code artifacts for you (deployment) on every code commit. A good CI/CD system will ensure that new code doesn’t break existing features and automatically updates documentation.</li>
-<li><em>Linking</em>: A key feature of GitHub that we use is <a rel="noopener nofollow noreferrer" target="_blank" href="https://docs.github.com/en/issues/tracking-your-work-with-issues/linking-a-pull-request-to-an-issue">linking issues and pull requests</a>. This allows us to build a breadcrumb trails that contextualize decisions. A key part of our philosophy is creating links between relevant issues and PRs.</li>
+<li><strong>Linking</strong>: A key feature of GitHub that we use is <a rel="noopener nofollow noreferrer" target="_blank" href="https://docs.github.com/en/issues/tracking-your-work-with-issues/linking-a-pull-request-to-an-issue">linking issues and pull requests</a>. This allows us to build a breadcrumb trails that contextualize decisions. A key part of our philosophy is creating links between relevant issues and PRs.</li>
 </ul>
 <h2 id="planning-issues">Planning (Issues)</h2>
 <p>The <em>Issues</em> section is where the bulk of planning and discussions about the code should happen.
@@ -102,9 +102,9 @@ However, it is still useful to sketch out the idea (<em>reproducible</em>) build
 <p><em>Pull requests</em> is the section where all the code <em>must</em> travel through. This discipline is extremely powerful if practiced well: it allows people to review things and make sure changes don’t break other people’s code. Here are a couple of guidelines to enable this:</p>
 <ol>
 <li>Disable pushes to the <code>main</code> branch. This means that no one is allowed to directly push to the <code>main</code> branch.</li>
-<li>Require [certain tests][#testing] to pass before a pull request can be merged. (<strong>TODO</strong>: Forward ref.)</li>
+<li>Require certain tests to pass before a pull request can be merged.</li>
 <li>Disable the “Merge” and “Rebase” options for pull requests and <a rel="noopener nofollow noreferrer" target="_blank" href="https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/configuring-pull-request-merges/about-merge-methods-on-github">only allow for “Squashes”</a>. Also, require a <a rel="noopener nofollow noreferrer" target="_blank" href="https://www.bitsnbites.eu/a-tidy-linear-git-history/">linear history</a>. Along with (2), this means that every commit to <code>main</code> is state where the tests pass.</li>
-<li>Build a culture of [code review][#reviewing].</li>
+<li>Build a culture of code review.</li>
 </ol>
 <h3 id="testing">Testing</h3>
 <p>A good test suite is a mark of a real project.<span style="white-space:nowrap">
@@ -118,10 +118,10 @@ However, it is still useful to sketch out the idea (<em>reproducible</em>) build
 <span class="sidenote">
 If you’re a systems researcher and your projects don’t have tests, I’m putting you in the category of “people who build toys”.
 </span>
-<p>There is lots of good advice on how to write test suites, especially if you <a rel="noopener nofollow noreferrer" target="_blank" href="https://www.cs.cornell.edu/~asampson/blog/turnt.html">work on compilers</a>.
+ There is lots of good advice on how to write test suites, especially if you <a rel="noopener nofollow noreferrer" target="_blank" href="https://www.cs.cornell.edu/~asampson/blog/turnt.html">work on compilers</a>.
 Once you have a test suite, make sure it is run on every commit.
 GitHub makes this particularly easy through <a rel="noopener nofollow noreferrer" target="_blank" href="https://docs.github.com/en/actions">GitHub Actions</a>: you define a configuration to install all the tools needed to run your system, and define how to run commands.
-GitHub will use this configuration to run tests on every commit, including pull requests and allow you to ensure that bad code doesn’t get committed.</p></p>
+GitHub will use this configuration to run tests on every commit, including pull requests and allow you to ensure that bad code doesn’t get committed.</p>
 <h3 id="reviewing">Reviewing</h3>
 <p>Code review is the practice of having a second person read your code before it gets merged into the codebase.
 This is the place where a senior contributor helps the code author understand how their code affects other systems, if there are better ways to implement a feature, suggest refactorings, and remind them to write tests.<span style="white-space:nowrap">
