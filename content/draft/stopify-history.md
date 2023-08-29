@@ -1,11 +1,10 @@
 +++
 title = "A Brief History of Stopify"
-summary = "Undergrad writes some JavaScript and lies about the article length."
 date = 2018-08-22T21:52:05-04:00
 draft = true
 
 [extra]
-tags = ["research"]
+summary = "Undergrad writes some JavaScript and lies about the article length."
 
 +++
 Stopify began began when Arjun asked me the question "What would it take to
