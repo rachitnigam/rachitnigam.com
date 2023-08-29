@@ -27,7 +27,6 @@ author = [
   { name = "Pedro Henrique Azevedo de Amorim", link = "https://www.cs.cornell.edu/~pamorim/" },
   { name = "Griffin Berlstein", link = "https://griffinberlste.in/" },
   { name = "Chris Gyurgyik", link = "https://cgyurgyik.github.io/" },
-  { name = "Vincent Lee", link = "https://www.linkedin.com/in/vincent-lee-15685425" },
   { name = "Alexa VanHattum", link = "https://www.cs.cornell.edu/~avh/" },
   { name = "James Bornholt", link = "https://www.cs.utexas.edu/~bornholt/" },
   { name = "Samuel Thomas", link = "https://sgtpeacock.com/" },
@@ -40,7 +39,5 @@ author = [
   { name = "Shriram Krishnamurthi", link = "http://cs.brown.edu/~sk/" },
   { name = "Joe Gibbs Politz", link = "https://jpolitz.github.io/" },
   { name = "Jean-Baptiste Jeannin", link = "https://jeannin.github.io/" },
-  { name = "Yuwei Ye", link = "https://www.viviyye.com/" },
   { name = "Sachille Atapattu", link = "https://www.csl.cornell.edu/~sachille/" },
-  { name = "Jane Tangen", link = "https://people.cs.umass.edu/~jktangen/" },
 ]
