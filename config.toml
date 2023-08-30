@@ -21,6 +21,7 @@ skip_prefixes = ["https://twitter.com/"]
 
 [extra]
 news_items = 5
+post_items = 7
 
 # Links to author webpages
 author = [

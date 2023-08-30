@@ -1,0 +1,54 @@
++++
+title = "Your Eternal Spark"
+date = 2023-09-01
+draft = false
+
+[extra]
+summary = "I don't have words to put here"
++++
+
+**Content Warning: Death**
+
+My dear friend and colleague [Priya Srikumar][priya] passed away in a car accident.
+I write this post to memorialize the impact they had on me and other people around them.
+If you knew Priya in their capacity as an academic and would like to add something, please [email me](mailto:rachit.nigam12@gmail.com).
+
+I started my PhD at Cornell in 2018 and Priya was an undergraduate student then.
+I first met them when they gave a talk at the programming languages discussion group, which usually has research talks from PhD students.
+I remember thinking that their talk would put most PhD students to shame: they deeply understood complex math that took years to grasp and gave an easy-to-follow talk which is no mean feat.
+
+Priya continued doing research with professors in the programming languages group and applied to various graduate programs.
+They got into most of the top programming languages departments in the country.
+After an arduous decision process, which I was a part of, Priya decided to stay at Cornell for their PhD and eventually started working with my advisor.
+
+Priya had an infectious spark for research. They would get excited about a topic and pursue it to obsessive depth.
+Before our first conference together, ASPLOS 2023 in Vancouver, Canada, Priya sat with me and read a paper together with me on the train ride from Seattle.
+This is an unconventional choice because the train ride has some beautiful views.
+However, Priya always cherished the chance to learn something new.
+They grasped the intricacies of a computer architecture paper (something that they only recently started learning about) and eventually asked some thoughtful questions from the paper's authors.
+
+Most people I know struggle to network at conferences but watching Priya at the conference was remarkable.
+They gave a widely-liked WACI talk in one of the most crowded rooms at the conference.
+They made fast friends with tons of people, both junior and senior, and impressed them with their depth of knowledge in both computer architecture, formal methods, compilers, and programming languages.
+Priya always made an impression on the people who interacted with them.
+
+Apart from research, Priya shared in my joy of food, music, and boba tea.
+They showed me around their favorite food places in New York City and took me to Korea town to try my first ever bingsoo.
+
+My last interaction with them was at FCRC 2023 where they helped co-run a tutorial on Calyx.
+Priya asked me about how to manage the mid-project blues, the part of research when you have a direction to pursue, but it gets hard to maintain the momentum.
+This is something every researcher experiences, and so I encouraged them to continue pursuing their work.
+I remember jokingly telling them, "I'm excited to read the paper that comes out of your work; don't make me wait so long!"
+They sparked up on this and promised me that I will be reading it soon.
+We hugged and I left to catch my flight.
+
+Priya was full of potential. Potential to do great science, potential to be an amazing, kind, thoughtful mentor, potential to change the world.
+I, and many others, imagined seeing them at every conference we went to.
+They were supposed to be a permanent fixture of our lives.
+At every conference I attend, I will miss them.
+At every group discussion, I will miss them.
+When I talk about my mentees, my friends, and my time in grad school, I will miss them.
+
+Goodbye Priya. Your spark is eternal.
+
+[priya]: https://priyasrikumar.com/

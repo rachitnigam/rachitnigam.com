@@ -50,7 +50,6 @@
 <section>
   {{ m::anchor_heading(content="Publications") }}
   {% set news = get_section(path="publication/_index.md") %}
-  {% set items = config.extra.news_items %}
 
   <!-- Conference Publications -->
   {{ m::anchor_heading(content="Conferences",size="3") }}
@@ -75,7 +74,7 @@
     </sup>
   </h2>
   {% set news = get_section(path="post/_index.md") %}
-  {% set items = config.extra.news_items %}
+  {% set items = config.extra.post_items %}
   {% for post in news.pages | sort(attribute="date") | reverse | slice(end=items) %}
   {{ m::generate_post(post=post) }}
   {% endfor %}
