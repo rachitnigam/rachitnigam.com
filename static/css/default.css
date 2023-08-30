@@ -242,7 +242,7 @@ hr {
 
 p {
   margin: 15px 0px 15px 0px;
-  max-width: 600px;
+  /* max-width: 600px; */
   text-align: left;
 }
 
@@ -526,9 +526,34 @@ div.footnotes {
 
 }
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 1130px) {
+  body {
+    margin-left: 14%;
+  }
+}
+
+/* On really big screens, shift the left margine more */
+@media screen and (min-width: 1500px) {
   body {
     margin-left: 20%;
+  }
+}
+
+@media screen and (min-width: 1800px) {
+  body {
+    margin-left: 25%;
+    max-width: 800px;
+  }
+
+  .sidenote,
+  .marginnote {
+    margin-right: -45%;
+  }
+}
+
+@media screen and (min-width: 2100px) {
+  body {
+    margin-left: 30%;
   }
 }
 
@@ -536,7 +561,7 @@ div.footnotes {
 pre {
   font-size: 90%;
   border-radius: 5px;
-  max-width: 600px;
+  max-width: inherit;
   padding-left: 0.2em;
   overflow: auto;
   max-height: 20em;
@@ -545,7 +570,7 @@ pre {
 }
 
 code {
-  font-family: "Source Code Pro", "Courier New", Courier, monospace;
+  font-family: "Source Code Pro", monospace;
   /* scroll if the block overflows */
   overflow: scroll;
   max-width: inherit;
