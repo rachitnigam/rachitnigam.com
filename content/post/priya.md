@@ -49,6 +49,15 @@ At every conference I attend, I will miss them.
 At every group discussion, I will miss them.
 When I talk about my mentees, my friends, and my time in grad school, I will miss them.
 
+Joshua Turcotti said:
+> Priya was a beautiful vocalist and an aspiring guitarist. They were in a local band, and performed with faculty like Dexter and Robbert at a few occasions. Music was a huge part of their life.
+
+Ben Kushigian said:
+> They were such a sweet person, and I was always so happy to see them in PLSE. They had a smile that would break me out of my grumpiest of moods. I can't believe they're gone, and I can only imagine what folks who were closer to them must be going through. They were a special person, and I'm really lucky to have known them, even just for a bit.
+
+Omkar Bhalerao said:
+> Priya has always struck me as a helpful educator in addition to a knowledgeable academic. They never hesitated to help out with the overall structure of the class and perform logistical duties even as a heavily burdened PhD student. During our time together as TAs, the work ethic that they displayed heavily inspired me to improve my own efforts as a TA for the class, and I also learned quite a lot from them.
+
 Goodbye Priya. Your spark is eternal.
 
 [priya]: https://priyasrikumar.com/
