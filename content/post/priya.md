@@ -50,13 +50,16 @@ At every group discussion, I will miss them.
 When I talk about my mentees, my friends, and my time in grad school, I will miss them.
 
 Joshua Turcotti said:
-> Priya was a beautiful vocalist and an aspiring guitarist. They were in a local band, and performed with faculty like Dexter and Robbert at a few occasions. Music was a huge part of their life.
+> It always appeared as if things came naturally to Priya, but the more you got to know them the more you realized that the thing that came most naturally was putting in more hours than I ever knew the day had methodically researching, preparing, and attacking the problems in their life. They always fought battles hard, but came out the other side with skills and passions that inspired others. Music was a huge part of their life that they worked so hard to cultivate, becoming a beautiful vocalist and an aspiring guitarist. They never wanted to be passionate about things alone, and so they took that love of music into their community, performing with our beloved Dexter and with a local band. They always brought out the best in the communities that were lucky enough to have them, and in short time they always become one the best and brightest elements of those communities themselves.
 
 Ben Kushigian said:
 > They were such a sweet person, and I was always so happy to see them in PLSE. They had a smile that would break me out of my grumpiest of moods. I can't believe they're gone, and I can only imagine what folks who were closer to them must be going through. They were a special person, and I'm really lucky to have known them, even just for a bit.
 
 Omkar Bhalerao said:
 > Priya has always struck me as a helpful educator in addition to a knowledgeable academic. They never hesitated to help out with the overall structure of the class and perform logistical duties even as a heavily burdened PhD student. During our time together as TAs, the work ethic that they displayed heavily inspired me to improve my own efforts as a TA for the class, and I also learned quite a lot from them.
+
+Paulette Koronkevich said:
+> I am so fortunate to have known Priya for too short of a time. I met them at POPL in 2020, and found an instant connection. They reminded me why I wanted to pursue research--because of the excitement of new discovery, but also because of the kindness of the community. Priya was an undergraduate at the time but was already participating in the community and learning so much. The next time we met in person was 3 years later, and it was as if no time had passed. We instantly wrapped each other in a huge hug. I expected that these wonderful meetings and hugs would happen for many, many more years. I am so proud of everything they’ve accomplished, and the impact they’ve had on all their communities, and I will miss them greatly. We’ve lost a piece of our heart, but Priya has shown us that our heart should remain open.
 
 Goodbye Priya. Your spark is eternal.
 
