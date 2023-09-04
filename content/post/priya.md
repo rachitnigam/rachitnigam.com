@@ -49,6 +49,8 @@ At every conference I attend, I will miss them.
 At every group discussion, I will miss them.
 When I talk about my mentees, my friends, and my time in grad school, I will miss them.
 
+Goodbye Priya. Your spark is eternal.
+
 Joshua Turcotti said:
 > It always appeared as if things came naturally to Priya, but the more you got to know them the more you realized that the thing that came most naturally was putting in more hours than I ever knew the day had methodically researching, preparing, and attacking the problems in their life. They always fought battles hard, but came out the other side with skills and passions that inspired others. Music was a huge part of their life that they worked so hard to cultivate, becoming a beautiful vocalist and an aspiring guitarist. They never wanted to be passionate about things alone, and so they took that love of music into their community, performing with our beloved Dexter and with a local band. They always brought out the best in the communities that were lucky enough to have them, and in short time they always become one the best and brightest elements of those communities themselves.
 
@@ -61,6 +63,7 @@ Omkar Bhalerao said:
 Paulette Koronkevich said:
 > I am so fortunate to have known Priya for too short of a time. I met them at POPL in 2020, and found an instant connection. They reminded me why I wanted to pursue research--because of the excitement of new discovery, but also because of the kindness of the community. Priya was an undergraduate at the time but was already participating in the community and learning so much. The next time we met in person was 3 years later, and it was as if no time had passed. We instantly wrapped each other in a huge hug. I expected that these wonderful meetings and hugs would happen for many, many more years. I am so proud of everything they’ve accomplished, and the impact they’ve had on all their communities, and I will miss them greatly. We’ve lost a piece of our heart, but Priya has shown us that our heart should remain open.
 
-Goodbye Priya. Your spark is eternal.
+Griffin Berlstein wrote an [in remembrance post](https://griffinberlste.in/blog/2023-09-02-priya/).
+
 
 [priya]: https://priyasrikumar.com/
