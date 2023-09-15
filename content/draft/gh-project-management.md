@@ -65,7 +65,7 @@ Labels allow us to slice and dice the set of issues we care about and review the
 
 There are two pieces of advice on issues:
 - *Feature proposal and discussions must be issues*: If any code-related discussion starts getting in the weeds on the messaging platform, move the discussion into an issue. This will avoid losing the thread of conversation and ensure other team members can chime in.
-- *Issue creation is cheap*: : when in doubt, create an issue. If it is easily answered, a senior contributor will do so and close it.
+- *Issue creation is cheap*: when in doubt, create an issue. If it is easily answered, a senior contributor will do so and close it.
 
 Again, these guidelines don't scale to large projects, but we've found them to be useful in instilling a sense of ownership with new contributors and building institutional memory.
 
@@ -75,7 +75,11 @@ Again, these guidelines don't scale to large projects, but we've found them to b
 1. Disable pushes to the `main` branch. This means that no one is allowed to directly push to the `main` branch.
 2. Require certain tests to pass before a pull request can be merged.
 3. Disable the "Merge" and "Rebase" options for pull requests and [only allow for "Squashes"][gh-merge-methods]. Also, require a [linear history][git-linear]. Along with (2), this means that every commit to `main` is state where the tests pass.
-4. Build a culture of code review.
+4. Build a culture of code review. This helps new contributors understand the culture of the project and enable transference of institutional memory.
+
+Contributors should feel free to break tests and muck around with things as much as needed when working on a feature on a branch.
+However, once the feature is ready to be merged, they should open a pull request and ensure that all tests pass on the final commit.
+If using the "squash merge" strategy, this will merge all the branch commits into one commit that has all the tests passing.
 
 ### Testing
 
