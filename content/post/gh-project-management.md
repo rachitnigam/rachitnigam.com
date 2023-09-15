@@ -1,6 +1,6 @@
 +++
 title = "GitHub-centric Research Management"
-date = 2023-08-24
+date = 2023-09-15
 draft = false
 
 [extra]
