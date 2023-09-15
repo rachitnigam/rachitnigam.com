@@ -71,5 +71,8 @@ Alexa VanHattum said:
 
 Griffin Berlstein wrote an [in remembrance post](https://griffinberlste.in/blog/2023-09-02-priya/).
 
+The UW PLSE group wrote a [remembrance post][uw-rem]
+
 
 [priya]: https://priyasrikumar.com/
+[uw-rem]: https://uwplse.org/priya
