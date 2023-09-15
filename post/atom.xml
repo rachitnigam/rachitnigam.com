@@ -4,8 +4,129 @@
     <link href="https://rachit.pl/post/atom.xml" rel="self" type="application/atom+xml"/>
     <link href="https://rachit.pl/post/"/>
     <generator uri="https://www.getzola.org/">Zola</generator>
-    <updated>2023-09-01T00:00:00+00:00</updated>
+    <updated>2023-09-15T00:00:00+00:00</updated>
     <id>https://rachit.pl/post/atom.xml</id>
+    <entry xml:lang="en">
+        <title>GitHub-centric Research Management</title>
+        <published>2023-09-15T00:00:00+00:00</published>
+        <updated>2023-09-15T00:00:00+00:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="https://rachit.pl/post/gh-project-management/" type="text/html"/>
+        <id>https://rachit.pl/post/gh-project-management/</id>
+        
+        <content type="html">&lt;p&gt;I am a &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.usenix.org&#x2F;system&#x2F;files&#x2F;1311_05-08_mickens.pdf&quot;&gt;systems researcher&lt;&#x2F;a&gt; which means almost all of my research requires writing lots of a code.
+I also &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=kwto0AQ_Un8&quot;&gt;believe in building in the open&lt;&#x2F;a&gt; and, being a person of hubris, like writing good code that other people can use.
+Finally, as an academic, I also like teaching people how to write good code and build cool tools that other people can use.
+Over the course of my PhD, my advisor and I have developed a set of guidelines that we often repeat to people working with us to help them write better code when building research projects.
+I also have &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;cucapra&#x2F;calyx&quot;&gt;some experience&lt;&#x2F;a&gt; scaling up research projects, and I follow the same guidelines when building the management structure for new projects.&lt;&#x2F;p&gt;
+&lt;p&gt;Our guidelines revolve around using the GitHub code management platform to mechanize, track, and remember research tasks.
+While I’m going to use GitHub-specific terms in this post, I expect alternatives like GitLab to also be perfectly capable of providing the same utility.
+Before reading this post, I recommend &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;docs.github.com&#x2F;en&#x2F;get-started&#x2F;using-git&#x2F;about-git&quot;&gt;getting familiar with git&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;github-basics&quot;&gt;GitHub Basics&lt;&#x2F;h2&gt;
+&lt;p&gt;GitHub is a code management platform powered by &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;docs.github.com&#x2F;en&#x2F;get-started&#x2F;using-git&#x2F;about-git&quot;&gt;git&lt;&#x2F;a&gt; that you to collaborate with people on code and manage its long-term health. Specifically:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Issues&lt;&#x2F;strong&gt;: Tracks individual “tickets” that track outstanding work items. This can be as simple as fixing a bug or as complicated feature rewrites (making the “issues” title a bit of a misnomer). This is the core “planning section” for your projects. Any idea that requires more than 5 minutes of implementation work gets written up here. Once an issue has been addressed, it can be “closed” which hides it from the section.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;Pull Requests (PRs)&lt;&#x2F;strong&gt;: This is the “implementation section”. A pull request (&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;stackoverflow.com&#x2F;questions&#x2F;21657430&#x2F;why-is-a-git-pull-request-not-called-a-push-request&quot;&gt;confusingly named&lt;&#x2F;a&gt;) is a bundle of code changes that someone wrote up and wants to have &lt;em&gt;merged&lt;&#x2F;em&gt; into the codebase. Often, but not always, a pull request will correspond to at least one issue created in the “issues” section.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;em&gt;Continuous Integration&#x2F;Deployment (CI&#x2F;CD)&lt;&#x2F;em&gt;: Automation that runs tests for you (integration testing) or deploys code artifacts for you (deployment) on every code commit. A good CI&#x2F;CD system will ensure that new code doesn’t break existing features and automatically updates documentation.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;Linking&lt;&#x2F;strong&gt;: A key feature of GitHub that we use is &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;docs.github.com&#x2F;en&#x2F;issues&#x2F;tracking-your-work-with-issues&#x2F;linking-a-pull-request-to-an-issue&quot;&gt;linking issues and pull requests&lt;&#x2F;a&gt;. This allows us to build a breadcrumb trails that contextualize decisions. A key part of our philosophy is creating links between relevant issues and PRs.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;planning-issues&quot;&gt;Planning (Issues)&lt;&#x2F;h2&gt;
+&lt;p&gt;The &lt;em&gt;Issues&lt;&#x2F;em&gt; section is where the bulk of planning and discussions about the code should happen.
+The most common alternative to this is using messaging apps like Slack or Zulip which, I contend, is a bad idea.
+Messaging apps, by design, keep focus on one thread of conversation while code development requires many different, interconnected thread of conversations over long periods of time.
+Messaging apps don’t really provide effective mechanisms for continuing several conversations over multiple months and linking between them.&lt;&#x2F;p&gt;
+&lt;p&gt;Instead, the “Issues” section provides a permanent space for discussions to live and allows us to link together relevant things.
+A good issue has the following two characteristics:&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;strong&gt;Reproducible&lt;&#x2F;strong&gt;. The issue has enough information contained within it to allow someone who is &lt;em&gt;not the author of the issue&lt;&#x2F;em&gt; to work on it.
+Even if you’re the &lt;em&gt;only person&lt;&#x2F;em&gt; working on the codebase, this is good practice because you today and you a year from now are different people.
+Concretely, if there is a bug in the system, the issue should provide a &lt;em&gt;minimal reproducible example&lt;&#x2F;em&gt; (MRE) along, a command to run reproduce the problem, and the expected behavior.
+If the issue is a feature request, it should instead provide a sketch of the idea and outline the expected changes that need to be made to each component of the system.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;strong&gt;Contextualized&lt;&#x2F;strong&gt;. The issue should link to existing issues and pull requests that are related to it. This builds institutional knowledge because it allows us to trace why certain decisions were made about the code and the features.
+A lot of projects get &lt;em&gt;reproducibility&lt;&#x2F;em&gt; right but fail on this front because new contributors might not know enough about which things are related.
+It is the job of senior contributors to aggressively track and link together things as the junior contributors develop the context of the codebase.&lt;&#x2F;p&gt;
+&lt;p&gt;These guidelines are missing one characteristic that is critical in large-scale projects: &lt;strong&gt;Actionable&lt;&#x2F;strong&gt;, which is the idea that the issue must be something that can be worked on in the short term. Research projects will necessarily have ideas and bugs that are not workable in the short term.
+However, it is still useful to sketch out the idea (&lt;em&gt;reproducible&lt;&#x2F;em&gt;) build a web of connections for those ideas (&lt;em&gt;contextualized&lt;&#x2F;em&gt;).&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;labels&quot;&gt;Labels&lt;&#x2F;h3&gt;
+&lt;p&gt;GitHub issues and pull requests can be tagged with “labels” to categorize them. My recommendation is to have two kinds of labels:&lt;&#x2F;p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Component&lt;&#x2F;strong&gt;. Which part of the codebase does this issue relate to? For example, it could be a specific tool, error message, UX, etc.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;Status&lt;&#x2F;strong&gt;. What is the status of this issue? Keep this to a few categories. Here’s my recommendation:
+&lt;ol&gt;
+&lt;li&gt;“Available”: This can be worked on.&lt;&#x2F;li&gt;
+&lt;li&gt;“Needs Triage”: We don’t know exactly how to work on this.&lt;&#x2F;li&gt;
+&lt;li&gt;“Needs Discussion”: We need to discuss whether this is something we should ever work on.&lt;&#x2F;li&gt;
+&lt;li&gt;“Blocked”: This issue is blocked by something else. When the last tag is used, make sure to link the issue blocking this one.&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;p&gt;Labels allow us to slice and dice the set of issues we care about and review them from time to time. For example, after a major feature is implemented, we can look at all the blocked issues and see which ones were unblocked. Similarly, if we’re putting more effort into a particular component, it could be useful to see which are the currently open issues.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;guidance&quot;&gt;Guidance&lt;&#x2F;h3&gt;
+&lt;p&gt;There are two pieces of advice on issues:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;Feature proposal and discussions must be issues&lt;&#x2F;em&gt;: If any code-related discussion starts getting in the weeds on the messaging platform, move the discussion into an issue. This will avoid losing the thread of conversation and ensure other team members can chime in.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;em&gt;Issue creation is cheap&lt;&#x2F;em&gt;: when in doubt, create an issue. If it is easily answered, a senior contributor will do so and close it.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;Again, these guidelines don’t scale to large projects, but we’ve found them to be useful in instilling a sense of ownership with new contributors and building institutional memory.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;doing-pull-requests&quot;&gt;Doing (Pull Requests)&lt;&#x2F;h2&gt;
+&lt;p&gt;&lt;em&gt;Pull requests&lt;&#x2F;em&gt; is the section where all the code &lt;em&gt;must&lt;&#x2F;em&gt; travel through. This discipline is extremely powerful if practiced well: it allows people to review things and make sure changes don’t break other people’s code. Here are a couple of guidelines to enable this:&lt;&#x2F;p&gt;
+&lt;ol&gt;
+&lt;li&gt;Disable pushes to the &lt;code&gt;main&lt;&#x2F;code&gt; branch. This means that no one is allowed to directly push to the &lt;code&gt;main&lt;&#x2F;code&gt; branch.&lt;&#x2F;li&gt;
+&lt;li&gt;Require certain tests to pass before a pull request can be merged.&lt;&#x2F;li&gt;
+&lt;li&gt;Disable the “Merge” and “Rebase” options for pull requests and &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;docs.github.com&#x2F;en&#x2F;repositories&#x2F;configuring-branches-and-merges-in-your-repository&#x2F;configuring-pull-request-merges&#x2F;about-merge-methods-on-github&quot;&gt;only allow for “Squashes”&lt;&#x2F;a&gt;. Also, require a &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.bitsnbites.eu&#x2F;a-tidy-linear-git-history&#x2F;&quot;&gt;linear history&lt;&#x2F;a&gt;. Along with (2), this means that every commit to &lt;code&gt;main&lt;&#x2F;code&gt; is state where the tests pass.&lt;&#x2F;li&gt;
+&lt;li&gt;Build a culture of code review. This helps new contributors understand the culture of the project and enable transference of institutional memory.&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;p&gt;Contributors should feel free to break tests and muck around with things as much as needed when working on a feature on a branch.
+However, once the feature is ready to be merged, they should open a pull request and ensure that all tests pass on the final commit.
+If using the “squash merge” strategy, this will merge all the branch commits into one commit that has all the tests passing.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;testing&quot;&gt;Testing&lt;&#x2F;h3&gt;
+&lt;p&gt;A good test suite is a mark of a real project.&lt;span style=&quot;white-space:nowrap&quot;&gt;
+&lt;label for=&quot;sn-1&quot;
+       class=&quot;margin-toggle sidenote-number&quot;&gt;
+&lt;&#x2F;label&gt;
+&lt;&#x2F;span&gt;
+&lt;input type=&quot;checkbox&quot;
+       id=&quot;sn-1&quot;
+       class=&quot;margin-toggle&quot;&#x2F;&gt;
+&lt;span class=&quot;sidenote&quot;&gt;
+If you’re a systems researcher and your projects don’t have tests, I’m putting you in the category of “people who build toys”.
+&lt;&#x2F;span&gt;
+ There is lots of good advice on how to write test suites, especially if you &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.cs.cornell.edu&#x2F;~asampson&#x2F;blog&#x2F;turnt.html&quot;&gt;work on compilers&lt;&#x2F;a&gt;.
+Once you have a test suite, make sure it is run on every commit.
+GitHub makes this particularly easy through &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;docs.github.com&#x2F;en&#x2F;actions&quot;&gt;GitHub Actions&lt;&#x2F;a&gt;: you define a configuration to install all the tools needed to run your system, and define how to run commands.
+GitHub will use this configuration to run tests on every commit, including pull requests and allow you to ensure that bad code doesn’t get committed.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;reviewing&quot;&gt;Reviewing&lt;&#x2F;h3&gt;
+&lt;p&gt;Code review is the practice of having a second person read your code before it gets merged into the codebase.
+This is the place where a senior contributor helps the code author understand how their code affects other systems, if there are better ways to implement a feature, suggest refactorings, and remind them to write tests.&lt;span style=&quot;white-space:nowrap&quot;&gt;
+&lt;label for=&quot;sn-2&quot;
+       class=&quot;margin-toggle sidenote-number&quot;&gt;
+&lt;&#x2F;label&gt;
+&lt;&#x2F;span&gt;
+&lt;input type=&quot;checkbox&quot;
+       id=&quot;sn-2&quot;
+       class=&quot;margin-toggle&quot;&#x2F;&gt;
+&lt;span class=&quot;sidenote&quot;&gt;
+Yeah, I’m looking at you. I know you didn’t do it.
+&lt;&#x2F;span&gt;
+
+It is a particularly powerful tool for research mentorship: it allows you to teach junior contributors how to write good code, practice rigorous testing, and develop a sense of aesthetics about code architecture.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;deployment&quot;&gt;Deployment&lt;&#x2F;h3&gt;
+&lt;p&gt;Deployment usually happens after a particular code change has been merged in to the main branch.
+A common set of things to deploy can be:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Release code artifacts such as packages or docker builds.&lt;&#x2F;li&gt;
+&lt;li&gt;Build and deploy a new version of a website.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;Automating deployment is an upfront cost, but it can have tremendous benefits. Answers to questions like “how do I fix this typo on the website” or “how do I release a new docker build” simply become: “edit this file and open a pull request!”.
+&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;docs.github.com&#x2F;en&#x2F;actions&quot;&gt;GitHub Actions&lt;&#x2F;a&gt; can again be used to build and deploy artifacts.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;summary&quot;&gt;Summary&lt;&#x2F;h2&gt;
+&lt;p&gt;Scaling up research projects requires balancing short-term goals like writing a paper or hacking together a feature for a deadline, and long term goals, like ensure code readability, reducing tech debt, etc.
+It is also challenging to deal with the turnover on projects.
+The above guidelines are designed to build enough &lt;em&gt;institutional memory&lt;&#x2F;em&gt; and &lt;em&gt;infrastructure&lt;&#x2F;em&gt; so that people can continue contributing and developing the system well beyond the “research prototype” phase.&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
     <entry xml:lang="en">
         <title>Your Eternal Spark</title>
         <published>2023-09-01T00:00:00+00:00</published>

@@ -46,7 +46,7 @@
 <div class="date">
 PhD student is an issue triager
 </div>
-<p class="date">August 24, 2023</p>
+<p class="date">September 15, 2023</p>
 </div>
 
 <div class="post">
@@ -100,7 +100,7 @@ However, it is still useful to sketch out the idea (<em>reproducible</em>) build
 <p>There are two pieces of advice on issues:</p>
 <ul>
 <li><em>Feature proposal and discussions must be issues</em>: If any code-related discussion starts getting in the weeds on the messaging platform, move the discussion into an issue. This will avoid losing the thread of conversation and ensure other team members can chime in.</li>
-<li><em>Issue creation is cheap</em>: : when in doubt, create an issue. If it is easily answered, a senior contributor will do so and close it.</li>
+<li><em>Issue creation is cheap</em>: when in doubt, create an issue. If it is easily answered, a senior contributor will do so and close it.</li>
 </ul>
 <p>Again, these guidelines don’t scale to large projects, but we’ve found them to be useful in instilling a sense of ownership with new contributors and building institutional memory.</p>
 <h2 id="doing-pull-requests">Doing (Pull Requests)</h2>
@@ -109,8 +109,11 @@ However, it is still useful to sketch out the idea (<em>reproducible</em>) build
 <li>Disable pushes to the <code>main</code> branch. This means that no one is allowed to directly push to the <code>main</code> branch.</li>
 <li>Require certain tests to pass before a pull request can be merged.</li>
 <li>Disable the “Merge” and “Rebase” options for pull requests and <a rel="noopener nofollow noreferrer" target="_blank" href="https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/configuring-pull-request-merges/about-merge-methods-on-github">only allow for “Squashes”</a>. Also, require a <a rel="noopener nofollow noreferrer" target="_blank" href="https://www.bitsnbites.eu/a-tidy-linear-git-history/">linear history</a>. Along with (2), this means that every commit to <code>main</code> is state where the tests pass.</li>
-<li>Build a culture of code review.</li>
+<li>Build a culture of code review. This helps new contributors understand the culture of the project and enable transference of institutional memory.</li>
 </ol>
+<p>Contributors should feel free to break tests and muck around with things as much as needed when working on a feature on a branch.
+However, once the feature is ready to be merged, they should open a pull request and ensure that all tests pass on the final commit.
+If using the “squash merge” strategy, this will merge all the branch commits into one commit that has all the tests passing.</p>
 <h3 id="testing">Testing</h3>
 <p>A good test suite is a mark of a real project.<span style="white-space:nowrap">
 <label for="sn-1"
