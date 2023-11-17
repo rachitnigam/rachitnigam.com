@@ -6,7 +6,7 @@ Hi! I'm Rachit Nigam{% footnote() %}
 *Pronunciation*: Ruh-CHITH NI-gum. First name rhymes with "crutch-it".
 {% end %}
 a visiting researcher at [MIT CSAIL][csail] working with [Jonathan Ragan-Kelley][jrk] and a PhD candidate at [Cornell University][pl-cornell] working with [Adrian Sampson][adrian].
-**I will be on the academic and industrial research job market in the 2023-24 cycle.**
+**I will be on the academic and industrial research job market in the 2023-24 cycle. My [statement][research-stmt] overviews some of my research interests.**
 
 My research ([Filament][], [Calyx][], [Dahlia][]) is focused on building high-level programming models for designing hardware accelerators and is supported through the [Jane Street Fellowship][js-fellow].
 I've previously been a visiting scholar at the [UW PLSE lab][plse] and [Brown's PLT group][brown-plt], and did my undergraduate research at the [PLASMA research group][plasma] at the University of Massachusetts Amherst.
@@ -31,3 +31,4 @@ I started [PLTea](https://pltea.github.io/) during PLDI '20 in hopes of keeping
 [jrk]: https://people.csail.mit.edu/jrk/
 [filament]: https://filamenthdl.com
 [brown-plt]: https://cs.brown.edu/research/plt/
+[research-stmt]: /files/research.pdf
