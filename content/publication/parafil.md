@@ -17,7 +17,7 @@ authors = [
 # publication = "Programming Languages Design and Implementation"
 publication_short = "Draft"
 
-# pdf = "https://arxiv.org/abs/2312.16300"
+pdf = "https://arxiv.org/abs/2401.02570"
 urls = [ ]
 type="conf"
 +++
