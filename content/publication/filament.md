@@ -20,7 +20,7 @@ pdf = "/files/pubs/filament.pdf"
 urls = [
   { name = "Website", url = "https://filamenthdl.com" },
   { name = "Code", url = "https://github.com/cucapra/filament" },
-  { name = "Talk", url = "https://www.youtube.com/watch?v=sfNxTACbUTE" },
+  { name = "Talk", url = "https://www.youtube.com/live/F3z39M0gdJU?si=rSmWZBUFneABrAFu&t=1060" },
 ]
 type="conf"
 +++
