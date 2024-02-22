@@ -45,4 +45,4 @@ I am currently recovering from a recent illness. I would appreciate the followin
 I am not eating dairy, raw foods (sushi etc.), and extremely spicy foods. I am generally also avoiding extremely caffeinated drinks but am still happy to accompany folks to coffee or tea shops.
 
 **Schedule.**
-I would like a 15-minute break every two hours to eat a light snack and become hydrated.
+I would like a 15-minute break every two hours to eat a light snack.
