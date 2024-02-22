@@ -4,6 +4,10 @@ template = "single-page.html"
 dont_index = true
 +++
 
+**Please do not share a link to this page publicly.**
+
+-----
+
 **Title.** Programming Systems for Designing Hardware Accelerators
 
 **Abstract.**
