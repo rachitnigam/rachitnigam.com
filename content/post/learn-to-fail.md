@@ -111,7 +111,7 @@ graduate student joined the project. This spring was perhaps the most productive
 semester of my undergraduate research career. I had gained enough technical
 and programming chops to push on the project without hands-on support. By the
 end of this semester, we had managed to build an IDE and give a talk about it
-at [NEPLS '17](https://nepls.org/Events/31/).
+at NEPLS '17.
 
 ### Summer 2017
 

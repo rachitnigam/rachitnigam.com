@@ -8,7 +8,7 @@ Hi! I'm Rachit Nigam{% footnote() %}
 a visiting researcher at [MIT CSAIL][csail] working with [Jonathan Ragan-Kelley][jrk] and a PhD candidate at [Cornell University][pl-cornell] working with [Adrian Sampson][adrian].
 **I will be on the academic and industrial research job market in the 2023-24 cycle. My [statement][research-stmt] overviews some of my research interests.**
 
-My research ([Filament][], [Calyx][], [Dahlia][]) is focused on building high-level programming models for designing hardware accelerators and is supported through the [Jane Street Fellowship][js-fellow].
+My research ([Filament][], [Calyx][], [Dahlia][]) is focused on building high-level programming models for designing hardware accelerators and is supported through the Jane Street Fellowship.
 I've previously been a visiting scholar at the [UW PLSE lab][plse] and [Brown's PLT group][brown-plt], and did my undergraduate research at the [PLASMA research group][plasma] at the University of Massachusetts Amherst.
 
 I started [PLTea](https://pltea.github.io/) during PLDI '20 in hopes of keeping social interactions alive during virtual conferences. PLTea has since been organized several times ([PLDI '22][plt-pldi22], [ICFP '21][plt-icfp21], [SPLASH '21][plt-oopsla21], [PLDI '21][plt-pldi21]) and has inspired spin-offs in other communities ([ArchChat][]).
@@ -26,7 +26,6 @@ I started [PLTea](https://pltea.github.io/) during PLDI '20 in hopes of keeping
 [archchat]: https://www.sigarch.org/introducing-the-archchat-social-hour-connecting-computer-architects-everywhere/
 [plt-pldi22]: https://pldi22.sigplan.org/track/pldi-2022-pldi#program
 [plse]: https://uwplse.org/
-[js-fellow]: https://www.janestreet.com/join-jane-street/programs-and-events/grf-profiles/
 [csail]: https://www.csail.mit.edu/
 [jrk]: https://people.csail.mit.edu/jrk/
 [filament]: https://filamenthdl.com
