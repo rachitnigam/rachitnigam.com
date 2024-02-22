@@ -23,8 +23,10 @@ Second, Calyx, a modular compiler infrastructure that transforms high-level lang
 I will conclude by discussing next steps towards building a large-scale ecosystem for hardware design and the challenges with the complementary goal of designing abstractions for using accelerators.
 
 **Biography.** Rachit Nigam (he/him) is a PhD student at Cornell University and a visiting scholar at MIT working on new programming systems for designing and using hardware accelerators.
-His research is supported by a Jane Street Fellowship and has adopted by broad open-source communities such as the [LLVM CIRCT](https://circt.llvm.org) project, and used by industrial teams at Google and Jane Street.
+His research is supported by a Jane Street Fellowship and has adopted by broad open-source communities such as the [LLVM CIRCT](https://circt.llvm.org) project and by industrial teams at Google and Jane Street.
 Rachit is the founder of PLTea (https://pltea.github.io/), a virtual, worldwide organization for people interested in programming languages.
+
+**Headshot**. [Click here for link](/img/headshot.png).
 
 -----
 
