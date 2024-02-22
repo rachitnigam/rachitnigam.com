@@ -24,7 +24,8 @@ Together, these systems represent a step towards my vision of building a large-s
 I will conclude by discussing challenges with the complementary goal of designing abstractions for using accelerators.
 
 
-**Biography.** Rachit Nigam (he/him) is a PhD student at Cornell University and a visiting scholar at MIT working on new programming systems for designing and using hardware accelerators. His research is supported by the Jane Street Fellowship and has been highlighted at MIT's PL review. Rachit is the founder of PLTea (https://pltea.github.io/), a virtual, worldwide organization for people interested in programming languages, and enjoys building open-source tools, from little scripts to large-scale infrastructures.
+**Biography.** Rachit Nigam (he/him) is a PhD student at Cornell University and a visiting scholar at MIT working on new programming systems for designing and using hardware accelerators. His research is supported by the Jane Street Fellowship and has been highlighted at MIT's PL review. Rachit is the founder of PLTea (https://pltea.github.io/), a virtual, worldwide organization for people interested in programming languages.
+He also enjoys building open-source tools, from little scripts to large-scale infrastructures.
 
 -----
 
