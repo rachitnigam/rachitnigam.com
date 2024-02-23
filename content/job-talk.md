@@ -11,15 +11,15 @@ dont_index = true
 **Title.** Modular Abstractions for Hardware Design
 
 **Abstract.**
-The exponential performance improvements of general-purpose processors have driven the modern computing revolution.
-But with the end of Dennard scaling and the rise of dark silicon, processor-based systems can no longer provide such improvements.
+The exponential performance improvements of general-purpose processors have long driven the modern computing revolution.
+But with the end of Dennard scaling and the rise of dark silicon, processor-based systems can no longer sustain these trends.
 Instead, hardware accelerators, which sacrifice computational generality for efficiency, have become ubiquitous and enabled dramatic improvements in domains from machine learning (Google TPU) to networking (Intel Tofino).
 In the acceleration era, we must rethink the strict separation between software and hardware design and enable domain experts to design and deploy accelerators.
 
 In this talk, I will present two systems new systems for designing hardware accelerators.
 First, Filament, a hardware description language that uses a novel type system to enable modular reasoning of hardware designs and eliminates a large class of bugs at compile time.
 Second, Calyx, a modular compiler infrastructure that transforms high-level languages, like C++, Halide, and PyTorch, and optimizes them to produce efficient hardware designs.
-Together, these systems represent a first step towards a large-scale ecosystem for hardware design, where users seamlessly intermix high- and low-level abstractions, package up reusable components, and implement efficient accelerators.
+Together, these systems represent a first step towards an ecosystem for hardware design, where users seamlessly intermix high- and low-level abstractions, package up reusable components, and implement efficient accelerators.
 I will conclude by discussing next steps as well as the challenges with the complementary goal of designing programming abstractions for using accelerators.
 
 
