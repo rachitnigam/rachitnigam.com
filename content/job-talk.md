@@ -8,7 +8,7 @@ dont_index = true
 
 -----
 
-**Title.** Programming Systems for Designing Hardware Accelerators
+**Title.** Modular Abstractions for Hardware Design
 
 **Abstract.**
 The exponential performance improvements of general-purpose processors have driven the modern computing revolution.
