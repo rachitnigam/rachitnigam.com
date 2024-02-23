@@ -11,16 +11,17 @@ dont_index = true
 **Title.** Programming Systems for Designing Hardware Accelerators
 
 **Abstract.**
-Improvements to transistor design, through physical scaling laws such as Dennard's scaling and Moore's law, have provided transparent and exponential performance improvements to the computing stack for decades.
-With the end of these processes in sight, next-generation systems need to use each transistor as efficiently as possible.
-Hardware accelerators enable this trade-off by specializing to a particular application domain, and have been widely deployed in domains from machine learning (Google TPU, AWS Inferentia) to networking (Intel Tofino, Mellanox Innova).
+The exponential performance improvements of general-purpose processors have driven the modern computing revolution.
+But with the end of Dennard scaling and the rise of dark silicon, processor-based systems can no longer provide such improvements.
+Instead, hardware accelerators, which sacrifice computational generality for efficiency, have become ubiquitous and enabled dramatic improvements in domains from machine learning (Google TPU) to networking (Intel Tofino).
+In the acceleration era, we must rethink the strict separation between software and hardware design and enable domain experts to design and deploy accelerators.
 
-However, tools for building accelerators remain accessible only to experts, requiring deep domain knowledge for effective use.
-Through the lens of modularity, my research builds new programming systems for accelerator design that enable users of different expertise to efficiently design and optimize hardware accelerators for their needs.
-I will discuss two systems in this talk.
-First, Filament, a new hardware description language that uses a novel type system to enable modular reasoning of hardware designs and eliminates a large class of bugs at compile-time.
+In this talk, I will present two systems new systems for designing hardware accelerators.
+First, Filament, a hardware description language that uses a novel type system to enable modular reasoning of hardware designs and eliminates a large class of bugs at compile time.
 Second, Calyx, a modular compiler infrastructure that transforms high-level languages, like C++, Halide, and PyTorch, and optimizes them to produce efficient hardware designs.
-I will conclude by discussing next steps towards building a large-scale ecosystem for hardware design and the challenges with the complementary goal of designing abstractions for using accelerators.
+Together, these systems represent a first step towards a large-scale ecosystem for hardware design, where users seamlessly intermix high- and low-level abstractions, package up reusable components, and implement efficient accelerators.
+I will conclude by discussing next steps as well as the challenges with the complementary goal of designing programming abstractions for using accelerators.
+
 
 **Biography.** Rachit Nigam (he/him) is a PhD student at Cornell University and a visiting scholar at MIT working on new programming systems for designing and using hardware accelerators.
 His research is supported by a Jane Street Fellowship and has adopted by broad open-source communities such as the [LLVM CIRCT](https://circt.llvm.org) project and by industrial teams at Google and Jane Street.
@@ -32,11 +33,11 @@ Rachit is the founder of PLTea (https://pltea.github.io/), a virtual, worldwide 
 
 ## Talk Logistics
 
-**Length.** The expected length of my talk is **45-minutes**. Please let me know in advance if you would like a shorter or longer talk.
+**Length.** The expected length of my talk is **45-minutes** excluding questions. Please let me know in advance if you would like a shorter or longer talk.
 
 **Presentation.** I am planning to present my talk on my personal laptop which has HDMI and USB-C ports. If I am expected to present on a different laptop or need to connect to different display interfaces, please let me know ASAP.
 
-**Recording.** In general, I am happy to have the talk recorded for internal usage of the department. If your department is planning to publicly publish a version of my talk, please let me know in advance.
+**Recording.** In general, I am happy to have the talk recorded for internal use of your department. If your department is planning to publicly publish a version of my talk, please let me know in advance.
 
 ## Accommodation Requests
 I am currently recovering from a recent illness. I would appreciate the following accommodations.
