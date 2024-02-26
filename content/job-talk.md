@@ -16,7 +16,7 @@ But with the end of Dennard scaling and the rise of dark silicon, processor-base
 Instead, hardware accelerators, which sacrifice computational generality for efficiency, have become ubiquitous and enabled dramatic improvements in domains from machine learning (Google TPU) to networking (Intel Tofino).
 In the acceleration era, we must rethink the strict separation between software and hardware design and enable domain experts to design and deploy accelerators.
 
-In this talk, I will present two systems new systems for designing hardware accelerators.
+In this talk, I will present two new systems for designing hardware accelerators.
 First, Filament, a hardware description language that uses a novel type system to enable modular reasoning of hardware designs and eliminates a large class of bugs at compile time.
 Second, Calyx, a modular compiler infrastructure that transforms high-level languages, like C++, Halide, and PyTorch, and optimizes them to produce efficient hardware designs.
 Together, these systems represent a first step towards an ecosystem for hardware design, where users seamlessly intermix high- and low-level abstractions, package up reusable components, and implement efficient accelerators.
