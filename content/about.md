@@ -11,7 +11,10 @@ a visiting researcher at [MIT CSAIL][csail] working with [Jonathan Ragan-Kelley]
 My research ([Filament][], [Calyx][], [Dahlia][]) is focused on building high-level programming models for designing hardware accelerators and is supported through the Jane Street Fellowship.
 I've previously been a visiting scholar at the [UW PLSE lab][plse] and [Brown's PLT group][brown-plt], and did my undergraduate research at the [PLASMA research group][plasma] at the University of Massachusetts Amherst.
 
-I started [PLTea](https://pltea.github.io/) during PLDI '20 in hopes of keeping social interactions alive during virtual conferences. PLTea has since been organized several times ([PLDI '22][plt-pldi22], [ICFP '21][plt-icfp21], [SPLASH '21][plt-oopsla21], [PLDI '21][plt-pldi21]) and has inspired spin-offs in other communities ([ArchChat][]).
+I started [PLTea][] during PLDI '20 in hopes of keeping social interactions alive during virtual conferences. PLTea has since been organized several times ([PLDI '22][plt-pldi22], [ICFP '21][plt-icfp21], [SPLASH '21][plt-oopsla21], [PLDI '21][plt-pldi21]) and has inspired spin-offs in other communities ([ArchChat][]).
+
+I am a classically trained [Tabla][] player and have a continuing obsession with synthesizers and digital audio workstations.
+When the weather allows for it, I go on long bike rides, often in search of cafés.
 
 [capra]: https://capra.cs.cornell.edu/
 [adrian]: https://www.cs.cornell.edu/~asampson/
@@ -31,3 +34,5 @@ I started [PLTea](https://pltea.github.io/) during PLDI '20 in hopes of keeping
 [filament]: https://filamenthdl.com
 [brown-plt]: https://cs.brown.edu/research/plt/
 [research-stmt]: /files/research.pdf
+[tabla]: https://en.wikipedia.org/wiki/Tabla
+[pltea]: https://pltea.github.io/
