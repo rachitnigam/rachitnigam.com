@@ -44,4 +44,6 @@ author = [
   { name = "Anshuman Mohan", link = "https://www.cs.cornell.edu/~amohan/" },
   { name = "Andrew Butt", link = "https://andrewb1999.github.io/" },
   { name = "Caleb Kim", link = "https://calebmkim.github.io/" },
+  { name = "Kartik Chandra", link = "https://cs.stanford.edu/~kach/" },
+  { name = "Jonathan Ragan-Kelley", link = "https://people.csail.mit.edu/jrk/" },
 ]
