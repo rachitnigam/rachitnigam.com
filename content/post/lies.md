@@ -28,3 +28,8 @@ summary = "PhD candidate looks into a mirror"
 - Everything was invented in the 80s
 
 *Addressed to my future self*
+
+----
+
+Other readings:
+- [Satirical ways to measure academics](https://austinhenley.com/blog/measuringacademics.html)

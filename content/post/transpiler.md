@@ -7,10 +7,8 @@ draft = false
 summary = "PhD Student fights the good fight"
 +++
 
-The word *transpiler* is often used by people when they want to say that built a tool that transforms programs between languages of
-*roughly the same level of abstraction*.
 This tool is different from a *compiler* which often has a complex frontend, an optimizing middle end, and code generators for various backends.
-The big problem around most of the arguments to distinguish between compilers and "transpilers" focus on language syntax. However, anyone who wants one of these tools to *actually work* has to content with the fact that different languages will have different *semantics* and translating between those is a complex task; a task that *compilers* already do.
+The big problem around most of the arguments to distinguish between compilers and "transpilers" focus on language syntax. However, anyone who wants one of these tools to *actually work* has to contend with the fact that different languages will have different *semantics* and translating between those is a complex task; a task that *compilers* already do.
 
 ## Lie #1: Transpilers Don't have Frontends
 
@@ -75,7 +73,7 @@ console.log([0, ...range(10)])
 ```
 
 Facebook's [regenerator][] is a BabelJS-based "transpiler" to transform generators into language constructs that already existed
-in JavaScript. Should be too hard, right?
+in JavaScript. Shouldn't be too hard, right?
 ```js
 var _marked = /*#__PURE__*/regeneratorRuntime.mark(range);
 function range(max) {
@@ -137,11 +135,12 @@ For example, the JVM has an ahead-of-time compiler from Java source code to the 
 
 People seemed to scared of compilers and resort to claims like "I don't want something as complex", or "string interpolation is good enough". This is silly. Anyone who has built one of these "transpilers" knows that inevitably, they get complex and poorly maintained precisely because of the delusion that they aren't doing something complex.
 
-Programming languages are not just syntax, they have semantics too and pretending that you can get away with just manipulating the former is silly.
+Programming languages are not just syntax; they have semantics too.
+Pretending that you can get away with just manipulating the former is delusional and results in bad tools.
 
-*Edit (08/16/23): This post generated some discussion on [Lobsters][] but because I am not a member, so I've rebutted some claims right here.*
+*Lindsey Kuper has a [well-written article](https://decomposition.al/blog/2017/07/30/what-do-people-mean-when-they-say-transpiler/) on the same topic.*
 
-_Have comments? [Email](mailto:rachit.nigam12@gmail.com) or [tweet](https://twitter.com/notypes) at me._
+
 
 
 [py-reduce]: https://github.com/python/cpython/blob/main/Lib/functools.py#L237

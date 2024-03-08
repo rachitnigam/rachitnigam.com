@@ -59,3 +59,9 @@ Dear Sir, you have built a compiler.
 
 *Addressed to,*<br/>
 *Those who did not want to build a compiler*
+
+---------
+
+Other readings:
+- [Compilers for the Future](https://adam-mcdaniel-blog.github.io/compilers-for-the-future)
+- [If Architects had to work like Programmers](http://www.gksoft.com/a/fun/architects.html)
