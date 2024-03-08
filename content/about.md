@@ -5,16 +5,15 @@ template = "index.html"
 Hi! I'm Rachit Nigam{% footnote() %}
 *Pronunciation*: Ruh-CHITH NI-gum. First name rhymes with "crutch-it".
 {% end %}
-a visiting researcher at [MIT CSAIL][csail] working with [Jonathan Ragan-Kelley][jrk] and a PhD candidate at [Cornell University][pl-cornell] working with [Adrian Sampson][adrian].
-**I will be on the academic and industrial research job market in the 2023-24 cycle. My [statement][research-stmt] overviews some of my research interests.**
+a visiting scholar at MIT working with [Jonathan Ragan-Kelley][jrk] and a PhD candidate at Cornell University working with [Adrian Sampson][adrian].
+I am building new programming models for designing and using hardware accelerators ([Filament][], [Calyx][], [Dahlia][]).
+My research is supported by the Jane Street Fellowship.
+I've previously been associated with the [UW PLSE lab][plse], [Brown's PLT group][brown-plt], Facebook Reality Labs, Google Web Infrastructure team, and the [PLASMA][] research group.
 
-My research ([Filament][], [Calyx][], [Dahlia][]) is focused on building high-level programming models for designing hardware accelerators and is supported through the Jane Street Fellowship.
-I've previously been a visiting scholar at the [UW PLSE lab][plse] and [Brown's PLT group][brown-plt], and did my undergraduate research at the [PLASMA research group][plasma] at the University of Massachusetts Amherst.
+**PLTea&nbsp;** I started [PLTea][] during PLDI '20 in hopes of keeping social interactions alive during virtual conferences. PLTea now has over 400 members, meets monthly, has been organized several times with various PL conferences ([PLDI '22][plt-pldi22], [ICFP '21][plt-icfp21], [SPLASH '21][plt-oopsla21], [PLDI '21][plt-pldi21]) and has inspired spin-offs in other communities ([ArchChat][]).
 
-I started [PLTea][] during PLDI '20 in hopes of keeping social interactions alive during virtual conferences. PLTea has since been organized several times ([PLDI '22][plt-pldi22], [ICFP '21][plt-icfp21], [SPLASH '21][plt-oopsla21], [PLDI '21][plt-pldi21]) and has inspired spin-offs in other communities ([ArchChat][]).
-
-I am a classically trained [Tabla][] player and have a continuing obsession with synthesizers and digital audio workstations.
-When the weather allows for it, I go on long bike rides, often in search of cafés.
+**Personal&nbsp;** I am a classically trained [Tabla][] player and have a continuing obsession with synthesizers and digital audio workstations.
+When the weather allows for it, I go on long bike rides, often in search of little oddities.
 
 [capra]: https://capra.cs.cornell.edu/
 [adrian]: https://www.cs.cornell.edu/~asampson/
