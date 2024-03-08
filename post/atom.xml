@@ -228,10 +228,8 @@ When I talk about my mentees, my friends, and my time in grad school, I will mis
         <link rel="alternate" type="text/html" href="https://rachit.pl/post/transpiler/"/>
         <id>https://rachit.pl/post/transpiler/</id>
         
-        <content type="html" xml:base="https://rachit.pl/post/transpiler/">&lt;p&gt;The word &lt;em&gt;transpiler&lt;&#x2F;em&gt; is often used by people when they want to say that built a tool that transforms programs between languages of
-&lt;em&gt;roughly the same level of abstraction&lt;&#x2F;em&gt;.
-This tool is different from a &lt;em&gt;compiler&lt;&#x2F;em&gt; which often has a complex frontend, an optimizing middle end, and code generators for various backends.
-The big problem around most of the arguments to distinguish between compilers and “transpilers” focus on language syntax. However, anyone who wants one of these tools to &lt;em&gt;actually work&lt;&#x2F;em&gt; has to content with the fact that different languages will have different &lt;em&gt;semantics&lt;&#x2F;em&gt; and translating between those is a complex task; a task that &lt;em&gt;compilers&lt;&#x2F;em&gt; already do.&lt;&#x2F;p&gt;
+        <content type="html" xml:base="https://rachit.pl/post/transpiler/">&lt;p&gt;This tool is different from a &lt;em&gt;compiler&lt;&#x2F;em&gt; which often has a complex frontend, an optimizing middle end, and code generators for various backends.
+The big problem around most of the arguments to distinguish between compilers and “transpilers” focus on language syntax. However, anyone who wants one of these tools to &lt;em&gt;actually work&lt;&#x2F;em&gt; has to contend with the fact that different languages will have different &lt;em&gt;semantics&lt;&#x2F;em&gt; and translating between those is a complex task; a task that &lt;em&gt;compilers&lt;&#x2F;em&gt; already do.&lt;&#x2F;p&gt;
 &lt;h2 id=&quot;lie-1-transpilers-don-t-have-frontends&quot;&gt;Lie #1: Transpilers Don’t have Frontends&lt;&#x2F;h2&gt;
 &lt;p&gt;Let’s look at a simple Python to C transpiler.&lt;span style=&quot;white-space:nowrap&quot;&gt;
 &lt;label for=&quot;sn-1&quot;
@@ -312,7 +310,7 @@ Generators are pretty nice:&lt;&#x2F;p&gt;
 &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ebcb8b;&quot;&gt;console&lt;&#x2F;span&gt;&lt;span&gt;.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#96b5b4;&quot;&gt;log&lt;&#x2F;span&gt;&lt;span&gt;([&lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;0&lt;&#x2F;span&gt;&lt;span&gt;, ...&lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fa1b3;&quot;&gt;range&lt;&#x2F;span&gt;&lt;span&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;10&lt;&#x2F;span&gt;&lt;span&gt;)])
 &lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
 &lt;p&gt;Facebook’s &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;http:&#x2F;&#x2F;facebook.github.io&#x2F;regenerator&#x2F;&quot;&gt;regenerator&lt;&#x2F;a&gt; is a BabelJS-based “transpiler” to transform generators into language constructs that already existed
-in JavaScript. Should be too hard, right?&lt;&#x2F;p&gt;
+in JavaScript. Shouldn’t be too hard, right?&lt;&#x2F;p&gt;
 &lt;pre data-lang=&quot;js&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-js &quot;&gt;&lt;code class=&quot;language-js&quot; data-lang=&quot;js&quot;&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;var &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;_marked &lt;&#x2F;span&gt;&lt;span&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#65737e;&quot;&gt;&#x2F;*#__PURE__*&#x2F;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;regeneratorRuntime&lt;&#x2F;span&gt;&lt;span&gt;.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fa1b3;&quot;&gt;mark&lt;&#x2F;span&gt;&lt;span&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;range&lt;&#x2F;span&gt;&lt;span&gt;);
 &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;function &lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fa1b3;&quot;&gt;range&lt;&#x2F;span&gt;&lt;span&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;max&lt;&#x2F;span&gt;&lt;span&gt;) {
 &lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;var &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;i&lt;&#x2F;span&gt;&lt;span&gt;;
@@ -370,9 +368,9 @@ Unfortunately, this one too is wrong. The term is widely used in many contexts w
 For example, the JVM has an ahead-of-time compiler from Java source code to the JVM bytecode and another just-in-time compiler to native instructions. These kinds of multi-tier compilation schemes are extremely common in dynamic languages like JavaScript as well.&lt;&#x2F;p&gt;
 &lt;h2 id=&quot;lie-6-transpilers-are-not-compilers&quot;&gt;Lie #6: Transpilers are not Compilers&lt;&#x2F;h2&gt;
 &lt;p&gt;People seemed to scared of compilers and resort to claims like “I don’t want something as complex”, or “string interpolation is good enough”. This is silly. Anyone who has built one of these “transpilers” knows that inevitably, they get complex and poorly maintained precisely because of the delusion that they aren’t doing something complex.&lt;&#x2F;p&gt;
-&lt;p&gt;Programming languages are not just syntax, they have semantics too and pretending that you can get away with just manipulating the former is silly.&lt;&#x2F;p&gt;
-&lt;p&gt;&lt;em&gt;Edit (08&#x2F;16&#x2F;23): This post generated some discussion on &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;lobste.rs&#x2F;s&#x2F;id9jet&#x2F;transpiler_meaningless_word&quot;&gt;Lobsters&lt;&#x2F;a&gt; but because I am not a member, so I’ve rebutted some claims right here.&lt;&#x2F;em&gt;&lt;&#x2F;p&gt;
-&lt;p&gt;&lt;em&gt;Have comments? &lt;a href=&quot;mailto:rachit.nigam12@gmail.com&quot;&gt;Email&lt;&#x2F;a&gt; or &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;twitter.com&#x2F;notypes&quot;&gt;tweet&lt;&#x2F;a&gt; at me.&lt;&#x2F;em&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Programming languages are not just syntax; they have semantics too.
+Pretending that you can get away with just manipulating the former is delusional and results in bad tools.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;em&gt;Lindsey Kuper has a &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;decomposition.al&#x2F;blog&#x2F;2017&#x2F;07&#x2F;30&#x2F;what-do-people-mean-when-they-say-transpiler&#x2F;&quot;&gt;well-written article&lt;&#x2F;a&gt; on the same topic.&lt;&#x2F;em&gt;&lt;&#x2F;p&gt;
 </content>
         
     </entry>
@@ -488,6 +486,11 @@ I would point to dozens of historical examples of this, from ALGOL, to APL, ever
 &lt;li&gt;Everything was invented in the 80s&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 &lt;p&gt;&lt;em&gt;Addressed to my future self&lt;&#x2F;em&gt;&lt;&#x2F;p&gt;
+&lt;hr &#x2F;&gt;
+&lt;p&gt;Other readings:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;austinhenley.com&#x2F;blog&#x2F;measuringacademics.html&quot;&gt;Satirical ways to measure academics&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
 </content>
         
     </entry>
@@ -561,6 +564,12 @@ Done at last, you say to yourself, without having to build a compiler.&lt;&#x2F;
 Dear Sir, you have built a compiler.&lt;&#x2F;p&gt;
 &lt;p&gt;&lt;em&gt;Addressed to,&lt;&#x2F;em&gt;&lt;br&#x2F;&gt;
 &lt;em&gt;Those who did not want to build a compiler&lt;&#x2F;em&gt;&lt;&#x2F;p&gt;
+&lt;hr &#x2F;&gt;
+&lt;p&gt;Other readings:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;adam-mcdaniel-blog.github.io&#x2F;compilers-for-the-future&quot;&gt;Compilers for the Future&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;http:&#x2F;&#x2F;www.gksoft.com&#x2F;a&#x2F;fun&#x2F;architects.html&quot;&gt;If Architects had to work like Programmers&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
 </content>
         
     </entry>
