@@ -10,6 +10,9 @@
         <loc>https://rachit.pl/draft/</loc>
     </url>
     <url>
+        <loc>https://rachit.pl/full-bio/</loc>
+    </url>
+    <url>
         <loc>https://rachit.pl/job-talk/</loc>
     </url>
     <url>
@@ -64,12 +67,20 @@
         <lastmod>2020-11-18T15:51:33-05:00</lastmod>
     </url>
     <url>
+        <loc>https://rachit.pl/news/faculty-accept/</loc>
+        <lastmod>2024-06-21</lastmod>
+    </url>
+    <url>
         <loc>https://rachit.pl/news/frl2019/</loc>
         <lastmod>2019-05-01T15:03:23-05:00</lastmod>
     </url>
     <url>
         <loc>https://rachit.pl/news/futil-asplos/</loc>
         <lastmod>2020-11-18T15:52:37-05:00</lastmod>
+    </url>
+    <url>
+        <loc>https://rachit.pl/news/job-talks/</loc>
+        <lastmod>2024-03-05</lastmod>
     </url>
     <url>
         <loc>https://rachit.pl/news/js-fellow/</loc>
@@ -112,12 +123,20 @@
         <lastmod>2022-10-22</lastmod>
     </url>
     <url>
+        <loc>https://rachit.pl/news/peizo-accept/</loc>
+        <lastmod>2024-06-03</lastmod>
+    </url>
+    <url>
         <loc>https://rachit.pl/news/pldi-21-social/</loc>
         <lastmod>2021-01-13T17:04:09-05:00</lastmod>
     </url>
     <url>
         <loc>https://rachit.pl/news/pldi-22-social/</loc>
         <lastmod>2022-03-09</lastmod>
+    </url>
+    <url>
+        <loc>https://rachit.pl/news/pldi23/</loc>
+        <lastmod>2023-06-24</lastmod>
     </url>
     <url>
         <loc>https://rachit.pl/news/qualcomm-finalist/</loc>
@@ -248,10 +267,6 @@
     <url>
         <loc>https://rachit.pl/publication/fission/</loc>
         <lastmod>2017-05-28T17:19:29-07:00</lastmod>
-    </url>
-    <url>
-        <loc>https://rachit.pl/publication/parafil/</loc>
-        <lastmod>2024-01-02</lastmod>
     </url>
     <url>
         <loc>https://rachit.pl/publication/static-calyx/</loc>
