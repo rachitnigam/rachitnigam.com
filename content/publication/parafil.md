@@ -3,7 +3,7 @@ title = "Correct and Compositional Hardware Generators"
 # Add a subtitle here
 # subtitle = ""
 date = 2024-01-02
-draft = false
+draft = true
 
 [extra]
 # Authors. Comma separated list, e.g. `["Bob Smith", "David Jones"]`.

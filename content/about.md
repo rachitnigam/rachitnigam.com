@@ -1,20 +1,25 @@
 +++
 template = "index.html"
+[extra]
+no_nav = "true"
 +++
 
-Hi! I'm Rachit Nigam{% footnote() %}
-*Pronunciation*: Ruh-CHITH NI-gum. First name rhymes with "crutch-it".
-{% end %}
-a visiting scholar at MIT working with [Jonathan Ragan-Kelley][jrk] and a PhD candidate at Cornell University working with [Adrian Sampson][adrian].
-I am building new programming models for designing and using hardware accelerators ([Filament][], [Calyx][], [Dahlia][]).
-My research is supported by the Jane Street Fellowship.
-I've previously been associated with the [UW PLSE lab][plse], [Brown's PLT group][brown-plt], Facebook Reality Labs, Google Web Infrastructure team, and the [PLASMA][] research group.
+My goal is to build systems that democratize the *design* and *use* of specialized hardware.
+I am excited to work with folks who are dissatisfied with the current state of tools and techniques for hardware design.
+I am interested in radically new approaches combine ideas from programming languages, computer architecture, VLSI, and computer-aided design to address the design, verification, and usability challenges with specialized hardware.
+In doing so, I want to build real systems, evaluate them rigorously, and get other people to use them.
 
-**PLTea&nbsp;** I started [PLTea][] during PLDI '20 in hopes of keeping social interactions alive during virtual conferences. PLTea now has over 400 members, meets monthly, has been organized several times with various PL conferences ([PLDI '22][plt-pldi22], [ICFP '21][plt-icfp21], [SPLASH '21][plt-oopsla21], [PLDI '21][plt-pldi21]) and has inspired spin-offs in other communities ([ArchChat][]).
+My PhD research has produced three systems:
+* [Calyx][]: A compiler infrastructure for compiling high-level languages to efficient circuits. Calyx has been adopted by the [LLVM CIRCT][circt] project and is the basis for several academic and research tools.
+* [Filament][]: a new hardware description language that uses a novel type system to guarantee correctness of pipeline composition. Filament's ideas have influenced the design of Google's [XLS][] system and Jane Street's [HardCaml][] language.
+* [Dahlia]: A high-level language for predictable accelerator generation. Dahlia demonstrated how type systems can connect high-level abstractions with circuit-level constraints.
 
-**Personal&nbsp;** I am a classically trained [Tabla][] player and have a continuing obsession with synthesizers and digital audio workstations.
-When the weather allows for it, I go on long bike rides, often in search of little oddities.
+**I am actively recruiting PhD students!** If any of this resonates with you, you can read my [research statement][research] to get a sense of ideas that excite me, [email me a CV][grad-apply], and [apply to work with me at MIT][mit-apply].
 
+
+[research]: /files/research.pdf
+[grad-apply]: mailto:rachit.nigam12+gradapply@gmail.com
+[mit-apply]: https://www.eecs.mit.edu/academics/graduate-programs/admission-process/
 [capra]: https://capra.cs.cornell.edu/
 [adrian]: https://www.cs.cornell.edu/~asampson/
 [plasma]: https://plasma-umass.org/
@@ -35,3 +40,6 @@ When the weather allows for it, I go on long bike rides, often in search of litt
 [research-stmt]: /files/research.pdf
 [tabla]: https://en.wikipedia.org/wiki/Tabla
 [pltea]: https://pltea.github.io/
+[circt]: https://circt.llvm.org
+[xls]: https://google.github.io/xls/
+[hardcaml]: https://github.com/janestreet/hardcaml
