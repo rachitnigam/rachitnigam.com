@@ -6,7 +6,7 @@ no_nav = "true"
 
 My goal is to build systems that democratize the *design* and *use* of specialized hardware.
 I am excited to work with folks who are dissatisfied with the current state of tools and techniques for hardware design.
-I am interested in radically new approaches combine ideas from programming languages, computer architecture, VLSI, and computer-aided design to address the design, verification, and usability challenges with specialized hardware.
+I am interested in radically new approaches that combine ideas from programming languages, computer architecture, VLSI, and computer-aided design to address the design, verification, and usability challenges of specialized hardware.
 In doing so, I want to build real systems, evaluate them rigorously, and get other people to use them.
 
 My PhD research has produced three systems:
