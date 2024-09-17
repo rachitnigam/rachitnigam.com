@@ -4,6 +4,7 @@ template = "index.html"
 no_nav = "true"
 +++
 
+I am an incoming professor at MIT in the EECS department where I will lead the [Flame Lab][flame].
 My goal is to build systems that democratize the *design* and *use* of specialized hardware.
 I am excited to work with folks who are dissatisfied with the current state of tools and techniques for hardware design.
 I am interested in radically new approaches that combine ideas from programming languages, computer architecture, VLSI, and computer-aided design to address the design, verification, and usability challenges of specialized hardware.
@@ -14,7 +15,7 @@ My PhD research has produced three systems:
 * [Filament][]: a new hardware description language that uses a novel type system to guarantee correctness of pipeline composition. Filament's ideas have influenced the design of Google's [XLS][] system and Jane Street's [HardCaml][] language.
 * [Dahlia]: A high-level language for predictable accelerator generation. Dahlia demonstrated how type systems can connect high-level abstractions with circuit-level constraints.
 
-**I am actively recruiting PhD students!** If any of this resonates with you, you can read my [research statement][research] to get a sense of ideas that excite me, [email me a CV][grad-apply], and [apply to work with me at MIT][mit-apply].
+**I am actively recruiting PhD students!** If my work resonates with you, please [read the instructions][flame-prospective] on applying to my lab.
 
 
 [research]: /files/research.pdf
@@ -43,3 +44,5 @@ My PhD research has produced three systems:
 [circt]: https://circt.llvm.org
 [xls]: https://google.github.io/xls/
 [hardcaml]: https://github.com/janestreet/hardcaml
+[flame]: https://flame.csail.mit.edu
+[flame-prospective]: https://flame.csail.mit.edu
