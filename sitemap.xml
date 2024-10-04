@@ -13,9 +13,6 @@
         <loc>https://rachit.pl/full-bio/</loc>
     </url>
     <url>
-        <loc>https://rachit.pl/job-talk/</loc>
-    </url>
-    <url>
         <loc>https://rachit.pl/news/</loc>
     </url>
     <url>
@@ -279,5 +276,8 @@
     <url>
         <loc>https://rachit.pl/publication/wat-why/</loc>
         <lastmod>2024-02-19</lastmod>
+    </url>
+    <url>
+        <loc>https://rachit.pl/talk/</loc>
     </url>
 </urlset>
