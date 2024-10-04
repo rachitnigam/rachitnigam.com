@@ -1,5 +1,5 @@
 +++
-title = "Job Talk"
+title = "Talk Details"
 template = "single-page.html"
 dont_index = true
 +++
@@ -38,12 +38,3 @@ Rachit is the founder of [PLTea](https://pltea.github.io/), a virtual, worldwide
 **Presentation.** I am planning to present my talk on my personal laptop which has HDMI and USB-C ports. If I am expected to present on a different laptop or need to connect to different display interfaces, please let me know ASAP.
 
 **Recording.** In general, I am happy to have the talk recorded for internal use of your department. If your department is planning to publicly publish a version of my talk, please let me know in advance.
-
-## Accommodation Requests
-I am currently recovering from a recent illness. I would appreciate the following accommodations.
-
-**Dietary Restrictions.**
-I am not eating dairy, raw foods (sushi etc.), and extremely spicy foods. I am generally also avoiding extremely caffeinated drinks but am still happy to accompany folks to coffee or tea shops.
-
-**Schedule.**
-I would like a 15-minute break every two hours to eat a light snack.
