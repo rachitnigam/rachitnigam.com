@@ -23,8 +23,8 @@ Together, these systems represent a first step towards an ecosystem for hardware
 I will conclude by discussing next steps as well as the challenges with the complementary goal of designing programming abstractions for using accelerators.
 
 
-**Biography.** Rachit Nigam (he/him) is a PhD student at Cornell University and a visiting scholar at MIT working on new programming systems for designing and using hardware accelerators.
-His research is supported by a Jane Street Fellowship and has been adopted by broad open-source communities such as the [LLVM CIRCT](https://circt.llvm.org) project and by industrial teams at Google and Jane Street.
+**Biography.** Rachit Nigam (he/him) is an incoming Assistant Professor at the Massachusetts Institute of Technology working on new programming systems for designing and using hardware accelerators.
+His reserach has resulted in several open-source tools ([Calyx][], [Filament][]) which have been adopted by large industrial projects such as [LLVM CIRCT][circt] and influenced the design of systems such as [Google's XLS project][xls] and [Jane Street's HardCaml language][hardcaml].
 Rachit is the founder of [PLTea](https://pltea.github.io/), a virtual, worldwide organization for people interested in programming languages.
 
 **Headshot**. [Click here for link](/img/headshot.png).
@@ -38,3 +38,9 @@ Rachit is the founder of [PLTea](https://pltea.github.io/), a virtual, worldwide
 **Presentation.** I am planning to present my talk on my personal laptop which has HDMI and USB-C ports. If I am expected to present on a different laptop or need to connect to different display interfaces, please let me know ASAP.
 
 **Recording.** In general, I am happy to have the talk recorded for internal use of your department. If your department is planning to publicly publish a version of my talk, please let me know in advance.
+
+[calyx]: https://calyxir.org
+[filament]: https://filamentHDL.com
+[circt]: https://circt.llvm.org
+[xls]: https://google.github.io/xls/
+[hardcaml]: https://github.com/janestreet/hardcaml
