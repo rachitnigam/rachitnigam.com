@@ -9,7 +9,7 @@ summary = "I don't have words to put here"
 
 **Content Warning: Death**
 
-My dear friend and colleague [Priya Srikumar][priya] passed away in a car accident.
+My dear friend and colleague Priya Srikumar passed away in a car accident.
 I write this post to memorialize the impact they had on me and other people around them.
 If you knew Priya in their capacity as an academic and would like to add something, please [email me](mailto:rachit.nigam12@gmail.com).
 
@@ -69,7 +69,7 @@ Zach Sisco said:
 Alexa VanHattum said:
 > I first really got to know Priya when they were still an undergraduate—but already serving as a TA in Cornell’s challenging graduate programming languages class. The care and dedication Priya showed to our students was representative of who they were as a person and as a researcher. Priya was always, always helping someone with something—organizing discussion groups when they were still a first year Ph.D. student, rallying enthusiasm for department picnics, commiserating and offering me tips as we both were training our own puppies. Over the years, Priya and I would meet for Gimme coffee chats to talk about life in the department and what would come next. During our last chat earlier this year, Priya was so excited to hear about my job search, and I could already picture reading over Priya’s own faculty materials in a few years. Priya made such a mark on our community, and we will all miss them dearly.
 
-Griffin Berlstein wrote an [in remembrance post](https://griffinberlste.in/blog/2023-09-02-priya/).
+Griffin Berlstein wrote a [remembrance post](https://griffinberlste.in/blog/2023-09-02-priya/).
 
 The UW PLSE group wrote a [remembrance post][uw-rem]
 
