@@ -23,7 +23,8 @@ Together, these systems represent a first step towards an ecosystem for hardware
 I will conclude by discussing next steps as well as the challenges with the complementary goal of designing programming abstractions for using accelerators.
 
 
-**Biography.** Rachit Nigam (he/him) is an incoming Assistant Professor at the Massachusetts Institute of Technology working on new programming systems for designing and using hardware accelerators.
+**Biography.** Rachit Nigam (he/him) visiting scholar at Jane Street and an incoming faculty at MIT where he leads the [Foundations of Languages and Machines (FLAME) Lab][flame].
+He works at the intersection of programming languages, compilers, and computer architecture.
 His reserach has resulted in several open-source tools ([Calyx][], [Filament][]) which have been adopted by large industrial projects such as [LLVM CIRCT][circt] and influenced the design of systems such as [Google's XLS project][xls] and [Jane Street's HardCaml language][hardcaml].
 Rachit is the founder of [PLTea](https://pltea.github.io/), a virtual, worldwide organization for people interested in programming languages.
 
@@ -44,3 +45,4 @@ Rachit is the founder of [PLTea](https://pltea.github.io/), a virtual, worldwide
 [circt]: https://circt.llvm.org
 [xls]: https://google.github.io/xls/
 [hardcaml]: https://github.com/janestreet/hardcaml
+[flame]: https://flame.csail.mit.edu
