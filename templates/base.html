@@ -15,7 +15,7 @@
   <title>Rachit Nigam | Assistant Professor, MIT</title>
   {% endif %}
 
-  <link rel="icon" href="/flower.svg" type="image/svg+xml">
+  <link rel="icon" href={{ get_url(path="flower.svg") }} type="image/svg+xml">
 
   <link rel="stylesheet" href={{ get_url(path="css/normalize.css") }}>
   <link rel="stylesheet" href={{ get_url(path="css/default.css") }}>
@@ -34,14 +34,12 @@
 </head>
 
 <body>
-  <!-- <header>
-    <h1 class="name"><a class="unstyled-link" href="/">Rachit Nigam</a></h1>
-    <nav>
+    <!-- <h1 class="name"><a class="unstyled-link" href="/">Rachit Nigam</a></h1> -->
+    <!-- <nav>
       <a class="unstyled-link nav-item" href="/#publications">Publications</a>
       <a class="unstyled-link nav-item" href="/#posts">Posts</a>
       <a class="unstyled-link nav-item" href="/files/resume.pdf">CV</a>
-    </nav>
-  </header> -->
+    </nav> -->
   <section class="section">
     <div class="container">
       {% block content %}

@@ -90,7 +90,7 @@
   <div class="publication-details">
     <div class="publication-title">
       {% if pub.extra.pdf %}
-      <a href={{ pub.extra.pdf }}>
+      <a href={{ get_url(path=pub.extra.pdf) }}>
         {% endif %}
         {{ pub.title | safe }}
         {% if pub.extra.pdf %}

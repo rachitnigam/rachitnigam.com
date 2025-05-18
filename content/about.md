@@ -15,9 +15,6 @@ My PhD research has produced three systems:
 * [Filament][]: a new hardware description language that uses a novel type system to guarantee correctness of pipeline composition. Filament's ideas have influenced the design of Google's [XLS][] system and Jane Street's [HardCaml][] language.
 * [Dahlia]: A high-level language for predictable accelerator generation. Dahlia demonstrated how type systems can connect high-level abstractions with circuit-level constraints.
 
-**I am actively recruiting PhD students!** If my work resonates with you, please [read the instructions][flame-prospective] on applying to my lab.
-
-
 [research]: /files/research.pdf
 [grad-apply]: mailto:rachit.nigam12+gradapply@gmail.com
 [mit-apply]: https://www.eecs.mit.edu/academics/graduate-programs/admission-process/
@@ -45,4 +42,4 @@ My PhD research has produced three systems:
 [xls]: https://google.github.io/xls/
 [hardcaml]: https://github.com/janestreet/hardcaml
 [flame]: https://flame.csail.mit.edu
-[flame-prospective]: https://flame.csail.mit.edu
+[flame-prospective]: https://flame.csail.mit.edu/prospective

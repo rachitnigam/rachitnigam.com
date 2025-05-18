@@ -1,5 +1,5 @@
 # The URL the site will be built for
-base_url = "https://rachit.pl"
+base_url = "https://people.csail.mit.edu/rachit"
 
 author = "Rachit Nigam"
 
