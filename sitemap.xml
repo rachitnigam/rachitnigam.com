@@ -1,287 +1,299 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-        <loc>https://rachit.pl/</loc>
+        <loc>https://people.csail.mit.edu/rachit/</loc>
     </url>
     <url>
-        <loc>https://rachit.pl/about/</loc>
+        <loc>https://people.csail.mit.edu/rachit/about/</loc>
     </url>
     <url>
-        <loc>https://rachit.pl/draft/</loc>
+        <loc>https://people.csail.mit.edu/rachit/draft/</loc>
     </url>
     <url>
-        <loc>https://rachit.pl/full-bio/</loc>
+        <loc>https://people.csail.mit.edu/rachit/full-bio/</loc>
     </url>
     <url>
-        <loc>https://rachit.pl/news/</loc>
+        <loc>https://people.csail.mit.edu/rachit/news/</loc>
     </url>
     <url>
-        <loc>https://rachit.pl/news/a-exam/</loc>
+        <loc>https://people.csail.mit.edu/rachit/news/a-exam/</loc>
         <lastmod>2021-05-05</lastmod>
     </url>
     <url>
-        <loc>https://rachit.pl/news/aec-pldi2019/</loc>
+        <loc>https://people.csail.mit.edu/rachit/news/aec-pldi2019/</loc>
         <lastmod>2019-03-01T15:03:59-05:00</lastmod>
     </url>
     <url>
-        <loc>https://rachit.pl/news/aec-pldi2020/</loc>
+        <loc>https://people.csail.mit.edu/rachit/news/aec-pldi2020/</loc>
         <lastmod>2020-02-01T15:01:20-05:00</lastmod>
     </url>
     <url>
-        <loc>https://rachit.pl/news/calyx-woset21/</loc>
+        <loc>https://people.csail.mit.edu/rachit/news/calyx-woset21/</loc>
         <lastmod>2021-09-22</lastmod>
     </url>
     <url>
-        <loc>https://rachit.pl/news/calyx-xilinx-google-22/</loc>
+        <loc>https://people.csail.mit.edu/rachit/news/calyx-xilinx-google-22/</loc>
         <lastmod>2022-06-20</lastmod>
     </url>
     <url>
-        <loc>https://rachit.pl/news/cidr-asplos23/</loc>
+        <loc>https://people.csail.mit.edu/rachit/news/cidr-asplos23/</loc>
         <lastmod>2022-09-20</lastmod>
     </url>
     <url>
-        <loc>https://rachit.pl/news/cidr-award/</loc>
+        <loc>https://people.csail.mit.edu/rachit/news/cidr-award/</loc>
         <lastmod>2023-03-30</lastmod>
     </url>
     <url>
-        <loc>https://rachit.pl/news/dahlia-pldi2020/</loc>
+        <loc>https://people.csail.mit.edu/rachit/news/dahlia-pldi2020/</loc>
         <lastmod>2020-03-01T14:29:17-05:00</lastmod>
     </url>
     <url>
-        <loc>https://rachit.pl/news/dahlia-pldi22/</loc>
+        <loc>https://people.csail.mit.edu/rachit/news/dahlia-pldi22/</loc>
         <lastmod>2022-06-15</lastmod>
     </url>
     <url>
-        <loc>https://rachit.pl/news/dahlia-princeton/</loc>
+        <loc>https://people.csail.mit.edu/rachit/news/dahlia-princeton/</loc>
         <lastmod>2019-09-01T15:02:33-05:00</lastmod>
     </url>
     <url>
-        <loc>https://rachit.pl/news/dahlia-talks/</loc>
+        <loc>https://people.csail.mit.edu/rachit/news/dahlia-talks/</loc>
         <lastmod>2020-05-28T19:03:28-04:00</lastmod>
     </url>
     <url>
-        <loc>https://rachit.pl/news/dios-asplos/</loc>
+        <loc>https://people.csail.mit.edu/rachit/news/dios-asplos/</loc>
         <lastmod>2020-11-18T15:51:33-05:00</lastmod>
     </url>
     <url>
-        <loc>https://rachit.pl/news/faculty-accept/</loc>
+        <loc>https://people.csail.mit.edu/rachit/news/faculty-accept/</loc>
         <lastmod>2024-06-21</lastmod>
     </url>
     <url>
-        <loc>https://rachit.pl/news/frl2019/</loc>
+        <loc>https://people.csail.mit.edu/rachit/news/frl2019/</loc>
         <lastmod>2019-05-01T15:03:23-05:00</lastmod>
     </url>
     <url>
-        <loc>https://rachit.pl/news/futil-asplos/</loc>
+        <loc>https://people.csail.mit.edu/rachit/news/futil-asplos/</loc>
         <lastmod>2020-11-18T15:52:37-05:00</lastmod>
     </url>
     <url>
-        <loc>https://rachit.pl/news/job-talks/</loc>
+        <loc>https://people.csail.mit.edu/rachit/news/job-talks/</loc>
         <lastmod>2024-03-05</lastmod>
     </url>
     <url>
-        <loc>https://rachit.pl/news/js-fellow/</loc>
+        <loc>https://people.csail.mit.edu/rachit/news/js-fellow/</loc>
         <lastmod>2023-03-01</lastmod>
     </url>
     <url>
-        <loc>https://rachit.pl/news/latchup23/</loc>
+        <loc>https://people.csail.mit.edu/rachit/news/js-visting-sp25/</loc>
+        <lastmod>2025-01-01</lastmod>
+    </url>
+    <url>
+        <loc>https://people.csail.mit.edu/rachit/news/latchup23/</loc>
         <lastmod>2023-04-01</lastmod>
     </url>
     <url>
-        <loc>https://rachit.pl/news/latte-21/</loc>
+        <loc>https://people.csail.mit.edu/rachit/news/latte-21/</loc>
         <lastmod>2021-01-13T17:04:09-05:00</lastmod>
     </url>
     <url>
-        <loc>https://rachit.pl/news/latte-22/</loc>
+        <loc>https://people.csail.mit.edu/rachit/news/latte-22/</loc>
         <lastmod>2022-01-01</lastmod>
     </url>
     <url>
-        <loc>https://rachit.pl/news/lctes-dios/</loc>
+        <loc>https://people.csail.mit.edu/rachit/news/lctes-dios/</loc>
         <lastmod>2020-04-07T23:33:59-04:00</lastmod>
     </url>
     <url>
-        <loc>https://rachit.pl/news/mathworks/</loc>
+        <loc>https://people.csail.mit.edu/rachit/news/mathworks/</loc>
         <lastmod>2022-07-21</lastmod>
     </url>
     <url>
-        <loc>https://rachit.pl/news/mitplr23/</loc>
+        <loc>https://people.csail.mit.edu/rachit/news/mitplr23/</loc>
         <lastmod>2023-04-01</lastmod>
     </url>
     <url>
-        <loc>https://rachit.pl/news/neu-brown-2022/</loc>
+        <loc>https://people.csail.mit.edu/rachit/news/neu-brown-2022/</loc>
         <lastmod>2022-04-07</lastmod>
     </url>
     <url>
-        <loc>https://rachit.pl/news/oopsla-aec/</loc>
+        <loc>https://people.csail.mit.edu/rachit/news/nyu-plfm-sp25/</loc>
+        <lastmod>2025-05-22</lastmod>
+    </url>
+    <url>
+        <loc>https://people.csail.mit.edu/rachit/news/oopsla-aec/</loc>
         <lastmod>2020-09-14T15:00:32-04:00</lastmod>
     </url>
     <url>
-        <loc>https://rachit.pl/news/oopsla23-erc/</loc>
+        <loc>https://people.csail.mit.edu/rachit/news/oopsla23-erc/</loc>
         <lastmod>2022-10-22</lastmod>
     </url>
     <url>
-        <loc>https://rachit.pl/news/peizo-accept/</loc>
+        <loc>https://people.csail.mit.edu/rachit/news/peizo-accept/</loc>
         <lastmod>2024-06-03</lastmod>
     </url>
     <url>
-        <loc>https://rachit.pl/news/pldi-21-social/</loc>
+        <loc>https://people.csail.mit.edu/rachit/news/pldi-21-social/</loc>
         <lastmod>2021-01-13T17:04:09-05:00</lastmod>
     </url>
     <url>
-        <loc>https://rachit.pl/news/pldi-22-social/</loc>
+        <loc>https://people.csail.mit.edu/rachit/news/pldi-22-social/</loc>
         <lastmod>2022-03-09</lastmod>
     </url>
     <url>
-        <loc>https://rachit.pl/news/pldi23/</loc>
+        <loc>https://people.csail.mit.edu/rachit/news/pldi23/</loc>
         <lastmod>2023-06-24</lastmod>
     </url>
     <url>
-        <loc>https://rachit.pl/news/qualcomm-finalist/</loc>
+        <loc>https://people.csail.mit.edu/rachit/news/purdue-fa25/</loc>
+        <lastmod>2024-10-01</lastmod>
+    </url>
+    <url>
+        <loc>https://people.csail.mit.edu/rachit/news/qualcomm-finalist/</loc>
         <lastmod>2020-04-07T23:30:26-04:00</lastmod>
     </url>
     <url>
-        <loc>https://rachit.pl/news/stopify-pldi2018/</loc>
+        <loc>https://people.csail.mit.edu/rachit/news/stopify-pldi2018/</loc>
         <lastmod>2018-05-01T15:05:50-05:00</lastmod>
     </url>
     <url>
-        <loc>https://rachit.pl/news/uw-plse2021/</loc>
+        <loc>https://people.csail.mit.edu/rachit/news/uw-plse2021/</loc>
         <lastmod>2021-10-01</lastmod>
     </url>
     <url>
-        <loc>https://rachit.pl/news/volunteer-oopsla2018/</loc>
+        <loc>https://people.csail.mit.edu/rachit/news/volunteer-oopsla2018/</loc>
         <lastmod>2018-11-01T15:05:09-05:00</lastmod>
     </url>
     <url>
-        <loc>https://rachit.pl/news/wellesley21/</loc>
+        <loc>https://people.csail.mit.edu/rachit/news/wellesley21/</loc>
         <lastmod>2021-12-08</lastmod>
     </url>
     <url>
-        <loc>https://rachit.pl/news/williams-msr22/</loc>
+        <loc>https://people.csail.mit.edu/rachit/news/williams-msr22/</loc>
         <lastmod>2022-11-17</lastmod>
     </url>
     <url>
-        <loc>https://rachit.pl/post/</loc>
+        <loc>https://people.csail.mit.edu/rachit/post/</loc>
     </url>
     <url>
-        <loc>https://rachit.pl/post/commoditize-your-research-complement/</loc>
+        <loc>https://people.csail.mit.edu/rachit/post/commoditize-your-research-complement/</loc>
         <lastmod>2021-03-13</lastmod>
     </url>
     <url>
-        <loc>https://rachit.pl/post/first-two-years/</loc>
+        <loc>https://people.csail.mit.edu/rachit/post/first-two-years/</loc>
         <lastmod>2020-04-08T00:40:17-04:00</lastmod>
     </url>
     <url>
-        <loc>https://rachit.pl/post/free-agent-cornell/</loc>
+        <loc>https://people.csail.mit.edu/rachit/post/free-agent-cornell/</loc>
         <lastmod>2018-12-15T08:27:21+05:30</lastmod>
     </url>
     <url>
-        <loc>https://rachit.pl/post/gh-project-management/</loc>
+        <loc>https://people.csail.mit.edu/rachit/post/gh-project-management/</loc>
         <lastmod>2023-09-15</lastmod>
     </url>
     <url>
-        <loc>https://rachit.pl/post/latte-post/</loc>
+        <loc>https://people.csail.mit.edu/rachit/post/latte-post/</loc>
         <lastmod>2021-02-17</lastmod>
     </url>
     <url>
-        <loc>https://rachit.pl/post/learn-to-fail/</loc>
+        <loc>https://people.csail.mit.edu/rachit/post/learn-to-fail/</loc>
         <lastmod>2018-12-19T07:20:00+05:30</lastmod>
     </url>
     <url>
-        <loc>https://rachit.pl/post/lies/</loc>
+        <loc>https://people.csail.mit.edu/rachit/post/lies/</loc>
         <lastmod>2022-08-02</lastmod>
     </url>
     <url>
-        <loc>https://rachit.pl/post/personal-infrastructure/</loc>
+        <loc>https://people.csail.mit.edu/rachit/post/personal-infrastructure/</loc>
         <lastmod>2022-01-09</lastmod>
     </url>
     <url>
-        <loc>https://rachit.pl/post/pl-research/</loc>
+        <loc>https://people.csail.mit.edu/rachit/post/pl-research/</loc>
         <lastmod>2018-09-22</lastmod>
     </url>
     <url>
-        <loc>https://rachit.pl/post/priya/</loc>
+        <loc>https://people.csail.mit.edu/rachit/post/priya/</loc>
         <lastmod>2023-09-01</lastmod>
     </url>
     <url>
-        <loc>https://rachit.pl/post/project-management/</loc>
+        <loc>https://people.csail.mit.edu/rachit/post/project-management/</loc>
         <lastmod>2019-03-03T22:10:39-05:00</lastmod>
     </url>
     <url>
-        <loc>https://rachit.pl/post/reconf-future/</loc>
+        <loc>https://people.csail.mit.edu/rachit/post/reconf-future/</loc>
         <lastmod>2020-04-16T11:59:11-04:00</lastmod>
     </url>
     <url>
-        <loc>https://rachit.pl/post/stateless-advisor/</loc>
+        <loc>https://people.csail.mit.edu/rachit/post/stateless-advisor/</loc>
         <lastmod>2023-07-15</lastmod>
     </url>
     <url>
-        <loc>https://rachit.pl/post/transpiler/</loc>
+        <loc>https://people.csail.mit.edu/rachit/post/transpiler/</loc>
         <lastmod>2023-08-15</lastmod>
     </url>
     <url>
-        <loc>https://rachit.pl/post/virtual-cs-conferences/</loc>
+        <loc>https://people.csail.mit.edu/rachit/post/virtual-cs-conferences/</loc>
         <lastmod>2020-03-18T23:15:05-04:00</lastmod>
     </url>
     <url>
-        <loc>https://rachit.pl/post/why-study-programming-languages/</loc>
+        <loc>https://people.csail.mit.edu/rachit/post/why-study-programming-languages/</loc>
         <lastmod>2022-09-19</lastmod>
     </url>
     <url>
-        <loc>https://rachit.pl/post/you-have-built-a-compiler/</loc>
+        <loc>https://people.csail.mit.edu/rachit/post/you-have-built-a-compiler/</loc>
         <lastmod>2022-01-11</lastmod>
     </url>
     <url>
-        <loc>https://rachit.pl/publication/</loc>
+        <loc>https://people.csail.mit.edu/rachit/publication/</loc>
     </url>
     <url>
-        <loc>https://rachit.pl/publication/calyx/</loc>
+        <loc>https://people.csail.mit.edu/rachit/publication/calyx/</loc>
         <lastmod>2021-01-13T16:47:31-05:00</lastmod>
     </url>
     <url>
-        <loc>https://rachit.pl/publication/cidr-woset/</loc>
+        <loc>https://people.csail.mit.edu/rachit/publication/cidr-woset/</loc>
         <lastmod>2021-09-22</lastmod>
     </url>
     <url>
-        <loc>https://rachit.pl/publication/cidr/</loc>
+        <loc>https://people.csail.mit.edu/rachit/publication/cidr/</loc>
         <lastmod>2023-01-01</lastmod>
     </url>
     <url>
-        <loc>https://rachit.pl/publication/dahlia/</loc>
+        <loc>https://people.csail.mit.edu/rachit/publication/dahlia/</loc>
         <lastmod>2020-02-03T16:44:36-04:00</lastmod>
     </url>
     <url>
-        <loc>https://rachit.pl/publication/dios-wip/</loc>
+        <loc>https://people.csail.mit.edu/rachit/publication/dios-wip/</loc>
         <lastmod>2020-04-25T22:13:28-04:00</lastmod>
     </url>
     <url>
-        <loc>https://rachit.pl/publication/diospyros/</loc>
+        <loc>https://people.csail.mit.edu/rachit/publication/diospyros/</loc>
         <lastmod>2021-01-13T15:59:22-05:00</lastmod>
     </url>
     <url>
-        <loc>https://rachit.pl/publication/dissertation/</loc>
+        <loc>https://people.csail.mit.edu/rachit/publication/dissertation/</loc>
         <lastmod>2025-05-01</lastmod>
     </url>
     <url>
-        <loc>https://rachit.pl/publication/filament/</loc>
+        <loc>https://people.csail.mit.edu/rachit/publication/filament/</loc>
         <lastmod>2023-06-01</lastmod>
     </url>
     <url>
-        <loc>https://rachit.pl/publication/fission/</loc>
+        <loc>https://people.csail.mit.edu/rachit/publication/fission/</loc>
         <lastmod>2017-05-28T17:19:29-07:00</lastmod>
     </url>
     <url>
-        <loc>https://rachit.pl/publication/static-calyx/</loc>
+        <loc>https://people.csail.mit.edu/rachit/publication/static-calyx/</loc>
         <lastmod>2024-01-01</lastmod>
     </url>
     <url>
-        <loc>https://rachit.pl/publication/stopify/</loc>
+        <loc>https://people.csail.mit.edu/rachit/publication/stopify/</loc>
         <lastmod>2018-06-28T15:39:56-07:00</lastmod>
     </url>
     <url>
-        <loc>https://rachit.pl/publication/wat-why/</loc>
+        <loc>https://people.csail.mit.edu/rachit/publication/wat-why/</loc>
         <lastmod>2024-02-19</lastmod>
     </url>
     <url>
-        <loc>https://rachit.pl/talk/</loc>
+        <loc>https://people.csail.mit.edu/rachit/talk/</loc>
     </url>
 </urlset>

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
     <title> - All Posts</title>
-    <link rel="self" type="application/atom+xml" href="https://rachit.pl/post/atom.xml"/>
-    <link rel="alternate" type="text/html" href="https://rachit.pl/post/"/>
+    <link rel="self" type="application/atom+xml" href="https://people.csail.mit.edu/rachit/post/atom.xml"/>
+    <link rel="alternate" type="text/html" href="https://people.csail.mit.edu/rachit/post/"/>
     <generator uri="https://www.getzola.org/">Zola</generator>
     <updated>2023-09-15T00:00:00+00:00</updated>
-    <id>https://rachit.pl/post/atom.xml</id>
+    <id>https://people.csail.mit.edu/rachit/post/atom.xml</id>
     <entry xml:lang="en">
         <title>GitHub-centric Research Management</title>
         <published>2023-09-15T00:00:00+00:00</published>
@@ -19,10 +19,10 @@
           </name>
         </author>
         
-        <link rel="alternate" type="text/html" href="https://rachit.pl/post/gh-project-management/"/>
-        <id>https://rachit.pl/post/gh-project-management/</id>
+        <link rel="alternate" type="text/html" href="https://people.csail.mit.edu/rachit/post/gh-project-management/"/>
+        <id>https://people.csail.mit.edu/rachit/post/gh-project-management/</id>
         
-        <content type="html" xml:base="https://rachit.pl/post/gh-project-management/">&lt;p&gt;I am a &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.usenix.org&#x2F;system&#x2F;files&#x2F;1311_05-08_mickens.pdf&quot;&gt;systems researcher&lt;&#x2F;a&gt; which means almost all of my research requires writing lots of a code.
+        <content type="html" xml:base="https://people.csail.mit.edu/rachit/post/gh-project-management/">&lt;p&gt;I am a &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.usenix.org&#x2F;system&#x2F;files&#x2F;1311_05-08_mickens.pdf&quot;&gt;systems researcher&lt;&#x2F;a&gt; which means almost all of my research requires writing lots of a code.
 I also &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=kwto0AQ_Un8&quot;&gt;believe in building in the open&lt;&#x2F;a&gt; and, being a person of hubris, like writing good code that other people can use.
 Finally, as an academic, I also like teaching people how to write good code and build cool tools that other people can use.
 Over the course of my PhD, my advisor and I have developed a set of guidelines that we often repeat to people working with us to help them write better code when building research projects.
@@ -146,10 +146,10 @@ The above guidelines are designed to build enough &lt;em&gt;institutional memory
           </name>
         </author>
         
-        <link rel="alternate" type="text/html" href="https://rachit.pl/post/priya/"/>
-        <id>https://rachit.pl/post/priya/</id>
+        <link rel="alternate" type="text/html" href="https://people.csail.mit.edu/rachit/post/priya/"/>
+        <id>https://people.csail.mit.edu/rachit/post/priya/</id>
         
-        <content type="html" xml:base="https://rachit.pl/post/priya/">&lt;p&gt;&lt;strong&gt;Content Warning: Death&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
+        <content type="html" xml:base="https://people.csail.mit.edu/rachit/post/priya/">&lt;p&gt;&lt;strong&gt;Content Warning: Death&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
 &lt;p&gt;My dear friend and colleague Priya Srikumar passed away in a car accident.
 I write this post to memorialize the impact they had on me and other people around them.
 If you knew Priya in their capacity as an academic and would like to add something, please &lt;a href=&quot;mailto:rachit.nigam12@gmail.com&quot;&gt;email me&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
@@ -225,10 +225,10 @@ When I talk about my mentees, my friends, and my time in grad school, I will mis
           </name>
         </author>
         
-        <link rel="alternate" type="text/html" href="https://rachit.pl/post/transpiler/"/>
-        <id>https://rachit.pl/post/transpiler/</id>
+        <link rel="alternate" type="text/html" href="https://people.csail.mit.edu/rachit/post/transpiler/"/>
+        <id>https://people.csail.mit.edu/rachit/post/transpiler/</id>
         
-        <content type="html" xml:base="https://rachit.pl/post/transpiler/">&lt;p&gt;This tool is different from a &lt;em&gt;compiler&lt;&#x2F;em&gt; which often has a complex frontend, an optimizing middle end, and code generators for various backends.
+        <content type="html" xml:base="https://people.csail.mit.edu/rachit/post/transpiler/">&lt;p&gt;This tool is different from a &lt;em&gt;compiler&lt;&#x2F;em&gt; which often has a complex frontend, an optimizing middle end, and code generators for various backends.
 The big problem around most of the arguments to distinguish between compilers and “transpilers” focus on language syntax. However, anyone who wants one of these tools to &lt;em&gt;actually work&lt;&#x2F;em&gt; has to contend with the fact that different languages will have different &lt;em&gt;semantics&lt;&#x2F;em&gt; and translating between those is a complex task; a task that &lt;em&gt;compilers&lt;&#x2F;em&gt; already do.&lt;&#x2F;p&gt;
 &lt;h2 id=&quot;lie-1-transpilers-don-t-have-frontends&quot;&gt;Lie #1: Transpilers Don’t have Frontends&lt;&#x2F;h2&gt;
 &lt;p&gt;Let’s look at a simple Python to C transpiler.&lt;span style=&quot;white-space:nowrap&quot;&gt;
@@ -387,10 +387,10 @@ Pretending that you can get away with just manipulating the former is delusional
           </name>
         </author>
         
-        <link rel="alternate" type="text/html" href="https://rachit.pl/post/stateless-advisor/"/>
-        <id>https://rachit.pl/post/stateless-advisor/</id>
+        <link rel="alternate" type="text/html" href="https://people.csail.mit.edu/rachit/post/stateless-advisor/"/>
+        <id>https://people.csail.mit.edu/rachit/post/stateless-advisor/</id>
         
-        <content type="html" xml:base="https://rachit.pl/post/stateless-advisor/">&lt;p&gt;I find myself repeating the following advice to my mentees: Assume your manager (advisor) remembers nothing about your previous meeting. Start from the top and build back the &lt;em&gt;context&lt;&#x2F;em&gt; of your discussion before you dive into technical details.&lt;&#x2F;p&gt;
+        <content type="html" xml:base="https://people.csail.mit.edu/rachit/post/stateless-advisor/">&lt;p&gt;I find myself repeating the following advice to my mentees: Assume your manager (advisor) remembers nothing about your previous meeting. Start from the top and build back the &lt;em&gt;context&lt;&#x2F;em&gt; of your discussion before you dive into technical details.&lt;&#x2F;p&gt;
 &lt;p&gt;I have dubbed this the “stateless manager model” after functional programming paradigms where the program uses no state and instead acts only upon the inputs provided to it.
 There’s a couple of reasons why this advice makes sense:&lt;&#x2F;p&gt;
 &lt;ul&gt;
@@ -421,10 +421,10 @@ The Stateless Manager model is a particularly good way to practice this art.&lt;
           </name>
         </author>
         
-        <link rel="alternate" type="text/html" href="https://rachit.pl/post/why-study-programming-languages/"/>
-        <id>https://rachit.pl/post/why-study-programming-languages/</id>
+        <link rel="alternate" type="text/html" href="https://people.csail.mit.edu/rachit/post/why-study-programming-languages/"/>
+        <id>https://people.csail.mit.edu/rachit/post/why-study-programming-languages/</id>
         
-        <content type="html" xml:base="https://rachit.pl/post/why-study-programming-languages/">&lt;p&gt;This class is about the study of programming languages. Before we start, I want to perform two activities with folks here. First, I want us to answer two dumb questions:&lt;&#x2F;p&gt;
+        <content type="html" xml:base="https://people.csail.mit.edu/rachit/post/why-study-programming-languages/">&lt;p&gt;This class is about the study of programming languages. Before we start, I want to perform two activities with folks here. First, I want us to answer two dumb questions:&lt;&#x2F;p&gt;
 &lt;ol&gt;
 &lt;li&gt;Why do we design new programming languages?&lt;&#x2F;li&gt;
 &lt;li&gt;What is a programming language?&lt;&#x2F;li&gt;
@@ -461,10 +461,10 @@ I would point to dozens of historical examples of this, from ALGOL, to APL, ever
           </name>
         </author>
         
-        <link rel="alternate" type="text/html" href="https://rachit.pl/post/lies/"/>
-        <id>https://rachit.pl/post/lies/</id>
+        <link rel="alternate" type="text/html" href="https://people.csail.mit.edu/rachit/post/lies/"/>
+        <id>https://people.csail.mit.edu/rachit/post/lies/</id>
         
-        <content type="html" xml:base="https://rachit.pl/post/lies/">&lt;ul&gt;
+        <content type="html" xml:base="https://people.csail.mit.edu/rachit/post/lies/">&lt;ul&gt;
 &lt;li&gt;I cannot be happy outside academia&lt;&#x2F;li&gt;
 &lt;li&gt;If it is novel, it is useful&lt;&#x2F;li&gt;
 &lt;li&gt;If it is useful, it is publishable&lt;&#x2F;li&gt;
@@ -507,10 +507,10 @@ I would point to dozens of historical examples of this, from ALGOL, to APL, ever
           </name>
         </author>
         
-        <link rel="alternate" type="text/html" href="https://rachit.pl/post/you-have-built-a-compiler/"/>
-        <id>https://rachit.pl/post/you-have-built-a-compiler/</id>
+        <link rel="alternate" type="text/html" href="https://people.csail.mit.edu/rachit/post/you-have-built-a-compiler/"/>
+        <id>https://people.csail.mit.edu/rachit/post/you-have-built-a-compiler/</id>
         
-        <content type="html" xml:base="https://rachit.pl/post/you-have-built-a-compiler/">&lt;p&gt;&lt;em&gt;Dear Sir,&lt;&#x2F;em&gt;&lt;&#x2F;p&gt;
+        <content type="html" xml:base="https://people.csail.mit.edu/rachit/post/you-have-built-a-compiler/">&lt;p&gt;&lt;em&gt;Dear Sir,&lt;&#x2F;em&gt;&lt;&#x2F;p&gt;
 &lt;p&gt;I am afraid to inform you that you have built a compiler.
 I know you wanted a “simple prototype” that would just add that
 one feature to your programming model.
@@ -586,19 +586,19 @@ Dear Sir, you have built a compiler.&lt;&#x2F;p&gt;
           </name>
         </author>
         
-        <link rel="alternate" type="text/html" href="https://rachit.pl/post/personal-infrastructure/"/>
-        <id>https://rachit.pl/post/personal-infrastructure/</id>
+        <link rel="alternate" type="text/html" href="https://people.csail.mit.edu/rachit/post/personal-infrastructure/"/>
+        <id>https://people.csail.mit.edu/rachit/post/personal-infrastructure/</id>
         
-        <content type="html" xml:base="https://rachit.pl/post/personal-infrastructure/">&lt;p&gt;Personal infrastructure loosely refers to all the tools and systems I have to
+        <content type="html" xml:base="https://people.csail.mit.edu/rachit/post/personal-infrastructure/">&lt;p&gt;Personal infrastructure loosely refers to all the tools and systems I have to
 interact on a regular basis to do my job as a PhD researcher.
 As a systems researcher, this includes obvious stuff like command-line tools
 and programming workflow as well as as the set of tools to build websites,
 write papers, manage TODO lists, and &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=MElzn-KV5zw&quot;&gt;record videos&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;rachit.pl&#x2F;post&#x2F;personal-infrastructure&#x2F;#websites&quot;&gt;Websites&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
-&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;rachit.pl&#x2F;post&#x2F;personal-infrastructure&#x2F;#software&quot;&gt;Software&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
-&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;rachit.pl&#x2F;post&#x2F;personal-infrastructure&#x2F;#technical-writing&quot;&gt;Technical Writing&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
-&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;rachit.pl&#x2F;post&#x2F;personal-infrastructure&#x2F;#programming-workflow&quot;&gt;Programming Workflow&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;people.csail.mit.edu&#x2F;rachit&#x2F;post&#x2F;personal-infrastructure&#x2F;#websites&quot;&gt;Websites&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;people.csail.mit.edu&#x2F;rachit&#x2F;post&#x2F;personal-infrastructure&#x2F;#software&quot;&gt;Software&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;people.csail.mit.edu&#x2F;rachit&#x2F;post&#x2F;personal-infrastructure&#x2F;#technical-writing&quot;&gt;Technical Writing&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;people.csail.mit.edu&#x2F;rachit&#x2F;post&#x2F;personal-infrastructure&#x2F;#programming-workflow&quot;&gt;Programming Workflow&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 &lt;h2 id=&quot;websites&quot;&gt;Websites&lt;&#x2F;h2&gt;
 &lt;p&gt;Let’s get this one out of the way–as a PhD student, &lt;em&gt;you need to have a personal website&lt;&#x2F;em&gt;.
@@ -769,10 +769,10 @@ time, and date.&lt;&#x2F;p&gt;
           </name>
         </author>
         
-        <link rel="alternate" type="text/html" href="https://rachit.pl/post/commoditize-your-research-complement/"/>
-        <id>https://rachit.pl/post/commoditize-your-research-complement/</id>
+        <link rel="alternate" type="text/html" href="https://people.csail.mit.edu/rachit/post/commoditize-your-research-complement/"/>
+        <id>https://people.csail.mit.edu/rachit/post/commoditize-your-research-complement/</id>
         
-        <content type="html" xml:base="https://rachit.pl/post/commoditize-your-research-complement/">&lt;p&gt;“Commoditize your complement” is an idea about how companies can build profitable
+        <content type="html" xml:base="https://people.csail.mit.edu/rachit/post/commoditize-your-research-complement/">&lt;p&gt;“Commoditize your complement” is an idea about how companies can build profitable
 markets without complete vertical integration or monopolization.&lt;span style=&quot;white-space:nowrap&quot;&gt;
 &lt;label for=&quot;sn-1&quot;
        class=&quot;margin-toggle sidenote-number&quot;&gt;
@@ -915,10 +915,10 @@ support instead of compete might win out in the long-term.&lt;&#x2F;p&gt;
           </name>
         </author>
         
-        <link rel="alternate" type="text/html" href="https://rachit.pl/post/latte-post/"/>
-        <id>https://rachit.pl/post/latte-post/</id>
+        <link rel="alternate" type="text/html" href="https://people.csail.mit.edu/rachit/post/latte-post/"/>
+        <id>https://people.csail.mit.edu/rachit/post/latte-post/</id>
         
-        <content type="html" xml:base="https://rachit.pl/post/latte-post/">&lt;blockquote&gt;
+        <content type="html" xml:base="https://people.csail.mit.edu/rachit/post/latte-post/">&lt;blockquote&gt;
 &lt;p&gt;If you’re excited by the ideas in this post, please consider registering for
 and submitting to &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;capra.cs.cornell.edu&#x2F;latte21&quot;&gt;LATTE&lt;&#x2F;a&gt;: the first workshop on languages, tools, and
 techniques for accelerator design co-located with ASPLOS.&lt;&#x2F;p&gt;
@@ -1012,10 +1012,10 @@ ensure that well-typed programs go fast.&lt;&#x2F;li&gt;
           </name>
         </author>
         
-        <link rel="alternate" type="text/html" href="https://rachit.pl/post/reconf-future/"/>
-        <id>https://rachit.pl/post/reconf-future/</id>
+        <link rel="alternate" type="text/html" href="https://people.csail.mit.edu/rachit/post/reconf-future/"/>
+        <id>https://people.csail.mit.edu/rachit/post/reconf-future/</id>
         
-        <content type="html" xml:base="https://rachit.pl/post/reconf-future/">&lt;blockquote&gt;
+        <content type="html" xml:base="https://people.csail.mit.edu/rachit/post/reconf-future/">&lt;blockquote&gt;
 &lt;p&gt;FPGAs, a form of reconfigurable
 architectures, already power a large number of datacenter applications. With
 FPGA acceleration becoming mainstream, it is the perfect opportunity to think
@@ -1217,10 +1217,10 @@ drafts of this blog post&lt;&#x2F;em&gt;.&lt;&#x2F;p&gt;
           </name>
         </author>
         
-        <link rel="alternate" type="text/html" href="https://rachit.pl/post/first-two-years/"/>
-        <id>https://rachit.pl/post/first-two-years/</id>
+        <link rel="alternate" type="text/html" href="https://people.csail.mit.edu/rachit/post/first-two-years/"/>
+        <id>https://people.csail.mit.edu/rachit/post/first-two-years/</id>
         
-        <content type="html" xml:base="https://rachit.pl/post/first-two-years/">&lt;p&gt;With the end of the Spring ’20 semester a month away, I have spent almost
+        <content type="html" xml:base="https://people.csail.mit.edu/rachit/post/first-two-years/">&lt;p&gt;With the end of the Spring ’20 semester a month away, I have spent almost
 two academic years at Cornell. A quick rundown of everything that happened:&lt;&#x2F;p&gt;
 &lt;h3 id=&quot;failures&quot;&gt;Failures&lt;&#x2F;h3&gt;
 &lt;ul&gt;
@@ -1441,10 +1441,10 @@ Cornell bearable.&lt;&#x2F;p&gt;
           </name>
         </author>
         
-        <link rel="alternate" type="text/html" href="https://rachit.pl/post/virtual-cs-conferences/"/>
-        <id>https://rachit.pl/post/virtual-cs-conferences/</id>
+        <link rel="alternate" type="text/html" href="https://people.csail.mit.edu/rachit/post/virtual-cs-conferences/"/>
+        <id>https://people.csail.mit.edu/rachit/post/virtual-cs-conferences/</id>
         
-        <content type="html" xml:base="https://rachit.pl/post/virtual-cs-conferences/">&lt;p&gt;Conferences in computer science are an odd occurrence. Unlike most other
+        <content type="html" xml:base="https://people.csail.mit.edu/rachit/post/virtual-cs-conferences/">&lt;p&gt;Conferences in computer science are an odd occurrence. Unlike most other
 research fields which primarily focus on publishing in journals, conferences
 ended up being the primary publication and presentation venue in CS. They also
 became the place where researchers network with each other,
@@ -1581,10 +1581,10 @@ junior researchers have when we come up with solutions for virtual conferences.&
           </name>
         </author>
         
-        <link rel="alternate" type="text/html" href="https://rachit.pl/post/project-management/"/>
-        <id>https://rachit.pl/post/project-management/</id>
+        <link rel="alternate" type="text/html" href="https://people.csail.mit.edu/rachit/post/project-management/"/>
+        <id>https://people.csail.mit.edu/rachit/post/project-management/</id>
         
-        <content type="html" xml:base="https://rachit.pl/post/project-management/">&lt;p&gt;Collaborations in systems research is how I’ve built some of the best tools
+        <content type="html" xml:base="https://people.csail.mit.edu/rachit/post/project-management/">&lt;p&gt;Collaborations in systems research is how I’ve built some of the best tools
 in my research. A larger teams means an expanded vision and being able to pursue more
 ambitious ideas but it also incurs an overhead – team management. Effectively
 managing a team and keeping all team members up to date can be stressful and a
@@ -1726,10 +1726,10 @@ or research!&lt;&#x2F;p&gt;
           </name>
         </author>
         
-        <link rel="alternate" type="text/html" href="https://rachit.pl/post/learn-to-fail/"/>
-        <id>https://rachit.pl/post/learn-to-fail/</id>
+        <link rel="alternate" type="text/html" href="https://people.csail.mit.edu/rachit/post/learn-to-fail/"/>
+        <id>https://people.csail.mit.edu/rachit/post/learn-to-fail/</id>
         
-        <content type="html" xml:base="https://rachit.pl/post/learn-to-fail/">&lt;p&gt;I often describe the basic philosophy of research using a metaphor: bash your
+        <content type="html" xml:base="https://people.csail.mit.edu/rachit/post/learn-to-fail/">&lt;p&gt;I often describe the basic philosophy of research using a metaphor: bash your
 head in a wall over and over till you find a way to
 break it and then repeat it ad nauseam. Sometimes you’ll know where the
 cracks in the wall are, and sometime you’ll know what angle you need to hit the
@@ -1915,10 +1915,10 @@ before you can see any progress.&lt;&#x2F;p&gt;
           </name>
         </author>
         
-        <link rel="alternate" type="text/html" href="https://rachit.pl/post/free-agent-cornell/"/>
-        <id>https://rachit.pl/post/free-agent-cornell/</id>
+        <link rel="alternate" type="text/html" href="https://people.csail.mit.edu/rachit/post/free-agent-cornell/"/>
+        <id>https://people.csail.mit.edu/rachit/post/free-agent-cornell/</id>
         
-        <content type="html" xml:base="https://rachit.pl/post/free-agent-cornell/">&lt;blockquote&gt;
+        <content type="html" xml:base="https://people.csail.mit.edu/rachit/post/free-agent-cornell/">&lt;blockquote&gt;
 &lt;p&gt;&lt;strong&gt;Update, 2022&lt;&#x2F;strong&gt;: &lt;em&gt;After being at Cornell for couple more years, I’ve developed a more nuanced opinion of the “free agent system” at Cornell CIS.
 I do not believe that this system scales well as the department has grown.
 If you are an incoming student to Cornell CIS, I encourage you to set up rotation commitments with professors before you accept the offer.&lt;&#x2F;em&gt;&lt;&#x2F;p&gt;
@@ -2037,10 +2037,10 @@ on schools. Good luck!&lt;&#x2F;p&gt;
           </name>
         </author>
         
-        <link rel="alternate" type="text/html" href="https://rachit.pl/post/pl-research/"/>
-        <id>https://rachit.pl/post/pl-research/</id>
+        <link rel="alternate" type="text/html" href="https://people.csail.mit.edu/rachit/post/pl-research/"/>
+        <id>https://people.csail.mit.edu/rachit/post/pl-research/</id>
         
-        <content type="html" xml:base="https://rachit.pl/post/pl-research/">&lt;blockquote&gt;
+        <content type="html" xml:base="https://people.csail.mit.edu/rachit/post/pl-research/">&lt;blockquote&gt;
 &lt;p&gt;Instead of being a judgement of what PL research should be, this short post is
 simply a reflection of my research interests and what role PL plays into it.&lt;&#x2F;p&gt;
 &lt;&#x2F;blockquote&gt;

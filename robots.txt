@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 Allow: /
-Sitemap: https://rachit.pl/sitemap.xml
+Sitemap: https://people.csail.mit.edu/rachit/sitemap.xml
