@@ -48,7 +48,7 @@
   {{ m::generate_news(post=post) }}
   {% endfor %}
   <div class="more">
-    <a href="/news">
+    <a href={{ get_url(path="/news") }}>
       All News
       <i class="fa fa-angle-double-right"></i>
     </a>
@@ -88,7 +88,7 @@
   {{ m::generate_post(post=post) }}
   {% endfor %}
   <div class="more">
-    <a href="/post">
+    <a href={{ get_url(path="/post") }}>
       All Posts
       <i class="fa fa-angle-double-right"></i>
     </a>
