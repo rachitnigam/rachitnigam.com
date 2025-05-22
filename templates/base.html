@@ -35,11 +35,11 @@
 <body>
   {% if page %}
   <header>
-    <h1 class="name"><a class="unstyled-link" href="/">Rachit Nigam</a></h1>
+    <h1 class="name"><a class="unstyled-link" href={{ get_url(path="/") }}>Rachit Nigam</a></h1>
     <nav>
-      <a class="unstyled-link nav-item" href="/#publications">Publications</a>
-      <a class="unstyled-link nav-item" href="/#posts">Posts</a>
-      <a class="unstyled-link nav-item" href="/files/resume.pdf">CV</a>
+      <a class="unstyled-link nav-item" href={{ get_url(path="/#publications") }}>Publications</a>
+      <a class="unstyled-link nav-item" href={{ get_url(path="/#posts") }}>Posts</a>
+      <a class="unstyled-link nav-item" href={{ get_url(path="/files/resume.pdf") }}>CV</a>
     </nav>
   </header>
   {% endif %}
