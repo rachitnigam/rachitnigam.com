@@ -627,3 +627,55 @@ code {
   max-width: inherit;
   max-lines: 10;
 }
+
+/* Edits from LLM */
+
+/* Overall header */
+header {
+  display: flex;
+  flex-flow: row wrap;
+  border-bottom: 1px solid #ddd;
+  margin-top: 20px;
+  align-items: center;
+  top: 0;
+  background-color: #fffff8;
+  padding: 10px 0;
+}
+
+/* Style the name when it's in the header normally */
+.name {
+  white-space: nowrap;
+  font-size: 2em;
+  display: block; /* important: ensure it's block */
+}
+
+/* Navigation bar */
+nav {
+    flex: 1;
+    height: auto;
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+a.nav-item {
+    margin-left: 1em;
+    margin-right: 0;
+}
+
+a.nav-item:last-child {
+    margin-right: 0;
+}
+
+/* Add media queries to adjust behavior on smaller screens */
+@media screen and (max-width: 768px) {
+  nav {
+    justify-content: center;
+    margin-top: 10px;
+  }
+
+  a.nav-item {
+    margin-left: 0.5em;
+  }
+}
