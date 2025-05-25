@@ -567,8 +567,8 @@ Dear Sir, you have built a compiler.&lt;&#x2F;p&gt;
 &lt;hr &#x2F;&gt;
 &lt;p&gt;Other readings:&lt;&#x2F;p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;adam-mcdaniel-blog.github.io&#x2F;compilers-for-the-future&quot;&gt;Compilers for the Future&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
-&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;http:&#x2F;&#x2F;www.gksoft.com&#x2F;a&#x2F;fun&#x2F;architects.html&quot;&gt;If Architects had to work like Programmers&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;adam-mcdaniel.github.io&#x2F;blog&#x2F;compilers-for-the-future&quot;&gt;Compilers for the Future&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;paws.kettering.edu&#x2F;~jhuggins&#x2F;humor&#x2F;design.html&quot;&gt;If Architects had to work like Programmers&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 </content>
         
@@ -841,11 +841,11 @@ tool.&lt;span style=&quot;white-space:nowrap&quot;&gt;
 &lt;span class=&quot;sidenote&quot;&gt;
 This simple idea is, of course, built upon deep insights about how solvers
 and symbolic execution work.
-I recommend reading the &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;homes.cs.washington.edu&#x2F;~emina&#x2F;doc&#x2F;rosette.pldi14.pdf&quot;&gt;Rosette paper&lt;&#x2F;a&gt; for those
+I recommend reading the [Rosette paper][rose-paper] for those
 interested.
 &lt;&#x2F;span&gt;
 
-The original &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;homes.cs.washington.edu&#x2F;~emina&#x2F;doc&#x2F;rosette.pldi14.pdf&quot;&gt;Rosette paper&lt;&#x2F;a&gt; was a novel and interesting contribution,
+The original &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;homes.cs.washington.edu&#x2F;~bodik&#x2F;ucb&#x2F;Files&#x2F;2014&#x2F;rosette-pldi2014.pdf&quot;&gt;Rosette paper&lt;&#x2F;a&gt; was a novel and interesting contribution,
 therefore justifying its publication.
 However, the real research impact of Rosette has been from its continued use
 long after the paper was published.&lt;&#x2F;p&gt;
