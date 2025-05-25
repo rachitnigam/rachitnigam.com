@@ -55,7 +55,7 @@ interpreter for your language and *automatically* turn it into a solver-aided
 tool.{% footnote() %}
 This simple idea is, of course, built upon deep insights about how solvers
 and symbolic execution work.
-I recommend reading the [Rosette paper](https://homes.cs.washington.edu/~emina/doc/rosette.pldi14.pdf) for those
+I recommend reading the [Rosette paper][rose-paper] for those
 interested.
 {% end %}
 The original [Rosette paper][rose-paper] was a novel and interesting contribution,
@@ -113,7 +113,6 @@ support instead of compete might win out in the long-term.
 _Have comments? [Email](mailto:rachit.nigam12@gmail.com) or [tweet](https://twitter.com/notypes) at me._
 
 [rose-proj]: http://emina.github.io/rosette/apps.html
-[rose-paper]: https://homes.cs.washington.edu/~emina/doc/rosette.pldi14.pdf
 [sympro]: https://unsat.cs.washington.edu/projects/sympro/
 [llvm]:https://unsat.cs.washington.edu/projects/sympro/
 [Valgrind]: https://valgrind.org/
@@ -122,3 +121,4 @@ _Have comments? [Email](mailto:rachit.nigam12@gmail.com) or [tweet](https://twit
 [rosette]: http://emina.github.io/rosette/
 [gem5]: https://www.gem5.org/
 [click-router]: https://pdos.csail.mit.edu/papers/click:tocs00/paper.pdf
+[rose-paper]: https://homes.cs.washington.edu/~bodik/ucb/Files/2014/rosette-pldi2014.pdf

@@ -63,5 +63,5 @@ Dear Sir, you have built a compiler.
 ---------
 
 Other readings:
-- [Compilers for the Future](https://adam-mcdaniel-blog.github.io/compilers-for-the-future)
-- [If Architects had to work like Programmers](http://www.gksoft.com/a/fun/architects.html)
+- [Compilers for the Future](https://adam-mcdaniel.github.io/blog/compilers-for-the-future)
+- [If Architects had to work like Programmers](https://paws.kettering.edu/~jhuggins/humor/design.html)
