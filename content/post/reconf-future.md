@@ -37,31 +37,25 @@ an incredible amount of *control overhead*. Figure 1 shows the energy
 breakdown of executing an add instruction. The control dominates the cost of
 executing an instruction.
 
-<center>
-<figure>
-<img src="/img/energy-breakdown.png"
-     alt="Energy breakdown of executing an add instruction on 45nm technology.">
-</img>
-<figcaption>
+{% figure(
+     img_path="/img/energy-breakdown.png"
+     alt_explain="Energy breakdown of executing an add instruction on 45nm technology."
+) %}
 Fig 1.
 Energy breakdown of executing an add instruction from
-<a href="https://ieeexplore.ieee.org/document/6757323">
-Computing's Energy Problem [Horowitz, 2014]
-</a>.
-</figcaption>
-</figure>
-</center>
+[Computing's Energy Problem [Horowitz, 2014]](https://ieeexplore.ieee.org/document/6757323)
+{% end %}
 
 So while modern processors
 can execute arbitrary programs quickly, they leave a lot of room for improvement
 with an individual program.
 Instead of paying for the cost of the general control structures in every program,
-what if your processor could pay for the exactly the amount of control required
+what if your processor could pay for exactly the amount of control required
 to execute the current program.
 What if you
 could *reconfigure* your architecture
 based on the currently executing program?
-Reconfigurable architectures refers to the general class of architectures
+Reconfigurable architectures refer to the general class of architectures
 that allow some degree of application-specific reconfigurability. The term
 "reconfigurable architectures" is incredibly broad and spans everything from
 the reconfigurability of meshes in [massive many-cores][celerity] to bit-level

@@ -1,0 +1,10 @@
+<center>
+<figure>
+<img src="{{ get_url(path=img_path) }}"
+     alt="{{ alt_explain }}">
+</img>
+<figcaption>
+{{ body | markdown(inline=true) | trim | safe }}
+</figcaption>
+</figure>
+</center>
