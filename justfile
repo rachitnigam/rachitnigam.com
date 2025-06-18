@@ -8,4 +8,4 @@ build:
 
 # update the copy of the website on csail servers
 sync-csail: build
-  rsync -zvhr --delete public/ csail:public_html
+  rsync -zvhraP --delete public/ csail:public_html
