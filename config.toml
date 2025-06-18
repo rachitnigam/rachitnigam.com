@@ -22,7 +22,7 @@ highlight_code = true
 skip_prefixes = ["https://twitter.com/"]
 
 [extra]
-news_items = 5
+news_items = 4
 post_items = 7
 
 # Links to author webpages

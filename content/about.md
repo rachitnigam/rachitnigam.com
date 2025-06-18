@@ -4,7 +4,6 @@ template = "index.html"
 no_nav = "true"
 +++
 
-I am an incoming professor at MIT in the EECS department where I will lead the [Flame Lab][flame].
 My goal is to build systems that democratize the *design* and *use* of specialized hardware.
 I am excited to work with folks who are dissatisfied with the current state of tools and techniques for hardware design.
 I am interested in radically new approaches that combine ideas from programming languages, computer architecture, VLSI, and computer-aided design to address the design, verification, and usability challenges of specialized hardware.
