@@ -36,12 +36,12 @@
     {% set page = get_page(path="about.md") %}
     {{ page.content | safe }}
   </div>
-  <div class="more">
-    <a href="/full-bio">
+  <!--div class="more">
+    <a href="{{get_url(path='/full-bio')}}">
       Full Bio
       <i class="fa fa-angle-double-right"></i>
     </a>
-  </div>
+  </div-->
 
   <!-- News -->
   <h2>News</h2>
