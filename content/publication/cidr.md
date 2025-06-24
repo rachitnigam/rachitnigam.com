@@ -18,7 +18,7 @@ authors = [
 publication = "Conference on Architectural Support for Programming Languages and Operating Systems"
 publication_short = "ASPLOS"
 
-award = "Distinguished Artifact Award"
+awards = ["Distinguished Artifact Award"]
 pdf = "files/pubs/cidr.pdf"
 urls = [
   { name = "Website", url = "https://docs.calyxir.org/interpreter.html" }
