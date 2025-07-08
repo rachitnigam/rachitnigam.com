@@ -102,8 +102,8 @@ section {
 
 a {
   color: rgb(0, 0, 0, 0.8);
-  text-decoration: none;
-  border-bottom: #aaa 0.1em dotted;
+  text-decoration: underline #aaa 0.1em dotted;
+  text-underline-offset: 0.2em;
 }
 
 a:hover,
@@ -116,11 +116,13 @@ a:focus {
 /** Remove link styling */
 a.unstyled-link {
   border: none;
+  text-decoration: none;
 }
 
 a.unstyled-link:hover,
 a.unstyled-link:focus {
   background: none;
+  text-decoration: none;
 }
 
 /********** Layout **********/
@@ -363,9 +365,14 @@ dt {
 
 .publication-title {
   font-size: 1.1em;
-  line-height: 1.25;
+  line-height: 1.3;
   hyphens: none;
   margin-bottom: 0.2em;
+  
+  a {
+    text-decoration: underline #aaa 0.12em dotted;
+    text-underline-offset: 0.2em;
+  }
 }
 
 .publication-author {
