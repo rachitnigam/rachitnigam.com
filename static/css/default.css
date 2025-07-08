@@ -686,3 +686,19 @@ a.nav-item:last-child {
     margin-left: 0.5em;
   }
 }
+
+blockquote {
+  margin: 1.5em 0;
+  padding: .5em 2em;
+  background: #f0f0e8;
+  border-left: 4px solid #e0e0d8;
+  position: relative;
+
+  /* Inset shadow effect */
+  box-shadow:
+    inset 0 1px 3px rgba(0, 0, 0, 0.08),
+    inset 0 1px 1px rgba(0, 0, 0, 0.04);
+
+  /* Slightly recessed appearance */
+  border-radius: 4px;
+}
