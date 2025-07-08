@@ -1,5 +1,5 @@
 +++
-title = "All Posts"
+title = "Rachit's Blog"
 sort_by = "date"
 template = "post.html"
 page_template = "post-page.html"
