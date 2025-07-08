@@ -6,9 +6,9 @@
 {% endmacro anchor_heading %}
 
 {# Contact list item #}
-{% macro contact(classes, link) %}
+{% macro contact(classes, link, alt) %}
 
-<a class="unstyled-link" itemprop="sameAs" href="{{ link }}" target="_blank" rel="noopener">
+<a alt="{{ alt }}" class="unstyled-link" itemprop="sameAs" href="{{ link }}" target="_blank" rel="noopener">
   <i class="{{ classes }} contact-link-item big-icon"></i>
 </a>
 
@@ -62,7 +62,7 @@
 <span class="publication-author">
   {%- if link != "" -%}
   <!-- Link in author website if present -->
-  <a href="{{ link }}">
+  <a href="{{ link }}" class="unstyled-link">
     {%- endif -%}
     {{ name }}
     {%- if link != "" -%}

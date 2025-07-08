@@ -21,13 +21,13 @@
     </div>
 
     <div class="contact-links">
-      {{ m::contact(link="mailto:rnigam@mit.edu", classes="fa fa-envelope") }}
-      {{ m::contact(link="//github.com/rachitnigam", classes="fab fa-github") }}
-      {{ m::contact(link="//scholar.google.com/citations?user=RNL2GjEAAAAJ", classes="ai ai-google-scholar") }}
+      {{ m::contact(link="mailto:rnigam@mit.edu", classes="fa fa-envelope", alt="email contact") }}
+      {{ m::contact(link="//github.com/rachitnigam", classes="fab fa-github", alt="github profile") }}
+      {{ m::contact(link="//scholar.google.com/citations?user=RNL2GjEAAAAJ", classes="ai ai-google-scholar", alt="google scholar") }}
     </div>
   </div>
 
-  <div class="portrait" style="background-image: url({{get_url(path='/img/headshot.png')}});"></div>
+  <div class="portrait" style="background-image: url({{get_url(path='/img/headshot.webp')}}), url({{get_url(path='/img/headshot.png')}});"></div>
 </div>
 
 <!-- Bio -->
