@@ -15,34 +15,55 @@ $font-mono: 'Source Code Pro', monospace;
   .information {
     max-width: 50%;
   }
+
+  a {
+    border: none;
+  }
+}
+
+.contact-links {
+  display: flex;
+  gap: .7em;
+  width: 200px;
+}
+
+.contact-link-item {
+  flex: auto;
 }
 
 @media (max-width: 585px) {
-  #contact {
-    flex-direction: column;
-  }
 
   .portrait {
     border-radius: 50%;
   }
 
-  #contact .portrait {
-    order: 1;
-  }
+  #contact {
+    flex-direction: column;
 
-  #contact .information {
-    order: 2;
-    max-width: 100%;
-    text-align: center;
-    justify-content: center;
-  }
+    .portrait {
+      order: 1;
+    }
 
-  #contact .contact-links {
-    display: flex;
-    justify-content: space-evenly;
-    width: 100%;
-    flex-wrap: wrap;
+    .information {
+      order: 2;
+      max-width: 100%;
+      text-align: center;
+      justify-content: center;
+    }
+
+    .contact-links {
+      display: flex;
+      justify-content: space-evenly;
+      width: 100%;
+      flex-wrap: wrap;
+    }
   }
+}
+
+.portrait-title h1,
+.portrait-title h3,
+.portrait-title h4 {
+  margin: 0;
 }
 
 .portrait {
@@ -61,29 +82,9 @@ $font-mono: 'Source Code Pro', monospace;
   }
 }
 
-.portrait-title h1,
-.portrait-title h3,
-.portrait-title h4 {
-  margin: 0;
-}
-
 /*** Contact Links */
 .big-icon {
   font-size: 2rem;
-}
-
-#contact a {
-  border: none;
-}
-
-.contact-links {
-  display: flex;
-  gap: .7em;
-  width: 200px;
-}
-
-.contact-link-item {
-  flex: auto;
 }
 
 /** Post RSS */
@@ -101,26 +102,27 @@ a {
   color: $font-color;
   text-decoration: underline $font-color 0.1em dotted;
   text-underline-offset: 0.2em;
+
+  &:hover,
+  &:focus {
+    background: $color-link-active;
+    transition-property: background;
+    transition-duration: 0.2s;
+  }
 }
 
-a:hover,
-a:focus {
-  background: $color-link-active;
-  transition-property: background;
-  transition-duration: 0.2s;
-}
 
 a.unstyled-link {
   color: $font-color;
   border: none;
   text-decoration: none;
-}
 
-a.unstyled-link:hover,
-a.unstyled-link:focus {
-  color: $font-color;
-  background: none;
-  text-decoration: none;
+  &:hover,
+  &:focus {
+    color: $font-color;
+    background: none;
+    text-decoration: none;
+  }
 }
 
 /********** Layout **********/
@@ -131,29 +133,34 @@ body {
   background-color: $color-bg;
 }
 
+
 header {
   display: flex;
   flex-flow: row wrap;
   border-bottom: 1px solid #ddd;
   margin-top: 20px;
-  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
+  top: 0;
+  padding: 10px 0;
+
+  h1 {
+    display: flex;
+    align-content: end;
+    align-items: end;
+  }
+
+  a {
+    color: $font-color;
+  }
 }
 
 .name {
   white-space: nowrap;
 }
 
-header h1 {
-  margin-top: 0;
-}
-
-header a {
-  color: $font-color;
-}
-
 nav {
   flex: 0 0;
-  height: 45px;
   white-space: nowrap;
   display: flex;
   align-content: end;
@@ -174,22 +181,24 @@ a.nav-item {
   border-bottom: 2px solid $color-bg;
   margin-right: 1em;
   margin-left: 1em;
-}
 
-a.nav-item:last-child {
-  margin-right: 0;
-}
 
-a.nav-item:first-child {
-  margin-left: 0;
-}
+  &.nav-item:last-child {
+    margin-right: 0;
+  }
 
-a.nav-item:hover,
-a.nav-item:focus {
-  transition-property: border-bottom;
-  border-bottom: 2px solid $font-color;
-  transition-duration: 0.2s;
-  background: none;
+  &.nav-item:first-child {
+    margin-left: 0;
+  }
+
+  &.nav-item:hover,
+  &.nav-item:focus {
+    transition-property: border-bottom;
+    border-bottom: 2px solid $font-color;
+    transition-duration: 0.2s;
+    background: none;
+  }
+
 }
 
 nav a.active {
@@ -212,15 +221,6 @@ footer {
 }
 
 /********** Basic styling **********/
-html,
-button,
-input,
-select,
-textarea {
-  font-family: $font-main;
-  font-size: 15px;
-  font-weight: 400;
-}
 
 body {
   font-family: $font-main;
@@ -234,16 +234,41 @@ body {
 
 h1,
 h2 {
+  font-family: $font-heading;
   margin-block-start: 0em;
   margin-block-end: 0em;
   margin-top: 1.2em;
   margin-bottom: 0.1em;
+  line-height: 1.1;
+
+  &+p {
+    margin-top: .5em;
+  }
+
 }
 
 h3 {
+  font-family: $font-heading;
   margin-block-start: 0em;
   margin-block-end: 0em;
   margin-top: 1em;
+  line-height: 1.1;
+
+  &+p {
+    margin-top: 0px;
+  }
+}
+
+h1 {
+  font-size: 3em;
+}
+
+h2 {
+  font-size: 2.3em;
+}
+
+h3 {
+  font-size: 1.6em;
 }
 
 h1,
@@ -256,29 +281,7 @@ h3 {
 h4,
 h5,
 h6 {
-  color: $color-h4;
-}
-
-h1 {
-  font-size: 3em;
-  line-height: 1.1;
-}
-
-h2 {
-  font-size: 2.3em;
-  line-height: 1.1;
-}
-
-h3 {
-  font-size: 1.6em;
-  line-height: 1.1;
-}
-
-h1,
-h2,
-h3,
-h4 {
-  font-family: $font-heading;
+  color: red
 }
 
 hr {
@@ -293,15 +296,6 @@ hr {
 p {
   margin: 1em 0px 1em 0px;
   text-align: left;
-}
-
-h1+p,
-h2+p {
-  margin-top: .5em;
-}
-
-h3+p {
-  margin-top: 0px;
 }
 
 ul {
@@ -323,17 +317,16 @@ td {
   text-align: left;
   border-top: 1px solid #E1E1E1;
   border-bottom: 1px solid #E1E1E1;
+
+  &:first-child {
+    padding-left: 0;
+  }
+
+  &:last-child {
+    padding-right: 0;
+  }
 }
 
-th:first-child,
-td:first-child {
-  padding-left: 0;
-}
-
-th:last-child,
-td:last-child {
-  padding-right: 0;
-}
 
 figcaption {
   margin-top: 15px;
@@ -401,22 +394,24 @@ dt {
   font-size: 0.9em;
 }
 
-.post img {
-  max-width: 90%;
-}
+.post {
+  img {
+    max-width: 90%;
+  }
 
-.post h2 {
-  padding-top: 15px;
-  margin-top: 30px;
-  max-width: 600px;
-}
-
-.post-header .date {
-  margin-top: -0.3em;
+  h2 {
+    padding-top: 15px;
+    margin-top: 30px;
+    max-width: 600px;
+  }
 }
 
 .post-header {
   margin-bottom: 2em;
+
+  .date {
+    margin-top: -0.3em;
+  }
 }
 
 /*** Sidenotes */
@@ -489,7 +484,6 @@ label.margin-toggle:not(.sidenote-number) {
     clear: both;
     width: 95%;
     margin: 1rem 2.5%;
-    vertical-align: baseline;
     position: relative;
   }
 
@@ -632,29 +626,10 @@ code {
   max-lines: 10;
 }
 
-header {
-  display: flex;
-  flex-flow: row wrap;
-  border-bottom: 1px solid #ddd;
-  margin-top: 20px;
-  align-items: center;
-  top: 0;
-  padding: 10px 0;
-}
-
 .name {
   white-space: nowrap;
   font-size: 2em;
   display: block;
-}
-
-nav {
-  flex: 1;
-  height: auto;
-  white-space: nowrap;
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
 }
 
 a.nav-item {
