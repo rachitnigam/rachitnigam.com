@@ -18,7 +18,7 @@ def fact(n):
     x = 1
     for i in range(1, n):
         x *= i
-return x
+    return x
 ```
 
 Into some C code like this:
@@ -37,7 +37,7 @@ Wow, pretty simple! But of course, that piece of python is not very idiomatic. W
 import functools as ft
 def fact(n):
     lst = range(1, n)
-    return ft.reduce(lambda acc, x: acc*x, )
+    return ft.reduce(lambda acc, x: acc*x, lst)
 ```
 
 Now our "transpiler" is in a little bit of trouble.
