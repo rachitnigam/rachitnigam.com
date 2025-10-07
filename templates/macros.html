@@ -115,7 +115,7 @@
       {% set sorted_links = pub.extra.urls | sort(attribute="name") %}
       {% for link in sorted_links %}
       <span class="publication-link">
-        <a class="unstyled-link" href="{{ link.url }}">
+        <a class="unstyled-link" href="{{ get_url(path=link.url) }}">
           【&#8239;{{ link.name }}&#8239;】
         </a>
       </span>
