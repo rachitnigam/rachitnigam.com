@@ -1,3 +1,4 @@
+@use "sass:color";
 @import "_light.scss";
 
 $font-main: 'Open Sans', sans-serif;
@@ -657,11 +658,13 @@ a.nav-item:last-child {
 }
 
 blockquote {
-  margin: 1.5em 0;
-  padding: .5em 2em;
-  background: $color-bg-blockquote;
-  border-left: 4px solid #e0e0d8;
-  position: relative;
-  box-shadow: inset 0 1px 3px $color-blockquote-shadow, inset 0 1px 1px $color-blockquote-shadow2;
-  border-radius: 4px;
+  max-width: 90%;
+  background-color: color.scale($color-bg-blockquote, $alpha: -60%);
+  border-left: 5px solid color.scale(black, $alpha: -70%);
+  padding: 10px;
+  margin: 10px 0;
+
+  p {
+    margin: 0;
+  }
 }

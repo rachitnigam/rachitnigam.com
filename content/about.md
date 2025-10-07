@@ -4,6 +4,8 @@ template = "index.html"
 no_nav = "true"
 +++
 
+> If you are interested in applying to MIT's PhD program and work in the [FLAME][] lab, please take a look at [the instructions][flame-prospective]!
+
 My goal is to build systems that democratize the *design* and *use* of specialized hardware.
 I am excited to work with folks who are dissatisfied with the current state of tools and techniques for hardware design.
 I am interested in radically new approaches that combine ideas from programming languages, computer architecture, VLSI, and computer-aided design to address the design, verification, and usability challenges of specialized hardware.
@@ -41,4 +43,4 @@ My PhD research has produced three systems:
 [xls]: https://google.github.io/xls/
 [hardcaml]: https://github.com/janestreet/hardcaml
 [flame]: https://flame.csail.mit.edu
-[flame-prospective]: https://flame.csail.mit.edu/prospective
+[flame-prospective]: https://flame.csail.mit.edu/lab/prospective/
