@@ -115,7 +115,12 @@
       {% set sorted_links = pub.extra.urls | sort(attribute="name") %}
       {% for link in sorted_links %}
       <span class="publication-link">
-        <a class="unstyled-link" href="{{ get_url(path=link.url) }}">
+        {% if link.url is starting_with("https") %}
+          {% set full_link = link.url %}
+        {% else %}
+          {% set full_link = get_url(path=link.url) %}
+        {% endif %}
+        <a class="unstyled-link" href="{{ full_link }}">
           【&#8239;{{ link.name }}&#8239;】
         </a>
       </span>
