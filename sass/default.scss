@@ -657,6 +657,16 @@ a.nav-item:last-child {
   }
 }
 
+details {
+  margin-bottom: .5em;
+  padding-left: .2em;
+
+  p {
+    margin-top: .2em;
+    margin-left: 1.5em;
+  }
+}
+
 blockquote {
   max-width: 90%;
   background-color: color.scale($color-bg-blockquote, $alpha: -60%);

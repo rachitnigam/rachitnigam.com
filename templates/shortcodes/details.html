@@ -1,0 +1,8 @@
+<details>
+<summary>
+<i>{{ summary }}</i>
+</summary>
+<p>
+{{ body | markdown(inline=true) | trim | safe}}
+</p>
+</details>

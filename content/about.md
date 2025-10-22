@@ -4,17 +4,40 @@ template = "index.html"
 no_nav = "true"
 +++
 
-> If you are interested in applying to MIT's PhD program and work in the [FLAME][] lab, please take a look at [the instructions][flame-prospective]!
+I build programming languages and compilers to make it easy to *design* and
+*use* specialized hardware.
+My work is driven by the need to answer fundamental questions that about
+hardware--software systems and using the answers to build elegant systems.
+My PhD answered three such questions:
 
-My goal is to build systems that democratize the *design* and *use* of specialized hardware.
-I am excited to work with folks who are dissatisfied with the current state of tools and techniques for hardware design.
-I am interested in radically new approaches that combine ideas from programming languages, computer architecture, VLSI, and computer-aided design to address the design, verification, and usability challenges of specialized hardware.
-In doing so, I want to build real systems, evaluate them rigorously, and get other people to use them.
+{% details(summary="What fundamentally distinguishes hardware design from software?") %}
+Hardware designs must explicitly reason about time.
+[Filament](https://filamentHDL.com) is a new
+hardware description language that uses a type-system to explicitly reason
+about time and uses it to provide strong guarantees about the generated circuits.
+Filament's ideas have influenced the design of
+Google's [XLS](https://google.github.io/xls/) project and
+Jane Street's [Hardcaml](https://github.com/janestreet/hardcaml) language.
+{% end %}
 
-My PhD research has produced three systems:
-* [Calyx][]: A compiler infrastructure for compiling high-level languages to efficient circuits. Calyx has been adopted by the [LLVM CIRCT][circt] project and is the basis for several academic and research tools.
-* [Filament][]: a new hardware description language that uses a novel type system to guarantee correctness of pipeline composition. Filament's ideas have influenced the design of Google's [XLS][] system and Jane Street's [HardCaml][] language.
-* [Dahlia]: A high-level language for predictable accelerator generation. Dahlia demonstrated how type systems can connect high-level abstractions with circuit-level constraints.
+{% details(summary="How do we design a scalable compiler infrastructure for hardware synthesis?") %}
+By intermixing software and hardware abstractions into one intermediate language.
+[Calyx](https://calyxir.org) is a compiler infrastructure for transforming computational descriptions
+into efficient circuits. Calyx has been adopted by the [LLVM CIRCT](https://circt.llvm.org) project and
+is the basis for several industrial and academic tools.
+{% end %}
+
+{% details(summary="Can type systems help reason about performance concerns?") %}
+Yes. [Dahlia](https://capra.cs.cornell.edu/dahlia) is a high-level language for predictably designing hardware accelerators.
+It uses a substructural type-system to capture hardware constraints in a high-level language
+and shows how they can be leveraged to reason about performance.
+{% end %}
+
+At MIT, I will lead the [Foundations of Languages and Machines (FLAME) lab][flame]
+where we will continue asking such questions and building new systems.
+If these directions excite you, apply to MIT's PhD program and take a look
+at [information for prospective students][flame-prospective].
+
 
 [research]: /files/research.pdf
 [grad-apply]: mailto:rachit.nigam12+gradapply@gmail.com

@@ -22,6 +22,7 @@ publication_short = "PLDI"
 image_preview = "dahlia-logo.png"
 image_alt = "Dahlia Logo"
 
+awards = ["MIT PL Review 2023"]
 pdf = "/files/pubs/dahlia.pdf"
 urls = [
   { name = "Demo", url = "https://capra.cs.cornell.edu/dahlia" },
