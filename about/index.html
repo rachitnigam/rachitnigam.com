@@ -52,17 +52,10 @@
   <div class="information">
     <div class="portrait-title">
       <h1 class="portrait-name">Rachit Nigam</h1>
-      <h3>Visiting Researcher</h3>
-      <span>Jane Street</span>
-      <!--<h3>Assistant Professor</h3>
-      <a href="https://mit.edu" target="_blank" itemprop="url" rel="noopener">
-        <span itemprop="name">Massachusetts Institute of Technology</span>
-      </a>
+      <h3>Incoming Assistant Professor</h3>
+       <span itemprop="name">Massachusetts Institute of Technology</span>
       <br/>
-      <a href="https://www.eecs.mit.edu/" target="_blank" itemprop="url" rel="noopener">
-          <span itemprop="name">Electrical Engineering &amp; Computer Science</span>
-      </a>
-      -->
+       <span itemprop="name">Electrical Engineering &amp; Computer Science</span>
     </div>
 
     <div class="contact-links">
@@ -97,19 +90,51 @@
 <section>
   <div class="bio">
     
-    <blockquote>
-<p>If you are interested in applying to MIT’s PhD program and work in the <a rel="noopener nofollow noreferrer" target="_blank" href="https://flame.csail.mit.edu">FLAME</a> lab, please take a look at <a rel="noopener nofollow noreferrer" target="_blank" href="https://flame.csail.mit.edu/lab/prospective/">the instructions</a>!</p>
-</blockquote>
-<p>My goal is to build systems that democratize the <em>design</em> and <em>use</em> of specialized hardware.
-I am excited to work with folks who are dissatisfied with the current state of tools and techniques for hardware design.
-I am interested in radically new approaches that combine ideas from programming languages, computer architecture, VLSI, and computer-aided design to address the design, verification, and usability challenges of specialized hardware.
-In doing so, I want to build real systems, evaluate them rigorously, and get other people to use them.</p>
-<p>My PhD research has produced three systems:</p>
-<ul>
-<li><a rel="noopener nofollow noreferrer" target="_blank" href="https://calyxir.org">Calyx</a>: A compiler infrastructure for compiling high-level languages to efficient circuits. Calyx has been adopted by the <a rel="noopener nofollow noreferrer" target="_blank" href="https://circt.llvm.org">LLVM CIRCT</a> project and is the basis for several academic and research tools.</li>
-<li><a rel="noopener nofollow noreferrer" target="_blank" href="https://filamenthdl.com">Filament</a>: a new hardware description language that uses a novel type system to guarantee correctness of pipeline composition. Filament’s ideas have influenced the design of Google’s <a rel="noopener nofollow noreferrer" target="_blank" href="https://google.github.io/xls/">XLS</a> system and Jane Street’s <a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/janestreet/hardcaml">HardCaml</a> language.</li>
-<li><a rel="noopener nofollow noreferrer" target="_blank" href="https://capra.cs.cornell.edu/dahlia">Dahlia</a>: A high-level language for predictable accelerator generation. Dahlia demonstrated how type systems can connect high-level abstractions with circuit-level constraints.</li>
-</ul>
+    <p>I build programming languages and compilers to make it easy to <em>design</em> and
+<em>use</em> specialized hardware.
+My work is driven by the need to answer fundamental questions that about
+hardware–software systems and using the answers to build elegant systems.
+My PhD answered three such questions:</p>
+<details>
+<summary>
+<i>What fundamentally distinguishes hardware design from software programming?</i>
+</summary>
+<p>
+Hardware designs must explicitly reason about discrete time.
+<a rel="noopener nofollow noreferrer" target="_blank" href="https://filamentHDL.com">Filament</a> is a new
+hardware description language that uses a type-system to explicitly reason
+about time and uses it to provide strong guarantees about the generated circuits.
+Filament’s ideas have influenced the design of
+Google’s <a rel="noopener nofollow noreferrer" target="_blank" href="https://google.github.io/xls/">XLS</a> project and
+Jane Street’s <a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/janestreet/hardcaml">Hardcaml</a> language.
+</p>
+</details>
+<details>
+<summary>
+<i>How do we design a scalable compiler infrastructure for hardware synthesis?</i>
+</summary>
+<p>
+By intermixing software and hardware abstractions into one intermediate language.
+<a rel="noopener nofollow noreferrer" target="_blank" href="https://calyxir.org">Calyx</a> is a compiler infrastructure for transforming computational descriptions
+into efficient circuits. Calyx has been adopted by the <a rel="noopener nofollow noreferrer" target="_blank" href="https://circt.llvm.org">LLVM CIRCT</a> project and
+is the basis for several industrial and academic tools.
+</p>
+</details>
+<details>
+<summary>
+<i>How can formal methods help with performance concerns?</i>
+</summary>
+<p>
+Types systems can encode low-level constraints within high-level languages.
+<a rel="noopener nofollow noreferrer" target="_blank" href="https://capra.cs.cornell.edu/dahlia">Dahlia</a> showed how a novel kind of substructural
+type system captures circuit-level constraints within an imperative, loop-based language
+and uses it to ensure that every well-typed program makes predictable performance trade-offs.
+</p>
+</details>
+<p>At MIT, I will lead the <a rel="noopener nofollow noreferrer" target="_blank" href="https://flame.csail.mit.edu">Foundations of Languages and Machines (FLAME) lab</a>
+where we will continue asking such questions and building new systems.
+If these directions excite you, apply to MIT’s PhD program and take a look
+at <a rel="noopener nofollow noreferrer" target="_blank" href="https://flame.csail.mit.edu/lab/prospective/">information for prospective students</a>.</p>
 
   </div>
   <!--div class="more">
@@ -1764,6 +1789,14 @@ member for <a rel="noopener nofollow noreferrer" target="_blank" href="https://p
   <a href="http:&#x2F;&#x2F;www.csl.cornell.edu&#x2F;~zhiruz&#x2F;" class="unstyled-link">Zhiru Zhang</a></span>
       
     </div>
+    
+    <!-- Award -->
+    
+      <div>
+        <i class="fa fa-medal" style="color: #d3af37;"></i>
+        <b>MIT PL Review 2023</b>
+      </div>
+    
     
     <div class="publication-links">
       
