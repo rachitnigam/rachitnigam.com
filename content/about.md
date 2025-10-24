@@ -10,8 +10,8 @@ My work is driven by the need to answer fundamental questions that about
 hardware--software systems and using the answers to build elegant systems.
 My PhD answered three such questions:
 
-{% details(summary="What fundamentally distinguishes hardware design from software?") %}
-Hardware designs must explicitly reason about time.
+{% details(summary="What fundamentally distinguishes hardware design from software programming?") %}
+Hardware designs must explicitly reason about discrete time.
 [Filament](https://filamentHDL.com) is a new
 hardware description language that uses a type-system to explicitly reason
 about time and uses it to provide strong guarantees about the generated circuits.
@@ -27,10 +27,11 @@ into efficient circuits. Calyx has been adopted by the [LLVM CIRCT](https://circ
 is the basis for several industrial and academic tools.
 {% end %}
 
-{% details(summary="Can type systems help reason about performance concerns?") %}
-Yes. [Dahlia](https://capra.cs.cornell.edu/dahlia) is a high-level language for predictably designing hardware accelerators.
-It uses a substructural type-system to capture hardware constraints in a high-level language
-and shows how they can be leveraged to reason about performance.
+{% details(summary="How can formal methods help with performance concerns?") %}
+Types systems can encode low-level constraints within high-level languages.
+[Dahlia](https://capra.cs.cornell.edu/dahlia) showed how a novel kind of substructural
+type system captures circuit-level constraints within an imperative, loop-based language
+and uses it to ensure that every well-typed program makes predictable performance trade-offs.
 {% end %}
 
 At MIT, I will lead the [Foundations of Languages and Machines (FLAME) lab][flame]
