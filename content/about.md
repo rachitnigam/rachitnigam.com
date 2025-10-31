@@ -27,9 +27,9 @@ into efficient circuits. Calyx has been adopted by the [LLVM CIRCT](https://circ
 is the basis for several industrial and academic tools.
 {% end %}
 
-{% details(summary="How can formal methods help with performance concerns?") %}
+{% details(summary="How can formal methods help reason about performance?") %}
 Types systems can encode low-level constraints within high-level languages.
-[Dahlia](https://capra.cs.cornell.edu/dahlia) showed how a novel kind of substructural
+[Dahlia](https://capra.cs.cornell.edu/dahlia) shows how a novel kind of substructural
 type system captures circuit-level constraints within an imperative, loop-based language
 and uses it to ensure that every well-typed program makes predictable performance trade-offs.
 {% end %}
