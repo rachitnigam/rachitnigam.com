@@ -7,7 +7,7 @@ draft = false
 summary = "Tools of math to wage a pointless war"
 +++
 
-I find "transpiler" to be a useless word: depending on the speaker, it can mean anything from a text replacement tool to a sophisticated optimizing compiler; I would much rather just use "compiler" to describe these systems. In a display of insight, a commenter pointed me to the dichotomy between lumpers and splitters: people who try to group similar things vs. people who try to separate out different things. I think this is an interesting idea and made me want to pen down, rigorously and formally, *why* I think compilers and transpilers are the same thing.
+[I find "transpiler" to be a useless word](../transpiler): depending on the speaker, it can mean anything from a text replacement tool to a sophisticated optimizing compiler; I would much rather just use "compiler" to describe these systems. In a display of insight, a commenter pointed me to the dichotomy between lumpers and splitters: people who try to group similar things vs. people who try to separate out different things. I think this is an interesting idea and made me want to pen down, rigorously and formally, *why* I think compilers and transpilers are the same thing.
 
 So, here is the game plan: I will introduce a couple of ideas that the programming languages (PL) community developed to carefully think about tools that manipulate programs. I will use these ideas to give three formal definitions of the word "transpiler" and work through why I do not like them. Even if you disagree, I hope that the formal framework provides a more rigorous ground for debate!
 
