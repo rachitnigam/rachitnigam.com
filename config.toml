@@ -25,6 +25,9 @@ skip_prefixes = ["https://twitter.com/"]
 news_items = 4
 post_items = 7
 
+katex_enable = true
+katex_auto_render = true
+
 # Links to author webpages
 author = [
   { name = "Pedro Henrique Azevedo de Amorim", link = "https://www.cs.cornell.edu/~pamorim/" },
