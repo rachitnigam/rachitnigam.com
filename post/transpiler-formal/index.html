@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="author" content="Rachit Nigam">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title> Formally speaking, &quot;Transpiler&quot; is a useless word | Rachit Nigam </title>
+  
+
+  <link defer rel="icon" href=https://people.csail.mit.edu/rachit/flower.svg type="image/svg+xml">
+
+  <link defer rel="stylesheet" href=https://people.csail.mit.edu/rachit/css/normalize.css>
+  <link defer rel="stylesheet" href=https://people.csail.mit.edu/rachit/default.css>
+  <link defer rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  <link defer rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.1/css/academicons.min.css"
+    integrity="sha512-b1ASx0WHgVFL5ZQhTgiPWX+68KjS38Jk87jg7pe+qC7q9YkEtFq0z7xCglv7qGIs/68d3mAp+StfC8WKC5SSAg=="
+    crossorigin="anonymous" />
+
+  <!-- Load source code pro -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+
+  
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="https://people.csail.mit.edu/rachit/ post/atom.xml">
+  
+
+  
+  
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.27/dist/katex.min.js"
+          integrity="sha384-2B8pfmZZ6JlVoScJm/5hQfNS2TI/6hPqDZInzzPc8oHpN5SgeNOf4LzREO6p5YtZ"
+          crossorigin="anonymous">
+  </script>
+  <!-- script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.0/dist/contrib/mathtex-script-type.min.js"
+  integrity="sha384-zWYbd0NBwgTsgIdFKVprSfTh1mbMPe5Hz1X3yY4Sd1h/K1cQoUe36OGwAGz/PcDy" crossorigin="anonymous"></script-->
+  
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.27/dist/contrib/auto-render.min.js"
+          integrity="sha384-hCXGrW6PitJEwbkoStFjeJxv+fSOOQKOPbJxSfM6G5sWZjAyWhXiTIIAmQqnlLlh"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body);"></script>
+  <!--script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.0/dist/contrib/auto-render.min.js"
+  integrity="sha384-kmZOZB5ObwgQnS/DuDg6TScgOiWWBiVt0plIRkZCmE6rDZGrEOQeHM5PcHi+nyqe" crossorigin="anonymous"
+          onload="renderMathInElement(document.body);"></script-->
+  
+  
+  
+
+  
+  
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.27/dist/katex.min.css"
+        integrity="sha384-Pu5+C18nP5dwykLJOhd2U4Xen7rjScHN/qusop27hdd2drI+lL5KvX7YntvT8yew"
+        crossorigin="anonymous">
+  
+  
+</head>
+
+<body>
+  
+  <header>
+    <h1 class="name"><a class="unstyled-link" href=https://people.csail.mit.edu/rachit>Rachit Nigam</a></h1>
+    <nav>
+      <a class="unstyled-link nav-item" href=https://people.csail.mit.edu/rachit/#publications>Papers</a>
+      <a class="unstyled-link nav-item" href=https://people.csail.mit.edu/rachit/#posts>Posts</a>
+      <a class="unstyled-link nav-item" href=https://people.csail.mit.edu/rachit/files/resume.pdf>CV</a>
+    </nav>
+  </header>
+  
+  <section class="section">
+    <div class="container">
+      
+<div class="post-header">
+<h1 class="title">
+  Formally speaking, &quot;Transpiler&quot; is a useless word
+</h1>
+<div class="date">
+Tools of math to wage a pointless war
+</div>
+<p class="date">December 30, 2025</p>
+</div>
+
+<div class="post">
+<p>I find “transpiler” to be a useless word: depending on the speaker, it can mean anything from a text replacement tool to a sophisticated optimizing compiler; I would much rather just use “compiler” to describe these systems. In a display of insight, a commenter pointed me to the dichotomy between lumpers and splitters: people who try to group similar things vs. people who try to separate out different things. I think this is an interesting idea and made me want to pen down, rigorously and formally, <em>why</em> I think compilers and transpilers are the same thing.</p>
+<p>So, here is the game plan: I will introduce a couple of ideas that the programming languages (PL) community developed to carefully think about tools that manipulate programs. I will use these ideas to give three formal definitions of the word “transpiler” and work through why I do not like them. Even if you disagree, I hope that the formal framework provides a more rigorous ground for debate!</p>
+<h1 id="it-walks-like-a-duck">It Walks Like a Duck</h1>
+<p><em>Concrete syntax</em> is the first layer of a programming language we interact with: the symbols and words that form a language’s vocabulary.  The PL community formalizes the syntax of a language using the Backus-Naur form (BNF) grammar. For example, here is the syntax of simple imperative language with loops and conditionals:</p>
+<p>$$
+\begin{aligned}
+n &amp;\in \mathcal{N} \quad b \in \{T, F\} \quad x \in variables \\
+e &amp;::= n | e + e | e - e | … \\
+c &amp;::= b | e &gt; e | e = e | c\, \texttt{and}\, c | … \\
+s &amp;::= x := e \\
+&amp;|\, s;s \\
+&amp;|\, \texttt{if}(c)\,\{s\}\,\texttt{else}\,\{s\} \\
+&amp;|\, \texttt{while}\, c\, \{ s \} | …
+\end{aligned}
+$$
+A BNF grammar is <em>recursively-defined</em>: the generator for expressions (\(e\)) defines terminals, such as numbers (\(n\)), as well as compound expressions, such as \( e - e \), which refer back to the generator. Other generators, such as statements (\(s\)) mention expressions as well as special tokens such as <code>if</code> and <code>while</code>. Formally, a programming language is the (infinite) set of all terms generated by this recursive definition:</p>
+<blockquote>
+<p><strong>Syntax of a Programming Language:</strong> A programming language (\(L\)) is the set of all terms enumerated by some BNF grammar (\(G\)).
+Therefore \(L = \{ t | t \in G \} \).</p>
+</blockquote>
+<p>Here’s an intuitive way to think about this definition: there is a universe of <em>all possible terms</em> that can be constructed by combining the symbols in ASCII. Let’s call this <em>the alphabet soup</em>. A BNF grammar provides structure to the alphabet soup by saying which combinational of terms are a part of some language and which ones are not. For example, the alphabet soup contains the term <code>&gt;+++</code> the but language above does not. However, you can totally define it to be a meaningful term in another language.</p>
+<p>Using this idea of syntax, I give my first definition of the word “transpiler”:</p>
+<blockquote>
+<p><strong>Transpilers are Syntax Translators.</strong> A <em>Transpiler</em> transforms programs in a source language (S) into programs a target language (T) by converting syntax constructs in S to match the “most natural” ones in T.</p>
+</blockquote>
+<p>“Most natural” is my attempt to capture what people mean when they say “transpilers compile two languages at the same level of abstraction”. For example, when transpiling JavaScript programs to Python, <code>for (...) { body }</code>  is converted into <code>for ...: body</code>. Unfortunately, when the target language does not have the same constructs as the source language, the “transpiler” needs to be able to do something else: it needs to <em>preserve the intention</em> of the programmer when translating between S and T. The formalism of syntax does not give us the ability to talk about the intention of the programmer. Let’s look at the next formalism.</p>
+<h1 id="it-quacks-like-a-duck">It Quacks Like a Duck</h1>
+<p>The <em>execution model</em> is the second layer of our interaction with programming languages: it defines how a concrete program is transformed into computation. PL researchers call this the <em>semantics</em> of the language and it is sacrosanct: by precisely describing what a program means, a semantics also defines what optimizations are valid, what guarantees a type system gives, and what intention of the programmer the compiler must preserve when translating a program between languages.</p>
+<p>There are many different flavors of formal semantics but I will talk about <em>operational semantics</em>. An operational semantics describes how to evaluate programs by defining a mathematical “machine” that rewrites programs into simpler ones (or <em>reduces</em> them). For example, let’s consider the expression: <code>(1 + 2) &gt; (3 + 4)</code>. Intuitively, we expect the following steps to occurs when this program runs:</p>
+<pre data-lang="python" style="background-color:#2b303b;color:#c0c5ce;" class="language-python "><code class="language-python" data-lang="python"><span>(</span><span style="color:#d08770;">1 </span><span>+ </span><span style="color:#d08770;">2</span><span>) &gt; (</span><span style="color:#d08770;">3 </span><span>+ </span><span style="color:#d08770;">4</span><span>)
+</span><span style="color:#d08770;">3 </span><span>&gt; (</span><span style="color:#d08770;">3 </span><span>+ </span><span style="color:#d08770;">4</span><span>)
+</span><span style="color:#d08770;">3 </span><span>&gt; </span><span style="color:#d08770;">7
+</span><span style="color:#d08770;">False
+</span></code></pre>
+<p>Each one of these steps is a “reduction” within an operational semantics. We can formalize the possibly reductions using a <em>big-step</em> operational semantics which defines the relation \(e_1 \Downarrow e_2\) (read as “\(e_1\) reduces to \(e_2\)”):</p>
+<p>$$
+\begin{aligned}
+&amp;\frac{e_1 \Downarrow v_1 \quad e_2 \Downarrow v_2 \quad v = v_1 + v_2}{e_1 + e_2 \Downarrow v}
+\\
+&amp;\frac{c_1 \Downarrow v_1 \quad c_2 \Downarrow v_2 \quad v_1 &gt; v_2}{c_1 &gt; c_2 \Downarrow \texttt{True}}
+\\
+&amp;\frac{c_1 \Downarrow v_1 \quad c_2 \Downarrow v_2 \quad v_1 &lt; v_2}{c_1 &lt; c_2 \Downarrow \texttt{False}}
+\end{aligned}
+$$</p>
+<p>Like the concrete syntax definition, the rules are recursive: in order to reduce large expressions, we first reduce their subcomponents and then perform some computation over the simplified values.</p>
+<blockquote>
+<p><strong>Tricks for encoding operational semantics.</strong> There are two interesting tricks we play when defining the operators \(+\) and \(&gt;\) in the rules above.</p>
+<ol>
+<li>The first rule reduces two expressions into values and then applies the \(+\) symbol. But this seems circular: to define \(+\), we use \(+\). Absolute rigor would demand that we further describe the \(+\) operator on numbers \(v_1\) and \(v_2\) using some sort of encoding such as Peano arithmetic or Church numerals.</li>
+<li>The \(&gt;\) operator has two rules: one for the <code>True</code> case and another for the <code>False</code> case. This is another common trick in defining operational semantics: we can encode choice by describing multiple rules. Because the two rules share almost all the conditions on the top, they will attempt to reduce expressions like \(c_1 &gt; c_2\) but only one of them will succeed for any given expression. For the acutely philosophical, we are using the built-in notion of “matching” within inference rules to define a conditional; this means that inference rules themselves have a semantics…</li>
+</ol>
+</blockquote>
+<p>Let’s see why semantics are useful by studying a particular compilation example. First, we define our fragments of our source (\(S\)) and target (\(T\)) languages:</p>
+<p>$$
+\begin{aligned}
+x &amp;\in variables \\
+e_s &amp;::= b\, |\, e &gt; e\, |\, e\, \texttt{and}\, e \\
+e_t &amp;::= b\, |\, x\, \texttt{and}\, x \\
+&amp;|\, \texttt{let}\, x = e\, \texttt{in}\, e \\
+&amp;|\, \texttt{if}\, x\, \texttt{then}\, e\, \texttt{else}\, e
+\end{aligned}
+$$
+Let’s walk through the differences in the two languages by comparing the syntax for \(\texttt{and}\):
+the expression \((1 &gt; 2) \,\texttt{and}\, (3 &gt; 4)\) is a valid expression
+in the source language (\(e_s\)) but not the target language (\(e_t\)). This is because the syntax for
+\(\texttt{and}\) for the target language requires the sub-expressions to be variables (\(x\)).</p>
+<p>Given these definitions, let’s try to build a “transpiler” using our first definition. Staying true to our definition of translating to the most natural operator within \(e_t\), we would like to generate another \(\texttt{and}\) expression. To do this, we need to introduce some <code>let</code>-bindings to name our expressions:</p>
+<pre data-lang="ocaml" style="background-color:#2b303b;color:#c0c5ce;" class="language-ocaml "><code class="language-ocaml" data-lang="ocaml"><span>e1 &amp;&amp; e2
+</span><span style="color:#65737e;">(* Rewrite into *)
+</span><span style="color:#b48ead;">let </span><span style="color:#bf616a;">x1 </span><span>= e1 </span><span style="color:#b48ead;">in
+</span><span style="color:#b48ead;">let </span><span style="color:#bf616a;">x2 </span><span>= e2 </span><span style="color:#b48ead;">in
+</span><span>x1 &amp;&amp; x2
+</span></code></pre>
+<p>Transpilation complete! Except, this rewritten program has introduced errors that were not possible before. In Python, we can write:</p>
+<pre data-lang="python" style="background-color:#2b303b;color:#c0c5ce;" class="language-python "><code class="language-python" data-lang="python"><span style="color:#b48ead;">if </span><span>x is not </span><span style="color:#d08770;">None </span><span>and x &gt; </span><span style="color:#d08770;">10</span><span>: </span><span style="color:#d08770;">...
+</span></code></pre>
+<p>Our rewrite rules transforms this into:</p>
+<pre data-lang="python" style="background-color:#2b303b;color:#c0c5ce;" class="language-python "><code class="language-python" data-lang="python"><span>p = x is not </span><span style="color:#d08770;">None
+</span><span>q = x &gt; </span><span style="color:#d08770;">10
+</span><span style="color:#b48ead;">if </span><span>p and q: </span><span style="color:#d08770;">...
+</span></code></pre>
+<p>Executing this will generate and error saying that comparisons are not supported between <code>NoneType</code> and <code>int</code>. However, this error cannot occur in the first program. This is because <code>and</code> implements <em>short-circuiting</em> behavior: if the left side evaluates to <code>False</code>, the right side is not evaluated at all. By binding both the expressions <em>before</em> the <code>and</code> operation, we’ve eliminated the short-circuiting. This highlights the folly of thinking about “transpilation” as a purely syntactic process; if you ignore the semantics, you change the meaning of programs.</p>
+<p>An operational semantics can differentiate between the two possible semantics of the \(\texttt{and}\) operator. This first rule, which looks very similar to the operational semantics above, captures a <em>non-short-circuiting</em> implementation of \(\texttt{and}\):
+$$
+\begin{aligned}
+&amp;\frac{e_1 \Downarrow v_1 \quad e_2 \Downarrow v_2 \quad v = v_1 \land v_2}{e_1, \texttt{and}, e_2 \Downarrow v}
+\end{aligned}
+$$
+The rule fully evaluates the left and right sub-expressions and then uses the logical and operator (\(\land\)) to compute the output. This second set of rules capture the <em>short-circuiting behavior</em>:
+$$
+\begin{aligned}
+\frac{e_1 \Downarrow \texttt{False}}{e_1, \texttt{and}, e_2 \Downarrow \texttt{False}}
+\\
+\frac{e_1 \Downarrow \texttt{True} \quad e_2 \Downarrow \texttt{False}}{e_1, \texttt{and}, e_2 \Downarrow \texttt{False}}
+\\
+\frac{e_1 \Downarrow \texttt{True} \quad e_2 \Downarrow \texttt{True}}{e_1, \texttt{and}, e_2 \Downarrow \texttt{True}}
+\end{aligned}
+$$
+The first rule skips the reduction of \(e_2\) if \(e_1\) evaluate to <code>False</code>.</p>
+<p>The correct way to encode this short-circuiting behavior is to use conditionals:</p>
+<pre data-lang="ocaml" style="background-color:#2b303b;color:#c0c5ce;" class="language-ocaml "><code class="language-ocaml" data-lang="ocaml"><span>e1 &amp;&amp; e2
+</span><span style="color:#65737e;">(* Rewrite into *)
+</span><span style="color:#b48ead;">let </span><span style="color:#bf616a;">x1 </span><span>= e1 </span><span style="color:#b48ead;">in
+</span><span style="color:#b48ead;">if</span><span> x1 </span><span style="color:#b48ead;">then</span><span> e2 </span><span style="color:#b48ead;">else </span><span>False
+</span></code></pre>
+<p>So, the syntax-based definition of a transpiler is wrong if we care about maintain correctness. This second definition of “transpiler” uses the idea of semantics:</p>
+<blockquote>
+<p><strong>Transpilers are semantics translators.</strong> Given two language \(S\) and \(T\) with semantics \(\Downarrow_s\) and \(\Downarrow_t\), a <em>Transpiler</em> is function \(\mathcal{C}: S \rightarrow T\) such that \(\forall s \in S : s \Downarrow_s v \implies C(s) \Downarrow_t v\).</p>
+</blockquote>
+<p>The math says that “if a source program \(s\) evaluates to \(v\), then the compiled program \(C(s)\) should also evaluate to \(v\).” In other words, a transpiler preserves the meaning of a program. This is a nice precise definition!
+<em>It also happens to be the exact definition of a compiler.</em></p>
+<p>This puts us in a bind: The syntax translation definition of “transpilers” is too weak because it excludes transformations that so-called “transpilers” definitely support, while semantic translation definition is too strong because it includes normal compilers!</p>
+<p>At this point, the wise critic would say that my academic top hat has blinded me and the obvious distinction between a transpiler and a compiler is that a transpiler is <em>simple</em>! Compilers can perform all sorts of complicated tricks to transform programs but the transpiler is elegant simplicity itself.</p>
+<p>Let’s see what math has to say about simplicity.</p>
+<h1 id="bills-but-no-webbed-feet">Bills but no Webbed Feet</h1>
+<p>Simplicity is subjective but the history of the word “transpiler” might shed some light on what people mean. To my knowledge, “transpiler” originates within the JavaScript community and refers to tools like <a rel="noopener nofollow noreferrer" target="_blank" href="https://babeljs.io/">Babel</a> which enabled people to use new language constructs that lacked browser support. For example, JavaScript might implement a new <code>for</code>-<code>in</code> construct which allows a loop to walk over the keys of an object. However, browsers would take some time to implement the feature natively. In this case, Babel could compile <code>for</code>-<code>in</code> into an existing <code>while</code>-loop with the right function calls allowing codebases to adopt it while maintaining compatibility. Such a rewrite seems simpler than the heavyweight responsibilities of a compiler.</p>
+<p>So, how do we define “simplicity”? Some readers might call the <code>for</code>-<code>in</code> construct <em>syntactic sugar</em>: it makes it easier to write certain kinds of programs but does not fundamentally change the <em>expressivity</em> of the language. An important property of syntactic sugar is that rewriting it is compositional: I can rewrite any <code>for</code>-<code>in</code> loop into the equivalent <code>while</code> loop without worrying about the surrounding context. This idea of “context independence” is precisely what the paper <a rel="noopener nofollow noreferrer" target="_blank" href="https://www2.ccs.neu.edu/racket/pubs/scp91-felleisen.pdf">On the Expressive Power of Programming Languages</a> uses to formally distinguish between simple and complex rewrites:</p>
+<blockquote>
+<p><strong>Syntactic sugar.</strong> A feature \(\mathcal{F}\) is <em>syntactic sugar</em> for language \(\mathcal{L}\) if there is a rewrite rule \(\phi\) such that \(\phi\) distributes over all composition operators of \(\mathcal{L}\). In other words, if \(A(L_0, L_1, …) \in \mathcal{L}\), then \(\phi(A(L_0, L_1, ..)) = A(\phi(L_0), \phi(L_1))\). Such a \(\phi\) is called a <em>local transformation</em>.</p>
+</blockquote>
+<p>Deep breath. The math looks like scary mumbo-jumbo but it describes what it means for a rewrite rule to be simple. In short, if the rewrite rule <em>distributes over</em> language constructs like loops (<code>while</code>), conditionals (<code>if</code>-<code>else</code>), and sequential composition (<code>;</code>), it is simple syntactic sugar. Because the rewriting can distribute over constructs, it cannot, for example, look at one part of the program and use that information to transform a different part of the program. This rules out transformations that add <em>expressive features</em> to a language–exceptions in languages with simple control flow or mutability in pure functional languages–which require global and contextual transformation.</p>
+<p>I find this idea to be pretty neat because it allows to talk about what features of a language add expressivity to it:</p>
+<blockquote>
+<p><strong>Expressive constructs.</strong>  A feature \(\mathcal{F}\) adds expressivity to \(\mathcal{L}\) if there does not exist a local transformation to eliminate it.</p>
+</blockquote>
+<p>With these definitions, here is my third definition of a transpiler that uses the idea of <em>expressivity</em> and <em>local transformations</em>:</p>
+<blockquote>
+<p><strong>Transpilers are local rewriters.</strong> <em>Transpilers</em> convert programs in source program \(S\) to target \(T\) by only performing local transformations.</p>
+</blockquote>
+<p>This definition of “transpiler” is the only one I have any sympathy for since it captures the loose notion of simplicity that people often throw around. However, this definition is still far from being good enough because real programming languages have complex semantics that generally do require some amount of global transformation. For example, correctly implementing the semantics of JavaScript’s <code>this</code> within Python would give anyone a headache.</p>
+<h1 id="call-it-what-you-want">Call It What You Want</h1>
+<p>To summarize, I have given three definitions of the word “transpiler” grounded in formal concepts:</p>
+<ul>
+<li><strong>Syntax Translator.</strong>  Based on the formalism of <em>concrete syntax</em>. This probably most closely matches the intuition people have when they say “transpiler” but falls apart upon basic scrutiny.</li>
+<li><strong>Semantic Translator.</strong>  Based on the formalism of <em>semantics</em>. This is the definition of a compiler. If you mean this, then just use the word “compiler”.</li>
+<li><strong>Local Rewriter.</strong>  Based on <em>expressivity of constructs</em>. This definition is a little more nuanced and the one I am willing to cede some ground on. However, tools that are called “transpilers” often need to perform more than just local rewrites if they care about being correct.</li>
+</ul>
+<p>I hope that, even if you disagree with my definitions, the formal tools shed some light on how my research community thinks about these problems. At the end of the day, I do not care what you call these tools; maybe there is some intuitive idea that is clear to your audience when you say “transpiler”. However, in a world full of vagaries and vibes, I look for precise thought and I find the definitions of the word “transpiler” lacking.</p>
+
+</div>
+
+
+    </div>
+  </section>
+
+  <footer>
+    &copy;&nbsp;2021 Rachit Nigam &middot; Built using <a href="https://www.getzola.org/">Zola</a>
+  </footer>
+</body>
+
+</html>
