@@ -1,6 +1,6 @@
 <details>
 <summary>
-<i>{{ summary }}</i>
+<i>{{ summary | markdown(inline=true) | trim | safe }}</i>
 </summary>
 <p>
 {{ body | markdown(inline=true) | trim | safe}}

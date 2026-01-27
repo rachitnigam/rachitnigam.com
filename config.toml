@@ -16,7 +16,12 @@ external_links_target_blank = true
 external_links_no_follow = true
 external_links_no_referrer = true
 smart_punctuation = true
-highlight_code = true
+
+[markdown.highlighting]
+style = "inline"
+light_theme = "github-light"
+dark_theme = "github-dark"
+
 
 [link_checker]
 skip_prefixes = ["https://twitter.com/"]

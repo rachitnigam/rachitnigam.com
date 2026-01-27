@@ -66,9 +66,12 @@ $$
 
 Like the concrete syntax definition, the rules are recursive: in order to reduce large expressions, we first reduce their subcomponents and then perform some computation over the simplified values.
 
-> **Tricks for encoding operational semantics.** There are two interesting tricks we play when defining the operators \\(+\\) and \\(>\\) in the rules above.
-> 1. The first rule reduces two expressions into values and then applies the \\(+\\) symbol. But this seems circular: to define \\(+\\), we use \\(+\\). Absolute rigor would demand that we further describe the \\(+\\) operator on numbers \\(v_1\\) and \\(v_2\\) using some sort of encoding such as Peano arithmetic or Church numerals.
-> 2. The \\(>\\) operator has two rules: one for the `True` case and another for the `False` case. This is another common trick in defining operational semantics: we can encode choice by describing multiple rules. Because the two rules share almost all the conditions on the top, they will attempt to reduce expressions like \\(c_1 > c_2\\) but only one of them will succeed for any given expression. For the acutely philosophical, we are using the built-in notion of "matching" within inference rules to define a conditional; this means that inference rules themselves have a semantics...
+{% details(summary="**Tricks for encoding operational semantics.**") %}
+There are two interesting tricks we play when defining the operators \\(+\\) and \\(>\\) in the rules above.
+
+1. The first rule reduces two expressions into values and then applies the \\(+\\) symbol. But this seems circular: to define \\(+\\), we use \\(+\\). Absolute rigor would demand that we further describe the \\(+\\) operator on numbers \\(v_1\\) and \\(v_2\\) using some sort of encoding such as Peano arithmetic or Church numerals.
+2. The \\(>\\) operator has two rules: one for the `True` case and another for the `False` case. This is another common trick in defining operational semantics: we can encode choice by describing multiple rules. Because the two rules share almost all the conditions on the top, they will attempt to reduce expressions like \\(c_1 > c_2\\) but only one of them will succeed for any given expression. For the acutely philosophical, we are using the built-in notion of "matching" within inference rules to define a conditional; this means that inference rules themselves have a semantics...
+{% end %}
 
 Let's see why semantics are useful by studying a particular compilation example. First, we define our fragments of our source (\\(S\\)) and target (\\(T\\)) languages:
 
