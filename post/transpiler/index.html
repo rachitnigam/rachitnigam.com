@@ -99,32 +99,29 @@ The big problem around most of the arguments to distinguish between compilers an
        id="sn-1"
        class="margin-toggle"/>
 <span class="sidenote">
-Both <a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/Nuitka/Nuitka">Nuitka</a> and <a rel="noopener nofollow noreferrer" target="_blank" href="https://docs.modular.com/mojo/">Mojo</a> both actually target this exact problem but sanely call themselves compilers.
+Both <a rel="noopener nofollow noreferrer external" target="_blank" href="https://github.com/Nuitka/Nuitka">Nuitka</a> and <a rel="noopener nofollow noreferrer external" target="_blank" href="https://docs.modular.com/mojo/">Mojo</a> both actually target this exact problem but sanely call themselves compilers.
 </span>
  It takes python code that looks like this:</p>
-<pre data-lang="py" style="background-color:#2b303b;color:#c0c5ce;" class="language-py "><code class="language-py" data-lang="py"><span style="color:#b48ead;">def </span><span style="color:#8fa1b3;">fact</span><span>(</span><span style="color:#bf616a;">n</span><span>):
-</span><span>    x = </span><span style="color:#d08770;">1
-</span><span>    </span><span style="color:#b48ead;">for </span><span>i </span><span style="color:#b48ead;">in </span><span style="color:#96b5b4;">range</span><span>(</span><span style="color:#d08770;">1</span><span>, n):
-</span><span>        x *= i
-</span><span>    </span><span style="color:#b48ead;">return </span><span>x
-</span></code></pre>
+<pre class="giallo" style="color-scheme: light dark; color: light-dark(#24292E, #E1E4E8); background-color: light-dark(#FFFFFF, #24292E);"><code data-lang="python"><span class="giallo-l"><span style="color: light-dark(#D73A49, #F97583);">def</span><span style="color: light-dark(#6F42C1, #B392F0);"> fact</span><span>(</span><span>n</span><span>)</span><span>:</span></span>
+<span class="giallo-l"><span>    x</span><span style="color: light-dark(#D73A49, #F97583);"> =</span><span style="color: light-dark(#005CC5, #79B8FF);"> 1</span></span>
+<span class="giallo-l"><span style="color: light-dark(#D73A49, #F97583);">    for</span><span> i</span><span style="color: light-dark(#D73A49, #F97583);"> in</span><span style="color: light-dark(#005CC5, #79B8FF);"> range</span><span>(</span><span style="color: light-dark(#005CC5, #79B8FF);">1</span><span>,</span><span> n</span><span>)</span><span>:</span></span>
+<span class="giallo-l"><span>        x</span><span style="color: light-dark(#D73A49, #F97583);"> *=</span><span> i</span></span>
+<span class="giallo-l"><span style="color: light-dark(#D73A49, #F97583);">    return</span><span> x</span></span></code></pre>
 <p>Into some C code like this:</p>
-<pre data-lang="C" style="background-color:#2b303b;color:#c0c5ce;" class="language-C "><code class="language-C" data-lang="C"><span style="color:#b48ead;">int </span><span style="color:#8fa1b3;">fact</span><span>(</span><span style="color:#b48ead;">int </span><span style="color:#bf616a;">n</span><span>) {
-</span><span>    </span><span style="color:#b48ead;">int</span><span> x = </span><span style="color:#d08770;">1</span><span>;
-</span><span>    </span><span style="color:#b48ead;">for </span><span>(</span><span style="color:#b48ead;">int</span><span> i = </span><span style="color:#d08770;">1</span><span>; i &lt; n; i++) {
-</span><span>        x *= i;
-</span><span>    }
-</span><span>    </span><span style="color:#b48ead;">return</span><span> x;
-</span><span>}
-</span></code></pre>
+<pre class="giallo" style="color-scheme: light dark; color: light-dark(#24292E, #E1E4E8); background-color: light-dark(#FFFFFF, #24292E);"><code data-lang="c"><span class="giallo-l"><span style="color: light-dark(#D73A49, #F97583);">int</span><span style="color: light-dark(#6F42C1, #B392F0);"> fact</span><span>(</span><span style="color: light-dark(#D73A49, #F97583);">int</span><span style="color: light-dark(#E36209, #FFAB70);"> n</span><span>)</span><span> {</span></span>
+<span class="giallo-l"><span style="color: light-dark(#D73A49, #F97583);">    int</span><span> x </span><span style="color: light-dark(#D73A49, #F97583);">=</span><span style="color: light-dark(#005CC5, #79B8FF);"> 1</span><span>;</span></span>
+<span class="giallo-l"><span style="color: light-dark(#D73A49, #F97583);">    for</span><span> (</span><span style="color: light-dark(#D73A49, #F97583);">int</span><span> i </span><span style="color: light-dark(#D73A49, #F97583);">=</span><span style="color: light-dark(#005CC5, #79B8FF);"> 1</span><span>;</span><span> i </span><span style="color: light-dark(#D73A49, #F97583);">&lt;</span><span> n</span><span>;</span><span> i</span><span style="color: light-dark(#D73A49, #F97583);">++</span><span>)</span><span> {</span></span>
+<span class="giallo-l"><span>        x </span><span style="color: light-dark(#D73A49, #F97583);">*=</span><span> i</span><span>;</span></span>
+<span class="giallo-l"><span>    }</span></span>
+<span class="giallo-l"><span style="color: light-dark(#D73A49, #F97583);">    return</span><span> x</span><span>;</span></span>
+<span class="giallo-l"><span>}</span></span></code></pre>
 <p>Wow, pretty simple! But of course, that piece of python is not very idiomatic. We can make it a bit more terse using list comprehensions:</p>
-<pre data-lang="py" style="background-color:#2b303b;color:#c0c5ce;" class="language-py "><code class="language-py" data-lang="py"><span style="color:#b48ead;">import </span><span>functools </span><span style="color:#b48ead;">as </span><span>ft
-</span><span style="color:#b48ead;">def </span><span style="color:#8fa1b3;">fact</span><span>(</span><span style="color:#bf616a;">n</span><span>):
-</span><span>    lst = </span><span style="color:#96b5b4;">range</span><span>(</span><span style="color:#d08770;">1</span><span>, n)
-</span><span>    </span><span style="color:#b48ead;">return </span><span>ft.</span><span style="color:#bf616a;">reduce</span><span>(</span><span style="color:#b48ead;">lambda </span><span style="color:#bf616a;">acc</span><span>, </span><span style="color:#bf616a;">x</span><span>: acc*x, lst)
-</span></code></pre>
+<pre class="giallo" style="color-scheme: light dark; color: light-dark(#24292E, #E1E4E8); background-color: light-dark(#FFFFFF, #24292E);"><code data-lang="python"><span class="giallo-l"><span style="color: light-dark(#D73A49, #F97583);">import</span><span> functools</span><span style="color: light-dark(#D73A49, #F97583);"> as</span><span> ft</span></span>
+<span class="giallo-l"><span style="color: light-dark(#D73A49, #F97583);">def</span><span style="color: light-dark(#6F42C1, #B392F0);"> fact</span><span>(</span><span>n</span><span>)</span><span>:</span></span>
+<span class="giallo-l"><span>    lst</span><span style="color: light-dark(#D73A49, #F97583);"> =</span><span style="color: light-dark(#005CC5, #79B8FF);"> range</span><span>(</span><span style="color: light-dark(#005CC5, #79B8FF);">1</span><span>,</span><span> n</span><span>)</span></span>
+<span class="giallo-l"><span style="color: light-dark(#D73A49, #F97583);">    return</span><span> ft</span><span>.</span><span>reduce</span><span>(</span><span style="color: light-dark(#D73A49, #F97583);">lambda</span><span> acc</span><span>,</span><span> x</span><span>:</span><span> acc</span><span style="color: light-dark(#D73A49, #F97583);">*</span><span>x</span><span>,</span><span> lst</span><span>)</span></span></code></pre>
 <p>Now our “transpiler” is in a little bit of trouble.
-The <a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/python/cpython/blob/main/Lib/functools.py#L237">implementation of <code>reduce</code></a> is in pure Python so maybe we can still transpile it but <a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/python/cpython/blob/d66bc9e8a7a8d6774d912a4b9d151885c4d8de1d/Objects/rangeobject.c#L24"><code>range</code> is implemented purely in C</a>.</p>
+The <a rel="noopener nofollow noreferrer external" target="_blank" href="https://github.com/python/cpython/blob/main/Lib/functools.py#L237">implementation of <code>reduce</code></a> is in pure Python so maybe we can still transpile it but <a rel="noopener nofollow noreferrer external" target="_blank" href="https://github.com/python/cpython/blob/d66bc9e8a7a8d6774d912a4b9d151885c4d8de1d/Objects/rangeobject.c#L24"><code>range</code> is implemented purely in C</a>.</p>
 <p>Looking into the implementation, what’s even clearer is that matching the <em>semantics of this program</em> is even harder:
 <code>range</code> is a Python generator which means that instead of actually computing the numbers from 1 to <code>n</code>, it only produces them when asked.
 This allows our method to save memory because we don’t actually have to allocate <code>n</code> words and can work using just the memory for the lazy
@@ -142,7 +139,7 @@ to work with.</p>
        id="sn-2"
        class="margin-toggle"/>
 <span class="sidenote">
-It is <a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/topics/transpiler">not hard</a> to find examples of things mislabelled as transpilers. However, I won’t name any specific projects because this is just a dumb diatribe about words, I actually think the projects themselves are cool.
+It is <a rel="noopener nofollow noreferrer external" target="_blank" href="https://github.com/topics/transpiler">not hard</a> to find examples of things mislabelled as transpilers. However, I won’t name any specific projects because this is just a dumb diatribe about words, I actually think the projects themselves are cool.
 </span>
 </p>
 <h2 id="lie-2-transpilers-are-simple">Lie #2: Transpilers are Simple</h2>
@@ -159,52 +156,50 @@ Technically, ECMAScript features.
 </span>
 <p>For example, ES6 added support for generators (similar to those in Python) but a lot of browser frontends did not support them.
 Generators are pretty nice:</p></p>
-<pre data-lang="js" style="background-color:#2b303b;color:#c0c5ce;" class="language-js "><code class="language-js" data-lang="js"><span style="color:#b48ead;">function *</span><span style="color:#8fa1b3;">range</span><span>(</span><span style="color:#bf616a;">max</span><span>) {
-</span><span>  </span><span style="color:#b48ead;">for </span><span>(</span><span style="color:#b48ead;">var </span><span style="color:#bf616a;">i </span><span>= </span><span style="color:#d08770;">0</span><span>; </span><span style="color:#bf616a;">i </span><span>&lt; </span><span style="color:#bf616a;">max</span><span>; </span><span style="color:#bf616a;">i </span><span>+= </span><span style="color:#d08770;">1</span><span>) {
-</span><span>    </span><span style="color:#b48ead;">yield </span><span style="color:#bf616a;">i</span><span>;
-</span><span>  }
-</span><span>}
-</span><span style="color:#65737e;">// Force the evaluation of the generator
-</span><span style="color:#ebcb8b;">console</span><span>.</span><span style="color:#96b5b4;">log</span><span>([</span><span style="color:#d08770;">0</span><span>, ...</span><span style="color:#8fa1b3;">range</span><span>(</span><span style="color:#d08770;">10</span><span>)])
-</span></code></pre>
-<p>Facebook’s <a rel="noopener nofollow noreferrer" target="_blank" href="http://facebook.github.io/regenerator/">regenerator</a> is a BabelJS-based “transpiler” to transform generators into language constructs that already existed
+<pre class="giallo" style="color-scheme: light dark; color: light-dark(#24292E, #E1E4E8); background-color: light-dark(#FFFFFF, #24292E);"><code data-lang="javascript"><span class="giallo-l"><span style="color: light-dark(#D73A49, #F97583);">function</span><span style="color: light-dark(#D73A49, #F97583);"> *</span><span style="color: light-dark(#6F42C1, #B392F0);">range</span><span>(</span><span style="color: light-dark(#E36209, #FFAB70);">max</span><span>)</span><span> {</span></span>
+<span class="giallo-l"><span style="color: light-dark(#D73A49, #F97583);">  for</span><span> (</span><span style="color: light-dark(#D73A49, #F97583);">var</span><span> i</span><span style="color: light-dark(#D73A49, #F97583);"> =</span><span style="color: light-dark(#005CC5, #79B8FF);"> 0</span><span>;</span><span> i</span><span style="color: light-dark(#D73A49, #F97583);"> &lt;</span><span> max</span><span>;</span><span> i</span><span style="color: light-dark(#D73A49, #F97583);"> +=</span><span style="color: light-dark(#005CC5, #79B8FF);"> 1</span><span>)</span><span> {</span></span>
+<span class="giallo-l"><span style="color: light-dark(#D73A49, #F97583);">    yield</span><span> i</span><span>;</span></span>
+<span class="giallo-l"><span>  }</span></span>
+<span class="giallo-l"><span>}</span></span>
+<span class="giallo-l"><span style="color: light-dark(#6A737D, #6A737D);">//</span><span style="color: light-dark(#6A737D, #6A737D);"> Force the evaluation of the generator</span></span>
+<span class="giallo-l"><span>console</span><span>.</span><span style="color: light-dark(#6F42C1, #B392F0);">log</span><span>(</span><span>[</span><span style="color: light-dark(#005CC5, #79B8FF);">0</span><span>,</span><span style="color: light-dark(#D73A49, #F97583);"> ...</span><span style="color: light-dark(#6F42C1, #B392F0);">range</span><span>(</span><span style="color: light-dark(#005CC5, #79B8FF);">10</span><span>)</span><span>]</span><span>)</span></span></code></pre>
+<p>Facebook’s <a rel="noopener nofollow noreferrer external" target="_blank" href="http://facebook.github.io/regenerator/">regenerator</a> is a BabelJS-based “transpiler” to transform generators into language constructs that already existed
 in JavaScript. Shouldn’t be too hard, right?</p>
-<pre data-lang="js" style="background-color:#2b303b;color:#c0c5ce;" class="language-js "><code class="language-js" data-lang="js"><span style="color:#b48ead;">var </span><span style="color:#bf616a;">_marked </span><span>= </span><span style="color:#65737e;">/*#__PURE__*/</span><span style="color:#bf616a;">regeneratorRuntime</span><span>.</span><span style="color:#8fa1b3;">mark</span><span>(</span><span style="color:#bf616a;">range</span><span>);
-</span><span style="color:#b48ead;">function </span><span style="color:#8fa1b3;">range</span><span>(</span><span style="color:#bf616a;">max</span><span>) {
-</span><span>  </span><span style="color:#b48ead;">var </span><span style="color:#bf616a;">i</span><span>;
-</span><span>  </span><span style="color:#b48ead;">return </span><span style="color:#bf616a;">regeneratorRuntime</span><span>.</span><span style="color:#8fa1b3;">wrap</span><span>(</span><span style="color:#b48ead;">function </span><span style="color:#8fa1b3;">range$</span><span>(</span><span style="color:#bf616a;">_context</span><span>) {
-</span><span>    </span><span style="color:#b48ead;">while </span><span>(</span><span style="color:#d08770;">1</span><span>) {
-</span><span>      </span><span style="color:#b48ead;">switch </span><span>(</span><span style="color:#bf616a;">_context</span><span>.</span><span style="color:#bf616a;">prev </span><span>= </span><span style="color:#bf616a;">_context</span><span>.next) {
-</span><span>        </span><span style="color:#b48ead;">case </span><span style="color:#d08770;">0</span><span>:
-</span><span>          </span><span style="color:#bf616a;">i </span><span>= </span><span style="color:#d08770;">0</span><span>;
-</span><span>        </span><span style="color:#b48ead;">case </span><span style="color:#d08770;">1</span><span>:
-</span><span>          </span><span style="color:#b48ead;">if </span><span>(!(</span><span style="color:#bf616a;">i </span><span>&lt; </span><span style="color:#bf616a;">max</span><span>)) {
-</span><span>            </span><span style="color:#bf616a;">_context</span><span>.next = </span><span style="color:#d08770;">7</span><span>;
-</span><span>            </span><span style="color:#b48ead;">break</span><span>;
-</span><span>          }
-</span><span>          </span><span style="color:#bf616a;">_context</span><span>.next = </span><span style="color:#d08770;">4</span><span>;
-</span><span>          </span><span style="color:#b48ead;">return </span><span style="color:#bf616a;">i</span><span>;
-</span><span>        </span><span style="color:#b48ead;">case </span><span style="color:#d08770;">4</span><span>:
-</span><span>          </span><span style="color:#bf616a;">i </span><span>+= </span><span style="color:#d08770;">1</span><span>;
-</span><span>          </span><span style="color:#bf616a;">_context</span><span>.next = </span><span style="color:#d08770;">1</span><span>;
-</span><span>          </span><span style="color:#b48ead;">break</span><span>;
-</span><span>        </span><span style="color:#b48ead;">case </span><span style="color:#d08770;">7</span><span>:
-</span><span>        </span><span style="color:#b48ead;">case </span><span>&quot;</span><span style="color:#a3be8c;">end</span><span>&quot;:
-</span><span>          </span><span style="color:#b48ead;">return </span><span style="color:#bf616a;">_context</span><span>.</span><span style="color:#96b5b4;">stop</span><span>();
-</span><span>      }
-</span><span>    }
-</span><span>  }, </span><span style="color:#bf616a;">_marked</span><span>);
-</span><span>}
-</span><span style="color:#65737e;">// Force the evaluation of the generator
-</span><span style="color:#ebcb8b;">console</span><span>.</span><span style="color:#96b5b4;">log</span><span>([</span><span style="color:#d08770;">0</span><span>, ...</span><span style="color:#8fa1b3;">range</span><span>(</span><span style="color:#d08770;">10</span><span>)]);
-</span></code></pre>
+<pre class="giallo" style="color-scheme: light dark; color: light-dark(#24292E, #E1E4E8); background-color: light-dark(#FFFFFF, #24292E);"><code data-lang="javascript"><span class="giallo-l"><span style="color: light-dark(#D73A49, #F97583);">var</span><span> _marked</span><span style="color: light-dark(#D73A49, #F97583);"> =</span><span style="color: light-dark(#6A737D, #6A737D);"> /*</span><span style="color: light-dark(#6A737D, #6A737D);">#__PURE__</span><span style="color: light-dark(#6A737D, #6A737D);">*/</span><span>regeneratorRuntime</span><span>.</span><span style="color: light-dark(#6F42C1, #B392F0);">mark</span><span>(</span><span>range</span><span>)</span><span>;</span></span>
+<span class="giallo-l"><span style="color: light-dark(#D73A49, #F97583);">function</span><span style="color: light-dark(#6F42C1, #B392F0);"> range</span><span>(</span><span style="color: light-dark(#E36209, #FFAB70);">max</span><span>)</span><span> {</span></span>
+<span class="giallo-l"><span style="color: light-dark(#D73A49, #F97583);">  var</span><span> i</span><span>;</span></span>
+<span class="giallo-l"><span style="color: light-dark(#D73A49, #F97583);">  return</span><span> regeneratorRuntime</span><span>.</span><span style="color: light-dark(#6F42C1, #B392F0);">wrap</span><span>(</span><span style="color: light-dark(#D73A49, #F97583);">function</span><span style="color: light-dark(#6F42C1, #B392F0);"> range$</span><span>(</span><span style="color: light-dark(#E36209, #FFAB70);">_context</span><span>)</span><span> {</span></span>
+<span class="giallo-l"><span style="color: light-dark(#D73A49, #F97583);">    while</span><span> (</span><span style="color: light-dark(#005CC5, #79B8FF);">1</span><span>)</span><span> {</span></span>
+<span class="giallo-l"><span style="color: light-dark(#D73A49, #F97583);">      switch</span><span> (</span><span>_context</span><span>.</span><span>prev</span><span style="color: light-dark(#D73A49, #F97583);"> =</span><span> _context</span><span>.</span><span>next</span><span>)</span><span> {</span></span>
+<span class="giallo-l"><span style="color: light-dark(#D73A49, #F97583);">        case</span><span style="color: light-dark(#005CC5, #79B8FF);"> 0</span><span>:</span></span>
+<span class="giallo-l"><span>          i</span><span style="color: light-dark(#D73A49, #F97583);"> =</span><span style="color: light-dark(#005CC5, #79B8FF);"> 0</span><span>;</span></span>
+<span class="giallo-l"><span style="color: light-dark(#D73A49, #F97583);">        case</span><span style="color: light-dark(#005CC5, #79B8FF);"> 1</span><span>:</span></span>
+<span class="giallo-l"><span style="color: light-dark(#D73A49, #F97583);">          if</span><span> (</span><span style="color: light-dark(#D73A49, #F97583);">!</span><span>(</span><span>i</span><span style="color: light-dark(#D73A49, #F97583);"> &lt;</span><span> max</span><span>)</span><span>)</span><span> {</span></span>
+<span class="giallo-l"><span>            _context</span><span>.</span><span>next</span><span style="color: light-dark(#D73A49, #F97583);"> =</span><span style="color: light-dark(#005CC5, #79B8FF);"> 7</span><span>;</span></span>
+<span class="giallo-l"><span style="color: light-dark(#D73A49, #F97583);">            break</span><span>;</span></span>
+<span class="giallo-l"><span>          }</span></span>
+<span class="giallo-l"><span>          _context</span><span>.</span><span>next</span><span style="color: light-dark(#D73A49, #F97583);"> =</span><span style="color: light-dark(#005CC5, #79B8FF);"> 4</span><span>;</span></span>
+<span class="giallo-l"><span style="color: light-dark(#D73A49, #F97583);">          return</span><span> i</span><span>;</span></span>
+<span class="giallo-l"><span style="color: light-dark(#D73A49, #F97583);">        case</span><span style="color: light-dark(#005CC5, #79B8FF);"> 4</span><span>:</span></span>
+<span class="giallo-l"><span>          i</span><span style="color: light-dark(#D73A49, #F97583);"> +=</span><span style="color: light-dark(#005CC5, #79B8FF);"> 1</span><span>;</span></span>
+<span class="giallo-l"><span>          _context</span><span>.</span><span>next</span><span style="color: light-dark(#D73A49, #F97583);"> =</span><span style="color: light-dark(#005CC5, #79B8FF);"> 1</span><span>;</span></span>
+<span class="giallo-l"><span style="color: light-dark(#D73A49, #F97583);">          break</span><span>;</span></span>
+<span class="giallo-l"><span style="color: light-dark(#D73A49, #F97583);">        case</span><span style="color: light-dark(#005CC5, #79B8FF);"> 7</span><span>:</span></span>
+<span class="giallo-l"><span style="color: light-dark(#D73A49, #F97583);">        case</span><span style="color: light-dark(#032F62, #9ECBFF);"> &quot;</span><span style="color: light-dark(#032F62, #9ECBFF);">end</span><span style="color: light-dark(#032F62, #9ECBFF);">&quot;</span><span>:</span></span>
+<span class="giallo-l"><span style="color: light-dark(#D73A49, #F97583);">          return</span><span> _context</span><span>.</span><span style="color: light-dark(#6F42C1, #B392F0);">stop</span><span>(</span><span>)</span><span>;</span></span>
+<span class="giallo-l"><span>      }</span></span>
+<span class="giallo-l"><span>    }</span></span>
+<span class="giallo-l"><span>  }</span><span>,</span><span> _marked</span><span>)</span><span>;</span></span>
+<span class="giallo-l"><span>}</span></span>
+<span class="giallo-l"><span style="color: light-dark(#6A737D, #6A737D);">//</span><span style="color: light-dark(#6A737D, #6A737D);"> Force the evaluation of the generator</span></span>
+<span class="giallo-l"><span>console</span><span>.</span><span style="color: light-dark(#6F42C1, #B392F0);">log</span><span>(</span><span>[</span><span style="color: light-dark(#005CC5, #79B8FF);">0</span><span>,</span><span style="color: light-dark(#D73A49, #F97583);"> ...</span><span style="color: light-dark(#6F42C1, #B392F0);">range</span><span>(</span><span style="color: light-dark(#005CC5, #79B8FF);">10</span><span>)</span><span>]</span><span>)</span><span>;</span></span></code></pre>
 <p>Guess what, it is. Implementing generators is a <em>whole-program transformation</em>: they fundamentally rely on the ability of the program to save its internal stack and pause its execution. In fact, making it fast requires enough tricks that <a href="/files/pubs/stopify-pldi18.pdf">we wrote a paper on it</a>.</p>
 <p>The point here is that people call arbitrarily complex tools “transpilers”. Again, the problem is the misguided focus on language syntax and a lack of understanding of the semantic difference.</p>
 <h2 id="lie-3-transpilers-target-the-same-level-of-abstraction">Lie #3: Transpilers Target the Same Level of Abstraction</h2>
 <p>This is pretty much the same as (2). The input and output languages have the syntax of JavaScript but the fact that compiling <em>one feature</em> requires a whole program transformation gives away the fact that these are not <em>the same language</em>.
-If we’re to get beyond the vagaries of syntax and <em>actually</em> talk about what the expressive power of languages is, we need to <a rel="noopener nofollow noreferrer" target="_blank" href="https://www.youtube.com/watch?v=43XaZEn2aLc">talk about semantics</a>.</p>
+If we’re to get beyond the vagaries of syntax and <em>actually</em> talk about what the expressive power of languages is, we need to <a rel="noopener nofollow noreferrer external" target="_blank" href="https://www.youtube.com/watch?v=43XaZEn2aLc">talk about semantics</a>.</p>
 <h2 id="lie-4-transpilers-don-t-have-backends">Lie #4: Transpilers Don’t have Backends</h2>
-<p>BabelJS has a <a rel="noopener nofollow noreferrer" target="_blank" href="https://babeljs.io/docs/babel-preset-env">list of “presets”</a> which target different versions of JavaScript.
+<p>BabelJS has a <a rel="noopener nofollow noreferrer external" target="_blank" href="https://babeljs.io/docs/babel-preset-env">list of “presets”</a> which target different versions of JavaScript.
 This is not very different from LLVM having multiple different backends.<span style="white-space:nowrap">
 <label for="sn-4"
        class="margin-toggle sidenote-number">
@@ -216,9 +211,9 @@ This is not very different from LLVM having multiple different backends.<span st
 <span class="sidenote">
 If you’re going to argue that the backends all compile to the same language, see (3).
 </span>
- People might argue that when Babel is compiling its operations, it can do it piecemeal: that is, the compilation of <a rel="noopener nofollow noreferrer" target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Nullish_coalescing_assignment">nullish coaleascing operators</a> has nothing to how classes are compiled.</p>
+ People might argue that when Babel is compiling its operations, it can do it piecemeal: that is, the compilation of <a rel="noopener nofollow noreferrer external" target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Nullish_coalescing_assignment">nullish coaleascing operators</a> has nothing to how classes are compiled.</p>
 <p>This is exactly what compiler frontends do as well: they transform a large surface area of syntax into a smaller language and a lot of operations are simple <em>syntactic sugar</em> which can be represented using other, more foundational primitives in the language.
-For example, in the Rust compiler, the mid-level representation (MIR) does away with features like <code>if</code>-<code>let</code> by compiling them into <code>match</code> statements. In fact, <code>clippy</code>, a style suggestion tool for Rust, <em>implements this as source-to-source transformation</em>: if you have <a rel="noopener nofollow noreferrer" target="_blank" href="https://rust-lang.github.io/rust-clippy/master/index.html#/single_match">simple <code>match</code> statements in your program</a> in your program, Clippy will suggest a rewrite to you.</p>
+For example, in the Rust compiler, the mid-level representation (MIR) does away with features like <code>if</code>-<code>let</code> by compiling them into <code>match</code> statements. In fact, <code>clippy</code>, a style suggestion tool for Rust, <em>implements this as source-to-source transformation</em>: if you have <a rel="noopener nofollow noreferrer external" target="_blank" href="https://rust-lang.github.io/rust-clippy/master/index.html#/single_match">simple <code>match</code> statements in your program</a> in your program, Clippy will suggest a rewrite to you.</p>
 <p>Compilers already do things that “transpilers” are supposed to do. And they do it better because they are built on the foundation of language semantics instead of syntactic manipulation.</p>
 <h2 id="lie-5-compilers-only-target-machine-code">Lie #5: Compilers only Target Machine Code</h2>
 <p>This one is interesting because instead of defining the characteristics of a “transpiler”, it focuses on <em>restricting</em> the definition of a compiler.
@@ -228,7 +223,7 @@ For example, the JVM has an ahead-of-time compiler from Java source code to the 
 <p>People seemed to scared of compilers and resort to claims like “I don’t want something as complex”, or “string interpolation is good enough”. This is silly. Anyone who has built one of these “transpilers” knows that inevitably, they get complex and poorly maintained precisely because of the delusion that they aren’t doing something complex.</p>
 <p>Programming languages are not just syntax; they have semantics too.
 Pretending that you can get away with just manipulating the former is delusional and results in bad tools.</p>
-<p><em>Lindsey Kuper has a <a rel="noopener nofollow noreferrer" target="_blank" href="https://decomposition.al/blog/2017/07/30/what-do-people-mean-when-they-say-transpiler/">well-written article</a> on the same topic.</em></p>
+<p><em>Lindsey Kuper has a <a rel="noopener nofollow noreferrer external" target="_blank" href="https://decomposition.al/blog/2017/07/30/what-do-people-mean-when-they-say-transpiler/">well-written article</a> on the same topic.</em></p>
 
 </div>
 

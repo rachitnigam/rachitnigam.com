@@ -89,7 +89,7 @@ PhD student wants other people to solve his research.
 <div class="post">
 <blockquote>
 <p>If you’re excited by the ideas in this post, please consider registering for
-and submitting to <a rel="noopener nofollow noreferrer" target="_blank" href="https://capra.cs.cornell.edu/latte21">LATTE</a>: the first workshop on languages, tools, and
+and submitting to <a rel="noopener nofollow noreferrer external" target="_blank" href="https://capra.cs.cornell.edu/latte21">LATTE</a>: the first workshop on languages, tools, and
 techniques for accelerator design co-located with ASPLOS.</p>
 </blockquote>
 <p>FPGA-based accelerators have opened up a new frontier for accelerator design; instead of spending months building and fabricating silicon chips, programmers can buy a cloud instance to run custom hardware accelerators within hours. With the remarkable new hardware, there is a need for remarkable new software—existing tools and languages used to describe circuits provide assembly-like abstractions and cannot enable the kind of rapid iteration we’ve become used to in the software ecosystem. Innovation in languages, tools, and techniques for accelerator design is key in making accelerator design productive, accessible, and useful.</p>
@@ -101,39 +101,36 @@ techniques for accelerator design co-located with ASPLOS.</p>
 <p>New, higher-level programming models are the key to the ubiquitous use of FPGA-based accelerators. Beyond ridding developers from low-level abstractions, such programming models also enable novel solutions to classic problems such hardware verification and automatic optimization.</p>
 <h2 id="high-level-programming-models">High-Level Programming Models</h2>
 <p>The obvious benefit of higher-level programming models is the ability to specify hardware without dwelling on low-level details. For example, using high-level synthesis (HLS) compilers, programmers can compile C++ programs into hardware designs. The aforementioned matrix multiplier can be implemented in a few lines of code:</p>
-<pre data-lang="C" style="background-color:#2b303b;color:#c0c5ce;" class="language-C "><code class="language-C" data-lang="C"><span style="color:#b48ead;">for </span><span>(</span><span style="color:#b48ead;">int</span><span> i = </span><span style="color:#d08770;">0</span><span>; i &lt; N; i++)
-</span><span>  </span><span style="color:#b48ead;">for </span><span>(</span><span style="color:#b48ead;">int</span><span> j = </span><span style="color:#d08770;">0</span><span>; i &lt; N; i++)
-</span><span>    </span><span style="color:#b48ead;">for </span><span>(</span><span style="color:#b48ead;">int</span><span> k = </span><span style="color:#d08770;">0</span><span>; i &lt; N; i++)
-</span><span>      </span><span style="color:#b48ead;">#pragma</span><span> HLS UNROLL factor=5
-</span><span>      C[i][j] = A[i][k] * B[k][j];
-</span></code></pre>
+<pre class="giallo" style="color-scheme: light dark; color: light-dark(#24292E, #E1E4E8); background-color: light-dark(#FFFFFF, #24292E);"><code data-lang="c"><span class="giallo-l"><span style="color: light-dark(#D73A49, #F97583);">for</span><span> (</span><span style="color: light-dark(#D73A49, #F97583);">int</span><span> i </span><span style="color: light-dark(#D73A49, #F97583);">=</span><span style="color: light-dark(#005CC5, #79B8FF);"> 0</span><span>;</span><span> i </span><span style="color: light-dark(#D73A49, #F97583);">&lt;</span><span> N</span><span>;</span><span> i</span><span style="color: light-dark(#D73A49, #F97583);">++</span><span>)</span></span>
+<span class="giallo-l"><span style="color: light-dark(#D73A49, #F97583);">  for</span><span> (</span><span style="color: light-dark(#D73A49, #F97583);">int</span><span> j </span><span style="color: light-dark(#D73A49, #F97583);">=</span><span style="color: light-dark(#005CC5, #79B8FF);"> 0</span><span>;</span><span> i </span><span style="color: light-dark(#D73A49, #F97583);">&lt;</span><span> N</span><span>;</span><span> i</span><span style="color: light-dark(#D73A49, #F97583);">++</span><span>)</span></span>
+<span class="giallo-l"><span style="color: light-dark(#D73A49, #F97583);">    for</span><span> (</span><span style="color: light-dark(#D73A49, #F97583);">int</span><span> k </span><span style="color: light-dark(#D73A49, #F97583);">=</span><span style="color: light-dark(#005CC5, #79B8FF);"> 0</span><span>;</span><span> i </span><span style="color: light-dark(#D73A49, #F97583);">&lt;</span><span> N</span><span>;</span><span> i</span><span style="color: light-dark(#D73A49, #F97583);">++</span><span>)</span></span>
+<span class="giallo-l"><span style="color: light-dark(#D73A49, #F97583);">      #</span><span style="color: light-dark(#D73A49, #F97583);">pragma</span><span style="color: light-dark(#6F42C1, #B392F0);"> HLS</span><span style="color: light-dark(#6F42C1, #B392F0);"> UNROLL</span><span style="color: light-dark(#6F42C1, #B392F0);"> factor</span><span>=</span><span style="color: light-dark(#005CC5, #79B8FF);">5</span></span>
+<span class="giallo-l"><span style="color: light-dark(#E36209, #FFAB70);">      C</span><span>[</span><span>i</span><span>]</span><span>[</span><span>j</span><span>]</span><span style="color: light-dark(#D73A49, #F97583);"> =</span><span style="color: light-dark(#E36209, #FFAB70);"> A</span><span>[</span><span>i</span><span>]</span><span>[</span><span>k</span><span>]</span><span style="color: light-dark(#D73A49, #F97583);"> *</span><span style="color: light-dark(#E36209, #FFAB70);"> B</span><span>[</span><span>k</span><span>]</span><span>[</span><span>j</span><span>]</span><span>;</span></span></code></pre>
 <p>The challenge in such programming models, however, is exploiting the available hardware parallelism. For example, To express DOALL parallelism programmers can use the <code>UNROLL</code> pragma to duplicate the loop body and perform five computations at the same time.</p>
 <p>However, loop unrolling demonstrates the key difference between a C++ program meant to run on processors and ones used to generate hardware. Processors take advantage of unrolled loops through their superscalar design and complex memory hierarchies that can service multiple requests every cycle. In contrast, unrolling a loop in an accelerator design instantiates five <em>physical</em> multipliers in the final design which are connected to primitive memories that can only serve a single read or write request every cycle. This means that without careful manual organization of memories, the additional multipliers would stall most cycles waiting on read and write requests.</p>
 <p>The challenge here is the need to connect the high-level abstractions to the fundamentally <em>physical</em> nature of hardware designs. This balance is precarious: expose too much information and we’re back to the abstraction level of hardware description languages; too little, and the programming model will unpredictably generate poor hardware designs without providing programmers any useful feedback.</p>
-<p>Recent work in this area demonstrates how programming languages techniques can help overcome these problems. For example, <a rel="noopener nofollow noreferrer" target="_blank" href="https://capra.cs.cornell.edu/dahlia">Dahlia</a> (my work) uses a substructural type system to enforce memory constraints in HLS programs while <a rel="noopener nofollow noreferrer" target="_blank" href="https://aetherling.org/">Aetherling</a> is a domain-specific language that automatically generates high-performance streaming accelerators.</p>
+<p>Recent work in this area demonstrates how programming languages techniques can help overcome these problems. For example, <a rel="noopener nofollow noreferrer external" target="_blank" href="https://capra.cs.cornell.edu/dahlia">Dahlia</a> (my work) uses a substructural type system to enforce memory constraints in HLS programs while <a rel="noopener nofollow noreferrer external" target="_blank" href="https://aetherling.org/">Aetherling</a> is a domain-specific language that automatically generates high-performance streaming accelerators.</p>
 <h2 id="automatically-optimizing-accelerators">Automatically Optimizing Accelerators</h2>
 <p>The vast majority of optimization, analysis, and verification of hardware accelerators occurs at the level of hardware description languages (HDLs). High-level programming models, in addition to improving programmer productivity, can enable novel and scalable solutions to these problems.</p>
 <p>A key property of HDLs is that, by default, everything executes in parallel. In order to encode control flow, programs must implement their own state machines that activate the right set of actions to execute every cycle. Pseudocode for this pattern demonstrates how gnarly it can get:</p>
-<pre style="background-color:#2b303b;color:#c0c5ce;"><code><span>x = (state == 0) ? 1
-</span><span>  : (state == 1) ? x + 1
-</span><span>  : 0;
-</span><span>
-</span><span>state = (state == 0) ? 1
-</span><span>      : (state == 1 &amp;&amp; x &lt; 10) ? 0
-</span><span>      : (state == 1 &amp;&amp; !(x &lt; 10)) ? 2;
-</span><span>
-</span><span>y = (state == 2) ? 1 : 0;
-</span></code></pre>
+<pre class="giallo" style="color-scheme: light dark; color: light-dark(#24292E, #E1E4E8); background-color: light-dark(#FFFFFF, #24292E);"><code data-lang="plain"><span class="giallo-l"><span>x = (state == 0) ? 1</span></span>
+<span class="giallo-l"><span>  : (state == 1) ? x + 1</span></span>
+<span class="giallo-l"><span>  : 0;</span></span>
+<span class="giallo-l"></span>
+<span class="giallo-l"><span>state = (state == 0) ? 1</span></span>
+<span class="giallo-l"><span>      : (state == 1 &amp;&amp; x &lt; 10) ? 0</span></span>
+<span class="giallo-l"><span>      : (state == 1 &amp;&amp; !(x &lt; 10)) ? 2;</span></span>
+<span class="giallo-l"></span>
+<span class="giallo-l"><span>y = (state == 2) ? 1 : 0;</span></span></code></pre>
 <p>The input program, which uses control flow constructs, demonstrates the actual intent:</p>
-<pre style="background-color:#2b303b;color:#c0c5ce;"><code><span>x = 1;
-</span><span>while (x &lt; 10) {
-</span><span>  x = x + 1;
-</span><span>}
-</span><span>y = 1;
-</span></code></pre>
+<pre class="giallo" style="color-scheme: light dark; color: light-dark(#24292E, #E1E4E8); background-color: light-dark(#FFFFFF, #24292E);"><code data-lang="plain"><span class="giallo-l"><span>x = 1;</span></span>
+<span class="giallo-l"><span>while (x &lt; 10) {</span></span>
+<span class="giallo-l"><span>  x = x + 1;</span></span>
+<span class="giallo-l"><span>}</span></span>
+<span class="giallo-l"><span>y = 1;</span></span></code></pre>
 <p>Not only is the latter program easier to write down, but it also reveals useful facts about the program. For example, the variable <code>x</code> is never used after the loop i.e., it is no longer <em>live</em>. Optimizing compilers, both for software and hardware, can use this fact to reuse the registers that store <code>x</code>. However, yet again, software optimizations don’t precisely capture the nature of hardware designs. In a software program, sharing registers is almost always a good idea, limited only by the compiler’s knowledge of aliasing. On the other hand, sharing registers in accelerators requires instantiating <em>multiplexers</em> which control the input and output signals from the register. The choice of trading off registers for multiplexers is target-dependent: registers are cheap on FPGAs but costly on silicon-based accelerators while multiplexers are the opposite. Attempting to port software optimizations without knowledge of hardware is futile.</p>
 <p>Language-based abstractions can capture such trade-offs.
-For example, <a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/cucapra/calyx">Calyx</a> (my work), proposes a new intermediate language for building
+For example, <a rel="noopener nofollow noreferrer external" target="_blank" href="https://github.com/cucapra/calyx">Calyx</a> (my work), proposes a new intermediate language for building
 accelerator generating compilers.
 Calyx uses a split representation of programs: a hardware-like language
 captures structural facts while a software-like language is used to precisely
@@ -141,8 +138,8 @@ express the control flow.
 Using both structural and control flow information, Calyx can build a set of
 generic optimizations and analyses that benefit all compilers aiming to
 generate hardware.
-On the other hand, <a rel="noopener nofollow noreferrer" target="_blank" href="https://dl.acm.org/doi/10.1145/3352460.3358292">μIR</a> uses a task-parallel representation to optimize
-accelerator designs while <a rel="noopener nofollow noreferrer" target="_blank" href="https://dl.acm.org/doi/abs/10.1145/1027084.1027087">SPARK</a> automates speculative and parallelization
+On the other hand, <a rel="noopener nofollow noreferrer external" target="_blank" href="https://dl.acm.org/doi/10.1145/3352460.3358292">μIR</a> uses a task-parallel representation to optimize
+accelerator designs while <a rel="noopener nofollow noreferrer external" target="_blank" href="https://dl.acm.org/doi/abs/10.1145/1027084.1027087">SPARK</a> automates speculative and parallelization
 optimizations.</p>
 <p>Language-based abstractions similarly have the potential to enable scalable verification of accelerators. Instead of coping with the always-parallel semantics of HDLs, verification techniques can utilize higher-level control flow information to perform modular verification.</p>
 <h2 id="state-of-the-art">State of the Art</h2>
@@ -152,19 +149,19 @@ in a slew of novel solutions:</p>
 <li><strong>Verification</strong>: Formally verified hardware design ([Kami][]) aims to eliminate
 the slow and tedious process of hardware verification.</li>
 <li><strong>Virtualization</strong>: Language-based virtualization of FPGA designs
-(<a rel="noopener nofollow noreferrer" target="_blank" href="https://dl.acm.org/doi/10.1145/3297858.3304010">Cascade</a>) has been shown to be a promising avenue for fast
+(<a rel="noopener nofollow noreferrer external" target="_blank" href="https://dl.acm.org/doi/10.1145/3297858.3304010">Cascade</a>) has been shown to be a promising avenue for fast
 state-snapshotting and transparent relocation.</li>
 <li><strong>Programming Models</strong>: New programming models for designing
-systolic arrays (<a rel="noopener nofollow noreferrer" target="_blank" href="https://www.csl.cornell.edu/~zhiruz/pdfs/susy-iccad2020.pdf">SuSy</a>) and streaming accelerators (<a rel="noopener nofollow noreferrer" target="_blank" href="https://aetherling.org/">Aetherling</a>)
+systolic arrays (<a rel="noopener nofollow noreferrer external" target="_blank" href="https://www.csl.cornell.edu/~zhiruz/pdfs/susy-iccad2020.pdf">SuSy</a>) and streaming accelerators (<a rel="noopener nofollow noreferrer external" target="_blank" href="https://aetherling.org/">Aetherling</a>)
 demonstrate the potential of a domain-specific approach to hardware design.</li>
 <li><strong>Type Systems</strong>: Type systems that capture hardware constraints in a
-high-level programming model (<a rel="noopener nofollow noreferrer" target="_blank" href="https://capra.cs.cornell.edu/dahlia">Dahlia</a>) can simplify manual optimization
+high-level programming model (<a rel="noopener nofollow noreferrer external" target="_blank" href="https://capra.cs.cornell.edu/dahlia">Dahlia</a>) can simplify manual optimization
 ensure that well-typed programs go fast.</li>
 </ul>
 <h2 id="languages-tools-and-techniques-for-accelerator-design">Languages, Tools, and Techniques for Accelerator Design</h2>
 <p>Recent work on language-oriented accelerator design is distributed across three research communities: (1) The electronic design automation (EDA) community, focused on HLS and tools for silicon-based architectures, (2) the compilers community, building infrastructure and optimizations for emerging architectures, and (3) the PL community, exploring new languages for designing and verifying hardware designs. There is a growing consensus that work on FPGA-based accelerators needs to be interdisciplinary—building a robust programming language requires precise semantics, construction of performant compilers, and characterization of the underlying architectures like FPGAs.</p>
-<p>In order to bring together people who are excited by the idea of a language-focused future for hardware design, we’re organizing the <a rel="noopener nofollow noreferrer" target="_blank" href="https://capra.cs.cornell.edu/latte21">first workshop on Languages, Tools, and Techniques for Accelerator Design (LATTE)</a> which will be co-located with ASPLOS 2021. If you’re interested, consider submitting a 2-page position paper and/or come by!</p>
-<p><em>Have comments? <a href="mailto:rachit.nigam12@gmail.com">Email</a> or <a rel="noopener nofollow noreferrer" target="_blank" href="https://twitter.com/notypes">tweet</a> at me.</em></p>
+<p>In order to bring together people who are excited by the idea of a language-focused future for hardware design, we’re organizing the <a rel="noopener nofollow noreferrer external" target="_blank" href="https://capra.cs.cornell.edu/latte21">first workshop on Languages, Tools, and Techniques for Accelerator Design (LATTE)</a> which will be co-located with ASPLOS 2021. If you’re interested, consider submitting a 2-page position paper and/or come by!</p>
+<p><em>Have comments? <a href="mailto:rachit.nigam12@gmail.com">Email</a> or <a rel="noopener nofollow noreferrer external" target="_blank" href="https://twitter.com/notypes">tweet</a> at me.</em></p>
 
 </div>
 
