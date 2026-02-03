@@ -34,9 +34,9 @@ type system captures circuit-level constraints within an imperative, loop-based 
 and uses it to ensure that every well-typed program makes predictable performance trade-offs.
 {% end %}
 
-At MIT, I will lead the [Foundations of Languages and Machines (FLAME) lab][flame]
-where we will continue asking such questions and building new systems.
-If these directions excite you, apply to MIT's PhD program and take a look
+At MIT, I direct the [Foundations of Languages and Machines (FLAME) lab][flame]
+where we continue asking such questions and building new systems.
+If these directions excite you, take a look
 at [information for prospective students][flame-prospective].
 
 
