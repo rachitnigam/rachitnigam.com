@@ -11,7 +11,7 @@ authors = [
 ]
 
 # Publication name and optional abbreviated version.
-publication_short = "Draft"
+publication_short = "LATTE"
 
 pdf = "/files/pubs/safe-hdls.pdf"
 urls = [ ]
