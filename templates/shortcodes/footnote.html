@@ -1,11 +1,12 @@
-<span style="white-space:nowrap">
 <label for="sn-{{ nth }}"
-       class="margin-toggle sidenote-number">
+       class="margin-toggle sidenote-number"
+       style="white-space:nowrap">
+  <span class="sidenote-number-text">{{ nth }}</span>
 </label>
-</span>
 <input type="checkbox"
        id="sn-{{ nth }}"
        class="margin-toggle"/>
 <span class="sidenote">
+<span class="sidenote-prefix">{{ nth }}</span>
 {{ body | markdown(inline=true) | trim | safe }}
 </span>

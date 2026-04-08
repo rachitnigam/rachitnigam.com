@@ -420,11 +420,6 @@ dt {
 }
 
 /*** Sidenotes */
-.sidenote::before {
-  content: counter(sidenote-counter) " ";
-  font-size: 75%;
-  top: -0.5rem;
-}
 
 .sidenote,
 .marginnote {
@@ -440,21 +435,24 @@ dt {
   position: relative;
 }
 
-.sidenote-number {
-  counter-increment: sidenote-counter;
-
-  &::after {
-    content: counter(sidenote-counter);
-    display: inline-block;
-    font-size: 80%;
-    margin-left: -0.5em;
-    top: -0.5rem;
-    left: 0.1rem;
-  }
+.sidenote-number-text,
+.sidenote-prefix {
+  display: inline-block;
+  font-size: 80%;
+  top: -0.5rem;
 }
 
-.sidenote-number::after,
-.sidenote::before {
+.sidenote-number-text {
+  margin-left: -0.5em;
+  left: 0.1rem;
+}
+
+.sidenote-prefix {
+  margin-right: 0.25em;
+}
+
+.sidenote-number-text,
+.sidenote-prefix {
   position: relative;
   vertical-align: baseline;
 }
