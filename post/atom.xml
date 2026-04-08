@@ -187,15 +187,16 @@ A &lt;a rel=&quot;noopener nofollow noreferrer external&quot; target=&quot;_blan
 These accelerators generally use highly specialized programming models like CUDA or high-level languages like PyTorch.
 On the other hand, a &lt;em&gt;vast majority&lt;&#x2F;em&gt; of programmers &lt;a rel=&quot;noopener nofollow noreferrer external&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.tiobe.com&#x2F;tiobe-index&#x2F;&quot;&gt;use general-purpose languages&lt;&#x2F;a&gt; like Python or JavaScript.&lt;&#x2F;p&gt;
 &lt;p&gt;As a PL researcher, this poses a problem: you can work on building programming systems that enable more people to effectively interface with computers, or you could build better interfaces to a vast majority of the computation in the world.
-I think the current iteration of the PLDI community focuses on the former problem–of building better programming systems for the most number of people–while conferences like ASPLOS publish a lot more of the work on the latter kinds of problems.&lt;span style=&quot;white-space:nowrap&quot;&gt;
-&lt;label for=&quot;sn-1&quot;
-       class=&quot;margin-toggle sidenote-number&quot;&gt;
+I think the current iteration of the PLDI community focuses on the former problem–of building better programming systems for the most number of people–while conferences like ASPLOS publish a lot more of the work on the latter kinds of problems.&lt;label for=&quot;sn-1&quot;
+       class=&quot;margin-toggle sidenote-number&quot;
+       style=&quot;white-space:nowrap&quot;&gt;
+  &lt;span class=&quot;sidenote-number-text&quot;&gt;1&lt;&#x2F;span&gt;
 &lt;&#x2F;label&gt;
-&lt;&#x2F;span&gt;
 &lt;input type=&quot;checkbox&quot;
        id=&quot;sn-1&quot;
        class=&quot;margin-toggle&quot;&#x2F;&gt;
 &lt;span class=&quot;sidenote&quot;&gt;
+&lt;span class=&quot;sidenote-prefix&quot;&gt;1&lt;&#x2F;span&gt;
 For example, the &lt;a rel=&quot;noopener nofollow noreferrer external&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;dl.acm.org&#x2F;doi&#x2F;10.1145&#x2F;3620665.3640366&quot;&gt;PyTorch 2&lt;&#x2F;a&gt; paper was published at ASPLOS ’24.
 &lt;&#x2F;span&gt;
 
@@ -315,15 +316,16 @@ However, it is still useful to sketch out the idea (&lt;em&gt;reproducible&lt;&#
 However, once the feature is ready to be merged, they should open a pull request and ensure that all tests pass on the final commit.
 If using the “squash merge” strategy, this will merge all the branch commits into one commit that has all the tests passing.&lt;&#x2F;p&gt;
 &lt;h3 id=&quot;testing&quot;&gt;Testing&lt;&#x2F;h3&gt;
-&lt;p&gt;A good test suite is a mark of a real project.&lt;span style=&quot;white-space:nowrap&quot;&gt;
-&lt;label for=&quot;sn-1&quot;
-       class=&quot;margin-toggle sidenote-number&quot;&gt;
+&lt;p&gt;A good test suite is a mark of a real project.&lt;label for=&quot;sn-1&quot;
+       class=&quot;margin-toggle sidenote-number&quot;
+       style=&quot;white-space:nowrap&quot;&gt;
+  &lt;span class=&quot;sidenote-number-text&quot;&gt;1&lt;&#x2F;span&gt;
 &lt;&#x2F;label&gt;
-&lt;&#x2F;span&gt;
 &lt;input type=&quot;checkbox&quot;
        id=&quot;sn-1&quot;
        class=&quot;margin-toggle&quot;&#x2F;&gt;
 &lt;span class=&quot;sidenote&quot;&gt;
+&lt;span class=&quot;sidenote-prefix&quot;&gt;1&lt;&#x2F;span&gt;
 If you’re a systems researcher and your projects don’t have tests, I’m putting you in the category of “people who build toys”.
 &lt;&#x2F;span&gt;
  There is lots of good advice on how to write test suites, especially if you &lt;a rel=&quot;noopener nofollow noreferrer external&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.cs.cornell.edu&#x2F;~asampson&#x2F;blog&#x2F;turnt.html&quot;&gt;work on compilers&lt;&#x2F;a&gt;.
@@ -332,15 +334,16 @@ GitHub makes this particularly easy through &lt;a rel=&quot;noopener nofollow no
 GitHub will use this configuration to run tests on every commit, including pull requests and allow you to ensure that bad code doesn’t get committed.&lt;&#x2F;p&gt;
 &lt;h3 id=&quot;reviewing&quot;&gt;Reviewing&lt;&#x2F;h3&gt;
 &lt;p&gt;Code review is the practice of having a second person read your code before it gets merged into the codebase.
-This is the place where a senior contributor helps the code author understand how their code affects other systems, if there are better ways to implement a feature, suggest refactorings, and remind them to write tests.&lt;span style=&quot;white-space:nowrap&quot;&gt;
-&lt;label for=&quot;sn-2&quot;
-       class=&quot;margin-toggle sidenote-number&quot;&gt;
+This is the place where a senior contributor helps the code author understand how their code affects other systems, if there are better ways to implement a feature, suggest refactorings, and remind them to write tests.&lt;label for=&quot;sn-2&quot;
+       class=&quot;margin-toggle sidenote-number&quot;
+       style=&quot;white-space:nowrap&quot;&gt;
+  &lt;span class=&quot;sidenote-number-text&quot;&gt;2&lt;&#x2F;span&gt;
 &lt;&#x2F;label&gt;
-&lt;&#x2F;span&gt;
 &lt;input type=&quot;checkbox&quot;
        id=&quot;sn-2&quot;
        class=&quot;margin-toggle&quot;&#x2F;&gt;
 &lt;span class=&quot;sidenote&quot;&gt;
+&lt;span class=&quot;sidenote-prefix&quot;&gt;2&lt;&#x2F;span&gt;
 Yeah, I’m looking at you. I know you didn’t do it.
 &lt;&#x2F;span&gt;
 
@@ -459,15 +462,16 @@ When I talk about my mentees, my friends, and my time in grad school, I will mis
         <content type="html" xml:base="https://people.csail.mit.edu/rachit/post/transpiler/">&lt;p&gt;This tool is different from a &lt;em&gt;compiler&lt;&#x2F;em&gt; which often has a complex frontend, an optimizing middle end, and code generators for various backends.
 The big problem around most of the arguments to distinguish between compilers and “transpilers” focus on language syntax. However, anyone who wants one of these tools to &lt;em&gt;actually work&lt;&#x2F;em&gt; has to contend with the fact that different languages will have different &lt;em&gt;semantics&lt;&#x2F;em&gt; and translating between those is a complex task; a task that &lt;em&gt;compilers&lt;&#x2F;em&gt; already do.&lt;&#x2F;p&gt;
 &lt;h2 id=&quot;lie-1-transpilers-don-t-have-frontends&quot;&gt;Lie #1: Transpilers Don’t have Frontends&lt;&#x2F;h2&gt;
-&lt;p&gt;Let’s look at a simple Python to C transpiler.&lt;span style=&quot;white-space:nowrap&quot;&gt;
-&lt;label for=&quot;sn-1&quot;
-       class=&quot;margin-toggle sidenote-number&quot;&gt;
+&lt;p&gt;Let’s look at a simple Python to C transpiler.&lt;label for=&quot;sn-1&quot;
+       class=&quot;margin-toggle sidenote-number&quot;
+       style=&quot;white-space:nowrap&quot;&gt;
+  &lt;span class=&quot;sidenote-number-text&quot;&gt;1&lt;&#x2F;span&gt;
 &lt;&#x2F;label&gt;
-&lt;&#x2F;span&gt;
 &lt;input type=&quot;checkbox&quot;
        id=&quot;sn-1&quot;
        class=&quot;margin-toggle&quot;&#x2F;&gt;
 &lt;span class=&quot;sidenote&quot;&gt;
+&lt;span class=&quot;sidenote-prefix&quot;&gt;1&lt;&#x2F;span&gt;
 Both &lt;a rel=&quot;noopener nofollow noreferrer external&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;Nuitka&#x2F;Nuitka&quot;&gt;Nuitka&lt;&#x2F;a&gt; and &lt;a rel=&quot;noopener nofollow noreferrer external&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;docs.modular.com&#x2F;mojo&#x2F;&quot;&gt;Mojo&lt;&#x2F;a&gt; both actually target this exact problem but sanely call themselves compilers.
 &lt;&#x2F;span&gt;
  It takes python code that looks like this:&lt;&#x2F;p&gt;
@@ -499,28 +503,30 @@ implementation of the generator and the local variables.&lt;&#x2F;p&gt;
 Even a moderately useful subset would be unwieldy to implement by hand in our simple “transpiler”.
 Maybe one strategy we can take is to build a some sort of tool that would simplify these hundreds of definitions into a more uniform representation
 to work with.&lt;&#x2F;p&gt;
-&lt;p&gt;We’ll call it the &lt;em&gt;transpiler-not-frontend&lt;&#x2F;em&gt; to make sure people understand we’re not building a compiler here.&lt;span style=&quot;white-space:nowrap&quot;&gt;
-&lt;label for=&quot;sn-2&quot;
-       class=&quot;margin-toggle sidenote-number&quot;&gt;
+&lt;p&gt;We’ll call it the &lt;em&gt;transpiler-not-frontend&lt;&#x2F;em&gt; to make sure people understand we’re not building a compiler here.&lt;label for=&quot;sn-2&quot;
+       class=&quot;margin-toggle sidenote-number&quot;
+       style=&quot;white-space:nowrap&quot;&gt;
+  &lt;span class=&quot;sidenote-number-text&quot;&gt;2&lt;&#x2F;span&gt;
 &lt;&#x2F;label&gt;
-&lt;&#x2F;span&gt;
 &lt;input type=&quot;checkbox&quot;
        id=&quot;sn-2&quot;
        class=&quot;margin-toggle&quot;&#x2F;&gt;
 &lt;span class=&quot;sidenote&quot;&gt;
+&lt;span class=&quot;sidenote-prefix&quot;&gt;2&lt;&#x2F;span&gt;
 It is &lt;a rel=&quot;noopener nofollow noreferrer external&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;topics&#x2F;transpiler&quot;&gt;not hard&lt;&#x2F;a&gt; to find examples of things mislabelled as transpilers. However, I won’t name any specific projects because this is just a dumb diatribe about words, I actually think the projects themselves are cool.
 &lt;&#x2F;span&gt;
 &lt;&#x2F;p&gt;
 &lt;h2 id=&quot;lie-2-transpilers-are-simple&quot;&gt;Lie #2: Transpilers are Simple&lt;&#x2F;h2&gt;
-&lt;p&gt;BabelJS is arguably one of the first “transpilers” that was developed so that people could experiment with JavaScript’s new language features that did not yet have browser implementations.&lt;span style=&quot;white-space:nowrap&quot;&gt;
-&lt;label for=&quot;sn-3&quot;
-       class=&quot;margin-toggle sidenote-number&quot;&gt;
+&lt;p&gt;BabelJS is arguably one of the first “transpilers” that was developed so that people could experiment with JavaScript’s new language features that did not yet have browser implementations.&lt;label for=&quot;sn-3&quot;
+       class=&quot;margin-toggle sidenote-number&quot;
+       style=&quot;white-space:nowrap&quot;&gt;
+  &lt;span class=&quot;sidenote-number-text&quot;&gt;3&lt;&#x2F;span&gt;
 &lt;&#x2F;label&gt;
-&lt;&#x2F;span&gt;
 &lt;input type=&quot;checkbox&quot;
        id=&quot;sn-3&quot;
        class=&quot;margin-toggle&quot;&#x2F;&gt;
 &lt;span class=&quot;sidenote&quot;&gt;
+&lt;span class=&quot;sidenote-prefix&quot;&gt;3&lt;&#x2F;span&gt;
 Technically, ECMAScript features.
 &lt;&#x2F;span&gt;
 
@@ -570,15 +576,16 @@ in JavaScript. Shouldn’t be too hard, right?&lt;&#x2F;p&gt;
 If we’re to get beyond the vagaries of syntax and &lt;em&gt;actually&lt;&#x2F;em&gt; talk about what the expressive power of languages is, we need to &lt;a rel=&quot;noopener nofollow noreferrer external&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=43XaZEn2aLc&quot;&gt;talk about semantics&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
 &lt;h2 id=&quot;lie-4-transpilers-don-t-have-backends&quot;&gt;Lie #4: Transpilers Don’t have Backends&lt;&#x2F;h2&gt;
 &lt;p&gt;BabelJS has a &lt;a rel=&quot;noopener nofollow noreferrer external&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;babeljs.io&#x2F;docs&#x2F;babel-preset-env&quot;&gt;list of “presets”&lt;&#x2F;a&gt; which target different versions of JavaScript.
-This is not very different from LLVM having multiple different backends.&lt;span style=&quot;white-space:nowrap&quot;&gt;
-&lt;label for=&quot;sn-4&quot;
-       class=&quot;margin-toggle sidenote-number&quot;&gt;
+This is not very different from LLVM having multiple different backends.&lt;label for=&quot;sn-4&quot;
+       class=&quot;margin-toggle sidenote-number&quot;
+       style=&quot;white-space:nowrap&quot;&gt;
+  &lt;span class=&quot;sidenote-number-text&quot;&gt;4&lt;&#x2F;span&gt;
 &lt;&#x2F;label&gt;
-&lt;&#x2F;span&gt;
 &lt;input type=&quot;checkbox&quot;
        id=&quot;sn-4&quot;
        class=&quot;margin-toggle&quot;&#x2F;&gt;
 &lt;span class=&quot;sidenote&quot;&gt;
+&lt;span class=&quot;sidenote-prefix&quot;&gt;4&lt;&#x2F;span&gt;
 If you’re going to argue that the backends all compile to the same language, see (3).
 &lt;&#x2F;span&gt;
  People might argue that when Babel is compiling its operations, it can do it piecemeal: that is, the compilation of &lt;a rel=&quot;noopener nofollow noreferrer external&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Web&#x2F;JavaScript&#x2F;Reference&#x2F;Operators&#x2F;Nullish_coalescing_assignment&quot;&gt;nullish coaleascing operators&lt;&#x2F;a&gt; has nothing to how classes are compiled.&lt;&#x2F;p&gt;
@@ -762,15 +769,16 @@ shape.&lt;&#x2F;p&gt;
 Those littered asserts? The inscrutable “unreachable code” errors? Who will &lt;em&gt;know&lt;&#x2F;em&gt;,
 how you simplified your AST?
 So you rolled out your own AST library, so that you may compile, nay, &lt;em&gt;transpile&lt;&#x2F;em&gt; your
-code and expose your assumptions in your data structures.&lt;span style=&quot;white-space:nowrap&quot;&gt;
-&lt;label for=&quot;sn-1&quot;
-       class=&quot;margin-toggle sidenote-number&quot;&gt;
+code and expose your assumptions in your data structures.&lt;label for=&quot;sn-1&quot;
+       class=&quot;margin-toggle sidenote-number&quot;
+       style=&quot;white-space:nowrap&quot;&gt;
+  &lt;span class=&quot;sidenote-number-text&quot;&gt;1&lt;&#x2F;span&gt;
 &lt;&#x2F;label&gt;
-&lt;&#x2F;span&gt;
 &lt;input type=&quot;checkbox&quot;
        id=&quot;sn-1&quot;
        class=&quot;margin-toggle&quot;&#x2F;&gt;
 &lt;span class=&quot;sidenote&quot;&gt;
+&lt;span class=&quot;sidenote-prefix&quot;&gt;1&lt;&#x2F;span&gt;
 Certain, of course, that because you’re &lt;em&gt;transpiling&lt;&#x2F;em&gt; JavaScript to JavaScript, it is going to
 way easier than what real compilers do.
 &lt;&#x2F;span&gt;
@@ -828,15 +836,16 @@ write papers, manage TODO lists, and &lt;a rel=&quot;noopener nofollow noreferre
 It doesn’t need to dazzle, it doesn’t need to use bleeding-edge web frameworks
 and CSS animations but it needs to exist and it needs to be easy to find.&lt;&#x2F;p&gt;
 &lt;p&gt;My website is built using &lt;a rel=&quot;noopener nofollow noreferrer external&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.getzola.org&#x2F;&quot;&gt;zola&lt;&#x2F;a&gt;, a static website generator written in Rust.
-Almost all of the styling is written in plain CSS with rules to make the website responsive.&lt;span style=&quot;white-space:nowrap&quot;&gt;
-&lt;label for=&quot;sn-1&quot;
-       class=&quot;margin-toggle sidenote-number&quot;&gt;
+Almost all of the styling is written in plain CSS with rules to make the website responsive.&lt;label for=&quot;sn-1&quot;
+       class=&quot;margin-toggle sidenote-number&quot;
+       style=&quot;white-space:nowrap&quot;&gt;
+  &lt;span class=&quot;sidenote-number-text&quot;&gt;1&lt;&#x2F;span&gt;
 &lt;&#x2F;label&gt;
-&lt;&#x2F;span&gt;
 &lt;input type=&quot;checkbox&quot;
        id=&quot;sn-1&quot;
        class=&quot;margin-toggle&quot;&#x2F;&gt;
 &lt;span class=&quot;sidenote&quot;&gt;
+&lt;span class=&quot;sidenote-prefix&quot;&gt;1&lt;&#x2F;span&gt;
 Please, for the love of god, make your website readable on a phone.
 &lt;&#x2F;span&gt;
 &lt;&#x2F;p&gt;
@@ -869,15 +878,16 @@ thing to debug.
 Finally, discoverability makes it easier to find your website when someone looks up
 your name on Google.
 Doing this as an academic is pretty easy–make sure a bunch of &lt;code&gt;.edu&lt;&#x2F;code&gt; websites point
-to your website.&lt;span style=&quot;white-space:nowrap&quot;&gt;
-&lt;label for=&quot;sn-2&quot;
-       class=&quot;margin-toggle sidenote-number&quot;&gt;
+to your website.&lt;label for=&quot;sn-2&quot;
+       class=&quot;margin-toggle sidenote-number&quot;
+       style=&quot;white-space:nowrap&quot;&gt;
+  &lt;span class=&quot;sidenote-number-text&quot;&gt;2&lt;&#x2F;span&gt;
 &lt;&#x2F;label&gt;
-&lt;&#x2F;span&gt;
 &lt;input type=&quot;checkbox&quot;
        id=&quot;sn-2&quot;
        class=&quot;margin-toggle&quot;&#x2F;&gt;
 &lt;span class=&quot;sidenote&quot;&gt;
+&lt;span class=&quot;sidenote-prefix&quot;&gt;2&lt;&#x2F;span&gt;
 Unless you have the same name as someone famous in which case, tough luck.
 Or take it as a challenge to be more famous than they are.
 &lt;&#x2F;span&gt;
@@ -895,15 +905,16 @@ memorize the transitions resulting in an overall better talk.
 I have yet to see a good talk made in &lt;a rel=&quot;noopener nofollow noreferrer external&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.overleaf.com&#x2F;learn&#x2F;latex&#x2F;Beamer&quot;&gt;LaTeX beamer&lt;&#x2F;a&gt;; my unscientific
 belief is that beamer encourages adding too much math on your slides which is
 often the wrong thing to do for talks where the goal is to give an intuition
-behind your work.&lt;span style=&quot;white-space:nowrap&quot;&gt;
-&lt;label for=&quot;sn-3&quot;
-       class=&quot;margin-toggle sidenote-number&quot;&gt;
+behind your work.&lt;label for=&quot;sn-3&quot;
+       class=&quot;margin-toggle sidenote-number&quot;
+       style=&quot;white-space:nowrap&quot;&gt;
+  &lt;span class=&quot;sidenote-number-text&quot;&gt;3&lt;&#x2F;span&gt;
 &lt;&#x2F;label&gt;
-&lt;&#x2F;span&gt;
 &lt;input type=&quot;checkbox&quot;
        id=&quot;sn-3&quot;
        class=&quot;margin-toggle&quot;&#x2F;&gt;
 &lt;span class=&quot;sidenote&quot;&gt;
+&lt;span class=&quot;sidenote-prefix&quot;&gt;3&lt;&#x2F;span&gt;
 For teaching, however, I’ve found beamer to be a pretty good tool.
 &lt;&#x2F;span&gt;
 &lt;&#x2F;p&gt;
@@ -930,15 +941,16 @@ When starting a new paper, I copy over the bibliography file from the most
 recent paper and a &lt;code&gt;pervasives.sty&lt;&#x2F;code&gt; file that contains all the accumulated
 LaTeX hacks I’ve ever had to do.
 I tend to write everything in one giant file which makes it easier to track
-down a phrase in the paper and start editing it.&lt;span style=&quot;white-space:nowrap&quot;&gt;
-&lt;label for=&quot;sn-4&quot;
-       class=&quot;margin-toggle sidenote-number&quot;&gt;
+down a phrase in the paper and start editing it.&lt;label for=&quot;sn-4&quot;
+       class=&quot;margin-toggle sidenote-number&quot;
+       style=&quot;white-space:nowrap&quot;&gt;
+  &lt;span class=&quot;sidenote-number-text&quot;&gt;4&lt;&#x2F;span&gt;
 &lt;&#x2F;label&gt;
-&lt;&#x2F;span&gt;
 &lt;input type=&quot;checkbox&quot;
        id=&quot;sn-4&quot;
        class=&quot;margin-toggle&quot;&#x2F;&gt;
 &lt;span class=&quot;sidenote&quot;&gt;
+&lt;span class=&quot;sidenote-prefix&quot;&gt;4&lt;&#x2F;span&gt;
 Many people prefer separating out each section into a new file which might suit
 your team’s contribution style better.
 &lt;&#x2F;span&gt;
@@ -996,15 +1008,16 @@ time, and date.&lt;&#x2F;p&gt;
         <id>https://people.csail.mit.edu/rachit/post/commoditize-your-research-complement/</id>
         
         <content type="html" xml:base="https://people.csail.mit.edu/rachit/post/commoditize-your-research-complement/">&lt;p&gt;“Commoditize your complement” is an idea about how companies can build profitable
-markets without complete vertical integration or monopolization.&lt;span style=&quot;white-space:nowrap&quot;&gt;
-&lt;label for=&quot;sn-1&quot;
-       class=&quot;margin-toggle sidenote-number&quot;&gt;
+markets without complete vertical integration or monopolization.&lt;label for=&quot;sn-1&quot;
+       class=&quot;margin-toggle sidenote-number&quot;
+       style=&quot;white-space:nowrap&quot;&gt;
+  &lt;span class=&quot;sidenote-number-text&quot;&gt;1&lt;&#x2F;span&gt;
 &lt;&#x2F;label&gt;
-&lt;&#x2F;span&gt;
 &lt;input type=&quot;checkbox&quot;
        id=&quot;sn-1&quot;
        class=&quot;margin-toggle&quot;&#x2F;&gt;
 &lt;span class=&quot;sidenote&quot;&gt;
+&lt;span class=&quot;sidenote-prefix&quot;&gt;1&lt;&#x2F;span&gt;
 I highly recommend “&lt;a rel=&quot;noopener nofollow noreferrer external&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.gwern.net&#x2F;Complement&quot;&gt;Laws of Tech: Commoditize Your Complement&lt;&#x2F;a&gt;” for a more
 in-depth look into this idea.
 &lt;&#x2F;span&gt;
@@ -1029,15 +1042,16 @@ develop &lt;em&gt;solver-aided tools&lt;&#x2F;em&gt;.
 Solver-aided tools are a “hot topic” in programming languages research.
 The high-level idea is encoding the semantics of a program into boolean (or richer
 logics) and using SMT solvers like &lt;a rel=&quot;noopener nofollow noreferrer external&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;Z3Prover&#x2F;z3&quot;&gt;Z3&lt;&#x2F;a&gt; to either verify programs or
-automatically synthesize them from specifications.&lt;span style=&quot;white-space:nowrap&quot;&gt;
-&lt;label for=&quot;sn-2&quot;
-       class=&quot;margin-toggle sidenote-number&quot;&gt;
+automatically synthesize them from specifications.&lt;label for=&quot;sn-2&quot;
+       class=&quot;margin-toggle sidenote-number&quot;
+       style=&quot;white-space:nowrap&quot;&gt;
+  &lt;span class=&quot;sidenote-number-text&quot;&gt;2&lt;&#x2F;span&gt;
 &lt;&#x2F;label&gt;
-&lt;&#x2F;span&gt;
 &lt;input type=&quot;checkbox&quot;
        id=&quot;sn-2&quot;
        class=&quot;margin-toggle&quot;&#x2F;&gt;
 &lt;span class=&quot;sidenote&quot;&gt;
+&lt;span class=&quot;sidenote-prefix&quot;&gt;2&lt;&#x2F;span&gt;
 James Bornholt’s &lt;a rel=&quot;noopener nofollow noreferrer external&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;blog.sigplan.org&#x2F;2019&#x2F;07&#x2F;31&#x2F;program-synthesis-in-2019&#x2F;&quot;&gt;introduction to program synthesis&lt;&#x2F;a&gt; provides a good overview of
 the area.
 &lt;&#x2F;span&gt;
@@ -1053,15 +1067,16 @@ the encodings, and transforming the output from the SMT solver.
 or build upon someone else’s unmaintained research code.&lt;&#x2F;p&gt;
 &lt;p&gt;The idea with Rosette is simple—build a framework where you can write an
 interpreter for your language and &lt;em&gt;automatically&lt;&#x2F;em&gt; turn it into a solver-aided
-tool.&lt;span style=&quot;white-space:nowrap&quot;&gt;
-&lt;label for=&quot;sn-3&quot;
-       class=&quot;margin-toggle sidenote-number&quot;&gt;
+tool.&lt;label for=&quot;sn-3&quot;
+       class=&quot;margin-toggle sidenote-number&quot;
+       style=&quot;white-space:nowrap&quot;&gt;
+  &lt;span class=&quot;sidenote-number-text&quot;&gt;3&lt;&#x2F;span&gt;
 &lt;&#x2F;label&gt;
-&lt;&#x2F;span&gt;
 &lt;input type=&quot;checkbox&quot;
        id=&quot;sn-3&quot;
        class=&quot;margin-toggle&quot;&#x2F;&gt;
 &lt;span class=&quot;sidenote&quot;&gt;
+&lt;span class=&quot;sidenote-prefix&quot;&gt;3&lt;&#x2F;span&gt;
 This simple idea is, of course, built upon deep insights about how solvers
 and symbolic execution work.
 I recommend reading the [Rosette paper][rose-paper] for those
@@ -1099,15 +1114,16 @@ the SMT encoding of a program to blow up.
 SymPro was able to use the existing Rosette ecosystem to develop a robust tool
 and evaluate it on code written by users of Rosette.
 This is both a value-add for users of Rosette and a compelling case to justify
-the research paper.&lt;span style=&quot;white-space:nowrap&quot;&gt;
-&lt;label for=&quot;sn-4&quot;
-       class=&quot;margin-toggle sidenote-number&quot;&gt;
+the research paper.&lt;label for=&quot;sn-4&quot;
+       class=&quot;margin-toggle sidenote-number&quot;
+       style=&quot;white-space:nowrap&quot;&gt;
+  &lt;span class=&quot;sidenote-number-text&quot;&gt;4&lt;&#x2F;span&gt;
 &lt;&#x2F;label&gt;
-&lt;&#x2F;span&gt;
 &lt;input type=&quot;checkbox&quot;
        id=&quot;sn-4&quot;
        class=&quot;margin-toggle&quot;&#x2F;&gt;
 &lt;span class=&quot;sidenote&quot;&gt;
+&lt;span class=&quot;sidenote-prefix&quot;&gt;4&lt;&#x2F;span&gt;
 The research contributions of the paper are not tied to Rosette.
 However, building upon Rosette makes the paper that much more compelling.
 &lt;&#x2F;span&gt;
@@ -1326,15 +1342,16 @@ pay-what-you-use model.&lt;&#x2F;p&gt;
 &lt;p&gt;Owing to its root as a hardware simulator, FPGA programming toolchains repurpose
 existing hardware design languages (HDLs). As a circuit simulator, this is
 a really good idea. You can simply take your preexisting hardware design and
-run it on an FPGA.&lt;span style=&quot;white-space:nowrap&quot;&gt;
-&lt;label for=&quot;sn-1&quot;
-       class=&quot;margin-toggle sidenote-number&quot;&gt;
+run it on an FPGA.&lt;label for=&quot;sn-1&quot;
+       class=&quot;margin-toggle sidenote-number&quot;
+       style=&quot;white-space:nowrap&quot;&gt;
+  &lt;span class=&quot;sidenote-number-text&quot;&gt;1&lt;&#x2F;span&gt;
 &lt;&#x2F;label&gt;
-&lt;&#x2F;span&gt;
 &lt;input type=&quot;checkbox&quot;
        id=&quot;sn-1&quot;
        class=&quot;margin-toggle&quot;&#x2F;&gt;
 &lt;span class=&quot;sidenote&quot;&gt;
+&lt;span class=&quot;sidenote-prefix&quot;&gt;1&lt;&#x2F;span&gt;
 I apologize to my architect friends. Running designs on an FPGA in reality can be an incredible challenge. FPGAs have different kinds of memory and performance characteristics. Most hardware design codebases are carefully engineered to separate FPGA-specific design decisions from the core design.
 &lt;&#x2F;span&gt;
 &lt;&#x2F;p&gt;
@@ -1363,27 +1380,29 @@ of transforming behavioral (or functional) descriptions of computation
 into hardware designs. This is commonly referred to High-Level Synthesis (HLS)
 in the community.&lt;&#x2F;p&gt;
 &lt;h2 id=&quot;high-level-synthesis&quot;&gt;High-Level Synthesis&lt;&#x2F;h2&gt;
-&lt;p&gt;High-Level Synthesis&lt;span style=&quot;white-space:nowrap&quot;&gt;
-&lt;label for=&quot;sn-2&quot;
-       class=&quot;margin-toggle sidenote-number&quot;&gt;
+&lt;p&gt;High-Level Synthesis&lt;label for=&quot;sn-2&quot;
+       class=&quot;margin-toggle sidenote-number&quot;
+       style=&quot;white-space:nowrap&quot;&gt;
+  &lt;span class=&quot;sidenote-number-text&quot;&gt;2&lt;&#x2F;span&gt;
 &lt;&#x2F;label&gt;
-&lt;&#x2F;span&gt;
 &lt;input type=&quot;checkbox&quot;
        id=&quot;sn-2&quot;
        class=&quot;margin-toggle&quot;&#x2F;&gt;
 &lt;span class=&quot;sidenote&quot;&gt;
+&lt;span class=&quot;sidenote-prefix&quot;&gt;2&lt;&#x2F;span&gt;
 “Synthesis” is borrowed from hardware design workflows—circuits are synthesized into silicon. This is just a compiler.
 &lt;&#x2F;span&gt;
  is the idea of compiling a computational description
-in a high-level programming language, &lt;span style=&quot;white-space:nowrap&quot;&gt;
-&lt;label for=&quot;sn-3&quot;
-       class=&quot;margin-toggle sidenote-number&quot;&gt;
+in a high-level programming language, &lt;label for=&quot;sn-3&quot;
+       class=&quot;margin-toggle sidenote-number&quot;
+       style=&quot;white-space:nowrap&quot;&gt;
+  &lt;span class=&quot;sidenote-number-text&quot;&gt;3&lt;&#x2F;span&gt;
 &lt;&#x2F;label&gt;
-&lt;&#x2F;span&gt;
 &lt;input type=&quot;checkbox&quot;
        id=&quot;sn-3&quot;
        class=&quot;margin-toggle&quot;&#x2F;&gt;
 &lt;span class=&quot;sidenote&quot;&gt;
+&lt;span class=&quot;sidenote-prefix&quot;&gt;3&lt;&#x2F;span&gt;
 Architects operate at the level of gates, wires, and clocks. C++ is a huge
 jump in abstractions.
 &lt;&#x2F;span&gt;
@@ -1964,15 +1983,16 @@ research is like and helped me redefine what “success” should mean.&lt;&#x2F
 &lt;p&gt;Here is a quick summary of my research experience as an undergrad:&lt;&#x2F;p&gt;
 &lt;h3 id=&quot;spring-2016&quot;&gt;Spring 2016&lt;&#x2F;h3&gt;
 &lt;p&gt;I reached out a my undergraduate advisor in my first semester after being
-fascinated with Scheme.&lt;span style=&quot;white-space:nowrap&quot;&gt;
-&lt;label for=&quot;sn-1&quot;
-       class=&quot;margin-toggle sidenote-number&quot;&gt;
+fascinated with Scheme.&lt;label for=&quot;sn-1&quot;
+       class=&quot;margin-toggle sidenote-number&quot;
+       style=&quot;white-space:nowrap&quot;&gt;
+  &lt;span class=&quot;sidenote-number-text&quot;&gt;1&lt;&#x2F;span&gt;
 &lt;&#x2F;label&gt;
-&lt;&#x2F;span&gt;
 &lt;input type=&quot;checkbox&quot;
        id=&quot;sn-1&quot;
        class=&quot;margin-toggle&quot;&#x2F;&gt;
 &lt;span class=&quot;sidenote&quot;&gt;
+&lt;span class=&quot;sidenote-prefix&quot;&gt;1&lt;&#x2F;span&gt;
 Yes, I am a walking PL cliché.
 &lt;&#x2F;span&gt;
 
@@ -1983,15 +2003,16 @@ The particular phase we were interested in formalizing were the bash shell
 &lt;a rel=&quot;noopener nofollow noreferrer external&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.gnu.org&#x2F;software&#x2F;bash&#x2F;manual&#x2F;html_node&#x2F;Shell-Expansions.html&quot;&gt;expansions&lt;&#x2F;a&gt;. We tried to build a Hoare logic style semantics for the expansion, because
 we wanted to ultimately verify properties of these shell scripts. Unfortunately,
 I showed that such a semantics becomes super complicated and we abandoned the
-project.&lt;span style=&quot;white-space:nowrap&quot;&gt;
-&lt;label for=&quot;sn-2&quot;
-       class=&quot;margin-toggle sidenote-number&quot;&gt;
+project.&lt;label for=&quot;sn-2&quot;
+       class=&quot;margin-toggle sidenote-number&quot;
+       style=&quot;white-space:nowrap&quot;&gt;
+  &lt;span class=&quot;sidenote-number-text&quot;&gt;2&lt;&#x2F;span&gt;
 &lt;&#x2F;label&gt;
-&lt;&#x2F;span&gt;
 &lt;input type=&quot;checkbox&quot;
        id=&quot;sn-2&quot;
        class=&quot;margin-toggle&quot;&#x2F;&gt;
 &lt;span class=&quot;sidenote&quot;&gt;
+&lt;span class=&quot;sidenote-prefix&quot;&gt;2&lt;&#x2F;span&gt;
 Michael Greenberg, one of our collaborators, continued working on this and has
 come up with some &lt;a rel=&quot;noopener nofollow noreferrer external&quot; target=&quot;_blank&quot; href=&quot;http:&#x2F;&#x2F;shell.cs.pomona.edu&#x2F;&quot;&gt;nice results&lt;&#x2F;a&gt;.
 &lt;&#x2F;span&gt;
@@ -2024,30 +2045,32 @@ People on the project had built a frontend that could take JavaScript code and
 compile it into something that could enforces security conditions.
 Around the same time, the Puppet synthesis project slowed down because the
 first author was applying to graduate schools and I was focusing more on
-Fission. Eventually, I stopped working on Puppet synthesis entirely.&lt;span style=&quot;white-space:nowrap&quot;&gt;
-&lt;label for=&quot;sn-3&quot;
-       class=&quot;margin-toggle sidenote-number&quot;&gt;
+Fission. Eventually, I stopped working on Puppet synthesis entirely.&lt;label for=&quot;sn-3&quot;
+       class=&quot;margin-toggle sidenote-number&quot;
+       style=&quot;white-space:nowrap&quot;&gt;
+  &lt;span class=&quot;sidenote-number-text&quot;&gt;3&lt;&#x2F;span&gt;
 &lt;&#x2F;label&gt;
-&lt;&#x2F;span&gt;
 &lt;input type=&quot;checkbox&quot;
        id=&quot;sn-3&quot;
        class=&quot;margin-toggle&quot;&#x2F;&gt;
 &lt;span class=&quot;sidenote&quot;&gt;
+&lt;span class=&quot;sidenote-prefix&quot;&gt;3&lt;&#x2F;span&gt;
 This eventually became a &lt;a rel=&quot;noopener nofollow noreferrer external&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;aaronweiss.us&#x2F;pubs&#x2F;ase17.pdf&quot;&gt;paper&lt;&#x2F;a&gt;.
 &lt;&#x2F;span&gt;
 &lt;&#x2F;p&gt;
 &lt;p&gt;To cap off the depressing string of half completed projects, it was around this
 time I actually had minor clinical depression and my productivity collapsed. After
 attending &lt;a rel=&quot;noopener nofollow noreferrer external&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;conf.researchr.org&#x2F;home&#x2F;icfp-2016&quot;&gt;ICFP ’16&lt;&#x2F;a&gt; I decided to
-start therapy to “fix” my clinical depression.&lt;span style=&quot;white-space:nowrap&quot;&gt;
-&lt;label for=&quot;sn-4&quot;
-       class=&quot;margin-toggle sidenote-number&quot;&gt;
+start therapy to “fix” my clinical depression.&lt;label for=&quot;sn-4&quot;
+       class=&quot;margin-toggle sidenote-number&quot;
+       style=&quot;white-space:nowrap&quot;&gt;
+  &lt;span class=&quot;sidenote-number-text&quot;&gt;4&lt;&#x2F;span&gt;
 &lt;&#x2F;label&gt;
-&lt;&#x2F;span&gt;
 &lt;input type=&quot;checkbox&quot;
        id=&quot;sn-4&quot;
        class=&quot;margin-toggle&quot;&#x2F;&gt;
 &lt;span class=&quot;sidenote&quot;&gt;
+&lt;span class=&quot;sidenote-prefix&quot;&gt;4&lt;&#x2F;span&gt;
 Researchers are people who sometimes work extraordinarily hard at the expense
 of their own health.
 It is important to realize that your work is significantly
@@ -2174,15 +2197,16 @@ quite certain about the area they want to work in.&lt;&#x2F;p&gt;
 &lt;p&gt;Furthermore, the CS department is also structured in a way that assumes
 students are free agents their first year. This means that they are expected to
 &lt;del&gt;take a lot of classes and&lt;&#x2F;del&gt; be teaching assistants (TAs) in their first
-two semesters.&lt;span style=&quot;white-space:nowrap&quot;&gt;
-&lt;label for=&quot;sn-1&quot;
-       class=&quot;margin-toggle sidenote-number&quot;&gt;
+two semesters.&lt;label for=&quot;sn-1&quot;
+       class=&quot;margin-toggle sidenote-number&quot;
+       style=&quot;white-space:nowrap&quot;&gt;
+  &lt;span class=&quot;sidenote-number-text&quot;&gt;1&lt;&#x2F;span&gt;
 &lt;&#x2F;label&gt;
-&lt;&#x2F;span&gt;
 &lt;input type=&quot;checkbox&quot;
        id=&quot;sn-1&quot;
        class=&quot;margin-toggle&quot;&#x2F;&gt;
 &lt;span class=&quot;sidenote&quot;&gt;
+&lt;span class=&quot;sidenote-prefix&quot;&gt;1&lt;&#x2F;span&gt;
 The CS department recently overhauled the course requirement to reduce the
 number of classes and restrictions on which classes to take.
 &lt;&#x2F;span&gt;
@@ -2216,15 +2240,16 @@ I’m passionate about.&lt;&#x2F;p&gt;
 was not the primary reason I decided join Cornell.&lt;&#x2F;p&gt;
 &lt;ul&gt;
 &lt;li&gt;My primary motivators were research that excited me, and people who are
-just as excited about it as me.&lt;span style=&quot;white-space:nowrap&quot;&gt;
-&lt;label for=&quot;sn-2&quot;
-       class=&quot;margin-toggle sidenote-number&quot;&gt;
+just as excited about it as me.&lt;label for=&quot;sn-2&quot;
+       class=&quot;margin-toggle sidenote-number&quot;
+       style=&quot;white-space:nowrap&quot;&gt;
+  &lt;span class=&quot;sidenote-number-text&quot;&gt;2&lt;&#x2F;span&gt;
 &lt;&#x2F;label&gt;
-&lt;&#x2F;span&gt;
 &lt;input type=&quot;checkbox&quot;
        id=&quot;sn-2&quot;
        class=&quot;margin-toggle&quot;&#x2F;&gt;
 &lt;span class=&quot;sidenote&quot;&gt;
+&lt;span class=&quot;sidenote-prefix&quot;&gt;2&lt;&#x2F;span&gt;
 Importantly, this includes other grad students.
 Remember, you’re going to be spending a lot more time with other grad
 students than you will with faculty.
@@ -2274,15 +2299,16 @@ programming languages and tools in it, and then go on to point out that most
 tools and languages fail to make use of amazing and well-known PL
 techniques. Then they describe their work which applies the aforementioned PL
 technique and build cool and interesting language abstractions with the promise
-of building better and improved tools for the domain.&lt;span style=&quot;white-space:nowrap&quot;&gt;
-&lt;label for=&quot;sn-1&quot;
-       class=&quot;margin-toggle sidenote-number&quot;&gt;
+of building better and improved tools for the domain.&lt;label for=&quot;sn-1&quot;
+       class=&quot;margin-toggle sidenote-number&quot;
+       style=&quot;white-space:nowrap&quot;&gt;
+  &lt;span class=&quot;sidenote-number-text&quot;&gt;1&lt;&#x2F;span&gt;
 &lt;&#x2F;label&gt;
-&lt;&#x2F;span&gt;
 &lt;input type=&quot;checkbox&quot;
        id=&quot;sn-1&quot;
        class=&quot;margin-toggle&quot;&#x2F;&gt;
 &lt;span class=&quot;sidenote&quot;&gt;
+&lt;span class=&quot;sidenote-prefix&quot;&gt;1&lt;&#x2F;span&gt;
 It is rarely the case that the tool or language proposed actually solves the
 problems in the motivation.
 &lt;em&gt;Yes, do tell me how your tiny language will stop Google from going down twice
