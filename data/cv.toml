@@ -1,50 +1,51 @@
 [[sections]]
-title = "Appointments"
-style = "detailed"
-
-[[sections.entries]]
-title = "Assistant Professor"
-organization = "Massachusetts Institute of Technology"
-context = "Department of Electrical Engineering and Computer Science (EECS)"
-date = ["01/2026"]
-
-[[sections]]
 title = "Education"
 style = "detailed"
 
 [[sections.entries]]
-title = "Doctor of Philosophy in Computer Science"
+title = "Ph.D, Computer Science"
 organization = "Cornell University"
 context = "Thesis: Modular Abstractions for Efficient Hardware Design"
-date = ["09/2018", "05/2025"]
+date = ["09/18", "05/25"]
 
 [[sections.entries]]
-title = "Bachelor of Science in Computer Science, summa cum laude"
+title = "M.Sc., Computer Science"
+organization = "Cornell Univserity"
+date = ["09/18", "05/20"]
+
+[[sections.entries]]
+title = "B.Sc., Computer Science"
 organization = "University of Massachusetts Amherst"
 context = "Thesis: Execution Control for JavaScript, Distinction with Highest Honors"
-date = ["09/2015", "05/2018"]
+date = ["09/15", "05/18"]
 
 [[sections]]
 title = "Experience"
 style = "detailed"
 
 [[sections.entries]]
+title = "Assistant Professor"
+organization = "Massachusetts Institute of Technology"
+context = "Department of Electrical Engineering and Computer Science (EECS)"
+date = ["01/26"]
+
+[[sections.entries]]
 title = "Visiting Scholar"
 organization = "Jane Street"
 context = "Ultra Low Latency Team"
-date = ["01/2025", "12/2025"]
+date = ["01/25", "12/25"]
 
 [[sections.entries]]
 title = "Research Intern"
 organization = "Facebook Reality Labs"
 context = "Silicon Design team"
-date = ["05/2019", "09/2019"]
+date = ["05/19", "09/19"]
 
 [[sections.entries]]
 title = "Software Engineering Intern"
 organization = "Google"
 context = "Web Infrastructure team"
-date = ["05/2018", "09/2018"]
+date = ["05/18", "09/18"]
 
 [[sections]]
 title = "Honors and Awards"
