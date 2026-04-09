@@ -1,6 +1,11 @@
 {% extends "base.html" %}
 {% import "macros.html" as m %}
 
+{% block css %}
+{{ super() }}
+<link defer rel="stylesheet" href={{ get_url(path="cv.css" ) }}>
+{% endblock css %}
+
 {% block content %}
 {% set cv = load_data(path="data/cv.toml", format="toml") %}
 {% set publications = get_section(path="publication/_index.md") %}
@@ -15,8 +20,7 @@
       {% for entry in section.entries %}
       <div class="cv-compact-entry">
         <div class="cv-compact-main">
-          <span class="cv-entry-title">{{ entry.title }}</span>
-          {% if entry.context %}<span class="cv-entry-context">, {{ entry.context }}</span>{% endif %}
+          <span class="cv-entry-title">{{ entry.title }}</span>{% if entry.context %}<span class="cv-entry-context">, {{ entry.context }}</span>{% endif %}
         </div>
         <div class="cv-entry-date">
           {% if entry.date | length == 2 %}
