@@ -1,0 +1,68 @@
+{% extends "base.html" %}
+{% import "macros.html" as m %}
+
+{% block content %}
+{% set cv = load_data(path="data/cv.toml", format="toml") %}
+{% set publications = get_section(path="publication/_index.md") %}
+{% set dissertation = get_page(path="publication/dissertation.md") %}
+
+<div class="cv-page">
+  {% for section in cv.sections %}
+  <section class="cv-section">
+    {{ m::anchor_heading(content=section.title) }}
+    {% if section.style == "compact" %}
+    <div class="cv-compact-list">
+      {% for entry in section.entries %}
+      <div class="cv-compact-entry">
+        <div class="cv-compact-main">
+          <span class="cv-entry-title">{{ entry.title }}</span>
+          {% if entry.context %}<span class="cv-entry-context">, {{ entry.context }}</span>{% endif %}
+        </div>
+        <div class="cv-entry-date">
+          {% if entry.date | length == 2 %}
+          {{ entry.date[0] }}&ndash;{{ entry.date[1] }}
+          {% else %}
+          {{ entry.date[0] }}
+          {% endif %}
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+    {% else %}
+    <div class="cv-detailed-list">
+      {% for entry in section.entries %}
+      <div class="cv-detailed-entry">
+        <div class="cv-detailed-main">
+          <div class="cv-entry-title">{{ entry.title }}</div>
+          {% if entry.organization %}<div class="cv-entry-org">{{ entry.organization }}</div>{% endif %}
+          {% if entry.context %}<div class="cv-entry-context">{{ entry.context }}</div>{% endif %}
+        </div>
+        <div class="cv-entry-date">
+          {% if entry.date | length == 2 %}
+          {{ entry.date[0] }}&ndash;{{ entry.date[1] }}
+          {% else %}
+          {{ entry.date[0] }}
+          {% endif %}
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+    {% endif %}
+  </section>
+  {% endfor %}
+
+  <section class="cv-section">
+    {{ m::anchor_heading(content="Publications") }}
+    <h3>Dissertation</h3>
+    {{ m::publication(pub=dissertation) }}
+    {% for pub_section in cv.publication_sections %}
+    <h3>{{ pub_section.title }}</h3>
+    {% for pub in publications.pages | filter(attribute="extra.type", value=pub_section.type) | sort(attribute="date") | reverse %}
+    {% if pub.relative_path != "publication/dissertation.md" %}
+    {{ m::publication(pub=pub) }}
+    {% endif %}
+    {% endfor %}
+    {% endfor %}
+  </section>
+</div>
+{% endblock content %}

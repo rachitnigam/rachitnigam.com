@@ -1,0 +1,217 @@
+[[sections]]
+title = "Appointments"
+style = "detailed"
+
+[[sections.entries]]
+title = "Assistant Professor"
+organization = "Massachusetts Institute of Technology"
+context = "Department of Electrical Engineering and Computer Science (EECS)"
+date = ["01/2026"]
+
+[[sections]]
+title = "Education"
+style = "detailed"
+
+[[sections.entries]]
+title = "Doctor of Philosophy in Computer Science"
+organization = "Cornell University"
+context = "Thesis: Modular Abstractions for Efficient Hardware Design"
+date = ["09/2018", "05/2025"]
+
+[[sections.entries]]
+title = "Bachelor of Science in Computer Science, summa cum laude"
+organization = "University of Massachusetts Amherst"
+context = "Thesis: Execution Control for JavaScript, Distinction with Highest Honors"
+date = ["09/2015", "05/2018"]
+
+[[sections]]
+title = "Experience"
+style = "detailed"
+
+[[sections.entries]]
+title = "Visiting Scholar"
+organization = "Jane Street"
+context = "Ultra Low Latency Team"
+date = ["01/2025", "12/2025"]
+
+[[sections.entries]]
+title = "Research Intern"
+organization = "Facebook Reality Labs"
+context = "Silicon Design team"
+date = ["05/2019", "09/2019"]
+
+[[sections.entries]]
+title = "Software Engineering Intern"
+organization = "Google"
+context = "Web Infrastructure team"
+date = ["05/2018", "09/2018"]
+
+[[sections]]
+title = "Honors and Awards"
+style = "compact"
+
+[[sections.entries]]
+title = "Distinguished Artifact Award"
+context = "ASPLOS"
+date = ["2023"]
+
+[[sections.entries]]
+title = "Jane Street Fellowship"
+context = "Jane Street"
+date = ["2023"]
+
+[[sections.entries]]
+title = "Departmental Nominee"
+context = "Google Fellowship"
+date = ["2020"]
+
+[[sections.entries]]
+title = "Finalist"
+context = "Qualcomm Innovation Fellowship"
+date = ["2020"]
+
+[[sections.entries]]
+title = "Outstanding Teaching Assistant"
+context = "Cornell CIS"
+date = ["2019"]
+
+[[sections.entries]]
+title = "Dean's Merit Scholarship"
+context = "University of Massachusetts Amherst"
+date = ["2018"]
+
+[[sections.entries]]
+title = "Honors Research Fellowship"
+context = "University of Massachusetts Amherst"
+date = ["2017"]
+
+[[sections.entries]]
+title = "Chancellor's Scholarship"
+context = "University of Massachusetts Amherst"
+date = ["2015"]
+
+[[sections]]
+title = "Academic Service"
+style = "compact"
+
+[[sections.entries]]
+title = "Student Research Competition Co-chair"
+context = "PLDI"
+date = ["2025"]
+
+[[sections.entries]]
+title = "Program Committee Member"
+context = "PLDI"
+date = ["2025"]
+
+[[sections.entries]]
+title = "Student Research Competition Co-chair"
+context = "PLDI"
+date = ["2024"]
+
+[[sections.entries]]
+title = "External Review and Artifact Evaluation Committees"
+context = "OOPSLA"
+date = ["2023"]
+
+[[sections.entries]]
+title = "Organizer"
+context = "Workshop on Languages, Tools, and Techniques for Accelerator Design"
+date = ["2023"]
+
+[[sections.entries]]
+title = "Organizer"
+context = "Workshop on Languages, Tools, and Techniques for Accelerator Design"
+date = ["2022"]
+
+[[sections.entries]]
+title = "Organizer"
+context = "Workshop on Languages, Tools, and Techniques for Accelerator Design"
+date = ["2021"]
+
+[[sections.entries]]
+title = "Social Chair"
+context = "PLDI"
+date = ["2023"]
+
+[[sections.entries]]
+title = "Social Chair"
+context = "PLDI"
+date = ["2022"]
+
+[[sections.entries]]
+title = "Social Chair"
+context = "PLDI"
+date = ["2021"]
+
+[[sections.entries]]
+title = "Sub-reviewer"
+context = "ISCA"
+date = ["2021"]
+
+[[sections.entries]]
+title = "Artifact Evaluation Committee"
+context = "OOPSLA"
+date = ["2020"]
+
+[[sections.entries]]
+title = "Artifact Evaluation Committee"
+context = "PLDI"
+date = ["2020"]
+
+[[sections.entries]]
+title = "Artifact Evaluation Committee"
+context = "PLDI"
+date = ["2019"]
+
+[[sections.entries]]
+title = "Volunteer"
+context = "SPLASH"
+date = ["2018"]
+
+[[sections]]
+title = "Other Service"
+style = "compact"
+
+[[sections.entries]]
+title = "Founder"
+context = "Programming Languages Tea"
+date = ["2020"]
+
+[[sections.entries]]
+title = "Vice-President"
+context = "CS Graduate Organization, Cornell CIS"
+date = ["2020"]
+
+[[sections.entries]]
+title = "Organizer"
+context = "CAPRA External Talk Series"
+date = ["2020"]
+
+[[sections.entries]]
+title = "Organizer"
+context = "Programming Languages Retreat"
+date = ["2019"]
+
+[[sections.entries]]
+title = "Member"
+context = "Graduate Admissions Committee, Cornell CIS"
+date = ["2019"]
+
+[[sections.entries]]
+title = "Mentor"
+context = "Expand Your Horizons, Cornell"
+date = ["2019"]
+
+[[sections.entries]]
+title = "Mentor"
+context = "Eureka! Girls Inc."
+date = ["2016"]
+
+[[publication_sections]]
+title = "Conference Publications"
+type = "conf"
+
+[[publication_sections]]
+title = "Workshop and Short Papers"
+type = "workshop"
