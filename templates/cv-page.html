@@ -15,7 +15,19 @@
   {% for section in cv.sections %}
   <section class="cv-section">
     {{ m::anchor_heading(content=section.title) }}
-    {% if section.style == "compact" %}
+    {% if section.style == "service" %}
+    <div class="cv-service-list">
+      {% for entry in section.entries %}
+      <div class="cv-service-entry">
+        <div class="cv-service-org">{{ entry.org }}</div>
+        <div class="cv-service-meta">
+          <span class="cv-service-role">{{ entry.role }}</span>
+          <span class="cv-service-year">{{ entry.year }}</span>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+    {% elif section.style == "compact" %}
     <div class="cv-compact-list">
       {% for entry in section.entries %}
       <div class="cv-compact-entry">

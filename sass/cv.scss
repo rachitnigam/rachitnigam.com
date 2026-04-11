@@ -24,6 +24,13 @@ body.cv-body {
   flex-direction: column;
 }
 
+.cv-service-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  column-gap: 1.5rem;
+  row-gap: 0.75rem;
+}
+
 .cv-detailed-list {
   gap: 0.9em;
 }
@@ -38,6 +45,32 @@ body.cv-body {
   grid-template-columns: minmax(0, 1fr) auto;
   gap: 1.2em;
   align-items: start;
+}
+
+.cv-service-entry {
+  line-height: 1.35;
+}
+
+.cv-service-org {
+  font-weight: 600;
+}
+
+.cv-service-meta {
+  display: flex;
+  align-items: baseline;
+  gap: 0.45rem;
+  flex-wrap: wrap;
+  color: #555;
+}
+
+.cv-service-role::after {
+  content: "·";
+  margin-left: 0.45rem;
+  color: #999;
+}
+
+.cv-service-year {
+  color: #666;
 }
 
 .cv-entry-title,
@@ -76,5 +109,9 @@ body.cv-body {
 
   .cv-entry-date {
     white-space: normal;
+  }
+
+  .cv-service-list {
+    grid-template-columns: 1fr;
   }
 }
