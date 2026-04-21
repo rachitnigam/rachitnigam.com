@@ -93,121 +93,121 @@ date = ["2015"]
 
 [[sections]]
 title = "Academic Service"
-style = "service"
+style = "compact"
 
 [[sections.entries]]
-role = "Student Research Competition Co-chair"
-org = "PLDI"
-year = "2025"
+title = "Student Research Competition Co-chair"
+context = "PLDI"
+date = ["2025"]
 
 [[sections.entries]]
-role = "Program Committee Member"
-org = "PLDI"
-year = "2025"
+title = "Program Committee Member"
+context = "PLDI"
+date = ["2025"]
 
 [[sections.entries]]
-role = "Student Research Competition Co-chair"
-org = "PLDI"
-year = "2024"
+title = "Student Research Competition Co-chair"
+context = "PLDI"
+date = ["2024"]
 
 [[sections.entries]]
-role = "External Review and Artifact Evaluation Committees"
-org = "OOPSLA"
-year = "2023"
+title = "External Review and Artifact Evaluation Committees"
+context = "OOPSLA"
+date = ["2023"]
 
 [[sections.entries]]
-role = "Organizer"
-org = "Workshop on Languages, Tools, and Techniques for Accelerator Design"
-year = "2023"
+title = "Organizer"
+context = "Workshop on Languages, Tools, and Techniques for Accelerator Design"
+date = ["2023"]
 
 [[sections.entries]]
-role = "Organizer"
-org = "Workshop on Languages, Tools, and Techniques for Accelerator Design"
-year = "2022"
+title = "Organizer"
+context = "Workshop on Languages, Tools, and Techniques for Accelerator Design"
+date = ["2022"]
 
 [[sections.entries]]
-role = "Organizer"
-org = "Workshop on Languages, Tools, and Techniques for Accelerator Design"
-year = "2021"
+title = "Organizer"
+context = "Workshop on Languages, Tools, and Techniques for Accelerator Design"
+date = ["2021"]
 
 [[sections.entries]]
-role = "Social Chair"
-org = "PLDI"
-year = "2023"
+title = "Social Chair"
+context = "PLDI"
+date = ["2023"]
 
 [[sections.entries]]
-role = "Social Chair"
-org = "PLDI"
-year = "2022"
+title = "Social Chair"
+context = "PLDI"
+date = ["2022"]
 
 [[sections.entries]]
-role = "Social Chair"
-org = "PLDI"
-year = "2021"
+title = "Social Chair"
+context = "PLDI"
+date = ["2021"]
 
 [[sections.entries]]
-role = "Sub-reviewer"
-org = "ISCA"
-year = "2021"
+title = "Sub-reviewer"
+context = "ISCA"
+date = ["2021"]
 
 [[sections.entries]]
-role = "Artifact Evaluation Committee"
-org = "OOPSLA"
-year = "2020"
+title = "Artifact Evaluation Committee"
+context = "OOPSLA"
+date = ["2020"]
 
 [[sections.entries]]
-role = "Artifact Evaluation Committee"
-org = "PLDI"
-year = "2020"
+title = "Artifact Evaluation Committee"
+context = "PLDI"
+date = ["2020"]
 
 [[sections.entries]]
-role = "Artifact Evaluation Committee"
-org = "PLDI"
-year = "2019"
+title = "Artifact Evaluation Committee"
+context = "PLDI"
+date = ["2019"]
 
 [[sections.entries]]
-role = "Volunteer"
-org = "SPLASH"
-year = "2018"
+title = "Volunteer"
+context = "SPLASH"
+date = ["2018"]
 
 [[sections]]
 title = "Other Service"
-style = "service"
+style = "compact"
 
 [[sections.entries]]
-role = "Founder"
-org = "Programming Languages Tea"
-year = "2020"
+title = "Founder"
+context = "Programming Languages Tea"
+date = ["2020"]
 
 [[sections.entries]]
-role = "Vice-President"
-org = "CS Graduate Organization, Cornell CIS"
-year = "2020"
+title = "Vice-President"
+context = "CS Graduate Organization, Cornell CIS"
+date = ["2020"]
 
 [[sections.entries]]
-role = "Organizer"
-org = "CAPRA External Talk Series"
-year = "2020"
+title = "Organizer"
+context = "CAPRA External Talk Series"
+date = ["2020"]
 
 [[sections.entries]]
-role = "Organizer"
-org = "Programming Languages Retreat"
-year = "2019"
+title = "Organizer"
+context = "Programming Languages Retreat"
+date = ["2019"]
 
 [[sections.entries]]
-role = "Member"
-org = "Graduate Admissions Committee, Cornell CIS"
-year = "2019"
+title = "Member"
+context = "Graduate Admissions Committee, Cornell CIS"
+date = ["2019"]
 
 [[sections.entries]]
-role = "Mentor"
-org = "Expand Your Horizons, Cornell"
-year = "2019"
+title = "Mentor"
+context = "Expand Your Horizons, Cornell"
+date = ["2019"]
 
 [[sections.entries]]
-role = "Mentor"
-org = "Eureka! Girls Inc."
-year = "2016"
+title = "Mentor"
+context = "Eureka! Girls Inc."
+date = ["2016"]
 
 [[publication_sections]]
 title = "Conference Publications"
