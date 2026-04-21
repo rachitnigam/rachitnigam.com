@@ -63,6 +63,16 @@ body.cv-body {
   margin: 0 0.35rem;
 }
 
+.cv-publication-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.45em;
+}
+
+.cv-publication-entry {
+  line-height: 1.5;
+}
+
 .cv-entry-title,
 .cv-entry-org {
   line-height: 1.3;
