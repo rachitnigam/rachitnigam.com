@@ -65,14 +65,14 @@
   {% endblock css %}
 </head>
 
-<body>
+<body{% if page and page.extra.body_class %} class="{{ page.extra.body_class }}"{% endif %}>
   {% if page %}
   <header>
     <h1 class="name"><a class="unstyled-link" href={{ get_url(path="/" ) }}>Rachit Nigam</a></h1>
     <nav>
       <a class="unstyled-link nav-item" href={{ get_url(path="/#publications" ) }}>Papers</a>
       <a class="unstyled-link nav-item" href={{ get_url(path="/#posts" ) }}>Posts</a>
-      <a class="unstyled-link nav-item" href={{ get_url(path="/files/resume.pdf" ) }}>CV</a>
+      <a class="unstyled-link nav-item" href={{ get_url(path="/cv/" ) }}>CV</a>
     </nav>
   </header>
   {% endif %}

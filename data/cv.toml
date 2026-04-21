@@ -1,0 +1,174 @@
+[[sections]]
+title = "Education"
+style = "detailed"
+
+[[sections.entries]]
+title = "Ph.D, Computer Science"
+organization = "Cornell University"
+context = "Thesis: Modular Abstractions for Efficient Hardware Design"
+date = ["09/18", "05/25"]
+
+# [[sections.entries]]
+# title = "M.Sc., Computer Science"
+# organization = "Cornell Univserity"
+# date = ["09/18", "05/20"]
+
+[[sections.entries]]
+title = "B.Sc., Computer Science"
+organization = "University of Massachusetts Amherst"
+context = "Thesis: Execution Control for JavaScript, Distinction with Highest Honors"
+date = ["09/15", "05/18"]
+
+[[sections]]
+title = "Experience"
+style = "detailed"
+
+[[sections.entries]]
+title = "Assistant Professor"
+organization = "Massachusetts Institute of Technology"
+context = "Department of Electrical Engineering and Computer Science (EECS)"
+date = ["01/26"]
+
+[[sections.entries]]
+title = "Visiting Scholar"
+organization = "Jane Street"
+context = "Ultra Low Latency Team"
+date = ["01/25", "12/25"]
+
+[[sections.entries]]
+title = "Research Intern"
+organization = "Facebook Reality Labs"
+context = "Silicon Design team"
+date = ["05/19", "09/19"]
+
+[[sections.entries]]
+title = "Software Engineering Intern"
+organization = "Google"
+context = "Web Infrastructure team"
+date = ["05/18", "09/18"]
+
+[[sections]]
+title = "Students"
+style = "compact"
+
+[[sections.entries]]
+title = "Elam Day-Friedland"
+context = "PhD, NSF GRFP Fellow"
+date = ["2025"]
+
+[[sections.entries]]
+title = "Carolyn Zech"
+context = "PhD, NSF GRFP Fellow"
+date = ["2025"]
+
+[[sections.entries]]
+title = "Ayana Alemayehu"
+context = "M.Eng"
+date = ["2025"]
+
+
+[[sections]]
+title = "Honors & Awards"
+style = "compact"
+
+[[sections.entries]]
+title = "John C. Reynolds Distinguished Dissertation"
+context = "SIGPLAN"
+date = ["2025"]
+
+[[sections.entries]]
+title = "Outstanding Dissertation Award (Hon. Mention)"
+context = "IEEE / ACM"
+date = ["2025"]
+
+[[sections.entries]]
+title = "Distinguished Artifact Award"
+context = "ASPLOS"
+date = ["2023"]
+
+[[sections.entries]]
+title = "Jane Street Fellowship"
+context = "Jane Street"
+date = ["2023"]
+
+[[sections.entries]]
+title = "Departmental Nominee"
+context = "Google Fellowship"
+date = ["2020"]
+
+[[sections.entries]]
+title = "Finalist"
+context = "Qualcomm Innovation Fellowship"
+date = ["2020"]
+
+[[sections.entries]]
+title = "Outstanding Teaching Assistant"
+context = "Cornell CIS"
+date = ["2019"]
+
+[[sections.entries]]
+title = "Dean's Merit Scholarship"
+context = "University of Massachusetts Amherst"
+date = ["2018"]
+
+[[sections.entries]]
+title = "Honors Research Fellowship"
+context = "University of Massachusetts Amherst"
+date = ["2017"]
+
+[[sections.entries]]
+title = "Chancellor's Scholarship"
+context = "University of Massachusetts Amherst"
+date = ["2015"]
+
+[[sections]]
+title = "Service"
+style = "service"
+
+[[sections.entries]]
+role = "Program Committee"
+labels = ["PLDI 25", "MICRO 26", "ASPLOS 26"]
+
+[[sections.entries]]
+role = "Reviewer"
+labels = ["ISCA YArch", "ACM SRC Grand Finals"]
+
+[[sections.entries]]
+role = "Panelist"
+labels = ["PLMW @ PLDI '25", "MIT PL Review '26"]
+
+[[sections.entries]]
+role = "Student Research Competition Co-Chair"
+labels = ["PLDI 24", "PLDI 25"]
+
+[[sections.entries]]
+role = "External Review Committee"
+labels = ["OOPSLA 23", "PLDI 26", "POPL 26"]
+
+[[sections.entries]]
+role = "Workshop Co-Organizer"
+labels = ["LATTE 21", "LATTE 22", "LATTE 23", "LATTE 24", "LATTE 25", "LATTE 26"]
+
+[[sections.entries]]
+role = "Social Chair"
+labels = ["PLDI 21", "PLDI 22", "PLDI 23", "PLDI 26"]
+
+[[sections.entries]]
+role = "Sub-reviewer"
+labels = ["ISCA 21"]
+
+[[sections.entries]]
+role = "Artifact Evaluation Committee"
+labels = ["PLDI 19", "OOPSLA 20", "PLDI 20", "OOPSLA 23"]
+
+[[sections.entries]]
+role = "Volunteer"
+labels = ["SPLASH 18"]
+
+[[publication_sections]]
+title = "Conference Publications"
+type = "conf"
+
+[[publication_sections]]
+title = "Short Papers"
+type = "workshop"

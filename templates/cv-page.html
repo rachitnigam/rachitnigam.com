@@ -1,0 +1,105 @@
+{% extends "base.html" %}
+{% import "macros.html" as m %}
+
+{% block css %}
+{{ super() }}
+<link defer rel="stylesheet" href={{ get_url(path="cv.css" ) }}>
+{% endblock css %}
+
+{% macro cv_authors(names) -%}
+{%- for name in names -%}
+{%- if name == "Rachit Nigam" -%}
+<span class="publication-highlight">{{ name }}</span>
+{%- else -%}
+<span class="publication-author">{{ name }}</span>
+{%- endif -%}
+{%- if not loop.last -%}, {% endif -%}
+{%- endfor -%}
+{%- endmacro cv_authors %}
+
+{% block content %}
+{% set cv = load_data(path="data/cv.toml", format="toml") %}
+{% set publications = get_section(path="publication/_index.md") %}
+{% set dissertation = get_page(path="publication/dissertation.md") %}
+
+<div class="cv-page">
+  {% for section in cv.sections %}
+  <section class="cv-section">
+    {{ m::anchor_heading(content=section.title) }}
+    {% if section.style == "service" %}
+    <div class="cv-service-list">
+      {% for entry in section.entries %}
+      <div class="cv-service-entry">
+        <span class="cv-service-role">{{ entry.role }}</span>
+        {% if entry.labels %}
+        <span class="cv-service-separator">&middot;</span>
+        <span class="cv-service-labels">{{ entry.labels | join(sep=", ") }}</span>
+        {% endif %}
+      </div>
+      {% endfor %}
+    </div>
+    {% elif section.style == "compact" %}
+    <div class="cv-compact-list">
+      {% for entry in section.entries %}
+      <div class="cv-compact-entry">
+        <div class="cv-compact-main">
+          <span class="cv-entry-title">{{ entry.title }}</span>{% if entry.context %}<span class="cv-entry-context">, {{ entry.context }}</span>{% endif %}
+        </div>
+        <div class="cv-entry-date">
+          {% if entry.date | length == 2 %}
+          {{ entry.date[0] }}&ndash;{{ entry.date[1] }}
+          {% else %}
+          {{ entry.date[0] }}
+          {% endif %}
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+    {% else %}
+    <div class="cv-detailed-list">
+      {% for entry in section.entries %}
+      <div class="cv-detailed-entry">
+        <div class="cv-detailed-main">
+          <div class="cv-entry-title">{{ entry.title }}</div>
+          {% if entry.organization %}<div class="cv-entry-org">{{ entry.organization }}</div>{% endif %}
+          {% if entry.context %}<div class="cv-entry-context">{{ entry.context }}</div>{% endif %}
+        </div>
+        <div class="cv-entry-date">
+          {% if entry.date | length == 2 %}
+          {{ entry.date[0] }}&ndash;{{ entry.date[1] }}
+          {% else %}
+          {{ entry.date[0] }}
+          {% endif %}
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+    {% endif %}
+  </section>
+  {% endfor %}
+
+  <section class="cv-section">
+    {{ m::anchor_heading(content="Publications") }}
+    <h3>Dissertation</h3>
+    <div class="cv-publication-list">
+      <div class="cv-publication-entry">
+        {% if dissertation.extra.pdf %}<a href={{ get_url(path=dissertation.extra.pdf) }}>{{ dissertation.title | safe }}</a>.{% else %}{{ dissertation.title | safe }}.{% endif %}
+        {{ self::cv_authors(names=dissertation.extra.authors) }}. In {{ dissertation.extra.publication_short }} {{ dissertation.date | date(format="%Y") }}.
+      </div>
+    </div>
+    {% for pub_section in cv.publication_sections %}
+    <h3>{{ pub_section.title }}</h3>
+    <div class="cv-publication-list">
+    {% for pub in publications.pages | filter(attribute="extra.type", value=pub_section.type) | sort(attribute="date") | reverse %}
+    {% if pub.relative_path != "publication/dissertation.md" %}
+    <div class="cv-publication-entry">
+      {% if pub.extra.pdf %}<a href={{ get_url(path=pub.extra.pdf) }}>{{ pub.title | safe }}</a>.{% else %}{{ pub.title | safe }}.{% endif %}
+      {{ self::cv_authors(names=pub.extra.authors) }}. In {{ pub.extra.publication_short }} {{ pub.date | date(format="%Y") }}.
+    </div>
+    {% endif %}
+    {% endfor %}
+    </div>
+    {% endfor %}
+  </section>
+</div>
+{% endblock content %}
