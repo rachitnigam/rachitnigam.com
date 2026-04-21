@@ -24,6 +24,12 @@ body.cv-body {
   flex-direction: column;
 }
 
+.cv-service-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3em;
+}
+
 .cv-detailed-list {
   gap: 0.9em;
 }
@@ -38,6 +44,23 @@ body.cv-body {
   grid-template-columns: minmax(0, 1fr) auto;
   gap: 1.2em;
   align-items: start;
+}
+
+.cv-service-entry {
+  line-height: 1.45;
+}
+
+.cv-service-role {
+  font-weight: 600;
+}
+
+.cv-service-separator,
+.cv-service-labels {
+  color: #555;
+}
+
+.cv-service-separator {
+  margin: 0 0.35rem;
 }
 
 .cv-entry-title,

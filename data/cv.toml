@@ -8,10 +8,10 @@ organization = "Cornell University"
 context = "Thesis: Modular Abstractions for Efficient Hardware Design"
 date = ["09/18", "05/25"]
 
-[[sections.entries]]
-title = "M.Sc., Computer Science"
-organization = "Cornell Univserity"
-date = ["09/18", "05/20"]
+# [[sections.entries]]
+# title = "M.Sc., Computer Science"
+# organization = "Cornell Univserity"
+# date = ["09/18", "05/20"]
 
 [[sections.entries]]
 title = "B.Sc., Computer Science"
@@ -48,8 +48,38 @@ context = "Web Infrastructure team"
 date = ["05/18", "09/18"]
 
 [[sections]]
-title = "Honors and Awards"
+title = "Students"
 style = "compact"
+
+[[sections.entries]]
+title = "Elam Day-Friedland"
+context = "PhD, NSF GRFP Fellow"
+date = ["2025"]
+
+[[sections.entries]]
+title = "Carolyn Zech"
+context = "PhD, NSF GRFP Fellow"
+date = ["2025"]
+
+[[sections.entries]]
+title = "Ayana Alemayehu"
+context = "M.Eng"
+date = ["2025"]
+
+
+[[sections]]
+title = "Honors & Awards"
+style = "compact"
+
+[[sections.entries]]
+title = "John C. Reynolds Distinguished Dissertation"
+context = "SIGPLAN"
+date = ["2025"]
+
+[[sections.entries]]
+title = "Outstanding Dissertation Award (Hon. Mention)"
+context = "IEEE / ACM"
+date = ["2025"]
 
 [[sections.entries]]
 title = "Distinguished Artifact Award"
@@ -92,122 +122,48 @@ context = "University of Massachusetts Amherst"
 date = ["2015"]
 
 [[sections]]
-title = "Academic Service"
-style = "compact"
+title = "Service"
+style = "service"
 
 [[sections.entries]]
-title = "Student Research Competition Co-chair"
-context = "PLDI"
-date = ["2025"]
+role = "Program Committee"
+labels = ["PLDI 25", "MICRO 26", "ASPLOS 26"]
 
 [[sections.entries]]
-title = "Program Committee Member"
-context = "PLDI"
-date = ["2025"]
+role = "Reviewer"
+labels = ["ISCA YArch", "ACM SRC Grand Finals"]
 
 [[sections.entries]]
-title = "Student Research Competition Co-chair"
-context = "PLDI"
-date = ["2024"]
+role = "Panelist"
+labels = ["PLMW @ PLDI '25", "MIT PL Review '26"]
 
 [[sections.entries]]
-title = "External Review and Artifact Evaluation Committees"
-context = "OOPSLA"
-date = ["2023"]
+role = "Student Research Competition Co-Chair"
+labels = ["PLDI 24", "PLDI 25"]
 
 [[sections.entries]]
-title = "Organizer"
-context = "Workshop on Languages, Tools, and Techniques for Accelerator Design"
-date = ["2023"]
+role = "External Review Committee"
+labels = ["OOPSLA 23", "PLDI 26", "POPL 26"]
 
 [[sections.entries]]
-title = "Organizer"
-context = "Workshop on Languages, Tools, and Techniques for Accelerator Design"
-date = ["2022"]
+role = "Workshop Co-Organizer"
+labels = ["LATTE 21", "LATTE 22", "LATTE 23", "LATTE 24", "LATTE 25", "LATTE 26"]
 
 [[sections.entries]]
-title = "Organizer"
-context = "Workshop on Languages, Tools, and Techniques for Accelerator Design"
-date = ["2021"]
+role = "Social Chair"
+labels = ["PLDI 21", "PLDI 22", "PLDI 23", "PLDI 26"]
 
 [[sections.entries]]
-title = "Social Chair"
-context = "PLDI"
-date = ["2023"]
+role = "Sub-reviewer"
+labels = ["ISCA 21"]
 
 [[sections.entries]]
-title = "Social Chair"
-context = "PLDI"
-date = ["2022"]
+role = "Artifact Evaluation Committee"
+labels = ["PLDI 19", "OOPSLA 20", "PLDI 20", "OOPSLA 23"]
 
 [[sections.entries]]
-title = "Social Chair"
-context = "PLDI"
-date = ["2021"]
-
-[[sections.entries]]
-title = "Sub-reviewer"
-context = "ISCA"
-date = ["2021"]
-
-[[sections.entries]]
-title = "Artifact Evaluation Committee"
-context = "OOPSLA"
-date = ["2020"]
-
-[[sections.entries]]
-title = "Artifact Evaluation Committee"
-context = "PLDI"
-date = ["2020"]
-
-[[sections.entries]]
-title = "Artifact Evaluation Committee"
-context = "PLDI"
-date = ["2019"]
-
-[[sections.entries]]
-title = "Volunteer"
-context = "SPLASH"
-date = ["2018"]
-
-[[sections]]
-title = "Other Service"
-style = "compact"
-
-[[sections.entries]]
-title = "Founder"
-context = "Programming Languages Tea"
-date = ["2020"]
-
-[[sections.entries]]
-title = "Vice-President"
-context = "CS Graduate Organization, Cornell CIS"
-date = ["2020"]
-
-[[sections.entries]]
-title = "Organizer"
-context = "CAPRA External Talk Series"
-date = ["2020"]
-
-[[sections.entries]]
-title = "Organizer"
-context = "Programming Languages Retreat"
-date = ["2019"]
-
-[[sections.entries]]
-title = "Member"
-context = "Graduate Admissions Committee, Cornell CIS"
-date = ["2019"]
-
-[[sections.entries]]
-title = "Mentor"
-context = "Expand Your Horizons, Cornell"
-date = ["2019"]
-
-[[sections.entries]]
-title = "Mentor"
-context = "Eureka! Girls Inc."
-date = ["2016"]
+role = "Volunteer"
+labels = ["SPLASH 18"]
 
 [[publication_sections]]
 title = "Conference Publications"
