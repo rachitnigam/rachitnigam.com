@@ -38,6 +38,7 @@ At MIT, I direct the [Foundations of Languages and Machines (FLAME) lab][flame]
 where we continue asking such questions and building new systems.
 If these directions excite you, take a look
 at [information for prospective students][flame-prospective].
+You can find my [CV here](../cv).
 
 
 [research]: /files/research.pdf

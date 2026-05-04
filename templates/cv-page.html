@@ -32,7 +32,7 @@
       <div class="cv-service-entry">
         <span class="cv-service-role">{{ entry.role }}</span>
         {% if entry.labels %}
-        <span class="cv-service-separator">&middot;</span>
+        <span class="cv-service-separator">&bull;</span>
         <span class="cv-service-labels">{{ entry.labels | join(sep=", ") }}</span>
         {% endif %}
       </div>
@@ -84,7 +84,7 @@
     <div class="cv-publication-list">
       <div class="cv-publication-entry">
         {% if dissertation.extra.pdf %}<a href={{ get_url(path=dissertation.extra.pdf) }}>{{ dissertation.title | safe }}</a>.{% else %}{{ dissertation.title | safe }}.{% endif %}
-        {{ self::cv_authors(names=dissertation.extra.authors) }}. In {{ dissertation.extra.publication_short }} {{ dissertation.date | date(format="%Y") }}.
+        {{ self::cv_authors(names=dissertation.extra.authors) }}.
       </div>
     </div>
     {% for pub_section in cv.publication_sections %}

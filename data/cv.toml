@@ -131,11 +131,11 @@ labels = ["PLDI 25", "MICRO 26", "ASPLOS 26"]
 
 [[sections.entries]]
 role = "Reviewer"
-labels = ["ISCA YArch", "ACM SRC Grand Finals"]
+labels = ["YArch 26", "ACM SRC Grand Finals 26"]
 
 [[sections.entries]]
 role = "Panelist"
-labels = ["PLMW @ PLDI '25", "MIT PL Review '26"]
+labels = ["PLMW @ PLDI 25", "MIT PL Review 26"]
 
 [[sections.entries]]
 role = "Student Research Competition Co-Chair"
