@@ -1,5 +1,7 @@
 +++
 date = 2023-04-01
+[extra]
+kind = "talk"
 +++
 
 Gave an invited talk on [Dahlia][] at [MIT's PL Review][mitplr].

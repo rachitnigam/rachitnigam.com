@@ -2,6 +2,8 @@
 
 date = 2020-04-07T23:30:26-04:00
 
+[extra]
+kind = "award"
 +++
 
 Finalist for the [Qualcomm Fellowship][final] with [Alexa VanHattum][alexa].

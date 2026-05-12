@@ -1,7 +1,6 @@
 +++
 
 date = 2025-06-18
-
 +++
 
 Student Research Competition co-chair, PLMW invited talk, PLMW panel, and program committee

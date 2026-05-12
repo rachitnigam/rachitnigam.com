@@ -40,6 +40,15 @@
 <div class="blurb">
   <div class="date">{{ post.date | date(format="%b ’%y") }}</div>
   <div class="description">
+    {% if post.extra.kind %}
+      {% if post.extra.kind == "award" %}
+        <i class="fa fa-medal" style="color: #d3af37;"></i>
+      {% elif post.extra.kind == "talk" %}
+        <i class="fa fa-bullhorn" style="color: grey; transform: rotate(-30deg);"></i>
+      {% elif post.extra.kind == "paper" %}
+        <i class="fa fa-scroll" style="color: #A362C6;"></i>
+      {% endif %}
+    {% endif %}
     {{ post.content | safe }}
   </div>
 </div>

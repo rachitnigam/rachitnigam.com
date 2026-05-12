@@ -1,5 +1,7 @@
 +++
 date = 2023-04-01
+[extra]
+kind = "talk"
 +++
 
 Gave a talk on Filament at [LatchUp '23][latchup].

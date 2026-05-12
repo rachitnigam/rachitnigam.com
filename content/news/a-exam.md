@@ -2,6 +2,8 @@
 
 date = 2021-05-05
 
+[extra]
+kind = "talk"
 +++
 
 [Proposed my thesis][thesis-talk] and advanced to candidacy.

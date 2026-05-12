@@ -2,6 +2,8 @@
 
 date = 2022-04-07
 
+[extra]
+kind = "talk"
 +++
 
 Gave invited talks to [Brown PLT][brown] and [Northeastern PRL][neu-prl].

@@ -2,6 +2,8 @@
 
 date = 2020-04-07T23:33:59-04:00
 
+[extra]
+kind = "paper"
 +++
 
 Work-in-progress paper on [Diospyros][dios] accepted to [LCTES][].
