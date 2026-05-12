@@ -72,6 +72,11 @@ title = "Honors & Awards"
 style = "compact"
 
 [[sections.entries]]
+title = "Outstanding CS Dissertation Award"
+context = "Cornell"
+date = ["2026"]
+
+[[sections.entries]]
 title = "John C. Reynolds Distinguished Dissertation"
 context = "SIGPLAN"
 date = ["2025"]

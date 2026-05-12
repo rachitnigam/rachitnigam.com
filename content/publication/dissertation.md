@@ -15,9 +15,13 @@ authors = [
 publication = "Conference on Architectural Support for Programming Languages and Operating Systems"
 publication_short = "Thesis"
 
-awards = ["SIGPLAN Distinguished Dissertation",  "SIGARCH/TCCA Outstanding Dissertation (Hon. Mention)"]
+awards = [
+    "SIGPLAN Distinguished Dissertation",
+    "SIGARCH/TCCA Outstanding Dissertation (Hon. Mention)",
+    "Cornell CS Outstanding Dissertation"
+]
 pdf = "/files/pubs/dissertation.pdf"
 urls = []
-type="conf"
+type="thesis"
 +++
 

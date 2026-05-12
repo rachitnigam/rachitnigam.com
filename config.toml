@@ -27,7 +27,7 @@ dark_theme = "github-dark"
 skip_prefixes = ["https://twitter.com/"]
 
 [extra]
-news_items = 4
+news_items = 8
 post_items = 7
 
 katex_enable = true

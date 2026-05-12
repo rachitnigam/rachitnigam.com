@@ -17,6 +17,7 @@
       {{ m::contact(link="mailto:rnigam@mit.edu", classes="fa fa-envelope", alt="email contact") }}
       {{ m::contact(link="//github.com/rachitnigam", classes="fab fa-github", alt="github profile") }}
       {{ m::contact(link="//scholar.google.com/citations?user=RNL2GjEAAAAJ", classes="ai ai-google-scholar", alt="google scholar") }}
+      <a class="cv-icon unstyled-link" href="{{get_url(path='/cv')}}" aria-label="Curriculum Vitae">CV</a>
     </div>
   </div>
 
@@ -37,6 +38,7 @@
   </div-->
 
   <!-- News -->
+  <span class="news">
   <h2>News</h2>
   {% set news = get_section(path="news/_index.md") %}
   {% set items = config.extra.news_items %}
@@ -49,12 +51,19 @@
       <i class="fa fa-angle-double-right"></i>
     </a>
   </div>
+  </span>
 </section>
 
 <!-- Publications -->
 <section>
   {{ m::anchor_heading(content="Publications") }}
   {% set news = get_section(path="publication/_index.md") %}
+
+  <!-- Thesis -->
+  {{ m::anchor_heading(content="Thesis",size="3") }}
+  {% for pub in news.pages | filter(attribute="extra.type", value="thesis") | sort(attribute="date") | reverse %}
+  {{ m::publication(pub=pub) }}
+  {% endfor %}
 
   <!-- Conference Publications -->
   {{ m::anchor_heading(content="Conferences",size="3") }}
