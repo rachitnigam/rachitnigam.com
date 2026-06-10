@@ -72,6 +72,11 @@ title = "Honors & Awards"
 style = "compact"
 
 [[sections.entries]]
+title = "Doctoral Dissertation Award (Hon. Mention)"
+context = "ACM"
+date = ["2026"]
+
+[[sections.entries]]
 title = "Outstanding CS Dissertation Award"
 context = "Cornell"
 date = ["2026"]

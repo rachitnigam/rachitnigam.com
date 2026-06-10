@@ -16,6 +16,7 @@ publication = "Conference on Architectural Support for Programming Languages and
 publication_short = "Thesis"
 
 awards = [
+    "ACM Doctoral Dissertation Award (Hon. Mention)",
     "SIGPLAN Distinguished Dissertation",
     "SIGARCH/TCCA Outstanding Dissertation (Hon. Mention)",
     "Cornell CS Outstanding Dissertation"
