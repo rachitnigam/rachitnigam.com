@@ -4,8 +4,70 @@
     <link rel="self" type="application/atom+xml" href="https://people.csail.mit.edu/rachit/post/atom.xml"/>
     <link rel="alternate" type="text/html" href="https://people.csail.mit.edu/rachit/post/"/>
     <generator uri="https://www.getzola.org/">Zola</generator>
-    <updated>2025-12-30T00:00:00+00:00</updated>
+    <updated>2026-07-26T00:00:00+00:00</updated>
     <id>https://people.csail.mit.edu/rachit/post/atom.xml</id>
+    <entry xml:lang="en">
+        <title>Care Anyways</title>
+        <published>2026-07-26T00:00:00+00:00</published>
+        <updated>2026-07-26T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Rachit Nigam
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://people.csail.mit.edu/rachit/post/care/"/>
+        <id>https://people.csail.mit.edu/rachit/post/care/</id>
+        
+        <content type="html" xml:base="https://people.csail.mit.edu/rachit/post/care/">&lt;blockquote&gt;
+&lt;p&gt;Knowledge is dead.&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;p&gt;&lt;em&gt;Care anyways.&lt;&#x2F;em&gt;&lt;&#x2F;p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;LLMs know more than you, …&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;p&gt;&lt;em&gt;Care anyways.&lt;&#x2F;em&gt;&lt;&#x2F;p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;can write faster than you, …&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;p&gt;&lt;em&gt;Care anyways.&lt;&#x2F;em&gt;&lt;&#x2F;p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;sound more articulate than you, …&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;p&gt;&lt;em&gt;Care anyways.&lt;&#x2F;em&gt;&lt;&#x2F;p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;do better math than you, …&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;p&gt;&lt;em&gt;Care anyways.&lt;&#x2F;em&gt;&lt;&#x2F;p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;ship code faster than you, …&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;p&gt;&lt;em&gt;Care anyways.&lt;&#x2F;em&gt;&lt;&#x2F;p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;and have more impact on you.&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;p&gt;&lt;em&gt;Care anyways.&lt;&#x2F;em&gt;&lt;&#x2F;p&gt;
+&lt;hr &#x2F;&gt;
+&lt;center&gt;
+&lt;figure&gt;
+&lt;img src=&quot;https:&#x2F;&#x2F;people.csail.mit.edu&#x2F;rachit&#x2F;img&#x2F;cover.png&quot;
+      width = &quot;200&quot; 
+     alt=&quot;A manhole cover with colored flowers&quot;&gt;
+&lt;&#x2F;img&gt;
+&lt;figcaption&gt;
+Manhole cover &lt;i&gt;(Japan, 2025)&lt;&#x2F;i&gt;
+&lt;&#x2F;figcaption&gt;
+&lt;&#x2F;figure&gt;
+&lt;&#x2F;center&gt;
+&lt;p&gt;Here is a picture of a manhole cover I found in Japan.
+A thing to be trodden upon.
+&lt;em&gt;Beautifully crafted.&lt;&#x2F;em&gt;&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
     <entry xml:lang="en">
         <title>Formally speaking, &quot;Transpiler&quot; is a useless word</title>
         <published>2025-12-30T00:00:00+00:00</published>
@@ -1281,6 +1343,7 @@ executing an instruction.&lt;&#x2F;p&gt;
 &lt;center&gt;
 &lt;figure&gt;
 &lt;img src=&quot;https:&#x2F;&#x2F;people.csail.mit.edu&#x2F;rachit&#x2F;img&#x2F;energy-breakdown.png&quot;
+     
      alt=&quot;Energy breakdown of executing an add instruction on 45nm technology.&quot;&gt;
 &lt;&#x2F;img&gt;
 &lt;figcaption&gt;
