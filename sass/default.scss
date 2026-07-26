@@ -286,12 +286,18 @@ h6 {
 }
 
 hr {
-  width: 10rem;
   border: 0;
-  height: 1px;
-  background: #aaa;
-  text-align: left;
-  margin-left: 0;
+  height: auto;
+  background: none;
+  text-align: center;
+  margin: 2.5em auto;
+  overflow: visible;
+
+  &::after {
+    content: "❀❀❀";
+    color: $color-post-tease;
+    letter-spacing: 0.6em;
+  }
 }
 
 p {

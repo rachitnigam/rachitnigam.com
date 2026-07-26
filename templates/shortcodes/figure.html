@@ -1,6 +1,7 @@
 <center>
 <figure>
 <img src="{{ get_url(path=img_path) }}"
+     {% if width %} width = "{{width}}" {% endif %}
      alt="{{ alt_explain }}">
 </img>
 <figcaption>
