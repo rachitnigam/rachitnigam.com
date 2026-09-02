@@ -25,12 +25,12 @@ programming languages and tools in it, and then go on to point out that most
 tools and languages fail to make use of amazing and well-known PL
 techniques. Then they describe their work which applies the aforementioned PL
 technique and build cool and interesting language abstractions with the promise
-of building better and improved tools for the domain.{% footnote() %}
+of building better and improved tools for the domain.{% <footnote nth={1}> %}
 It is rarely the case that the tool or language proposed actually solves the
 problems in the motivation.
 *Yes, do tell me how your tiny language will stop Google from going down twice
 a year.*
-{% end %}
+{% </footnote> %}
 
 While I strongly endorse PL techniques and research being applied in new
 domains, this story demonstrates a fundamental issue for me: Application of PL techniques is

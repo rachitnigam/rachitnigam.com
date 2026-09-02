@@ -32,9 +32,9 @@ Here is a quick summary of my research experience as an undergrad:
 ### Spring 2016
 
 I reached out a my undergraduate advisor in my first semester after being
-fascinated with Scheme.{% footnote() %}
+fascinated with Scheme.{% <footnote nth={1}> %}
 Yes, I am a walking PL cliché.
-{% end %}
+{% </footnote> %}
 After some back and forth, I quickly started
 a project. The project was to build a formal semantics for bash scripts. The
 bash specification is large and complicated with a lot of subtle interactions.
@@ -42,10 +42,10 @@ The particular phase we were interested in formalizing were the bash shell
 [expansions][]. We tried to build a Hoare logic style semantics for the expansion, because
 we wanted to ultimately verify properties of these shell scripts. Unfortunately,
 I showed that such a semantics becomes super complicated and we abandoned the
-project.{% footnote() %}
+project.{% <footnote nth={2}> %}
 Michael Greenberg, one of our collaborators, continued working on this and has
 come up with some [nice results](http://shell.cs.pomona.edu/).
-{% end %}
+{% </footnote> %}
 A few weeks into research and I had already failed a project.
 
 ### Summer 2016
@@ -80,19 +80,19 @@ People on the project had built a frontend that could take JavaScript code and
 compile it into something that could enforces security conditions.
 Around the same time, the Puppet synthesis project slowed down because the
 first author was applying to graduate schools and I was focusing more on
-Fission. Eventually, I stopped working on Puppet synthesis entirely.{% footnote() %}
+Fission. Eventually, I stopped working on Puppet synthesis entirely.{% <footnote nth={3}> %}
 This eventually became a [paper](https://aaronweiss.us/pubs/ase17.pdf).
-{% end %}
+{% </footnote> %}
 
 To cap off the depressing string of half completed projects, it was around this
 time I actually had minor clinical depression and my productivity collapsed. After
 attending [ICFP '16](https://conf.researchr.org/home/icfp-2016) I decided to
-start therapy to "fix" my clinical depression.{% footnote() %}
+start therapy to "fix" my clinical depression.{% <footnote nth={4}> %}
 Researchers are people who sometimes work extraordinarily hard at the expense
 of their own health.
 It is important to realize that your work is significantly
 less important that your health.
-{% end %}
+{% </footnote> %}
 
 Meanwhile, we also published a [workshop
 paper](http://drops.dagstuhl.de/opus/volltexte/2017/7124/pdf/LIPIcs-SNAPL-2017-5.pdf)

@@ -37,14 +37,11 @@ an incredible amount of *control overhead*. Figure 1 shows the energy
 breakdown of executing an add instruction. The control dominates the cost of
 executing an instruction.
 
-{% figure(
-     img_path="/img/energy-breakdown.png"
-     alt_explain="Energy breakdown of executing an add instruction on 45nm technology."
-) %}
+{% <figure img_path="/img/energy-breakdown.png" alt_explain="Energy breakdown of executing an add instruction on 45nm technology."> %}
 Fig 1.
 Energy breakdown of executing an add instruction from
 [Computing's Energy Problem [Horowitz, 2014]](https://ieeexplore.ieee.org/document/6757323)
-{% end %}
+{% </figure> %}
 
 So while modern processors
 can execute arbitrary programs quickly, they leave a lot of room for improvement
@@ -105,9 +102,9 @@ pay-what-you-use model.
 Owing to its root as a hardware simulator, FPGA programming toolchains repurpose
 existing hardware design languages (HDLs). As a circuit simulator, this is
 a really good idea. You can simply take your preexisting hardware design and
-run it on an FPGA.{% footnote() %}
+run it on an FPGA.{% <footnote nth={1}> %}
 I apologize to my architect friends. Running designs on an FPGA in reality can be an incredible challenge. FPGAs have different kinds of memory and performance characteristics. Most hardware design codebases are carefully engineered to separate FPGA-specific design decisions from the core design.
-{% end %}
+{% </footnote> %}
 
 Unfortunately, when trying to run high-level application code
 the level of abstraction afforded by HDLs is far too low-level.
@@ -138,13 +135,13 @@ in the community.
 
 ## High-Level Synthesis
 
-High-Level Synthesis{% footnote() %}
+High-Level Synthesis{% <footnote nth={2}> %}
 "Synthesis" is borrowed from hardware design workflows---circuits are synthesized into silicon. This is just a compiler.
-{% end %} is the idea of compiling a computational description
-in a high-level programming language, {% footnote() %}
+{% </footnote> %} is the idea of compiling a computational description
+in a high-level programming language, {% <footnote nth={3}> %}
 Architects operate at the level of gates, wires, and clocks. C++ is a huge
 jump in abstractions.
-{% end %} like C or C++, into an HDL like
+{% </footnote> %} like C or C++, into an HDL like
 Verilog. HLS has been quite successful in a multitude of domains---everything
 from [digital signal processing][hls-dsp] to [machine learning
 accelerators][hls-ml] has been implemented in HLS.

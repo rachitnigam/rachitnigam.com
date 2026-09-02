@@ -53,10 +53,10 @@ quite certain about the area they want to work in.
 Furthermore, the CS department is also structured in a way that assumes
 students are free agents their first year. This means that they are expected to
 ~~take a lot of classes and~~ be teaching assistants (TAs) in their first
-two semesters.{% footnote() %}
+two semesters.{% <footnote nth={1}> %}
 The CS department recently overhauled the course requirement to reduce the
 number of classes and restrictions on which classes to take.
-{% end %}
+{% </footnote> %}
 
 
 ### My Experience
@@ -95,11 +95,11 @@ While the free agent system caused me some anguish in the decision process, it
 was not the primary reason I decided join Cornell.
 
 - My primary motivators were research that excited me, and people who are
-  just as excited about it as me.{% footnote() %}
+  just as excited about it as me.{% <footnote nth={2}> %}
   Importantly, this includes other grad students.
   Remember, you're going to be spending a lot more time with other grad
   students than you will with faculty.
-  {% end %}
+  {% </footnote> %}
 - The first year TAing requirement causes some amount of stress for
   new students. However, the department is aware of the issues and is
   trying to move away from this system.

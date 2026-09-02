@@ -8,10 +8,10 @@ summary = "PhD student espouses economic theories he does not understand."
 +++
 
 "Commoditize your complement" is an idea about how companies can build profitable
-markets without complete vertical integration or monopolization.{% footnote() %}
+markets without complete vertical integration or monopolization.{% <footnote nth={1}> %}
 I highly recommend "[Laws of Tech: Commoditize Your Complement](https://www.gwern.net/Complement)" for a more
 in-depth look into this idea.
-{% end %}
+{% </footnote> %}
 Very briefly, the idea is this: every product has a *substitute* and a *complement*.
 A substitute is a product that provides the same functionality and therefore
 competes with your product.
@@ -35,10 +35,10 @@ develop *solver-aided tools*.
 Solver-aided tools are a "hot topic" in programming languages research.
 The high-level idea is encoding the semantics of a program into boolean (or richer
 logics) and using SMT solvers like [Z3][] to either verify programs or
-automatically synthesize them from specifications.{% footnote() %}
+automatically synthesize them from specifications.{% <footnote nth={2}> %}
 James Bornholt's [introduction to program synthesis](https://blog.sigplan.org/2019/07/31/program-synthesis-in-2019/) provides a good overview of
 the area.
-{% end %}
+{% </footnote> %}
 
 Roughly speaking, anyone who attempts to build a solver-aided tool has to do
 three things: encode the semantics of programs as SMT, repeatedly query
@@ -52,12 +52,12 @@ or build upon someone else's unmaintained research code.
 
 The idea with Rosette is simple---build a framework where you can write an
 interpreter for your language and *automatically* turn it into a solver-aided
-tool.{% footnote() %}
+tool.{% <footnote nth={3}> %}
 This simple idea is, of course, built upon deep insights about how solvers
 and symbolic execution work.
 I recommend reading the [Rosette paper][rose-paper] for those
 interested.
-{% end %}
+{% </footnote> %}
 The original [Rosette paper][rose-paper] was a novel and interesting contribution,
 therefore justifying its publication.
 However, the real research impact of Rosette has been from its continued use
@@ -94,10 +94,10 @@ the SMT encoding of a program to blow up.
 SymPro was able to use the existing Rosette ecosystem to develop a robust tool
 and evaluate it on code written by users of Rosette.
 This is both a value-add for users of Rosette and a compelling case to justify
-the research paper.{% footnote() %}
+the research paper.{% <footnote nth={4}> %}
 The research contributions of the paper are not tied to Rosette.
 However, building upon Rosette makes the paper that much more compelling.
-{% end %}
+{% </footnote> %}
 
 ## Finding a Complement
 

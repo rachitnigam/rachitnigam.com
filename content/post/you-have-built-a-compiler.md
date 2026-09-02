@@ -40,10 +40,10 @@ Except once that engineer leave, who will *know* what assumptions you encoded?
 Those littered asserts? The inscrutable "unreachable code" errors? Who will *know*,
 how you simplified your AST?
 So you rolled out your own AST library, so that you may compile, nay, *transpile* your
-code and expose your assumptions in your data structures.{% footnote() %}
+code and expose your assumptions in your data structures.{% <footnote nth={1}> %}
 Certain, of course, that because you're *transpiling* JavaScript to JavaScript, it is going to
 way easier than what real compilers do.
-{% end %} What glorious engineering, you say to yourself.
+{% </footnote> %} What glorious engineering, you say to yourself.
 
 In the last leg of your journey to avoid building a compiler, your manager tells you
 that your code should run on older machines, which only support version 0.8.

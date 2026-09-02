@@ -1,0 +1,33 @@
+{# Components used from markdown content. These replace the shortcodes that
+   Zola removed in 0.23; they are called from .md files with the block syntax,
+   e.g. {% <footnote nth={1}> %}...{% </footnote> %} #}
+
+{# Sidenote. `nth` used to be supplied automatically by the shortcode machinery;
+   it now has to be passed explicitly so the label/checkbox ids stay unique. #}
+{% component footnote(nth: integer) %}<label for="sn-{{ nth }}" class="margin-toggle sidenote-number" style="white-space:nowrap"><span class="sidenote-number-text">{{ nth }}</span></label><input type="checkbox" id="sn-{{ nth }}" class="margin-toggle"/><span class="sidenote"><span class="sidenote-prefix">{{ nth }}</span>{{ body | markdown(inline=true) | trim | safe }}</span>{% endcomponent footnote %}
+
+{# Collapsible section #}
+{% component details(summary: string) %}<details>
+<summary>
+<i>{{ summary | markdown(inline=true) | trim | safe }}</i>
+</summary>
+<p>
+{{ body | markdown(inline=true) | trim | safe }}
+</p>
+</details>{% endcomponent details %}
+
+{# Centered figure with a caption #}
+{% component figure(img_path: string, alt_explain: string, width = 0) %}<center>
+<figure>
+<img src="{{ get_url(path=img_path) }}"
+     {% if width %} width="{{ width }}" {% endif %}
+     alt="{{ alt_explain }}">
+</img>
+<figcaption>
+{{ body | markdown(inline=true) | trim | safe }}
+</figcaption>
+</figure>
+</center>{% endcomponent figure %}
+
+{# Inline or display math, rendered by KaTeX #}
+{% component katex(block = false) %}<script type="math/tex{% if block %};mode=display{% endif %}">{{ body | safe }}</script>{% endcomponent katex %}

@@ -37,13 +37,9 @@ summary = "The secret ingredient"
 
 ---
 
-{% figure(
-     img_path="/img/cover.png"
-     width=200
-     alt_explain="A manhole cover with colored flowers"
-) %}
+{% <figure img_path="/img/cover.png" width={200} alt_explain="A manhole cover with colored flowers"> %}
 Manhole cover <i>(Japan, 2025)</i>
-{% end %}
+{% </figure> %}
 
 Here is a picture of a manhole cover I found in Japan.
 A thing to be trodden upon.

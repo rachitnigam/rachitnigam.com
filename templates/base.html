@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="author" content="Rachit Nigam">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  {% if page.title %}
+  {% if page?.title %}
   <title> {{ page.title }} | Rachit Nigam </title>
   {% else %}
   <title>Rachit Nigam</title>
@@ -65,8 +65,8 @@
   {% endblock css %}
 </head>
 
-<body{% if page and page.extra.body_class %} class="{{ page.extra.body_class }}"{% endif %}>
-  {% if page %}
+<body{% if page?.extra?.body_class %} class="{{ page.extra.body_class }}"{% endif %}>
+  {% if page is defined %}
   <header>
     <h1 class="name"><a class="unstyled-link" href={{ get_url(path="/" ) }}>Rachit Nigam</a></h1>
     <nav>

@@ -83,7 +83,7 @@ If using the "squash merge" strategy, this will merge all the branch commits int
 
 ### Testing
 
-A good test suite is a mark of a real project.{% footnote() %} If you're a systems researcher and your projects don't have tests, I'm putting you in the category of "people who build toys". {% end %} There is lots of good advice on how to write test suites, especially if you [work on compilers][samps-snapshot].
+A good test suite is a mark of a real project.{% <footnote nth={1}> %} If you're a systems researcher and your projects don't have tests, I'm putting you in the category of "people who build toys". {% </footnote> %} There is lots of good advice on how to write test suites, especially if you [work on compilers][samps-snapshot].
 Once you have a test suite, make sure it is run on every commit.
 GitHub makes this particularly easy through [GitHub Actions][gh-actions]: you define a configuration to install all the tools needed to run your system, and define how to run commands.
 GitHub will use this configuration to run tests on every commit, including pull requests and allow you to ensure that bad code doesn't get committed.
@@ -91,7 +91,7 @@ GitHub will use this configuration to run tests on every commit, including pull 
 ### Reviewing
 
 Code review is the practice of having a second person read your code before it gets merged into the codebase.
-This is the place where a senior contributor helps the code author understand how their code affects other systems, if there are better ways to implement a feature, suggest refactorings, and remind them to write tests.{% footnote() %} Yeah, I'm looking at you. I know you didn't do it. {% end %}
+This is the place where a senior contributor helps the code author understand how their code affects other systems, if there are better ways to implement a feature, suggest refactorings, and remind them to write tests.{% <footnote nth={2}> %} Yeah, I'm looking at you. I know you didn't do it. {% </footnote> %}
 It is a particularly powerful tool for research mentorship: it allows you to teach junior contributors how to write good code, practice rigorous testing, and develop a sense of aesthetics about code architecture.
 
 ### Deployment

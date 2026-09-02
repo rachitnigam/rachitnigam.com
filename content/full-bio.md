@@ -3,9 +3,9 @@ title = "Biography"
 template = "single-page.html"
 +++
 
-Hi! I'm Rachit Nigam{% footnote() %}
+Hi! I'm Rachit Nigam{% <footnote nth={1}> %}
 *Pronunciation*: Ruh-CHITH NI-gum. First name rhymes with "crutch-it".
-{% end %}. I am starting as an assistant professor in the Department of Electrical Engineering and Computer Science at the Massachusetts Institute of Technology in 2025-26 academic year.
+{% </footnote> %}. I am starting as an assistant professor in the Department of Electrical Engineering and Computer Science at the Massachusetts Institute of Technology in 2025-26 academic year.
 I am currently wrapping up my PhD at Cornell University working with [Adrian Sampson][adrian].
 I was previously a visiting scholar at MIT with [Jonathan Ragan-Kelley][jrk].
 Before that, I spent a year at the [UW PLSE][plse] group as a visiting scholar.

@@ -1,5 +1,4 @@
 {% extends "base.html" %}
-{% import "macros.html" as m %}
 
 {% block content %}
 <section>
@@ -7,7 +6,7 @@
 {% set news = get_section(path="news/_index.md") %}
 {% set items = config.extra.news_items %}
 {% for post in news.pages | sort(attribute="date") | reverse %}
-{{ m::generate_news(post=post) }}
+{{<m.generate_news post={post} />}}
 {% endfor %}
 </section>
 

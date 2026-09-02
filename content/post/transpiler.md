@@ -12,7 +12,7 @@ The big problem around most of the arguments to distinguish between compilers an
 
 ## Lie #1: Transpilers Don't have Frontends
 
-Let's look at a simple Python to C transpiler.{% footnote() %} Both [Nuitka](https://github.com/Nuitka/Nuitka) and [Mojo](https://docs.modular.com/mojo/) both actually target this exact problem but sanely call themselves compilers.{% end %} It takes python code that looks like this:
+Let's look at a simple Python to C transpiler.{% <footnote nth={1}> %} Both [Nuitka](https://github.com/Nuitka/Nuitka) and [Mojo](https://docs.modular.com/mojo/) both actually target this exact problem but sanely call themselves compilers.{% </footnote> %} It takes python code that looks like this:
 ```py
 def fact(n):
     x = 1
@@ -53,13 +53,13 @@ Even a moderately useful subset would be unwieldy to implement by hand in our si
 Maybe one strategy we can take is to build a some sort of tool that would simplify these hundreds of definitions into a more uniform representation
 to work with.
 
-We'll call it the *transpiler-not-frontend* to make sure people understand we're not building a compiler here.{% footnote() %}
+We'll call it the *transpiler-not-frontend* to make sure people understand we're not building a compiler here.{% <footnote nth={2}> %}
 It is [not hard](https://github.com/topics/transpiler) to find examples of things mislabelled as transpilers. However, I won't name any specific projects because this is just a dumb diatribe about words, I actually think the projects themselves are cool.
-{% end %}
+{% </footnote> %}
 
 ## Lie #2: Transpilers are Simple
 
-BabelJS is arguably one of the first "transpilers" that was developed so that people could experiment with JavaScript's new language features that did not yet have browser implementations.{% footnote() %} Technically, ECMAScript features. {% end %}
+BabelJS is arguably one of the first "transpilers" that was developed so that people could experiment with JavaScript's new language features that did not yet have browser implementations.{% <footnote nth={3}> %} Technically, ECMAScript features. {% </footnote> %}
 For example, ES6 added support for generators (similar to those in Python) but a lot of browser frontends did not support them.
 Generators are pretty nice:
 ```js
@@ -117,7 +117,7 @@ If we're to get beyond the vagaries of syntax and *actually* talk about what the
 ## Lie #4: Transpilers Don't have Backends
 
 BabelJS has a [list of "presets"][babel-presets] which target different versions of JavaScript.
-This is not very different from LLVM having multiple different backends.{% footnote() %} If you're going to argue that the backends all compile to the same language, see (3). {% end %} People might argue that when Babel is compiling its operations, it can do it piecemeal: that is, the compilation of [nullish coaleascing operators][js-nullish] has nothing to how classes are compiled.
+This is not very different from LLVM having multiple different backends.{% <footnote nth={4}> %} If you're going to argue that the backends all compile to the same language, see (3). {% </footnote> %} People might argue that when Babel is compiling its operations, it can do it piecemeal: that is, the compilation of [nullish coaleascing operators][js-nullish] has nothing to how classes are compiled.
 
 This is exactly what compiler frontends do as well: they transform a large surface area of syntax into a smaller language and a lot of operations are simple *syntactic sugar* which can be represented using other, more foundational primitives in the language.
 For example, in the Rust compiler, the mid-level representation (MIR) does away with features like `if`-`let` by compiling them into `match` statements. In fact, `clippy`, a style suggestion tool for Rust, *implements this as source-to-source transformation*: if you have [simple `match` statements in your program][single-match] in your program, Clippy will suggest a rewrite to you.

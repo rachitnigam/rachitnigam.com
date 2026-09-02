@@ -25,9 +25,9 @@ It doesn't need to dazzle, it doesn't need to use bleeding-edge web frameworks
 and CSS animations but it needs to exist and it needs to be easy to find.
 
 My website is built using [zola][], a static website generator written in Rust.
-Almost all of the styling is written in plain CSS with rules to make the website responsive.{% footnote() %}
+Almost all of the styling is written in plain CSS with rules to make the website responsive.{% <footnote nth={1}> %}
 Please, for the love of god, make your website readable on a phone.
-{% end %}
+{% </footnote> %}
 
 **Tools.** Using a static website generator, which takes all of your content written in a language of your
 choice and makes it web ready is going to be your best bet to have a maintainable infrastructure.
@@ -59,10 +59,10 @@ thing to debug.
 Finally, discoverability makes it easier to find your website when someone looks up
 your name on Google.
 Doing this as an academic is pretty easy–make sure a bunch of `.edu` websites point
-to your website.{% footnote() %}
+to your website.{% <footnote nth={2}> %}
 Unless you have the same name as someone famous in which case, tough luck.
 Or take it as a challenge to be more famous than they are.
-{% end %} This includes your advisor's website, department website, research group website, etc.
+{% </footnote> %} This includes your advisor's website, department website, research group website, etc.
 
 All of this advice generally applies to [project websites](https://calyxir.org)
 as well, which again, I highly recommend to make your research more visible
@@ -80,9 +80,9 @@ memorize the transitions resulting in an overall better talk.
 I have yet to see a good talk made in [LaTeX beamer][beamer]; my unscientific
 belief is that beamer encourages adding too much math on your slides which is
 often the wrong thing to do for talks where the goal is to give an intuition
-behind your work.{% footnote() %}
+behind your work.{% <footnote nth={3}> %}
 For teaching, however, I've found beamer to be a pretty good tool.
-{% end %}
+{% </footnote> %}
 
 **Recording.** I've had to record talks for virtual conferences in the past and
 have used [Screenflow][] for this. It works for what I do and I haven't needed
@@ -111,10 +111,10 @@ When starting a new paper, I copy over the bibliography file from the most
 recent paper and a `pervasives.sty` file that contains all the accumulated
 LaTeX hacks I've ever had to do.
 I tend to write everything in one giant file which makes it easier to track
-down a phrase in the paper and start editing it.{% footnote() %}
+down a phrase in the paper and start editing it.{% <footnote nth={4}> %}
 Many people prefer separating out each section into a new file which might suit
 your team's contribution style better.
-{% end %}
+{% </footnote> %}
 
 **Graphs and figures.** Papers often need to contain visual elements like
 system diagrams and measurement graphs. I use [OmniGraffle][] to make diagrams

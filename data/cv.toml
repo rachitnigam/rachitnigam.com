@@ -61,6 +61,11 @@ title = "Carolyn Zech"
 context = "PhD, NSF GRFP Fellow"
 date = ["2025"]
 
+
+[[sections]]
+title = "Graduated Students"
+style = "compact"
+
 [[sections.entries]]
 title = "Ayana Alemayehu"
 context = "M.Eng"
@@ -174,6 +179,20 @@ labels = ["PLDI 19", "OOPSLA 20", "PLDI 20", "OOPSLA 23"]
 [[sections.entries]]
 role = "Volunteer"
 labels = ["SPLASH 18"]
+
+[[sections]]
+title = "PhD Committees"
+style = "compact"
+
+[[sections.entries]]
+title = "Dustin Jammer"
+context = "MIT"
+date = ["Adam Chlipala"]
+
+[[sections.entries]]
+title = "Jingtao Xia "
+context = "UCSB"
+date = ["Jonathan Balkind & Ben Hardekopf"]
 
 [[publication_sections]]
 title = "Conference Publications"

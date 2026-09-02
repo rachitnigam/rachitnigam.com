@@ -1,26 +1,25 @@
+{# Components used across the site templates. Registered globally: no import needed. #}
+
 {# Heading with anchor link #}
-{% macro anchor_heading(content, size="2") %}
+{% component m.anchor_heading(content: string, size = "2") %}
 <h{{size}} id="{{ content | slugify }}">
   {{ content }}
 </h{{size}}>
-{% endmacro anchor_heading %}
+{% endcomponent m.anchor_heading %}
 
 {# Contact list item #}
-{% macro contact(classes, link, alt) %}
-
+{% component m.contact(classes: string, link: string, alt: string) %}
 <a alt="{{ alt }}" class="unstyled-link" itemprop="sameAs" href="{{ link }}" target="_blank" rel="noopener">
   <i class="{{ classes }} contact-link-item big-icon"></i>
 </a>
-
-{% endmacro contact %}
-
+{% endcomponent m.contact %}
 
 {# Styling for Posts #}
-{% macro generate_post(post) %}
+{% component m.generate_post(post: map) %}
 <div class="blurb">
   <div class="date">{{ post.date | date(format="%b ’%y") }}</div>
   <div class="description">
-    {% if post.extra.external %}
+    {% if post.extra?.external %}
     <a href="{{ post.extra.external | safe }}">
       {% else %}
       <a href="{{ post.permalink | safe }}">
@@ -28,19 +27,18 @@
         {{ post.title | safe }}
       </a><br />
       <div class="post-tease">
-        {{ post.extra.summary }}
+        {{ post.extra?.summary or "" }}
       </div>
   </div>
 </div>
-{% endmacro post %}
-
+{% endcomponent m.generate_post %}
 
 {# Styling for News items #}
-{% macro generate_news(post) %}
+{% component m.generate_news(post: map) %}
 <div class="blurb">
   <div class="date">{{ post.date | date(format="%b ’%y") }}</div>
   <div class="description">
-    {% if post.extra.kind %}
+    {% if post.extra?.kind %}
       {% if post.extra.kind == "award" %}
         <i class="fa fa-medal" style="color: #d3af37;"></i>
       {% elif post.extra.kind == "talk" %}
@@ -52,43 +50,33 @@
     {{ post.content | safe }}
   </div>
 </div>
-{% endmacro post %}
+{% endcomponent m.generate_news %}
 
-{# Styling for authors in publication list #}
-{% macro author(name) %}
-
+{# Styling for authors in publication list. `authors` is config.extra.author,
+   passed explicitly because components cannot read globals. #}
+{% component m.author(name: string, authors: array) %}
 {%- if name == "Rachit Nigam" -%}
 <span class="publication-highlight">{{ name }}</span>
 {%- else -%}
-
-{% set_global link = "" %}
-{% for author in config.extra.author %}
-{% if author.name == name %}
-{% set_global link = author.link %}
-{% endif %}
-{% endfor %}
-
+{%- set links = [a.link for a in authors if a.name == name] -%}
 <span class="publication-author">
-  {%- if link != "" -%}
+  {%- if links -%}
   <!-- Link in author website if present -->
-  <a href="{{ link }}" class="unstyled-link">
+  <a href="{{ links[0] }}" class="unstyled-link">
     {%- endif -%}
     {{ name }}
-    {%- if link != "" -%}
+    {%- if links -%}
   </a>
   {%- endif -%}
 </span>
-
 {%- endif -%}
-
-{% endmacro author %}
-
+{% endcomponent m.author %}
 
 {# Styling for a publication item #}
-{% macro publication(pub) %}
+{% component m.publication(pub: map, authors: array) %}
 <div class="publication">
   <div class="publication-venue">
-    {% if not pub.extra.publication_short %}
+    {% if not pub.extra?.publication_short %}
     <i>Draft</i>
     {% else %}
     {{- pub.extra.publication_short -}}
@@ -98,20 +86,20 @@
   </div>
   <div class="publication-details">
     <div class="publication-title">
-      {% if pub.extra.pdf %}
+      {% if pub.extra?.pdf %}
       <a href={{ get_url(path=pub.extra.pdf) }}>
         {% endif %}
         {{ pub.title | safe }}
-        {% if pub.extra.pdf %}
+        {% if pub.extra?.pdf %}
       </a>
       {% endif %}
     </div>
     <div>
       {% for name in pub.extra.authors %}
-      {{ m::author(name=name) }}{% if not loop.last %}, {% endif %}
+      {{<m.author name={name} authors={authors} />}}{% if not loop.last %}, {% endif %}
       {% endfor %}
     </div>
-    {% if pub.extra.awards %}
+    {% if pub.extra?.awards %}
     <!-- Award -->
     {% for award in pub.extra.awards %}
       <div>
@@ -121,10 +109,11 @@
     {% endfor %}
     {% endif %}
     <div class="publication-links">
-      {% set sorted_links = pub.extra.urls | sort(attribute="name") %}
+      {% set urls = pub.extra?.urls or [] %}
+      {% set sorted_links = urls | sort(attribute="name") %}
       {% for link in sorted_links %}
       <span class="publication-link">
-        {% if link.url is starting_with("https") %}
+        {% if link.url is starting_with(pat="https") %}
           {% set full_link = link.url %}
         {% else %}
           {% set full_link = get_url(path=link.url) %}
@@ -137,4 +126,16 @@
     </div>
   </div>
 </div>
-{% endmacro publication %}
+{% endcomponent m.publication %}
+
+{# Author list for the CV, which does not link out to author websites #}
+{% component m.cv_authors(names: array) -%}
+{%- for name in names -%}
+{%- if name == "Rachit Nigam" -%}
+<span class="publication-highlight">{{ name }}</span>
+{%- else -%}
+<span class="publication-author">{{ name }}</span>
+{%- endif -%}
+{%- if not loop.last -%}, {% endif -%}
+{%- endfor -%}
+{%- endcomponent m.cv_authors %}

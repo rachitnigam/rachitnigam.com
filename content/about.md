@@ -10,7 +10,7 @@ My work is driven by the need to answer fundamental questions that about
 hardware--software systems and using the answers to build elegant systems.
 My PhD answered three such questions:
 
-{% details(summary="What fundamentally distinguishes hardware design from software programming?") %}
+{% <details summary="What fundamentally distinguishes hardware design from software programming?"> %}
 Hardware designs must explicitly reason about discrete time.
 [Filament](https://filamentHDL.com) is a new
 hardware description language that uses a type-system to explicitly reason
@@ -18,21 +18,21 @@ about time and uses it to provide strong guarantees about the generated circuits
 Filament's ideas have influenced the design of
 Google's [XLS](https://google.github.io/xls/) project and
 Jane Street's [Hardcaml](https://github.com/janestreet/hardcaml) language.
-{% end %}
+{% </details> %}
 
-{% details(summary="How do we design a scalable compiler infrastructure for hardware synthesis?") %}
+{% <details summary="How do we design a scalable compiler infrastructure for hardware synthesis?"> %}
 By intermixing software and hardware abstractions into one intermediate language.
 [Calyx](https://calyxir.org) is a compiler infrastructure for transforming computational descriptions
 into efficient circuits. Calyx has been adopted by the [LLVM CIRCT](https://circt.llvm.org) project and
 is the basis for several industrial and academic tools.
-{% end %}
+{% </details> %}
 
-{% details(summary="How can formal methods help reason about performance?") %}
+{% <details summary="How can formal methods help reason about performance?"> %}
 Types systems can encode low-level constraints within high-level languages.
 [Dahlia](https://capra.cs.cornell.edu/dahlia) shows how a novel kind of substructural
 type system captures circuit-level constraints within an imperative, loop-based language
 and uses it to ensure that every well-typed program makes predictable performance trade-offs.
-{% end %}
+{% </details> %}
 
 At MIT, I direct the [Foundations of Languages and Machines (FLAME) lab][flame]
 where we continue asking such questions and building new systems.
