@@ -117,7 +117,7 @@ executing an instruction.</p>
 <center>
 <figure>
 <img src="https://people.csail.mit.edu/rachit/img/energy-breakdown.png"
-<pre class="giallo" style="color-scheme: light dark; color: light-dark(#24292E, #E1E4E8); background-color: light-dark(#FFFFFF, #24292E);"><code data-lang="plain"><span class="giallo-l"><span> alt=&quot;Energy breakdown of executing an add instruction on 45nm technology.&quot;&gt;</span></span></code></pre></img>
+<pre class="giallo" style="color-scheme: light dark; color: light-dark(#24292E, #E1E4E8); background-color: light-dark(#FFFFFF, #24292E);" ><code data-lang="plain"><span class="giallo-l"><span> alt=&quot;Energy breakdown of executing an add instruction on 45nm technology.&quot;&gt;</span></span></code></pre></img>
 <figcaption>
 Fig 1.
 Energy breakdown of executing an add instruction from
@@ -177,19 +177,7 @@ pay-what-you-use model.</p>
 <p>Owing to its root as a hardware simulator, FPGA programming toolchains repurpose
 existing hardware design languages (HDLs). As a circuit simulator, this is
 a really good idea. You can simply take your preexisting hardware design and
-run it on an FPGA.<label for="sn-1"
-       class="margin-toggle sidenote-number"
-       style="white-space:nowrap">
-  <span class="sidenote-number-text">1</span>
-</label>
-<input type="checkbox"
-       id="sn-1"
-       class="margin-toggle"/>
-<span class="sidenote">
-<span class="sidenote-prefix">1</span>
-I apologize to my architect friends. Running designs on an FPGA in reality can be an incredible challenge. FPGAs have different kinds of memory and performance characteristics. Most hardware design codebases are carefully engineered to separate FPGA-specific design decisions from the core design.
-</span>
-</p>
+run it on an FPGA.<label for="sn-1" class="margin-toggle sidenote-number" style="white-space:nowrap"><span class="sidenote-number-text">1</span></label><input type="checkbox" id="sn-1" class="margin-toggle"/><span class="sidenote"><span class="sidenote-prefix">1</span>I apologize to my architect friends. Running designs on an FPGA in reality can be an incredible challenge. FPGAs have different kinds of memory and performance characteristics. Most hardware design codebases are carefully engineered to separate FPGA-specific design decisions from the core design.</span></p>
 <p>Unfortunately, when trying to run high-level application code
 the level of abstraction afforded by HDLs is far too low-level.
 Imagine
@@ -215,33 +203,9 @@ of transforming behavioral (or functional) descriptions of computation
 into hardware designs. This is commonly referred to High-Level Synthesis (HLS)
 in the community.</p>
 <h2 id="high-level-synthesis">High-Level Synthesis</h2>
-<p>High-Level Synthesis<label for="sn-2"
-       class="margin-toggle sidenote-number"
-       style="white-space:nowrap">
-  <span class="sidenote-number-text">2</span>
-</label>
-<input type="checkbox"
-       id="sn-2"
-       class="margin-toggle"/>
-<span class="sidenote">
-<span class="sidenote-prefix">2</span>
-“Synthesis” is borrowed from hardware design workflows—circuits are synthesized into silicon. This is just a compiler.
-</span>
- is the idea of compiling a computational description
-in a high-level programming language, <label for="sn-3"
-       class="margin-toggle sidenote-number"
-       style="white-space:nowrap">
-  <span class="sidenote-number-text">3</span>
-</label>
-<input type="checkbox"
-       id="sn-3"
-       class="margin-toggle"/>
-<span class="sidenote">
-<span class="sidenote-prefix">3</span>
-Architects operate at the level of gates, wires, and clocks. C++ is a huge
-jump in abstractions.
-</span>
- like C or C++, into an HDL like
+<p>High-Level Synthesis<label for="sn-2" class="margin-toggle sidenote-number" style="white-space:nowrap"><span class="sidenote-number-text">2</span></label><input type="checkbox" id="sn-2" class="margin-toggle"/><span class="sidenote"><span class="sidenote-prefix">2</span>“Synthesis” is borrowed from hardware design workflows—circuits are synthesized into silicon. This is just a compiler.</span> is the idea of compiling a computational description
+in a high-level programming language, <label for="sn-3" class="margin-toggle sidenote-number" style="white-space:nowrap"><span class="sidenote-number-text">3</span></label><input type="checkbox" id="sn-3" class="margin-toggle"/><span class="sidenote"><span class="sidenote-prefix">3</span>Architects operate at the level of gates, wires, and clocks. C++ is a huge
+jump in abstractions.</span> like C or C++, into an HDL like
 Verilog. HLS has been quite successful in a multitude of domains—everything
 from <a rel="noopener nofollow noreferrer external" target="_blank" href="https://ieeexplore.ieee.org/document/1466178">digital signal processing</a> to <a rel="noopener nofollow noreferrer external" target="_blank" href="https://dl.acm.org/doi/10.1145/3020078.3021741">machine learning
 accelerators</a> has been implemented in HLS.</p>
