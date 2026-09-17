@@ -163,7 +163,7 @@ labels = ["PLDI 24", "PLDI 25"]
 
 [[sections.entries]]
 role = "External Review Committee"
-labels = ["OOPSLA 23", "PLDI 26", "POPL 26"]
+labels = ["OOPSLA 23", "PLDI 26", "POPL 26", "POPL 27"]
 
 [[sections.entries]]
 role = "Workshop Co-Organizer"
